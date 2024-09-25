@@ -1,0 +1,36 @@
+name: Deploy
+
+on:
+  push:
+    branches: main
+  schedule:
+    - cron:  '30 4,16 * * *' # 台灣時間 12:30, 00:30
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      BASE_URL: "mcut-course.com"
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 14
+        cache: 'npm'
+    - name: Install Dependencies
+      run: npm install
+    - name: Generate Pages
+      run: npm run gen
+    - name: Sitemap
+      run: |
+        echo "https://$BASE_URL/" > ./dist/sitemap.txt
+        find ./dist -type f | sed 's|^./dist/||' | grep -E '^(course/|saved/|info/)' | sed 's|index.html$||' | sed 's|^|https://${{ env.BASE_URL }}/|' >> ./dist/sitemap.txt
+        echo "https://$BASE_URL/rule/" > ./dist/sitemap-rule.txt
+        find ./dist -type f | sed 's|^./dist/||' | grep -E '^(rule/)' | sed 's|index.html$||' | sed 's|^|https://${{ env.BASE_URL }}/|' >> ./dist/sitemap-rule.txt
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: dist
+        force_orphan: true
+        cname: ${{ env.BASE_URL }}

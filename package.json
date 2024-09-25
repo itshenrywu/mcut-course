@@ -1,0 +1,22 @@
+{
+  "name": "mcut-course",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "gen": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/axios": "^5.13.6",
+    "core-js": "^3.38.1",
+    "nuxt": "^2.18.1",
+    "vue": "^2.7.16",
+    "vue-server-renderer": "^2.7.16",
+    "vue-sweetalert2": "^5.0.11",
+    "vue-template-compiler": "^2.7.16"
+  }
+}
