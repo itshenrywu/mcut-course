@@ -403,18 +403,18 @@ export default {
 			localStorage['ruleDept'] = this.currentDept;
 			localStorage['ruleRule'] = this.currentRule;
 			if(this.$route.path != '/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/') {
-				this.$router.replace('/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/');
+				history.replaceState([], '', '/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/');
 			}
 			this.getRule();
 		},
 		chooseYear() {
 			if (!this.currentDeptName) this.currentDept = Object.keys(Object.values(this.depts[this.currentYear])[0])[0];
 			this.currentRule = -1;
-			this.$router.replace('/rule/');
+			history.replaceState([], '', '/rule/');
 		},
 		chooseDept() {
 			this.currentRule = -1;
-			this.$router.replace('/rule/');
+			history.replaceState([], '', '/rule/');
 		},
 		getRule() {
 			this.loading = true;
@@ -508,8 +508,8 @@ export default {
 				this.$swal({
 					icon: 'warning',
 					title: '欲選課學期與收藏的課程學期不同',
-					html: '是否要清空目前已收藏的課程，並切換至 ' + this.currentRuleTerm + ' 學期？',
-					confirmButtonText: '確定',
+					html: '是否要清空目前已收藏的課程，並切換至 ' + this.currentRuleTerm + ' 學期以檢視相符的課程？',
+					confirmButtonText: '切換並檢視',
 					cancelButtonText: '取消',
 					showCancelButton: true,
 				})
