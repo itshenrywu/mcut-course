@@ -3,8 +3,8 @@ name: Deploy
 on:
   push:
     branches: main
-  schedule:
-    - cron:  '30 4,16 * * *' # 台灣時間 12:30, 00:30
+  repository_dispatch:
+    types: [deploy]
 
 jobs:
   deploy:

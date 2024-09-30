@@ -6,7 +6,7 @@
 					<h1 class="ts-header is-huge has-vertically-padded">選課資訊</h1>
 				</div>
 				<div class="column is-4-wide mobile-fluid">
-					<a class="ts-button is-fluid" target="_blank" href="http://day.course.mcut.edu.tw/?openExternalBrowser=1">前往選課系統</a>
+					<a class="ts-button is-fluid" target="_blank" rel="nofollow" href="http://day.course.mcut.edu.tw/?openExternalBrowser=1">前往選課系統</a>
 				</div>
 			</div>
 		</div>

@@ -31,7 +31,7 @@
 				<div class="column is-8-wide mobile-fluid">
 					<div class="ts-box">
 						<div class="ts-content">
-							<span class="statistic-title">開課班級</span>
+							<span class="statistic-title">開課單位/班級</span>
 							<div class="ts-statistic">
 								<div class="value">{{ course.dept + ' ' + course.year + ' ' + course.class }}</div>
 							</div>
@@ -44,9 +44,9 @@
 				<div class="column is-4-wide mobile-half">
 					<div class="ts-box">
 						<div class="ts-content">
-							<span class="statistic-title">修別 {{ course.otherinfo ? ' | 通識類別' : '' }}</span>
+							<span class="statistic-title">修別 {{ course.otherinfo ? ' / 通識類別' : '' }}</span>
 							<div class="ts-statistic">
-								<div class="value">{{ course.type + (course.otherinfo ? ' | ' +
+								<div class="value">{{ course.type + (course.otherinfo ? ' ' +
 									course.otherinfo.substring(0, 2) : '') }}</div>
 							</div>
 						</div>
@@ -81,10 +81,11 @@
 										<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
 									</span>
 								</div>
+								<span class="ts-icon is-circle-info-icon" v-if="course.time.length >= 1" @click="showTimeInfo()"></span>
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-regular is-clock-icon"></span>
+							<span class="ts-icon is-regular is-calendar-days-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -129,7 +130,12 @@
 					</tr>
 					<tr v-for="m in more">
 						<td>{{ m[0] }}</td>
-						<td v-html="m[1]"></td>
+						<td v-if="m[0] == '教學方法'">
+							<div class="ts-wrap is-compact">
+								<div class="ts-badge is-secondary is-dense" v-for="method in m[1].split(',')" v-html="method"></div>
+							</div>
+						</td>
+						<td v-else v-html="m[1]" ></td>
 					</tr>
 					<tr v-if="office_time.length > 0">
 						<td>Office Time</td>
@@ -179,6 +185,10 @@
 	font-weight: bold;
 }
 
+#page-course tbody tr td:last-child {
+	font-weight: normal;
+}
+
 #page-course .time {
 	display: block;
 }
@@ -205,6 +215,16 @@
 
 #page-course .ts-content {
 	padding: .25rem .75rem;
+}
+
+.ts-statistic .ts-icon {
+	margin-right: .25rem;
+	font-size: .9rem;
+	color: var(--ts-gray-500);
+}
+
+.ts-statistic .ts-icon:hover {
+	cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -461,6 +481,52 @@ export default {
 					}
 				});
 			}
+		},
+		showTimeInfo() {
+			let timeInfo = [
+				["07:00", "07:50"], // 0.5
+				["08:00", "08:50"], // 1
+				["09:00", "09:50"], // 2
+				["10:00", "10:50"], // 3
+				["11:00", "11:50"], // 4
+				["12:00", "12:50"], // 4.5
+				["13:00", "13:50"], // 5
+				["14:00", "14:50"], // 6
+				["15:00", "15:50"], // 7
+				["16:00", "16:50"], // 8
+				["17:00", "17:50"], // 8.5
+				["18:40", "19:25"], // 9
+				["19:30", "20:15"], // 10
+				["20:25", "21:10"], // 11
+				["21:15", "22:00"], // 12
+			];
+			let timeInfoText = '';
+			if ((
+				this.course.time.every(time => time[1].includes('.5') && time[1].split('~')[0]==time[1].split('~')[1]) ||
+				this.course.time.every(time => time[0] == 0 || time[0] == 7)
+			) && (
+				this.course.name.includes('勤勞教育') ||
+				this.course.name.includes('大學之道') ||
+				this.course.name.includes('實習前職場素養訓練') ||
+				this.course.name.includes('專題') ||
+				this.course.name.includes('工讀實務實習') ||
+				this.course.name.includes('工讀自學英文')
+			)) {
+				timeInfoText = '「'+this.course.name+'」課程無固定上課時間，請參考教學進度表，或詢問授課老師/班級導師。';
+			} else {
+				this.course.time.forEach(time => {
+					let week = time[0];
+					let section = time[1].split('~').map(section => this.time_section.indexOf(section));
+					timeInfoText += '星期' + this.week_text[week].replace(/[\(\)]/g,'') + '　' + timeInfo[section[0]][0] + ' ~ ' + timeInfo[section[1]][1] + '<br>';
+				});
+			}
+			this.$swal({
+				title: '上課時間',
+				html: '<div style="text-align:left">' + timeInfoText + '</div>',
+				showConfirmButton: false,
+				showCloseButton: true,
+				width: timeInfoText.includes('無固定') ? '24rem' : '16rem',
+			});
 		}
 	}
 }

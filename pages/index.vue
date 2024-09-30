@@ -66,12 +66,12 @@
 						<div class="ts-text is-label has-bottom-padded-small">衝堂的課程</div>
 						<div class="ts-selection is-fluid">
 							<label class="item">
-								<input type="radio" name="showConflict" value="true" v-model="showConflict"
+								<input type="radio" name="showConflict" :value="true" v-model="showConflict"
 									@change="saveSearchInput()" />
 								<div class="text">顯示</div>
 							</label>
 							<label class="item">
-								<input type="radio" name="showConflict" value="" v-model="showConflict"
+								<input type="radio" name="showConflict" :value="false" v-model="showConflict"
 									@change="saveSearchInput()" />
 								<div class="text">隱藏</div>
 							</label>
@@ -87,10 +87,9 @@
 					<div class="ts-text is-description">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
 						<div class="ts-list is-small is-unordered">
-							<div class="item">可先選擇自己的系所和班級，來儲存自己的必修課</div>
+							<div class="item">可先選擇自己的系所和班級，來儲存自己班級的必修課</div>
 							<div class="item">點選課程名稱可查看詳細資訊</div>
-							<div class="item">已儲存的課程，表格右側以藍色邊線標示</div>
-							<div class="item" v-if="showConflict">衝堂的課程，表格右側以紅色邊線標示</div>
+							<div class="item">點擊星號即可收藏，僅能收藏沒有衝堂的課程</div>
 						</div>
 					</div>
 				</div>
@@ -121,37 +120,37 @@
 								<th>修別/學分</th>
 								<th>授課老師</th>
 								<th>備註</th>
+								<th>&nbsp;</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr v-for="course in filteredCourses" :key="course.id" :class="{
-								'is-indicated': (savedCourse.includes(course.id)),
-								'is-indicated is-negative': (isConflicted(course)),
 								'is-not-clickable': course.id.includes('ALT_')
 							}" @click="showCourse(course)">
-								<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}</td>
+								<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
+									<span class="mobile-only" v-if="!course.id.includes('ALT_')">{{  course.teacher + ' 老師' }}</span>
+								</td>
 								<td class="c-name">
 									<span class="ts-icon is-volleyball-icon sport-icon"
 										v-if="course.name.includes('排球')"></span>
 									<span class="ts-icon is-basketball-icon sport-icon"
-										v-if="course.name.includes('籃球')"></span>
+										v-else-if="course.name.includes('籃球')"></span>
 									<span class="ts-icon is-table-tennis-paddle-ball-icon sport-icon"
-										v-if="course.name.includes('桌球')"></span>
+										v-else-if="course.name.includes('桌球')"></span>
 									<span class="ts-icon is-dumbbell-icon sport-icon"
-										v-if="course.name.includes('健身雕塑')"></span>
+										v-else-if="course.name.includes('健身雕塑')"></span>
 									<span class="ts-icon is-people-pulling-icon sport-icon"
-										v-if="course.name.includes('防身術')"></span>
+										v-else-if="course.name.includes('防身術')"></span>
 									<span class="ts-icon is-people-robbery-icon sport-icon"
-										v-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
+										v-else-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
 									<span class="ts-icon is-child-reaching-icon sport-icon"
-										v-if="course.name.includes('身體律動')"></span>
-									<svg class="sport-icon-badminton" v-if="course.name.includes('羽球')" version="1.1"
+										v-else-if="course.name.includes('身體律動')"></span>
+									<svg class="sport-icon-badminton" v-else-if="course.name.includes('羽球')" version="1.1"
 										xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
 										<path
 											d="M22 10v-1.5c0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5v1.5h13zM17.055 11h-3.111l-1.948 16.555-0.084 0.755 3.587 2.69 3.587-2.69-0.084-0.751-1.948-16.558zM10.883 28.529l-2.883 2.471-3-3 4-17h3.938l-1.934 16.442-0.121 1.088zM20.068 11h1.957l3.975 17-2.982 3-2.865-2.471-0.12-1.084-1.923-16.445h1.957z">
 										</path>
-									</svg>
-									{{ course.name }}
+									</svg>{{ course.name }}
 								</td>
 								<td class="c-time">
 									<span v-for="time in course.time" class="time">
@@ -160,15 +159,33 @@
 										<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
 									</span>
 								</td>
-								<td class="c-type-credit">
-									<span class="ts-badge is-small is-dense is-end-spaced has-dark"
-										:class="({ '必修': 'is-primary', '重修': 'is-secondary' })[course.type]">{{
+								<td class="c-type-credit mobile-only absolute-right">
+									<span class="ts-badge is-small has-dark"
+										:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+										{{
 											course.type +
-											(course.otherinfo ? ' | ' + course.otherinfo.substring(0, 2) : '') }}</span>
-									{{ course.credit }}
+											(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
+											' ' + course.credit
+										}} 學分
+									</span>
 								</td>
-								<td class="c-teacher">{{ course.teacher }}</td>
-								<td><span class="ts-text is-description">{{ course.comment }}</span></td>
+								<td class="c-type-credit mobile-hidden">
+									<span class="ts-badge is-small is-dense is-end-spaced has-dark"
+										:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+										{{
+											course.type +
+											(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
+										}}
+									</span>{{ course.credit }}
+								</td>
+								<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
+								<td class="c-remark">{{ course.comment }}</td>
+								<td class="c-action">
+									<span class="mobile-only absolute-right ts-badge is-small is-dense has-dark is-red" v-if="isConflicted(course)">衝堂</span>
+									<span data-position="top" data-tooltip="衝堂" class="mobile-hidden ts-icon absolute-right is-circle-exclamation-icon is-t-red" v-if="isConflicted(course)" @click.stop=""></span>
+									<span class="ts-icon absolute-right is-star-icon" v-else-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course.id)"></span>
+									<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course.id)"></span>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -235,7 +252,7 @@ export default {
 			currentDept: '',
 			currentClass: '',
 			currentType: '',
-			showConflict: 'true',
+			showConflict: undefined,
 
 			savedCourse: [],
 
@@ -244,7 +261,7 @@ export default {
 	},
 	mounted() {
 		if (localStorage['searchQuery']) this.searchQuery = localStorage['searchQuery'];
-		if (localStorage['showConflict'] !== 'true') this.showConflict = '';
+		this.showConflict = localStorage['showConflict'] !== 'false';
 		if (localStorage['savedCourse'] && JSON.parse(localStorage['savedCourse']) && JSON.parse(localStorage['savedCourse']).length > 0) {
 			this.savedCourse = JSON.parse(localStorage['savedCourse']);
 			let term_id = this.savedCourse[0].substring(0, 4);
@@ -420,9 +437,11 @@ export default {
 			if (!this.classes.includes(this.currentClass)) {
 				this.currentClass = '';
 			}
-			if (!['必修', '選修', '重修'].includes(this.currentType) && !this.generalCourseTypes.includes(this.currentType)) {
+			
+			if(!this.currentDept.includes('通識') && this.currentType.includes('-')) {
 				this.currentType = '';
 			}
+
 			this.saveSearchInput();
 		},
 		saveRequiredCourse() {
@@ -452,6 +471,15 @@ export default {
 		showCourse(course) {
 			if (course.id.includes('ALT_')) return;
 			this.$router.push('/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/');
+		},
+		saveCourse(course_id) {
+			if (this.savedCourse.includes(course_id)) {
+				this.savedCourse = this.savedCourse.filter(id => id !== course_id);
+			} else {
+				this.savedCourse.push(course_id);
+			}
+			localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		}
 	}
 }

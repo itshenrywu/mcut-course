@@ -86,61 +86,78 @@
 					<span class="ts-icon is-spinning is-spinner-icon"></span>
 					<div class="has-top-padded-small">讀取中...</div>
 				</div>
-				<div class="ts-box has-vertically-spaced-large" v-if="!loading && currentRule != '-1' && rule.data"
-					v-for="rule_type in rule.data">
-					<div class="ts-content is-tertiary is-dense">
-						{{ rule_type.name.split('（')[0] }}
-						<span class="ts-badge is-small is-dense is-start-spaced">
-							{{ rule_type.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
-						</span>
-					</div>
-					<template v-for="rule_subtype in rule_type.data">
-						<div class="ts-content is-secondary is-dense rule_subtype_name"
-							@click="rule_subtype.show = !rule_subtype.show">
-							・
-							{{ rule_subtype.name.split('（')[0] }}
-							<span class="ts-badge is-small is-dense is-outlined is-start-spaced">
-								{{ rule_subtype.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
+				<template v-if="!loading && currentRule != '-1'">
+					<div class="ts-box has-vertically-spaced-large" v-if="rule.data"
+						v-for="rule_type in rule.data">
+						<div class="ts-content is-tertiary is-dense">
+							{{ rule_type.name.split('（')[0] }}
+							<span class="ts-badge is-small is-dense is-start-spaced">
+								{{ rule_type.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
 							</span>
-							<span class="ts-icon"
-								:class="{ 'is-angle-down-icon': !rule_subtype.show, 'is-angle-up-icon': rule_subtype.show }"></span>
 						</div>
-						<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
-							<div v-show="rule_subtype.show" class="rule_subtype">
-								<table class="ts-table course-table">
-									<tbody>
-										<tr v-for="rule_item in rule_subtype.data" :class="{'is-not-clickable':findCourses(rule_item.id).length == 0}" @click="showFindCourse(rule_item.id)">
-											<td>{{ rule_item.name }}</td>
-											<td>{{ rule_item.term }}</td>
-											<td>{{ rule_item.credit }} 學分</td>
-											<td>
-												<template v-if="courses && findCourses(rule_item.id).length >= 1">
-													{{ findCourses(rule_item.id).length }} 門相符課程
-													<span class="ts-icon is-angle-right-icon"></span>
-												</template>
-											</td>
-											<td class="ts-text is-description">{{ rule_item.remark.trim() }}</td>
-										</tr>
-									</tbody>
-								</table>
+						<template v-for="rule_subtype in rule_type.data">
+							<div class="ts-content is-secondary is-dense rule_subtype_name"
+								@click="rule_subtype.show = !rule_subtype.show">
+								・
+								{{ rule_subtype.name.split('（')[0] }}
+								<span class="ts-badge is-small is-dense is-outlined is-start-spaced">
+									{{ rule_subtype.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
+								</span>
+								<span class="ts-icon"
+									:class="{ 'is-angle-down-icon': !rule_subtype.show, 'is-angle-up-icon': rule_subtype.show }"></span>
 							</div>
-						</transition>
-					</template>
-				</div>
-				<div class="ts-box has-vertically-spaced-large"
-					v-if="!loading && currentRule != '-1' && rule.remark && rule.remark.length > 0">
-					<div class="ts-content" id="remark">
-						<span class="ts-badge has-bottom-spaced-small is-small is-dense">說明</span>
-						<div v-for="remark in rule.remark" v-html="formatRemark(remark)"></div>
+							<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
+								<div v-show="rule_subtype.show" class="rule_subtype">
+									<table class="ts-table">
+										<tbody>
+											<tr v-for="rule_item in rule_subtype.data" :class="{'is-not-clickable':findCourses(rule_item.id).length == 0}" @click="showFindCourse(rule_item.id)">
+												<td>{{ rule_item.name }}</td>
+												<td>{{ rule_item.term }}</td>
+												<td>{{ rule_item.credit }} 學分</td>
+												<td>
+													<template v-if="courses && findCourses(rule_item.id).length >= 1">
+														{{ findCourses(rule_item.id).length }} 門相符課程
+														<span class="ts-icon is-angle-right-icon"></span>
+													</template>
+												</td>
+												<td class="r-remark">{{ rule_item.remark.trim() }}</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</transition>
+						</template>
 					</div>
-				</div>
-				<div class="ts-box has-vertically-spaced-large" v-if="!loading && currentRule != '-1' && rule.contact">
-					<div class="ts-content">
-						<span class="ts-badge has-bottom-spaced-small is-small is-dense">承辦人</span><br>
-						{{ rule.contact[0] + ' ' + rule.contact[1] }}<br>
-						<a :href="'tel:0229089899,' + rule.contact[2]">(02) 2908-9899 #{{ rule.contact[2] }}</a>
+					<div class="ts-box has-vertically-spaced-large" v-if="rule.remark && rule.remark.length > 0">
+						<div class="ts-content" id="remark">
+							<span class="ts-badge has-bottom-spaced-small is-small is-dense">說明</span>
+							<div v-for="remark in rule.remark" v-html="formatRemark(remark)"></div>
+						</div>
 					</div>
-				</div>
+					<div class="ts-box has-vertically-spaced-large" v-if="rule.data && currentRule != '000'">
+						<div class="ts-content">
+							<span class="ts-badge has-bottom-spaced is-small is-dense">檔案下載</span>
+							<div class="ts-wrap is-dense">
+								<a v-if="Object.values(rules[currentYear]['跨領域']).find(r => r.name == currentRuleName)" class="ts-button is-small is-dense is-short is-secondary is-start-icon" href="https://info.mcut.edu.tw/update/data/A231020008.docx" target="_blank">
+									<span class="ts-icon is-download-icon"></span>學分學程實施辦法
+								</a>
+								<a v-if="Object.values(rules[currentYear]['第二專長']).find(r => r.name == currentRuleName)" class="ts-button is-small is-dense is-short is-secondary is-start-icon" href="https://info.mcut.edu.tw/update/data/A231160002.pdf" target="_blank">
+									<span class="ts-icon is-download-icon"></span>學生修讀第二專長實施辦法
+								</a>
+								<a v-if="rule.file && rule.file != ''" class="ts-button is-small is-dense is-short is-secondary is-start-icon" :href="'https://info.mcut.edu.tw/update/%e8%a6%8f%e7%ab%a0%e9%a1%9e%e6%96%87%e4%bb%b6%e4%b8%8b%e8%bc%89.aspx?id=' + rule.file" target="_blank">
+									<span class="ts-icon is-download-icon"></span>本學分學程實施要點
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="ts-box has-vertically-spaced-large" v-if="rule.contact">
+						<div class="ts-content">
+							<span class="ts-badge has-bottom-spaced-small is-small is-dense">承辦人</span><br>
+							{{ rule.contact[0] + ' ' + rule.contact[1] }}<br>
+							<a :href="'tel:0229089899,' + rule.contact[2]">(02) 2908-9899 #{{ rule.contact[2] }}</a>
+						</div>
+					</div>
+				</template>
 			</div>
 			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>
@@ -189,7 +206,42 @@
 	cursor: pointer;
 }
 
+#page-rule td.r-remark {
+	font-size: .8rem;
+	color: var(--ts-gray-500);
+}
+
+#page-rule tr:hover {
+	background-color: var(--ts-gray-100);
+	cursor: pointer;
+}
+
+#page-rule tr.is-not-clickable {
+	pointer-events: none;
+}
+
+#page-rule tr.is-not-clickable:hover {
+	background-color: transparent;
+	cursor: default;
+}
+
 @media screen and (max-width: 768px) {
+	#page-rule,
+	#page-rule tbody,
+	#page-rule tfoot,
+	#page-rule th,
+	#page-rule td,
+	#page-rule tr {
+		display: block;
+	}
+
+	#page-rule tr:hover {
+		background-color: transparent;
+	}
+
+	#page-rule tr td {
+		padding: .05rem 1rem;
+	}
 
 	#page-rule td:nth-child(1),
 	#page-rule td:nth-child(2),
@@ -202,12 +254,13 @@
 	}
 
 	#page-rule td:nth-child(1) {
-		width: calc(100% - 11rem);
+		width: calc(100% - 12rem);
 	}
 
 	#page-rule td:nth-child(2),
 	#page-rule td:nth-child(3) {
 		text-align: right;
+		padding: 0;
 	}
 
 	#page-rule td:nth-child(4) {
@@ -254,24 +307,27 @@ export default {
 		let rules = {};
 		let years = [];
 		let terms = [];
+		let currentRuleName = '';
 
 		if (payload) {
 			depts = payload.depts;
 			rules = payload.rules;
 			terms = payload.terms;
+			currentRuleName = payload.name;
 		} else {
 			const res = await $axios.get('https://api.mcut-course.com/rule/list2.php');
 			depts = res.data.depts;
 			rules = res.data.rules;
 			terms = res.data.terms;
+			currentRuleName = '';
 		}
 
 		let currentYear = new Date().getFullYear() - 1911;
 		if (new Date().getMonth() < 8) currentYear--;
-		for (let year = 107; year <= currentYear; year++) {
+		for (let year = currentYear; year >= 108; year--) {
 			years.push(year);
 		}
-		return { depts, rules, years, terms, payload };
+		return { depts, rules, years, terms, currentRuleName };
 	},
 	data() {
 		return {
@@ -279,7 +335,9 @@ export default {
 			currentDept: '',
 			currentRule: '',
 			currentRuleTerm: '',
+			currentRuleName: '',
 
+			rules: {},
 			rule: {},
 			terms: [],
 			years: [],
@@ -292,10 +350,10 @@ export default {
 	},
 	head() {
 		return {
-			title: '課程總表' + (this.currentRuleName ? ' - ' + this.currentRuleName : '') + ' | 明志科技大學選課小幫手',
+			title: (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手',
 			meta: [
-				{ hid: 'og:title', property: 'og:title', content: '課程總表' + (this.currentRuleName ? ' - ' + this.currentRuleName : '') + ' | 明志科技大學選課小幫手' },
-				{ hid: 'twitter:title', name: 'twitter:title', content: '課程總表' + (this.currentRuleName ? ' - ' + this.currentRuleName : '') + ' | 明志科技大學選課小幫手' },
+				{ hid: 'og:title', property: 'og:title', content: (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
+				{ hid: 'twitter:title', name: 'twitter:title', content: (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
 
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com' + this.$router.currentRoute.path },
 				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
@@ -307,11 +365,6 @@ export default {
 		currentDeptName() {
 			if (this.currentDept == '') return '';
 			return Object.values(this.depts[this.currentYear]).find(item => this.currentDept in item)?.[this.currentDept];
-		},
-		currentRuleName() {
-			if (this.payload) return this.payload.name;
-			if (!this.currentRule || this.currentRule == '000') return this.currentDeptName;
-			return Object.values(this.rules[this.currentYear]).find(item => this.currentRule in item)?.[this.currentRule].name;
 		},
 		findCourses() {
 			return (sid) => {
@@ -326,25 +379,14 @@ export default {
 	methods: {
 		async init() {
 			let refreshId = false;
-			if (this.$router.currentRoute.params.id && this.$router.currentRoute.params.id.length == 9) {
-				localStorage['ruleYear'] = this.$router.currentRoute.params.id.substring(0, 3);
-				localStorage['ruleDept'] = this.$router.currentRoute.params.id.substring(3, 6);
-				localStorage['ruleRule'] = this.$router.currentRoute.params.id.substring(6, 9);
-			}
-
-			if (localStorage['ruleYear'] && this.years.includes(localStorage['ruleYear'])) this.currentYear = localStorage['ruleYear'];
-			else this.currentYear = this.years[this.years.length - 1];
-
-			if (localStorage['ruleDept']) this.currentDept = localStorage['ruleDept'];
-			if (!this.currentDeptName) {
-				this.currentDept = Object.keys(Object.values(this.depts[this.currentYear])[0])[0];
-				refreshId = true;
-			}
-
-			if (localStorage['ruleRule']) this.currentRule = localStorage['ruleRule'];
-			if (!this.currentRule) {
-				this.currentRule = '-1';
-				refreshId = true;
+			if (this.$route.params.id) {
+				this.currentYear = this.$route.params.year;
+				this.currentDept = this.$route.params.dept;
+				this.currentRule = this.$route.params.id;
+			} else {
+				this.currentYear = localStorage['ruleYear'] || this.years[0];
+				this.currentDept = localStorage['ruleDept'] || Object.keys(Object.values(this.depts[this.currentYear])[0])[0];
+				this.currentRule = localStorage['ruleRule'] || '-1';
 			}
 
 			if (this.terms.includes(localStorage['ruleTerm'])) this.currentRuleTerm = localStorage['ruleTerm'];
@@ -360,20 +402,24 @@ export default {
 			localStorage['ruleYear'] = this.currentYear;
 			localStorage['ruleDept'] = this.currentDept;
 			localStorage['ruleRule'] = this.currentRule;
-			history.replaceState([], '', '/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/');
+			if(this.$route.path != '/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/') {
+				this.$router.replace('/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/');
+			}
 			this.getRule();
 		},
 		chooseYear() {
 			if (!this.currentDeptName) this.currentDept = Object.keys(Object.values(this.depts[this.currentYear])[0])[0];
 			this.currentRule = -1;
-			history.replaceState([], '', '/rule/');
+			this.$router.replace('/rule/');
 		},
 		chooseDept() {
 			this.currentRule = -1;
-			history.replaceState([], '', '/rule/');
+			this.$router.replace('/rule/');
 		},
 		getRule() {
 			this.loading = true;
+			if(this.currentRule == '000') this.currentRuleName = this.currentDeptName;
+			else this.currentRuleName = Object.values(this.rules[this.currentYear]).find(item => this.currentRule in item)?.[this.currentRule].name;
 			this.$axios.get('https://api.mcut-course.com/rule/get.php?year=' + this.currentYear + '&dept=' + this.currentDept + '&rule=' + this.currentRule)
 				.then(res => {
 					this.rule = res.data;

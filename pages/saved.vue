@@ -73,52 +73,70 @@
 							<th>修別/學分</th>
 							<th>授課老師</th>
 							<th>備註</th>
+							<th>&nbsp;</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr v-for="course in filteredCourses" :key="course.id" :class="{
 							'is-not-clickable': course.id.includes('ALT_')
 						}" @click="showCourse(course)">
-							<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}</td>
+							<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
+								<span class="mobile-only" v-if="!course.id.includes('ALT_')">{{  course.teacher + ' 老師' }}</span>
+							</td>
 							<td class="c-name">
 								<span class="ts-icon is-volleyball-icon sport-icon"
 									v-if="course.name.includes('排球')"></span>
 								<span class="ts-icon is-basketball-icon sport-icon"
-									v-if="course.name.includes('籃球')"></span>
+									v-else-if="course.name.includes('籃球')"></span>
 								<span class="ts-icon is-table-tennis-paddle-ball-icon sport-icon"
-									v-if="course.name.includes('桌球')"></span>
+									v-else-if="course.name.includes('桌球')"></span>
 								<span class="ts-icon is-dumbbell-icon sport-icon"
-									v-if="course.name.includes('健身雕塑')"></span>
+									v-else-if="course.name.includes('健身雕塑')"></span>
 								<span class="ts-icon is-people-pulling-icon sport-icon"
-									v-if="course.name.includes('防身術')"></span>
+									v-else-if="course.name.includes('防身術')"></span>
 								<span class="ts-icon is-people-robbery-icon sport-icon"
-									v-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
+									v-else-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
 								<span class="ts-icon is-child-reaching-icon sport-icon"
-									v-if="course.name.includes('身體律動')"></span>
-								<svg class="sport-icon-badminton" v-if="course.name.includes('羽球')" version="1.1"
+									v-else-if="course.name.includes('身體律動')"></span>
+								<svg class="sport-icon-badminton" v-else-if="course.name.includes('羽球')" version="1.1"
 									xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
 									<path
 										d="M22 10v-1.5c0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5v1.5h13zM17.055 11h-3.111l-1.948 16.555-0.084 0.755 3.587 2.69 3.587-2.69-0.084-0.751-1.948-16.558zM10.883 28.529l-2.883 2.471-3-3 4-17h3.938l-1.934 16.442-0.121 1.088zM20.068 11h1.957l3.975 17-2.982 3-2.865-2.471-0.12-1.084-1.923-16.445h1.957z">
 									</path>
-								</svg>
-								{{ course.name }}
+								</svg>{{ course.name }}
 							</td>
-							<td class="c-tie">
+							<td class="c-time">
 								<span v-for="time in course.time" class="time">
 									<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
 										week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
 									<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
 								</span>
 							</td>
-							<td class="c-type-credit">
-								<span class="ts-badge is-small is-dense is-end-spaced has-dark"
-									:class="({ '必修': 'is-primary', '重修': 'is-secondary' })[course.type]">{{
+							<td class="c-type-credit mobile-only absolute-right">
+								<span class="ts-badge is-small has-dark"
+									:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+									{{
 										course.type +
-										(course.otherinfo ? ' | ' + course.otherinfo.substring(0, 2) : '') }}</span>
-								{{ course.credit }}
+										(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
+										' ' + course.credit
+									}} 學分
+								</span>
 							</td>
-							<td class="c-teacher">{{ course.teacher }}</td>
-							<td><span class="ts-text is-description">{{ course.comment }}</span></td>
+							<td class="c-type-credit mobile-hidden">
+								<span class="ts-badge is-small is-dense is-end-spaced has-dark"
+									:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+									{{
+										course.type +
+										(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
+									}}
+								</span>{{ course.credit }}
+							</td>
+							<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
+							<td class="c-remark">{{ course.comment }}</td>
+							<td class="c-action">
+								<span class="ts-icon absolute-right is-star-icon" v-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course)"></span>
+								<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course)"></span>
+							</td>
 						</tr>
 					</tbody>
 				</table>
@@ -131,15 +149,16 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr v-for="section in time_section">
+						<tr v-for="section in time_section" v-if="section <= maxEndSection">
 							<td>{{ section }}</td>
 							<td v-for="w in 6">
 								<div v-if="coursedByStartTime[w] && coursedByStartTime[w][section] && coursedByStartTime[w][section].length >= 1"
-									@click="showCourse(coursedByStartTime[w][section][0])" :style="{
-										'height': (coursedByStartTime[w][section][0].period * 2.8) - .7 + 'rem',
-										'background': 'var(--ts-static-' + ({ '必修': 'primary-500', '選修': 'gray-200', '重修': 'gray-800' })[coursedByStartTime[w][section][0].type],
-										'color': 'var(--ts-static-' + ({ '必修': 'gray-50', '選修': 'gray-900', '重修': 'gray-50' })[coursedByStartTime[w][section][0].type]
-									}">
+									:class="{
+										'is-orange': coursedByStartTime[w][section][0].type == '必修',
+										'is-green': coursedByStartTime[w][section][0].type == '選修',
+										'is-gray': coursedByStartTime[w][section][0].type == '重修',
+									}"
+									@click="showCourse(coursedByStartTime[w][section][0])" :style="{'height': (coursedByStartTime[w][section][0].period * 2.8) - .7 + 'rem'}">
 									<div>{{ coursedByStartTime[w][section][0].name }}</div>
 								</div>
 							</td>
@@ -185,8 +204,8 @@
 }
 
 .course-timetable td {
-	font-size: 11px !important;
-	line-height: 1.1rem;
+	font-size: 12px !important;
+	line-height: 1rem;
 	padding: 0;
 	height: 2.7rem !important;
 	position: relative;
@@ -218,6 +237,17 @@
 	#page-saved .ts-grid .column.mobile-fluid .ts-button {
 		width: calc(50% - .5rem);
 	}
+
+	.course-timetable th:first-child,
+	.course-timetable td:first-child {
+		width: 1rem;
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+
+	.course-timetable td {
+		font-size: 10px !important;
+	}
 }
 </style>
 <script>
@@ -242,7 +272,8 @@ export default {
 			loading: true,
 			savedCourse: [],
 			courses: [],
-			displayType: ''
+			displayType: '',
+			maxEndSection: 8,
 		}
 	},
 	mounted() {
@@ -313,6 +344,10 @@ export default {
 					const startTime = timeRange.split('~')[0];
 					const endTime = timeRange.split('~')[1];
 
+					if (this.maxEndSection < parseFloat(endTime)) {
+						this.maxEndSection = parseFloat(endTime);
+					}
+
 					if (!result[weekday]) {
 						result[weekday] = {};
 					}
@@ -354,9 +389,10 @@ export default {
 			this.$swal({
 				icon: 'question',
 				title: '清除所有收藏的課程？',
-				confirmButtonText: '確定',
+				confirmButtonText: '清除',
 				cancelButtonText: '取消',
 				showCancelButton: true,
+				confirmButtonColor: 'var(--ts-negative-600)',
 			})
 				.then((res) => {
 					if (res.isConfirmed) {
@@ -374,6 +410,25 @@ export default {
 		showCourse(course) {
 			if (course.id.includes('ALT_')) return;
 			this.$router.push('/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/');
+		},
+		saveCourse(course) {
+			this.$swal({
+				icon: 'question',
+				title: '移除收藏的課程「'+course.name+'」？',
+				confirmButtonText: '移除',
+				cancelButtonText: '取消',
+				showCancelButton: true,
+				confirmButtonColor: 'var(--ts-negative-600)',
+			})
+				.then((res) => {
+					if (res.isConfirmed) {
+						if (this.savedCourse.includes(course.id)) {
+							this.savedCourse = this.savedCourse.filter(id => id !== course.id);
+						}
+						localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+						this.$root.$emit('updateSavedCourse', this.savedCourse);
+					}
+				});
 		},
 		changeDisplayType() {
 			localStorage['displayType'] = this.displayType ? '1' : '';
