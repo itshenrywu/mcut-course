@@ -130,7 +130,7 @@
 					</tr>
 					<tr v-for="m in more">
 						<td>{{ m[0] }}</td>
-						<td v-if="m[0] == '教學方法'">
+						<td v-if="m[0] == '教學方法' && m[1].trim()!=''">
 							<div class="ts-wrap is-compact">
 								<div class="ts-badge is-secondary is-dense" v-for="method in m[1].split(',')" v-html="method"></div>
 							</div>

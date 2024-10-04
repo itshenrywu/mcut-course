@@ -392,6 +392,7 @@ export default {
 		chooseTerm(term) {
 			if (this.currentTerm == term) return;
 			this.$swal({
+				icon: 'question',
 				title: '切換為「' + term + '」學期？',
 				html: '先前收藏的課程將會清空！',
 				confirmButtonText: '確定',

@@ -160,7 +160,7 @@ h1 {
 }
 
 .course-table td.c-action {
-	text-align: center;
+	text-align: right;
 }
 
 .course-table th:last-child {
@@ -271,7 +271,7 @@ h1 {
 
 	.course-table td.c-type-credit.mobile-only {
 		right: 0;
-		top: .65rem;
+		top: .7rem;
 	}
 
 	.absolute-right {
@@ -281,7 +281,7 @@ h1 {
 	}
 
 	.course-table td.c-action .ts-badge {
-		top: 2.6rem;
+		top: 2.55rem;
 		padding: .225rem .5rem;
 	}
 

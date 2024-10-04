@@ -508,7 +508,7 @@ export default {
 				this.$swal({
 					icon: 'warning',
 					title: '欲選課學期與收藏的課程學期不同',
-					html: '是否要清空目前已收藏的課程，並切換至 ' + this.currentRuleTerm + ' 學期以檢視相符的課程？',
+					html: '目前收藏的課程為 '+savedCourse[0].substring(0,3)+'-'+savedCourse[0].substring(3,4)+' 學期，是否要清空並切換至 ' + this.currentRuleTerm + ' 學期以檢視相符的課程？',
 					confirmButtonText: '切換並檢視',
 					cancelButtonText: '取消',
 					showCancelButton: true,
@@ -517,7 +517,7 @@ export default {
 					if (res.isConfirmed) {
 						localStorage['savedCourse'] = '[]';
 						localStorage['term'] = this.currentRuleTerm;
-						localStorage['searchQuery'] = this.currentRuleTerm.replace('-', '') + sid;
+						localStorage['searchQuery'] = sid;
 						localStorage['dept'] = '';
 						localStorage['class'] = '';
 						localStorage['type'] = '';
@@ -528,7 +528,7 @@ export default {
 			}
 			localStorage['savedCourse'] = '[]';
 			localStorage['term'] = this.currentRuleTerm;
-			localStorage['searchQuery'] = this.currentRuleTerm.replace('-', '') + sid;
+			localStorage['searchQuery'] = sid;
 			localStorage['dept'] = '';
 			localStorage['class'] = '';
 			localStorage['type'] = '';

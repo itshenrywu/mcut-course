@@ -3,7 +3,9 @@
 		<div class="ts-container has-top-padded-large">
 			<div class="ts-grid is-compact is-middle-aligned">
 				<div class="column is-10-wide mobile-fluid">
-					<h1 class="ts-header is-huge has-vertically-padded">收藏的課程</h1>
+					<h1 class="ts-header is-huge has-vertically-padded">收藏的課程
+						<div class="ts-badge is-start-spaced is-outlined" v-if="currentTerm && currentTerm!=''">{{ currentTerm }} 學期</div>
+					</h1>
 				</div>
 				<div class="column is-6-wide mobile-fluid">
 					<div class="ts-wrap is-end-aligned">
@@ -404,6 +406,7 @@ export default {
 						this.savedCourse = [];
 						localStorage['savedCourse'] = '[]';
 						this.$root.$emit('updateSavedCourse', this.savedCourse);
+						this.currentTerm = '';
 					}
 				});
 		},
@@ -427,6 +430,7 @@ export default {
 						}
 						localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
 						this.$root.$emit('updateSavedCourse', this.savedCourse);
+						if(this.savedCourse.length == 0) this.currentTerm = '';
 					}
 				});
 		},
