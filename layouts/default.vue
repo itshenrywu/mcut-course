@@ -19,6 +19,24 @@ export default {
 			}
 		}
 	},
+	mounted() {
+		if(localStorage['acceptTerms'] == undefined) {
+			this.$swal({
+				title: '關於本站 & 免責聲明',
+				html: '<div style="text-align:left">\
+					本網站由明志科技大學 107 級工業工程與管理系畢業校友 <a target="_blank" href="https://henrywu.tw">Henry Wu</a> 開發製作，並非學校官方系統。若您對本網站有任何疑慮，請避免使用。<br><br>\
+					本網站的資料來源於<a rel="nofollow" target="_blank" href="https://bit.ly/4eqiQKH">明志科技大學年度開課資料查詢系統</a>及<a rel="nofollow" target="_blank" href="https://bit.ly/3TKmBCq">入學課程總表查詢系統</a>，且會自動同步資料。由於資料可能因網路狀況而有所延遲或缺漏，內容僅供參考，實際資訊請以學校公告為準。如因資料錯誤導致任何損失，本站概不負責。\
+				</div>',
+				confirmButtonText: '我同意，繼續使用',
+				allowOutsideClick: false,
+				allowEscapeKey: false
+			}).then((res) => {
+				if (res.isConfirmed) {
+					localStorage['acceptTerms'] = '1';
+				}
+			});
+		}
+	}
 };
 </script>
 <style>

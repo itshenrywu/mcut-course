@@ -23,7 +23,9 @@ export default {
 			{ rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
 			{ rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
 			{ rel: "manifest", href: "/site.webmanifest" },
-			{ rel: 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css' }
+			{ rel: 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css' },
+			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css', media: "(prefers-color-scheme: light)"},
+			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.18/dark.min.css', media: "(prefers-color-scheme: dark)"}
 		],
 		script: [
 			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.js' }
@@ -32,7 +34,7 @@ export default {
 	components: true,
 	modules: [
 		'@nuxtjs/axios',
-		'vue-sweetalert2/nuxt',
+		'vue-sweetalert2/nuxt/no-css',
 		'@nuxtjs/google-gtag'
 	],
 	sweetalert: {

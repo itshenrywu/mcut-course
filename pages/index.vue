@@ -232,7 +232,6 @@ export default {
 			time_section: ['0.5', '1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
 			week_text: ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''],
 			courses: [],
-			rates: [],
 			terms: [],
 			defaultDeptGroup: {
 				'全校': [],
@@ -357,7 +356,6 @@ export default {
 		processData(data) {
 			this.courses = data.course;
 			this.terms = data.term;
-			this.rates = data.rates;
 			this.depts = JSON.parse(JSON.stringify(this.defaultDeptGroup));
 
 			let depts = this.courses.map(course => course.dept).filter((value, index, self) => self.indexOf(value) === index);

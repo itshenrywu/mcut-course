@@ -457,7 +457,7 @@ export default {
 			} else {
 				this.$swal({
 					title: '分享這門課程',
-					html: '<div class="ts-box has-light"><div class="ts-content is-start-aligned is-dense">' + document.location.origin + document.location.pathname + '</div></div>',
+					html: '<div class="ts-box"><div class="ts-content is-start-aligned is-dense">' + document.location.origin + document.location.pathname + '</div></div>',
 					confirmButtonText: '複製網址',
 					showCloseButton: true,
 				}).then((result) => {

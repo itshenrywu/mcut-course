@@ -276,6 +276,7 @@ export default {
 			courses: [],
 			displayType: '',
 			maxEndSection: 8,
+			currentTerm: undefined
 		}
 	},
 	mounted() {
@@ -452,7 +453,7 @@ export default {
 			} else {
 				this.$swal({
 					title: '匯出收藏的課程',
-					html: '將以下連結複製後，在其他裝置貼上即可匯入<br><div class="ts-box has-light has-top-spaced"><div class="ts-content is-start-aligned is-dense">' + document.location.origin + document.location.pathname + '?ids=' + ids + '</div></div>',
+					html: '將以下連結複製後，在其他裝置貼上即可匯入<br><div class="ts-box has-top-spaced"><div class="ts-content is-start-aligned is-dense">' + document.location.origin + document.location.pathname + '?ids=' + ids + '</div></div>',
 					confirmButtonText: '複製網址',
 					showCloseButton: true
 				}).then((result) => {
