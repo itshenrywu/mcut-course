@@ -314,7 +314,7 @@ export default {
 				{ hid: 'description', name: 'description', content: this.course.dept + ' ' + this.course.year + ' ' + this.course.class + '・' + this.course.type + '・' + this.course.credit + ' 學分・' + this.course.teacher + ' 老師' },
 				{ hid: 'og:description', name: 'og:description', content: this.course.dept + ' ' + this.course.year + ' ' + this.course.class + '・' + this.course.type + '・' + this.course.credit + ' 學分・' + this.course.teacher + ' 老師' },
 
-				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-bot.henrywu.tw' + this.$router.currentRoute.path },
+				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com' + this.$router.currentRoute.path },
 				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
 				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() }
 			]
