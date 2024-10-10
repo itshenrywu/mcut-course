@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3070/0A01", (function(a,b){return {data:[{course:{time:[["1",a],[b,a]],id:"111130700A01",name:"英文閱讀與聽力訓練（五）",type:"選修",dept:"管理暨設計學院",year:b,class:"甲",teacher:"張錫恩",credit:"0",classroom:"629實驗室",max:"60",min:"10",comment:"管設學院榮譽學程大三必修",otherinfo:null}}],fetch:{},mutations:void 0}}("9~11","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1370/0R02", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112113700R02",name:"物理化學(一)",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"劉宗宏",credit:"3",classroom:"體207",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

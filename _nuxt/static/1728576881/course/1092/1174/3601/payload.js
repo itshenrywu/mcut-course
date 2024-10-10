@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1174/3601", (function(a){return {data:[{course:{time:[[a,"8.5~8.5"],["5","5~6"]],id:"109211743601",name:"工程數學(二)",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"傅本然",credit:"3",classroom:"機301",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

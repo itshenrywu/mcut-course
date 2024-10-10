@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1180/0I01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112111800I01",name:"系統化機構設計",type:"選修",dept:"機械系碩士班",year:a,class:"甲",teacher:"謝文賓",credit:"3",classroom:"機209",max:"14",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/6270/0201", {data:[{course:{time:[["4","5~7"]],id:"112162700201",name:"普通化學",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"陳政佑",credit:"3",classroom:"教206",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

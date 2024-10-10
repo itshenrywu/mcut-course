@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0401/0301", (function(a){return {data:[{course:{time:[["2","8~8.5"]],id:"109104010301",name:"大學之道",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"李英正",credit:a,classroom:"體207",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

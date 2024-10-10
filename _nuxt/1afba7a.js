@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{381:function(l,n,o){"use strict";o.r(n);var t={mounted:function(){localStorage.clear(),location.href="/"}},c=o(34),component=Object(c.a)(t,(function(){return(0,this._self._c)("div",{staticClass:"cell is-scrollable is-fluid is-horizontal"})}),[],!1,null,null,null);n.default=component.exports}}]);

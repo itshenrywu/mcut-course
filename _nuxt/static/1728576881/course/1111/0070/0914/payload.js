@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0070/0914", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"111100700914",name:"實習前職場素養訓練",type:"必修",dept:"四技環安衛系",year:"3",class:"甲",teacher:"陳慶隆",credit:a,classroom:"教206",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1","0.5~0.5")));

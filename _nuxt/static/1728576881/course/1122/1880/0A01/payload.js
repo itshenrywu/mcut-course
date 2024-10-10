@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1880/0A01", {data:[{course:{time:[["4","5~7"]],id:"112218800A01",name:"奈米生醫與綠色材料",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"陳韻竹",credit:"3",classroom:"體204",max:"50",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

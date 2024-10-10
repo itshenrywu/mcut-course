@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2270/0U02", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109222700U02",name:"管理經濟",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"林鴻裕",credit:"3",classroom:"教207",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

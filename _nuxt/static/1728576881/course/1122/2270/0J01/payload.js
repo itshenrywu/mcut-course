@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2270/0J01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112222700J01",name:"組織行為",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"陳明發",credit:"3",classroom:"體201",max:"5",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

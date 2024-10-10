@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3350/0901", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112133500901",name:"劇本創作",type:"必修",dept:"四技視傳系",year:a,class:"甲",teacher:"朱賢哲",credit:"3",classroom:"811",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

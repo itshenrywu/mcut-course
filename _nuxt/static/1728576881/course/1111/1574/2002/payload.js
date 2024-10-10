@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1574/2002", {data:[{course:{time:[["2","5~7"]],id:"111115742002",name:"晶片設計實務",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"陳華彬",credit:"3",classroom:"子110",max:"30",min:"10",comment:"甲乙合班，微電子模組、資工系統模組選修。",otherinfo:null}}],fetch:{},mutations:void 0});

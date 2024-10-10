@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/278O/0101", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"1091278O0101",name:"高等生物化學",type:"選修",dept:"化工系生工碩士班",year:a,class:"甲",teacher:"劉昭麟",credit:"3",classroom:"教301-2",max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

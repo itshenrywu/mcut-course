@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/18C4/0601", {data:[{course:{time:[["5","9~11"]],id:"109218C40601",name:"材料專題實務(三)",type:"選修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"黃啓賢",credit:"3",classroom:"材料實驗室",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

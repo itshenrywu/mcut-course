@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/61P0/0C01", {data:[{course:{time:[["4","2~4"]],id:"113161P00C01",name:"高等電化學實驗分析技術",type:"選修",dept:"能源電池博士班",year:"1",class:"甲",teacher:"約瑟",credit:"3",classroom:"綠215",max:"20",min:"2",comment:"English-taught course。",otherinfo:null}}],fetch:{},mutations:void 0});

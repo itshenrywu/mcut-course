@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2270/2401", {data:[{course:{time:[["1","2~4"]],id:"112122702401",name:"財務管理",type:"必修",dept:"四技經管系",year:"2",class:"甲",teacher:"薄榮薇",credit:"3",classroom:"體403",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

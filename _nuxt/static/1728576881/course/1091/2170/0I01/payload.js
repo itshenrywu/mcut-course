@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2170/0I01", {data:[{course:{time:[["4","5~6"]],id:"109121700I01",name:"應用英文(一)",type:"必修",dept:"四技工管系",year:"2",class:"甲",teacher:"夏珮玲",credit:"1",classroom:"教203",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

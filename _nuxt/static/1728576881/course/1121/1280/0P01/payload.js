@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1280/0P01", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"112112800P01",name:"智慧通訊組書報討論(一)",type:"必修",dept:"電機系碩士班",year:a,class:"甲",teacher:"古家豪",credit:"0",classroom:"電322",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

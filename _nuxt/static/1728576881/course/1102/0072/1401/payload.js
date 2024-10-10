@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0072/1401", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"110200721401",name:"全民國防教育軍事訓練(二)",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"李大偉",credit:"0",classroom:"體1階",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

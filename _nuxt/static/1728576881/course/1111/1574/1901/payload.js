@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1574/1901", {data:[{course:{time:[["2","2~4"]],id:"111115741901",name:"工程倫理與專業實務講座",type:"必修",dept:"四技電子系",year:"4",class:"甲",teacher:"陳華彬",credit:"1",classroom:"子110",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

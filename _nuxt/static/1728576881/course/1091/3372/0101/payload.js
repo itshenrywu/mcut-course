@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3372/0101", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"109133720101",name:"2D影像設計",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"姚韋禎",credit:a,classroom:"804-高階電腦",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

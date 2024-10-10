@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/12C0/2602", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"109212C02602",name:"信號與系統",type:"必修",dept:"四技進修部電機系",year:a,class:"甲",teacher:"陳玟凱",credit:a,classroom:"電307",max:"47",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

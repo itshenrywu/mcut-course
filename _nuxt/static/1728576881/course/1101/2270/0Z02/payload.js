@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2270/0Z02", {data:[{course:{time:[["1","1~2"]],id:"110122700Z02",name:"產業分析",type:"必修",dept:"四技經管系",year:"4",class:"乙",teacher:"廖宜慶",credit:"2",classroom:"教208",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

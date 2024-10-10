@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/1370/2401", (function(a,b){return {data:[{course:{time:[["1",a],[b,a]],id:"111313702401",name:"反應工程",type:"重修",dept:"四技化工系",year:b,class:"暑",teacher:"陳政佑",credit:"3",classroom:"教202",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5~7","4")));

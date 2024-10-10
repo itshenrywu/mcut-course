@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3170/1D01", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"112131701D01",name:"APP 應用程式設計概論",type:"必修",dept:"四技工設系",year:a,class:"甲",teacher:"謝政道",credit:"2",classroom:"CAID工作坊",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3070/3M02", {data:[{course:{time:[["2","5~7"]],id:"112230703M02",name:"AI生成與應用",type:"選修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"李育菁",credit:"3",classroom:"808",max:"42",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

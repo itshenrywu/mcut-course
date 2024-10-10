@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/6270/2801", {data:[{course:{time:[["5","5~7"]],id:"113162702801",name:"網路實務",type:"選修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"羅安良",credit:"3",classroom:"AI學程309",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

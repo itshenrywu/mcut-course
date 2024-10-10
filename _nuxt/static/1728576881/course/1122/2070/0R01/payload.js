@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/0R01", {data:[{course:{time:[["4","7~8"]],id:"112220700R01",name:"工程數學(一)",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"陳隆暉",credit:"2",classroom:"教304",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

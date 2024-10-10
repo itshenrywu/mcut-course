@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1680/0G01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113116800G01",name:"環境物化處理",type:"必修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"陳慶隆",credit:"3",classroom:"綜138",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

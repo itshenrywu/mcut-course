@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/1B01", {data:[{course:{time:[["4","5~6"]],id:"113101701B01",name:"藝術欣賞",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"李淑珠",credit:"2",classroom:"811",max:"45",min:"10",comment:"",otherinfo:"人文藝術"}}],fetch:{},mutations:void 0});

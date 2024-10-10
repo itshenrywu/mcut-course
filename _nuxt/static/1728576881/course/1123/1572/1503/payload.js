@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/1572/1503", (function(a,b){return {data:[{course:{time:[["2",a],[b,a]],id:"112315721503",name:"半導體元件",type:"重修",dept:"四技電子系",year:b,class:"暑",teacher:"王志良",credit:"3",classroom:"子313",max:"5",min:"1",comment:"併113三上(甲班)課程",otherinfo:null}}],fetch:{},mutations:void 0}}("7~8","4")));
