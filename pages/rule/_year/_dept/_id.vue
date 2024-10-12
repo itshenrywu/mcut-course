@@ -120,7 +120,14 @@
 														<span class="ts-icon is-angle-right-icon"></span>
 													</template>
 												</td>
-												<td class="r-remark">{{ rule_item.remark.trim() }}</td>
+												<td class="r-remark">
+													<span v-if="['永續發展與社會實踐', '經典教育與社會實踐'].includes(rule_item.name)" @click.stop="showInfo(rule_item.name)">
+														通識中心 X+1 課程，詳細說明 <span class="ts-icon is-angle-right-icon"></span>
+													</span>
+													<span v-else-if="rule_item.remark">
+														{{ rule_item.remark }}
+													</span>
+												</td>
 											</tr>
 										</tbody>
 									</table>
@@ -214,10 +221,6 @@
 #page-rule tr:hover {
 	background-color: var(--ts-gray-100);
 	cursor: pointer;
-}
-
-#page-rule tr.is-not-clickable {
-	pointer-events: none;
 }
 
 #page-rule tr.is-not-clickable:hover {
@@ -502,6 +505,7 @@ export default {
 			}
 		},
 		showFindCourse(sid) {
+			if(this.findCourses(sid).length == 0) return;
 			let savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]') || [];
 			
 			if(savedCourse.length >= 1 && savedCourse[0].substring(0,4) != this.currentRuleTerm.replace('-', '')) {
@@ -533,6 +537,28 @@ export default {
 			localStorage['class'] = '';
 			localStorage['type'] = '';
 			this.$router.push('/');
+		},
+		showInfo(name) {
+			if(['永續發展與社會實踐', '經典教育與社會實踐'].includes(name)) {
+				this.$swal({
+					title: name + ' 開課方式',
+					html: '<div style="text-align:left">\
+					<div class="ts-header is-large">1. 與通識必選課結合 (X+1)</div>\
+					<p>在大一、大二的必修（如國文、英文、體育）或通識選修開學時，由老師詢問同學修課意願（依任課老師意願，不是每堂課都會詢問），達 15 人以上即可開設。</p>\
+					<div class="ts-header is-large">2. 由通識中心開設課程</div>\
+					<p style="margin-bottom:0">課程會開設在大三及大四，類似通識選修，將於選課系統上供學生選課。</p>\
+					</div>',
+					showConfirmButton: this.findCourses('00700F'),
+					confirmButtonText: '查看 '+this.currentRuleTerm+' 開課課程',
+					confirmButtonColor: 'var(--ts-gray-400)',
+					showCloseButton: true
+				})
+				.then((res) => {
+					if (res.isConfirmed) {
+						this.showFindCourse('00700F');
+					}
+				});
+			}
 		},
 
 		beforeSlide(el) {

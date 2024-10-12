@@ -39,7 +39,7 @@ export default {
 	],
 	sweetalert: {
 		confirmButtonColor: 'var(--ts-primary-600)',
-		cancelButtonColor: 'var(--ts-gray-500)'
+		cancelButtonColor: 'var(--ts-gray-400)'
 	},
 	axios: {
 		baseURL: '/',
