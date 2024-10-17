@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2880/2201", {data:[{course:{time:[["4","9~11"]],id:"110228802201",name:"綠色環境規劃",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"姚志廷",credit:"3",classroom:"體203",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

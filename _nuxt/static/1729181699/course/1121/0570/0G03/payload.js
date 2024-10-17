@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0570/0G03", (function(a){return {data:[{course:{time:[[a,"3~4"],["2","6~6"]],id:"112105700G03",name:"普通物理",type:"必修",dept:"四技電子系",year:a,class:"甲",teacher:"劉岳峰",credit:"3",classroom:"子313",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

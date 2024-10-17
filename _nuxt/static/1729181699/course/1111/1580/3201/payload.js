@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1580/3201", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"111115803201",name:"電磁波理論",type:"選修",dept:"電子系碩士班",year:a,class:"甲",teacher:"廖兆祥",credit:"3",classroom:"子314",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

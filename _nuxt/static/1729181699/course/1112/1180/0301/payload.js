@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1180/0301", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"111211800301",name:"模糊邏輯與類神經網路控制",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"陳宏毅",credit:"3",classroom:"機209",max:"14",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

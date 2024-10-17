@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/0P01", {data:[{course:{time:[["5","2~4"]],id:"111230700P01",name:"統計學",type:"必修",dept:"四技行設專班",year:"1",class:"乙",teacher:"盧建中",credit:"3",classroom:"教203",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

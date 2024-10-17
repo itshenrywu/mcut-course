@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2270/1S01", {data:[{course:{time:[["2","2~4"]],id:"109122701S01",name:"貨幣銀行學",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"林鴻裕",credit:"3",classroom:"505",max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:void 0});

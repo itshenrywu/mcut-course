@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0070/0301", (function(a){return {data:[{course:{time:[["7","9~9"]],id:"109100700301",name:"工讀實務實習(三)",type:"重修",dept:"四技電子系",year:a,class:"重",teacher:"謝滄岩",credit:a,classroom:"網路",max:"1",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

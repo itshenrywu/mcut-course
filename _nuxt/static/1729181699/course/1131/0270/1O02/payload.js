@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0270/1O02", {data:[{course:{time:[["2","5~7"]],id:"113102701O02",name:"生活與職場英文(初級)(一)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"鄭巧雯",credit:"3",classroom:"綜大多媒體教室",max:"40",min:"10",comment:"機械AI初B",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0404/0107", (function(a,b){return {data:[{course:{time:[[a,"5~6"],[b,"1~1"]],id:"109104040107",name:"普通物理",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"張盛義",credit:b,classroom:"子315",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

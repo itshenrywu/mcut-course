@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/0J01", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"113103700J01",name:"流行音樂與台灣社會",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"鄭銘德",credit:"2",classroom:"教205",max:"45",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:void 0}}("1")));

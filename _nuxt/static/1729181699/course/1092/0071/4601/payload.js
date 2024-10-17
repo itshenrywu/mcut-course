@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0071/4601", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"109200714601",name:"報導文學選讀",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"蒲彥光",credit:"2",classroom:"教205",max:"48",min:"10",comment:"",otherinfo:"人文藝術"}}],fetch:{},mutations:void 0}}("1")));

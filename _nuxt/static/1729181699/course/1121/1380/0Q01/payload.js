@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1380/0Q01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112113800Q01",name:"微生物技術",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"簡良榮",credit:"3",classroom:"綠308",max:"20",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/18C3/0302", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"112318C30302",name:"物理冶金(一)",type:"重修",dept:"四技進修部材工系",year:a,class:"暑",teacher:"曾傳銘",credit:c,classroom:"教309",max:"20",min:"1",comment:"與日間部併班上課",otherinfo:null}}],fetch:{},mutations:void 0}}("2","3~4","3")));

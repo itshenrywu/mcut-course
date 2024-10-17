@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/02C0/0201", {data:[{course:{time:[["4","9~10"]],id:"110202C00201",name:"英語聽講(一)",type:"必修",dept:"四技進修部機械系",year:"3",class:"甲",teacher:"梁傑榮",credit:"1",classroom:"教307",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

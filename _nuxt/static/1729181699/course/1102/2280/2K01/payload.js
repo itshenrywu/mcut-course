@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/2K01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"110222802K01",name:"產業分析專題",type:"選修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"陳昭蓉",credit:"3",classroom:"506",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0670/0A04", {data:[{course:{time:[["5","3~4"]],id:"112106700A04",name:"體育(三)排球",type:"必修",dept:"體育組-四技(日)",year:"2",class:"甲",teacher:"秦文華",credit:"1",classroom:"體5F排球場",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

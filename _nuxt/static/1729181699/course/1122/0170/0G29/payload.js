@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0170/0G29", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"112201700G29",name:"藝文涵養與社會參與",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"張淑芬",credit:a,classroom:"教308",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

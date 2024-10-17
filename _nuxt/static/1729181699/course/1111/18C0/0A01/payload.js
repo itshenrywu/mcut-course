@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/18C0/0A01", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"111118C00A01",name:"鑄造學",type:"選修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"梁煥昌",credit:a,classroom:"綜大135",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

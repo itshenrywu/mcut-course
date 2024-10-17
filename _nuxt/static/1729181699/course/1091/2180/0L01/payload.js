@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2180/0L01", {data:[{course:{time:[["4","2~4"]],id:"109121800L01",name:"數據分析與應用",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"陳思翰",credit:"3",classroom:"617電腦室",max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/0170/0I01", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"111301700I01",name:"台灣新電影欣賞",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"葉衽榤",credit:"2",classroom:"教208",max:"5",min:a,comment:"併大三上課，期間為7\u002F3至8\u002F28",otherinfo:"人文藝術"}}],fetch:{},mutations:void 0}}("1")));

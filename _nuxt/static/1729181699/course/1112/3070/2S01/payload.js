@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/2S01", {data:[{course:{time:[["4","5~7"]],id:"111230702S01",name:"數位攝影",type:"選修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"商耀元",credit:"3",classroom:"811",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

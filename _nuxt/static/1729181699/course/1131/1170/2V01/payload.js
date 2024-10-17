@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1170/2V01", {data:[{course:{time:[["4","5~7"]],id:"113111702V01",name:"汽車實務(二)",type:"選修",dept:"四技機械系",year:"2",class:"丙",teacher:"黃道易",credit:"3",classroom:"車工廠",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

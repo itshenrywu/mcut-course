@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1872/1401", {data:[{course:{time:[["5","5~7"]],id:"111118721401",name:"高分子材料",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"游洋雁",credit:"3",classroom:"體204",max:"55",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

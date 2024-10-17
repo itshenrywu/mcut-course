@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1250/0901", {data:[{course:{time:[["3","1~3"]],id:"109212500901",name:"微處理機實習",type:"必修",dept:"四技電機系",year:"2",class:"甲",teacher:"吳啟耀",credit:"1",classroom:"電307",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

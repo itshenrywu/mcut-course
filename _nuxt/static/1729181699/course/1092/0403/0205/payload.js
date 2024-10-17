@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0403/0205", {data:[{course:{time:[["2","7~7"],["4","1~2"]],id:"109204030205",name:"微積分(二)",type:"必修",dept:"四技電子系",year:"1",class:"乙",teacher:"劉岳峰",credit:"3",classroom:"子315",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

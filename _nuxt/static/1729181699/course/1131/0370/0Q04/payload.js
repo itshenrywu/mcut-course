@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/0Q04", (function(a){return {data:[{course:{time:[["1","4~4"],[a,"6~7"]],id:"113103700Q04",name:"歷史思辨",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"沈明得",credit:"3",classroom:"電317",max:"50",min:"10",comment:"電機(甲+乙)",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/1160/0209", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"110411600209",name:"材料科學導論(一)",type:"重修",dept:"四技進修部材工系",year:a,class:"暑",teacher:"吳鉉忠",credit:"3",classroom:"子316",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1","8~8.5")));

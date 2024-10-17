@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1370/0F01", {data:[{course:{time:[["3","5~6"]],id:"111213700F01",name:"化工產業與人工智慧應用",type:"必修",dept:"四技化工系",year:"2",class:"甲",teacher:"阮宏藝",credit:"1",classroom:"化視聽教室",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/1E01", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"113101701E01",name:"歷史人物析論",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"馮典章",credit:"2",classroom:"教205",max:"45",min:"10",comment:"",otherinfo:"人文藝術"}}],fetch:{},mutations:void 0}}("1")));

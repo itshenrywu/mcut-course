@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0270/0121", (function(a){return {data:[{course:{time:[[a,"9~10"]],id:"110202700121",name:"工讀自學英文",type:"重修",dept:"外文組-四技(日)",year:a,class:"重",teacher:"林雅瓊",credit:"2",classroom:"教209",max:"48",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("4")));
