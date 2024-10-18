@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2070/0M01", {data:[{course:{time:[["6","5~7"]],id:"112120700M01",name:"實務專題(一)",type:"必修",dept:"環實務",year:"3",class:"甲",teacher:"賴怡廷",credit:"1",classroom:"環資實驗室",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

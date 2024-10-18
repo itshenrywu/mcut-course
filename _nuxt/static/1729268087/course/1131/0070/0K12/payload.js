@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0K12", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"113100700K12",name:"大學之道",type:"必修",dept:"半導體學程",year:b,class:"甲",teacher:"張峻瑜",credit:b,classroom:"教208",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("0.5~0.5","1")));

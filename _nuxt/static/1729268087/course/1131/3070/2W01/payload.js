@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/2W01", {data:[{course:{time:[["4","5~7"]],id:"113130702W01",name:"資訊圖像設計",type:"必修",dept:"行銷設計學程",year:"2",class:"甲",teacher:"林金祥",credit:"3",classroom:"808",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

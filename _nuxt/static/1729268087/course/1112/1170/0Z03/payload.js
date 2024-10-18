@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1170/0Z03", {data:[{course:{time:[["5","1~4"]],id:"111211700Z03",name:"普通物理與實驗",type:"必修",dept:"四技機械系",year:"1",class:"丙",teacher:"陳子江",credit:"3",classroom:"機402",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

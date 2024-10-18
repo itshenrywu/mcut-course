@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/11C0/2D01", {data:[{course:{time:[["6","5~7"]],id:"111111C02D01",name:"氣液壓學與實習",type:"必修",dept:"四技進修部機械系",year:"4",class:"乙",teacher:"蔡宜昌",credit:"2",classroom:"機501",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

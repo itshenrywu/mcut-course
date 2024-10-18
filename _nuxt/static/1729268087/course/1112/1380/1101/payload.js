@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1380/1101", {data:[{course:{time:[["2","3~4"]],id:"111213801101",name:"產業實務與書報討論(二)",type:"必修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"吳弦聰",credit:"0",classroom:"化視聽教室",max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

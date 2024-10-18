@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0270/0W01", {data:[{course:{time:[["4","7~8"]],id:"113102700W01",name:"文化多元溝通",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳勁宏",credit:"2",classroom:"教204",max:"48",min:"10",comment:"",otherinfo:"語言與全球化"}}],fetch:{},mutations:void 0});

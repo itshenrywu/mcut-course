@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/18C0/0401", {data:[{course:{time:[["5","1~3"]],id:"110118C00401",name:"半導體製程簡介",type:"必修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"張麗君",credit:"3",classroom:"教307",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

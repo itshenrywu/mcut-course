@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0K11", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"113100700K11",name:"大學之道",type:"必修",dept:"四技環安衛系",year:b,class:"甲",teacher:"許金玉",credit:b,classroom:"體201",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("0.5~0.5","1")));

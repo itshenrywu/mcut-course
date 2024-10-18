@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1371/0501", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"109213710501",name:"普通化學(二)",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"李英正",credit:"3",classroom:"體207",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

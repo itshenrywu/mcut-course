@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1270/2H01", {data:[{course:{time:[["2","5~7"]],id:"112112702H01",name:"計算機概論",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"王柏仁",credit:"3",classroom:"電324",max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0});

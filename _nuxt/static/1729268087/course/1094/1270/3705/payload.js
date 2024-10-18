@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/1270/3705", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"109412703705",name:"專題製作(一)",type:"重修",dept:"四技電機系",year:a,class:"暑",teacher:"王柏仁",credit:"1",classroom:"電機系館",max:"50",min:c,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("4","2~4","5")));

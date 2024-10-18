@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1170/2K01", {data:[{course:{time:[["3","2~4"]],id:"112111702K01",name:"工程光學與實驗",type:"必修",dept:"四技機械系",year:"4",class:"乙",teacher:"朱承軒",credit:"2",classroom:"機110",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

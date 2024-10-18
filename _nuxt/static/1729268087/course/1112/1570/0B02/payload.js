@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1570/0B02", {data:[{course:{time:[["3","6~6"]],id:"111215700B02",name:"電子工程專業能力認證課程",type:"必修",dept:"四技電子系",year:"4",class:"乙",teacher:"王志良",credit:"0",classroom:"子316",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

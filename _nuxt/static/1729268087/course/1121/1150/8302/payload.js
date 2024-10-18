@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1150/8302", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"112111508302",name:"模具設計與製造",type:"選修",dept:"四技機械系",year:b,class:"乙",teacher:"蔡習訓",credit:b,classroom:"機412",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2","3")));

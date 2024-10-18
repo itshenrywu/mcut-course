@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1870/1N01", {data:[{course:{time:[["5","7~8.5"]],id:"109118701N01",name:"Python機器學習",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"吳鉉忠",credit:"3",classroom:"體209",max:"30",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

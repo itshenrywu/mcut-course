@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0170/0G20", {data:[{course:{time:[["5","7~8"]],id:"111201700G20",name:"藝文涵養與社會參與",type:"必修",dept:"四技經管系",year:"1",class:"甲",teacher:"吳淑慧",credit:"2",classroom:"體201",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

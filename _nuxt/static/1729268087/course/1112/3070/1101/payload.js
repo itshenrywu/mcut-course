@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/1101", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"111230701101",name:"創意行銷設計",type:"必修",dept:"四技行設專班",year:a,class:"甲",teacher:"鄭興宗",credit:"3",classroom:"教209",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

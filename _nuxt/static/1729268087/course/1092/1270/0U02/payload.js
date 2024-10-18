@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1270/0U02", {data:[{course:{time:[["5","1~4"]],id:"109212700U02",name:"通信原理與實習",type:"必修",dept:"四技電機系",year:"2",class:"乙",teacher:"蔡文星",credit:"3",classroom:"電116",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

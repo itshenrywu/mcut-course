@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1174/4301", {data:[{course:{time:[["2","1~1"],["5","1~2"]],id:"109111744301",name:"電動機控制",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"楊岳儒",credit:"3",classroom:"機110",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

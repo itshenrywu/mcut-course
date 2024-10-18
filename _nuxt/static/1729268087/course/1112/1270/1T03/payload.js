@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1270/1T03", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"111212701T03",name:"人工智慧概論",type:"必修",dept:"四技電機系",year:a,class:"甲",teacher:"鄭美龍",credit:"3",classroom:"電307",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1570/0S01", {data:[{course:{time:[["1","9~11"]],id:"110115700S01",name:"IoT物聯網與感知器實務",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"董一志",credit:"3",classroom:"子104",max:"50",min:"10",comment:"第二專長\u002F跨領域學程課程,限外系學生修課",otherinfo:null}}],fetch:{},mutations:void 0});

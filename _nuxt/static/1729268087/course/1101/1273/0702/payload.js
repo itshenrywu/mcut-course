@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1273/0702", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"110112730702",name:"自動控制",type:"必修",dept:"四技電機系",year:b,class:"乙",teacher:"邱機平",credit:b,classroom:"電130",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5","3")));

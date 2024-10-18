@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1850/0601", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"111118500601",name:"材料物理性質",type:"必修",dept:"四技材工系",year:a,class:"甲",teacher:"姚栢文",credit:a,classroom:"子316",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3","1~2")));

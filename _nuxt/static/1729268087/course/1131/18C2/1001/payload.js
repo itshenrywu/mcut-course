@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/18C2/1001", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"113118C21001",name:"腐蝕與防蝕",type:"選修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"曾傳銘",credit:"3",classroom:"教108",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

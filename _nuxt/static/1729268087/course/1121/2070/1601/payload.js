@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2070/1601", (function(a){return {data:[{course:{time:[[a,"1~2"]],id:"112120701601",name:"程式設計(一)",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"楊健貴",credit:a,classroom:"圖電",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

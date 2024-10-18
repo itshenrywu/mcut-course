@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3340/1901", {data:[{course:{time:[["5","5~7"]],id:"112233401901",name:"平面設計",type:"必修",dept:"四技視傳系",year:"1",class:"甲",teacher:"劉瑞芬",credit:"3",classroom:"804",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

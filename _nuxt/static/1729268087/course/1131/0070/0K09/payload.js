@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0K09", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"113100700K09",name:"大學之道",type:"必修",dept:"四技電機系",year:b,class:"甲",teacher:"邱聰輝",credit:b,classroom:"宿301",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("0.5~0.5","1")));

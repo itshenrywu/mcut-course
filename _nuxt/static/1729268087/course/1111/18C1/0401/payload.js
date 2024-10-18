@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/18C1/0401", {data:[{course:{time:[["5","7~8.5"]],id:"111118C10401",name:"材料理化(一)",type:"必修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"賴怡廷",credit:"3",classroom:"教107",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/6270/1Z01", {data:[{course:{time:[["4","3~4"]],id:"112162701Z01",name:"工業人工智慧概論",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"劉豐瑞",credit:"2",classroom:"AI學程309",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

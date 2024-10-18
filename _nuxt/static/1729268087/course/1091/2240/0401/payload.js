@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2240/0401", {data:[{course:{time:[["5","5~7"]],id:"109122400401",name:"管理學",type:"必修",dept:"四技經管系",year:"1",class:"甲",teacher:"盧建中",credit:"3",classroom:"教206",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

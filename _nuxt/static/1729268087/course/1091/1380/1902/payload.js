@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1380/1902", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"109113801902",name:"高等儀器分析",type:"選修",dept:"能源電池博士班",year:a,class:"甲",teacher:"洪太峰",credit:"3",classroom:"綠215",max:"20",min:"2",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

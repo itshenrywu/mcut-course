@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3180/0201", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"109231800201",name:"書報討論",type:"必修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"高清漢",credit:"2",classroom:"工設系討論室1",max:"20",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

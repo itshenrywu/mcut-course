@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1572/1502", (function(a,b){return {data:[{course:{time:[["2",a],["4",a]],id:"113115721502",name:"半導體元件",type:"選修",dept:"四技電子系",year:b,class:"乙",teacher:"黃政光",credit:b,classroom:"子314",max:"50",min:"10",comment:"微電子模組必需完成選修課程",otherinfo:null}}],fetch:{},mutations:void 0}}("7~8","3")));

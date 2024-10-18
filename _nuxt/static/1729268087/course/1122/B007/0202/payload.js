@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/B007/0202", {data:[{course:{time:[["1","9~10"]],id:"1122B0070202",name:"近代中國的挑戰與回應",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"沈明得",credit:"2",classroom:"網路",max:"40",min:"10",comment:"第1階段",otherinfo:"社會科學"}}],fetch:{},mutations:void 0});

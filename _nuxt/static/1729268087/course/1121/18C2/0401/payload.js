@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/18C2/0401", {data:[{course:{time:[["5","1~3"]],id:"112118C20401",name:"材料熱力學(一)",type:"必修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"黃啓賢",credit:"3",classroom:"教108",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

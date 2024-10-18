@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3180/0F01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"109131800F01",name:"跨領域設計國際工作營",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"江潤華",credit:"3",classroom:"工設系討論室1",max:"30",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));
