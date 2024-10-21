@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0613", (function(a){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"112200700613",name:"勤勞教育(二)",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"程桂祥",credit:"0",classroom:"體207",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

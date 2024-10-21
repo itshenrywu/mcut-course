@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1F8N/0501", {data:[{course:{time:[["2","8~8.5"]],id:"11021F8N0501",name:"智控組書報討論(二)",type:"必修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"陳瓊安",credit:"0",classroom:"電330",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

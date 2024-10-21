@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2270/1U02", (function(a){return {data:[{course:{time:[["2",a],["5",a]],id:"109122701U02",name:"會計學(含實習)",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"吳明鋗",credit:"3",classroom:"教207",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3~4")));

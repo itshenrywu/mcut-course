@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3370/0P01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"109233700P01",name:"微電影創作",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"朱賢哲",credit:"3",classroom:"811-演講廳",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0402/A116", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"10910402A116",name:"英文(高級)(一)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"費安",credit:a,classroom:"創大二樓201會議室",max:"20",min:"10",comment:"管設菁英A",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

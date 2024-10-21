@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1280/0V01", {data:[{course:{time:[["4","5~6"]],id:"110112800V01",name:"綠色能源組書報討論(三)",type:"必修",dept:"電機系碩士班",year:"2",class:"甲",teacher:"楊宗振",credit:"0",classroom:"電112",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

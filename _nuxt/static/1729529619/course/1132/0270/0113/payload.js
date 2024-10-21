@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/0113", {data:[{course:{time:[["7","11~11"]],id:"113202700113",name:"工讀自學英文",type:"必修",dept:"環實務",year:"3",class:"甲",teacher:"柳薇芬",credit:"2",classroom:"網路",max:"15",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

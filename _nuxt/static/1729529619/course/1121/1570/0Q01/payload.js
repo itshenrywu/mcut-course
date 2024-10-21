@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1570/0Q01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112115700Q01",name:"程式設計實務",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"董一志",credit:a,classroom:"子104",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

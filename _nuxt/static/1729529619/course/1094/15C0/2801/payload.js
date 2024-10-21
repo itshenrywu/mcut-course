@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/15C0/2801", {data:[{course:{time:[["6","1~4"]],id:"109415C02801",name:"產業專題(二)",type:"重修",dept:"四技進修部電子系",year:"2",class:"暑",teacher:"林義楠",credit:"3",classroom:"子104",max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/2J01", {data:[{course:{time:[["2","2~4"]],id:"110222802J01",name:"消費者行為專題",type:"選修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"鄒鴻泰",credit:"3",classroom:"506",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

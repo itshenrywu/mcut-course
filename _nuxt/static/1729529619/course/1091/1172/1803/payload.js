@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1172/1803", (function(a){return {data:[{course:{time:[[a,"1~1"],["4","1~2"]],id:"109111721803",name:"工程數學(一)",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"張國棟",credit:"3",classroom:"機201",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/1270/3503", (function(a){return {data:[{course:{time:[[a,"2~4"],[a,"5~7"]],id:"111312703503",name:"電力系統(一)",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"林志銘",credit:"3",classroom:"電330",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

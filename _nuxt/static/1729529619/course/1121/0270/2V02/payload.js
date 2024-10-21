@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0270/2V02", {data:[{course:{time:[["3","3~4"]],id:"112102702V02",name:"生活情境英文(一)",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"簡素琤",credit:"2",classroom:"506",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

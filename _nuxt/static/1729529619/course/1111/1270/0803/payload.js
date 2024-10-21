@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1270/0803", (function(a){return {data:[{course:{time:[["1","9~12"]],id:"111112700803",name:"信號與系統",type:"重修",dept:"四技電機系",year:a,class:"重",teacher:"廖兆祥",credit:a,classroom:"電116",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

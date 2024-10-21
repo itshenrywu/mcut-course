@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1670/0U04", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"109116700U04",name:"作業環境監測",type:"重修",dept:"四技環安衛系",year:a,class:"重",teacher:"洪明瑞",credit:"1",classroom:"體203",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("4")));

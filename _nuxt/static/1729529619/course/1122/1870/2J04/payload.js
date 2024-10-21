@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1870/2J04", {data:[{course:{time:[["5","5~7"]],id:"112218702J04",name:"基礎材料實驗",type:"必修",dept:"四技材工系",year:"2",class:"乙",teacher:"彭坤增",credit:"1",classroom:"體205",max:"64",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

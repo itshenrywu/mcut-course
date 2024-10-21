@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1124/1870/1S03", (function(a){return {data:[{course:{time:[["5","9~12"]],id:"112418701S03",name:"材料專題(三)",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"彭坤增",credit:a,classroom:"材料實驗室",max:"2",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1270/2Z01", {data:[{course:{time:[["4","2~4"]],id:"112112702Z01",name:"感測器",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"吳長洲",credit:"3",classroom:"宿301",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0});

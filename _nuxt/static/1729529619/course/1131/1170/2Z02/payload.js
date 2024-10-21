@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1170/2Z02", {data:[{course:{time:[["1","4~4"],["5","5~6"]],id:"113111702Z02",name:"動力學",type:"必修",dept:"四技機械系",year:"2",class:"乙",teacher:"黃世欽",credit:"3",classroom:"機314",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0803", {data:[{course:{time:[["3","9~11"]],id:"110130700803",name:"英文閱讀與聽力訓練（三）",type:"選修",dept:"管理暨設計學院",year:"2",class:"甲",teacher:"萬丹青",credit:"0",classroom:"629實驗室",max:"30",min:"10",comment:"管設學院榮譽學程大二必修",otherinfo:null}}],fetch:{},mutations:void 0});

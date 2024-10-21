@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/12C0/1K01", {data:[{course:{time:[["6","1~4"]],id:"109112C01K01",name:"電子學與實習(一)",type:"必修",dept:"四技進修部電機系",year:"2",class:"甲",teacher:"吳長洲",credit:"4",classroom:"電116",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

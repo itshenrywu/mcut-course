@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1270/0T04", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"110312700T04",name:"電機機械與實習",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"蘇益立",credit:a,classroom:"電116",max:"20",min:c,comment:"暑修併四技三重上課",otherinfo:null}}],fetch:{},mutations:void 0}}("3","9~11","5")));

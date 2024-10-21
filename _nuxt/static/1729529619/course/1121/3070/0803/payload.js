@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/0803", {data:[{course:{time:[["1","9~11"]],id:"112130700803",name:"英文閱讀與聽力訓練（三）",type:"選修",dept:"管理暨設計學院",year:"2",class:"甲",teacher:"陳怡蒨",credit:"0",classroom:"505",max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

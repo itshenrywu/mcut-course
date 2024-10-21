@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0409/0509", {data:[{course:{time:[["5","5~7"]],id:"109204090509",name:"憲政與發展",type:"必修",dept:"四技工管系",year:"2",class:"乙",teacher:"黃淑芳",credit:"3",classroom:"教203",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

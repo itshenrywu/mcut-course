@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0401/0320", (function(a){return {data:[{course:{time:[["2","8~8.5"]],id:"111104010320",name:"大學之道",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"陳明彥",credit:a,classroom:"機402",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

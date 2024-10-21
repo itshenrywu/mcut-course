@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1240/5401", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"110212405401",name:"程式設計實習",type:"重修",dept:"四技電機系",year:"4",class:"重",teacher:"盧公瑜",credit:a,classroom:"電307",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));
