@@ -165,6 +165,14 @@
 						</div>
 					</div>
 				</template>
+				<br>
+				<div class="ad">
+					<div class="ts-text is-description">贊助商</div>
+					<adsbygoogle ad-layout="in-article"
+					ad-format="fluid"
+					ad-client="ca-pub-5900703871265800"
+					ad-slot="3164180037" />
+				</div>
 			</div>
 			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>

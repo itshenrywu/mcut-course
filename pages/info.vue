@@ -50,13 +50,17 @@
 					</tbody>
 				</table>
 			</div>
-			<br>
+		</div>
+		<div class="ts-container has-vertically-padded is-fitted">
 			<div class="ad">
 				<div class="ts-text is-description">贊助商</div>
-				<adsbygoogle />
+				<adsbygoogle ad-layout="in-article"
+				ad-format="fluid"
+				ad-client="ca-pub-5900703871265800"
+				ad-slot="3164180037" />
 			</div>
-			<loading v-show="loading" />
 		</div>
+		<loading v-show="loading" />
 	</div>
 </template>
 <style>

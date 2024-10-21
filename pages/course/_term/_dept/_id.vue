@@ -1,5 +1,5 @@
 <template>
-	<div class="cell is-secondary is-scrollable is-fluid is-horizontal" id="page-course">
+	<div class="cell is-secondary is-scrollable is-fluid" id="page-course">
 		<div class="ts-container is-narrow has-top-padded-large">
 			<div class="ts-grid is-compact is-middle-aligned">
 				<div class="column is-10-wide mobile-fluid">
@@ -175,7 +175,15 @@
 					</tr>
 				</tbody>
 			</table>
-			<br>
+		</div>
+		<div class="ts-container is-narrow has-vertically-padded">
+			<div class="ad" v-if="course.name">
+				<div class="ts-text is-description" style="margin:0!important">贊助商</div>
+				<adsbygoogle ad-layout="in-article"
+				ad-format="fluid"
+				ad-client="ca-pub-5900703871265800"
+				ad-slot="3164180037" />
+			</div>
 		</div>
 	</div>
 </template>

@@ -393,6 +393,10 @@ h1 {
 	.ts-blankslate {
 		height: 60vh;
 	}
+
+	.ad .ts-text {
+		margin: 0 1rem;
+	}
 }
 
 @media print {
@@ -405,11 +409,11 @@ h1 {
 		overflow: visible;
 	}
 
-	.ts-button {
-		display: none;
-	}
-
-	.ts-app-layout.is-fullscreen .navbar {
+	.ts-button,
+	.ts-app-layout.is-fullscreen .navbar,
+	.course-table td.c-action,
+	.ts-selection,
+	.ad {
 		display: none;
 	}
 
@@ -417,11 +421,6 @@ h1 {
 		display: block;
 		text-align: center;
 		font-size: 1.2rem;
-	}
-
-	.course-table td.c-action,
-	.ts-selection {
-		display: none;
 	}
 }
 </style>
