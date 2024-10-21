@@ -35,7 +35,8 @@ export default {
 	modules: [
 		'@nuxtjs/axios',
 		'vue-sweetalert2/nuxt/no-css',
-		'@nuxtjs/google-gtag'
+		'@nuxtjs/google-gtag',
+		'@nuxtjs/google-adsense'
 	],
 	sweetalert: {
 		confirmButtonColor: 'var(--ts-primary-600)',
@@ -46,6 +47,9 @@ export default {
 	},
 	'google-gtag': {
 		id: 'G-4WZWP0DJMR'
+	},
+	'google-adsense': {
+		id: 'ca-pub-5900703871265800'
 	},
 	generate: {
 		fallback: '404.html',
