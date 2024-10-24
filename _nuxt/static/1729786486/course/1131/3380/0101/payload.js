@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3380/0101", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113133800101",name:"視覺傳達設計(一)",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"李淑珠",credit:"3",classroom:"730-會議室",max:"20",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

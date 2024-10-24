@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0770/0904", (function(a){return {data:[{course:{time:[[a,"1~2"]],id:"113107700904",name:"全民國防教育軍事訓練(一)",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"翁智賢",credit:"0.5",classroom:"子313",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

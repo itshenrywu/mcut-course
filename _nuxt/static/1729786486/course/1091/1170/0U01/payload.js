@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1170/0U01", {data:[{course:{time:[["1","7~8.5"]],id:"109111700U01",name:"Python程式語言與應用",type:"選修",dept:"四技機械系",year:"2",class:"乙",teacher:"胡志中",credit:"3",classroom:"機412",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

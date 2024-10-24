@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1274/1301", {data:[{course:{time:[["1","7~8.5"]],id:"109112741301",name:"數位通信",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"蔡文星",credit:"3",classroom:"電116",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0});

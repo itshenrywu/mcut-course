@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0570/0301", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"109105700301",name:"生態營造技術與解析",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"曾兆祥",credit:"2",classroom:"體203",max:"48",min:"10",comment:"",otherinfo:"自然科學"}}],fetch:{},mutations:void 0}}("1")));

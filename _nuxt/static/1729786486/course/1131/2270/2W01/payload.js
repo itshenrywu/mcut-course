@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2270/2W01", {data:[{course:{time:[["1","5~6"],["2","1~1"]],id:"113122702W01",name:"企業永續發展",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"陳樹全",credit:"3",classroom:"教105",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

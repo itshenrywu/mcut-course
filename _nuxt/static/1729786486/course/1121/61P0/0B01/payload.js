@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/61P0/0B01", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"112161P00B01",name:"碳材製備合成與鋰電池應用",type:"選修",dept:"能源電池博士班",year:a,class:"甲",teacher:"洪太峰",credit:"3",classroom:"綠215",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

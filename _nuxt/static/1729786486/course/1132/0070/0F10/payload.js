@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0F10", {data:[{course:{time:[["5","9~9"]],id:"113200700F10",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"甲",teacher:"沈明得",credit:"1",classroom:"網路",max:"30",min:"15",comment:"第1階段",otherinfo:null}}],fetch:{},mutations:void 0});

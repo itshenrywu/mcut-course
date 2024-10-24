@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1140/6803", {data:[{course:{time:[["3","6~8"]],id:"110111406803",name:"專題製作(一)",type:"必修",dept:"四技機械系",year:"4",class:"丙",teacher:"陳宏毅",credit:"1",classroom:"機械系館",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

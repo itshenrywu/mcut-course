@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2280/1C01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"111122801C01",name:"服務理論與實務專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"杜海勇",credit:"3",classroom:"518",max:"30",min:a,comment:"授課老師:杜海勇 併入國企碩一",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

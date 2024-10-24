@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2270/0K02", {data:[{course:{time:[["2","2~4"]],id:"109222700K02",name:"程式設計",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"黃銘圭",credit:"3",classroom:"517",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

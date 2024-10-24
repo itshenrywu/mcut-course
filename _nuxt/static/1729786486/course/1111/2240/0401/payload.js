@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2240/0401", {data:[{course:{time:[["5","2~4"]],id:"111122400401",name:"管理學",type:"必修",dept:"四技經管系",year:"1",class:"甲",teacher:"虞邦祥",credit:"3",classroom:"體201",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

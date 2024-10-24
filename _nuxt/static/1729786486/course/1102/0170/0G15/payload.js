@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0170/0G15", (function(a){return {data:[{course:{time:[[a,"1~2"]],id:"110201700G15",name:"藝文涵養與社會參與",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"林立仁",credit:"2",classroom:"教304",max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

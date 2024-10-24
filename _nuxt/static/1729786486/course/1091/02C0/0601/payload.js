@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/02C0/0601", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"109102C00601",name:"英語聽講(三)",type:"必修",dept:"四技進修部電機系",year:b,class:"甲",teacher:"廖益輝",credit:b,classroom:"電130",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("6","3")));

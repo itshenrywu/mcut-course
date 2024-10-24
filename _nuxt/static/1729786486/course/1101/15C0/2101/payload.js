@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/15C0/2101", {data:[{course:{time:[["5","7~8.5"]],id:"110115C02101",name:"科技英文",type:"必修",dept:"四技進修部電子系",year:"4",class:"甲",teacher:"廖益輝",credit:"3",classroom:"子313",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

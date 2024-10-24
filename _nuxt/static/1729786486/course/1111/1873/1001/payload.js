@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1873/1001", {data:[{course:{time:[["5","5~7"]],id:"111118731001",name:"電子顯微鏡分析",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"曾傳銘",credit:"3",classroom:"體205",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

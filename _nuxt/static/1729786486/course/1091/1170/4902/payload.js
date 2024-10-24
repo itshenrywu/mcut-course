@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1170/4902", {data:[{course:{time:[["2","5~7"]],id:"109111704902",name:"機械工程實驗(一)",type:"必修",dept:"四技機械系",year:"4",class:"乙",teacher:"陳炳宜",credit:"1",classroom:"機110",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

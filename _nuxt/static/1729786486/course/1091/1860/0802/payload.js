@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1860/0802", (function(a){return {data:[{course:{time:[[a,"3~4"],["5","6~6"]],id:"109118600802",name:"物理冶金(一)",type:"必修",dept:"四技材工系",year:a,class:"甲",teacher:"曾傳銘",credit:"3",classroom:"體209",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

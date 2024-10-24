@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3380/0T01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112233800T01",name:"台日漫畫賞析",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"李淑珠",credit:"3",classroom:"730-會議室",max:"30",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

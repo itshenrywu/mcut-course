@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0870/0401", {data:[{course:{time:[["5","5~6"]],id:"112108700401",name:"普通化學",type:"必修",dept:"四技機械系",year:"1",class:"乙",teacher:"陳政佑",credit:"2",classroom:"機502",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

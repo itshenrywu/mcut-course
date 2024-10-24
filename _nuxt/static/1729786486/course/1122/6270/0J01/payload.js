@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/6270/0J01", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"112262700J01",name:"計算機組織與結構",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"黃樹林",credit:a,classroom:"AI學程309",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

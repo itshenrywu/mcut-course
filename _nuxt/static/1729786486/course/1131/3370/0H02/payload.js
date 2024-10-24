@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3370/0H02", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"113133700H02",name:"設計見學",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"劉瑞芬",credit:a,classroom:"807",max:"16",min:"10",comment:"塊狀課程：6\u002F14~6\u002F30",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

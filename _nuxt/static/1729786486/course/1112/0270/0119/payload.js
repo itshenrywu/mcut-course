@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0270/0119", {data:[{course:{time:[["7","11~11"]],id:"111202700119",name:"工讀自學英文",type:"必修",dept:"四技材工系",year:"3",class:"甲",teacher:"黃平宇",credit:"2",classroom:"網路",max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

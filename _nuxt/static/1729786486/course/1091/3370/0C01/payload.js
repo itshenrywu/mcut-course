@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3370/0C01", {data:[{course:{time:[["2","5~8"]],id:"109133700C01",name:"設計英文",type:"必修",dept:"四技視傳系",year:"3",class:"甲",teacher:"林金祥",credit:"1",classroom:"811-演講廳",max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F6-9\u002F4",otherinfo:null}}],fetch:{},mutations:void 0});

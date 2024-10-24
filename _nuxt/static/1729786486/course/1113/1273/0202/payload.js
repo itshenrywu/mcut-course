@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/1273/0202", (function(a){return {data:[{course:{time:[["1","1~2"],[a,"3~4"]],id:"111312730202",name:"綠色能源概論",type:"重修",dept:"四技電機系",year:a,class:"暑",teacher:"王勝寬",credit:"3",classroom:"電130",max:"20",min:"5",comment:"暑修併四技三甲上課",otherinfo:null}}],fetch:{},mutations:void 0}}("4")));

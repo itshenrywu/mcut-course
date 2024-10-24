@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0871/0101", {data:[{course:{time:[["2","2~4"]],id:"110108710101",name:"普通化學",type:"必修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"吳容銘",credit:"3",classroom:"綜大國際會議廳",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

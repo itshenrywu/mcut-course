@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/1I03", (function(a,b){return {data:[{course:{time:[[a,"5~6"],[b,"5~5"]],id:"113121701I03",name:"作業研究(一)",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"俞凱允",credit:b,classroom:"體202",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2","3")));
