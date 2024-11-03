@@ -98,7 +98,7 @@ export default {
 				},
 				{
 					path: '/info/',
-					label: '選課資訊',
+					label: '選課時間',
 					icon: 'is-circle-info-icon',
 				},
 			],

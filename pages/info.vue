@@ -3,7 +3,7 @@
 		<div class="ts-container has-top-padded-large">
 			<div class="ts-grid is-middle-aligned">
 				<div class="column is-12-wide mobile-fluid">
-					<h1 class="ts-header is-huge has-vertically-padded">選課資訊</h1>
+					<h1 class="ts-header is-huge has-vertically-padded">選課時間</h1>
 				</div>
 				<div class="column is-4-wide mobile-fluid">
 					<a class="ts-button is-fluid" target="_blank" rel="nofollow" href="http://day.course.mcut.edu.tw/?openExternalBrowser=1">前往選課系統</a>
@@ -141,9 +141,9 @@ export default {
 	},
 	head() {
 		return {
-			title: '選課資訊 | 明志科技大學選課小幫手',
+			title: '選課時間 | 明志科技大學選課小幫手',
 			meta: [
-				{ hid: 'og:title', property: 'og:title', content: '選課資訊 | 明志科技大學選課小幫手' },
+				{ hid: 'og:title', property: 'og:title', content: '選課時間 | 明志科技大學選課小幫手' },
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com/' + this.$route.params.id },
 			]
 		}
