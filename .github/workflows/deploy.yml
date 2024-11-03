@@ -24,7 +24,7 @@ jobs:
     - name: Sitemap
       run: |
         echo "https://$BASE_URL/" > ./dist/sitemap.txt
-        find ./dist -type f | sed 's|^./dist/||' | grep -E '^(course/|saved/|info/)' | sed 's|index.html$||' | sed 's|^|https://${{ env.BASE_URL }}/|' >> ./dist/sitemap.txt
+        find ./dist -type f | sed 's|^./dist/||' | grep -E '^(course/|class/|saved/|info/)' | sed 's|index.html$||' | sed 's|^|https://${{ env.BASE_URL }}/|' >> ./dist/sitemap.txt
         echo "https://$BASE_URL/rule/" > ./dist/sitemap-rule.txt
         find ./dist -type f | sed 's|^./dist/||' | grep -E '^(rule/)' | sed 's|index.html$||' | sed 's|^|https://${{ env.BASE_URL }}/|' >> ./dist/sitemap-rule.txt
     - name: Deploy
