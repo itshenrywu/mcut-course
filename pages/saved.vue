@@ -1,7 +1,7 @@
 <template>
 	<div class="cell is-secondary is-fluid is-scrollable" id="page-saved">
-		<div class="ts-container has-top-padded-large">
-			<div class="ts-grid is-compact is-middle-aligned">
+		<div class="ts-container has-top-padded-large is-fitted">
+			<div class="ts-grid is-compact is-middle-aligned mobile-padded">
 				<div class="column is-10-wide mobile-fluid">
 					<h1 class="ts-header is-huge has-vertically-padded">收藏的課程
 						<div class="ts-badge is-start-spaced is-outlined" v-if="currentTerm && currentTerm!=''">{{ currentTerm }} 學期</div>
@@ -20,7 +20,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="ts-grid has-top-spaced" v-if="filteredCourses.length > 0">
+			<div class="ts-grid has-top-spaced mobile-padded" v-if="filteredCourses.length > 0">
 				<div class="column is-8-wide mobile-half">
 					<div class="ts-box">
 						<div class="ts-content">
@@ -172,6 +172,22 @@
 				<span class="ts-icon is-circle-exclamation-icon"></span>
 				<div class="header">目前還沒有收藏的課程</div>
 				<div class="description">快到「搜尋課程」收藏喜歡的課程吧！</div>
+			</div>
+			<br>
+			<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="filteredCourses.length > 0">
+				<div class="ts-content">
+					<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
+					<ins class="adsbygoogle"
+						style="display:block; text-align:center;"
+						data-ad-layout="in-article"
+						data-ad-format="fluid"
+						data-ad-client="ca-pub-5900703871265800"
+						data-ad-slot="3164180037"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
 			</div>
 		</div>
 		<loading v-show="loading" />

@@ -51,8 +51,8 @@
 			</div>
 		</div>
 		<div class="cell is-secondary is-fluid is-scrollable">
-			<div class="ts-container has-top-padded-large">
-				<h1 class="ts-header is-huge has-vertically-padded">畢業學分門檻</h1>
+			<div class="ts-container has-top-padded-large is-fitted">
+				<h1 class="ts-header is-huge has-vertically-padded mobile-padded">畢業學分門檻</h1>
 				<button class="ts-button is-fluid is-outlined is-end-icon mobile-only"
 					@click="showMobileSidebar = !showMobileSidebar">
 					<template v-if="currentRule == '-1'">選擇一個課程總表</template>
@@ -66,8 +66,6 @@
 					</template>
 					<span class="ts-icon is-chevron-down-icon"></span>
 				</button>
-			</div>
-			<div class="ts-container is-fitted">
 				<div class="ts-box has-vertically-spaced-large">
 					<div class="ts-content">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">注意事項</span>
@@ -135,6 +133,21 @@
 							</transition>
 						</template>
 					</div>
+					<div class="ts-box ad is-hollowed box-mobile-spaced">
+						<div class="ts-content">
+							<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+							<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
+							<ins class="adsbygoogle"
+								style="display:block; text-align:center;"
+								data-ad-layout="in-article"
+								data-ad-format="fluid"
+								data-ad-client="ca-pub-5900703871265800"
+								data-ad-slot="3164180037"></ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
 					<div class="ts-box has-vertically-spaced-large" v-if="rule.remark && rule.remark.length > 0">
 						<div class="ts-content" id="remark">
 							<span class="ts-badge has-bottom-spaced-small is-small is-dense">說明</span>
@@ -165,6 +178,7 @@
 						</div>
 					</div>
 				</template>
+				<br>
 			</div>
 			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>
@@ -229,6 +243,10 @@
 }
 
 @media screen and (max-width: 768px) {
+	#page-rule .is-scrollable {
+		overflow-y: unset;
+	}
+
 	#page-rule,
 	#page-rule tbody,
 	#page-rule tfoot,

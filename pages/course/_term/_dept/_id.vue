@@ -104,6 +104,7 @@
 					</div>
 				</div>
 			</div>
+			<br>
 			<table class="ts-table is-sticked has-top-spaced" v-if="course.name">
 				<tbody>
 					<tr>
@@ -142,6 +143,25 @@
 						<td>
 							<div class="ts-list is-unordered">
 								<div class="item" v-for="o in office_time" v-html="o"></div>
+							</div>
+						</td>
+					</tr>
+					<tr class="ad">
+						<td colspan="2">
+							<div class="ts-box ad is-hollowed">
+								<div class="ts-content">
+									<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+									<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
+									<ins class="adsbygoogle"
+										style="display:block; text-align:center;"
+										data-ad-layout="in-article"
+										data-ad-format="fluid"
+										data-ad-client="ca-pub-5900703871265800"
+										data-ad-slot="3164180037"></ins>
+									<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+									</script>
+								</div>
 							</div>
 						</td>
 					</tr>

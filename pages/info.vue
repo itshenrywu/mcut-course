@@ -1,16 +1,15 @@
 <template>
 	<div class="cell is-secondary is-fluid is-scrollable" id="page-info">
-		<div class="ts-container has-top-padded-large">
+		<div class="ts-container has-top-padded-large is-fitted">
 			<div class="ts-grid is-middle-aligned">
 				<div class="column is-12-wide mobile-fluid">
-					<h1 class="ts-header is-huge has-vertically-padded">選課時間</h1>
+					<h1 class="ts-header is-huge has-vertically-padded mobile-padded">選課時間</h1>
 				</div>
 				<div class="column is-4-wide mobile-fluid">
 					<a class="ts-button is-fluid" target="_blank" rel="nofollow" href="http://day.course.mcut.edu.tw/?openExternalBrowser=1">前往選課系統</a>
 				</div>
 			</div>
-		</div>
-		<div class="ts-container is-fitted has-vertically-padded-large">
+			<br>
 			<div class="ts-box">
 				<div class="ts-content">
 					<span class="ts-badge has-bottom-spaced-small is-small is-dense">注意事項</span>
@@ -49,6 +48,22 @@
 						</tr>
 					</tbody>
 				</table>
+			</div>
+			<br>
+			<div class="ts-box ad is-hollowed box-mobile-spaced">
+				<div class="ts-content">
+					<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
+					<ins class="adsbygoogle"
+						style="display:block; text-align:center;"
+						data-ad-layout="in-article"
+						data-ad-format="fluid"
+						data-ad-client="ca-pub-5900703871265800"
+						data-ad-slot="3164180037"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
 			</div>
 			<loading v-show="loading" />
 		</div>

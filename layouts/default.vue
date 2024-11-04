@@ -198,6 +198,10 @@ h1 {
 	line-height: 1.2rem;
 }
 
+.ts-box.ad .ts-content {
+	padding-top: .5rem;
+}
+
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 14px;
@@ -393,6 +397,22 @@ h1 {
 	.ts-blankslate {
 		height: 60vh;
 	}
+
+	.ts-box.box-mobile-spaced {
+		border-radius: var(--ts-border-radius-container);
+		margin: 0 1rem;
+		border-left: 4px dashed var(--ts-gray-300);
+		border-right: 4px dashed var(--ts-gray-300);
+	}
+
+	.mobile-padded {
+		padding: 0 1rem;
+	}
+
+	.mobile-padded .ts-box {
+		border-radius: var(--ts-border-radius-container);
+		border: 1px solid var(--ts-gray-300);
+	}
 }
 
 @media print {
@@ -421,6 +441,10 @@ h1 {
 
 	.course-table td.c-action,
 	.ts-selection {
+		display: none;
+	}
+
+	.ad {
 		display: none;
 	}
 }
