@@ -96,9 +96,9 @@
 			</div>
 		</div>
 		<div class="cell is-secondary is-fluid is-scrollable">
-			<div class="ts-container has-top-padded-large is-fitted">
+			<div class="ts-container has-top-padded-large is-fitted mobile-padded">
 				<div class="ts-wrap is-middle-aligned">
-					<h1 class="ts-header is-huge has-vertically-padded mobile-padded">搜尋課程</h1>
+					<h1 class="ts-header is-huge has-vertically-padded">搜尋課程</h1>
 					<div class="ts-text is-description" v-if="filteredCourses.length > 0">{{ filteredCourses.length }}
 						門符合條件的課程
 					</div>

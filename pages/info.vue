@@ -5,7 +5,7 @@
 				<div class="column is-12-wide mobile-fluid">
 					<h1 class="ts-header is-huge has-vertically-padded mobile-padded">選課時間</h1>
 				</div>
-				<div class="column is-4-wide mobile-fluid">
+				<div class="column is-4-wide mobile-fluid mobile-padded">
 					<a class="ts-button is-fluid" target="_blank" rel="nofollow" href="http://day.course.mcut.edu.tw/?openExternalBrowser=1">前往選課系統</a>
 				</div>
 			</div>
@@ -65,6 +65,7 @@
 					</script>
 				</div>
 			</div>
+			<br>
 			<loading v-show="loading" />
 		</div>
 	</div>
