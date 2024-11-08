@@ -370,11 +370,12 @@ export default {
 		};
 	},
 	head() {
+		var year_title = this.currentYear || this.$route.params.year;
 		return {
-			title: (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手',
+			title: (year_title ? year_title + ' 學年度入學 - ' : '') + (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手',
 			meta: [
-				{ hid: 'og:title', property: 'og:title', content: (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
-				{ hid: 'twitter:title', name: 'twitter:title', content: (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
+				{ hid: 'og:title', property: 'og:title', content: (year_title ? year_title + ' 學年度入學 - ' : '') + (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
+				{ hid: 'twitter:title', name: 'twitter:title', content: (year_title ? year_title + ' 學年度入學 - ' : '') + (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
 
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com' + this.$router.currentRoute.path },
 				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
