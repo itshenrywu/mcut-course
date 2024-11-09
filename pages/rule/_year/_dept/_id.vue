@@ -66,6 +66,8 @@
 					</template>
 					<span class="ts-icon is-chevron-down-icon"></span>
 				</button>
+			</div>
+			<div class="ts-container has-top-padded is-fitted">
 				<div class="ts-box has-vertically-spaced-large">
 					<div class="ts-content">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">注意事項</span>
@@ -457,6 +459,12 @@ export default {
 					this.$set(rule_subtype, 'show', false);
 				});
 			});
+			setTimeout(() => {
+				if (document.querySelector('.adsbygoogle') && document.querySelector('.adsbygoogle').offsetHeight == 0) {
+					document.querySelector('.ad .ts-content').innerHTML = '<div class="ts-text is-description has-bottom-padded-small">贊助商</div>\
+					<div class="ts-text is-secondary is-center-aligned has-vertically-padded">太無情了吧擋廣告 :(</div>';
+				}
+			}, 500);
 		},
 		formatRemark(remark) {
 			let list_styles = [];

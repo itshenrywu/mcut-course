@@ -20,6 +20,10 @@ export default {
 		}
 	},
 	mounted() {
+		this.checkAdBlock();
+		this.$watch('$route', () => {
+			this.checkAdBlock();
+		});
 		if(localStorage['acceptTerms'] == undefined) {
 			this.$swal({
 				title: '關於本站 & 免責聲明',
@@ -35,6 +39,16 @@ export default {
 					localStorage['acceptTerms'] = '1';
 				}
 			});
+		}
+	},
+	methods: {
+		checkAdBlock() {
+			setTimeout(() => {
+				if (document.querySelector('.adsbygoogle') && document.querySelector('.adsbygoogle').offsetHeight == 0) {
+					document.querySelector('.ad .ts-content').innerHTML = '<div class="ts-text is-description has-bottom-padded-small">贊助商</div>\
+					<div class="ts-text is-secondary is-center-aligned has-vertically-padded">太無情了吧擋廣告 :(</div>';
+				}
+			}, 500);
 		}
 	}
 };
@@ -200,6 +214,13 @@ h1 {
 
 .ts-box.ad .ts-content {
 	padding-top: .5rem;
+}
+
+.alt_course_courses .item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: .25rem;
 }
 
 @media screen and (max-width: 768px) {
