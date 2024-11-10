@@ -79,9 +79,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr v-for="course in filteredCourses" :key="course.id" :class="{
-							'is-not-clickable': course.id.includes('ALT_')
-						}" @click="showCourse(course)">
+						<tr v-for="course in filteredCourses" :key="course.id" @click="showCourse(course)">
 							<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
 								<span class="mobile-only" v-if="!course.id.includes('ALT_')">{{  course.teacher + ' 老師' }}</span>
 							</td>
@@ -428,7 +426,50 @@ export default {
 				});
 		},
 		showCourse(course) {
-			if (course.id.includes('ALT_')) return;
+			if (course.id.includes('ALT_')) {
+				if(!course.courses || course.courses.length == 0) {
+					this.$swal({
+						title: course.name,
+						text: '無課程資料',
+						icon: 'error',
+						confirmButtonText: '確定',
+					});
+					return;
+				}
+				if(course.courses.length == 1) {
+					this.showCourse(this.courses.find(_course => _course.id === course.courses[0]));
+					return;
+				}
+				var html = '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">';
+				var real_courses = this.courses.filter(_course => course.courses.includes(_course.id));
+				const levels = { "初": 1, "中": 2, "高": 3, '菁英': 4 };
+				const classes = { "A": 1, "B": 2, "C": 3, "D": 4, "E": 5 };
+				real_courses.sort((a, b) => {
+					const matchA = a.comment.match(/(初|中|高|菁英)([A-E])/);
+					const matchB = b.comment.match(/(初|中|高|菁英)([A-E])/);
+					if (!matchA || !matchB) return 0;
+					const [levelA, classA] = matchA.slice(1);
+					const [levelB, classB] = matchB.slice(1);
+					if (levels[levelA] !== levels[levelB]) return levels[levelA] - levels[levelB];
+					else return classes[classA] - classes[classB];
+				});
+				real_courses.forEach(_course => {
+					html += '<a class="item" href="/course/' + _course.id.substring(0, 4) + '/' + _course.id.substring(4, 8) + '/' + _course.id.substring(8) + '/">\
+						<div class="ts-header">' + _course.name + '</div>\
+						<div class="ts-text is-description is-start-aligned">' +
+							_course.teacher + ' 老師' + (_course.comment!='' ? ' / ' + _course.comment : '') + '\
+						</div>\
+					</a>';
+				});
+				html += '</div>';
+				this.$swal({
+					title: '請選擇要查看的課程',
+					html: html,
+					showCloseButton: true,
+					showConfirmButton: false,
+				});
+				return;
+			}
 			this.$router.push('/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/');
 		},
 		saveCourse(course) {
