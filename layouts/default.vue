@@ -254,6 +254,11 @@ h1 {
 		max-width: var(--8-wide);
 	}
 
+	.ts-grid .column.mobile-quarter {
+		width: var(--4-wide);
+		max-width: var(--4-wide);
+	}
+
 	.is-fitted table,
 	.is-fitted .ts-box {
 		border-radius: 0;

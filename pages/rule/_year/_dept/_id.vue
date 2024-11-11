@@ -427,18 +427,18 @@ export default {
 			localStorage['ruleDept'] = this.currentDept;
 			localStorage['ruleRule'] = this.currentRule;
 			if(this.$route.path != '/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/') {
-				history.replaceState([], '', '/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/');
+				this.$router.replace('/rule/' + this.currentYear + '/' + this.currentDept + '/' + this.currentRule + '/');
 			}
 			this.getRule();
 		},
 		chooseYear() {
 			if (!this.currentDeptName) this.currentDept = Object.keys(Object.values(this.depts[this.currentYear])[0])[0];
 			this.currentRule = -1;
-			history.replaceState([], '', '/rule/');
+			this.$router.replace('/rule/');
 		},
 		chooseDept() {
 			this.currentRule = -1;
-			history.replaceState([], '', '/rule/');
+			this.$router.replace('/rule/');
 		},
 		getRule() {
 			this.loading = true;
@@ -552,7 +552,7 @@ export default {
 						localStorage['dept'] = '';
 						localStorage['class'] = '';
 						localStorage['type'] = '';
-						this.$router.push('/');
+						this.$router.push('/course/');
 					}
 				});
 				return;
@@ -563,7 +563,7 @@ export default {
 			localStorage['dept'] = '';
 			localStorage['class'] = '';
 			localStorage['type'] = '';
-			this.$router.push('/');
+			this.$router.push('/course/');
 		},
 		showInfo(name) {
 			if(['永續發展與社會實踐', '經典教育與社會實踐'].includes(name)) {

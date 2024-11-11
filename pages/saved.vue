@@ -427,7 +427,8 @@ export default {
 		},
 		showCourse(course) {
 			if (course.id.includes('ALT_')) {
-				if(!course.courses || course.courses.length == 0) {
+				var real_courses = this.courses.filter(_course => course.courses.includes(_course.id)) || [];
+				if(!course.courses || real_courses.length == 0) {
 					this.$swal({
 						title: course.name,
 						text: '無課程資料',
@@ -436,12 +437,10 @@ export default {
 					});
 					return;
 				}
-				if(course.courses.length == 1) {
-					this.showCourse(this.courses.find(_course => _course.id === course.courses[0]));
+				if(real_courses.length == 1) {
+					this.showCourse(real_courses[0]);
 					return;
 				}
-				var html = '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">';
-				var real_courses = this.courses.filter(_course => course.courses.includes(_course.id));
 				const levels = { "初": 1, "中": 2, "高": 3, '菁英': 4 };
 				const classes = { "A": 1, "B": 2, "C": 3, "D": 4, "E": 5 };
 				real_courses.sort((a, b) => {
@@ -453,6 +452,7 @@ export default {
 					if (levels[levelA] !== levels[levelB]) return levels[levelA] - levels[levelB];
 					else return classes[classA] - classes[classB];
 				});
+				var html = '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">';
 				real_courses.forEach(_course => {
 					html += '<a class="item" href="/course/' + _course.id.substring(0, 4) + '/' + _course.id.substring(4, 8) + '/' + _course.id.substring(8) + '/">\
 						<div class="ts-header">' + _course.name + '</div>\

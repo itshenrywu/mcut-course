@@ -6,7 +6,7 @@
 				<NuxtLink
 					v-for="item in menuItems"
 					:key="item.path"
-					:to="isActive(item.path) ? '?' : item.path"
+					:to="getLink(item.path)"
 					:class="{ 'is-active': isActive(item.path) }"
 					class="item"
 				>
@@ -106,9 +106,14 @@ export default {
 	},
 	methods: {
 		isActive(path) {
-			if (path === '/') return this.currentPath === '/';
+			if (path === '/') return this.currentPath === '/course/' || this.currentPath === '/';
 			else return this.currentPath.includes(path);
-		}
+		},
+		getLink(path) {
+			if (path === '/') return (this.currentPath === '/') ? '' : '/';
+			else if(path === '/rule/') return this.currentPath.startsWith('/rule/') ? '' : '/rule/';
+			else return this.currentPath === path ? '' : path;
+		},
 	},
 };
 </script>
