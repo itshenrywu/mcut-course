@@ -3,7 +3,9 @@
 		<div class="ts-container is-narrow has-top-padded-large">
 			<div class="ts-grid is-compact is-middle-aligned">
 				<div class="column is-10-wide mobile-fluid">
-					<div class="ts-text is-description">{{ (course.id ? course.id.substring(0,3) + '-' + course.id.substring(3,4) + ' 學期・' : '' ) + course.id }}</div>
+					<div class="ts-text is-description">
+						{{ (course.id ? course.id.substring(0,3) + '-' + course.id.substring(3,4) + ' 學期・' : '' ) }}<span class="monospace">{{ course.id }}</span>
+					</div>
 					<h1 class="ts-header is-huge">{{ course.name }}</h1>
 				</div>
 				<div class="column is-6-wide mobile-fluid">
@@ -199,6 +201,10 @@
 	</div>
 </template>
 <style>
+.monospace {
+	font-family: monospace;
+}
+
 #page-course tbody tr td:first-child {
 	width: 7rem;
 	font-weight: bold;

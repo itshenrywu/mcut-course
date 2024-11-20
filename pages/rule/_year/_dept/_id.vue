@@ -577,7 +577,6 @@ export default {
 					</div>',
 					showConfirmButton: this.findCourses('00700F'),
 					confirmButtonText: '查看 '+this.currentRuleTerm+' 開課課程',
-					confirmButtonColor: 'var(--ts-gray-400)',
 					showCloseButton: true
 				})
 				.then((res) => {

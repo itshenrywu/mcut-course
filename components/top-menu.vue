@@ -99,7 +99,7 @@ export default {
 				{
 					path: '/info/',
 					label: '選課時間',
-					icon: 'is-circle-info-icon',
+					icon: 'is-clock-icon',
 				},
 			],
 		};
