@@ -48,7 +48,7 @@
 									<span class="description">共 {{ searchResult.teacher[teacher].length }} 門課程</span>
 								</button>
 								<button class="item more" v-if="Object.keys(searchResult.teacher).length > 5" @click="goDetailSearch('query', searchQuery)">
-									顯示更多<span class="ts-icon is-arrow-right-icon"></span>
+									顯示所有教師名稱包含「{{ searchQuery }}」的課程<span class="ts-icon is-arrow-right-icon"></span>
 								</button>
 							</template>
 							<template v-if="searchQuery == ''">
@@ -94,39 +94,39 @@
 			</div>
 			<div class="ts-grid has-top-spaced">
 				<div class="column is-4-wide mobile-half">
-					<div class="ts-box" @click="goDetailSearch('通識', '社會科學')" :class="{'locked': isLocked('通識')}">
+					<div class="ts-box" @click="goDetailSearch('通識', '社會科學')" :class="{'locked': isLocked('通識', '社會科學')}">
 						<div class="ts-content">
 							<div class="ts-header">社會科學</div>
-							<div class="ts-text is-small is-description">通識選修課程</div>
+							<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
 						</div>
 						<div class="symbol"><span class="ts-icon is-users-icon"></span></div>
 					</div>
 				</div>
 				<div class="column is-4-wide mobile-half">
-					<div class="ts-box" @click="goDetailSearch('通識', '自然科學')" :class="{'locked': isLocked('通識')}">
+					<div class="ts-box" @click="goDetailSearch('通識', '自然科學')" :class="{'locked': isLocked('通識', '自然科學')}">
 						<div class="ts-content">
 							<div class="ts-header">自然科學</div>
-							<div class="ts-text is-small is-description">通識選修課程</div>
+							<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
 						</div>
 						<div class="symbol"><span class="ts-icon is-seedling-icon"></span></div>
 					</div>
 				</div>
 				<div class="column is-4-wide mobile-half">
-					<div class="ts-box" @click="goDetailSearch('通識', '語言與全球化')" :class="{'locked': isLocked('通識')}">
+					<div class="ts-box" @click="goDetailSearch('通識', '語言與全球化')" :class="{'locked': isLocked('通識', '語言與全球化')}">
 						<div class="ts-content">
 							<div class="ts-header">語言與全球化</div>
-							<div class="ts-text is-small is-description">通識選修課程</div>
+							<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
 						</div>
-						<div class="symbol"><span class="ts-icon is-globe-icon"></span></div>
+						<div class="symbol"><span class="ts-icon is-earth-asia-icon"></span></div>
 					</div>
 				</div>
 				<div class="column is-4-wide mobile-half">
-					<div class="ts-box" @click="goDetailSearch('通識', '人文藝術')" :class="{'locked': isLocked('通識')}">
+					<div class="ts-box" @click="goDetailSearch('通識', '人文藝術')" :class="{'locked': isLocked('通識', '人文藝術')}">
 						<div class="ts-content">
 							<div class="ts-header">人文藝術</div>
-							<div class="ts-text is-small is-description">通識選修課程</div>
+							<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
 						</div>
-						<div class="symbol"><span class="ts-icon is-palette-icon"></span></div>
+						<div class="symbol"><span class="ts-icon is-music-icon"></span></div>
 					</div>
 				</div>
 			</div>
@@ -255,11 +255,11 @@ export default {
 			}
 		},
 		goDetailSearch(type, subtype) {
-			if(this.isLocked(type)) {
+			if(this.isLocked(type, subtype)) {
 				this.$swal({
 					icon: 'error',
-					title: '這個學期沒有開設此類課程',
-					text: '請選擇其他學期，或使用其他功能'
+					title: '這個學期還沒有開設此類課程',
+					text: '請切換學期或改天再試'
 				});
 				return;
 			}
@@ -289,8 +289,8 @@ export default {
 				localStorage['type'] = '- '+subtype;
 			}
 			else if (type == '社會實踐') {
+				localStorage['dept'] = '通識中心四技';
 				localStorage['searchQuery'] = '00700F';
-				localStorage['dept'] = '';
 				localStorage['class'] = '';
 				localStorage['type'] = '';
 			}
@@ -311,9 +311,12 @@ export default {
 			}
 			this.$router.push('/course/');
 		},
-		isLocked(type) {
+		isLocked(type, subtype) {
 			if(this.currentTerm.split('-')[1] >= 3 && ['體育'].includes(type)) return true;
 			if(type == '體育' && this.currentTerm.split('-')[0] <= 110) return true;
+
+			if(type == '社會實踐' && this.courses.filter(course => course.dept == '通識中心四技' && course.id.includes('00700F')).length == 0) return true;
+			if(type == '通識' && this.courses.filter(course => course.dept == '通識中心四技' && course.otherinfo && course.otherinfo.includes(subtype)).length == 0) return true;
 
 			return false;
 		},
@@ -392,7 +395,7 @@ export default {
 		slideIn(el, done) {
 			el.offsetHeight;
 			el.style.transition = 'height .5s ease';
-			el.style.height = el.scrollHeight + 'px';
+			el.style.height = (el.scrollHeight + 5) + 'px';
 			el.addEventListener('transitionend', done);
 		},
 		slideOut(el, done) {
@@ -503,6 +506,12 @@ export default {
 
 	#query-dropdown .item.is-indented .description {
 		margin-left: 0;
+	}
+}
+
+@media print {
+	#page-home .dept_class_list {
+		display: flex!important;
 	}
 }
 </style>

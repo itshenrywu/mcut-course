@@ -63,6 +63,10 @@ body {
 	height: 100dvh;
 }
 
+.swal2-html-container a {
+	color: var(--ts-primary-600);
+}
+
 .nuxt-progress {
 	background-color: var(--ts-primary-600);
 }
@@ -252,6 +256,16 @@ h1 {
 	.ts-grid .column.mobile-half {
 		width: var(--8-wide);
 		max-width: var(--8-wide);
+	}
+
+	.ts-grid .column.mobile-1-by-4 {
+		width: var(--4-wide);
+		max-width: var(--4-wide);
+	}
+
+	.ts-grid .column.mobile-3-by-4 {
+		width: var(--12-wide);
+		max-width: var(--12-wide);
 	}
 
 	.is-fitted table,

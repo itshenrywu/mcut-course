@@ -11,12 +11,10 @@
 				<div class="column is-6-wide mobile-fluid">
 					<div class="ts-wrap is-end-aligned">
 						<template v-if="courses && courses.length > 0">
-							<button class="ts-button is-start-icon is-secondary is-negative is-disabled"
-								v-if="isConflicted()">
+							<button class="ts-button is-start-icon is-secondary is-negative is-disabled" v-if="isConflicted()">
 								<span class="ts-icon is-triangle-exclamation-icon"></span>衝堂
 							</button>
-							<button class="ts-button is-start-icon" v-else-if="savedCourse.includes(course.id)"
-								@click="saveCourse()">
+							<button class="ts-button is-start-icon" v-else-if="savedCourse.includes(course.id)" @click="saveCourse()">
 								<span class="ts-icon is-star-icon"></span>已收藏
 							</button>
 							<button class="ts-button is-start-icon is-secondary" v-else @click="saveCourse()">
@@ -24,12 +22,13 @@
 							</button>
 						</template>
 
-						<button class="ts-button is-start-icon is-secondary" @click="share()"><span
-								class="ts-icon is-share-icon"></span>分享</button>
+						<button class="ts-button is-start-icon is-secondary" @click="share()">
+							<span class="ts-icon is-share-icon"></span>分享
+						</button>
 					</div>
 				</div>
 			</div>
-			<div class="ts-grid has-top-spaced" v-if="course.name">
+			<div class="ts-grid is-stretched has-top-spaced" v-if="course.name">
 				<div class="column is-8-wide mobile-fluid">
 					<div class="ts-box">
 						<div class="ts-content">
@@ -43,13 +42,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-4-wide mobile-half">
+				<div class="column"
+					:class="{ 'is-6-wide mobile-3-by-4': course.otherinfo, 'is-4-wide mobile-half': !course.otherinfo }">
 					<div class="ts-box">
 						<div class="ts-content">
 							<span class="statistic-title">修別 {{ course.otherinfo ? ' / 通識類別' : '' }}</span>
 							<div class="ts-statistic">
-								<div class="value">{{ course.type + (course.otherinfo ? ' ' +
-									course.otherinfo.substring(0, 2) : '') }}</div>
+								<div class="value">{{ course.type + (course.otherinfo ? ' ' + course.otherinfo : '') }}</div>
 							</div>
 						</div>
 						<div class="symbol">
@@ -57,7 +56,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-4-wide mobile-half">
+				<div class="column mobile-half"
+					:class="{ 'is-2-wide mobile-1-by-4': course.otherinfo, 'is-4-wide mobile-half': !course.otherinfo }">
 					<div class="ts-box">
 						<div class="ts-content">
 							<span class="statistic-title">學分</span>
@@ -78,8 +78,7 @@
 							<div class="ts-statistic">
 								<div class="value" id="course-time">
 									<span v-for="time in course.time" class="time">
-										<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-											week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
+										<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{ week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
 										<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
 									</span>
 								</div>
@@ -168,7 +167,7 @@
 					</tr>
 					<tr v-if="schedule.length > 0">
 						<td colspan="2">
-							教學進度表
+							<b>教學進度表</b>
 							<div class="ts-box has-top-spaced-small">
 								<div class="ts-content">
 									<table class="ts-table">
@@ -303,7 +302,17 @@
 
 @media print {
 	#page-course tbody tr td:first-child {
-		width: 8rem;
+		width: 12rem;
+	}
+
+	#page-course .ts-icon.is-circle-info-icon {
+		display: none;
+	}
+
+	#page-course .time:first-child,
+	#page-course .time:nth-child(2) {
+		display: inline;
+		padding-right: .5rem;
 	}
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div class="cell">
-		<div class="print-only">明志科技大學選課小幫手</div>
+		<div class="print-only">明志科技大學選課小幫手 | mcut-course.com</div>
 		<div class="ts-container is-fitted navbar">
 			<div class="ts-tab is-center-aligned">
 				<NuxtLink
