@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/6270/0V01", (function(a){return {data:[{course:{time:[[a,"1~2"]],id:"111262700V01",name:"物理化學",type:"選修",dept:"人工智慧學程",year:a,class:"甲",teacher:"黃錦鴻",credit:"2",classroom:"教307",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

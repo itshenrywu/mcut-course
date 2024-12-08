@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1350/5602", {data:[{course:{time:[["4","1~4"]],id:"109113505602",name:"儀器分析實驗",type:"選修",dept:"四技化工系",year:"3",class:"乙",teacher:"李英正",credit:"1",classroom:"化302",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

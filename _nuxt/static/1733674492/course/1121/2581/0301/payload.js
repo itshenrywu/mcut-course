@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2581/0301", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112125810301",name:"研究方法與論文寫作",type:"選修",dept:"工管系碩士班",year:a,class:"甲",teacher:"張仁履",credit:"3",classroom:"630",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

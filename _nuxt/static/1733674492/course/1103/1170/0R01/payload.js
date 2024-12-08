@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1170/0R01", {data:[{course:{time:[["2","5~8"]],id:"110311700R01",name:"機械工程概論",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"劉秋霖",credit:"1",classroom:"機111",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

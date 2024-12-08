@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0570/0K01", {data:[{course:{time:[["4","1~4"]],id:"112205700K01",name:"普通物理與實驗",type:"必修",dept:"四技機械系",year:"1",class:"甲",teacher:"陳楷仁",credit:"3",classroom:"機501",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

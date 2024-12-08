@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0401/0309", (function(a){return {data:[{course:{time:[["2","8~8.5"]],id:"109104010309",name:"大學之道",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"唐明中",credit:a,classroom:"子315",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

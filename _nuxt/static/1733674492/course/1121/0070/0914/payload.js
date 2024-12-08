@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0914", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"112100700914",name:"實習前職場素養訓練",type:"必修",dept:"四技機械系",year:"3",class:"乙",teacher:"蔡宜昌",credit:a,classroom:"機314",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1","0.5~0.5")));

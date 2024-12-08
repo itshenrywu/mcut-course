@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/11C0/2101", {data:[{course:{time:[["6","1~3"]],id:"109111C02101",name:"油電混合車技術",type:"選修",dept:"四技進修部機械系",year:"4",class:"甲",teacher:"黃新翔",credit:"3",classroom:"車工廠",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

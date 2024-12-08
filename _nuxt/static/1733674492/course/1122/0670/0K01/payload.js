@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0670/0K01", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"112206700K01",name:"體育(四)防身術",type:"必修",dept:"體育組-四技(日)",year:"2",class:"甲",teacher:"吳國誠",credit:a,classroom:"體B2技擊室",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

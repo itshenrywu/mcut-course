@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1170/2M01", {data:[{course:{time:[["1","5~7"]],id:"113111702M01",name:"熱流工程實務",type:"選修",dept:"四技機械系",year:"4",class:"甲",teacher:"張國棟",credit:"3",classroom:"機109",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

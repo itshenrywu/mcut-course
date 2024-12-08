@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1270/3H01", {data:[{course:{time:[["5","1~3"]],id:"113112703H01",name:"電腦網路概論",type:"選修",dept:"四技電機系",year:"4",class:"丙",teacher:"王得貴",credit:"3",classroom:"電333",max:"30",min:"10",comment:"限法國專班選課，English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

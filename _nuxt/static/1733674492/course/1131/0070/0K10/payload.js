@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0K10", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"113100700K10",name:"大學之道",type:"必修",dept:"四技電機系",year:b,class:"乙",teacher:"賴文政",credit:b,classroom:"宿302",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("0.5~0.5","1")));

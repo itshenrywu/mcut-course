@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3380/0N01", {data:[{course:{time:[["4","2~4"]],id:"112233800N01",name:"創造力方法與設計",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"李育菁",credit:"3",classroom:"730-會議室",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

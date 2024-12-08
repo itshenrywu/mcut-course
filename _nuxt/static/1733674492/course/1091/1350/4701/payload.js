@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1350/4701", {data:[{course:{time:[["2","1~4"]],id:"109113504701",name:"化學工程實習(一)",type:"必修",dept:"四技化工系",year:"4",class:"甲",teacher:"吳弦聰",credit:"1",classroom:"綜(B1)101",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

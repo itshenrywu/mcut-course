@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/1001", {data:[{course:{time:[["1","2~4"]],id:"113101701001",name:"文學與人性心理描寫",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"施依吾",credit:"2",classroom:"教208",max:"48",min:"10",comment:"6\u002F3-8\u002F19管設學院學生不得選修",otherinfo:"人文藝術"}}],fetch:{},mutations:void 0});

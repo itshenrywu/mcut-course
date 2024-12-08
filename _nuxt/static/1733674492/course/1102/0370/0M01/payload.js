@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0370/0M01", {data:[{course:{time:[["4","7~8"]],id:"110203700M01",name:"疾病與歷史變遷",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳冠穎",credit:"2",classroom:"體205",max:"53",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:void 0});

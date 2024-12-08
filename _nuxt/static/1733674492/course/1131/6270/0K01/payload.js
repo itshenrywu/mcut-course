@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/6270/0K01", {data:[{course:{time:[["4","2~4"]],id:"113162700K01",name:"工業物聯網與感測系統",type:"必修",dept:"人工智慧學程",year:"3",class:"甲",teacher:"王得貴",credit:"2",classroom:"電333",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

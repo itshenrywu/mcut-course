@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1170/4602", {data:[{course:{time:[["1","7~8.5"]],id:"110111704602",name:"熱傳學",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"章哲寰",credit:"3",classroom:"機414",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

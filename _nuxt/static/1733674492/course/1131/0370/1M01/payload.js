@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/1M01", {data:[{course:{time:[["4","7~8"]],id:"113103701M01",name:"泰山在地文化資產導論",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"莊蕙綺",credit:"2",classroom:"教208",max:"45",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:void 0});

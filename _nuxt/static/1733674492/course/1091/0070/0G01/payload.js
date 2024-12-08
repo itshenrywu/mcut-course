@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0070/0G01", (function(a){return {data:[{course:{time:[["7","3~4"]],id:"109100700G01",name:"偏鄉兒童品格教育",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"彭坤增",credit:a,classroom:"體404",max:"無上限",min:"無下限",comment:"",otherinfo:"自主學習"}}],fetch:{},mutations:void 0}}("1")));

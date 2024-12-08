@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2270/4802", {data:[{course:{time:[["5","2~4"]],id:"109222704802",name:"策略管理",type:"必修",dept:"四技經管系",year:"4",class:"乙",teacher:"楊淑宜",credit:"3",classroom:"教208",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

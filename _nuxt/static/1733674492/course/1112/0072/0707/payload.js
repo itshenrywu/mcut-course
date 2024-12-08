@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0072/0707", {data:[{course:{time:[["4","3~4"]],id:"111200720707",name:"英語聽講(初級)(二)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"簡珮玲",credit:"1",classroom:"體202",max:"40",min:"10",comment:"工管經管視傳行設初A",otherinfo:null}}],fetch:{},mutations:void 0});
