@@ -51,7 +51,7 @@ export default {
 							localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
 							this.redirect();
 						} else {
-							this.$router.replace('/');
+							this.$router.replace('/course/');
 						}
 					});
 			} else {
@@ -65,7 +65,7 @@ export default {
 			localStorage['type'] = '必修';
 			localStorage['showConflict'] = 'true';
 			localStorage['searchQuery'] = '';
-			this.$router.replace('/');
+			this.$router.replace('/course/');
 		}
 	}
 }

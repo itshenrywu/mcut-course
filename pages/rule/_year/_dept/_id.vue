@@ -552,7 +552,7 @@ export default {
 						localStorage['dept'] = '';
 						localStorage['class'] = '';
 						localStorage['type'] = '';
-						this.$router.push('/');
+						this.$router.push('/course/');
 					}
 				});
 				return;
@@ -563,7 +563,7 @@ export default {
 			localStorage['dept'] = '';
 			localStorage['class'] = '';
 			localStorage['type'] = '';
-			this.$router.push('/');
+			this.$router.push('/course/');
 		},
 		showInfo(name) {
 			if(['永續發展與社會實踐', '經典教育與社會實踐'].includes(name)) {
