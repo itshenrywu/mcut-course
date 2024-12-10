@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1270/1P02", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"109212701P02",name:"PLC實務",type:"必修",dept:"四技電機系",year:"1",class:"乙",teacher:"林志銘",credit:a,classroom:"電318",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/11C0/1M02", (function(a,b){return {data:[{course:{time:[["1",a],["4",a]],id:"109411C01M02",name:"車輛電路與實務分析",type:"重修",dept:"四技進修部機械系",year:b,class:"暑",teacher:"黃新翔",credit:b,classroom:"車工廠",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("9~11","3")));

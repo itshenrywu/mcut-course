@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0170/0F15", {data:[{course:{time:[["3","2~3"]],id:"109101700F15",name:"文學鑑賞與情意表達",type:"必修",dept:"四技視傳系",year:"1",class:"甲",teacher:"蒲彥光",credit:"2",classroom:"教104",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

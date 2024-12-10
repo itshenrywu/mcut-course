@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/1P02", {data:[{course:{time:[["5","5~7"]],id:"113211701P02",name:"MATLAB軟體應用",type:"選修",dept:"四技機械系",year:"2",class:"乙",teacher:"蔡宜昌",credit:"3",classroom:"機414",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

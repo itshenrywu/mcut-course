@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1280/0301", {data:[{course:{time:[["2","5~7"]],id:"109112800301",name:"最佳化方法",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"林郁修",credit:"3",classroom:"電322",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

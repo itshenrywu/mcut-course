@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2240/0101", (function(a){return {data:[{course:{time:[[a,"2~3"],["2","4~4"]],id:"113122400101",name:"經濟學(一)",type:"必修",dept:"四技經管系",year:a,class:"甲",teacher:"林鴻裕",credit:"3",classroom:"教104",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

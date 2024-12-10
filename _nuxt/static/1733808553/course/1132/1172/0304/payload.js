@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1172/0304", {data:[{course:{time:[["1","6~8"]],id:"113211720304",name:"工程熱力學(一)",type:"重修",dept:"四技機械系",year:"4",class:"重",teacher:"張國棟",credit:"3",classroom:"機109",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

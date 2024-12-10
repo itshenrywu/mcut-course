@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2180/1A01", {data:[{course:{time:[["4","5~7"]],id:"111221801A01",name:"資料探勘",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"阮業春",credit:"3",classroom:"630",max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

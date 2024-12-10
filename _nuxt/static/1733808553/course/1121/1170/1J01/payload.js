@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1170/1J01", {data:[{course:{time:[["3","3~4"]],id:"112111701J01",name:"機械工程概論",type:"選修",dept:"四技機械系",year:"1",class:"甲",teacher:"張文慶",credit:"2",classroom:"機501",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

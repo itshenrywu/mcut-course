@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/1501", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"111230701501",name:"多媒體創作",type:"選修",dept:"四技行設專班",year:"2",class:"甲",teacher:"何孟翰",credit:a,classroom:"804",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

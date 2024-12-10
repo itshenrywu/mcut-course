@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2170/1C01", {data:[{course:{time:[["5","2~4"]],id:"111221701C01",name:"人工智慧概論",type:"選修",dept:"四技工管系",year:"1",class:"甲",teacher:"陳子家",credit:"3",classroom:"體207",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

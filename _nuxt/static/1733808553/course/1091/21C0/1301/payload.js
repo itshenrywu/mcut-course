@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/21C0/1301", {data:[{course:{time:[["1","9~11"]],id:"109121C01301",name:"系統模擬",type:"選修",dept:"四技進修部工管系",year:"4",class:"甲",teacher:"陳琨太",credit:"3",classroom:"617電腦室",max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

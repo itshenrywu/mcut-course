@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/00C0/0901", {data:[{course:{time:[["4","9~10"]],id:"111200C00901",name:"美台社會經濟關係",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"陳鈺明",credit:"2",classroom:"教208",max:"45",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

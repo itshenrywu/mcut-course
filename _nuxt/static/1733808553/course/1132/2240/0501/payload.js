@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2240/0501", {data:[{course:{time:[["4","2~4"]],id:"113222400501",name:"經濟學(二)",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"葛同",credit:"3",classroom:"506",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

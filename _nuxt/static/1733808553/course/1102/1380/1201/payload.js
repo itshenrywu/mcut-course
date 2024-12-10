@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1380/1201", (function(a){return {data:[{course:{time:[["2","1~2"]],id:"110213801201",name:"專題研究(二)",type:"必修",dept:"化工系碩士班",year:a,class:"甲",teacher:"李國通",credit:a,classroom:"化視聽教室",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

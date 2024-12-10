@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0170/0G16", (function(a){return {data:[{course:{time:[[a,"1~2"]],id:"113201700G16",name:"藝文涵養與社會參與",type:"必修",dept:"四技工管系",year:"1",class:"甲",teacher:"涂藍云",credit:a,classroom:"教108",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

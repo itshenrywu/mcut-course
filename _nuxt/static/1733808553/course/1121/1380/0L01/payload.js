@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1380/0L01", {data:[{course:{time:[["4","2~4"]],id:"112113800L01",name:"生化儀器分析暨實作",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"劉昭麟",credit:"3",classroom:"綜-生工會議室",max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

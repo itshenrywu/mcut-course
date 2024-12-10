@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1680/0501", {data:[{course:{time:[["2","2~4"]],id:"113216800501",name:"空氣污染物監測",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"程裕祥",credit:"3",classroom:"綜138",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

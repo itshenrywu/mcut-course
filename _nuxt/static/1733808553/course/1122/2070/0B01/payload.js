@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/0B01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112220700B01",name:"工程統計與數據分析實務",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"陳思翰",credit:"3",classroom:"遠距教室",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

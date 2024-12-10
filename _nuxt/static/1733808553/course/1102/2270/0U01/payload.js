@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2270/0U01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"110222700U01",name:"管理經濟",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"張家瑞",credit:"3",classroom:"教207",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

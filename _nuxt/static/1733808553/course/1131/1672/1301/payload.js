@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1672/1301", (function(a){return {data:[{course:{time:[[a,"2~3"],["5","5~5"]],id:"113116721301",name:"施工安全",type:"選修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"鄭慶武",credit:a,classroom:"體209",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

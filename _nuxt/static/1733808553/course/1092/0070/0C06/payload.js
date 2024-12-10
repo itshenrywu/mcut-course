@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0070/0C06", {data:[{course:{time:[["7","10~10"]],id:"109200700C06",name:"工讀實務實習(四)",type:"必修",dept:"四技機械系",year:"3",class:"乙",teacher:"游孟潔",credit:"4",classroom:"網路",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

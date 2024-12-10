@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/0K01", {data:[{course:{time:[["1","9~10"]],id:"113120700K01",name:"科技管理",type:"選修",dept:"環資學院",year:"4",class:"甲",teacher:"陳樹全",credit:"2",classroom:"教209",max:"48",min:"10",comment:"限環資學院可選",otherinfo:null}}],fetch:{},mutations:void 0});

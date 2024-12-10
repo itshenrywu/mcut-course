@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1370/0P01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112113700P01",name:"計算機程式設計",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"傅俊中",credit:"3",classroom:"綜108",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

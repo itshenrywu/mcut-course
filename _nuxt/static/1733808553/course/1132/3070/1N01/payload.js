@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3070/1N01", (function(a){return {data:[{course:{time:[["3",a],["5",a]],id:"113230701N01",name:"專題製作 (2)",type:"必修",dept:"四技行設專班",year:"4",class:"甲",teacher:"林金祥",credit:"6",classroom:"創302",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5~8")));

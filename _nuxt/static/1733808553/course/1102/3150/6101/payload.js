@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3150/6101", {data:[{course:{time:[["5","5~7"]],id:"110231506101",name:"材料與加工",type:"必修",dept:"四技工設系",year:"1",class:"甲",teacher:"陳建志",credit:"3",classroom:"工設系工作室1",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2160/2002", {data:[{course:{time:[["5","1~3"]],id:"111121602002",name:"會計學",type:"必修",dept:"四技工管系",year:"1",class:"乙",teacher:"陳子家",credit:"3",classroom:"教207",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});
