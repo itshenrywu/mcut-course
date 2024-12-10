@@ -547,7 +547,7 @@ export default {
 		},
 		showCourse(course) {
 			if (course.id.includes('ALT_')) {
-				var real_courses = this.courses.filter(_course => course.courses.includes(_course.id)) || [];
+				var real_courses = this.courses.filter(_course => course.courses.map(courseId => courseId.toString()).includes(_course.id)) || [];
 				if(!course.courses || real_courses.length == 0) {
 					this.$swal({
 						title: course.name,
