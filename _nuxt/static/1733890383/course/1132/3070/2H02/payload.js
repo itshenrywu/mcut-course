@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3070/2H02", {data:[{course:{time:[["4","2~4"]],id:"113230702H02",name:"色彩與造型應用",type:"必修",dept:"行銷設計學程",year:"1",class:"乙",teacher:"曾郁雯",credit:"3",classroom:"804",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

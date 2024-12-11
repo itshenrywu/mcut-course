@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2270/0X01", {data:[{course:{time:[["1","6~8"]],id:"112122700X01",name:"招募與任用",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"李秉懿",credit:"3",classroom:"535",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

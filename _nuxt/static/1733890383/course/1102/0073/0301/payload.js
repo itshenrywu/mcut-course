@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0073/0301", {data:[{course:{time:[["4","5~6"]],id:"110200730301",name:"英語口語溝通技巧",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"闕壯宏",credit:"2",classroom:"機501",max:"48",min:"10",comment:"",otherinfo:"語言與全球化"}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1174/2002", (function(a){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"113111742002",name:"電腦輔助工程分析",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"劉晉奇",credit:a,classroom:"機414",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

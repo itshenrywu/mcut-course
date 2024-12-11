@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2270/4801", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"113222704801",name:"策略管理",type:"必修",dept:"四技經管系",year:"4",class:"甲",teacher:"陳心田",credit:a,classroom:"教202",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

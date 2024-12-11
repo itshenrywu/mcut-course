@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1880/3101", {data:[{course:{time:[["2","2~4"]],id:"109118803101",name:"太陽能電池特論",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"陳政營",credit:"3",classroom:"綜大135",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

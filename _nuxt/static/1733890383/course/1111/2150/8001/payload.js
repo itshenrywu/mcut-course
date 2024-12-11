@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2150/8001", {data:[{course:{time:[["4","5~6"],["5","3~4"]],id:"111121508001",name:"人因工程(含實習)",type:"必修",dept:"四技工管系",year:"2",class:"甲",teacher:"李育奇",credit:"3",classroom:"體202",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3180/0201", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"112231800201",name:"書報討論",type:"必修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"謝國榮",credit:a,classroom:"工設系討論室1",max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

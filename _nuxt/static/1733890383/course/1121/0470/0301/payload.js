@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0470/0301", {data:[{course:{time:[["5","5~6"]],id:"112104700301",name:"微積分",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"陳隆暉",credit:"2",classroom:"教304",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

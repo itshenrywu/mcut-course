@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2270/1F04", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109122701F04",name:"財務報表分析",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"張明輝",credit:"3",classroom:"體201",max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

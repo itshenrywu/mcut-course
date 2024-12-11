@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1170/0A01", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"112111700A01",name:"電腦輔助設計(一)",type:"選修",dept:"四技機械系",year:b,class:"丙",teacher:"邱昱仁",credit:b,classroom:"機412",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/21C0/0402", {data:[{course:{time:[["2","9~11"]],id:"109121C00402",name:"統計學(一)",type:"重修",dept:"四技進修部工管系",year:"4",class:"重",teacher:"劉弘一",credit:"3",classroom:"623",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

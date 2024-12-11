@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/21A0/0H01", {data:[{course:{time:[["4","9~11"]],id:"112121A00H01",name:"工業4.0",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"白恭瑞",credit:"3",classroom:"630",max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

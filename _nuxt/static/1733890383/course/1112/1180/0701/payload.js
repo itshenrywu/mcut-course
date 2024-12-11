@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1180/0701", {data:[{course:{time:[["2","5~7"]],id:"111211800701",name:"生醫材料與奈米生醫技術",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"劉定宇",credit:"3",classroom:"機410",max:"14",min:"5",comment:"English-taught course，與生醫暨醫材博班併班",otherinfo:null}}],fetch:{},mutations:void 0});

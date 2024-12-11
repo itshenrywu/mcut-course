@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1670/0A01", {data:[{course:{time:[["4","1~3"]],id:"109116700A01",name:"工程數學(一)",type:"必修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"鄭慶武",credit:"3",classroom:"體205",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

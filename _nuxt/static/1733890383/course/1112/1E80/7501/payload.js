@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1E80/7501", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"11121E807501",name:"有限元素分析與應用",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"劉晉奇",credit:a,classroom:"機414",max:"14",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2150/6301", {data:[{course:{time:[["5","1~3"]],id:"109121506301",name:"系統分析與設計",type:"選修",dept:"四技工管系",year:"2",class:"甲",teacher:"邱育智",credit:"3",classroom:"教203",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

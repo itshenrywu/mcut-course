@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0170/0F12", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"110101700F12",name:"文學鑑賞與情意表達",type:"必修",dept:"四技工管系",year:"1",class:"乙",teacher:"葉衽榤",credit:a,classroom:"618電腦室",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2070/1P01", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"111120701P01",name:"綠色能源概論",type:"選修",dept:"半導體學程",year:"1",class:"甲",teacher:"李文錦",credit:a,classroom:"教208",max:"45",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

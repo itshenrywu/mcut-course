@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/3350/0603", {data:[{course:{time:[["6","5~8"]],id:"112333500603",name:"環境視覺設計",type:"重修",dept:"四技視傳系",year:"4",class:"暑",teacher:"李淑珠",credit:"3",classroom:"811",max:"10",min:"5",comment:"暑修併傳三甲塊狀課程(6\u002F14~6\u002F28)",otherinfo:null}}],fetch:{},mutations:void 0});

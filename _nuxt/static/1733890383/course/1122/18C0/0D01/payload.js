@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/18C0/0D01", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"112218C00D01",name:"射出成型加工技術",type:"選修",dept:"四技進修部材工系",year:b,class:"甲",teacher:"郭啟全",credit:b,classroom:"機209",max:"80",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("6","3")));

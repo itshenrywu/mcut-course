@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3170/0H01", {data:[{course:{time:[["4","5~7"]],id:"109131700H01",name:"3D數位成形",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"謝政道",credit:"3",classroom:"CAID工作坊",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

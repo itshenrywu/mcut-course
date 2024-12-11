@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0470/0001", {data:[{course:{time:[["5","5~7"]],id:"111104700001",name:"微積分",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"施正元",credit:"3",classroom:"教208",max:"45",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

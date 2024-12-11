@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1570/2C02", {data:[{course:{time:[["1","7~8.5"]],id:"113215702C02",name:"電子學(三)",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"李健宏",credit:"3",classroom:"子316",max:"50",min:"10",comment:"甲乙合班，微電子模組選修",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0404/0104", {data:[{course:{time:[["5","5~7"]],id:"111104040104",name:"普通物理",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"王孟忠",credit:"3",classroom:"體209",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

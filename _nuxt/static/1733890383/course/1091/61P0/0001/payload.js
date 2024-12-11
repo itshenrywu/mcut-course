@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/61P0/0001", {data:[{course:{time:[["4","2~3"]],id:"109161P00001",name:"專題討論(一)",type:"必修",dept:"能源電池博士班",year:"1",class:"甲",teacher:"施正元",credit:"0.5",classroom:"綠215",max:"20",min:"2",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

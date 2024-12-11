@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2280/3901", {data:[{course:{time:[["4","2~4"]],id:"112122803901",name:"人力資源管理專題",type:"必修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"顏鴻傑",credit:"3",classroom:"513",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

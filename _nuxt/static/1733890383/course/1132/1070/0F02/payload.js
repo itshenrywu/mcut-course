@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1070/0F02", {data:[{course:{time:[["2","9~11"]],id:"113210700F02",name:"科技英文簡報與表達(二)",type:"選修",dept:"工程學院",year:"4",class:"甲",teacher:"許宏彬",credit:"3",classroom:"子316",max:"55",min:"10",comment:"限工程學院學生選課(榮譽學程課程)",otherinfo:null}}],fetch:{},mutations:void 0});

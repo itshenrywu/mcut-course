@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1170/2S02", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"113111702S02",name:"專題設計(二)",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"郭啟全",credit:"1",classroom:"機械系館",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

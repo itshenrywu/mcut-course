@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3370/4601", {data:[{course:{time:[["3","5~8"],["5","1~4"]],id:"109233704601",name:"專題設計(二)",type:"必修",dept:"四技視傳系",year:"4",class:"甲",teacher:"楊朝明",credit:"6",classroom:"811-演講廳",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

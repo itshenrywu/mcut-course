@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1670/0R01", {data:[{course:{time:[["3","5~6"]],id:"113216700R01",name:"質能均衡",type:"必修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"劉禎淑",credit:"2",classroom:"體201",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

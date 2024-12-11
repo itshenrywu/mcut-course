@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3350/1201", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112233501201",name:"廣告設計",type:"必修",dept:"四技視傳系",year:"2",class:"甲",teacher:"劉瑞芬",credit:a,classroom:"804",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

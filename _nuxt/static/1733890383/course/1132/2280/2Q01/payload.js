@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2280/2Q01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113222802Q01",name:"國際企業管理專題",type:"選修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"杜海勇",credit:"3",classroom:"535",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

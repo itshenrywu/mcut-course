@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0016", (function(a){return {data:[{course:{time:[["5","0.5~0.5"]],id:"113200700016",name:"設計思考",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"陳琨太",credit:a,classroom:"創大2F會議廳",max:"56",min:"10",comment:"上課日期:114\u002F03\u002F07(五) -114\u002F03\u002F09(日)",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

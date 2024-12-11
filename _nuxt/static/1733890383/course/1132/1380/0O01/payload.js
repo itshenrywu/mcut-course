@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1380/0O01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113213800O01",name:"生醫工程",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"鄭有為",credit:a,classroom:"綜-生工會議室",max:"10",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

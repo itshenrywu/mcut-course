@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0570/0G02", {data:[{course:{time:[["5","5~7"]],id:"112105700G02",name:"普通物理",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"蔣大鵬",credit:"3",classroom:"體207",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});
