@@ -303,6 +303,7 @@ export default {
 			if(this.currentTerm) info.push(this.currentTerm.split('-')[0] + '-' + this.currentTerm.split('-')[1] + ' 學期');
 			if(this.currentDept) info.push(this.currentDept + (this.currentClass ? ' ' + this.currentClass : '全年級'));
 			if(this.currentType) info.push(this.currentType.includes('-') ? this.currentType.split('- ')[1] : this.currentType);
+			if(info.length == 0) return '修改篩選條件';
 			if(info.length <= 1) info.push('全部課程');
 			return info.join(' / ');
 		},
