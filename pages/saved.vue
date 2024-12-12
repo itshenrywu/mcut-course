@@ -318,12 +318,13 @@ export default {
 						if (res.isConfirmed) {
 							localStorage['term'] = importTerm;
 							localStorage['savedCourse'] = JSON.stringify(importCourse);
+							this.savedCourse = importCourse;
 							this.$swal({
 								title: '已匯入課程', icon: 'success', toast: true,
 								timer: 3000, timerProgressBar: true,
 								position: 'bottom-start', showConfirmButton: false,
 							});
-							this.$root.$emit('updateSavedCourse', this.savedCourse);
+							this.$root.$emit('updateSavedCourse', importCourse);
 							this.$router.replace('/saved');
 						}
 					});
