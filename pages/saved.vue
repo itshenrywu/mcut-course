@@ -442,7 +442,7 @@ export default {
 					return;
 				}
 				var html = '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">';
-				var real_courses = this.courses.filter(_course => course.courses.includes(_course.id));
+				var real_courses = this.courses.filter(_course => course.courses.map(courseId => courseId.toString()).includes(_course.id)) || [];
 				const levels = { "初": 1, "中": 2, "高": 3, '菁英': 4 };
 				const classes = { "A": 1, "B": 2, "C": 3, "D": 4, "E": 5 };
 				real_courses.sort((a, b) => {
