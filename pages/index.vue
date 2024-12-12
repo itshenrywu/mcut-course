@@ -160,7 +160,7 @@
 							<div class="ts-box" @click="goDetailSearch(dept)">
 								<div class="ts-content">
 									<div class="ts-text is-tiny is-description">{{ dept }}</div>
-									<div class="ts-header">系所選修</div>
+									<div class="ts-header">全年級選修</div>
 								</div>
 							</div>
 						</div>

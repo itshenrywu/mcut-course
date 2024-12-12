@@ -113,10 +113,9 @@
 						門符合條件的課程
 					</div>
 				</div>
-				<button class="ts-button is-fluid is-outlined is-start-icon mobile-only"
-					@click="showMobileSidebar = !showMobileSidebar">
-					<span class="ts-icon is-filter-icon"></span>
-					修改篩選條件
+				<button class="ts-button is-fluid is-outlined is-end-icon mobile-only" @click="showMobileSidebar = !showMobileSidebar">
+					{{ filterInfo }}
+					<span class="ts-icon is-chevron-down-icon"></span>
 				</button>
 				<div v-show="canShowSaveRequiredButton" @click="saveRequiredCourse()">
 					<button class="ts-button is-fluid has-top-spaced is-secondary mobile-only is-start-icon">
@@ -141,7 +140,7 @@
 						</thead>
 						<tbody>
 							<tr v-for="course in filteredCourses" :key="course.id" @click="showCourse(course)">
-								<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
+								<td class="c-class">{{ course.dept + ' ' + course.year + ' 年' + course.class + '班' }}
 									<span class="mobile-only" v-if="!(course.id.includes('ALT_') && course.teacher.includes('分班'))">{{  course.teacher + ' 老師' }}</span>
 								</td>
 								<td class="c-name">
@@ -299,6 +298,14 @@ export default {
 		this.fetchData();
 	},
 	computed: {
+		filterInfo() {
+			let info = [];
+			if(this.currentTerm) info.push(this.currentTerm.split('-')[0] + '-' + this.currentTerm.split('-')[1] + ' 學期');
+			if(this.currentDept) info.push(this.currentDept + (this.currentClass ? ' ' + this.currentClass : '全年級'));
+			if(this.currentType) info.push(this.currentType.includes('-') ? this.currentType.split('- ')[1] : this.currentType);
+			if(info.length <= 1) info.push('全部課程');
+			return info.join(' / ');
+		},
 		filteredCourses() {
 			let filtered = this.courses;
 			if (this.searchQuery !== '') {
