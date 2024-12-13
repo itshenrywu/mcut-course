@@ -140,7 +140,7 @@
 						</thead>
 						<tbody>
 							<tr v-for="course in filteredCourses" :key="course.id" @click="showCourse(course)">
-								<td class="c-class">{{ course.dept + ' ' + course.year + ' 年' + course.class + '班' }}
+								<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
 									<span class="mobile-only" v-if="!(course.id.includes('ALT_') && course.teacher.includes('分班'))">{{  course.teacher + ' 老師' }}</span>
 								</td>
 								<td class="c-name">
