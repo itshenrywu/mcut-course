@@ -557,7 +557,6 @@ export default {
 				});
 				return;
 			}
-			localStorage['savedCourse'] = '[]';
 			localStorage['term'] = this.currentRuleTerm;
 			localStorage['searchQuery'] = sid;
 			localStorage['dept'] = '';
