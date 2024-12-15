@@ -113,12 +113,12 @@
 						門符合條件的課程
 					</div>
 				</div>
-				<button class="ts-button is-fluid is-outlined is-end-icon mobile-only" @click="showMobileSidebar = !showMobileSidebar">
+				<button class="ts-button is-fluid is-secondary is-end-labeled-icon mobile-only button-auto-height" @click="showMobileSidebar = !showMobileSidebar">
 					{{ filterInfo }}
 					<span class="ts-icon is-chevron-down-icon"></span>
 				</button>
 				<div v-show="canShowSaveRequiredButton" @click="saveRequiredCourse()">
-					<button class="ts-button is-fluid has-top-spaced is-secondary mobile-only is-start-icon">
+					<button class="ts-button is-fluid has-top-spaced is-outlined mobile-only is-start-icon">
 						<span class="ts-icon is-star-icon"></span>
 						收藏本班必修課
 					</button>
@@ -303,6 +303,7 @@ export default {
 			if(this.currentTerm) info.push(this.currentTerm.split('-')[0] + '-' + this.currentTerm.split('-')[1] + ' 學期');
 			if(this.currentDept) info.push(this.currentDept + (this.currentClass ? ' ' + this.currentClass : '全年級'));
 			if(this.currentType) info.push(this.currentType.includes('-') ? this.currentType.split('- ')[1] : this.currentType);
+			if(this.searchQuery) info.push('關鍵字：' + this.searchQuery);
 			if(info.length == 0) return '修改篩選條件';
 			if(info.length <= 1) info.push('全部課程');
 			return info.join(' / ');

@@ -53,7 +53,7 @@
 		<div class="cell is-secondary is-fluid is-scrollable">
 			<div class="ts-container has-top-padded-large is-fitted mobile-padded">
 				<h1 class="ts-header is-huge has-vertically-padded">畢業學分門檻</h1>
-				<button class="ts-button is-fluid is-outlined is-end-icon mobile-only"
+				<button class="ts-button is-fluid is-secondary is-end-labeled-icon mobile-only"
 					@click="showMobileSidebar = !showMobileSidebar">
 					<template v-if="currentRule == '-1'">選擇一個課程總表</template>
 					<template v-else-if="currentRule == '000'">

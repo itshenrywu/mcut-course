@@ -448,6 +448,12 @@ h1 {
 		border-radius: var(--ts-border-radius-container);
 		border: 1px solid var(--ts-gray-300);
 	}
+
+	.button-auto-height {
+		min-height: var(--height);
+		height: auto;
+		white-space: normal;
+	}
 }
 
 @media print {
