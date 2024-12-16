@@ -16,6 +16,7 @@
 						<span v-if="item.path === '/saved/' && savedCourse.length > 0" class="ts-badge is-small is-dense">
 							{{ savedCourse.length }}
 						</span>
+						<span v-if="item.path === '/info/' && showInfoHint" class="hint"></span>
 					</div>
 				</NuxtLink>
 			</div>
@@ -35,6 +36,20 @@
 	padding: .125rem .35rem;
 }
 
+.navbar .ts-tab .item {
+	position: relative;
+}
+
+.navbar .ts-tab .hint {
+	position: absolute;
+	top: 25%;
+	right: .55%;
+	width: .5rem;
+	height: .5rem;
+	border-radius: 50%;
+	background: var(--ts-negative-400);
+}
+
 @media (max-width: 768px) {
 	.navbar .ts-tab .item {
 		flex-direction: column;
@@ -50,16 +65,17 @@
 		line-height: 1.2;
 	}
 
-	.navbar .ts-tab .item {
-		position: relative;
-	}
-
 	.navbar .ts-badge {
 		position: absolute;
 		bottom: 45%;
 		left: 55%;
 		padding: .1rem .3rem;
 		font-size: .7rem;
+	}
+
+	.navbar .ts-tab .hint {
+		top: 5%;
+		right: 25%;
 	}
 }
 </style>
@@ -75,11 +91,17 @@ export default {
 		this.$router.afterEach((to) => {
 			this.currentPath = to.path;
 		});
+
+		this.$root.$on('clickInfo', (savedCourse) => {
+			this.showInfoHint = localStorage['clickInfo_20241216'] !== 'true';
+		});
+		this.showInfoHint = localStorage['clickInfo_20241216'] !== 'true';
 	},
 	data() {
 		return {
 			savedCourse: [],
 			currentPath: '',
+			showInfoHint: false,
 			menuItems: [
 				{
 					path: '/',
@@ -108,7 +130,8 @@ export default {
 		isActive(path) {
 			if (path === '/') return this.currentPath === '/';
 			else return this.currentPath.includes(path);
-		}
+		},
+
 	},
 };
 </script>

@@ -169,6 +169,10 @@ export default {
 			info: [],
 			loading: true
 		}
-	}
+	},
+	mounted() {
+		localStorage['clickInfo_20241216'] = 'true';
+		this.$root.$emit('clickInfo');
+	},
 }
 </script>
