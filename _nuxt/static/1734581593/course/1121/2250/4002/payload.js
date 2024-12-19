@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2250/4002", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112122504002",name:"行銷管理",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"張瀞",credit:"3",classroom:"體201",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

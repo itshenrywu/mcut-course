@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0401/0314", (function(a){return {data:[{course:{time:[["2","8~8.5"]],id:"110104010314",name:"大學之道",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"邱機平",credit:a,classroom:"宿302",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

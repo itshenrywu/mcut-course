@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/2170/1I03", (function(a,b){return {data:[{course:{time:[["2",a],[b,a]],id:"110321701I03",name:"作業研究(一)",type:"重修",dept:"四技工管系",year:b,class:"暑",teacher:"俞凱允",credit:"3",classroom:"624演講廳",max:"60",min:"5",comment:"與三甲合班 帶狀課程7\u002F4-9\u002F2",otherinfo:null}}],fetch:{},mutations:void 0}}("5~7","4")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1273/0703", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"109212730703",name:"自動控制",type:"重修",dept:"四技電機系",year:"4",class:"重",teacher:"林君玲",credit:a,classroom:"電116",max:"60",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

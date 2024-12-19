@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3170/0J02", {data:[{course:{time:[["4","2~4"]],id:"113231700J02",name:"交通工具設計",type:"選修",dept:"四技工設系",year:"2",class:"乙",teacher:"江潤華",credit:"3",classroom:"工設系討論室1",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

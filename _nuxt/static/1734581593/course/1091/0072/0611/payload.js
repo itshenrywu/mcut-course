@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0072/0611", {data:[{course:{time:[["4","7~8"]],id:"109100720611",name:"英文實務(一)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"曾雅萍",credit:"0",classroom:"綜大多媒體教室",max:"60",min:"10",comment:"材料甲+環安+環實務+視傳",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3070/2I02", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113230702I02",name:"統計學",type:"必修",dept:"行銷設計學程",year:a,class:"乙",teacher:"楊正翔",credit:"3",classroom:"教307",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

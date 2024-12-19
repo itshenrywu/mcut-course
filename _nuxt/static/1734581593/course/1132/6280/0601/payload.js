@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6280/0601", (function(a,b){return {data:[{course:{time:[["4","6~8"]],id:"113262800601",name:"生成式人工智慧的人文導論",type:"選修",dept:a,year:b,class:"甲",teacher:"劉豐瑞",credit:"3",classroom:"體203",max:"40",min:b,comment:a,otherinfo:null}}],fetch:{},mutations:void 0}}("TAICA","1")));

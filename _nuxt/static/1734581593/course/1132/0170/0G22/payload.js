@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0170/0G22", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"113201700G22",name:"藝文涵養與社會參與",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"呂湘瑜",credit:"2",classroom:"機402",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1174/2201", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"111111742201",name:"光電材料",type:"選修",dept:"四技機械系",year:b,class:"乙",teacher:"馮奎智",credit:b,classroom:"機314",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2","3")));

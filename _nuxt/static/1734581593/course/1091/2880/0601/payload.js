@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2880/0601", {data:[{course:{time:[["2","5~7"]],id:"109128800601",name:"水化學",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"吳容銘",credit:"3",classroom:"綜138",max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2070/1S01", {data:[{course:{time:[["4","5~7"]],id:"113220701S01",name:"近代物理",type:"選修",dept:"半導體學程",year:"1",class:"甲",teacher:"黃裕銘",credit:"3",classroom:"教208",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

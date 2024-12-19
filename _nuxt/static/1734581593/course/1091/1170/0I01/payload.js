@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1170/0I01", (function(a){return {data:[{course:{time:[["4","5~8"]],id:"109111700I01",name:"電動車技術",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"楊岳儒",credit:a,classroom:"機201",max:"60",min:"10",comment:"跨領域學分學程專班",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

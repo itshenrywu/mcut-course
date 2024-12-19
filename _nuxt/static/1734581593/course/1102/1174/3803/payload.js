@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1174/3803", (function(a){return {data:[{course:{time:[[a,"1~1"],["5","1~2"]],id:"110211743803",name:"自動控制(一)",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"陳宏毅",credit:"3",classroom:"機314",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

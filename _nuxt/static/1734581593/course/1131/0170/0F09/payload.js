@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/0F09", {data:[{course:{time:[["3","7~8"]],id:"113101700F09",name:"文學鑑賞與情意表達",type:"必修",dept:"四技電機系",year:"1",class:"甲",teacher:"林溫芳",credit:"2",classroom:"機402",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

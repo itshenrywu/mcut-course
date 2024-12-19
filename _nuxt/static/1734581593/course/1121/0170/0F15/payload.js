@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0170/0F15", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"112101700F15",name:"文學鑑賞與情意表達",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"呂湘瑜",credit:"2",classroom:"機402",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0670/0012", (function(a){return {data:[{course:{time:[["2","3~4"]],id:"113106700012",name:"體育(一)",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"吳宇豐",credit:a,classroom:"戶外",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1673/0701", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"110116730701",name:"空氣污染防制",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"許金玉",credit:a,classroom:"教209",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/12C0/1C02", {data:[{course:{time:[["5","9~12"],["6","2~3"]],id:"109412C01C02",name:"通信原理",type:"重修",dept:"四技進修部電機系",year:"4",class:"暑",teacher:"王柏仁",credit:"3",classroom:"電116",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

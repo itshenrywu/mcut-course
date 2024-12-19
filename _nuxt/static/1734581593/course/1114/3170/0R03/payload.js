@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1114/3170/0R03", (function(a){return {data:[{course:{time:[["1",a],["5",a]],id:"111431700R03",name:"醫療照護產品設計",type:"重修",dept:"四技工設系",year:"4",class:"暑",teacher:"許定洋",credit:"3",classroom:"工設系工作室2",max:"20",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5~7")));

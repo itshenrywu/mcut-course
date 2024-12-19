@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1180/0V01", {data:[{course:{time:[["4","2~4"]],id:"113211800V01",name:"機器人學",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"邱昱仁",credit:"3",classroom:"機209",max:"14",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

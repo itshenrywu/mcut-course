@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1170/2O02", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"111111702O02",name:"機械加工實務",type:"選修",dept:"四技機械系",year:"1",class:"乙",teacher:"鄭春德",credit:a,classroom:"機工場",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

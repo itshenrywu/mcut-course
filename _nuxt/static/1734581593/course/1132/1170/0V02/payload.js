@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/0V02", {data:[{course:{time:[["1","2~4"]],id:"113211700V02",name:"智慧製造感測聯網與數據分析",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"朱承軒",credit:"3",classroom:"機110",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

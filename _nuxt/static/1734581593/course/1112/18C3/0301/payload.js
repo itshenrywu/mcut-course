@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/18C3/0301", {data:[{course:{time:[["6","1~3"]],id:"111218C30301",name:"物理冶金(一)",type:"必修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"黃宗鈺",credit:"3",classroom:"教108",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3180/0801", {data:[{course:{time:[["6","1~3"]],id:"111231800801",name:"設計專業實習(三)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"許定洋",credit:"3",classroom:"工設系討論室1",max:"20",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

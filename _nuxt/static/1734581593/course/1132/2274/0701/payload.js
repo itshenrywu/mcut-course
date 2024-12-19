@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2274/0701", {data:[{course:{time:[["2","2~4"]],id:"113222740701",name:"國際企業管理",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"陳樹全",credit:"3",classroom:"535",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});
