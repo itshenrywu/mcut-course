@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1GP0/0O01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"11221GP00O01",name:"生醫訊號處理",type:"選修",dept:"生醫暨醫材博士學程",year:a,class:"甲",teacher:"曼尼",credit:"3",classroom:"機410",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0070/0501", (function(a){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"111100700501",name:"勤勞教育(一)",type:"必修",dept:"四技電子系",year:a,class:"甲",teacher:"洪偉文",credit:"0",classroom:"子314",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

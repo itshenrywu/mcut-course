@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1670/0Z01", {data:[{course:{time:[["4","9~11"]],id:"113116700Z01",name:"水系統消防安全設備",type:"選修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"黃培誠",credit:"3",classroom:"機109",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

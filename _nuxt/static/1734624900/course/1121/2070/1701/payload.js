@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2070/1701", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"112120701701",name:"物理化學(一)",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"郭亮吟",credit:a,classroom:"教208",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

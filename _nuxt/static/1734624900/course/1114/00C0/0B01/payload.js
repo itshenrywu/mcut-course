@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1114/00C0/0B01", (function(a){return {data:[{course:{time:[[a,"9~12"]],id:"111400C00B01",name:"中國歷代軍事史",type:"重修",dept:"通識中心進修部",year:a,class:"暑",teacher:"馮典章",credit:"2",classroom:"教207",max:"48",min:"20",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

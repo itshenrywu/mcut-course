@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1270/1H01", {data:[{course:{time:[["5","5~7"]],id:"112212701H01",name:"通訊實務",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"楊超舜",credit:"3",classroom:"電130",max:"40",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0});

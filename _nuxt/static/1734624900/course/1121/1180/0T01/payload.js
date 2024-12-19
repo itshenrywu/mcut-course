@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1180/0T01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112111800T01",name:"微控制器應用",type:"選修",dept:"機械系碩士班",year:a,class:"甲",teacher:"陳源林",credit:"3",classroom:"機312",max:"14",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

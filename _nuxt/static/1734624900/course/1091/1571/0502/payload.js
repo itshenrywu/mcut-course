@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1571/0502", {data:[{course:{time:[["4","9~11"]],id:"109115710502",name:"網路概論",type:"重修",dept:"四技電子系",year:"1",class:"重",teacher:"史登宇",credit:"3",classroom:"子223",max:"40",min:"10",comment:"限二年級以上學生修課。",otherinfo:null}}],fetch:{},mutations:void 0});

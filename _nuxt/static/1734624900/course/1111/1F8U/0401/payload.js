@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1F8U/0401", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"11111F8U0401",name:"光電工程",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"蔡文星",credit:"3",classroom:"電322",max:"30",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

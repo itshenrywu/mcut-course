@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0870/0001", (function(a){return {data:[{course:{time:[[a,"5~6"],["2","6~6"]],id:"113108700001",name:"普通化學(一)",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"盧奕廷",credit:"3",classroom:"體207",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

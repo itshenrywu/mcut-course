@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3340/2101", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"109233402101",name:"視覺創意思考",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"莊妙仙",credit:"3",classroom:"804-高階電腦",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3371/0301", {data:[{course:{time:[["2","2~4"]],id:"113233710301",name:"數位攝影",type:"必修",dept:"四技視傳系",year:"1",class:"甲",teacher:"朱賢哲",credit:"3",classroom:"811",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

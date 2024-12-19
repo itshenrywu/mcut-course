@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1170/0Z01", (function(a){return {data:[{course:{time:[[a,"3~4"],["2","1~2"]],id:"109211700Z01",name:"普通物理與實驗",type:"必修",dept:"四技機械系",year:a,class:"甲",teacher:"蘇莉真",credit:"3",classroom:"機501",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

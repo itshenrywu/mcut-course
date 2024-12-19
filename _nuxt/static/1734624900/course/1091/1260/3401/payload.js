@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1260/3401", (function(a){return {data:[{course:{time:[[a,"5~6"],["4","2~2"]],id:"109112603401",name:"電路學",type:"必修",dept:"四技電機系",year:"1",class:"甲",teacher:"吳啟耀",credit:a,classroom:"子313",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

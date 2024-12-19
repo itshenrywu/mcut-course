@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0401/0305", (function(a){return {data:[{course:{time:[["2","8~8.5"]],id:"109104010305",name:"大學之道",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"彭坤增",credit:a,classroom:"教108",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

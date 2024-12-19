@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1674/0601", {data:[{course:{time:[["1","7~8.5"]],id:"109216740601",name:"工業與環境毒物學",type:"選修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"陳錫金",credit:"3",classroom:"體205",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

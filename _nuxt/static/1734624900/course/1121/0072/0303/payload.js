@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0072/0303", {data:[{course:{time:[["4","1~2"]],id:"112100720303",name:"英語聽講(初級)(一)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"林美良",credit:"1",classroom:"教210",max:"40",min:"10",comment:"電機電子AI初A",otherinfo:null}}],fetch:{},mutations:void 0});

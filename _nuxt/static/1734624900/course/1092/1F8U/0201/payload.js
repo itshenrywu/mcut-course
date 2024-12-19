@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1F8U/0201", {data:[{course:{time:[["2","5~7"]],id:"10921F8U0201",name:"高密度分波多工系統",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"蔡文星",credit:"3",classroom:"電322",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

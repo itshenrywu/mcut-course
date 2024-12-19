@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0072/1007", {data:[{course:{time:[["4","1~2"]],id:"111200721007",name:"英文實務(二)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"林雅瓊",credit:"0",classroom:"體209",max:"65",min:"10",comment:"工管+經管+行設",otherinfo:null}}],fetch:{},mutations:void 0});

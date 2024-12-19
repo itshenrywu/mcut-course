@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1273/0401", (function(a,b){return {data:[{course:{time:[[a,"7~8"],[a,"9~10"]],id:"109112730401",name:"電力電子學",type:"必修",dept:"四技電機系",year:b,class:"甲",teacher:"謝飛虎",credit:b,classroom:"電130",max:"67",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2","3")));

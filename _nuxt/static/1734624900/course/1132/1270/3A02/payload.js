@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1270/3A02", (function(a){return {data:[{course:{time:[[a,"3~4"],["5","1~1"]],id:"113212703A02",name:"線性代數",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"蔡文星",credit:"3",classroom:"宿302",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

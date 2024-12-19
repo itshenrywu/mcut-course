@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1870/1T02", {data:[{course:{time:[["2","2~4"]],id:"113218701T02",name:"非鐵合金製程與處理",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"簡順億",credit:"3",classroom:"教308",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

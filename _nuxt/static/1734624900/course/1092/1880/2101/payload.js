@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1880/2101", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"109218802101",name:"複合材料",type:"選修",dept:"材料系碩士班",year:a,class:"甲",teacher:"雍敦元",credit:"3",classroom:"綜大135",max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

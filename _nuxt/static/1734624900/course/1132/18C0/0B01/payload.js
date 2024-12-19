@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/18C0/0B01", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"113218C00B01",name:"材料特性及應用",type:"選修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"林孟芳",credit:a,classroom:"教107",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

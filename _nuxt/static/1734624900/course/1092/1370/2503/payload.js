@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1370/2503", {data:[{course:{time:[["2","9~11"]],id:"109213702503",name:"化工熱力學",type:"重修",dept:"四技化工系",year:"4",class:"重",teacher:"黃錦鴻",credit:"3",classroom:"體207",max:"65",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

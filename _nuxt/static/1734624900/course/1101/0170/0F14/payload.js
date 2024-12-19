@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0170/0F14", {data:[{course:{time:[["4","3~4"]],id:"110101700F14",name:"文學鑑賞與情意表達",type:"必修",dept:"四技電機系",year:"1",class:"乙",teacher:"張淑芬",credit:"2",classroom:"宿302",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

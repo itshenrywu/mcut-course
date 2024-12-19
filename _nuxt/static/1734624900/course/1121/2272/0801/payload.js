@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2272/0801", {data:[{course:{time:[["5","1~2"]],id:"112122720801",name:"商用英文(一)",type:"必修",dept:"四技經管系",year:"2",class:"甲",teacher:"劉志堅",credit:"1",classroom:"體403",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

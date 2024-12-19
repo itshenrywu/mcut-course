@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1380/1701", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"110213801701",name:"高等高分子物理",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"吳紹榮",credit:a,classroom:"教103",max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1670/1S01", {data:[{course:{time:[["4","2~4"]],id:"113216701S01",name:"工程圖學",type:"選修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"陳志霖",credit:"3",classroom:"遠距教室",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

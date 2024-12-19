@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/1870/2B01", {data:[{course:{time:[["5","9~11"],["6","2~4"]],id:"111318702B01",name:"材料科學導論(一)",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"謝建國",credit:"3",classroom:"綜大135",max:"50",min:"10",comment:"與進修部併班",otherinfo:null}}],fetch:{},mutations:void 0});

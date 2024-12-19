@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0270/2Z01", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"113102702Z01",name:"英文商業書信",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳嘉蕙",credit:"2",classroom:"教210",max:"48",min:"10",comment:"",otherinfo:"語言與全球化"}}],fetch:{},mutations:void 0}}("1")));

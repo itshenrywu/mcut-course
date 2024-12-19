@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1272/0501", (function(a){return {data:[{course:{time:[[a,"4~4"],["4","3~4"]],id:"110212720501",name:"電子學(二)",type:"必修",dept:"四技電機系",year:"2",class:"甲",teacher:"吳長洲",credit:a,classroom:"電130",max:"70",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

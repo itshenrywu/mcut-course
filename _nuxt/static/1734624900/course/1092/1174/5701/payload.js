@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1174/5701", {data:[{course:{time:[["1","2~4"]],id:"109211745701",name:"車輛元件設計分析",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"劉晉奇",credit:"3",classroom:"機414",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

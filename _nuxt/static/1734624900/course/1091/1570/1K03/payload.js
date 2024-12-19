@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1570/1K03", {data:[{course:{time:[["5","5~7"]],id:"109115701K03",name:"數位邏輯設計實務",type:"必修",dept:"四技電子系",year:"1",class:"乙",teacher:"黃樹林",credit:"2",classroom:"子217",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});
