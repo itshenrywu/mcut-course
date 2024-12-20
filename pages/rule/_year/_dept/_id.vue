@@ -50,7 +50,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="cell is-secondary is-fluid is-scrollable">
+		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%">
 			<div class="ts-container has-top-padded-large is-fitted mobile-padded">
 				<h1 class="ts-header is-huge has-vertically-padded">畢業學分門檻</h1>
 				<button class="ts-button is-fluid is-secondary is-end-labeled-icon mobile-only"
