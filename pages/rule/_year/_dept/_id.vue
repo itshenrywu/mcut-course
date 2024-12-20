@@ -50,9 +50,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="cell is-secondary is-fluid is-scrollable">
+		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%">
 			<div class="ts-container has-top-padded-large is-fitted mobile-padded">
-				<h1 class="ts-header is-huge has-vertically-padded">畢業學分門檻</h1>
+				<h1 class="ts-header is-huge has-top-padded has-bottom-padded-large">畢業學分門檻</h1>
 				<button class="ts-button is-fluid is-secondary is-end-labeled-icon mobile-only"
 					@click="showMobileSidebar = !showMobileSidebar">
 					<template v-if="currentRule == '-1'">選擇一個課程總表</template>
@@ -67,7 +67,7 @@
 					<span class="ts-icon is-chevron-down-icon"></span>
 				</button>
 			</div>
-			<div class="ts-container has-top-padded is-fitted">
+			<div class="ts-container is-fitted">
 				<div class="ts-box has-vertically-spaced-large">
 					<div class="ts-content">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">注意事項</span>

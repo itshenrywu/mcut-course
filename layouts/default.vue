@@ -61,6 +61,7 @@ html {
 body {
 	height: 100vh;
 	height: 100dvh;
+	font-family: sf pro tc,sf pro text,sf pro icons,pingfang tc,helvetica neue,helvetica,arial,microsoft jhenghei,wf_SegoeUI,segoe ui,Segoe,segoe wp,Tahoma,Verdana,Ubuntu,bitstream vera sans,dejavu sans,微軟正黑體,lihei pro,wenquanyi micro hei,droid sans fallback,ar pl uming tw,Roboto,hiragino maru gothic pron,メイリオ,ヒラギノ丸ゴ pron w4,Meiryo,droid sans,sans-serif;
 }
 
 .swal2-html-container a {

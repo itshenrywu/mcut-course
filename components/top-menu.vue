@@ -56,6 +56,7 @@
 		align-items: center;
 		gap: .3rem;
 		padding: .3rem 0 .1rem;
+		/*width: 20%;*/
 		width: 25%;
 		font-size: .9rem;
 	}
@@ -93,9 +94,9 @@ export default {
 		});
 
 		this.$root.$on('clickInfo', (savedCourse) => {
-			this.showInfoHint = localStorage['clickInfo_20241216'] !== 'true';
+			this.showInfoHint = localStorage['clickInfo_20241224'] !== 'true';
 		});
-		this.showInfoHint = localStorage['clickInfo_20241216'] !== 'true';
+		this.showInfoHint = localStorage['clickInfo_20241224'] !== 'true';
 	},
 	data() {
 		return {
@@ -123,6 +124,11 @@ export default {
 					label: '選課時間',
 					icon: 'is-clock-icon',
 				},
+				/*{
+					path: '/my/',
+					label: '我的課表',
+					icon: 'is-user-icon',
+				},*/
 			],
 		};
 	},

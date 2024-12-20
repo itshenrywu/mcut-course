@@ -171,7 +171,7 @@ export default {
 		}
 	},
 	mounted() {
-		localStorage['clickInfo_20241216'] = 'true';
+		localStorage['clickInfo_20241224'] = 'true';
 		this.$root.$emit('clickInfo');
 	},
 }
