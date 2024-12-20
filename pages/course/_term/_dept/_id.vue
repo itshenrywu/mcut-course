@@ -544,9 +544,10 @@ export default {
 				this.course.name.includes('實習前職場素養訓練') ||
 				this.course.name.includes('專題') ||
 				this.course.name.includes('工讀實務實習') ||
-				this.course.name.includes('工讀自學英文')
+				this.course.name.includes('工讀自學英文') ||
+				this.course.name.includes('設計思考')
 			)) {
-				timeInfoText = '「'+this.course.name+'」課程無固定上課時間，請參考教學進度表，或詢問授課老師/班級導師。';
+				timeInfoText = '「'+this.course.name+'」課程於系統上無表定上課時間，請參考備註或教學進度表，也可以詢問授課老師/班級導師。';
 			} else {
 				this.course.time.forEach(time => {
 					let week = time[0];
