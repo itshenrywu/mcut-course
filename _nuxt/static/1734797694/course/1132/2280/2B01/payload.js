@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2280/2B01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"113222802B01",name:"企業倫理專題",type:"必修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"楊南進",credit:"3",classroom:"518",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1580/0E01", {data:[{course:{time:[["4","6~8"]],id:"109115800E01",name:"光電材料特性分析",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"鄭信民",credit:"3",classroom:"子324",max:"30",min:"5",comment:"全英文授課。",otherinfo:null}}],fetch:{},mutations:void 0});

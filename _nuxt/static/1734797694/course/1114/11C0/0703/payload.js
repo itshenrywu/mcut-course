@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1114/11C0/0703", (function(a,b){return {data:[{course:{time:[[a,b],["4",b]],id:"111411C00703",name:"靜力學",type:"重修",dept:"四技進修部機械系",year:a,class:"暑",teacher:"鍾永強",credit:"3",classroom:"機301",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2","9~11")));

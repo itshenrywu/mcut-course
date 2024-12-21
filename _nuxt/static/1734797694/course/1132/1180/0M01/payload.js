@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1180/0M01", {data:[{course:{time:[["4","5~7"]],id:"113211800M01",name:"專利分析與創新設計",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"陳雲逸",credit:"3",classroom:"機209",max:"28",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

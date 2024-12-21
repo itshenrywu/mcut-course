@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1170/1Y02", {data:[{course:{time:[["4","1~2"]],id:"109211701Y02",name:"人工智慧概論",type:"選修",dept:"四技機械系",year:"1",class:"乙",teacher:"游孟潔",credit:"2",classroom:"機502",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

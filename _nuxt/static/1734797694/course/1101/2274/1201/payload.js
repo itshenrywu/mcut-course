@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2274/1201", {data:[{course:{time:[["2","2~4"]],id:"110122741201",name:"國際金融管理",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"張家瑞",credit:"3",classroom:"教208",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

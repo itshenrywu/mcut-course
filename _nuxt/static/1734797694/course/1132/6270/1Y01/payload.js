@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6270/1Y01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"113262701Y01",name:"線性代數",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"李建興",credit:a,classroom:"教206",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

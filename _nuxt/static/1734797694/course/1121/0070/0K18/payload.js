@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0K18", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"112100700K18",name:"大學之道",type:"必修",dept:"四技工管系",year:b,class:"乙",teacher:"張秉裕",credit:b,classroom:"教307",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("0.5~0.5","1")));

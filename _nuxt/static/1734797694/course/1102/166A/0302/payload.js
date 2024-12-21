@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/166A/0302", {data:[{course:{time:[["1","1~3"]],id:"1102166A0302",name:"環境化學",type:"必修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"陳慶隆",credit:"3",classroom:"體205",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

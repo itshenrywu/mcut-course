@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/2A01", {data:[{course:{time:[["2","5~7"]],id:"113211702A01",name:"自動化光學檢測",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"胡志中",credit:"3",classroom:"機412",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

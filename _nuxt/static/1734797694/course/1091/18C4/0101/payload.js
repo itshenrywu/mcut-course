@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/18C4/0101", {data:[{course:{time:[["1","9~11"]],id:"109118C40101",name:"金屬材料",type:"必修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"陳勝吉",credit:"3",classroom:"綜大309",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

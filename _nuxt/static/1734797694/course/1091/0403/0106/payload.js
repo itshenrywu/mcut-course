@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0403/0106", {data:[{course:{time:[["2","2~4"]],id:"109104030106",name:"微積分(一)",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"施正元",credit:"3",classroom:"教304",max:"23",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

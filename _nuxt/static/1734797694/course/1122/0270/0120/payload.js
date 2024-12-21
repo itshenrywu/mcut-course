@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0270/0120", {data:[{course:{time:[["7","11~11"]],id:"112202700120",name:"工讀自學英文",type:"必修",dept:"環實務",year:"3",class:"甲",teacher:"高如雲",credit:"2",classroom:"網路",max:"14",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

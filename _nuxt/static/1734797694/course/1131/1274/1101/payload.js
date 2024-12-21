@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1274/1101", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"113112741101",name:"機器人學",type:"選修",dept:"四技電機系",year:b,class:"甲",teacher:"邱聰輝",credit:b,classroom:"電323",max:"25",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0}}("1~2","3")));

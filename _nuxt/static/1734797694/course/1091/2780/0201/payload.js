@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2780/0201", (function(a){return {data:[{course:{time:[["2","1~2"]],id:"109127800201",name:"專題研究(一)",type:"必修",dept:"化工系生工碩士班",year:a,class:"甲",teacher:"劉昭麟",credit:a,classroom:"教301-2",max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

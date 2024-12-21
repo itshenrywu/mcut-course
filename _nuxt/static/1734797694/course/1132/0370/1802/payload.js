@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0370/1802", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"113203701802",name:"現代公民社會",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"黃淑芳",credit:"2",classroom:"子313",max:"45",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:void 0}}("1")));

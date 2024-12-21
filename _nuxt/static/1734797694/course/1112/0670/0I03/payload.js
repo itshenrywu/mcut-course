@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0670/0I03", {data:[{course:{time:[["4","5~6"]],id:"111206700I03",name:"體育(四)排球",type:"選修",dept:"體育組-四技(日)",year:"2",class:"甲",teacher:"游能揚",credit:"1",classroom:"體5F排球場",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

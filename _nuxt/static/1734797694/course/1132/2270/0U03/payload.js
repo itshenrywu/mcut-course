@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2270/0U03", {data:[{course:{time:[["4","2~4"]],id:"113222700U03",name:"管理經濟",type:"必修",dept:"四技經管系",year:"2",class:"丙",teacher:"范氏垂蓉",credit:"3",classroom:"505",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

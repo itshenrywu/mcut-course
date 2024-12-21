@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3070/1O01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113230701O01",name:"設計決策",type:"選修",dept:"四技行設專班",year:a,class:"甲",teacher:"楊正翔",credit:"3",classroom:"創302",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("4")));

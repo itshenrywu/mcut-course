@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1880/0201", (function(a){return {data:[{course:{time:[["2","5~6"]],id:"109118800201",name:"科技論文寫作(一)",type:"必修",dept:"材料系碩士班",year:a,class:"甲",teacher:"林孟芳",credit:a,classroom:"綜大303",max:"70",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

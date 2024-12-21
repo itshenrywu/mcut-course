@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1250/0801", {data:[{course:{time:[["1","2~4"]],id:"109112500801",name:"機率",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"蔡文星",credit:"3",classroom:"電130",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0});

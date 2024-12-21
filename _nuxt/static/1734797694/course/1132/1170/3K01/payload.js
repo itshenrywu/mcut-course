@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/3K01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113211703K01",name:"電動車輛測試實務",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"陳明彥",credit:a,classroom:"機111",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

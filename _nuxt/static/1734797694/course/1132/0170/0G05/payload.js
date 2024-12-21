@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0170/0G05", {data:[{course:{time:[["3","7~8"]],id:"113201700G05",name:"藝文涵養與社會參與",type:"必修",dept:"四技化工系",year:"1",class:"甲",teacher:"林溫芳",credit:"2",classroom:"體207",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

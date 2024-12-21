@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1670/1I01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112116701I01",name:"實務專題研究(三)",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"洪明瑞",credit:"1",classroom:"she-lab",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

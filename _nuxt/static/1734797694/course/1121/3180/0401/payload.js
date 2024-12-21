@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3180/0401", {data:[{course:{time:[["2","2~4"]],id:"112131800401",name:"設計研究(一)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"高清漢",credit:"3",classroom:"新414",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

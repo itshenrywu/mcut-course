@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1374/0502", {data:[{course:{time:[["1","4~4"],["4","5~6"]],id:"110213740502",name:"有機化學(二)",type:"必修",dept:"四技化工系",year:"2",class:"乙",teacher:"陳順基",credit:"3",classroom:"體207",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

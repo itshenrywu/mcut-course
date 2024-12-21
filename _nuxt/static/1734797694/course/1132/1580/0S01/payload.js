@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1580/0S01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113215800S01",name:"智慧光譜系統與光感測應用",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"王逸平",credit:a,classroom:"子112",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

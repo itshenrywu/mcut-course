@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0072/0607", {data:[{course:{time:[["1","5~6"]],id:"111100720607",name:"英文實務(一)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"林麗寬",credit:"0",classroom:"體207",max:"65",min:"10",comment:"機械",otherinfo:null}}],fetch:{},mutations:void 0});

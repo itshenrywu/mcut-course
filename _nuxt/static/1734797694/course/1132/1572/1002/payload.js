@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1572/1002", (function(a){return {data:[{course:{time:[["1","1~1"],[a,"5~6"]],id:"113215721002",name:"光電子學",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"畢少強",credit:a,classroom:"子316",max:"50",min:"10",comment:"甲乙合班，微電子模組選修，English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

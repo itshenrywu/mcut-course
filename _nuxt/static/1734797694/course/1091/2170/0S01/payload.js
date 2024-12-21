@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2170/0S01", (function(a,b){return {data:[{course:{time:[["2",a],["4",a]],id:"109121700S01",name:"程式設計(含實習)(一)",type:"重修",dept:"四技工管系",year:b,class:"重",teacher:"邱慧怡",credit:b,classroom:"618電腦室",max:"60",min:"10",comment:"帶狀課程7\u002F6-9\u002F4",otherinfo:null}}],fetch:{},mutations:void 0}}("1~4","3")));

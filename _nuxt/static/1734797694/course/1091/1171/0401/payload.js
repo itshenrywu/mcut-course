@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1171/0401", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109111710401",name:"車輛工程概論",type:"必修",dept:"四技機械系",year:"1",class:"丙",teacher:"陳柏翰",credit:a,classroom:"機402",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

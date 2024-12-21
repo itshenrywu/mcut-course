@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1174/2601", {data:[{course:{time:[["5","5~7"]],id:"110111742601",name:"工程倫理與專業實務講座",type:"必修",dept:"四技機械系",year:"4",class:"甲",teacher:"劉秋霖",credit:"1",classroom:"機502",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

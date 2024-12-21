@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3340/2101", {data:[{course:{time:[["4","5~7"]],id:"113233402101",name:"視覺創意思考",type:"選修",dept:"四技視傳系",year:"1",class:"甲",teacher:"李育菁",credit:"3",classroom:"808",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

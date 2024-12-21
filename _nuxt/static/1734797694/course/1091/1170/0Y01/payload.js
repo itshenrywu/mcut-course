@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1170/0Y01", {data:[{course:{time:[["2","5~7"]],id:"109111700Y01",name:"電動車輛實務(三)",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"黃道易",credit:"3",classroom:"機111",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});
