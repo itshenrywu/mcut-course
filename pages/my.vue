@@ -2,18 +2,13 @@
 	<div class="cell is-scrollable is-fluid is-horizontal" id="page-my">
 		<div class="cell is-tertiary is-scrollable sidebar" :class="{ 'show': showMobileSidebar }">
 			<div class="ts-content">
-				<div class="ts-wrap is-vertical has-top-padded">
+				<div class="ts-wrap is-vertical has-top-padded is-relaxed">
 					<button class="ts-close is-large mobile-only close-sidebar"
 						@click="showMobileSidebar = !showMobileSidebar"></button>
 					<div class="mobile-hidden">
-						<div class="ts-text is-label has-bottom-padded-small">新增課程</div>
-						<button class="ts-button is-outlined is-small is-fluid is-start-icon">
-							<span class="ts-icon is-plus-icon"></span>
-							新增
-						</button>
-						<button class="ts-button is-outlined is-small is-fluid is-start-icon has-top-spaced-small" @click="importFromSaved()">
+						<button class="ts-button is-outlined is-small is-fluid is-start-icon" @click="importFromSaved()">
 							<span class="ts-icon is-star-icon"></span>
-							從「收藏的課程」匯入
+							匯入「收藏的課程」
 						</button>
 					</div>
 
@@ -104,7 +99,7 @@
 					</button>
 					<button class="ts-button is-fluid is-outlined is-start-icon" @click="importFromSaved()">
 						<span class="ts-icon is-star-icon"></span>
-						從「收藏的課程」匯入
+						匯入「收藏的課程」
 					</button>
 					<button class="ts-button is-fluid is-start-icon" @click="downloadImage()">
 						<span class="ts-icon is-download-icon"></span>
@@ -210,7 +205,20 @@ export default {
 			return result;
 		},
 		time_section() {
-			return ['1', '2', '3', '4', '5', '6', '7', '8'];
+			const time_section_full = ['1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'];
+			let time_section = ['1', '2', '3', '4', '5', '6', '7', '8'];
+			this.myCourses.forEach(course => {
+				if(course.time[0] >= 5) return;
+				let _section = course.time[1].split('~');
+				time_section.push(_section[0]);
+				if(_section[0] != _section[1]) {
+					for(let s = time_section_full.indexOf(_section[0]); s <= time_section_full.indexOf(_section[1]); s++) {
+						time_section.push(time_section_full[s]);
+					}
+				}
+			});
+			time_section = time_section.filter((section, index) => time_section.indexOf(section) === index).map(section => parseFloat(section)).sort(function(a, b) {return a - b})
+			return time_section;
 		},
 		week_text() {
 			return ['一', '二', '三', '四', '五'];
@@ -257,9 +265,9 @@ export default {
 			});
 			this.myCourses.sort((a, b) => {
 				if (a.time[0] === b.time[0]) {
-					return parseInt(a.time[1].split('~')[0], 10) - parseInt(b.time[1].split('~')[0], 10);
+					return parseFloat(a.time[1].split('~')[0], 10) - parseFloat(b.time[1].split('~')[0], 10);
 				}
-				return parseInt(a.time[0], 10) - parseInt(b.time[0], 10);
+				return parseFloat(a.time[0], 10) - parseFloat(b.time[0], 10);
 			});
 			this.drawTimetable();
 		},
@@ -312,7 +320,6 @@ export default {
 						ctx.fillStyle = '#666';
 						ctx.textAlign = 'left';
 						ctx.textBaseline = 'middle';
-						y += lineHeight * 0.1;
 					}
 					const words = text.split('');
 					let line = '';
@@ -357,7 +364,7 @@ export default {
 					ctx.stroke();
 				}
 				if (this.showRowTitle && i < rows) {
-					ctx.font = (ctx.canvas.width / 30) + 'px Noto Sans TC';
+					ctx.font = (ctx.canvas.width / 30 * (String(this.time_section[i]).includes('.5') ? 0.8 : 1)) + 'px Noto Sans TC';
 					ctx.fillStyle = '#999';
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
@@ -401,15 +408,10 @@ export default {
 			};
 
 			this.myCourses.forEach(course => {
-				console.log(
-					course.name,
-					course.time[0],
-					course.time[1].split('~')[0],
-				)
-				const start = parseInt(course.time[1].split('~')[0], 10);
-				const end = parseInt(course.time[1].split('~')[1], 10);
+				const start = this.time_section.indexOf(parseFloat(course.time[1].split('~')[0]))+1;
+				const end = this.time_section.indexOf(parseFloat(course.time[1].split('~')[1]))+1;
 				if (isNaN(start) || isNaN(end)) return;
-				const day = parseInt(course.time[0], 10);
+				const day = parseFloat(course.time[0]);
 				if (isNaN(start) || isNaN(end) || isNaN(day)) return;
 
 				const x = (day - 1) * cellWidth + rowTitleWidth;
@@ -428,7 +430,7 @@ export default {
 				if (this.showCourseTime) {
 					texts.push(timeInfo[course.time[1].split('~')[0]][0] + ' ~ ' + timeInfo[course.time[1].split('~')[1]][1]);
 				}
-				ctx.wrapText(ctx, texts, x + 20, y + 30, cellWidth - 40, ctx.canvas.width / 35);
+				ctx.wrapText(ctx, texts, x + 20, y + 30, cellWidth - 40, ctx.canvas.width / 40);
 			});
 		},
 		downloadImage() {
