@@ -7,7 +7,7 @@
 						@click="showMobileSidebar = !showMobileSidebar"></button>
 					<div class="mobile-hidden">
 						<div class="ts-text is-label has-bottom-padded-small">新增課程</div>
-						<button class="ts-button is-small is-fluid is-start-icon">
+						<button class="ts-button is-outlined is-small is-fluid is-start-icon">
 							<span class="ts-icon is-plus-icon"></span>
 							新增
 						</button>
@@ -18,7 +18,6 @@
 					</div>
 
 					<!--
-					WIP: theme
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">顏色主題</div>
 						<div class="ts-box theme-selector rainbow">
@@ -68,12 +67,18 @@
 						</div>
 					</div>
 
-					<div class="ts-text is-description">
+					<div class="mobile-hidden">
+						<button class="ts-button is-small is-fluid is-start-icon" @click="downloadImage()">
+							<span class="ts-icon is-download-icon"></span>
+							下載圖片
+						</button>
+					</div>
+
+					<div class="ts-text is-description mobile-hidden">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
 						<div class="ts-list is-small is-unordered">
 							<div class="item">點擊空白處可新增課程</div>
 							<div class="item">點擊課程可修改資訊</div>
-							<div class="item">對圖片右鍵即可儲存</div>
 						</div>
 					</div>
 				</div>
@@ -81,31 +86,37 @@
 		</div>
 		<div class="cell is-secondary is-fluid is-scrollable has-top-padded-large" style="min-height:100%">
 			<div class="ts-container mobile-only">
-				<div class="ts-box">
+				<div class="ts-box has-bottom-spaced">
 					<div class="ts-content">
 						<div class="ts-text is-description">
 							<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
 							<div class="ts-list is-small is-unordered">
 								<div class="item">點擊空白處可新增課程</div>
 								<div class="item">點擊課程可修改資訊</div>
-								<div class="item">長按圖片即可儲存</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<button class="ts-button is-fluid is-secondary is-start-icon has-top-spaced-small" @click="showMobileSidebar = !showMobileSidebar">
-					<span class="ts-icon is-eye-icon"></span>
-					顯示設定
-				</button>
-				<button class="ts-button is-fluid is-outlined is-start-icon has-top-spaced-small" @click="importFromSaved()">
-					<span class="ts-icon is-star-icon"></span>
-					從「收藏的課程」匯入
-				</button>
+				<div class="ts-wrap">
+					<button class="ts-button is-fluid is-outlined is-start-icon" @click="showMobileSidebar = !showMobileSidebar">
+						<span class="ts-icon is-eye-icon"></span>
+						課表設定
+					</button>
+					<button class="ts-button is-fluid is-outlined is-start-icon" @click="importFromSaved()">
+						<span class="ts-icon is-star-icon"></span>
+						從「收藏的課程」匯入
+					</button>
+					<button class="ts-button is-fluid is-start-icon" @click="downloadImage()">
+						<span class="ts-icon is-download-icon"></span>
+						下載圖片
+					</button>
+				</div>
 			</div>
 			<div class="ts-container has-top-padded is-fitted mobile-padded timetable-container">
 				<canvas id="timetableCanvas"></canvas>
 			</div>
 			<br>
+			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>
 	</div>
 </template>
@@ -161,6 +172,7 @@ export default {
 	修改課程
 	新增課程
 	theme
+	iOS widget
 	*/
 	async asyncData({ $axios, params, payload }) {
 		
@@ -234,9 +246,12 @@ export default {
 				if(savedCourse.includes(course.id)) {
 					course.time.forEach(time => {
 						if(time[1].includes('0.5')) return; 
-						const _course = course;
-						_course.time = time;
-						this.myCourses.push(_course);
+						this.myCourses.push({
+							name: course.name,
+							classroom: course.classroom,
+							id: course.id,
+							time: time,
+						});
 					});
 				}
 			});
@@ -293,7 +308,7 @@ export default {
 						ctx.textAlign = 'left';
 						ctx.textBaseline = 'middle';
 					} else {
-						ctx.font = (ctx.canvas.width / 45) + 'px Noto Sans TC';
+						ctx.font = (ctx.canvas.width / 50) + 'px Noto Sans TC';
 						ctx.fillStyle = '#666';
 						ctx.textAlign = 'left';
 						ctx.textBaseline = 'middle';
@@ -386,6 +401,11 @@ export default {
 			};
 
 			this.myCourses.forEach(course => {
+				console.log(
+					course.name,
+					course.time[0],
+					course.time[1].split('~')[0],
+				)
 				const start = parseInt(course.time[1].split('~')[0], 10);
 				const end = parseInt(course.time[1].split('~')[1], 10);
 				if (isNaN(start) || isNaN(end)) return;
@@ -408,8 +428,15 @@ export default {
 				if (this.showCourseTime) {
 					texts.push(timeInfo[course.time[1].split('~')[0]][0] + ' ~ ' + timeInfo[course.time[1].split('~')[1]][1]);
 				}
-				ctx.wrapText(ctx, texts, x + 20, y + 30, cellWidth - 30, ctx.canvas.width / 35);
+				ctx.wrapText(ctx, texts, x + 20, y + 30, cellWidth - 40, ctx.canvas.width / 35);
 			});
+		},
+		downloadImage() {
+			const canvas = document.getElementById('timetableCanvas');
+			const link = document.createElement('a');
+			link.download = '課表.png';
+			link.href = canvas.toDataURL();
+			link.click();
 		},
 	},
 	mounted() {
