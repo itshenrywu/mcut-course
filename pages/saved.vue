@@ -141,7 +141,7 @@
 					</tbody>
 				</table>
 				<table v-else class="ts-table is-dense is-celled is-definition course-timetable"
-					:class="{ 'showSat': coursedByStartTime[6] }">
+					:class="{ 'showSat': coursesByStartTime[6] }">
 					<thead>
 						<tr>
 							<th>&nbsp;</th>
@@ -152,14 +152,14 @@
 						<tr v-for="section in time_section" v-if="section <= maxEndSection">
 							<td>{{ section }}</td>
 							<td v-for="w in 6">
-								<div v-if="coursedByStartTime[w] && coursedByStartTime[w][section] && coursedByStartTime[w][section].length >= 1"
+								<div v-if="coursesByStartTime[w] && coursesByStartTime[w][section] && coursesByStartTime[w][section].length >= 1"
 									:class="{
-										'is-orange': coursedByStartTime[w][section][0].type == '必修',
-										'is-green': coursedByStartTime[w][section][0].type == '選修',
-										'is-gray': coursedByStartTime[w][section][0].type == '重修',
+										'is-orange': coursesByStartTime[w][section][0].type == '必修',
+										'is-green': coursesByStartTime[w][section][0].type == '選修',
+										'is-gray': coursesByStartTime[w][section][0].type == '重修',
 									}"
-									@click="showCourse(coursedByStartTime[w][section][0])" :style="{'height': (coursedByStartTime[w][section][0].period * 2.8) - .7 + 'rem'}">
-									<div>{{ coursedByStartTime[w][section][0].name }}</div>
+									@click="showCourse(coursesByStartTime[w][section][0])" :style="{'height': (coursesByStartTime[w][section][0].period * 2.8) - .7 + 'rem'}">
+									<div>{{ coursesByStartTime[w][section][0].name }}</div>
 								</div>
 							</td>
 						</tr>
@@ -302,7 +302,6 @@ export default {
 			importIds.forEach((id) => {
 				importCourse.push(importTerm + id);
 			});
-			console.log(importCourse);
 
 			let savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]') || [];
 			if (savedCourse.length >= 1) {
@@ -354,7 +353,7 @@ export default {
 		filteredCourses() {
 			return this.courses.filter(course => this.savedCourse.includes(course.id));
 		},
-		coursedByStartTime() {
+		coursesByStartTime() {
 			let result = {};
 			this.filteredCourses.forEach(course => {
 				course.time.forEach(timeSlot => {
