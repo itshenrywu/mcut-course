@@ -46,32 +46,32 @@
 						<div class="ts-text is-label has-bottom-padded-small">顯示設定</div>
 						<div class="ts-wrap is-vertical is-compact">
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="showRowLine" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showRowLine" @change="drawTimetable()" />
 								水平格線
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="showColLine" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showColLine" @change="drawTimetable()" />
 								垂直格線
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="showRowTitle" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showRowTitle" @change="drawTimetable()" />
 								節次
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="showColTitle" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showColTitle" @change="drawTimetable()" />
 								星期
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="showCourseClassroom" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showCourseClassroom" @change="drawTimetable()" />
 								課程：上課地點
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="showCourseTime" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="drawTimetable()" />
 								課程：上課時間
 							</label>
 							<div class="ts-range has-top-padded-small">
-								<div class="ts-text is-label has-bottom-padded-small">外框寬度</div>
-								<input type="range" min="0" max="64" v-model="tableBorder" @change="drawTimetable()" style="width:100%" />
+								<div class="ts-text is-label has-bottom-padded-small">外框寬度 <small>({{ Math.round(myCoursesSetting.tableBorder/128*10000)/100 }}%)</small></div>
+								<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="drawTimetable()" style="width:100%" />
 							</div>
 						</div>
 					</div>
@@ -90,7 +90,7 @@
 					<div class="ts-text is-description mobile-hidden">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
 						<div class="ts-list is-small is-unordered">
-							<div class="item">這裡是用來製作課表圖片或使用小工具的，課表與「收藏的課程」不同步！</div>
+							<div class="item">這裡是用來製作個人課表的，「收藏的課程」若有修改，這裡不會同步！</div>
 							<div class="item">點擊空白處可新增課程</div>
 							<div class="item">點擊課程可修改資訊</div>
 						</div>
@@ -105,7 +105,7 @@
 						<div class="ts-text is-description">
 							<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
 							<div class="ts-list is-small is-unordered">
-								<div class="item">這裡是用來製作課表圖片或使用小工具的，課表與「收藏的課程」不同步！</div>
+								<div class="item">這裡是用來製作個人課表的，「收藏的課程」若有修改，這裡不會同步！</div>
 								<div class="item">點擊空白處可新增課程</div>
 								<div class="item">點擊課程可修改資訊</div>
 							</div>
@@ -315,16 +315,17 @@ export default {
 			newEnd: -1,
 			action: null,
 
-			showColTitle: true,
-			showRowTitle: true,
-			showColLine: true,
-			showRowLine: true,
-			showCourseClassroom: true,
-			showCourseTime: true,
+			myCoursesSetting: {
+				showColTitle: true,
+				showRowTitle: true,
+				showColLine: true,
+				showRowLine: true,
+				showCourseClassroom: true,
+				showCourseTime: true,
+				tableBorder: 32,
+			},
 			ctx: null,
-			
 			scriptableCodeFile: '',
-			tableBorder: 0,
 		}
 	},
 	computed: {
@@ -490,13 +491,13 @@ export default {
 		setCanvasSize() {
 			const canvas = document.getElementById('timetableCanvas');
 			this.ctx = canvas.getContext('2d');
-			const maxWidth = window.innerWidth - 45;
-			const maxHeight = window.innerHeight - 170;
-			let width = maxWidth;
-			let height = maxWidth * 16 / 9;
-			if (height > maxHeight) {
-				height = maxHeight;
-				width = maxHeight * 9 / 16;
+			let width, height;
+			if (window.innerHeight > window.innerWidth) {
+				width = document.getElementsByClassName('timetable-container')[0].clientWidth - 28;
+				height = width * 16 / 9;
+			} else {
+				height = window.innerHeight - 170;
+				width = height * 9 / 16;
 			}
 			canvas.width = 1080;
 			canvas.height = 1920;
@@ -507,6 +508,7 @@ export default {
 
 		drawTimetable() {
 			localStorage.myCourses = JSON.stringify(this.myCourses);
+			localStorage.myCoursesSetting = JSON.stringify(this.myCoursesSetting);
 			if (!CanvasRenderingContext2D.prototype.drawRoundedRect) {
 				CanvasRenderingContext2D.prototype.drawRoundedRect = function (x, y, width, height, radius) {
 					radius = Math.min(radius, width / 2, height / 2);
@@ -563,31 +565,33 @@ export default {
 			const cols = this.week_text.length;
 			const ctx = this.ctx;
 			
-			ctx.canvas._tableBorder = this.tableBorder;
+			ctx.canvas._tableBorder = this.myCoursesSetting.tableBorder;
 
-			const colTitleHeight = this.showColTitle ? (ctx.canvas.height - this.tableBorder * 2) * 0.035 : 0;
-			const cellHeight = (this.showColTitle ? 0.965 : 1) * (ctx.canvas.height - this.tableBorder * 2) / rows;
-			const rowTitleWidth = this.showRowTitle ? (ctx.canvas.width - this.tableBorder * 2) * 0.05 : 0;
-			const cellWidth = (this.showRowTitle ? 0.95 : 1) * (ctx.canvas.width - this.tableBorder * 2) / cols;
+			const colTitleHeight = this.myCoursesSetting.showColTitle ? (ctx.canvas.height - this.myCoursesSetting.tableBorder * 2) * 0.035 : 0;
+			const cellHeight = (this.myCoursesSetting.showColTitle ? 0.965 : 1) * (ctx.canvas.height - this.myCoursesSetting.tableBorder * 2) / rows;
+			const rowTitleWidth = this.myCoursesSetting.showRowTitle ? (ctx.canvas.width - this.myCoursesSetting.tableBorder * 2) * 0.05 : 0;
+			const cellWidth = (this.myCoursesSetting.showRowTitle ? 0.95 : 1) * (ctx.canvas.width - this.myCoursesSetting.tableBorder * 2) / cols;
 
 			ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 			ctx.fillStyle = '#FFF';
 			ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
-			ctx.translate(this.tableBorder, this.tableBorder);
+			ctx.translate(this.myCoursesSetting.tableBorder, this.myCoursesSetting.tableBorder);
 
 			ctx.strokeStyle = '#DDD';
 			this.gridCells = [];
 
 			for (let i = 0; i <= rows; i++) {
-				if (this.showRowLine && i < rows) {
-					ctx.lineWidth = 2;
-					ctx.beginPath();
-					ctx.moveTo(0, i * cellHeight + colTitleHeight);
-					ctx.lineTo(ctx.canvas.width - this.tableBorder * 2, i * cellHeight + colTitleHeight);
-					ctx.stroke();
+				if (this.myCoursesSetting.showRowLine && i < rows) {
+					if(this.myCoursesSetting.showColTitle || i != 0) {
+						ctx.lineWidth = 2;
+						ctx.beginPath();
+						ctx.moveTo(0, i * cellHeight + colTitleHeight);
+						ctx.lineTo(ctx.canvas.width - this.myCoursesSetting.tableBorder * 2, i * cellHeight + colTitleHeight);
+						ctx.stroke();
+					}
 				}
-				if (this.showRowTitle && i < rows) {
+				if (this.myCoursesSetting.showRowTitle && i < rows) {
 					ctx.font = (String(this.time_section[i]).includes('.5') ? 26 : 36) + 'px Noto Sans TC';
 					ctx.fillStyle = '#999';
 					ctx.textAlign = 'center';
@@ -597,14 +601,16 @@ export default {
 			}
 
 			for (let j = 0; j <= cols; j++) {
-				if (this.showColLine && j < cols) {
-					ctx.lineWidth = 2;
-					ctx.beginPath();
-					ctx.moveTo(j * cellWidth + rowTitleWidth, 0);
-					ctx.lineTo(j * cellWidth + rowTitleWidth, ctx.canvas.height - this.tableBorder * 2);
-					ctx.stroke();
+				if (this.myCoursesSetting.showColLine && j < cols) {
+					if(this.myCoursesSetting.showRowTitle || j != 0) {
+						ctx.lineWidth = 2;
+						ctx.beginPath();
+						ctx.moveTo(j * cellWidth + rowTitleWidth, 0);
+						ctx.lineTo(j * cellWidth + rowTitleWidth, ctx.canvas.height - this.myCoursesSetting.tableBorder * 2);
+						ctx.stroke();
+					}
 				}
-				if (this.showColTitle && j < cols) {
+				if (this.myCoursesSetting.showColTitle && j < cols) {
 					ctx.font = '32px Noto Sans TC';
 					ctx.fillStyle = '#999';
 					ctx.textAlign = 'center';
@@ -664,26 +670,32 @@ export default {
 				ctx.fillStyle  = ['#F8BBD0','#FFCDD2','#FFE0B2','#FFF9C4','#F0F4C3','#C8E6C9','#B2EBF2','#BBDEFB','#C5CAE9','#D1C4E9','#D7CCC8'][courseNameList.indexOf(course.name) % 11];
 				ctx.drawRoundedRect(x + 8, y + 8, w - 16, h - 16, cellWidth / 20);
 				let texts = [course.name];
-				if (this.showCourseTime) {
+				if (this.myCoursesSetting.showCourseTime) {
 					texts.push(timeInfo[course.time[1].split('~')[0]][0] + ' ~ ' + timeInfo[course.time[1].split('~')[1]][1]);
 				}
-				if (this.showCourseClassroom) {
+				if (this.myCoursesSetting.showCourseClassroom) {
 					texts.push(course.classroom);
 				}
 				ctx.wrapText(ctx, texts, x + 20, y + 35, cellWidth - 35, 38);
 			});
-			ctx.translate(-this.tableBorder, -this.tableBorder);
+			ctx.translate(-this.myCoursesSetting.tableBorder, -this.myCoursesSetting.tableBorder);
 		},
 
 		downloadImage() {
 			const canvas = document.getElementById('timetableCanvas');
-			canvas.toBlob((blob) => {
-				const link = document.createElement('a');
-				link.download = '課表.png';
-				link.href = URL.createObjectURL(blob);
-				link.click();
-				URL.revokeObjectURL(link.href);
-			}, 'image/png');
+			if (typeof canvas.toBlob === 'function') {
+				canvas.toBlob((blob) => {
+					const link = document.createElement('a');
+					link.download = '課表.png';
+					link.href = URL.createObjectURL(blob);
+					link.click();
+					URL.revokeObjectURL(link.href);
+				}, 'image/png');
+			} else {
+				const dataUrl = canvas.toDataURL('image/png');
+				const newWindow = window.open();
+				newWindow.document.write('<img src="' + dataUrl + '" alt="課表"/>');
+			}
 		},
 
 		getGridCellAtPosition(x, y) {
@@ -691,8 +703,8 @@ export default {
 			const rect = canvas.getBoundingClientRect();
 			const scaleX = canvas.width / rect.width;
 			const scaleY = canvas.height / rect.height;
-			x = x * scaleX - this.tableBorder;
-			y = y * scaleY - this.tableBorder;
+			x = x * scaleX - this.myCoursesSetting.tableBorder;
+			y = y * scaleY - this.myCoursesSetting.tableBorder;
 			return this.gridCells.find(cell => 
 				x >= cell.x &&
 				x <= cell.x + cell.width &&
@@ -841,6 +853,19 @@ export default {
 			this.myCourses = JSON.parse(localStorage.myCourses);
 		} catch (e) {
 
+		}
+		try {
+			this.myCoursesSetting = JSON.parse(localStorage.myCoursesSetting);
+		} catch (e) {
+			this.myCoursesSetting = {
+				showColTitle: true,
+				showRowTitle: true,
+				showColLine: true,
+				showRowLine: true,
+				showCourseClassroom: true,
+				showCourseTime: true,
+				tableBorder: 32,
+			};
 		}
 		this.loadFonts().then(() => {
 			this.setCanvasSize();
