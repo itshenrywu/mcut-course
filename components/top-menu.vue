@@ -106,13 +106,13 @@ export default {
 			menuItems: [
 				{
 					path: '/',
-					label: '搜尋課程',
-					icon: 'is-magnifying-glass-icon',
+					label: '全校課表',
+					icon: 'is-school-icon',
 				},
 				{
-					path: '/saved/',
-					label: '收藏的課程',
-					icon: 'is-star-icon',
+					path: '/my/',
+					label: '我的課表',
+					icon: 'is-user-icon',
 				},
 				{
 					path: '/rule/',
@@ -124,17 +124,12 @@ export default {
 					label: '選課時間',
 					icon: 'is-clock-icon',
 				},
-				/*{
-					path: '/my/',
-					label: '我的課表',
-					icon: 'is-user-icon',
-				},*/
 			],
 		};
 	},
 	methods: {
 		isActive(path) {
-			if (path === '/') return this.currentPath === '/';
+			if (path === '/') return this.currentPath === '/' || this.currentPath === '/course/';
 			else return this.currentPath.includes(path);
 		},
 

@@ -228,6 +228,22 @@ h1 {
 	gap: .25rem;
 }
 
+.button-fab {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 800;
+	background: var(--ts-primary-500);
+	color: var(--ts-static-gray-50);
+	border-radius: 50%;
+	width: 4rem;
+	height: 4rem;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 14px;

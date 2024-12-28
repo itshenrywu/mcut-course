@@ -108,7 +108,7 @@
 		<div class="cell is-secondary is-fluid is-scrollable">
 			<div class="ts-container has-top-padded-large is-fitted mobile-padded">
 				<div class="ts-wrap is-middle-aligned">
-					<h1 class="ts-header is-huge has-vertically-padded">搜尋課程</h1>
+					<h1 class="ts-header is-huge has-vertically-padded">進階搜尋</h1>
 					<div class="ts-text is-description" v-if="filteredCourses.length > 0">{{ filteredCourses.length }}
 						門符合條件的課程
 					</div>
@@ -125,7 +125,7 @@
 				</div>
 			</div>
 			<div class="ts-container has-vertically-padded-large is-fitted" v-if="!loading">
-				<div class="ts-box" v-if="filteredCourses.length > 0">
+				<div class="ts-box has-bottom-spaced" v-if="filteredCourses.length > 0">
 					<table class="ts-table course-table">
 						<thead>
 							<tr>
@@ -216,6 +216,7 @@
 			</div>
 			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>
+		<NuxtLink to="/saved/" class="button-fab"><span class="ts-icon is-star-icon"></span></NuxtLink>
 		<loading loadingText="課表下載中" v-show="loading" />
 	</div>
 </template>

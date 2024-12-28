@@ -22,14 +22,17 @@
 							</button>
 						</div>
 					</div>
-					<!--
+					
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">顏色主題</div>
-						<div class="ts-box theme-selector rainbow">
-							<span class="ts-icon is-chevron-down-icon"></span>
+						<div class="ts-select is-fluid">
+							<select v-model="myCoursesSetting.theme" @change="drawTimetable()">
+								<option v-for="theme of themes" :value="theme.id">{{ theme.name }}</option>
+							</select>
 						</div>
 					</div>
 
+					<!--
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">背景顏色 / 圖片</div>
 						<div class="ts-box theme-selector">
@@ -69,11 +72,13 @@
 								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="drawTimetable()" />
 								課程：上課時間
 							</label>
-							<div class="ts-range has-top-padded-small">
-								<div class="ts-text is-label has-bottom-padded-small">外框寬度 <small>({{ Math.round(myCoursesSetting.tableBorder/128*10000)/100 }}%)</small></div>
-								<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="drawTimetable()" style="width:100%" />
-							</div>
 						</div>
+					</div>
+
+
+					<div class="ts-range">
+						<div class="ts-text is-label has-bottom-padded-small">外框寬度 <small>({{ Math.round(myCoursesSetting.tableBorder/128*1000)/10 }}%)</small></div>
+						<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="drawTimetable()" style="width:100%" />
 					</div>
 
 					<div class="ts-wrap is-dense mobile-hidden">
@@ -135,7 +140,7 @@
 			</div>
 			<div class="ts-container has-top-padded is-fitted mobile-padded timetable-container">
 				<div class="ts-box" style="background-color: #fff;">
-					<canvas id="timetableCanvas"></canvas>
+					<canvas id="timetableCanvas" v-show="!loading"></canvas>
 				</div>
 			</div>
 			<br>
@@ -155,6 +160,10 @@
 				</div>
 				<div class="ts-divider"></div>
 				<div class="ts-content">
+					<div class="ts-box is-start-indicated has-bottom-spaced-large" v-if="message" :class="{'is-negative': message[0] === 'error'}">
+						<div class="ts-content"><div class="ts-header">{{ message[1] }}</div></div>
+						<div class="symbol"><span class="ts-icon is-circle-exclamation-icon"></span></div>
+					</div>
 					<div class="ts-text is-label has-bottom-padded-small">上課時間</div>
 					<div class="ts-grid is-middle-aligned">
 						<div class="column is-5-wide">
@@ -168,7 +177,7 @@
 						<div class="column is-5-wide">
 							<div class="ts-select is-fluid">
 								<select v-model="newStart" @change="checkSection()">
-									<option value="-1" disabled>請選擇節次</option>
+									<option value="-1" disabled>請選擇起始節次</option>
 									<option v-for="section of time_section_full" :value="section">第 {{ section }} 節</option>
 								</select>
 							</div>
@@ -179,7 +188,7 @@
 						<div class="column is-5-wide">
 							<div class="ts-select is-fluid">
 								<select v-model="newEnd">
-									<option value="-1" disabled>請選擇節次</option>
+									<option value="-1" disabled>請選擇結束節次</option>
 									<option v-for="section of time_section_full" :value="section" :disabled="parseInt(section) < newStart">第 {{ section }} 節</option>
 								</select>
 							</div>
@@ -197,6 +206,7 @@
 					</div>
 					<br>
 					<button class="ts-button is-fluid" @click="newCourse">{{ action === 'new' ? '新增' : '修改' }}</button>
+					<button class="ts-button is-negative is-outlined is-fluid has-top-spaced-small" @click="deleteCourse()">刪除</button>
 				</div>
 			</div>
 		</dialog>
@@ -216,8 +226,11 @@
 				<div class="ts-content">
 					<h2 class="ts-header is-large">1. 安裝 Scriptable</h2>
 					<a href="https://apps.apple.com/tw/app/scriptable/id1405459188"><img style="width: 150px" src="https://i.imgur.com/Tq43Fdb.png"></a>
-					<h2 class="ts-header is-large" style="margin-bottom:0;">2. 複製以下程式碼<small>（點選即可複製）</small></h2>
-					<div class="ts-text is-description">課程每次修改後須重新更改一次程式碼！</div>
+					<h2 class="ts-header is-large" style="margin-bottom:0;">2. 複製以下程式碼</h2>
+					<div class="ts-text is-description">
+						課程每次修改後須重新更改一次程式碼<br>
+						{{ message ? message[1] : '點選下方區塊即可複製' }}
+					</div>
 					<div class="ts-input is-solid">
 						<div class="ts-box" id="code" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode()"><div class="ts-content">{{ scriptableCode }}</div></div>
 					</div>
@@ -229,6 +242,7 @@
 				</div>
 			</div>
 		</dialog>
+		<loading v-show="loading" />
 	</div>
 </template>
 <style>
@@ -237,39 +251,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.theme-selector {
-	display: flex;
-	justify-content: flex-end;
-	padding: 0 .5rem;
-}
-
-.rainbow {
-	background: linear-gradient(
-		to right,
-		#F8BBD0 0%, #F8BBD0 7.69%,
-		#FFCDD2 7.69%, #FFCDD2 15.38%,
-		#FFE0B2 15.38%, #FFE0B2 23.07%,
-		#FFF9C4 23.07%, #FFF9C4 30.76%,
-		#F0F4C3 30.76%, #F0F4C3 38.45%,
-		#C8E6C9 38.45%, #C8E6C9 46.14%,
-		#B2EBF2 46.14%, #B2EBF2 53.83%,
-		#BBDEFB 53.83%, #BBDEFB 61.52%,
-		#C5CAE9 61.52%, #C5CAE9 69.21%,
-		#D1C4E9 69.21%, #D1C4E9 76.9%,
-		#D7CCC8 76.9%, #D7CCC8 84.59%,
-		#CCC 84.59%, #CCC 92.28%,
-		#EEE 92.28%, #EEE 100%
-	);
-}
-
-.theme-selector:hover {
-	cursor: pointer;
-}
-
-.theme-selector .ts-icon {
-	color: var(--ts-gray-600);
 }
 
 #widgetDialog span {
@@ -281,10 +262,6 @@
 </style>
 <script>
 export default {
-	/*
-	To-do:
-	- Theme
-	*/
 	async asyncData({ $axios, params, payload }) {
 		
 	},
@@ -323,9 +300,54 @@ export default {
 				showCourseClassroom: true,
 				showCourseTime: true,
 				tableBorder: 32,
+				theme: 1,
 			},
 			ctx: null,
 			scriptableCodeFile: '',
+			message: null,
+
+			themes: [
+				{
+					id: 1,
+					name: '彩色',
+					backgroundColor: '#FFF',
+					courseColor: ['#F8BBD0','#FFCDD2','#FFE0B2','#FFF9C4','#F0F4C3','#C8E6C9','#B2EBF2','#BBDEFB','#C5CAE9','#D1C4E9','#D7CCC8','#DDD'],
+					titleColor: '#333',
+					textColor: '#666',
+					borderColor: '#DDD',
+					colTitleColor: '#999'
+				},
+				{
+					id: 2,
+					name: '彩色（深色模式）',
+					backgroundColor: '#222',
+					courseColor: ['#C0392B','#E74C3C','#E67E22','#F9A825','#2ECC71','#27AE60','#1ABC9C','#3498DB','#2980B9','#8E44AD','#6D4C41','#444'],
+					titleColor: '#FFF',
+					textColor: '#F2F2F2',
+					borderColor: '#555',
+					colTitleColor: '#BBB'
+				},
+				{
+					id: 3,
+					name: '黑白',
+					courseColor: ['#DDD'],
+					backgroundColor: '#FFF',
+					titleColor: '#333',
+					textColor: '#666',
+					borderColor: '#DDD',
+					colTitleColor: '#999'
+				},
+				{
+					id: 4,
+					name: '黑白（深色模式）',
+					courseColor: ['#444'],
+					backgroundColor: '#333',
+					titleColor: '#FFF',
+					textColor: '#F2F2F2',
+					borderColor: '#555',
+					colTitleColor: '#BBB'
+				},
+			]
 		}
 	},
 	computed: {
@@ -386,6 +408,7 @@ export default {
 		},
 
 		showWidget() {
+			this.message = null;
 			document.getElementById('widgetDialog').showModal();
 		},
 
@@ -397,11 +420,13 @@ export default {
 			window.getSelection().addRange(range);
 			document.execCommand('copy');
 			window.getSelection().removeAllRanges();
-			this.$swal({
-				title: '已複製程式碼', icon: 'success', toast: true,
-				timer: 3000, timerProgressBar: true,
-				position: 'bottom-start', showConfirmButton: false,
-			});
+			this.message = [
+				'success',
+				'程式碼已複製！',
+			];
+			setTimeout(() => {
+				this.message = null;
+			}, 3000);
 		},
 
 		checkSection() {
@@ -489,6 +514,7 @@ export default {
 		},
 
 		setCanvasSize() {
+			this.loading = false;
 			const canvas = document.getElementById('timetableCanvas');
 			this.ctx = canvas.getContext('2d');
 			let width, height;
@@ -526,18 +552,18 @@ export default {
 					this.fill();
 				};
 			}
-			CanvasRenderingContext2D.prototype.wrapText = function (context, texts, x, y, maxWidth, lineHeight) {
+			CanvasRenderingContext2D.prototype.wrapText = function (context, texts, x, y, maxWidth, lineHeight, theme) {
 				let index = 0;
 				const tableBorder = this.canvas._tableBorder;
 				for (let text of texts) {
 					if (index == 0) {
 						ctx.font = (32 - tableBorder * 0.05) + 'px Noto Sans TC';
-						ctx.fillStyle = '#444';
+						ctx.fillStyle = theme.titleColor;
 						ctx.textAlign = 'left';
 						ctx.textBaseline = 'middle';
 					} else {
 						ctx.font = (24 - tableBorder * 0.05) + 'px Noto Sans TC';
-						ctx.fillStyle = '#666';
+						ctx.fillStyle = theme.textColor;
 						ctx.textAlign = 'left';
 						ctx.textBaseline = 'middle';
 					}
@@ -561,6 +587,7 @@ export default {
 				}
 			};
 
+			let theme = this.themes.filter(theme => theme.id === this.myCoursesSetting.theme)[0];
 			const rows = this.time_section.length;
 			const cols = this.week_text.length;
 			const ctx = this.ctx;
@@ -573,12 +600,12 @@ export default {
 			const cellWidth = (this.myCoursesSetting.showRowTitle ? 0.95 : 1) * (ctx.canvas.width - this.myCoursesSetting.tableBorder * 2) / cols;
 
 			ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-			ctx.fillStyle = '#FFF';
+			ctx.fillStyle = theme.backgroundColor;
 			ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
 			ctx.translate(this.myCoursesSetting.tableBorder, this.myCoursesSetting.tableBorder);
 
-			ctx.strokeStyle = '#DDD';
+			ctx.strokeStyle = theme.borderColor;
 			this.gridCells = [];
 
 			for (let i = 0; i <= rows; i++) {
@@ -593,7 +620,7 @@ export default {
 				}
 				if (this.myCoursesSetting.showRowTitle && i < rows) {
 					ctx.font = (String(this.time_section[i]).includes('.5') ? 26 : 36) + 'px Noto Sans TC';
-					ctx.fillStyle = '#999';
+					ctx.fillStyle = theme.colTitleColor;
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
 					ctx.fillText(this.time_section[i], rowTitleWidth / 2, i * cellHeight + cellHeight / 2 + colTitleHeight);
@@ -612,7 +639,7 @@ export default {
 				}
 				if (this.myCoursesSetting.showColTitle && j < cols) {
 					ctx.font = '32px Noto Sans TC';
-					ctx.fillStyle = '#999';
+					ctx.fillStyle = theme.colTitleColor;
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
 					ctx.fillText(this.week_text[j], j * cellWidth + cellWidth / 2 + rowTitleWidth, colTitleHeight / 2);
@@ -667,7 +694,7 @@ export default {
 
 				let courseNameList = this.myCourses.map(course => course.name);
 				courseNameList = courseNameList.filter((name, index) => courseNameList.indexOf(name) === index);
-				ctx.fillStyle  = ['#F8BBD0','#FFCDD2','#FFE0B2','#FFF9C4','#F0F4C3','#C8E6C9','#B2EBF2','#BBDEFB','#C5CAE9','#D1C4E9','#D7CCC8'][courseNameList.indexOf(course.name) % 11];
+				ctx.fillStyle = theme.courseColor[courseNameList.indexOf(course.name) % theme.courseColor.length];
 				ctx.drawRoundedRect(x + 8, y + 8, w - 16, h - 16, cellWidth / 20);
 				let texts = [course.name];
 				if (this.myCoursesSetting.showCourseTime) {
@@ -676,14 +703,14 @@ export default {
 				if (this.myCoursesSetting.showCourseClassroom) {
 					texts.push(course.classroom);
 				}
-				ctx.wrapText(ctx, texts, x + 20, y + 35, cellWidth - 35, 38);
+				ctx.wrapText(ctx, texts, x + 20, y + 35, cellWidth - 35, 38, theme);
 			});
 			ctx.translate(-this.myCoursesSetting.tableBorder, -this.myCoursesSetting.tableBorder);
 		},
 
 		downloadImage() {
 			const canvas = document.getElementById('timetableCanvas');
-			if (typeof canvas.toBlob === 'function') {
+			if(window.innerWidth > 768) {
 				canvas.toBlob((blob) => {
 					const link = document.createElement('a');
 					link.download = '課表.png';
@@ -692,9 +719,12 @@ export default {
 					URL.revokeObjectURL(link.href);
 				}, 'image/png');
 			} else {
-				const dataUrl = canvas.toDataURL('image/png');
-				const newWindow = window.open();
-				newWindow.document.write('<img src="' + dataUrl + '" alt="課表"/>');
+				this.$swal({
+					title: '長按圖片即可下載',
+					html: '<img style="width: 80%;" src="' + canvas.toDataURL('image/png') + '" alt="課表"/>',
+					showConfirmButton: false,
+					showCloseButton: true,
+				});
 			}
 		},
 
@@ -773,67 +803,76 @@ export default {
 
 		newCourse() {
 			if(!this.newName) {
-				this.$swal({
-					title: '請輸入課程名稱', icon: 'error', toast: true,
-					timer: 3000, timerProgressBar: true,
-					position: 'bottom-start', showConfirmButton: false,
-				});
+				this.message = [
+					'error',
+					'請輸入課程名稱',
+				];
 				return;
 			}
 			if(this.newDay === -1) {
-				this.$swal({
-					title: '請選擇星期', icon: 'error', toast: true,
-					timer: 3000, timerProgressBar: true,
-					position: 'bottom-start', showConfirmButton: false,
-				});
+				this.message = [
+					'error',
+					'請選擇星期',
+				];
 				return;
 			}
 			if(this.newStart === -1 || this.newEnd === -1) {
-				this.$swal({
-					title: '請選擇節次', icon: 'error', toast: true,
-					timer: 3000, timerProgressBar: true,
-					position: 'bottom-start', showConfirmButton: false,
-				});
+				this.message = [
+					'error',
+					'請選擇節次',
+				];
 				return;
 			}
-			if(this.action === 'edit') {
-				this.myCourses.forEach(course => {
-					if(course.editing) {
-						course.name = this.newName;
-						course.classroom = this.newClassroom;
-						course.time[0] = (this.newDay + 1).toString();
-						course.time[1] = this.newStart + '~' + this.newEnd;
-						this.sortCourse();
-						this.drawTimetable();
-						document.getElementById('newCourseDialog').close();
-						return;
-					}
-				});
-				return;
+			let editingCourse = this.myCourses.find(course => course.editing) || null;
+			let sections = [];
+			if(this.action === 'edit' &&editingCourse) {
+				for(let s = this.time_section_full.indexOf(String(editingCourse.time[1].split('~')[0])); s <= this.time_section_full.indexOf(String(editingCourse.time[1].split('~')[1])); s++) {
+					sections.push(this.time_section_full[s]);
+				}
 			}
+
 			for(let s = this.time_section_full.indexOf(String(this.newStart)); s <= this.time_section_full.indexOf(String(this.newEnd)); s++) {
-				if(this.used_secion[this.newDay+1].includes(this.time_section_full[s])) {
-					this.$swal({
-						title: '這個時段已經有別的課程了！', icon: 'error', toast: true,
-						timer: 3000, timerProgressBar: true,
-						position: 'bottom-start', showConfirmButton: false,
-					});
+				if(
+					this.used_secion[this.newDay+1].includes(this.time_section_full[s]) &&
+					!sections.includes(this.time_section_full[s])
+				) {
+					this.message = [
+						'error',
+						'這個時段已經有別的課程了！',
+					];
 					return;
 				}
 			}
 
-			const newCourse = {
-				name: this.newName,
+			if(editingCourse) {
+				editingCourse.name = this.newName;
+				editingCourse.classroom = this.newClassroom;
+				editingCourse.time[0] = (this.newDay + 1).toString();
+				editingCourse.time[1] = this.newStart + '~' + this.newEnd;
+			} else {
+				const newCourse = {
+					name: this.newName,
 				classroom: this.newClassroom,
 				time: [
 					(this.newDay + 1).toString(),
 					this.newStart + '~' + this.newEnd
-				]
-			};
-			this.myCourses.push(newCourse);
+					]
+				};
+				this.myCourses.push(newCourse);
+			}
+			this.message = null;
 			this.sortCourse();
 			this.drawTimetable();
 			document.getElementById('newCourseDialog').close();
+		},
+
+		deleteCourse() {
+			let editingCourse = this.myCourses.find(course => course.editing) || null;
+			if(editingCourse) {
+				this.myCourses = this.myCourses.filter(course => course !== editingCourse);
+				this.drawTimetable();
+				document.getElementById('newCourseDialog').close();
+			}
 		},
 
 		sortCourse() {
@@ -865,6 +904,7 @@ export default {
 				showCourseClassroom: true,
 				showCourseTime: true,
 				tableBorder: 32,
+				theme: 1,
 			};
 		}
 		this.loadFonts().then(() => {
