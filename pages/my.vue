@@ -267,9 +267,9 @@ export default {
 	},
 	head() {
 		return {
-			title: '個人課表 | 明志科技大學選課小幫手',
+			title: '我的課表 | 明志科技大學選課小幫手',
 			meta: [
-				{ hid: 'og:title', property: 'og:title', content: '個人課表 | 明志科技大學選課小幫手' },
+				{ hid: 'og:title', property: 'og:title', content: '我的課表 | 明志科技大學選課小幫手' },
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com/' + this.$route.params.id },
 			]
 		}
