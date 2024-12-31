@@ -6,8 +6,12 @@
 					<button class="ts-close is-large mobile-only close-sidebar"
 						@click="showMobileSidebar = !showMobileSidebar"></button>
 					<div>
-						<div class="ts-text is-label has-bottom-padded-small">個人課表</div>
+						<div class="ts-text is-label has-bottom-padded-small">我的課程</div>
 						<div class="ts-wrap is-dense">
+							<button class="ts-button is-outlined is-small is-fluid is-start-icon" @click="showImportDialog()">
+								<span class="ts-icon is-file-import-icon"></span>
+								從學校系統匯入
+							</button>
 							<button class="ts-button is-outlined is-small is-fluid is-start-icon" @click="importFromSaved()">
 								<span class="ts-icon is-star-icon"></span>
 								從「收藏的課程」匯入
@@ -232,13 +236,45 @@
 						{{ message ? message[1] : '點選下方區塊即可複製' }}
 					</div>
 					<div class="ts-input is-solid">
-						<div class="ts-box" id="code" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode()"><div class="ts-content">{{ scriptableCode }}</div></div>
+						<div class="ts-box" id="code0" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(0)"><div class="ts-content">{{ scriptableCode }}</div></div>
 					</div>
 					<br>
 					<h2 class="ts-header is-large" style="display:inline;">3. 開啟 Scriptable，按&nbsp;<span class="ts-icon is-circle-plus-icon"></span>，貼上程式碼，按&nbsp;<span>Done</span></h2>
 					<h2 class="ts-header is-large">4. 在桌面新增小工具，選擇 Scriptable</h2>
 					<h2 class="ts-header is-large">5. 長按小工具 > 編輯小工具，Script 設定成你剛剛新增的專案</h2>
 					還是看不懂的話就看一下<a href="https://www.youtube.com/watch?v=QUG2U66lzOM" target="_blank">影片</a>吧～
+				</div>
+			</div>
+		</dialog>
+		<dialog class="ts-modal is-large" id="importDialog">
+			<div class="content">
+				<div class="ts-content">
+					<div class="ts-grid">
+						<div class="column is-fluid">
+							<div class="ts-header">從學校系統匯入</div>
+						</div>
+						<div class="column">
+							<button class="ts-close is-large is-secondary" @click="closeDialog()"></button>
+						</div>
+					</div>
+				</div>
+				<div class="ts-divider"></div>
+				<div class="ts-content">
+					<h2 class="ts-header is-large" style="display:inline;">1. 請至<a href="https://portal.mcut.edu.tw/" target="_blank" rel="nofollow">校園入口網</a>，前往應用系統 > 學生資訊查詢系統</h2>
+					<div class="ts-text is-description">請在手機或電腦的瀏覽器上執行，不要使用明志 App</div>
+					<h2 class="ts-header is-large">2. 選擇課程查詢 > 課表查詢</h2>
+					<h2 class="ts-header is-large">3. 看到自己的課表後，在瀏覽器網址列把所有網址刪掉後，貼上以下程式碼：</h2>
+					<div class="ts-text is-description">
+						{{ message ? message[1] : '點選下方區塊即可複製' }}
+					</div>
+					<div class="ts-input is-solid">
+						<div class="ts-box" id="code1" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(1)"><div class="ts-content">(()=>{const r=document.querySelectorAll('[role="row"]');if(!r||r.length===0){alert('沒有找到任何課程，請確認頁面是否正確！');return;}let t=[];r.forEach(e=>{let l=[];e.querySelectorAll('[role="gridcell"]').forEach(e=>{l.push(e.textContent.trim())}),l.length>0&&t.push(l)});let json=encodeURIComponent(JSON.stringify(t,null,2));const n=window.open(`https://mcut-course.com/my?import=${json}`)})();</div></div>
+					</div>
+					<h2 class="ts-header is-large">4. <span class="ts-badge is-spaced is-negative">重要!</span> 在最前面加上 <span class="ts-text is-code" style="font-family: monospace;">javascript:</span></h2>
+					<h2 class="ts-header is-large">5. 按下 Enter/送出後，課表就會匯入了！</h2>
+					<div class="ts-text is-description">
+						如果你看到 Google 搜尋，代表你應該沒有確實輸入 <span class="ts-text is-code">javascript:</span> ，請重新輸入一次
+					</div>
 				</div>
 			</div>
 		</dialog>
@@ -305,6 +341,7 @@ export default {
 			ctx: null,
 			scriptableCodeFile: '',
 			message: null,
+			messageTimer: null,
 
 			themes: [
 				{
@@ -412,8 +449,8 @@ export default {
 			document.getElementById('widgetDialog').showModal();
 		},
 
-		copyCode() {
-			const code = document.getElementById('code');
+		copyCode(id) {
+			const code = document.getElementById('code' + id);
 			const range = document.createRange();
 			range.selectNode(code);
 			window.getSelection().removeAllRanges();
@@ -424,7 +461,8 @@ export default {
 				'success',
 				'程式碼已複製！',
 			];
-			setTimeout(() => {
+			if(this.messageTimer) clearTimeout(this.messageTimer);
+			this.messageTimer = setTimeout(() => {
 				this.message = null;
 			}, 3000);
 		},
@@ -451,6 +489,61 @@ export default {
 			});
 		},
 
+		importFromUrl() {
+			const json = JSON.parse(decodeURIComponent(this.$route.query.import));
+			let data = [];
+			json.forEach(course => {
+				if(course[1].trim().length != 6) return;
+				if(course[2].trim().length != 1 || parseInt(course[2]) > 5) return;
+				if(!course[3].includes('.') || !course[4].includes('.') || Number.isNaN(parseInt(course[3])) || Number.isNaN(parseInt(course[4]))) return;
+				data.push({
+					name: course[0],
+					classroom: course[5],
+					time: [course[2], course[3].replace('.0', '') + '~' + course[4].replace('.0', '')],
+				});
+			});
+
+			let success = 0, fail = 0;
+			data.forEach(course => {
+				let time = course.time;
+				if(time[1].includes('0.5')) return;
+				// 檢查是否衝堂
+				let isConflict = false;	
+				for(let s = this.time_section_full.indexOf(time[1].split('~')[0]); s <= this.time_section_full.indexOf(time[1].split('~')[1]); s++) {
+					if(this.used_secion[time[0]].includes(this.time_section_full[s])) {
+						isConflict = true;
+						break;
+					}
+				}
+				if(!isConflict) {
+					this.myCourses.push({
+						name: course.name.split('(')[0],
+						classroom: course.classroom,
+						id: course.id,
+						time: time,
+					});
+					success++;
+				} else {
+					fail++;
+				}
+			});
+			let alertText = [];
+			if(success > 0) alertText.push(`已匯入 ${success} 門課程`);
+			if(fail > 0) alertText.push(`有 ${fail} 門課程因衝堂無法匯入`);
+			if(alertText.length > 0) {
+				this.$swal({
+					title: alertText.join('，'), icon: fail == 0 ? 'success' : 'warning', toast: true,
+					timer: 3000, timerProgressBar: true,
+					position: 'bottom-start', showConfirmButton: false,
+				});
+			}
+			if(success > 0) {
+				this.sortCourse();
+				this.drawTimetable();
+			}
+			this.$router.replace({ query: {} });
+		},
+
 		async importFromSaved() {
 			const savedCourse = JSON.parse(localStorage.getItem('savedCourse') || '[]');
 			if (savedCourse.length === 0) return;
@@ -470,6 +563,7 @@ export default {
 					data = res.data;
 				} catch (e) {}
 			}
+			
 			let success = 0, fail = 0;
 			data.course.forEach(course => {
 				if(savedCourse.includes(course.id)) {
@@ -512,7 +606,6 @@ export default {
 				this.drawTimetable();
 			}
 		},
-
 		setCanvasSize() {
 			this.loading = false;
 			const canvas = document.getElementById('timetableCanvas');
@@ -592,7 +685,7 @@ export default {
 			const cols = this.week_text.length;
 			const ctx = this.ctx;
 			
-			ctx.canvas._tableBorder = this.myCoursesSetting.tableBorder;
+			ctx.canvas._tableBorder = this.myCoursesSetting.tableBorder || 32;
 
 			const colTitleHeight = this.myCoursesSetting.showColTitle ? (ctx.canvas.height - this.myCoursesSetting.tableBorder * 2) * 0.035 : 0;
 			const cellHeight = (this.myCoursesSetting.showColTitle ? 0.965 : 1) * (ctx.canvas.height - this.myCoursesSetting.tableBorder * 2) / rows;
@@ -790,6 +883,10 @@ export default {
 			document.getElementById('newCourseDialog').showModal();
 		},
 
+		showImportDialog() {
+			document.getElementById('importDialog').showModal();
+		},
+
 		closeDialog() {
 			this.newName = '';
 			this.newClassroom = '';
@@ -799,6 +896,7 @@ export default {
 			this.action = null;
 			document.getElementById('newCourseDialog').close();
 			document.getElementById('widgetDialog').close();
+			document.getElementById('importDialog').close();
 		},
 
 		newCourse() {
@@ -920,6 +1018,9 @@ export default {
 					this.clickCell(cell.col, cell.row);
 				}
 			});
+			if(this.$route.query.import) {
+				this.importFromUrl();
+			}
 		});
 		document.getElementById('newCourseDialog').addEventListener('click', (e) => {
 			if (e.target.tagName === 'DIALOG') {
