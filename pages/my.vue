@@ -12,7 +12,7 @@
 								<span class="ts-icon is-file-import-icon"></span>
 								從學校系統匯入
 							</button>
-							<button class="ts-button is-outlined is-small is-fluid is-start-icon" @click="importFromSaved()">
+							<button class="ts-button is-outlined is-small is-fluid is-start-icon" @click="importFromSaved()" v-show="savedCourses.length > 0">
 								<span class="ts-icon is-star-icon"></span>
 								從「收藏的課程」匯入
 							</button>
@@ -263,7 +263,7 @@
 					<h2 class="ts-header is-large" style="display:inline;">1. 請至<a href="https://portal.mcut.edu.tw/" target="_blank" rel="nofollow">校園入口網</a>，前往應用系統 > 學生資訊查詢系統</h2>
 					<div class="ts-text is-description">請在手機或電腦的瀏覽器上執行，不要使用明志 App</div>
 					<h2 class="ts-header is-large">2. 選擇課程查詢 > 課表查詢</h2>
-					<h2 class="ts-header is-large">3. 看到自己的課表後，在瀏覽器網址列把所有網址刪掉後，貼上以下程式碼：</h2>
+					<h2 class="ts-header is-large" style="display:inline;">3. 看到自己的課表後，在瀏覽器網址列把所有網址刪掉後，貼上以下程式碼：</h2>
 					<div class="ts-text is-description">
 						{{ message ? message[1] : '點選下方區塊即可複製' }}
 					</div>
@@ -271,10 +271,11 @@
 						<div class="ts-box" id="code1" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(1)"><div class="ts-content">(()=>{const r=document.querySelectorAll('[role="row"]');if(!r||r.length===0){alert('沒有找到任何課程，請確認頁面是否正確！');return;}let t=[];r.forEach(e=>{let l=[];e.querySelectorAll('[role="gridcell"]').forEach(e=>{l.push(e.textContent.trim())}),l.length>0&&t.push(l)});let json=encodeURIComponent(JSON.stringify(t,null,2));const n=window.open(`https://mcut-course.com/my?import=${json}`)})();</div></div>
 					</div>
 					<h2 class="ts-header is-large">4. <span class="ts-badge is-spaced is-negative">重要!</span> 在最前面加上 <span class="ts-text is-code" style="font-family: monospace;">javascript:</span></h2>
-					<h2 class="ts-header is-large">5. 按下 Enter/送出後，課表就會匯入了！</h2>
+					<h2 class="ts-header is-large" style="display:inline;">5. 按下 Enter/送出後，課表就會匯入了！</h2>
 					<div class="ts-text is-description">
-						如果你看到 Google 搜尋，代表你應該沒有確實輸入 <span class="ts-text is-code">javascript:</span> ，請重新輸入一次
+						如果看到 <span class="ts-icon is-magnifying-glass-icon"></span> 和 <span class="ts-icon is-earth-asia-icon"></span> 兩個選項，請選擇 <span class="ts-icon is-earth-asia-icon"></span> 那一個。如果只有 <span class="ts-icon is-magnifying-glass-icon"></span>，請重新檢查是否輸入正確！
 					</div>
+					<img src="https://i.imgur.com/ZKRQvC7.jpeg" style="width:100%;">
 				</div>
 			</div>
 		</dialog>
