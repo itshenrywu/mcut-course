@@ -546,7 +546,7 @@ export default {
 		},
 
 		async importFromSaved() {
-			const savedCourse = JSON.parse(localStorage.getItem('savedCourse') || '[]');
+			const savedCourse = this.savedCourses;
 			if (savedCourse.length === 0) return;
 			this.currentTerm = savedCourse[0].substring(0, 3) + '-' + savedCourse[0].substring(3, 4);
 			const now = new Date().getTime();
@@ -984,6 +984,7 @@ export default {
 		},
 	},
 	mounted() {
+		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
 		this.$axios.get('/scriptable.js?_=' + new Date().getTime()).then(res => {
 			this.scriptableCodeFile = res.data;
 		});
