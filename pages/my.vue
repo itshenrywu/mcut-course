@@ -220,6 +220,7 @@
 					<div class="ts-grid">
 						<div class="column is-fluid">
 							<div class="ts-header">安裝 iOS 小工具</div>
+							<div class="ts-text is-description">可以讓你在桌面或鎖定畫面上看到下一堂是什麼課！</div>
 						</div>
 						<div class="column">
 							<button class="ts-close is-large is-secondary" @click="closeDialog()"></button>
@@ -230,7 +231,22 @@
 				<div class="ts-content">
 					<h2 class="ts-header is-large">1. 安裝 Scriptable</h2>
 					<a href="https://apps.apple.com/tw/app/scriptable/id1405459188"><img style="width: 150px" src="https://i.imgur.com/Tq43Fdb.png"></a>
-					<h2 class="ts-header is-large" style="margin-bottom:0;">2. 複製以下程式碼</h2>
+					<h2 class="ts-header is-large">2. 挑選喜歡的顏色</h2>
+					<div class="ts-grid">
+						<div class="column is-8-wide">
+							<div class="ts-text is-label has-bottom-spaced-small">背景顏色</div>
+							<div class="ts-input">
+								<input type="color" v-model="widgetBackgroundColor">
+							</div>
+						</div>
+						<div class="column is-8-wide">
+							<div class="ts-text is-label has-bottom-spaced-small">文字顏色</div>
+							<div class="ts-input">
+								<input type="color" v-model="widgetColor">
+							</div>
+						</div>
+					</div>
+					<h2 class="ts-header is-large" style="margin-bottom:0;">3. 複製以下程式碼</h2>
 					<div class="ts-text is-description">
 						課程每次修改後須重新更改一次程式碼<br>
 						{{ message ? message[1] : '點選下方區塊即可複製' }}
@@ -239,9 +255,9 @@
 						<div class="ts-box" id="code0" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(0)"><div class="ts-content">{{ scriptableCode }}</div></div>
 					</div>
 					<br>
-					<h2 class="ts-header is-large" style="display:inline;">3. 開啟 Scriptable，按&nbsp;<span class="ts-icon is-circle-plus-icon"></span>，貼上程式碼，按&nbsp;<span>Done</span></h2>
-					<h2 class="ts-header is-large">4. 在桌面新增小工具，選擇 Scriptable</h2>
-					<h2 class="ts-header is-large">5. 長按小工具 > 編輯小工具，Script 設定成你剛剛新增的專案</h2>
+					<h2 class="ts-header is-large" style="display:inline;">4. 開啟 Scriptable，按&nbsp;<span class="ts-icon is-circle-plus-icon"></span>，貼上程式碼，按&nbsp;<span>Done</span></h2>
+					<h2 class="ts-header is-large">5. 在桌面新增小工具，選擇 Scriptable</h2>
+					<h2 class="ts-header is-large">6. 長按小工具 > 編輯小工具，Script 設定成你剛剛新增的專案</h2>
 					還是看不懂的話就看一下<a href="https://www.youtube.com/watch?v=QUG2U66lzOM" target="_blank">影片</a>吧～
 				</div>
 			</div>
@@ -344,6 +360,9 @@ export default {
 			message: null,
 			messageTimer: null,
 
+			widgetBackgroundColor: '#34495e',
+			widgetColor: '#ffffff',
+
 			themes: [
 				{
 					id: 1,
@@ -437,7 +456,8 @@ export default {
 					p: course.time[1].replace('~','-')
 				});
 			});
-			return this.scriptableCodeFile.replace('__DATA__', encodeURIComponent(JSON.stringify(courses || [])));
+			return `const color=["${this.widgetBackgroundColor.replace('#','')}","${this.widgetColor.replace('#','')}"];` +
+			this.scriptableCodeFile.replace('__DATA__', encodeURIComponent(JSON.stringify(courses || [])));
 		},
 	},
 	methods: {
@@ -985,7 +1005,7 @@ export default {
 	},
 	mounted() {
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
-		this.$axios.get('/scriptable.js?_=' + new Date().getTime()).then(res => {
+		this.$axios.get('/scriptable.min.js?_=' + new Date().getTime()).then(res => {
 			this.scriptableCodeFile = res.data;
 		});
 		try {
