@@ -65,6 +65,7 @@ function createWidget() {
 		let i = w.addText("今天沒有課了！");
 		i.textColor = new Color(color[1]), i.font = Font.boldSystemFont(18);
 	}
+	w.url = 'https://mcut-course.com/' + ((l && l.i && l.i.length == 12) ? 'course/' + l.i.substring(0, 4) + '/' + l.i.substring(4, 8) + '/' + l.i.substring(8) : 'my') + '/';
 	return w;
 }
 let widget = createWidget();

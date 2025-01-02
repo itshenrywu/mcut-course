@@ -150,12 +150,12 @@
 			<br>
 			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>
-		<dialog class="ts-modal is-large" id="newCourseDialog">
+		<dialog class="ts-modal is-large" id="editCourseDialog">
 			<div class="content">
 				<div class="ts-content">
 					<div class="ts-grid">
 						<div class="column is-fluid">
-							<div class="ts-header">{{ action === 'new' ? '新增課程' : '修改課程' }}</div>
+							<div class="ts-header">{{ editingAction === 'new' ? '新增課程' : '修改課程' }}</div>
 						</div>
 						<div class="column">
 							<button class="ts-close is-large is-secondary" @click="closeDialog()"></button>
@@ -163,7 +163,15 @@
 					</div>
 				</div>
 				<div class="ts-divider"></div>
-				<div class="ts-content">
+				<div class="ts-content" v-if="editingCourse">
+					<NuxtLink
+					target="_blank"
+					:to="`/course/${editingCourse.id.substring(0, 4)}/${editingCourse.id.substring(4, 8)}/${editingCourse.id.substring(8)}/`"
+					class="ts-button is-fluid is-secondary is-start-icon has-bottom-spaced-large"
+					v-if="editingCourse.id && editingCourse.id.length == 12 && editingCourse.originalName == editingCourse.name && !editingCourse.id.includes('ALT')">
+						<span class="ts-icon is-list-check-icon"></span>
+						查看課程詳細資料
+					</NuxtLink>
 					<div class="ts-box is-start-indicated has-bottom-spaced-large" v-if="message" :class="{'is-negative': message[0] === 'error'}">
 						<div class="ts-content"><div class="ts-header">{{ message[1] }}</div></div>
 						<div class="symbol"><span class="ts-icon is-circle-exclamation-icon"></span></div>
@@ -172,7 +180,7 @@
 					<div class="ts-grid is-middle-aligned">
 						<div class="column is-5-wide">
 							<div class="ts-select is-fluid">
-								<select v-model="newDay">
+								<select v-model="editingCourse.day">
 									<option value="-1" disabled>請選擇星期...</option>
 									<option v-for="(w, i) of ['一','二','三','四','五']" :value="i">星期{{ w }}</option>
 								</select>
@@ -180,7 +188,7 @@
 						</div>
 						<div class="column is-5-wide">
 							<div class="ts-select is-fluid">
-								<select v-model="newStart" @change="checkSection()">
+								<select v-model="editingCourse.start" @change="checkSection()">
 									<option value="-1" disabled>請選擇起始節次</option>
 									<option v-for="section of time_section_full" :value="section">第 {{ section }} 節</option>
 								</select>
@@ -191,9 +199,9 @@
 						</div>
 						<div class="column is-5-wide">
 							<div class="ts-select is-fluid">
-								<select v-model="newEnd">
+								<select v-model="editingCourse.end">
 									<option value="-1" disabled>請選擇結束節次</option>
-									<option v-for="section of time_section_full" :value="section" :disabled="parseInt(section) < newStart">第 {{ section }} 節</option>
+									<option v-for="section of time_section_full" :value="section" :disabled="parseFloat(section) < editingCourse.start">第 {{ section }} 節</option>
 								</select>
 							</div>
 						</div>
@@ -201,16 +209,16 @@
 					<br>
 					<div class="ts-text is-label has-bottom-padded-small">課程名稱</div>
 					<div class="ts-input is-fluid">
-						<input type="text" v-model.trim="newName">
+						<input type="text" v-model.trim="editingCourse.name">
 					</div>
 					<br>
 					<div class="ts-text is-label has-bottom-padded-small">上課地點</div>
 					<div class="ts-input is-fluid">
-						<input type="text" v-model.trim="newClassroom">
+						<input type="text" v-model.trim="editingCourse.classroom">
 					</div>
 					<br>
-					<button class="ts-button is-fluid" @click="newCourse">{{ action === 'new' ? '新增' : '修改' }}</button>
-					<button class="ts-button is-negative is-outlined is-fluid has-top-spaced-small" @click="deleteCourse()">刪除</button>
+					<button class="ts-button is-fluid" @click="editCourse()">{{ editingAction === 'new' ? '新增' : '修改' }}</button>
+					<button class="ts-button is-negative is-outlined is-fluid has-top-spaced-small" @click="deleteCourse()" v-show="editingAction === 'edit'">刪除</button>
 				</div>
 			</div>
 		</dialog>
@@ -220,7 +228,7 @@
 					<div class="ts-grid">
 						<div class="column is-fluid">
 							<div class="ts-header">安裝 iOS 小工具</div>
-							<div class="ts-text is-description">可以讓你在桌面或鎖定畫面上看到下一堂是什麼課！</div>
+							<div class="ts-text is-description">可以讓你在桌面或鎖定畫面上看到下一堂是什麼課，點擊還可以查看課程詳細資料！</div>
 						</div>
 						<div class="column">
 							<button class="ts-close is-large is-secondary" @click="closeDialog()"></button>
@@ -258,7 +266,9 @@
 					<h2 class="ts-header is-large" style="display:inline;">4. 開啟 Scriptable，按&nbsp;<span class="ts-icon is-circle-plus-icon"></span>，貼上程式碼，按&nbsp;<span>Done</span></h2>
 					<h2 class="ts-header is-large">5. 在桌面新增小工具，選擇 Scriptable</h2>
 					<h2 class="ts-header is-large">6. 長按小工具 > 編輯小工具，Script 設定成你剛剛新增的專案</h2>
-					還是看不懂的話就看一下<a href="https://www.youtube.com/watch?v=QUG2U66lzOM" target="_blank">影片</a>吧～
+					<div class="ts-text is-description">
+						還是看不懂的話就看一下<a href="https://www.youtube.com/watch?v=QUG2U66lzOM" target="_blank">影片</a>吧～
+					</div>
 				</div>
 			</div>
 		</dialog>
@@ -276,22 +286,35 @@
 				</div>
 				<div class="ts-divider"></div>
 				<div class="ts-content">
-					<h2 class="ts-header is-large" style="display:inline;">1. 請至<a href="https://portal.mcut.edu.tw/" target="_blank" rel="nofollow">校園入口網</a>，前往應用系統 > 學生資訊查詢系統</h2>
-					<div class="ts-text is-description">請在手機或電腦的瀏覽器上執行，不要使用明志 App</div>
-					<h2 class="ts-header is-large">2. 選擇課程查詢 > 課表查詢</h2>
-					<h2 class="ts-header is-large" style="display:inline;">3. 看到自己的課表後，在瀏覽器網址列把所有網址刪掉後，貼上以下程式碼：</h2>
-					<div class="ts-text is-description">
-						{{ message ? message[1] : '點選下方區塊即可複製' }}
+					<div class="ts-wrap is-vertical">
+					<div>
+							<h2 class="ts-header is-large" style="display:inline;">1. 請至<a href="https://portal.mcut.edu.tw/" target="_blank" rel="nofollow">校園入口網</a>，前往應用系統 > 學生資訊查詢系統</h2>
+							<div class="ts-text is-description">請在手機或電腦的瀏覽器上執行，不要使用明志 App</div>
+						</div>
+						<div>
+							<h2 class="ts-header is-large" style="display:inline;">2. 選擇課程查詢 > 課表查詢</h2>
+						</div>
+						<div>
+							<h2 class="ts-header is-large" style="display:inline;">3. 看到自己的課表後，在瀏覽器網址列把所有網址刪掉後，貼上以下程式碼：</h2>
+							<div class="ts-text is-description">
+								{{ message ? message[1] : '點選下方區塊即可複製' }}
+							</div>
+							<div class="ts-input is-solid">
+								<div class="ts-box" id="code1" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(1)"><div class="ts-content">(()=>{let e=document.querySelectorAll('[role="row"]');if(!e||0===e.length){alert("沒有找到任何課程，請確認頁面是否正確！");return}let t=[];e.forEach(e=>{let l=[];e.querySelectorAll('[role="gridcell"]').forEach(e=>{l.push(e.textContent.trim()),e.querySelector("a")&&l.push(e.querySelector("a").href.split("cid=")[1].split("&")[0])}),l.length>0&&t.push(l)});let l=encodeURIComponent(JSON.stringify(t));window.open(`https://mcut-course.com/my?import=${l}`)})();</div></div>
+							</div>
+						</div>
+						<div>
+							<h2 class="ts-header is-large" style="display:inline;">4. <span class="ts-badge is-end-spaced is-negative">重要!</span>在最前面加上 <span class="ts-text is-code" style="font-family: monospace;">javascript:</span></h2>
+							<div class="ts-text is-description">請自行輸入，用複製貼上的話可能會失敗</div>
+						</div>
+						<div>
+							<h2 class="ts-header is-large" style="display:inline;">5. 按下 Enter/送出後，課表就會匯入了！</h2>
+							<div class="ts-text is-description">
+								如果看到 <span class="ts-icon is-magnifying-glass-icon"></span> 和 <span class="ts-icon is-earth-asia-icon"></span> 兩個選項，請選擇 <span class="ts-icon is-earth-asia-icon"></span> 那一個。如果只有 <span class="ts-icon is-magnifying-glass-icon"></span>，請重新檢查是否輸入正確！
+							</div>
+							<img src="https://i.imgur.com/ZKRQvC7.jpeg" style="width:100%;">
+						</div>
 					</div>
-					<div class="ts-input is-solid">
-						<div class="ts-box" id="code1" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(1)"><div class="ts-content">(()=>{const r=document.querySelectorAll('[role="row"]');if(!r||r.length===0){alert('沒有找到任何課程，請確認頁面是否正確！');return;}let t=[];r.forEach(e=>{let l=[];e.querySelectorAll('[role="gridcell"]').forEach(e=>{l.push(e.textContent.trim())}),l.length>0&&t.push(l)});let json=encodeURIComponent(JSON.stringify(t,null,2));const n=window.open(`https://mcut-course.com/my?import=${json}`)})();</div></div>
-					</div>
-					<h2 class="ts-header is-large">4. <span class="ts-badge is-spaced is-negative">重要!</span> 在最前面加上 <span class="ts-text is-code" style="font-family: monospace;">javascript:</span></h2>
-					<h2 class="ts-header is-large" style="display:inline;">5. 按下 Enter/送出後，課表就會匯入了！</h2>
-					<div class="ts-text is-description">
-						如果看到 <span class="ts-icon is-magnifying-glass-icon"></span> 和 <span class="ts-icon is-earth-asia-icon"></span> 兩個選項，請選擇 <span class="ts-icon is-earth-asia-icon"></span> 那一個。如果只有 <span class="ts-icon is-magnifying-glass-icon"></span>，請重新檢查是否輸入正確！
-					</div>
-					<img src="https://i.imgur.com/ZKRQvC7.jpeg" style="width:100%;">
 				</div>
 			</div>
 		</dialog>
@@ -338,12 +361,16 @@ export default {
 			myCourses: [],
 			gridCells: [],
 
-			newName: '',
-			newClassroom: '',
-			newDay: -1,
-			newStart: -1,
-			newEnd: -1,
-			action: null,
+			editingCourse: null,
+			editingAction: null,
+			defaultCourse: Object.freeze({
+				id: '',
+				name: '',
+				classroom: '',
+				start: -1,
+				end: -1,
+				day: -1,
+			}),
 
 			myCoursesSetting: {
 				showColTitle: true,
@@ -420,7 +447,7 @@ export default {
 					}
 				}
 			});
-			time_section = time_section.filter((section, index) => time_section.indexOf(section) === index).map(section => parseFloat(section)).sort(function(a, b) {return a - b})
+			time_section = time_section.filter((section, index) => time_section.indexOf(section) === index).map(section => parseFloat(section)).sort(function(a, b) {return a - b});
 			return time_section;
 		},
 		week_text() {
@@ -453,7 +480,8 @@ export default {
 					n: course.name,
 					c: course.classroom,
 					s: course.time[1].split('~')[0],
-					p: course.time[1].replace('~','-')
+					p: course.time[1].replace('~','-'),
+					i: (course.name == course.originalName && course.id.length == 12 && !course.id.includes('ALT')) ? course.id : '',
 				});
 			});
 			return `const color=["${this.widgetBackgroundColor.replace('#','')}","${this.widgetColor.replace('#','')}"];` +
@@ -489,8 +517,8 @@ export default {
 		},
 
 		checkSection() {
-			if(this.newStart > this.newEnd) {
-				this.newEnd = this.newStart;
+			if(parseFloat(this.editingCourse.start) > parseFloat(this.editingCourse.end)) {
+				this.editingCourse.end = this.editingCourse.start;
 			}
 		},
 
@@ -514,14 +542,26 @@ export default {
 			const json = JSON.parse(decodeURIComponent(this.$route.query.import));
 			let data = [];
 			json.forEach(course => {
-				if(course[1].trim().length != 6) return;
-				if(course[2].trim().length != 1 || parseInt(course[2]) > 5) return;
-				if(!course[3].includes('.') || !course[4].includes('.') || Number.isNaN(parseInt(course[3])) || Number.isNaN(parseInt(course[4]))) return;
-				data.push({
-					name: course[0],
-					classroom: course[5],
-					time: [course[2], course[3].replace('.0', '') + '~' + course[4].replace('.0', '')],
-				});
+				if(course[1].trim().length == 6) {
+					if(course[2].trim().length != 1 || parseInt(course[2]) > 5) return;
+					if(!course[3].includes('.') || !course[4].includes('.') || Number.isNaN(parseFloat(course[3])) || Number.isNaN(parseFloat(course[4]))) return;
+					data.push({
+						name: course[0],
+						classroom: course[5],
+						time: [course[2], course[3].replace('.0', '') + '~' + course[4].replace('.0', '')],
+						id: ''
+					});
+				} else if (course[1].trim().length == 12) {
+					if(course[3].trim().length != 1 || parseInt(course[3]) > 5) return;
+					if(!course[4].includes('.') || !course[5].includes('.') || Number.isNaN(parseFloat(course[4])) || Number.isNaN(parseFloat(course[5])))  return;
+					data.push({
+						name: course[0],
+						originalName: course[0],
+						classroom: course[6],
+						time: [course[3], course[4].replace('.0', '') + '~' + course[5].replace('.0', '')],
+						id: course[1]
+					});
+				}
 			});
 
 			let success = 0, fail = 0;
@@ -539,6 +579,7 @@ export default {
 				if(!isConflict) {
 					this.myCourses.push({
 						name: course.name.split('(')[0],
+						originalName: course.name.split('(')[0],
 						classroom: course.classroom,
 						id: course.id,
 						time: time,
@@ -566,6 +607,7 @@ export default {
 		},
 
 		async importFromSaved() {
+			this.loading = true;
 			const savedCourse = this.savedCourses;
 			if (savedCourse.length === 0) return;
 			this.currentTerm = savedCourse[0].substring(0, 3) + '-' + savedCourse[0].substring(3, 4);
@@ -601,6 +643,7 @@ export default {
 						if(!isConflict) {
 							this.myCourses.push({
 								name: course.name.split('(')[0],
+								originalName: course.name.split('(')[0],
 								classroom: course.classroom,
 								id: course.id,
 								time: time,
@@ -626,6 +669,7 @@ export default {
 				this.sortCourse();
 				this.drawTimetable();
 			}
+			this.loading = false;
 		},
 		setCanvasSize() {
 			this.loading = false;
@@ -681,7 +725,7 @@ export default {
 						ctx.textAlign = 'left';
 						ctx.textBaseline = 'middle';
 					}
-					const words = text.split('');
+					const words = (text || '').split('');
 					let line = '';
 					for (let i = 0; i < words.length; i++) {
 						const testLine = line + words[i];
@@ -733,7 +777,7 @@ export default {
 					}
 				}
 				if (this.myCoursesSetting.showRowTitle && i < rows) {
-					ctx.font = (String(this.time_section[i]).includes('.5') ? 26 : 36) + 'px Noto Sans TC';
+					ctx.font = (String(this.time_section[i]).includes('.5') ? 26 : 30) + 'px Noto Sans TC';
 					ctx.fillStyle = theme.colTitleColor;
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
@@ -858,21 +902,24 @@ export default {
 		},
 
 		clickCell(col, row) {
+			this.myCourses.forEach(course => {
+				course.editing = false;
+			});
 			if(col == -1 && row == -1) {
-				this.newName = '';
-				this.newClassroom = '';
-				this.newDay = -1;
-				this.newStart = -1;
-				this.newEnd = -1;
-				this.action = 'new';
+				this.editingCourse = this.defaultCourse;
+				console.log(this.editingCourse);
+				this.editingAction = 'new';
 			}
 			else if(!this.used_secion[col+1].includes(String(this.time_section[row]))) {
-				this.newName = '';
-				this.newClassroom = '';
-				this.newDay = col;
-				this.newStart = this.time_section[row];
-				this.newEnd = this.time_section[row];
-				this.action = 'new';
+				this.editingCourse = {
+					id: '',
+					name: '',
+					classroom: '',
+					day: col,
+					start: row+1,
+					end: row+1,
+				};
+				this.editingAction = 'new';
 			}
 			else {
 				let courseInSection = null;
@@ -893,15 +940,19 @@ export default {
 					}
 				});
 				if(courseInSection) {
-					this.newName = courseInSection.name;
-					this.newClassroom = courseInSection.classroom;
-					this.newDay = col;
-					this.newStart = courseInSection.time[1].split('~')[0];
-					this.newEnd = courseInSection.time[1].split('~')[1];
-					this.action = 'edit';
+					this.editingCourse = {
+						id: courseInSection.id || '',
+						name: courseInSection.name,
+						originalName: courseInSection.originalName,
+						classroom: courseInSection.classroom,
+						day: parseInt(courseInSection.time[0])-1,
+						start: courseInSection.time[1].split('~')[0],
+						end: courseInSection.time[1].split('~')[1],
+					};
+					this.editingAction = 'edit';
 				}
 			}
-			document.getElementById('newCourseDialog').showModal();
+			document.getElementById('editCourseDialog').showModal();
 		},
 
 		showImportDialog() {
@@ -909,33 +960,29 @@ export default {
 		},
 
 		closeDialog() {
-			this.newName = '';
-			this.newClassroom = '';
-			this.newDay = -1;
-			this.newStart = -1;
-			this.newEnd = -1;
-			this.action = null;
-			document.getElementById('newCourseDialog').close();
+			this.editingCourse = this.defaultCourse;
+			this.editingAction = null;
+			document.getElementById('editCourseDialog').close();
 			document.getElementById('widgetDialog').close();
 			document.getElementById('importDialog').close();
 		},
 
-		newCourse() {
-			if(!this.newName) {
+		editCourse() {
+			if(!this.editingCourse.name) {
 				this.message = [
 					'error',
 					'請輸入課程名稱',
 				];
 				return;
 			}
-			if(this.newDay === -1) {
+			if(this.editingCourse.day === -1) {
 				this.message = [
 					'error',
 					'請選擇星期',
 				];
 				return;
 			}
-			if(this.newStart === -1 || this.newEnd === -1) {
+			if(this.editingCourse.start === -1 || this.editingCourse.end === -1) {
 				this.message = [
 					'error',
 					'請選擇節次',
@@ -944,15 +991,15 @@ export default {
 			}
 			let editingCourse = this.myCourses.find(course => course.editing) || null;
 			let sections = [];
-			if(this.action === 'edit' &&editingCourse) {
+			if(this.editingAction === 'edit' && editingCourse) {
 				for(let s = this.time_section_full.indexOf(String(editingCourse.time[1].split('~')[0])); s <= this.time_section_full.indexOf(String(editingCourse.time[1].split('~')[1])); s++) {
 					sections.push(this.time_section_full[s]);
 				}
 			}
 
-			for(let s = this.time_section_full.indexOf(String(this.newStart)); s <= this.time_section_full.indexOf(String(this.newEnd)); s++) {
+			for(let s = this.time_section_full.indexOf(String(this.editingCourse.start)); s <= this.time_section_full.indexOf(String(this.editingCourse.end)); s++) {
 				if(
-					this.used_secion[this.newDay+1].includes(this.time_section_full[s]) &&
+					this.used_secion[this.editingCourse.day+1].includes(this.time_section_full[s]) &&
 					!sections.includes(this.time_section_full[s])
 				) {
 					this.message = [
@@ -964,25 +1011,25 @@ export default {
 			}
 
 			if(editingCourse) {
-				editingCourse.name = this.newName;
-				editingCourse.classroom = this.newClassroom;
-				editingCourse.time[0] = (this.newDay + 1).toString();
-				editingCourse.time[1] = this.newStart + '~' + this.newEnd;
+				editingCourse.name = this.editingCourse.name;
+				editingCourse.classroom = this.editingCourse.classroom;
+				editingCourse.time[0] = (this.editingCourse.day + 1).toString();
+				editingCourse.time[1] = this.editingCourse.start + '~' + this.editingCourse.end;
 			} else {
-				const newCourse = {
-					name: this.newName,
-				classroom: this.newClassroom,
-				time: [
-					(this.newDay + 1).toString(),
-					this.newStart + '~' + this.newEnd
+				this.myCourses.push({
+					id: '',
+					name: this.editingCourse.name,
+					classroom: this.editingCourse.classroom,
+					time: [
+						(this.editingCourse.day + 1).toString(),
+						this.editingCourse.start + '~' + this.editingCourse.end
 					]
-				};
-				this.myCourses.push(newCourse);
+				});
 			}
 			this.message = null;
 			this.sortCourse();
 			this.drawTimetable();
-			document.getElementById('newCourseDialog').close();
+			document.getElementById('editCourseDialog').close();
 		},
 
 		deleteCourse() {
@@ -990,20 +1037,21 @@ export default {
 			if(editingCourse) {
 				this.myCourses = this.myCourses.filter(course => course !== editingCourse);
 				this.drawTimetable();
-				document.getElementById('newCourseDialog').close();
+				document.getElementById('editCourseDialog').close();
 			}
 		},
 
 		sortCourse() {
 			this.myCourses.sort((a, b) => {
 				if (a.time[0] === b.time[0]) {
-					return parseFloat(a.time[1].split('~')[0], 10) - parseFloat(b.time[1].split('~')[0], 10);
+					return parseFloat(a.time[1].split('~')[0]) - parseFloat(b.time[1].split('~')[0]);
 				}
-				return parseFloat(a.time[0], 10) - parseFloat(b.time[0], 10);
+				return parseFloat(a.time[0]) - parseFloat(b.time[0]);
 			});
 		},
 	},
 	mounted() {
+		this.editingCourse = this.defaultCourse;
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
 		this.$axios.get('/scriptable.min.js?_=' + new Date().getTime()).then(res => {
 			this.scriptableCodeFile = res.data;
@@ -1013,6 +1061,9 @@ export default {
 		} catch (e) {
 
 		}
+		this.myCourses.forEach(course => {
+			course.editing = false;
+		});
 		try {
 			this.myCoursesSetting = JSON.parse(localStorage.myCoursesSetting);
 		} catch (e) {
@@ -1044,9 +1095,9 @@ export default {
 				this.importFromUrl();
 			}
 		});
-		document.getElementById('newCourseDialog').addEventListener('click', (e) => {
+		document.getElementById('editCourseDialog').addEventListener('click', (e) => {
 			if (e.target.tagName === 'DIALOG') {
-				document.getElementById('newCourseDialog').close();
+				document.getElementById('editCourseDialog').close();
 			}
 		});
 		document.getElementById('widgetDialog').addEventListener('click', (e) => {
