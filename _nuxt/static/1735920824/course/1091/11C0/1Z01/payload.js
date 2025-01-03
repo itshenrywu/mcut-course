@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/11C0/1Z01", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"109111C01Z01",name:"車輛技術與整合實驗(二)",type:"選修",dept:"四技進修部機械系",year:a,class:"甲",teacher:"黃道易",credit:a,classroom:"車工廠",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

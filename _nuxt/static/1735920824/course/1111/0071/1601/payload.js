@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0071/1601", {data:[{course:{time:[["1","2~4"]],id:"111100711601",name:"台灣新電影欣賞",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"吳淑慧",credit:"2",classroom:"教304",max:"45",min:"10",comment:"管設學院學生不得選修",otherinfo:"人文藝術"}}],fetch:{},mutations:void 0});

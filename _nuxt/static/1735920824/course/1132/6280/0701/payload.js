@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6280/0701", (function(a,b){return {data:[{course:{time:[["2","8~9"]],id:"113262800701",name:"生成式AI:文字與圖像生成的原理與實務",type:"選修",dept:a,year:b,class:"甲",teacher:"劉豐瑞",credit:"3",classroom:"AI學程309",max:"40",min:b,comment:a,otherinfo:null}}],fetch:{},mutations:void 0}}("TAICA","1")));

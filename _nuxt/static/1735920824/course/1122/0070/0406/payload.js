@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0406", {data:[{course:{time:[["7","10~10"]],id:"112200700406",name:"工讀實務實習(四)",type:"必修",dept:"四技材工系",year:"3",class:"乙",teacher:"林延儒",credit:"5",classroom:"網路",max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

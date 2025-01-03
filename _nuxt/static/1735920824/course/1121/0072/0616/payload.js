@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0072/0616", {data:[{course:{time:[["4","7~8"]],id:"112100720616",name:"英文實務(一)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"陳勁宏",credit:"0",classroom:"體203",max:"65",min:"10",comment:"環資學院",otherinfo:null}}],fetch:{},mutations:void 0});

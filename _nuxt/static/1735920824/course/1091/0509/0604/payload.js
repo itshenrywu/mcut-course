@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0509/0604", {data:[{course:{time:[["1","2~4"]],id:"109105090604",name:"歷史",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"馮典章",credit:"3",classroom:"子315",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

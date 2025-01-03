@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1280/0B01", {data:[{course:{time:[["2","5~7"]],id:"110112800B01",name:"電磁波",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"楊超舜",credit:"3",classroom:"電322",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

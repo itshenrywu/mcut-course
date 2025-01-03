@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2180/1D01", {data:[{course:{time:[["2","2~4"]],id:"113121801D01",name:"機器學習與應用",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"陳思翰",credit:"3",classroom:"617電腦室",max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

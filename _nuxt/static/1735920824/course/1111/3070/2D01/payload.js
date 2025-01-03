@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3070/2D01", {data:[{course:{time:[["2","2~4"]],id:"111130702D01",name:"設計方法",type:"選修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"楊朝明",credit:"3",classroom:"圖電",max:"28",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/1G01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113130701G01",name:"專業實務講座",type:"必修",dept:"四技行設專班",year:a,class:"甲",teacher:"孫儷芳",credit:"1",classroom:"福爾摩沙講堂",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("4")));

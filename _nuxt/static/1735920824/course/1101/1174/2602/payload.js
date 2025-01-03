@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1174/2602", {data:[{course:{time:[["5","5~7"]],id:"110111742602",name:"工程倫理與專業實務講座",type:"必修",dept:"四技機械系",year:"4",class:"乙",teacher:"游孟潔",credit:"1",classroom:"機110",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

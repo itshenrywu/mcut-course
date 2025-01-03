@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0270/2H01", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"112202702H01",name:"運動英文",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳勁宏",credit:"2",classroom:"教105",max:"48",min:"10",comment:"",otherinfo:"語言與全球化"}}],fetch:{},mutations:void 0}}("1")));

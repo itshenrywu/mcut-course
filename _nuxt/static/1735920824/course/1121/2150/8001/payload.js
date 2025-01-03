@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2150/8001", (function(a,b){return {data:[{course:{time:[["1",a],[b,a]],id:"112121508001",name:"人因工程(含實習)",type:"必修",dept:"四技工管系",year:b,class:"甲",teacher:"陳安哲",credit:"3",classroom:"教108",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("3~4","2")));

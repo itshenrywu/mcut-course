@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/2F02", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"113202702F02",name:"英語口語溝通技巧",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"張若妍",credit:"2",classroom:"子314",max:"45",min:"10",comment:"",otherinfo:"語言與全球化"}}],fetch:{},mutations:void 0}}("1")));

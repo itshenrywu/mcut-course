@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1174/3304", (function(a,b){return {data:[{course:{time:[[a,"2~2"],[b,"1~2"]],id:"109111743304",name:"普通物理(一)",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"游孟潔",credit:b,classroom:"機502",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

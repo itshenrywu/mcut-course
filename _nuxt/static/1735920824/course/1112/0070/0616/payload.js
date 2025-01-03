@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0616", (function(a){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"111200700616",name:"勤勞教育(二)",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"黃裕清",credit:"0",classroom:"教304",max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

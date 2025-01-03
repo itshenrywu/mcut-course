@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1E80/6501", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"10911E806501",name:"工程分析",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"梁晶煒",credit:"3",classroom:"機209",max:"24",min:a,comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

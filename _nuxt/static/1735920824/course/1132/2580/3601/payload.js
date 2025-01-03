@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2580/3601", {data:[{course:{time:[["4","5~7"]],id:"113225803601",name:"高等品質管理",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"俞凱允",credit:"3",classroom:"631",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0});

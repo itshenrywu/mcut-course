@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3350/2401", {data:[{course:{time:[["1","2~4"]],id:"112133502401",name:"包裝設計",type:"必修",dept:"四技視傳系",year:"2",class:"甲",teacher:"楊朝明",credit:"3",classroom:"811",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0C04", {data:[{course:{time:[["7","10~10"]],id:"111200700C04",name:"工讀實務實習(四)",type:"必修",dept:"四技電機系",year:"3",class:"乙",teacher:"林志銘",credit:"4",classroom:"網路",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

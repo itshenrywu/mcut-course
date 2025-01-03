@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0670/0604", {data:[{course:{time:[["5","3~4"]],id:"110106700604",name:"體育(三)",type:"必修",dept:"四技材工系",year:"2",class:"甲",teacher:"許義章",credit:"1",classroom:"戶外",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1174/3402", {data:[{course:{time:[["2","4~4"],["5","3~4"]],id:"111211743402",name:"普通物理(二)",type:"必修",dept:"四技材工系",year:"1",class:"乙",teacher:"盧榮宏",credit:"3",classroom:"教109",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

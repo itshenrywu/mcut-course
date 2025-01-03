@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3380/0001", {data:[{course:{time:[["4","2~4"]],id:"112133800001",name:"專題研討",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"李淑珠",credit:"3",classroom:"新730",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

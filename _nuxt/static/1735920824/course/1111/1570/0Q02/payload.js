@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1570/0Q02", {data:[{course:{time:[["5","1~3"]],id:"111115700Q02",name:"程式設計實務",type:"必修",dept:"四技電子系",year:"1",class:"乙",teacher:"唐明中",credit:"3",classroom:"子218",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

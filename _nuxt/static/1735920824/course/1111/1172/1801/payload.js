@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1172/1801", (function(a){return {data:[{course:{time:[[a,"3~4"],["5","1~1"]],id:"111111721801",name:"工程數學(一)",type:"必修",dept:"四技機械系",year:a,class:"甲",teacher:"劉秋霖",credit:"3",classroom:"機301",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

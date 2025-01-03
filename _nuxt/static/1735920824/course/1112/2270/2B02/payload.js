@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2270/2B02", {data:[{course:{time:[["1","5~7"]],id:"111222702B02",name:"資本市場與金融科技",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"張明輝",credit:"3",classroom:"教107",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

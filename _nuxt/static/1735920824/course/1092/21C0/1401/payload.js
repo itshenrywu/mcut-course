@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/21C0/1401", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"109221C01401",name:"行動商務應用系統",type:"選修",dept:"四技進修部工管系",year:a,class:"甲",teacher:"白恭瑞",credit:"3",classroom:"618電腦室",max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("4")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/11C0/1J01", {data:[{course:{time:[["4","9~12"]],id:"109211C01J01",name:"電腦輔助機械製圖(二)",type:"必修",dept:"四技進修部機械系",year:"2",class:"甲",teacher:"王創茂",credit:"3",classroom:"機412",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});

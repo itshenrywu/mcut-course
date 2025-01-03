@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2170/0I02", (function(a){return {data:[{course:{time:[[a,"2~3"]],id:"109121700I02",name:"應用英文(一)",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"鄭仰霖",credit:"1",classroom:"教203",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

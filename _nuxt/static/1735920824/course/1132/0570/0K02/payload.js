@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0570/0K02", (function(a,b){return {data:[{course:{time:[[a,b],["4",b]],id:"113205700K02",name:"普通物理與實驗",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"李孟錡",credit:"3",classroom:"機502",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0}}("1","1~2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1270/1U01", {data:[{course:{time:[["3","8~8"]],id:"110212701U01",name:"專題製作(一)",type:"必修",dept:"四技電機系",year:"2",class:"甲",teacher:"王柏仁",credit:"1",classroom:"電機系館",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:void 0});
