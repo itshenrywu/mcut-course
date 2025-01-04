@@ -150,7 +150,7 @@
 						</div>
 					</div>
 					<div class="column is-5-wide mobile-fluid">
-						<div class="ts-box ad is-hollowed box-mobile-spaced" v-show="!loading" style="border:4px dashed var(--ts-gray-300)!important">
+						<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="!loading" style="border:4px dashed var(--ts-gray-300)!important">
 							<div class="ts-content">
 								<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
 								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
