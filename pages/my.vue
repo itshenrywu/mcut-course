@@ -142,9 +142,30 @@
 					</div>
 				</div>
 			</div>
-			<div class="ts-container has-top-padded is-fitted mobile-padded timetable-container">
-				<div class="ts-box" style="background-color: #fff;">
-					<canvas id="timetableCanvas" v-show="!loading"></canvas>
+			<div class="ts-container has-top-padded is-fitted mobile-padded">
+				<div class="ts-grid is-stretched">
+					<div class="column is-11-wide timetable-container mobile-fluid">
+						<div class="ts-box" :style="{backgroundColor: this.themes.filter(theme => theme.id === this.myCoursesSetting.theme)[0].backgroundColor}">
+							<canvas id="timetableCanvas" v-show="!loading"></canvas>
+						</div>
+					</div>
+					<div class="column is-5-wide mobile-fluid">
+						<div class="ts-box ad is-hollowed box-mobile-spaced" v-show="!loading" style="border:4px dashed var(--ts-gray-300)!important">
+							<div class="ts-content">
+								<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
+								<ins class="adsbygoogle"
+									style="display:block; text-align:center;"
+									data-ad-layout="in-article"
+									data-ad-format="fluid"
+									data-ad-client="ca-pub-5900703871265800"
+									data-ad-slot="3164180037"></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<br>
@@ -176,7 +197,7 @@
 						<div class="ts-content"><div class="ts-header">{{ message[1] }}</div></div>
 						<div class="symbol"><span class="ts-icon is-circle-exclamation-icon"></span></div>
 					</div>
-					<div class="ts-text is-label has-bottom-padded-small">上課時間</div>
+					<div class="ts-text is-label has-bottom-padded-small is-required">上課時間</div>
 					<div class="ts-grid is-middle-aligned">
 						<div class="column is-5-wide">
 							<div class="ts-select is-fluid">
@@ -207,7 +228,7 @@
 						</div>
 					</div>
 					<br>
-					<div class="ts-text is-label has-bottom-padded-small">課程名稱</div>
+					<div class="ts-text is-label has-bottom-padded-small is-required">課程名稱</div>
 					<div class="ts-input is-fluid">
 						<input type="text" v-model.trim="editingCourse.name">
 					</div>
@@ -404,7 +425,7 @@ export default {
 				{
 					id: 2,
 					name: '彩色（深色模式）',
-					backgroundColor: '#222',
+					backgroundColor: '#333',
 					courseColor: ['#C0392B','#E74C3C','#E67E22','#F9A825','#2ECC71','#27AE60','#1ABC9C','#3498DB','#2980B9','#8E44AD','#6D4C41','#444'],
 					titleColor: '#FFF',
 					textColor: '#F2F2F2',
