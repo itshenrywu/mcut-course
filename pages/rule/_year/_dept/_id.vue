@@ -114,7 +114,7 @@
 												<td>{{ rule_item.name }}</td>
 												<td>{{ rule_item.term }}</td>
 												<td>{{ rule_item.credit }} 學分</td>
-												<td>
+												<td class="ts-text is-description">
 													<template v-if="courses && findCourses(rule_item.id).length >= 1">
 														{{ findCourses(rule_item.id).length }} 門相符課程
 														<span class="ts-icon is-angle-right-icon"></span>
@@ -124,7 +124,7 @@
 													<span v-if="['永續發展與社會實踐', '經典教育與社會實踐'].includes(rule_item.name)" @click.stop="showInfo(rule_item.name)">
 														通識中心 X+1 課程，詳細說明 <span class="ts-icon is-angle-right-icon"></span>
 													</span>
-													<span v-else-if="rule_item.remark">
+													<span v-else-if="rule_item.remark && rule_item.remark.trim() != ''">
 														{{ rule_item.remark }}
 													</span>
 												</td>

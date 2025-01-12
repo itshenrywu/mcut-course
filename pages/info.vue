@@ -112,7 +112,7 @@
 	}
 
 	#page-info td:before {
-		color: var(--ts-dark-gray-500);
+		color: var(--ts-gray-500);
 	}
 
 	#page-info td:nth-child(2):before {

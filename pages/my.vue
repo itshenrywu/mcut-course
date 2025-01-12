@@ -756,8 +756,7 @@ export default {
 				delete course.isSame;
 				return course;
 			});
-			localStorage.myCourses = JSON.stringify(this.myCourses);
-			if(sync && localStorage.auth_key) {
+			if(sync && localStorage.auth_key && JSON.stringify(this.myCourses) != localStorage.myCourses) {
 				this.$axios.post('https://api.mcut-course.com/user/?action=update',
 					'my=' + encodeURIComponent(JSON.stringify(this.myCourses)),
 					{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
@@ -769,6 +768,7 @@ export default {
 					location.reload();
 				});;
 			}
+			localStorage.myCourses = JSON.stringify(this.myCourses);
 			localStorage.myCoursesSetting = JSON.stringify(this.myCoursesSetting);
 			if (!CanvasRenderingContext2D.prototype.drawRoundedRect) {
 				CanvasRenderingContext2D.prototype.drawRoundedRect = function (x, y, width, height, radius) {
