@@ -135,7 +135,7 @@
 							</transition>
 						</template>
 					</div>
-					<div class="ts-box ad is-hollowed box-mobile-spaced">
+					<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="showAd">
 						<div class="ts-content">
 							<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
 							<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
@@ -244,7 +244,7 @@
 	cursor: default;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
 	#page-rule .is-scrollable {
 		overflow-y: unset;
 	}
@@ -324,6 +324,7 @@
 }
 </style>
 <script>
+import { mapState } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
 		let depts = {};
@@ -368,7 +369,7 @@ export default {
 
 			loading: true,
 
-			showMobileSidebar: false
+			showMobileSidebar: false,
 		};
 	},
 	head() {
@@ -386,6 +387,9 @@ export default {
 		};
 	},
 	computed: {
+		...mapState({
+			showAd: state => state.show_ad
+		}),
 		currentDeptName() {
 			if (this.currentDept == '') return '';
 			return Object.values(this.depts[this.currentYear]).find(item => this.currentDept in item)?.[this.currentDept];
@@ -398,6 +402,7 @@ export default {
 		},
 	},
 	mounted() {
+		this.$root.$on('showAd', () => { this.showAd = true; });
 		this.init();
 	},
 	methods: {

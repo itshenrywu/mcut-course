@@ -172,7 +172,7 @@
 				<div class="description">快到「搜尋課程」收藏喜歡的課程吧！</div>
 			</div>
 			<br>
-			<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="filteredCourses.length > 0">
+			<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="filteredCourses.length > 0 && showAd">
 				<div class="ts-content">
 					<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
 					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
@@ -249,7 +249,7 @@
 	overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 	#page-saved .ts-grid .column.mobile-fluid .ts-button {
 		width: calc(50% - .5rem);
 	}
@@ -267,6 +267,7 @@
 }
 </style>
 <script>
+import { mapState } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
 
@@ -276,7 +277,7 @@ export default {
 			title: '收藏的課程 | 明志科技大學選課小幫手',
 			meta: [
 				{ hid: 'og:title', property: 'og:title', content: '收藏的課程 | 明志科技大學選課小幫手' },
-				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com/' + this.$route.params.id },
+				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com/' + this.$router.currentRoute.path },
 			]
 		}
 	},
@@ -350,6 +351,9 @@ export default {
 		}
 	},
 	computed: {
+		...mapState({
+			showAd: state => state.show_ad
+		}),
 		filteredCourses() {
 			return this.courses.filter(course => this.savedCourse.includes(course.id));
 		},

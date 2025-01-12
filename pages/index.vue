@@ -499,7 +499,7 @@ export default {
 	justify-content: end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 	#page-home .is-stretched {
 		flex-direction: column-reverse;
 	}

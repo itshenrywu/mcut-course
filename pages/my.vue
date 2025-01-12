@@ -30,7 +30,7 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">顏色主題</div>
 						<div class="ts-select is-fluid">
-							<select v-model="myCoursesSetting.theme" @change="drawTimetable()">
+							<select v-model="myCoursesSetting.theme" @change="updateTimetable()">
 								<option v-for="theme of themes" :value="theme.id">{{ theme.name }}</option>
 							</select>
 						</div>
@@ -53,27 +53,27 @@
 						<div class="ts-text is-label has-bottom-padded-small">顯示設定</div>
 						<div class="ts-wrap is-vertical is-compact">
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showRowLine" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showRowLine" @change="updateTimetable()" />
 								水平格線
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showColLine" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showColLine" @change="updateTimetable()" />
 								垂直格線
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showRowTitle" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showRowTitle" @change="updateTimetable()" />
 								節次
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showColTitle" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showColTitle" @change="updateTimetable()" />
 								星期
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showCourseClassroom" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showCourseClassroom" @change="updateTimetable()" />
 								課程：上課地點
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="drawTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="updateTimetable()" />
 								課程：上課時間
 							</label>
 						</div>
@@ -82,7 +82,7 @@
 
 					<div class="ts-range">
 						<div class="ts-text is-label has-bottom-padded-small">外框寬度 <small>({{ Math.round(myCoursesSetting.tableBorder/128*1000)/10 }}%)</small></div>
-						<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="drawTimetable()" style="width:100%" />
+						<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="updateTimetable()" style="width:100%" />
 					</div>
 
 					<div class="ts-wrap is-dense mobile-hidden">
@@ -142,29 +142,25 @@
 					</div>
 				</div>
 			</div>
-			<div class="ts-container has-top-padded is-fitted mobile-padded">
-				<div class="ts-grid is-stretched">
-					<div class="column is-11-wide timetable-container mobile-fluid">
-						<div class="ts-box" :style="{backgroundColor: this.themes.filter(theme => theme.id === this.myCoursesSetting.theme)[0].backgroundColor}">
-							<canvas id="timetableCanvas" v-show="!loading"></canvas>
-						</div>
+			<div class="ts-container has-top-padded is-fitted">
+				<div class="timetable-container">
+					<div class="ts-box" :style="{backgroundColor: this.themes.filter(theme => theme.id === this.myCoursesSetting.theme)[0].backgroundColor}">
+						<canvas id="timetableCanvas" v-show="!loading"></canvas>
 					</div>
-					<div class="column is-5-wide mobile-fluid">
-						<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="!loading" style="border:4px dashed var(--ts-gray-300)!important">
-							<div class="ts-content">
-								<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
-								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
-								<ins class="adsbygoogle"
-									style="display:block; text-align:center;"
-									data-ad-layout="in-article"
-									data-ad-format="fluid"
-									data-ad-client="ca-pub-5900703871265800"
-									data-ad-slot="3164180037"></ins>
-								<script>
-									(adsbygoogle = window.adsbygoogle || []).push({});
-								</script>
-							</div>
-						</div>
+				</div>
+				<div class="ts-box ad is-hollowed box-mobile-spaced has-top-spaced-large" v-if="!loading && showAd" style="border:4px dashed var(--ts-gray-300)!important">
+					<div class="ts-content">
+						<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
+						<ins class="adsbygoogle"
+							style="display:block; text-align:center;"
+							data-ad-layout="in-article"
+							data-ad-format="fluid"
+							data-ad-client="ca-pub-5900703871265800"
+							data-ad-slot="3164180037"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
 					</div>
 				</div>
 			</div>
@@ -339,7 +335,7 @@
 				</div>
 			</div>
 		</dialog>
-		<loading v-show="loading" />
+		<loading v-show="loading || loading_get" />
 	</div>
 </template>
 <style>
@@ -350,14 +346,52 @@
 	align-items: center;
 }
 
+.timetable-container > .ts-box {
+	border-radius: var(--ts-border-radius-container);
+}
+
 #widgetDialog span {
 	color: var(--ts-primary-500)
 }
 
-@media (max-width: 768px) {
+.compare .ts-box {
+	max-height: 30vh;
+	overflow-y: auto;
+}
+
+.compare-course {
+	margin-top: .25rem;
+	font-size: .8rem;
+}
+
+.compare .ts-box .ts-content.is-secondary {
+	font-size: .6rem;
+}
+
+.compare .ts-box small {
+	font-size: .7rem;
+	opacity: .7;
+}
+
+.compare .has-diff {
+	color: var(--ts-negative-600)
+}
+
+@media (min-width: 1700px) {
+	#page-my .ad {
+		position: fixed;
+		width: 350px;
+		height: 350px;
+		right: 50px;
+		top: calc(50% - 150px);
+	}
+}
+
+@media (max-width: 767.98px) {
 }
 </style>
 <script>
+import { mapState } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
 		
@@ -367,7 +401,7 @@ export default {
 			title: '我的課表 | 明志科技大學選課小幫手',
 			meta: [
 				{ hid: 'og:title', property: 'og:title', content: '我的課表 | 明志科技大學選課小幫手' },
-				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com/' + this.$route.params.id },
+				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com/' + this.$router.currentRoute.path },
 			]
 		}
 	},
@@ -376,6 +410,7 @@ export default {
 			time_section_full: ['1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
 			showMobileSidebar: false,
 			loading: true,
+			loading_get: false,
 			
 			maxEndSection: 8,
 			savedCourses: [],
@@ -456,6 +491,9 @@ export default {
 		}
 	},
 	computed: {
+		...mapState({
+			showAd: state => state.show_ad
+		}),
 		time_section() {
 			let time_section = ['1', '2', '3', '4', '5', '6', '7', '8'];
 			this.myCourses.forEach(course => {
@@ -554,7 +592,7 @@ export default {
 			.then((res) => {
 				if (res.isConfirmed) {
 					this.myCourses = [];
-					this.drawTimetable();
+					this.updateTimetable();
 				}
 			});
 		},
@@ -622,7 +660,7 @@ export default {
 			}
 			if(success > 0) {
 				this.sortCourse();
-				this.drawTimetable();
+				this.updateTimetable();
 			}
 			this.$router.replace({ query: {} });
 		},
@@ -688,10 +726,11 @@ export default {
 			}
 			if(success > 0) {
 				this.sortCourse();
-				this.drawTimetable();
+				this.updateTimetable();
 			}
 			this.loading = false;
 		},
+
 		setCanvasSize() {
 			this.loading = false;
 			const canvas = document.getElementById('timetableCanvas');
@@ -708,11 +747,28 @@ export default {
 			canvas.height = 1920;
 			canvas.style.width = width + 'px';
 			canvas.style.height = height + 'px';
-			this.drawTimetable();
+			this.updateTimetable(false);
 		},
 
-		drawTimetable() {
+		updateTimetable(sync = true) {
+			this.myCourses = this.myCourses.map(course => {
+				delete course.editing;
+				delete course.isSame;
+				return course;
+			});
 			localStorage.myCourses = JSON.stringify(this.myCourses);
+			if(sync && localStorage.auth_key) {
+				this.$axios.post('https://api.mcut-course.com/user/?action=update',
+					'my=' + encodeURIComponent(JSON.stringify(this.myCourses)),
+					{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
+				)
+				.then(res => {})
+				.catch((err) => {
+					localStorage['auth_key'] = '';
+					localStorage['profile_image'] = '';
+					location.reload();
+				});;
+			}
 			localStorage.myCoursesSetting = JSON.stringify(this.myCoursesSetting);
 			if (!CanvasRenderingContext2D.prototype.drawRoundedRect) {
 				CanvasRenderingContext2D.prototype.drawRoundedRect = function (x, y, width, height, radius) {
@@ -928,7 +984,6 @@ export default {
 			});
 			if(col == -1 && row == -1) {
 				this.editingCourse = this.defaultCourse;
-				console.log(this.editingCourse);
 				this.editingAction = 'new';
 			}
 			else if(!this.used_secion[col+1].includes(String(this.time_section[row]))) {
@@ -1049,7 +1104,7 @@ export default {
 			}
 			this.message = null;
 			this.sortCourse();
-			this.drawTimetable();
+			this.updateTimetable();
 			document.getElementById('editCourseDialog').close();
 		},
 
@@ -1057,7 +1112,7 @@ export default {
 			let editingCourse = this.myCourses.find(course => course.editing) || null;
 			if(editingCourse) {
 				this.myCourses = this.myCourses.filter(course => course !== editingCourse);
-				this.drawTimetable();
+				this.updateTimetable();
 				document.getElementById('editCourseDialog').close();
 			}
 		},
@@ -1070,17 +1125,109 @@ export default {
 				return parseFloat(a.time[0]) - parseFloat(b.time[0]);
 			});
 		},
+
+		compareCourse(data) {
+			let local = Object.freeze(this.myCourses);
+			let online = Object.freeze(data.my);
+			local.forEach(course => {
+				online.forEach(onlineCourse => {
+					if(course.id === onlineCourse.id && course.name === onlineCourse.name && course.classroom === onlineCourse.classroom && course.time[0] === onlineCourse.time[0] && course.time[1] === onlineCourse.time[1]) {
+						course.isSame = true;
+						onlineCourse.isSame = true;
+					}
+				});
+			});
+
+			return '<div class="ts-grid is-compact is-stretched compare" style="text-align:left">\
+				<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense"><span class="ts-badge is-small is-dense" style="background:var(--ts-static-gray-500);color:var(--ts-static-gray-50)">目前課表 ('+local.length+')</span>' +
+					local.map(course => '<div class="compare-course '+(course.isSame?'':' has-diff')+'">' +
+						course.name.split('(')[0] + ' ' +
+						'<small>(' + this.week_text[course.time[0]-1] + ') ' + (course.time[1].split('~')[0] == course.time[1].split('~')[1] ? course.time[1].split('~')[0] : course.time[1]) +
+						(course.classroom ? ' ' + course.classroom : '') + 
+						'</small>' +
+						'</div>'
+					).join('') +
+				'</div></div></div>\
+				<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense"><span class="ts-badge is-small is-dense" style="background:var(--ts-static-primary-600);color:var(--ts-static-gray-50)">上次儲存的課表 ('+online.length+')</span>' +
+					'<br><small>儲存於 ' + this.formatTime(data.updateAt) + '</small><br>' +
+					online.map(course => '<div class="compare-course '+(course.isSame?'':' has-diff')+'">' +
+						course.name.split('(')[0] + ' ' +
+						'<small>(' + this.week_text[course.time[0]-1] + ') ' + (course.time[1].split('~')[0] == course.time[1].split('~')[1] ? course.time[1].split('~')[0] : course.time[1]) +
+						(course.classroom ? ' ' + course.classroom : '') + 
+						'</small>' +
+						'</div>'
+					).join('') +
+				'</div></div></div>\
+			</div><br><div class="ts-text is-description is-start-aligned">\
+				這可能是因為您先前有登入並修改課表，但剛剛修改課表後才登入導致的。紅色代表有差異的課程，請選擇一個同步方式。\
+			</div>';
+		},
+
+		formatTime(time) {
+			const date = new Date(time);
+			return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' ' + date.getHours().toString().padStart(2,'0') + ':' + date.getMinutes().toString().padStart(2,'0');
+		},
 	},
 	mounted() {
 		this.editingCourse = this.defaultCourse;
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
-		this.$axios.get('/scriptable.min.js?_=' + new Date().getTime()).then(res => {
+		this.$axios.get('/scriptable.min.js?v=1').then(res => {
 			this.scriptableCodeFile = res.data;
 		});
-		try {
-			this.myCourses = JSON.parse(localStorage.myCourses);
-		} catch (e) {
-
+		try { this.myCourses = JSON.parse(localStorage.myCourses); } catch (e) { }
+		if(localStorage.auth_key) {
+			this.loading_get = true;
+			this.$axios.get('https://api.mcut-course.com/user/?action=get&my', { headers: { authorization: localStorage['auth_key'] } })
+			.then(res => {
+				this.loading_get = false;
+				if(res.data.my.length === 0) {
+					this.updateTimetable();
+				}
+				else if(this.myCourses.length === 0) {
+					this.myCourses = res.data.my;
+					this.updateTimetable(false);
+				}
+				else {
+					let isDifferent = false;
+					if(this.myCourses.length !== res.data.my.length) isDifferent = true;
+					else {
+						for(let i = 0; i < this.myCourses.length; i++) {
+							if(
+								this.myCourses[i].id !== res.data.my[i].id ||
+								this.myCourses[i].name !== res.data.my[i].name||
+								this.myCourses[i].classroom !== res.data.my[i].classroom ||
+								this.myCourses[i].time[0] !== res.data.my[i].time[0] ||
+								this.myCourses[i].time[1] !== res.data.my[i].time[1]
+							) {
+								isDifferent = true;
+								break;
+							}
+						}
+					}
+					if(isDifferent) {
+						this.$swal({
+							icon: 'warning',
+							title: '目前課表與上次登入時儲存的不一致',
+							html: this.compareCourse(res.data),
+							confirmButtonText: '清除目前課表後，使用上次儲存的課表',
+							cancelButtonText: '仍使用目前課表，並儲存到帳號',
+							showCancelButton: true,
+							allowOutsideClick: false,
+							allowEscapeKey: false,
+							focusConfirm: false,
+						})
+						.then((sres) => {
+							if (sres.isConfirmed) {
+								this.myCourses = res.data.my;
+								localStorage.myCourses = JSON.stringify(this.myCourses);
+								this.updateTimetable(false);
+							} else {
+								this.updateTimetable();
+							}
+						});
+					}
+				}
+			});
 		}
 		this.myCourses.forEach(course => {
 			course.editing = false;
@@ -1101,7 +1248,6 @@ export default {
 		}
 		this.loadFonts().then(() => {
 			this.setCanvasSize();
-			window.addEventListener('resize', this.setCanvasSize());
 			const canvas = document.getElementById('timetableCanvas');
 			canvas.addEventListener('click', (e) => {
 				const rect = canvas.getBoundingClientRect();
@@ -1126,9 +1272,11 @@ export default {
 				document.getElementById('widgetDialog').close();
 			}
 		});
-	},
-	beforeDestroy() {
-		window.removeEventListener('resize', this.setCanvasSize());
+		document.getElementById('importDialog').addEventListener('click', (e) => {
+			if (e.target.tagName === 'DIALOG') {
+				document.getElementById('importDialog').close();
+			}
+		});
 	},
 }
 </script>

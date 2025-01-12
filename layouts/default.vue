@@ -11,6 +11,7 @@
 	</div>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 export default {
 	head() {
 		return {
@@ -22,6 +23,7 @@ export default {
 	mounted() {
 		this.checkAdBlock();
 		this.$watch('$route', () => {
+			this.checkLogin();
 			this.checkAdBlock();
 		});
 		if(localStorage['acceptTerms'] == undefined) {
@@ -40,8 +42,10 @@ export default {
 				}
 			});
 		}
+		this.checkLogin();
 	},
 	methods: {
+		...mapMutations(['setShowAd']),
 		checkAdBlock() {
 			setTimeout(() => {
 				if (document.querySelector('.adsbygoogle') && document.querySelector('.adsbygoogle').offsetHeight == 0) {
@@ -49,6 +53,38 @@ export default {
 					<div class="ts-text is-secondary is-center-aligned has-vertically-padded">太無情了吧擋廣告 :(</div>';
 				}
 			}, 500);
+		},
+		checkLogin() {
+			if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
+				this.$axios.get(
+					'https://api.mcut-course.com/user/?action=check' + (localStorage['profile_image'] ? '' : '&image=1'),
+					{ headers: { authorization: localStorage['auth_key'] } }
+				).then((res) => {
+					if(!res.data.success) {
+						localStorage['auth_key'] = '';
+						localStorage['profile_image'] = '';
+						location.reload();
+					}
+					if(!res.data.hide_ad) {
+						this.setShowAd(true);
+						this.checkAdBlock();
+					}
+					else {
+						this.setShowAd(false);
+					}
+
+					if(res.data.image) localStorage['profile_image'] = res.data.image;
+					this.$root.$emit('showProfileImage', localStorage['profile_image']);
+				})
+				.catch((err) => {
+					localStorage['auth_key'] = '';
+					localStorage['profile_image'] = '';
+					location.reload();
+				});
+			} else {
+				this.setShowAd(true);
+				this.checkAdBlock();
+			}
 		}
 	}
 };
@@ -244,7 +280,7 @@ h1 {
 	justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
 	html {
 		font-size: 14px;
 	}

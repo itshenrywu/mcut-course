@@ -146,7 +146,7 @@
 							</div>
 						</td>
 					</tr>
-					<tr class="ad">
+					<tr class="ad" v-if="showAd">
 						<td colspan="2">
 							<div class="ts-box ad is-hollowed">
 								<div class="ts-content">
@@ -251,7 +251,7 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
 	#page-course .time {
 		display: inline-block;
 	}
@@ -317,6 +317,7 @@
 }
 </style>
 <script>
+import { mapState } from 'vuex'
 export default {
 	async asyncData({ params, payload }) {
 		if (payload) {
@@ -336,7 +337,7 @@ export default {
 			schedule: [],
 			savedCourse: [],
 			loading: true,
-			start: Date.now(),
+			start: Date.now()
 		}
 	},
 	head() {
@@ -380,6 +381,9 @@ export default {
 		this.fetchData();
 	},
 	computed: {
+		...mapState({
+			showAd: state => state.show_ad
+		}),
 		hasCoursedTime() {
 			if (this.savedCourse.length == 0) return [];
 			if (this.savedCourse[0].substring(0, 4) !== this.course.id.substring(0, 4)) return [];

@@ -10,7 +10,8 @@
 					:class="{ 'is-active': isActive(item.path) }"
 					class="item"
 				>
-					<span class="ts-icon" :class="item.icon"></span>
+					<img v-if="item.path === '/my/' && profileImage" :src="'data:image/jpeg;base64,' + profileImage" class="profile-image">
+					<span v-else class="ts-icon" :class="item.icon"></span>
 					<div class="label">
 						{{ item.label }}
 						<span v-if="item.path === '/saved/' && savedCourse.length > 0" class="ts-badge is-small is-dense">
@@ -50,20 +51,25 @@
 	background: var(--ts-negative-400);
 }
 
-@media (max-width: 768px) {
+.navbar .ts-tab .item img {
+	width: 1.4rem;
+	height: 1.4rem;
+	border-radius: 50%;
+}
+
+@media (max-width: 767.98px) {
 	.navbar .ts-tab .item {
 		flex-direction: column;
 		align-items: center;
 		gap: .3rem;
 		padding: .3rem 0 .1rem;
-		/*width: 20%;*/
 		width: 25%;
 		font-size: .9rem;
 	}
 
 	.navbar .ts-tab .item .ts-icon {
-		font-size: 1.2rem;
-		line-height: 1.2;
+		font-size: 1.25rem;
+		line-height: 1.4rem;
 	}
 
 	.navbar .ts-badge {
@@ -97,6 +103,11 @@ export default {
 			this.showInfoHint = localStorage['clickInfo_20241224'] !== 'true';
 		});
 		this.showInfoHint = localStorage['clickInfo_20241224'] !== 'true';
+
+		if(localStorage['auth_key']) this.profileImage = localStorage['profile_image'];
+		this.$root.$on('showProfileImage', (profileImage) => {
+			if(localStorage['auth_key']) this.profileImage = profileImage;
+		});
 	},
 	data() {
 		return {
@@ -112,7 +123,7 @@ export default {
 				{
 					path: '/my/',
 					label: '我的課表',
-					icon: 'is-user-icon',
+					icon: 'is-circle-user-icon',
 				},
 				{
 					path: '/rule/',
@@ -125,6 +136,7 @@ export default {
 					icon: 'is-clock-icon',
 				},
 			],
+			profileImage: '',
 		};
 	},
 	methods: {
@@ -132,7 +144,6 @@ export default {
 			if (path === '/') return this.currentPath === '/' || this.currentPath === '/course/';
 			else return this.currentPath.includes(path);
 		},
-
 	},
 };
 </script>

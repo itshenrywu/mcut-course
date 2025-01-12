@@ -42,7 +42,7 @@ export default {
 			title: '關於本站 | 明志科技大學選課小幫手',
 			meta: [
 				{ hid: 'og:title', property: 'og:title', content: '關於本站 | 明志科技大學選課小幫手' },
-				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com/' + this.$route.params.id },
+				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com/' + this.$router.currentRoute.path },
 			]
 		}
 	},
