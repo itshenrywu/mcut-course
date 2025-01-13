@@ -354,11 +354,6 @@
 	color: var(--ts-primary-500)
 }
 
-.compare .ts-box {
-	//max-height: 30vh;
-	//overflow-y: scroll;
-}
-
 .compare-course {
 	margin-top: .25rem;
 	font-size: .8rem;
@@ -419,14 +414,14 @@ export default {
 
 			editingCourse: null,
 			editingAction: null,
-			defaultCourse: Object.freeze({
+			defaultCourse: {
 				id: '',
 				name: '',
 				classroom: '',
 				start: -1,
 				end: -1,
 				day: -1,
-			}),
+			},
 
 			myCoursesSetting: {
 				showColTitle: true,
@@ -983,7 +978,7 @@ export default {
 				course.editing = false;
 			});
 			if(col == -1 && row == -1) {
-				this.editingCourse = this.defaultCourse;
+				this.editingCourse = Object.freeze(this.defaultCourse);
 				this.editingAction = 'new';
 			}
 			else if(!this.used_secion[col+1].includes(String(this.time_section[row]))) {
@@ -1036,7 +1031,7 @@ export default {
 		},
 
 		closeDialog() {
-			this.editingCourse = this.defaultCourse;
+			this.editingCourse = Object.freeze(this.defaultCourse);
 			this.editingAction = null;
 			document.getElementById('editCourseDialog').close();
 			document.getElementById('widgetDialog').close();
@@ -1171,7 +1166,7 @@ export default {
 		},
 	},
 	mounted() {
-		this.editingCourse = this.defaultCourse;
+		this.editingCourse = Object.freeze(this.defaultCourse);
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
 		this.$axios.get('/scriptable.min.js?v=1').then(res => {
 			this.scriptableCodeFile = res.data;
