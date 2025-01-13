@@ -30,7 +30,7 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">顏色主題</div>
 						<div class="ts-select is-fluid">
-							<select v-model="myCoursesSetting.theme" @change="updateTimetable()">
+							<select v-model="myCoursesSetting.theme" @change="updateTimetable(false)">
 								<option v-for="theme of themes" :value="theme.id">{{ theme.name }}</option>
 							</select>
 						</div>
@@ -53,27 +53,27 @@
 						<div class="ts-text is-label has-bottom-padded-small">顯示設定</div>
 						<div class="ts-wrap is-vertical is-compact">
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showRowLine" @change="updateTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showRowLine" @change="updateTimetable(false)" />
 								水平格線
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showColLine" @change="updateTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showColLine" @change="updateTimetable(false)" />
 								垂直格線
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showRowTitle" @change="updateTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showRowTitle" @change="updateTimetable(false)" />
 								節次
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showColTitle" @change="updateTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showColTitle" @change="updateTimetable(false)" />
 								星期
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showCourseClassroom" @change="updateTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showCourseClassroom" @change="updateTimetable(false)" />
 								課程：上課地點
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="updateTimetable()" />
+								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="updateTimetable(false)" />
 								課程：上課時間
 							</label>
 						</div>
@@ -82,7 +82,7 @@
 
 					<div class="ts-range">
 						<div class="ts-text is-label has-bottom-padded-small">外框寬度 <small>({{ Math.round(myCoursesSetting.tableBorder/128*1000)/10 }}%)</small></div>
-						<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="updateTimetable()" style="width:100%" />
+						<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="updateTimetable(false)" style="width:100%" />
 					</div>
 
 					<div class="ts-wrap is-dense mobile-hidden">
@@ -355,8 +355,8 @@
 }
 
 .compare .ts-box {
-	max-height: 30vh;
-	overflow-y: auto;
+	//max-height: 30vh;
+	//overflow-y: scroll;
 }
 
 .compare-course {
@@ -756,7 +756,7 @@ export default {
 				delete course.isSame;
 				return course;
 			});
-			if(sync && localStorage.auth_key && JSON.stringify(this.myCourses) != localStorage.myCourses) {
+			if(sync && localStorage.auth_key) {
 				this.$axios.post('https://api.mcut-course.com/user/?action=update',
 					'my=' + encodeURIComponent(JSON.stringify(this.myCourses)),
 					{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
@@ -1139,7 +1139,8 @@ export default {
 			});
 
 			return '<div class="ts-grid is-compact is-stretched compare" style="text-align:left">\
-				<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense"><span class="ts-badge is-small is-dense" style="background:var(--ts-static-gray-500);color:var(--ts-static-gray-50)">目前課表 ('+local.length+')</span>' +
+				<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense">\
+					<span class="ts-badge is-small is-dense" style="background:var(--ts-static-gray-500);color:var(--ts-static-gray-50)">當前課表 ('+local.length+')</span>' +
 					local.map(course => '<div class="compare-course '+(course.isSame?'':' has-diff')+'">' +
 						course.name.split('(')[0] + ' ' +
 						'<small>(' + this.week_text[course.time[0]-1] + ') ' + (course.time[1].split('~')[0] == course.time[1].split('~')[1] ? course.time[1].split('~')[0] : course.time[1]) +
@@ -1148,7 +1149,8 @@ export default {
 						'</div>'
 					).join('') +
 				'</div></div></div>\
-				<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense"><span class="ts-badge is-small is-dense" style="background:var(--ts-static-primary-600);color:var(--ts-static-gray-50)">上次儲存的課表 ('+online.length+')</span>' +
+				<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense">\
+					<span class="ts-badge is-small is-dense" style="background:var(--ts-static-primary-600);color:var(--ts-static-gray-50)">儲存於帳號中的課表 ('+online.length+')</span>' +
 					'<br><small>儲存於 ' + this.formatTime(data.updateAt) + '</small><br>' +
 					online.map(course => '<div class="compare-course '+(course.isSame?'':' has-diff')+'">' +
 						course.name.split('(')[0] + ' ' +
@@ -1159,7 +1161,7 @@ export default {
 					).join('') +
 				'</div></div></div>\
 			</div><br><div class="ts-text is-description is-start-aligned">\
-				這可能是因為您先前有登入並修改課表，但剛剛修改課表後才登入導致的。紅色代表有差異的課程，請選擇一個同步方式。\
+				這可能是因為您先前有在別的裝置登入並修改課表，但跟目前登入前的課表不一致。紅色代表有差異的課程，請選擇一個同步方式。\
 			</div>';
 		},
 
@@ -1207,14 +1209,18 @@ export default {
 					if(isDifferent) {
 						this.$swal({
 							icon: 'warning',
-							title: '目前課表與上次登入時儲存的不一致',
+							title: '當前課表與儲存於帳號中的課表不一致',
 							html: this.compareCourse(res.data),
-							confirmButtonText: '清除目前課表後，使用上次儲存的課表',
-							cancelButtonText: '仍使用目前課表，並儲存到帳號',
+							confirmButtonText: '清除當前課表，使用儲存於帳號中的課表',
+							cancelButtonText: '清除儲存於帳號中的課表，使用當前課表',
 							showCancelButton: true,
 							allowOutsideClick: false,
 							allowEscapeKey: false,
 							focusConfirm: false,
+							reverseButtons: true,
+							didOpen() {
+								document.querySelectorAll('.swal2-actions button')[0].blur();
+							}
 						})
 						.then((sres) => {
 							if (sres.isConfirmed) {
