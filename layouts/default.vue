@@ -82,6 +82,7 @@ export default {
 					location.reload();
 				});
 			} else {
+				localStorage['myCourseSync'] = '';
 				this.setShowAd(true);
 				this.checkAdBlock();
 			}

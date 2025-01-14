@@ -756,7 +756,9 @@ export default {
 					'my=' + encodeURIComponent(JSON.stringify(this.myCourses)),
 					{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
 				)
-				.then(res => {})
+				.then(res => {
+					localStorage['myCourseSync'] = res.data.updatedAt;
+				})
 				.catch((err) => {
 					localStorage['auth_key'] = '';
 					localStorage['profile_image'] = '';
@@ -1146,7 +1148,7 @@ export default {
 				'</div></div></div>\
 				<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense">\
 					<span class="ts-badge is-small is-dense" style="background:var(--ts-static-primary-600);color:var(--ts-static-gray-50)">儲存於帳號中的課表 ('+online.length+')</span>' +
-					'<br><small>儲存於 ' + this.formatTime(data.updateAt) + '</small><br>' +
+					'<br><small>儲存於 ' + this.formatTime(data.updatedAt) + '</small><br>' +
 					online.map(course => '<div class="compare-course '+(course.isSame?'':' has-diff')+'">' +
 						course.name.split('(')[0] + ' ' +
 						'<small>(' + this.week_text[course.time[0]-1] + ') ' + (course.time[1].split('~')[0] == course.time[1].split('~')[1] ? course.time[1].split('~')[0] : course.time[1]) +
@@ -1177,11 +1179,17 @@ export default {
 			this.$axios.get('https://api.mcut-course.com/user/?action=get&my', { headers: { authorization: localStorage['auth_key'] } })
 			.then(res => {
 				this.loading_get = false;
-				if(res.data.my.length === 0) {
+				if(!isNaN(new Date(localStorage['myCourseSync']).getTime()) && new Date(localStorage['myCourseSync']).getTime() < new Date(res.data.updatedAt).getTime()) {
+					this.myCourses = res.data.my;
+					localStorage['myCourseSync'] = res.data.updatedAt;
+					this.updateTimetable(false);
+				}
+				else if(res.data.my.length === 0) {
 					this.updateTimetable();
 				}
 				else if(this.myCourses.length === 0) {
 					this.myCourses = res.data.my;
+					localStorage['myCourseSync'] = res.data.updatedAt;
 					this.updateTimetable(false);
 				}
 				else {
@@ -1226,6 +1234,8 @@ export default {
 								this.updateTimetable();
 							}
 						});
+					} else {
+						localStorage['myCourseSync'] = res.data.updatedAt;
 					}
 				}
 			});
