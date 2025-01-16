@@ -536,9 +536,9 @@ export default {
 				});
 			}
 		},
-		showFindCourse(sid) {
+		async showFindCourse(sid) {
 			if(this.findCourses(sid).length == 0) return;
-			let savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]') || [];
+			let savedCourse = await this.$store.dispatch('getSavedCourse');
 			
 			if(savedCourse.length >= 1 && savedCourse[0].substring(0,4) != this.currentRuleTerm.replace('-', '')) {
 				this.$swal({
@@ -551,7 +551,7 @@ export default {
 				})
 				.then((res) => {
 					if (res.isConfirmed) {
-						localStorage['savedCourse'] = '[]';
+						this.$store.dispatch('setSavedCourse', []);
 						localStorage['term'] = this.currentRuleTerm;
 						localStorage['searchQuery'] = sid;
 						localStorage['dept'] = '';

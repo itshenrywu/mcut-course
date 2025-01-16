@@ -21,6 +21,9 @@
 								<span class="ts-icon is-regular is-star-icon"></span>收藏
 							</button>
 						</template>
+						<template v-else>
+							<button class="ts-button is-start-icon is-secondary is-disabled">讀取中...</button>
+						</template>
 
 						<button class="ts-button is-start-icon is-secondary" @click="share()">
 							<span class="ts-icon is-share-icon"></span>分享
@@ -317,7 +320,7 @@
 }
 </style>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 export default {
 	async asyncData({ params, payload }) {
 		if (payload) {
@@ -372,12 +375,12 @@ export default {
 			else return _t.join(' ~ ') + ' 節';
 		}
 	},
-	mounted() {
+	async mounted() {
 		if (!this.$route.params.id) {
 			this.$router.push('/');
 			return;
 		}
-		this.savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]') || [];
+		this.savedCourse = await this.$store.dispatch('getSavedCourse');
 		this.fetchData();
 	},
 	computed: {
@@ -400,6 +403,7 @@ export default {
 		}
 	},
 	methods: {
+		...mapMutations(['setSavedCourse']),
 		isConflicted() {
 			if (this.savedCourse.length == 0) return false;
 			if (this.savedCourse.includes(this.course.id)) return false;
@@ -440,8 +444,7 @@ export default {
 					this.loading = false;
 				});
 		},
-		saveCourse() {
-			this.savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]') || [];
+		async saveCourse() {
 			if (this.savedCourse.includes(this.course.id)) {
 				this.savedCourse = this.savedCourse.filter(item => item !== this.course.id);
 				this.$swal({
@@ -462,8 +465,8 @@ export default {
 						.then((res) => {
 							if (res.isConfirmed) {
 								this.savedCourse = [this.course.id];
-								localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
 								localStorage['term'] = this.course.id.substring(0, 3) + '-' + this.course.id.substring(3, 4);
+								this.setSavedCourse([this.savedCourse]);
 								this.$root.$emit('updateSavedCourse', this.savedCourse);
 								this.$swal({
 									title: '「' + this.course.name + '」已收藏', icon: 'success', toast: true,
@@ -483,7 +486,7 @@ export default {
 					position: 'bottom-start', showConfirmButton: false,
 				});
 			}
-			localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+			this.setSavedCourse([this.savedCourse]);
 			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		},
 		share() {

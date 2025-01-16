@@ -368,10 +368,6 @@
 	opacity: .7;
 }
 
-.compare .has-diff {
-	color: var(--ts-negative-600)
-}
-
 @media (min-width: 1700px) {
 	#page-my .ad {
 		position: fixed;

@@ -169,7 +169,7 @@
 			<div class="ts-blankslate" v-else>
 				<span class="ts-icon is-circle-exclamation-icon"></span>
 				<div class="header">目前還沒有收藏的課程</div>
-				<div class="description">快到「搜尋課程」收藏喜歡的課程吧！</div>
+				<div class="description">快到「全校課表」收藏有興趣的課程吧！</div>
 			</div>
 			<br>
 			<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="filteredCourses.length > 0 && showAd">
@@ -267,7 +267,7 @@
 }
 </style>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
 
@@ -287,14 +287,15 @@ export default {
 			week_text: ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''],
 			info: [],
 			loading: true,
-			savedCourse: [],
 			courses: [],
 			displayType: '',
 			maxEndSection: 8,
-			currentTerm: undefined
+			currentTerm: undefined,
+			savedCourse: []
 		}
 	},
-	mounted() {
+	async mounted() {
+		this.savedCourse = await this.$store.dispatch('getSavedCourse');
 		this.displayType = localStorage.displayType || '';
 		if (this.$route.query.ids) {
 			let importCourse = [];
@@ -304,7 +305,7 @@ export default {
 				importCourse.push(importTerm + id);
 			});
 
-			let savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]') || [];
+			let savedCourse = await this.$store.dispatch('getSavedCourse');
 			if (savedCourse.length >= 1) {
 				this.$swal({
 					icon: 'question',
@@ -317,31 +318,29 @@ export default {
 					.then((res) => {
 						if (res.isConfirmed) {
 							localStorage['term'] = importTerm;
-							localStorage['savedCourse'] = JSON.stringify(importCourse);
 							this.savedCourse = importCourse;
+							this.setSavedCourse([this.savedCourse]);
 							this.$swal({
 								title: '已匯入課程', icon: 'success', toast: true,
 								timer: 3000, timerProgressBar: true,
 								position: 'bottom-start', showConfirmButton: false,
 							});
-							this.$root.$emit('updateSavedCourse', importCourse);
 							this.$router.replace('/saved');
 						}
 					});
 			} else {
 				localStorage['term'] = importTerm;
-				localStorage['savedCourse'] = JSON.stringify(importCourse);
+				this.savedCourse = importCourse;
+				this.setSavedCourse([this.savedCourse]);
 				this.$swal({
 					title: '已匯入課程', icon: 'success', toast: true,
 					timer: 3000, timerProgressBar: true,
 					position: 'bottom-start', showConfirmButton: false,
 				});
-				this.$root.$emit('updateSavedCourse', this.savedCourse);
 				this.$router.replace('/saved');
 			}
 		}
 
-		this.savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]') || [];
 		if (this.savedCourse.length > 0) {
 			let term_id = this.savedCourse[0].substring(0, 4);
 			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
@@ -386,6 +385,7 @@ export default {
 		}
 	},
 	methods: {
+		...mapMutations(['setSavedCourse']),
 		fetchData() {
 			const now = new Date().getTime();
 			const storedData = localStorage['courseData_' + this.currentTerm];
@@ -423,8 +423,7 @@ export default {
 							position: 'bottom-start', showConfirmButton: false,
 						});
 						this.savedCourse = [];
-						localStorage['savedCourse'] = '[]';
-						this.$root.$emit('updateSavedCourse', this.savedCourse);
+						this.setSavedCourse([this.savedCourse]);
 						this.currentTerm = '';
 					}
 				});
@@ -490,8 +489,7 @@ export default {
 						if (this.savedCourse.includes(course.id)) {
 							this.savedCourse = this.savedCourse.filter(id => id !== course.id);
 						}
-						localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
-						this.$root.$emit('updateSavedCourse', this.savedCourse);
+						this.setSavedCourse([this.savedCourse]);
 						if(this.savedCourse.length == 0) this.currentTerm = '';
 					}
 				});

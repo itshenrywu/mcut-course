@@ -64,7 +64,7 @@
 		</section>
 		<div class="ts-container has-top-spaced-huge">
 			<div class="ts-grid has-top-spaced-huge is-stretched">
-				<div class="column is-13-wide mobile-fluid">
+				<div class="column is-4-by-5-wide mobile-fluid">
 					<div class="ts-grid">
 						<div class="column is-8-wide mobile-fluid">
 							<div class="ts-box is-raised" @click="goDetailSearch('')">
@@ -131,10 +131,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-3-wide mobile-fluid">
+				<div class="column is-1-by-5-wide mobile-fluid">
 					<div class="ts-box is-raised saved" @click="goDetailSearch('saved')">
 						<div class="ts-content">
-							<div class="ts-header">收藏的課程<span class="ts-badge is-start-spaced is-dense is-small my">{{ savedCourse.length }}</span></div>
+							<div class="ts-header">收藏的課程<span class="ts-badge is-start-spaced is-dense is-small my" v-if="savedCourse.length > 0">{{ savedCourse.length }}</span></div>
 						</div>
 						<div class="symbol"><span class="ts-icon is-star-icon"></span></div>
 					</div>
@@ -196,6 +196,7 @@
 	</div>
 </template>
 <script>
+import { mapMutations } from 'vuex';
 export default {
 	async asyncData({ $axios }) {
 		let _terms = {};
@@ -236,9 +237,11 @@ export default {
 		this.init();
 	},
 	methods: {
-		init() {
-			if (localStorage['savedCourse'] && JSON.parse(localStorage['savedCourse']) && JSON.parse(localStorage['savedCourse']).length > 0) {
-				this.savedCourse = JSON.parse(localStorage['savedCourse']);
+		...mapMutations(['setSavedCourse']),
+		async init() {
+			this.loading = true;
+			this.savedCourse = await this.$store.dispatch('getSavedCourse');
+			if (this.savedCourse && this.savedCourse.length > 0) {
 				let term_id = this.savedCourse[0].substring(0, 4);
 				this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
 				localStorage['term'] = this.currentTerm;
@@ -356,7 +359,7 @@ export default {
 					if (res.isConfirmed) {
 						this.$swal.close();
 						this.savedCourse = [];
-						localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+						this.setSavedCourse([this.savedCourse]);
 						this.$root.$emit('updateSavedCourse', this.savedCourse);
 						this.loading = true;
 						this.currentTerm = term;
@@ -388,10 +391,6 @@ export default {
 			this.$router.push('/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/');
 		},
 		showDropdown() {
-			console.log(
-				document.querySelector('#query-dropdown').classList.contains('is-visible'),
-				document.querySelector('#query-dropdown').style.display
-			);
 			if(document.getElementById('query-dropdown').classList.contains('is-visible')) return;
 			if(window.innerWidth <= 768) {
 				document.querySelector('.ts-input').scrollIntoView({ behavior: 'smooth', block: 'start' });

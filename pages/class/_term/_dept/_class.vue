@@ -34,8 +34,9 @@ export default {
 		}
 	},
 	methods: {
-		checkSameTerm() {
-			this.savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]') || [];
+		...mapMutations(['setSavedCourse']),
+		async checkSameTerm() {
+			this.savedCourse = await this.$store.dispatch('getSavedCourse');
 			if (this.savedCourse[0] && this.savedCourse[0].substring(0, 4) !== this.$route.params.term) {
 				this.$swal({
 					title: '無法查看跨學期的課程',
@@ -48,7 +49,7 @@ export default {
 					.then((res) => {
 						if (res.isConfirmed) {
 							this.savedCourse = [];
-							localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+							this.setSavedCourse([this.savedCourse]);
 							this.redirect();
 						} else {
 							this.$router.replace('/course/');

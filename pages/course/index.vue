@@ -244,6 +244,7 @@
 }
 </style>
 <script>
+import { mapMutations } from 'vuex';
 export default {
 	head() {
 		return {
@@ -285,12 +286,13 @@ export default {
 			showMobileSidebar: false
 		}
 	},
-	mounted() {
+	async mounted() {
 		if (localStorage['searchQuery']) this.searchQuery = localStorage['searchQuery'];
 		if(['0','1','2'].includes(localStorage['showConflict'])) this.showConflict = localStorage['showConflict'];
 		else this.showConflict = 1;
-		if (localStorage['savedCourse'] && JSON.parse(localStorage['savedCourse']) && JSON.parse(localStorage['savedCourse']).length > 0) {
-			this.savedCourse = JSON.parse(localStorage['savedCourse']);
+		let savedCourse = await this.$store.dispatch('getSavedCourse');
+		if (savedCourse && savedCourse.length > 0) {
+			this.savedCourse = savedCourse;
 			let term_id = this.savedCourse[0].substring(0, 4);
 			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
 			localStorage['term'] = this.currentTerm;
@@ -380,6 +382,7 @@ export default {
 		}
 	},
 	methods: {
+		...mapMutations(['setSavedCourse']),
 		fetchData() {
 			const now = new Date().getTime();
 			const storedData = localStorage['courseData_' + this.currentTerm];
@@ -465,7 +468,7 @@ export default {
 					if (res.isConfirmed) {
 						this.$swal.close();
 						this.savedCourse = [];
-						localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+						this.setSavedCourse([this.savedCourse]);
 						this.$root.$emit('updateSavedCourse', this.savedCourse);
 						this.loading = true;
 						this.currentTerm = term;
@@ -528,7 +531,7 @@ export default {
 				this.savedCourse = this.filteredCourses
 					.filter(course => course.type === '必修')
 					.map(course => course.id);
-				localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+				this.setSavedCourse([this.savedCourse]);
 				this.$root.$emit('updateSavedCourse', this.savedCourse);
 				return;
 			}
@@ -550,7 +553,7 @@ export default {
 						this.savedCourse = this.filteredCourses
 							.filter(course => course.type === '必修')
 							.map(course => course.id);
-						localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+						this.setSavedCourse([this.savedCourse]);
 						this.$root.$emit('updateSavedCourse', this.savedCourse);
 					}
 				});
@@ -608,7 +611,7 @@ export default {
 			} else {
 				this.savedCourse.push(course_id);
 			}
-			localStorage['savedCourse'] = JSON.stringify(this.savedCourse);
+			this.setSavedCourse([this.savedCourse]);
 			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		}
 	}
