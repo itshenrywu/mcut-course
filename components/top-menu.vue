@@ -107,6 +107,7 @@ export default {
 		if(localStorage['auth_key']) this.profileImage = localStorage['profile_image'];
 		this.$root.$on('showProfileImage', (profileImage) => {
 			if(localStorage['auth_key']) this.profileImage = profileImage;
+			else this.profileImage = '';
 		});
 	},
 	data() {
