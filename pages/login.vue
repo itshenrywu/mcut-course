@@ -1,6 +1,6 @@
 <template>
 	<div class="cell is-scrollable is-fluid is-horizontal">
-		<loading loadingText="請稍候..." v-if="loading"></loading>
+		<loading loadingText="登入中..." v-if="loading"></loading>
 	</div>
 </template>
 <script>
@@ -27,7 +27,7 @@ export default {
 		} else {
 			localStorage['myCourseSync'] = '';
 			localStorage['savedCourseSync'] = '';
-			this.$router.push(localStorage['next_path'] || '/');
+			this.$router.push(localStorage['last_path'] || '/');
 		}
 	}
 }

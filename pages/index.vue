@@ -468,7 +468,7 @@ export default {
 #page-home .dept_name {
 	cursor: pointer;
 	display: flex;
-    align-items: center;
+	align-items: center;
 }
 
 #page-home .dept_name .ts-header {

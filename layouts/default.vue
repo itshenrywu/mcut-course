@@ -22,11 +22,13 @@ export default {
 	},
 	mounted() {
 		this.checkAdBlock();
+		localStorage['last_path'] = this.$router.currentRoute.path;
 		this.$watch('$route', () => {
 			this.checkLogin();
 			this.checkAdBlock();
+			if(!['/login/', '/logout/', '/c/'].includes(this.$router.currentRoute.path)) localStorage['last_path'] = this.$router.currentRoute.path;
 		});
-		if(localStorage['acceptTerms'] == undefined) {
+		if(!localStorage['acceptTerms'] && !['/login/', '/logout/', '/c/'].includes(this.$router.currentRoute.path)) {
 			this.$swal({
 				title: '關於本站 & 免責聲明',
 				html: '<div style="text-align:left">\
@@ -276,6 +278,18 @@ h1 {
 	width: 4rem;
 	height: 4rem;
 	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-fab .ts-badge {
+	position: absolute;
+	top: -.2rem;
+	left: -.2rem;
+	font-size: .9rem;
+	width: 1.5rem;
+	height: 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -14,14 +14,17 @@ export const mutations = {
 				localStorage['savedCourseSync'] = res.data.updatedAt;
 			});
 		}
-		localStorage['savedCourse'] = JSON.stringify(savedCourse);
+		localStorage['savedCourse'] = JSON.stringify(savedCourse || []);
 		state.savedCourse = savedCourse;
 	}
 }
 
 export const actions = {
 	async getSavedCourse(context) {
-		let savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]');
+		let savedCourse = [];
+		try {
+			savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]');
+		} catch(e) {}
 
 		if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
 			await this.$axios.get('https://api.mcut-course.com/user/?action=get&saved&get_course=' + savedCourse.join(','), { headers: { authorization: localStorage['auth_key'] } })

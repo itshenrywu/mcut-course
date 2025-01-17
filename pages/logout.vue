@@ -1,9 +1,10 @@
 <template>
 	<div class="cell is-scrollable is-fluid is-horizontal">
-        <loading loadingText="請稍候..." v-if="loading"></loading>
-    </div>
+		<loading loadingText="正在登出..." v-if="loading"></loading>
+	</div>
 </template>
 <script>
+import { mapMutations } from 'vuex';
 export default {
 	head() {
 		return {
@@ -23,35 +24,15 @@ export default {
 		if(localStorage['auth_key'] == undefined || localStorage['auth_key'] == '') {
 			this.$router.push('/');
 		} else {
-			this.$swal({
-				icon: 'warning',
-				title: '您即將登出...',
-				html: '要清除收藏的課程和我的課表嗎？',
-				confirmButtonText: '登出並清除資料',
-				showDenyButton: true,
-				denyButtonText: '僅登出，不清除資料',
-				denyButtonColor: 'var(--ts-primary-700)',
-				showCancelButton: true,
-				cancelButtonText: '回首頁',
-                allowOutsideClick: false,
-				allowEscapeKey: false,
-			}).then((res) => {
-				if(res.isConfirmed) {
-                    localStorage.clear();
-                    this.$root.$emit('showProfileImage', '');
-                    console.log('ccc');
-				}
-                else if(res.isDenied) {
-					localStorage['myCourseSync'] = '';
-					localStorage['savedCourseSync'] = '';
-					localStorage['auth_key'] = '';
-					localStorage['profile_image'] = '';
-					localStorage['next_path'] = '';
-					this.$root.$emit('showProfileImage', '');
-				}
-                this.$router.push('/');
-			});
+			let last_path = localStorage['last_path'];
+			localStorage.clear();
+			this.$root.$emit('showProfileImage', '');
+			this.setSavedCourse([]);
+			this.$router.push(last_path || '/');
 		}
+	},
+	methods: {
+		...mapMutations(['setSavedCourse']),
 	}
 }
 </script>

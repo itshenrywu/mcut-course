@@ -200,6 +200,10 @@
 			</table>
 			<br>
 		</div>
+		<NuxtLink to="/saved/" class="button-fab">
+			<span class="ts-icon is-star-icon"></span>
+			<span class="ts-badge is-negative" v-if="savedCourse.length > 0">{{ savedCourse.length }}</span>
+		</NuxtLink>
 	</div>
 </template>
 <style>

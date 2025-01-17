@@ -90,7 +90,11 @@
 <script>
 export default {
 	mounted() {
-		this.savedCourse = JSON.parse(localStorage.getItem('savedCourse')) || [];
+		try {
+			this.savedCourse = JSON.parse(localStorage.getItem('savedCourse')) || [];
+		} catch(e) {
+			this.savedCourse = [];
+		}
 		this.$root.$on('updateSavedCourse', (savedCourse) => {
 			this.savedCourse = savedCourse;
 		});
