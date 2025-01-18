@@ -1,6 +1,6 @@
 <template>
 	<div class="cell is-secondary is-scrollable is-fluid is-horizontal" id="page-course">
-		<div class="ts-container is-narrow has-top-padded-large">
+		<div class="ts-container has-top-padded-large">
 			<div class="ts-grid is-compact is-middle-aligned">
 				<div class="column is-10-wide mobile-fluid">
 					<div class="ts-text is-description">

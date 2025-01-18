@@ -22,13 +22,13 @@ export default {
 	},
 	mounted() {
 		if(localStorage['auth_key'] == undefined || localStorage['auth_key'] == '') {
-			this.$router.push('/');
+			location.href = localStorage['last_path'] || '/';
 		} else {
 			let last_path = localStorage['last_path'];
 			localStorage.clear();
-			this.$root.$emit('showProfileImage', '');
+			this.$root.$emit('showProfileImage', null);
 			this.setSavedCourse([]);
-			this.$router.push(last_path || '/');
+			location.href = last_path || '/';
 		}
 	},
 	methods: {

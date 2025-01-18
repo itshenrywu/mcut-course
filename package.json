@@ -6,7 +6,9 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "gen": "nuxt generate"
+    "gen": "MODE=dev nuxt generate",
+    "gen-prod": "MODE=prod nuxt generate",
+    "minify": "npx cleancss -o static/css/tocas.min.css asset/tocas/tocas.css"
   },
   "dependencies": {
     "@nuxtjs/google-gtag": "^1.0.4",
@@ -18,5 +20,8 @@
     "vue-server-renderer": "^2.7.16",
     "vue-sweetalert2": "^5.0.11",
     "vue-template-compiler": "^2.7.16"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3"
   }
 }

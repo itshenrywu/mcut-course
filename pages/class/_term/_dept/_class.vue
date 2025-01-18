@@ -2,6 +2,7 @@
 	<div class="cell is-scrollable is-fluid is-horizontal"></div>
 </template>
 <script>
+import { mapMutations } from 'vuex';
 export default {
 	async asyncData({ payload }) {
 		if (payload) {

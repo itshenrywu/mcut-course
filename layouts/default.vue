@@ -22,13 +22,13 @@ export default {
 	},
 	mounted() {
 		this.checkAdBlock();
-		localStorage['last_path'] = this.$router.currentRoute.path;
+		if(!['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, ''))) localStorage['last_path'] = this.$router.currentRoute.path;
 		this.$watch('$route', () => {
 			this.checkLogin();
 			this.checkAdBlock();
-			if(!['/login/', '/logout/', '/c/'].includes(this.$router.currentRoute.path)) localStorage['last_path'] = this.$router.currentRoute.path;
+			if(!['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, ''))) localStorage['last_path'] = this.$router.currentRoute.path;
 		});
-		if(!localStorage['acceptTerms'] && !['/login/', '/logout/', '/c/'].includes(this.$router.currentRoute.path)) {
+		if(!localStorage['acceptTerms'] && !['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, ''))) {
 			this.$swal({
 				title: '關於本站 & 免責聲明',
 				html: '<div style="text-align:left">\
@@ -65,6 +65,7 @@ export default {
 					if(!res.data.success) {
 						localStorage['auth_key'] = '';
 						localStorage['profile_image'] = '';
+						localStorage['profile_name'] = '';
 						location.reload();
 					}
 					if(!res.data.hide_ad) {
@@ -76,17 +77,22 @@ export default {
 					}
 
 					if(res.data.image) localStorage['profile_image'] = res.data.image;
+					if(res.data.name) localStorage['profile_name'] = res.data.name;
 					this.$root.$emit('showProfileImage', localStorage['profile_image']);
 				})
 				.catch((err) => {
 					localStorage['auth_key'] = '';
 					localStorage['profile_image'] = '';
+					localStorage['profile_name'] = '';
 					location.reload();
+					this.$root.$emit('showProfileImage', '');
 				});
 			} else {
 				localStorage['myCourseSync'] = '';
+				localStorage['profile_name'] = '';
 				this.setShowAd(true);
 				this.checkAdBlock();
+				this.$root.$emit('showProfileImage', '');
 			}
 		}
 	}

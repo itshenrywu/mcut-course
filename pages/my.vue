@@ -107,9 +107,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="cell is-secondary is-fluid is-scrollable has-top-padded-large" style="min-height:100%">
+		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%">
+			<profile mobile-only="true"></profile>
 			<div class="ts-container mobile-only">
-				<div class="ts-box has-bottom-spaced">
+				<div class="ts-box has-bottom-spaced has-top-spaced-large">
 					<div class="ts-content">
 						<div class="ts-text is-description">
 							<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
@@ -368,7 +369,7 @@
 	opacity: .7;
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1520px) {
 	#page-my .ad {
 		position: fixed;
 		width: 350px;
@@ -398,6 +399,8 @@ export default {
 	},
 	data() {
 		return {
+			profileName: null,
+			profileImage: null,
 			time_section_full: ['1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
 			showMobileSidebar: false,
 			loading: true,

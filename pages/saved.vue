@@ -1,21 +1,24 @@
 <template>
 	<div class="cell is-secondary is-fluid is-scrollable" id="page-saved">
+		<profile></profile>
 		<div class="ts-container has-top-padded-large is-fitted">
 			<div class="ts-grid is-compact is-middle-aligned mobile-padded">
-				<div class="column is-10-wide mobile-fluid">
+				<div class="column is-13-wide">
 					<h1 class="ts-header is-huge has-vertically-padded">收藏的課程
 						<div class="ts-badge is-start-spaced is-outlined" v-if="currentTerm && currentTerm!=''">{{ currentTerm }} 學期</div>
 					</h1>
 				</div>
-				<div class="column is-6-wide mobile-fluid">
+				<div class="column is-3-wide">
 					<div class="ts-wrap is-end-aligned">
-						<button class="ts-button is-outlined" v-if="savedCourse.length > 0"
-							@click="exportSavedCourse()">
-							<span class="ts-icon is-end-spaced is-file-export-icon"></span> 匯出
-						</button>
-						<button class="ts-button is-negative is-outlined" v-if="savedCourse.length > 0"
+						<button class="ts-button is-negative is-outlined mobile-hidden"
+							v-if="savedCourse.length > 0"
 							@click="clearSavedCourse()">
 							<span class="ts-icon is-end-spaced is-trash-icon"></span> 清除
+						</button>
+						<button class="ts-button is-icon is-negative is-outlined mobile-only"
+							v-if="savedCourse.length > 0"
+							@click="clearSavedCourse()">
+							<span class="ts-icon is-trash-icon"></span>
 						</button>
 					</div>
 				</div>

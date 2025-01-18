@@ -20,7 +20,7 @@ jobs:
     - name: Install Dependencies
       run: npm install
     - name: Generate Pages
-      run: npm run gen
+      run: npm run gen-prod
     - name: Sitemap
       run: |
         echo "https://$BASE_URL/" > ./dist/sitemap.txt
