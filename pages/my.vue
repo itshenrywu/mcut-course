@@ -79,10 +79,11 @@
 						</div>
 					</div>
 
-
-					<div class="ts-range">
+					<div>
 						<div class="ts-text is-label has-bottom-padded-small">外框寬度 <small>({{ Math.round(myCoursesSetting.tableBorder/128*1000)/10 }}%)</small></div>
-						<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="updateTimetable(false)" style="width:100%" />
+						<div class="ts-range">
+							<input type="range" min="0" max="128" v-model="myCoursesSetting.tableBorder" @change="updateTimetable(false)" style="width:100%" />
+						</div>
 					</div>
 
 					<div class="ts-wrap is-dense mobile-hidden">
@@ -107,7 +108,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%">
+		<div class="cell is-secondary is-fluid is-scrollable main" style="min-height:100%">
 			<profile mobile-only="true"></profile>
 			<div class="ts-container mobile-only">
 				<div class="ts-box has-bottom-spaced has-top-spaced-large">
@@ -143,13 +144,17 @@
 					</div>
 				</div>
 			</div>
-			<div class="ts-container has-top-padded is-fitted">
-				<div class="timetable-container">
+			<div class="ts-container has-top-padded has-bottom-padded is-fitted">
+				<div class="timetable-container" id="timetable-container">
 					<div class="ts-box" :style="{backgroundColor: this.themes.filter(theme => theme.id === this.myCoursesSetting.theme)[0].backgroundColor}">
 						<canvas id="timetableCanvas" v-show="!loading"></canvas>
 					</div>
 				</div>
-				<div class="ts-box ad is-hollowed box-mobile-spaced has-top-spaced-large" v-if="!loading && showAd" style="border:4px dashed var(--ts-gray-300)!important">
+				<div class="ts-box ad is-hollowed box-mobile-spaced has-top-spaced-large"
+				v-if="!loading && showAd" style="border:4px dashed var(--ts-gray-300)!important"
+				:style="{width: adWidth > 280 ? (adWidth+'px') : 'calc(100% - 2rem)'}"
+				:class="{fixed: adWidth > 280}"
+				>
 					<div class="ts-content">
 						<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
 						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
@@ -165,7 +170,6 @@
 					</div>
 				</div>
 			</div>
-			<br>
 			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>
 		<dialog class="ts-modal is-large" id="editCourseDialog">
@@ -369,14 +373,12 @@
 	opacity: .7;
 }
 
-@media (min-width: 1520px) {
-	#page-my .ad {
-		position: fixed;
-		width: 350px;
-		height: 350px;
-		right: 50px;
-		top: calc(50% - 150px);
-	}
+#page-my .ad.fixed {
+	position: fixed;
+	width: 350px;
+	height: 350px;
+	right: 50px;
+	top: calc(50% - 150px);
 }
 
 @media (max-width: 767.98px) {
@@ -399,6 +401,7 @@ export default {
 	},
 	data() {
 		return {
+			adWidth: null,
 			profileName: null,
 			profileImage: null,
 			time_section_full: ['1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
@@ -731,16 +734,17 @@ export default {
 			this.ctx = canvas.getContext('2d');
 			let width, height;
 			if (window.innerHeight > window.innerWidth) {
-				width = document.getElementsByClassName('timetable-container')[0].clientWidth - 28;
+				width = window.innerWidth - 28;
 				height = width * 16 / 9;
 			} else {
-				height = window.innerHeight - 170;
+				height = window.innerHeight - 130;
 				width = height * 9 / 16;
 			}
 			canvas.width = 1080;
 			canvas.height = 1920;
 			canvas.style.width = width + 'px';
 			canvas.style.height = height + 'px';
+			this.adWidth = (document.querySelector('.cell.main').clientWidth - width) / 2 - 100;
 			this.updateTimetable(false);
 		},
 
