@@ -28,7 +28,11 @@ export default {
 			this.checkAdBlock();
 			if(!['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, ''))) localStorage['last_path'] = this.$router.currentRoute.path;
 		});
-		if(!localStorage['acceptTerms'] && !['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, ''))) {
+		if(
+			!localStorage['acceptTerms'] &&
+			!['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, '')) &&
+			!this.$route.query.accept
+		) {
 			this.$swal({
 				title: '關於本站 & 免責聲明',
 				html: '<div style="text-align:left">\
