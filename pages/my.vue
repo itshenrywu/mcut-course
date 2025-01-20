@@ -1173,7 +1173,7 @@ export default {
 	mounted() {
 		this.editingCourse = Object.freeze(this.defaultCourse);
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
-		this.$axios.get('/scriptable.min.js?v=1').then(res => {
+		this.$axios.get('/scriptable.min.js?v=2').then(res => {
 			this.scriptableCodeFile = res.data;
 		});
 		try { this.myCourses = JSON.parse(localStorage.myCourses); } catch (e) { }

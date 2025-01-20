@@ -58,7 +58,7 @@ function createWidget() {
 		} else {
 			let t = w.addText(`${l.st} ~ ${l.et}`);
 			t.textColor = new Color(color[1]), t.font = Font.systemFont(14);
-			let d = w.addText(l.c);
+			let d = w.addText(l.c || '');
 			d.textColor = new Color(color[1]), d.font = Font.systemFont(14);
 		}
 	} else {

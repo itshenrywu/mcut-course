@@ -512,7 +512,9 @@ export default {
 			});
 			let output = '<ol>';
 			output += _rows.map(row => {
-				return '<li class="' + row[0] + '" style="margin-left:' + list_styles_margin[row[0]] + 'px;list-style-type:' + row[2] + '">' + row[1] + '</li>';
+				return '<li class="' + row[0] + '" style="margin-left:' + list_styles_margin[row[0]] + 'px;list-style-type:' + row[2] + '">' +
+					row[1].replace(/([^\x00-\x7F]+)([A-Za-z0-9]+)/g, '$1 $2').replace(/([A-Za-z0-9]+)([^\x00-\x7F]+)/g, '$1 $2') +
+				'</li>';
 			}).join('');
 			output += '</ul>';
 			return output;
