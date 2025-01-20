@@ -23,7 +23,7 @@ export default {
 			{ rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
 			{ rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
 			{ rel: "manifest", href: "/site.webmanifest" },
-			{ rel: 'stylesheet', 'href': '/css/tocas.min.css' },
+			{ rel: 'stylesheet', 'href': '/css/tocas.min.css?v=20250121' },
 			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css', media: "(prefers-color-scheme: light)"},
 			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.18/dark.min.css', media: "(prefers-color-scheme: dark)"}
 		],
@@ -48,7 +48,6 @@ export default {
 		id: 'G-4WZWP0DJMR'
 	},
 	generate: {
-		fallback: '404.html',
 		async routes() {
 			const mode = process.env.MODE || 'prod';
 			if(mode != 'prod') return [];

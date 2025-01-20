@@ -441,10 +441,10 @@ export default {
 			}
 			this.$axios.get('https://api.mcut-course.com/detail.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '') + '&ver=full')
 				.then(response => {
-					this.course = response.data[3];
-					this.more = response.data[0];
-					this.office_time = response.data[1];
-					this.schedule = response.data[2];
+					this.course = response.data[3] ?? {};
+					this.more = response.data[0] ?? [];
+					this.office_time = response.data[1] ?? [];
+					this.schedule = response.data[2] ?? [];
 					this.loading = false;
 				});
 		},
