@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1372/0802", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"109113720802",name:"有機化學(一)",type:"必修",dept:"四技化工系",year:"2",class:"乙",teacher:"王趙增",credit:a,classroom:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

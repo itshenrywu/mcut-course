@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2280/3I01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112222803I01",name:"企業永續發展專題",type:"選修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"王文生",credit:a,classroom:a,max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

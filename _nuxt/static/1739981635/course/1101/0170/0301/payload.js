@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0170/0301", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"110101700301",name:"新聞採訪與寫作",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"蒲彥光",credit:"2",classroom:"教307",max:"40",min:"10",comment:"",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3180/0701", {data:[{course:{time:[["6","5~7"]],id:"110131800701",name:"設計專業實習(二)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"謝政道",credit:"3",classroom:"工設系討論室1",max:"20",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

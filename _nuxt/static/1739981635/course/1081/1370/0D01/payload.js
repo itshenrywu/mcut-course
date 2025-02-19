@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1370/0D01", (function(a){return {data:[{course:{time:[["1","1~3"]],id:"108113700D01",name:"產業技術及問題解析",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"簡良榮",credit:a,hour:a,max:"55",min:"10",comment:"化四甲乙合班上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1380/2101", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"113113802101",name:"分離技術",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"施正元",credit:a,classroom:a,max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

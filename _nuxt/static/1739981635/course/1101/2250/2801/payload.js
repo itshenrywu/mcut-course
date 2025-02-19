@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2250/2801", {data:[{course:{time:[["2","5~7"]],id:"110122502801",name:"服務業管理",type:"選修",dept:"四技經管系",year:"1",class:"甲",teacher:"林裕勛",credit:"3",classroom:"福爾摩沙講堂",max:"65",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

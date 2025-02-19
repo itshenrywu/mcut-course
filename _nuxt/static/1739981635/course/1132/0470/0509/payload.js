@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0470/0509", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113204700509",name:"微積分(二)",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"劉弘一",credit:a,classroom:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/21A0/0D01", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"110121A00D01",name:"數據科學與程式語言",type:"選修",dept:"工管系碩專班",year:a,class:"甲",teacher:"鄭明顯",credit:"3",classroom:"617電腦室",max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

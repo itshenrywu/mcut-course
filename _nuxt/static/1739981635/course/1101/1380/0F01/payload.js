@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1380/0F01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"110113800F01",name:"生醫高分子複合材料",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"鄭有為",credit:a,classroom:"教301-2",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

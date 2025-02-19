@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3070/0U01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"110230700U01",name:"數位攝影",type:"選修",dept:"四技行設專班",year:a,class:"甲",teacher:"商耀元",credit:"3",classroom:"教308",max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

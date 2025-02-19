@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0570/0701", {data:[{course:{time:[["4","7~8"]],id:"110105700701",name:"能源科技面面觀",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"阮弼群",credit:"2",classroom:"體208",max:"55",min:"10",comment:"",otherinfo:"自然科學"}}],fetch:{},mutations:[]});

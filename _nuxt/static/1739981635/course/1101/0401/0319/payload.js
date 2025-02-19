@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0401/0319", (function(a){return {data:[{course:{time:[["2","8~8.5"]],id:"110104010319",name:"大學之道",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"鄭有為",credit:a,classroom:"教304",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

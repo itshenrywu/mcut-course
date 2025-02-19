@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1640/0901", {data:[{course:{time:[["4","1~2"]],id:"110216400901",name:"工業衛生",type:"必修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"許金玉",credit:"2",classroom:"體203",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

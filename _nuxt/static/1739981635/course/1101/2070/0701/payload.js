@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2070/0701", {data:[{course:{time:[["6","5~8"]],id:"110120700701",name:"實務專題",type:"必修",dept:"環實務",year:"3",class:"甲",teacher:"吳永富",credit:"1",classroom:"環資實驗室",max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

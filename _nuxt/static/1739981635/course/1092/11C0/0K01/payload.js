@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/11C0/0K01", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"109211C00K01",name:"機構學",type:"必修",dept:"四技進修部機械系",year:"2",class:"甲",teacher:"張國棟",credit:a,classroom:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

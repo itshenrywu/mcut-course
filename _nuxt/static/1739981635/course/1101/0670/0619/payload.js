@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0670/0619", {data:[{course:{time:[["4","5~6"]],id:"110106700619",name:"體育(三)",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"甘光熙",credit:"1",classroom:"戶外",max:"23",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

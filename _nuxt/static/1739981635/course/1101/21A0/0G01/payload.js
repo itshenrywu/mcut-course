@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/21A0/0G01", {data:[{course:{time:[["2","9~11"]],id:"110121A00G01",name:"人工智慧",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"王建智",credit:"3",classroom:"630",max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

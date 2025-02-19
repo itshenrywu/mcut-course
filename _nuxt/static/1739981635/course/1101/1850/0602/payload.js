@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1850/0602", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"110118500602",name:"材料物理性質",type:"必修",dept:"四技材工系",year:b,class:"乙",teacher:"盧榮宏",credit:b,classroom:"子316",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1~2","3")));

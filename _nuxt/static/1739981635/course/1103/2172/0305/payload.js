@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/2172/0305", {data:[{course:{time:[["1","5~8"],["2","1~4"]],id:"110321720305",name:"統計學(含實習)(二)",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"王建智",credit:"3",classroom:"624演講廳",max:"60",min:"5",comment:"與三甲合班 帶狀課程7\u002F4-9\u002F2",otherinfo:null}}],fetch:{},mutations:[]});

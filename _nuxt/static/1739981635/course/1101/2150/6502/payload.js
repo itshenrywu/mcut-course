@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2150/6502", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"110121506502",name:"工程經濟",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"張秉裕",credit:"3",classroom:"教204",max:"75",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

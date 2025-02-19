@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1350/0202", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"110213500202",name:"質能平衡",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"陳政佑",credit:"3",classroom:"體208",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

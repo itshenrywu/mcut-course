@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0I01", {data:[{course:{time:[["2","5~7"]],id:"110130700I01",name:"商業軟體應用",type:"必修",dept:"四技行設專班",year:"1",class:"甲",teacher:"陳世民",credit:"3",classroom:"517",max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1870/0S01", (function(a,b){return {data:[{course:{time:[["1",a],["2",a]],id:"110118700S01",name:"感測原理與應用實務",type:"選修",dept:"四技材工系",year:b,class:"甲",teacher:"蘇莉真",credit:b,classroom:"子316",max:"23",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1~2","3")));

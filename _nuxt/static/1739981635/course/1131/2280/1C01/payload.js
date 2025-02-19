@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2280/1C01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"113122801C01",name:"服務理論與實務專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"陳樹全",credit:a,classroom:a,max:"50",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

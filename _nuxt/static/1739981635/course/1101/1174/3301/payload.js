@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1174/3301", {data:[{course:{time:[["4","4~4"],["5","5~6"]],id:"110111743301",name:"普通物理(一)",type:"必修",dept:"四技材工系",year:"1",class:"甲",teacher:"陳勝吉",credit:"3",classroom:"圖8F簡報室",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

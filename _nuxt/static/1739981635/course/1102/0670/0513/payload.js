@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0670/0513", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"110206700513",name:"體育(二)",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"吳宇豐",credit:a,classroom:"戶外",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

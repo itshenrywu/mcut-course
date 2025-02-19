@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/12C0/1C01", (function(a){return {data:[{course:{time:[["6","6~8"]],id:"108212C01C01",name:"通信原理",type:"選修",dept:"四技進修部電機系",year:a,class:"甲",teacher:"蔡文星",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

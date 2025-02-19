@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2070/0U01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"111120700U01",name:"工程倫理與實務講座",type:"選修",dept:"環實務",year:"4",class:"甲",teacher:"黃浚瑋",credit:a,classroom:"3",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

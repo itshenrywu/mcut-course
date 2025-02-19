@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1270/0O01", (function(a){return {data:[{course:{time:[["4","1~2"],["5","1~1"]],id:"108212700O01",name:"數位邏輯設計",type:"必修",dept:"四技電機系",year:"1",class:"甲",teacher:"陳瓊安",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

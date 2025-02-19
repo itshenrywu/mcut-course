@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0072/0502", {data:[{course:{time:[["5","3~4"]],id:"110100720502",name:"英語聽講(高級)(一)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"歐貞秀",credit:"1",classroom:"綜大多媒體教室",max:"40",min:"10",comment:"機械高A",otherinfo:null}}],fetch:{},mutations:[]});

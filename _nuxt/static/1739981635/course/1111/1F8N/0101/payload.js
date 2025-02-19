@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1F8N/0101", {data:[{course:{time:[["3","5~6"]],id:"11111F8N0101",name:"智控組書報討論(一)",type:"必修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"林君玲",credit:"0",classroom:"2",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

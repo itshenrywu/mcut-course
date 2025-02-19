@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2280/1W01", {data:[{course:{time:[["4","2~4"]],id:"110122801W01",name:"人力資源管理專題",type:"必修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"盧建中",credit:"3",classroom:"506",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

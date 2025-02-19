@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/11C0/0R01", {data:[{course:{time:[["1","2~4"]],id:"110111C00R01",name:"流體力學",type:"選修",dept:"四技進修部機械系",year:"4",class:"甲",teacher:"鍾永強",credit:"3",classroom:"機413",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

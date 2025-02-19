@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1370/2503", {data:[{course:{time:[["2","9~11"]],id:"110213702503",name:"化工熱力學",type:"重修",dept:"四技化工系",year:"4",class:"重",teacher:"郭亮吟",credit:"3",classroom:"體208",max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

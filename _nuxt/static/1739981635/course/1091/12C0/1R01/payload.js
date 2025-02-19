@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/12C0/1R01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"109112C01R01",name:"工業配線",type:"選修",dept:"四技進修部電機系",year:a,class:"甲",teacher:"古家豪",credit:a,classroom:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0401/0305", (function(a){return {data:[{course:{time:[["2","8~8.5"]],id:"110104010305",name:"大學之道",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"林延儒",credit:a,classroom:"綜大303",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

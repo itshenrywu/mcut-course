@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1174/2701", (function(a){return {data:[{course:{time:[[a,"5~6"],["4","1~2"]],id:"110111742701",name:"電力電子學",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"楊岳儒",credit:a,classroom:"機201",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

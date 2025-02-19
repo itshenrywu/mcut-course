@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0M01", {data:[{course:{time:[["2","1~3"]],id:"110130700M01",name:"會計學",type:"選修",dept:"四技行設專班",year:"1",class:"甲",teacher:"胡家康",credit:"3",classroom:"體207",max:"40",min:"10",comment:"限設計群學生必選",otherinfo:null}}],fetch:{},mutations:[]});

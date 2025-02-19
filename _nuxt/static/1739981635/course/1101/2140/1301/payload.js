@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2140/1301", (function(a){return {data:[{course:{time:[["1","1~2"],["2","2~3"],["4","5~8"]],id:"110121401301",name:"作業研究(含實習)(一)",type:"重修",dept:"四技工管系",year:a,class:"重",teacher:"陳隆暉",credit:a,classroom:"教104",max:"50",min:"10",comment:"帶狀課程：上課時間為7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0072/0603", {data:[{course:{time:[["1","5~6"]],id:"110100720603",name:"英文實務(一)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"鄧心怡",credit:"0",classroom:"子313",max:"55",min:"10",comment:"機械",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1170/0I01", {data:[{course:{time:[["1","2~4"]],id:"110111700I01",name:"電動車技術",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"楊岳儒",credit:"3",classroom:"機111",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

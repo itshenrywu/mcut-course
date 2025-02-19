@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0070/0520", (function(a){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"110100700520",name:"勤勞教育(一)",type:"必修",dept:"四技行設專班",year:a,class:"甲",teacher:"楊朝明",credit:"0",classroom:"體207",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

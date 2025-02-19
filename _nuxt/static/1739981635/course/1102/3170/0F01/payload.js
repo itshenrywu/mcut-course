@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3170/0F01", {data:[{course:{time:[["5","2~4"]],id:"110231700F01",name:"進階電腦繪圖",type:"選修",dept:"四技工設系",year:"1",class:"甲",teacher:"林晏竹",credit:"3",classroom:"CAID工作坊",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

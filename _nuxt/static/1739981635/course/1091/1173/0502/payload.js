@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1173/0502", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109111730502",name:"材料科學與工程",type:"必修",dept:"四技機械系",year:"2",class:"丙",teacher:"馮奎智",credit:a,classroom:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

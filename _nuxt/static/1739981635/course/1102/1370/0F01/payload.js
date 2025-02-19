@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1370/0F01", {data:[{course:{time:[["3","5~6"]],id:"110213700F01",name:"化工產業與人工智慧應用",type:"必修",dept:"四技化工系",year:"2",class:"甲",teacher:"李英正",credit:"1",classroom:"化視聽教室",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

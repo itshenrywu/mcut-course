@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1E8L/0101", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"10811E8L0101",name:"近代控制理論",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"陳宏毅",credit:a,hour:a,max:"12",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

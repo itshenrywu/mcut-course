@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/00C0/0401", {data:[{course:{time:[["4","9~10"]],id:"110200C00401",name:"美國文化與社會發展",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"陳鈺明",credit:"2",classroom:"教207",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

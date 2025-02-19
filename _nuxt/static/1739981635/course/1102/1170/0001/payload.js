@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1170/0001", {data:[{course:{time:[["5","5~6"]],id:"110211700001",name:"靜力學",type:"必修",dept:"四技機械系",year:"1",class:"甲",teacher:"陳明彥",credit:"2",classroom:"機501",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});
