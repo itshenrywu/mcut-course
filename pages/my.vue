@@ -532,6 +532,7 @@ export default {
 		scriptableCode() {
 			let courses = {1:[], 2:[], 3:[], 4:[], 5:[]};
 			this.myCourses.forEach(course => {
+				if(course.time[0] > 5) return;
 				courses[course.time[0]].push({
 					n: course.name,
 					c: course.classroom,
