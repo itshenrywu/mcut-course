@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1680/0701", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109216800701",name:"循環經濟與環境永續",type:"選修",dept:"環安衛系碩士班",year:a,class:"甲",teacher:"陳慶隆",credit:b,classroom:b,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

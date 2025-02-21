@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3180/0201", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"113231800201",name:"書報討論",type:"必修",dept:"工設系碩士班",year:a,class:"甲",teacher:"賴宛吟",credit:b,classroom:b,max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/6270/2B01", (function(a){return {data:[{course:{time:[[a,"6~8"]],id:"112262702B01",name:"資料庫實務",type:"選修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"謝筱齡",credit:a,classroom:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

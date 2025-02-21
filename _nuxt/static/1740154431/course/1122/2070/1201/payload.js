@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/1201", (function(a){return {data:[{course:{time:[["5","3~4"]],id:"112220701201",name:"半導體物理",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"張峻瑜",credit:a,classroom:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

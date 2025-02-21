@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1171/0501", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"109111710501",name:"電機學實驗",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"楊岳儒",credit:"1",classroom:"3",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0170/0F19", (function(a){return {data:[{course:{time:[[a,"1~2"]],id:"111101700F19",name:"文學鑑賞與情意表達",type:"必修",dept:"四技機械系",year:"1",class:"乙",teacher:"林立仁",credit:a,classroom:a,max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

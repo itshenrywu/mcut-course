@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1540/1003", (function(a,b){return {data:[{course:{time:[[b,"1~1"],[a,"1~2"]],id:"109215401003",name:"電子學(一)",type:"必修",dept:"四技電子系",year:b,class:"乙",teacher:"吳亞芬",credit:a,classroom:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

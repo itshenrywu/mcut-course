@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1380/2701", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"110213802701",name:"應用熱力學",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"吳弦聰",credit:a,classroom:"教209",max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

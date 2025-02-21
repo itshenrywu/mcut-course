@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0670/0719", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"110206700719",name:"體育(四)",type:"必修",dept:"四技工管系",year:"2",class:"乙",teacher:"羅玉枝",credit:a,classroom:"戶外",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

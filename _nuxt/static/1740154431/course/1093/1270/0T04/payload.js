@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1270/0T04", (function(a,b){return {data:[{course:{time:[[b,"9~11"],[a,"9~10"]],id:"109312700T04",name:"電機機械與實習",type:"重修",dept:"四技電機系",year:a,class:"暑",teacher:"吳啟耀",credit:b,classroom:a,max:"50",min:"5",comment:"暑修併四技三重上課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

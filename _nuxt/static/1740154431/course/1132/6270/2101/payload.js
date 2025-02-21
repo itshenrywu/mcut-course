@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6270/2101", (function(a){return {data:[{course:{time:[[a,"0.5~2"]],id:"113262702101",name:"跨領域頂石專題(一)",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"李建興",credit:a,classroom:"3",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2270/0A01", {data:[{course:{time:[["1","5~7"]],id:"110222700A01",name:"數位行銷",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"孫儷芳",credit:"3",classroom:"517",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

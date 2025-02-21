@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3140/5401", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"111231405401",name:"人因工程",type:"必修",dept:"四技工設系",year:"2",class:"甲",teacher:"高清漢",credit:a,classroom:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

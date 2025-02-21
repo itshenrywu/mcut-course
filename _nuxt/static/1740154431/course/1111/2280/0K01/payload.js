@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2280/0K01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"111122800K01",name:"管理會計專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"李家如",credit:a,classroom:a,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

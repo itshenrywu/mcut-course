@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0370/0D01", {data:[{course:{time:[["1","11~12"]],id:"110203700D01",name:"墓葬生與死",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"沈明得",credit:"2",classroom:"網路",max:"40",min:"10",comment:"第1階段",otherinfo:"社會科學"}}],fetch:{},mutations:[]});

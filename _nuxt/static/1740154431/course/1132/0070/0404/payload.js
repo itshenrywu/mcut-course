@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0404", {data:[{course:{time:[["7","10~10"]],id:"113200700404",name:"工讀實務實習(四)",type:"必修",dept:"半導體學程",year:"3",class:"甲",teacher:"阮弼群",credit:"5",classroom:"29",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

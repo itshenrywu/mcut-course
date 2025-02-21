@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1273/0705", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[b,"1~2"]],id:"108312730705",name:"自動控制",type:"重修",dept:"四技電機系",year:b,class:"暑",teacher:"邱機平",credit:a,hour:a,max:"50",min:"5",comment:"暑修併四技三上上課",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

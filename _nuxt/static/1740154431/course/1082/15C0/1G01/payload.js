@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/15C0/1G01", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"108215C01G01",name:"醫療電子",type:"必修",dept:"四技進修部電子系",year:"4",class:"甲",teacher:"何文吉",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

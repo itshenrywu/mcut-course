@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0608", (function(a){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"111200700608",name:"勤勞教育(二)",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"姚栢文",credit:"0",classroom:"0.5",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

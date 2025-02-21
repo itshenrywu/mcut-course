@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/11A2/0401", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"108111A20401",name:"專利分析與創新設計",type:"必修",dept:"機械系碩專班",year:a,class:"甲",teacher:"傅本然",credit:b,hour:b,max:"12",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));
