@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1170/1Y01", {data:[{course:{time:[["5","3~4"]],id:"110211701Y01",name:"人工智慧概論",type:"選修",dept:"四技機械系",year:"1",class:"甲",teacher:"黃浚瑋",credit:"2",classroom:"機501",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

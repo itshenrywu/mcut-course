@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0601/0201", {data:[{course:{time:[["4","5~6"]],id:"110206010201",name:"應用文習作",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"張莞苓",credit:"2",classroom:"教208",max:"48",min:"10",comment:"",otherinfo:"人文藝術"}}],fetch:{},mutations:[]});

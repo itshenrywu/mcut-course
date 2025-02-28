@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1674/1301", {data:[{course:{time:[["2","5~7"]],id:"110216741301",name:"廢棄物資源化工程",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"官文惠",credit:"3",classroom:"教209",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

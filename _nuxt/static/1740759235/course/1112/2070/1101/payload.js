@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2070/1101", (function(a){return {data:[{course:{time:[["5","3~4"]],id:"111220701101",name:"質能均衡",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"吳容銘",credit:a,classroom:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

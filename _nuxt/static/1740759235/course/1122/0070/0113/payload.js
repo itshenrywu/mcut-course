@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0113", {data:[{course:{time:[["7","7~7"]],id:"112200700113",name:"工讀實務實習(一)",type:"必修",dept:"四技電機系",year:"3",class:"甲",teacher:"吳長洲",credit:"4",classroom:"29",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

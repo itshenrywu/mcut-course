@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1370/3402", {data:[{course:{time:[["2","1~4"]],id:"110213703402",name:"化學工程實習(二)",type:"必修",dept:"四技化工系",year:"4",class:"乙",teacher:"阮宏藝",credit:"1",classroom:"綜(B1)101",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1174/2202", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"108311742202",name:"光電材料",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"馮奎智",credit:b,hour:b,max:"60",min:"10",comment:"併機三乙",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

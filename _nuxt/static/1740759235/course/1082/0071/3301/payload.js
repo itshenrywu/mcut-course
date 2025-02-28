@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0071/3301", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"108200713301",name:"進階日語會話",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"楊淑惠",credit:b,hour:b,max:"48",min:"10",comment:"須修過一學期日語課或提出相關證明符合者",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2")));

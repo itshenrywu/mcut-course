@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1580/0D01", {data:[{course:{time:[["2","2~4"]],id:"110215800D01",name:"程式設計進階",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"鄒慶士",credit:"3",classroom:"子217",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

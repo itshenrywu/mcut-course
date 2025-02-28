@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2070/0101", {data:[{course:{time:[["5","5~7"]],id:"109120700101",name:"生物科技實驗",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"劉昭麟",credit:"1",classroom:"3",max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

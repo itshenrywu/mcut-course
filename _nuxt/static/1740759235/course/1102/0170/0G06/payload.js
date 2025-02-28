@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0170/0G06", {data:[{course:{time:[["3","7~8"]],id:"110201700G06",name:"藝文涵養與社會參與",type:"必修",dept:"四技材工系",year:"1",class:"甲",teacher:"楊穎詩",credit:"2",classroom:"體208",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

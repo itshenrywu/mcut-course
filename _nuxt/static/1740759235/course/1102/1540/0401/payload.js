@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1540/0401", (function(a,b){return {data:[{course:{time:[[a,"1~1"],[b,"1~2"]],id:"110215400401",name:"電路學",type:"必修",dept:"四技電子系",year:a,class:"甲",teacher:"洪偉文",credit:b,classroom:"子313",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

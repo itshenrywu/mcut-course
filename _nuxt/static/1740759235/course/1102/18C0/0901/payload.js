@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/18C0/0901", {data:[{course:{time:[["6","7~9"]],id:"110218C00901",name:"熱處理學",type:"選修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"彭坤增",credit:"3",classroom:"綜大135",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

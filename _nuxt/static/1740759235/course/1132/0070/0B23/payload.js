@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0B23", {data:[{course:{time:[["7","9~9"]],id:"113200700B23",name:"工讀實務實習(三)",type:"必修",dept:"行銷設計學程",year:"3",class:"甲",teacher:"游淑萍",credit:"4",classroom:"29",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

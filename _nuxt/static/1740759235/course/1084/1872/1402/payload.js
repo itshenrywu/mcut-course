@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/1872/1402", (function(a,b){return {data:[{course:{time:[["5",a],["6",a]],id:"108418721402",name:"高分子材料",type:"選修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"江炳煌",credit:b,hour:b,max:"48",min:"10",comment:"107入學學生選修",otherinfo:null}}],fetch:{},mutations:[]}}("5~7","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3070/0O01", {data:[{course:{time:[["5","2~4"]],id:"110230700O01",name:"色彩與造型應用",type:"必修",dept:"四技行設專班",year:"1",class:"甲",teacher:"楊朝明",credit:"3",classroom:"807",max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

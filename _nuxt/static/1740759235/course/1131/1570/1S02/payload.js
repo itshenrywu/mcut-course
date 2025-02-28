@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1570/1S02", {data:[{course:{time:[["5","3~4"]],id:"113115701S02",name:"工程倫理與專業實務講座",type:"必修",dept:"四技電子系",year:"4",class:"乙",teacher:"陳耀添",credit:"1",classroom:"2",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});
