@@ -28,6 +28,6 @@ export default {
 				lang: 'zh-TW'
 			}
 		}
-	},
+	}
 };
 </script>

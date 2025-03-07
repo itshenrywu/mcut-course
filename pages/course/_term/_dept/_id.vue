@@ -1,6 +1,18 @@
 <template>
 	<div class="cell is-secondary is-scrollable is-fluid is-horizontal" id="page-course">
-		<div class="ts-container has-top-padded-large">
+		<div class="ts-app-center" v-if="notFound">
+			<div>
+				<div class="ts-header is-icon is-center-aligned is-big">
+					<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+					找不到此頁面
+				</div>
+				<div class="ts-text is-center-aligned has-top-padded">
+					此連結可能已失效，<br>
+					請點擊上方選單中的其他連結。
+				</div>
+			</div>
+		</div>
+		<div class="ts-container has-top-padded-large" v-else>
 			<div class="ts-grid is-compact is-middle-aligned">
 				<div class="column is-10-wide mobile-fluid">
 					<div class="ts-text is-description">
@@ -344,7 +356,8 @@ export default {
 			schedule: [],
 			savedCourse: [],
 			loading: true,
-			start: Date.now()
+			start: Date.now(),
+			notFound: false
 		}
 	},
 	head() {
@@ -385,6 +398,10 @@ export default {
 			return;
 		}
 		this.savedCourse = await this.$store.dispatch('getSavedCourse');
+		if(!this.course || !this.course.name) {
+			this.notFound = true;
+			return;
+		}
 		this.fetchData();
 	},
 	computed: {

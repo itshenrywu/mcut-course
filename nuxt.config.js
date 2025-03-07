@@ -48,6 +48,7 @@ export default {
 		id: 'G-4WZWP0DJMR'
 	},
 	generate: {
+		fallback: '404.html',
 		async routes() {
 			const mode = process.env.MODE || 'prod';
 			if(mode != 'prod') return [];
