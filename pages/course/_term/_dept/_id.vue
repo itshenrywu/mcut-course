@@ -4,7 +4,7 @@
 			<div>
 				<div class="ts-header is-icon is-center-aligned is-big">
 					<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
-					找不到此頁面
+					找不到此課程
 				</div>
 				<div class="ts-text is-center-aligned has-top-padded">
 					此連結可能已失效，<br>

@@ -50,12 +50,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%">
+		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%; display: flex; align-items: center;" v-if="notFound">
+			<div class="ts-container" style="display: flex; flex-direction: column; align-items: center;">
+				<div class="ts-header is-icon is-center-aligned is-big">
+					<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+					找不到此課程總表
+				</div>
+				<div class="ts-text is-center-aligned has-top-padded">
+					此連結可能已失效，請點擊上方選單中的其他連結，或選擇其他課程總表。
+				</div>
+				<button class="ts-button is-secondary is-end-labeled-icon mobile-only has-top-spaced" @click="showMobileSidebar = !showMobileSidebar">選擇課程總表
+					<span class="ts-icon is-chevron-down-icon"></span>
+				</button>
+			</div>
+			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
+		</div>
+		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%" v-else>
 			<div class="ts-container has-top-padded-large is-fitted mobile-padded">
 				<h1 class="ts-header is-huge has-top-padded has-bottom-padded-large">畢業學分門檻</h1>
 				<button class="ts-button is-fluid is-secondary is-end-labeled-icon mobile-only"
 					@click="showMobileSidebar = !showMobileSidebar">
-					<template v-if="currentRule == '-1'">選擇一個課程總表</template>
+					<template v-if="currentRule == '-1'">選擇課程總表</template>
 					<template v-else-if="currentRule == '000'">
 						{{ currentYear }} 入學 /
 						{{ currentDeptName }}
@@ -368,6 +383,7 @@ export default {
 			allAourses: [],
 
 			loading: true,
+			notFound: false,
 
 			showMobileSidebar: false,
 		};
@@ -404,6 +420,9 @@ export default {
 	mounted() {
 		this.$root.$on('showAd', () => { this.showAd = true; });
 		this.init();
+		if(!this.currentRuleName && this.$route.params.id) {
+			this.notFound = true;
+		}
 	},
 	methods: {
 		async init() {
@@ -447,6 +466,7 @@ export default {
 		},
 		getRule() {
 			this.loading = true;
+			this.notFound = false;
 			if(this.currentRule == '000') this.currentRuleName = this.currentDeptName;
 			else this.currentRuleName = Object.values(this.rules[this.currentYear]).find(item => this.currentRule in item)?.[this.currentRule].name;
 			this.$axios.get('https://api.mcut-course.com/rule/get.php?year=' + this.currentYear + '&dept=' + this.currentDept + '&rule=' + this.currentRule)
@@ -454,6 +474,9 @@ export default {
 					this.rule = res.data;
 					this.initializeShowProperty();
 					this.loading = false;
+					if(!this.rule.data || this.rule.data.length == 0) {
+						this.notFound = true;
+					}
 				});
 			this.changeTerm();
 		},
