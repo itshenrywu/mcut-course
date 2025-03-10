@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0509/0611", (function(a,b){return {data:[{course:{time:[[b,"2~4"]],id:"109205090611",name:"歷史",type:"必修",dept:"四技材工系",year:a,class:"甲",teacher:"陳冠穎",credit:a,classroom:a,max:b,min:"1",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

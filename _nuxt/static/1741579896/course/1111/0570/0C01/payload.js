@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0570/0C01", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"111105700C01",name:"永續農業與綠色生活體驗",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"張家禎",credit:a,classroom:a,max:"48",min:"10",comment:"",otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("2")));

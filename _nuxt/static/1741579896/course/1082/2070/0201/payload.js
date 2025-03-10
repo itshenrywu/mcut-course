@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2070/0201", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108220700201",name:"應用程式設計(一)",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"吳啟耀",credit:a,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

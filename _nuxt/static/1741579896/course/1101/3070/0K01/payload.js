@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0K01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"110130700K01",name:"服務業管理",type:"選修",dept:"四技行設專班",year:"1",class:"甲",teacher:"廖宜慶",credit:a,classroom:a,max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

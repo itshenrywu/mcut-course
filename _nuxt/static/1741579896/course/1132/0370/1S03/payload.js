@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0370/1S03", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"113203701S03",name:"美國風雲人物與世界關係",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳鈺明",credit:a,classroom:a,max:"45",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2")));

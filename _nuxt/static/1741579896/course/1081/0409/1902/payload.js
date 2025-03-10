@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0409/1902", (function(a){return {data:[{course:{time:[["5","9~10"]],id:"108104091902",name:"社會科學導論",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"黃淑芳",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2")));
