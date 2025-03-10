@@ -490,7 +490,7 @@ export default {
 			setTimeout(() => {
 				if (document.querySelector('.adsbygoogle') && document.querySelector('.adsbygoogle').offsetHeight == 0) {
 					document.querySelector('.ad .ts-content').innerHTML = '<div class="ts-text is-description has-bottom-padded-small">贊助商</div>\
-					<div class="ts-text is-secondary is-center-aligned has-vertically-padded">太無情了吧擋廣告 :(</div>';
+					<div class="ts-text is-secondary is-center-aligned has-vertically-padded">太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>';
 				}
 			}, 500);
 		},

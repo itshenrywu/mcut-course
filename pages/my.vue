@@ -381,6 +381,10 @@
 	top: calc(50% - 150px);
 }
 
+#page-my .ad.fixed .ts-text:last-child {
+	padding-top: 100px !important
+}
+
 @media (max-width: 767.98px) {
 }
 </style>
@@ -1172,6 +1176,9 @@ export default {
 		},
 	},
 	mounted() {
+		window.addEventListener('resize', () => {
+			this.setCanvasSize();
+		});
 		this.editingCourse = Object.freeze(this.defaultCourse);
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
 		this.$axios.get('/scriptable.min.js?v=2').then(res => {
