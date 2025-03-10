@@ -588,19 +588,17 @@ export default {
 					if (levels[levelA] !== levels[levelB]) return levels[levelA] - levels[levelB];
 					else return classes[classA] - classes[classB];
 				});
-				var html = '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">';
-				real_courses.forEach(_course => {
-					html += '<a class="item" href="/course/' + _course.id.substring(0, 4) + '/' + _course.id.substring(4, 8) + '/' + _course.id.substring(8) + '/">\
-						<div class="ts-header">' + _course.name + '</div>\
-						<div class="ts-text is-description is-start-aligned">' +
-							_course.teacher + ' 老師' + (_course.comment!='' ? ' / ' + _course.comment : '') + '\
-						</div>\
-					</a>';
-				});
-				html += '</div>';
 				this.$swal({
 					title: '請選擇要查看的課程',
-					html: html,
+					html: '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">' + 
+						real_courses.map(_course => 
+						'<a class="item" href="/course/' + _course.id.substring(0, 4) + '/' + _course.id.substring(4, 8) + '/' + _course.id.substring(8) + '/">\
+							<div class="ts-header">' + _course.name + '</div>\
+							<div class="ts-text is-description is-start-aligned">' +
+								_course.teacher + ' 老師' + (_course.comment!='' ? ' / ' + _course.comment : '') + '\
+							</div>\
+						</a>'
+					).join('') + '</div>',
 					showCloseButton: true,
 					showConfirmButton: false,
 				});

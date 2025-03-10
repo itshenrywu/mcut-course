@@ -44,6 +44,25 @@
 				</div>
 			</div>
 			<div class="ts-grid is-stretched has-top-spaced" v-if="course.name">
+				<div class="column is-16-wide mobile-fluid" v-if="similarCourses.length > 0">
+					<a class="ts-box" @click="viewSimilarCourses();" style="cursor: pointer;">	
+						<div class="ts-content">
+							<div class="ts-grid is-compact is-middle-aligned">
+								<div class="column is-15-wide">
+									<div class="ts-text is-description">
+										<span class="ts-badge is-small is-dense">提示</span>
+										<template v-if="newestYear != course.id.substring(0,3)">您正在查看前幾學期的開課資料，這門課在 {{newestYear}} 學年也有開設！</template>
+										<template v-else-if="similarCourses.some(course => course.id.substring(0,3) != newestYear)">這門課在前幾個學年也有開設，點此可查看歷年開課紀錄！</template>
+										<template v-else>這門課也有其他系所開設，點此可查看開課資料！</template>
+									</div>
+								</div>
+								<div class="column is-1-wide" style="text-align: right;">
+									<span class="ts-icon is-angle-right-icon"></span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
 				<div class="column is-8-wide mobile-fluid">
 					<div class="ts-box">
 						<div class="ts-content">
@@ -140,7 +159,8 @@
 					</tr>
 					<tr v-if="!loading && (!more || more.length == 0)">
 						<td colspan="2">
-							<div class="ts-text is-center-aligned is-disabled has-vertically-padded-large">授課老師未填寫詳細課程資訊
+							<div class="ts-text is-center-aligned is-disabled has-vertically-padded-huge">
+								授課老師未填寫詳細課程資訊
 							</div>
 						</td>
 					</tr>
@@ -184,7 +204,7 @@
 						<td colspan="2">
 							<b>教學進度表</b>
 							<div class="ts-box has-top-spaced-small">
-								<div class="ts-content">
+								<div class="ts-content is-in-table">
 									<table class="ts-table">
 										<tbody>
 											<tr v-for="s in schedule">
@@ -315,6 +335,10 @@
 	}
 
 	#page-course .ts-content {
+		padding: .25rem 1rem .3rem;
+	}
+
+	#page-course .ts-content.is-in-table {
 		padding: .25rem 1rem .5rem;
 	}
 }
@@ -357,6 +381,8 @@ export default {
 			savedCourse: [],
 			loading: true,
 			start: Date.now(),
+			similarCourses: [],
+			newestYear: '',
 			notFound: false
 		}
 	},
@@ -400,7 +426,7 @@ export default {
 		this.savedCourse = await this.$store.dispatch('getSavedCourse');
 		if(!this.course || !this.course.name) {
 			this.notFound = true;
-			return;
+			//return;
 		}
 		this.fetchData();
 	},
@@ -456,14 +482,19 @@ export default {
 					this.courses = res.data.course;
 				});
 			}
-			this.$axios.get('https://api.mcut-course.com/detail.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '') + '&ver=full')
-				.then(response => {
-					this.course = response.data[3] ?? {};
-					this.more = response.data[0] ?? [];
-					this.office_time = response.data[1] ?? [];
-					this.schedule = response.data[2] ?? [];
-					this.loading = false;
-				});
+			this.$axios.get('https://api.mcut-course.com/detail.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '') + '&ver=full').then(response => {
+				this.course = response.data[3] ?? {};
+				this.more = response.data[0] ?? [];
+				this.office_time = response.data[1] ?? [];
+				this.schedule = response.data[2] ?? [];
+				this.loading = false;
+			});
+			this.$axios.get('https://api.mcut-course.com/similar.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '')).then(response => {
+				if(response.data.similar) {
+					this.similarCourses = response.data.similar;
+					this.newestYear = response.data.newest_year;
+				}
+			});
 		},
 		async saveCourse() {
 			if (this.savedCourse.includes(this.course.id)) {
@@ -588,9 +619,40 @@ export default {
 				html: '<div style="text-align:left">' + timeInfoText + '</div>',
 				showConfirmButton: false,
 				showCloseButton: true,
-				width: timeInfoText.includes('無固定') ? '24rem' : '16rem',
+				width: timeInfoText.includes('無固定') ? '28rem' : '20rem',
 			});
-		}
+		},
+		viewSimilarCourses() {
+			this.$swal({
+				title: '歷年開課 / 其他系所開課 (' + this.similarCourses.length + ')',
+				html: '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">' +
+					this.similarCourses
+					.sort((a, b) => {
+						if (a.id.substring(0, 4) == b.id.substring(0, 4)) {
+							if(a.dept != this.course.dept && b.dept == this.course.dept) return 1;
+							else if(a.dept == this.course.dept && b.dept != this.course.dept) return -1;
+							else return a.time[0][0] - b.time[0][0];
+						}
+						return b.id.substring(0, 4) - a.id.substring(0, 4);
+					})
+					.map(course => 
+					'<a class="item" href="/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/">\
+						<div class="ts-header">' + course.name + '</div>\
+						<div class="ts-text is-description is-start-aligned">' +
+							course.id.substring(0, 3) + '-' + course.id.substring(3, 4) + ' 學期・' +
+							course.dept + '・' +
+							course.teacher + ' 老師' +
+						'</div>\
+					</a>'
+					).join('') + '</div>',
+				showConfirmButton: false,
+				showCloseButton: true,
+			}).then((result) => {
+				if (result.isConfirmed) {
+					this.$router.push('/course/' + this.newestYear + '/' + this.course.id.substring(4));
+				}
+			});
+		},
 	}
 }
 </script>
