@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/18C1/0201", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"108118C10201",name:"材料科學導論(一)",type:"必修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"謝建國",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

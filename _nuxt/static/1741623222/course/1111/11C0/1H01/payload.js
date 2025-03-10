@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/11C0/1H01", {data:[{course:{time:[["5","9~12"]],id:"111111C01H01",name:"汽車實習(二)",type:"重修",dept:"四技進修部機械系",year:"2",class:"重",teacher:"黃道易",credit:"3",classroom:"4",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

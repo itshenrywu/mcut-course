@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0K20", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"112100700K20",name:"大學之道",type:"必修",dept:"行銷設計學程",year:b,class:"甲",teacher:"林金祥",credit:b,classroom:"2",max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","1")));

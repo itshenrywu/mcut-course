@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0170/0F02", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"112101700F02",name:"文學鑑賞與情意表達",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"張莞苓",credit:a,classroom:a,max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

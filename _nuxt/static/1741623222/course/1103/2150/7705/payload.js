@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/2150/7705", {data:[{course:{time:[["6","5~8"]],id:"110321507705",name:"物料管理",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"陳琨太",credit:"3",classroom:"教103",max:"60",min:"5",comment:"與三甲合斑 塊狀第二階段6\u002F16-7\u002F1",otherinfo:null}}],fetch:{},mutations:[]});

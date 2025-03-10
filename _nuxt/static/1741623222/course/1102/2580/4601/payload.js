@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2580/4601", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"110225804601",name:"認知人因工程",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"李育奇",credit:a,classroom:a,max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

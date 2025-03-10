@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2070/2R01", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"113220702R01",name:"材料科學導論(二)",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"張峻瑜",credit:a,classroom:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

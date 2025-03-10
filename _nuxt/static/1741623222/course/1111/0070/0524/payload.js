@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0070/0524", (function(a){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"111100700524",name:"勤勞教育(一)",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"楊淑宜",credit:"0",classroom:"0.5",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

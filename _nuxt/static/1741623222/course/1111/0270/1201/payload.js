@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0270/1201", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"111102701201",name:"初階德語",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"孫亞玲",credit:a,classroom:a,max:"48",min:"10",comment:"",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

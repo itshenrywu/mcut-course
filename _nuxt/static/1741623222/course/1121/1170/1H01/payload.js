@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1170/1H01", (function(a){return {data:[{course:{time:[[a,"1~3"],["5","2~2"]],id:"112111701H01",name:"電機學與實驗",type:"選修",dept:"四技機械系",year:"2",class:"甲",teacher:"陳源林",credit:a,classroom:"4",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

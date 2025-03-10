@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2280/0V01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"112222800V01",name:"企業倫理專題",type:"必修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"廖宜慶",credit:a,classroom:a,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));
