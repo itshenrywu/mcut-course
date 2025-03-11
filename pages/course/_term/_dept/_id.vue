@@ -441,8 +441,7 @@ export default {
 		this.savedCourse = await this.$store.dispatch('getSavedCourse');
 		if(!this.course || !this.course.name) {
 			this.notFound = true;
-			this.notFound = false; // XXX
-			// return; // XXX
+			return;
 		}
 		this.fetchData();
 	},
