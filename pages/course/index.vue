@@ -463,7 +463,7 @@ export default {
 				icon: 'question',
 				title: '切換至 ' + term + ' 學期？',
 				html: '先前收藏的課程將會清空！',
-				confirmButtonText: '確定',
+				confirmButtonText: '清空並切換',
 				cancelButtonText: '取消',
 				showCancelButton: true,
 			})
@@ -540,9 +540,9 @@ export default {
 			}
 			this.$swal({
 				icon: 'question',
-				title: '確定要收藏本班必修課？',
+				title: '收藏本班必修課？',
 				html: '先前收藏的課程將會清空！',
-				confirmButtonText: '確定',
+				confirmButtonText: '清空並收藏',
 				cancelButtonText: '取消',
 				showCancelButton: true,
 			})
@@ -569,7 +569,8 @@ export default {
 						title: course.name,
 						text: '無課程資料',
 						icon: 'error',
-						confirmButtonText: '確定',
+						showConfirmButton: false,
+						showCloseButton: true,
 					});
 					return;
 				}

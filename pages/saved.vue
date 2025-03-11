@@ -314,7 +314,7 @@ export default {
 					icon: 'question',
 					title: '匯入 ' + importCourse.length + ' 門課程？',
 					text: '先前收藏的課程將會清空！',
-					confirmButtonText: '確定',
+					confirmButtonText: '清空並匯入',
 					cancelButtonText: '取消',
 					showCancelButton: true,
 				})
@@ -438,7 +438,8 @@ export default {
 						title: course.name,
 						text: '無課程資料',
 						icon: 'error',
-						confirmButtonText: '確定',
+						showConfirmButton: false,
+						showCloseButton: true,
 					});
 					return;
 				}

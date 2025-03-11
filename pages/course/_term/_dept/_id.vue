@@ -290,6 +290,21 @@
 	cursor: pointer;
 }
 
+.similar-courses .swal2-html-container {
+	overflow-x: hidden;
+	padding-top: 0;
+	margin-top: 1rem
+}
+
+.term-group .term-title {
+	padding: 0.5rem;
+	background: var(--ts-gray-100);
+	font-weight: bold;
+	margin: 0 -2rem .25rem;
+	position: sticky;
+	top: 0;
+}
+
 @media screen and (max-width: 767.98px) {
 	#page-course .time {
 		display: inline-block;
@@ -426,7 +441,8 @@ export default {
 		this.savedCourse = await this.$store.dispatch('getSavedCourse');
 		if(!this.course || !this.course.name) {
 			this.notFound = true;
-			//return;
+			this.notFound = false; // XXX
+			// return; // XXX
 		}
 		this.fetchData();
 	},
@@ -510,7 +526,7 @@ export default {
 						title: '無法收藏跨學期的課程',
 						icon: 'warning',
 						html: '是否要清空目前已收藏的課程，並切換至 ' + this.course.id.substring(0, 3) + '-' + this.course.id.substring(3, 4) + ' 學期？',
-						confirmButtonText: '確定',
+						confirmButtonText: '清空並切換',
 						cancelButtonText: '取消',
 						showCancelButton: true,
 					})
@@ -624,27 +640,49 @@ export default {
 		},
 		viewSimilarCourses() {
 			this.$swal({
-				title: '歷年開課 / 其他系所開課 (' + this.similarCourses.length + ')',
+				title: '歷年開課 / 各系所開課 (' + this.similarCourses.length + ')',
+				customClass: {
+					container: 'similar-courses',
+				},
 				html: '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">' +
-					this.similarCourses
-					.sort((a, b) => {
-						if (a.id.substring(0, 4) == b.id.substring(0, 4)) {
+					(() => {
+						const sortedCourses = this.similarCourses.sort((a, b) => {
 							if(a.dept != this.course.dept && b.dept == this.course.dept) return 1;
 							else if(a.dept == this.course.dept && b.dept != this.course.dept) return -1;
 							else return a.time[0][0] - b.time[0][0];
-						}
-						return b.id.substring(0, 4) - a.id.substring(0, 4);
-					})
-					.map(course => 
-					'<a class="item" href="/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/">\
-						<div class="ts-header">' + course.name + '</div>\
-						<div class="ts-text is-description is-start-aligned">' +
-							course.id.substring(0, 3) + '-' + course.id.substring(3, 4) + ' 學期・' +
-							course.dept + '・' +
-							course.teacher + ' 老師' +
-						'</div>\
-					</a>'
-					).join('') + '</div>',
+						});
+						
+						const groupedCourses = {};
+						sortedCourses.forEach(course => {
+							const termId = course.id.substring(0, 4);
+							if (!groupedCourses[termId]) {
+								groupedCourses[termId] = [];
+							}
+							groupedCourses[termId].push(course);
+						});
+						
+						let html = '';
+						Object.keys(groupedCourses)
+							.sort((a, b) => b - a)
+							.forEach(termId => {
+								const termText = termId.substring(0, 3) + '-' + termId.substring(3, 4) + ' 學期';
+								html += '<div class="term-group"><div class="term-title">' + termText + '</div>';
+								groupedCourses[termId].forEach(course => {
+									html += '<a class="item" href="/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/">\
+										<div class="ts-header">' +
+											course.name + (course.type != this.course.type ? '&nbsp;<span class="ts-badge is-small is-dense">'+course.type+'</span>' : '') +
+										'</div>\
+										<div class="ts-text is-description is-start-aligned">' +
+											course.dept + '・' +
+											course.teacher + ' 老師' +
+										'</div>\
+									</a>';
+								});
+								html += '</div>';
+							});
+						
+						return html + '</div>';
+					})(),
 				showConfirmButton: false,
 				showCloseButton: true,
 			}).then((result) => {

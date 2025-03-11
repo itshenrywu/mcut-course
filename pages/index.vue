@@ -351,7 +351,7 @@ export default {
 				icon: 'question',
 				title: '切換至 ' + term + ' 學期？',
 				html: '先前收藏的課程將會清空！',
-				confirmButtonText: '確定',
+				confirmButtonText: '清空並切換',
 				cancelButtonText: '取消',
 				showCancelButton: true,
 			})

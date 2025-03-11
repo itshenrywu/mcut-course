@@ -586,8 +586,8 @@ export default {
 		clearAll() {
 			this.$swal({
 				icon: 'question',
-				title: '確定要清除個人課表嗎？',
-				confirmButtonText: '確定',
+				title: '清除個人課表？',
+				confirmButtonText: '清除',
 				cancelButtonText: '取消',
 				showCancelButton: true,
 			})
