@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0070/0406", {data:[{course:{time:[["7","10~10"]],id:"110200700406",name:"工讀實務實習(四)",type:"必修",dept:"四技視傳系",year:"3",class:"甲",teacher:"林金祥",credit:"5",classroom:"29",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

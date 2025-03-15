@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2070/0O01", (function(a,b){return {data:[{course:{time:[["3",a],[b,a]],id:"113220700O01",name:"實務專題(三)",type:"必修",dept:"環實務",year:b,class:"甲",teacher:"賴怡廷",credit:"1",classroom:"2",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","4")));

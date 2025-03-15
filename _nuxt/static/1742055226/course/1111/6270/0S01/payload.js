@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/6270/0S01", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"111162700S01",name:"機電工程概論",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"陳宏毅",credit:a,classroom:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

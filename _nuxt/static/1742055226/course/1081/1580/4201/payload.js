@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1580/4201", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"108115804201",name:"半導體元件物理",type:"選修",dept:"電子系碩士班",year:a,class:"甲",teacher:"畢少強",credit:b,hour:b,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

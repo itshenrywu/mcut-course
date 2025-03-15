@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2070/1S01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"111220701S01",name:"近代物理",type:"選修",dept:"半導體學程",year:"1",class:"甲",teacher:"陳正龍",credit:a,classroom:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

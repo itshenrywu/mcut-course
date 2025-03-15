@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0401/0303", (function(a,b){return {data:[{course:{time:[[a,"8~8.5"]],id:"108104010303",name:"大學之道",type:"必修",dept:"四技材工系",year:b,class:"甲",teacher:"陳勝吉",credit:b,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

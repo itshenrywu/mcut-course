@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1150/6301", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"108211506301",name:"電腦輔助機械製圖(二)",type:"必修",dept:"四技機械系",year:a,class:"甲",teacher:"王頌文",credit:a,hour:"3",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

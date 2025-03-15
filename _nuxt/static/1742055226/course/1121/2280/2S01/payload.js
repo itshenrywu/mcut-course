@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2280/2S01", (function(a,b){return {data:[{course:{time:[[a,"8~8"],[a,"9~10"]],id:"112122802S01",name:"海外商務研習",type:"選修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"陳昭蓉",credit:b,classroom:b,max:"30",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

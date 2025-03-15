@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0401/0313", (function(a,b){return {data:[{course:{time:[[a,"8~8.5"]],id:"111104010313",name:"大學之道",type:"必修",dept:"四技工管系",year:b,class:"甲",teacher:"陳昆皇",credit:b,classroom:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));
