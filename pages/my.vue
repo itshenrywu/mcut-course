@@ -97,12 +97,12 @@
 								星期
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showCourseClassroom" @change="updateTimetable(false)" />
-								課程：上課地點
+								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="updateTimetable(false)" />
+								課程：上課時間
 							</label>
 							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="updateTimetable(false)" />
-								課程：上課時間 / 個人備註
+								<input type="checkbox" v-model="myCoursesSetting.showCourseClassroom" @change="updateTimetable(false)" />
+								課程：上課地點 / 個人備註
 							</label>
 						</div>
 					</div>
