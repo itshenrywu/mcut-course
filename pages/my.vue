@@ -8,49 +8,77 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">我的課程</div>
 						<div class="ts-wrap is-dense">
-							<button class="ts-button is-outlined is-small is-fluid is-start-icon" @click="showImportDialog()">
+							<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="showImportDialog()">
 								<span class="ts-icon is-file-import-icon"></span>
 								從學校系統匯入
 							</button>
-							<button class="ts-button is-outlined is-small is-fluid is-start-icon" @click="importFromSaved()" v-show="savedCourses.length > 0">
+							<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="importFromSaved()" v-show="savedCourses.length > 0">
 								<span class="ts-icon is-star-icon"></span>
 								從「收藏的課程」匯入
 							</button>
-							<button class="ts-button is-outlined is-small is-fluid is-start-icon" @click="clickCell(-1, -1)">
-								<span class="ts-icon is-plus-icon"></span>
-								新增課程
-							</button>
-							<button class="ts-button is-negative is-outlined is-small is-fluid is-start-icon" @click="clearAll()">
-								<span class="ts-icon is-trash-icon"></span>
-								全部清除
-							</button>
+							<div class="ts-grid" style="width: 100%;">
+								<div class="column is-8-wide">
+									<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="clickCell(-1, -1)">
+										<span class="ts-icon is-plus-icon"></span>
+										新增
+									</button>
+								</div>
+								<div class="column is-8-wide">
+									<button class="ts-button is-negative is-secondary is-small is-fluid is-start-icon" @click="clearAll()">
+										<span class="ts-icon is-trash-icon"></span>
+										清除
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					
 					<div>
-						<div class="ts-text is-label has-bottom-padded-small">顏色主題</div>
-						<div class="ts-select is-fluid">
-							<select v-model="myCoursesSetting.theme" @change="updateTimetable(false)">
-								<option v-for="theme of themes" :value="theme.id">{{ theme.name }}</option>
-							</select>
+						<div class="ts-grid is-middle-aligned" style="--gap: 0.1rem">
+							<div class="column is-4-wide">
+								<div class="ts-text is-label">主題</div>
+							</div>
+							<div class="column is-12-wide">
+								<div class="ts-select is-fluid">
+									<select v-model="myCoursesSetting.theme" @change="updateTimetable(false)">
+										<option v-for="theme of themes" :value="theme.id">{{ theme.name }}</option>
+									</select>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<!--
-					<div>
-						<div class="ts-text is-label has-bottom-padded-small">背景顏色 / 圖片</div>
-						<div class="ts-box theme-selector">
-							<span class="ts-icon is-chevron-down-icon"></span>
+					<div v-if="!showAd && !loading">
+						<div class="ts-grid is-middle-aligned" style="--gap: 0.1rem">
+							<div class="column is-4-wide">
+								<div class="ts-text is-label">背景</div>
+							</div>
+							<div class="column is-12-wide">
+								<div class="file-button" v-if="backgroundImage == null">
+									<button class="ts-button is-outlined is-fluid is-start-icon">
+										<span class="ts-icon is-image-icon"></span>
+										選擇圖片
+									</button>
+									<input type="file" accept="image/*" @change="handleBackgroundImage">
+								</div>
+								<div class="ts-buttons" v-else>
+									<div class="file-button">
+										<button class="ts-button is-outlined is-fluid is-start-icon">
+											<span class="ts-icon is-image-icon"></span>
+											重選
+										</button>
+										<input type="file" accept="image/*" @change="handleBackgroundImage">
+									</div>
+									<button class="ts-button is-outlined is-negative is-icon" @click="clearBackgroundImage">
+										<span class="ts-icon is-xmark-icon"></span>
+									</button>
+								</div>
+							</div>
 						</div>
-						<button class="ts-button is-outlined is-small is-fluid is-start-icon has-top-spaced-small">
-							<span class="ts-icon is-upload-icon"></span>
-							上傳圖片
-						</button>
 					</div>
-					-->
 
 					<div>
-						<div class="ts-text is-label has-bottom-padded-small">顯示設定</div>
+						<div class="ts-text is-label has-bottom-padded-small">顯示/隱藏</div>
 						<div class="ts-wrap is-vertical is-compact">
 							<label class="ts-checkbox">
 								<input type="checkbox" v-model="myCoursesSetting.showRowLine" @change="updateTimetable(false)" />
@@ -376,13 +404,38 @@
 #page-my .ad.fixed {
 	position: fixed;
 	width: 350px;
-	height: 350px;
+	height: 400px;
 	right: 50px;
-	top: calc(50% - 150px);
+	top: calc(50% - 200px);
 }
 
 #page-my .ad.fixed .ts-text:last-child {
 	padding-top: 100px !important
+}
+
+.file-button {
+	width: 100%;
+	position: relative;
+}
+
+.file-button input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.ts-buttons .file-button .ts-button:first-child {
+	border-right: 0;
+}
+
+@media (prefers-color-scheme: light) {
+	#page-my .sidebar .ts-button.is-secondary,
+	#page-my .sidebar .ts-range input {
+		background: var(--ts-gray-400);
+	}
 }
 
 @media (max-width: 767.98px) {
@@ -446,6 +499,8 @@ export default {
 
 			widgetBackgroundColor: '#34495e',
 			widgetColor: '#ffffff',
+
+			backgroundImage: null,
 
 			themes: [
 				{
@@ -590,6 +645,7 @@ export default {
 				confirmButtonText: '清除',
 				cancelButtonText: '取消',
 				showCancelButton: true,
+				confirmButtonColor: 'var(--ts-negative-600)',
 			})
 			.then((res) => {
 				if (res.isConfirmed) {
@@ -629,7 +685,6 @@ export default {
 			data.forEach(course => {
 				let time = course.time;
 				if(time[1].includes('0.5')) return;
-				// 檢查是否衝堂
 				let isConflict = false;	
 				for(let s = this.time_section_full.indexOf(time[1].split('~')[0]); s <= this.time_section_full.indexOf(time[1].split('~')[1]); s++) {
 					if(this.used_secion[time[0]].includes(this.time_section_full[s])) {
@@ -841,11 +896,43 @@ export default {
 			const cellWidth = (this.myCoursesSetting.showRowTitle ? 0.95 : 1) * (ctx.canvas.width - this.myCoursesSetting.tableBorder * 2) / cols;
 
 			ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-			ctx.fillStyle = theme.backgroundColor;
-			ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
+			if (this.backgroundImage) {
+				const img = new Image();
+				img.onload = () => {
+					const scale = Math.max(
+						ctx.canvas.width / img.width,
+						ctx.canvas.height / img.height
+					);
+					const x = (ctx.canvas.width - img.width * scale) / 2;
+					const y = (ctx.canvas.height - img.height * scale) / 2;
+					ctx.drawImage(
+						img,
+						x, y,
+						img.width * scale,
+						img.height * scale
+					);
+					this.drawTimetableContent(ctx, theme);
+				};
+				img.src = this.backgroundImage;
+			} else {
+				ctx.fillStyle = theme.backgroundColor;
+				ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+				this.drawTimetableContent(ctx, theme);
+			}
+		},
+
+		drawTimetableContent(ctx, theme) {
+			const rows = this.time_section.length;
+			const cols = this.week_text.length;
+			
+			const colTitleHeight = this.myCoursesSetting.showColTitle ? (ctx.canvas.height - this.myCoursesSetting.tableBorder * 2) * 0.035 : 0;
+			const cellHeight = (this.myCoursesSetting.showColTitle ? 0.965 : 1) * (ctx.canvas.height - this.myCoursesSetting.tableBorder * 2) / rows;
+			const rowTitleWidth = this.myCoursesSetting.showRowTitle ? (ctx.canvas.width - this.myCoursesSetting.tableBorder * 2) * 0.05 : 0;
+			const cellWidth = (this.myCoursesSetting.showRowTitle ? 0.95 : 1) * (ctx.canvas.width - this.myCoursesSetting.tableBorder * 2) / cols;
+			
 			ctx.translate(this.myCoursesSetting.tableBorder, this.myCoursesSetting.tableBorder);
-
+			
 			ctx.strokeStyle = theme.borderColor;
 			this.gridCells = [];
 
@@ -935,8 +1022,12 @@ export default {
 
 				let courseNameList = this.myCourses.map(course => course.name);
 				courseNameList = courseNameList.filter((name, index) => courseNameList.indexOf(name) === index);
+				
+				ctx.globalAlpha = 0.8;
 				ctx.fillStyle = theme.courseColor[courseNameList.indexOf(course.name) % theme.courseColor.length];
 				ctx.drawRoundedRect(x + 8, y + 8, w - 16, h - 16, cellWidth / 20);
+				
+				ctx.globalAlpha = 1.0;
 				let texts = [course.name];
 				if (this.myCoursesSetting.showCourseTime) {
 					texts.push(timeInfo[course.time[1].split('~')[0]][0] + ' ~ ' + timeInfo[course.time[1].split('~')[1]][1]);
@@ -1175,6 +1266,77 @@ export default {
 			const date = new Date(time);
 			return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' ' + date.getHours().toString().padStart(2,'0') + ':' + date.getMinutes().toString().padStart(2,'0');
 		},
+
+		async initIndexedDB() {
+			return new Promise((resolve, reject) => {
+				const request = indexedDB.open('courseDB', 1);
+				
+				request.onerror = () => reject('無法開啟 IndexedDB');
+				
+				request.onupgradeneeded = (event) => {
+					const db = event.target.result;
+					if (!db.objectStoreNames.contains('settings')) {
+						db.createObjectStore('settings');
+					}
+				};
+				
+				request.onsuccess = () => resolve(request.result);
+			});
+		},
+
+		async saveBackgroundToIndexedDB(imageData) {
+			const db = await this.initIndexedDB();
+			return new Promise((resolve, reject) => {
+				const transaction = db.transaction(['settings'], 'readwrite');
+				const store = transaction.objectStore('settings');
+				const request = store.put(imageData, 'backgroundImage');
+				
+				request.onerror = () => reject('儲存圖片失敗');
+				request.onsuccess = () => resolve();
+			});
+		},
+
+		async loadBackgroundFromIndexedDB() {
+			const db = await this.initIndexedDB();
+			return new Promise((resolve, reject) => {
+				const transaction = db.transaction(['settings'], 'readonly');
+				const store = transaction.objectStore('settings');
+				const request = store.get('backgroundImage');
+				
+				request.onerror = () => reject('讀取圖片失敗');
+				request.onsuccess = () => resolve(request.result);
+			});
+		},
+
+		async handleBackgroundImage(event) {
+			const file = event.target.files[0];
+			if (file) {
+				const reader = new FileReader();
+				reader.onload = async (e) => {
+					this.backgroundImage = e.target.result;
+					try {
+						await this.saveBackgroundToIndexedDB(e.target.result);
+					} catch (err) {
+						console.error('儲存背景圖片失敗:', err);
+					}
+					this.updateTimetable(false);
+				};
+				reader.readAsDataURL(file);
+			}
+		},
+
+		async clearBackgroundImage() {
+			this.backgroundImage = null;
+			try {
+				const db = await this.initIndexedDB();
+				const transaction = db.transaction(['settings'], 'readwrite');
+				const store = transaction.objectStore('settings');
+				await store.delete('backgroundImage');
+			} catch (err) {
+				console.error('清除背景圖片失敗:', err);
+			}
+			this.updateTimetable(false);
+		},
 	},
 	mounted() {
 		window.addEventListener('resize', () => {
@@ -1284,6 +1446,14 @@ export default {
 			if(this.$route.query.import) {
 				this.importFromUrl();
 			}
+			this.loadBackgroundFromIndexedDB()
+				.then(imageData => {
+					if (imageData) {
+						this.backgroundImage = imageData;
+						this.updateTimetable(false);
+					}
+				})
+				.catch(err => console.error('載入背景圖片失敗:', err));
 		});
 		document.getElementById('editCourseDialog').addEventListener('click', (e) => {
 			if (e.target.tagName === 'DIALOG') {
