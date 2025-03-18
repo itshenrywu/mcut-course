@@ -74,7 +74,7 @@
 							</label>
 							<label class="ts-checkbox">
 								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="updateTimetable(false)" />
-								課程：上課時間
+								課程：上課時間 / 個人備註
 							</label>
 						</div>
 					</div>
@@ -234,7 +234,7 @@
 						<input type="text" v-model.trim="editingCourse.name">
 					</div>
 					<br>
-					<div class="ts-text is-label has-bottom-padded-small">上課地點</div>
+					<div class="ts-text is-label has-bottom-padded-small">上課地點 / 個人備註</div>
 					<div class="ts-input is-fluid">
 						<input type="text" v-model.trim="editingCourse.classroom">
 					</div>
@@ -702,10 +702,11 @@ export default {
 							}
 						}
 						if(!isConflict) {
+							console.log(course);
 							this.myCourses.push({
 								name: course.name.split('(')[0],
 								originalName: course.name.split('(')[0],
-								classroom: course.classroom,
+								classroom: '',
 								id: course.id,
 								time: time,
 							});
