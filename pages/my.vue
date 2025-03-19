@@ -59,7 +59,7 @@
 										<span class="ts-icon is-image-icon"></span>
 										選擇圖片
 									</button>
-									<input type="file" accept="image/*" @change="handleBackgroundImage">
+									<input type="file" accept="image/png, image/jpeg, image/jpg" @change="handleBackgroundImage">
 								</div>
 								<div class="ts-buttons" v-else>
 									<div class="file-button">
@@ -67,7 +67,7 @@
 											<span class="ts-icon is-image-icon"></span>
 											重選
 										</button>
-										<input type="file" accept="image/*" @change="handleBackgroundImage">
+										<input type="file" accept="image/png, image/jpeg, image/jpg" @change="handleBackgroundImage">
 									</div>
 									<button class="ts-button is-outlined is-negative is-icon" @click="clearBackgroundImage">
 										<span class="ts-icon is-xmark-icon"></span>
@@ -937,8 +937,10 @@ export default {
 			this.gridCells = [];
 
 			for (let i = 0; i <= rows; i++) {
+				ctx.fillStyle = theme.colTitleColor;
 				if (this.myCoursesSetting.showRowLine && i < rows) {
 					if(this.myCoursesSetting.showColTitle || i != 0) {
+						ctx.shadowColor = 'transparent';
 						ctx.lineWidth = 2;
 						ctx.beginPath();
 						ctx.moveTo(0, i * cellHeight + colTitleHeight);
@@ -948,7 +950,24 @@ export default {
 				}
 				if (this.myCoursesSetting.showRowTitle && i < rows) {
 					ctx.font = (String(this.time_section[i]).includes('.5') ? 26 : 30) + 'px Noto Sans TC';
-					ctx.fillStyle = theme.colTitleColor;
+
+					if (this.backgroundImage) {
+						const x = rowTitleWidth / 2 + this.myCoursesSetting.tableBorder;
+						const y = i * cellHeight + cellHeight / 2 + colTitleHeight + this.myCoursesSetting.tableBorder;
+						const color = this.getPixelColor(ctx, x, y);
+						ctx.fillStyle = this.getContrastColor(color);
+						ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.3)';
+						ctx.shadowBlur = 3;
+						ctx.shadowOffsetX = 1;
+						ctx.shadowOffsetY = 1;
+					} else {
+						ctx.fillStyle = theme.colTitleColor;
+						ctx.shadowColor = 'transparent';
+						ctx.shadowBlur = 0;
+						ctx.shadowOffsetX = 0;
+						ctx.shadowOffsetY = 0;
+					}
+					
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
 					ctx.fillText(this.time_section[i], rowTitleWidth / 2, i * cellHeight + cellHeight / 2 + colTitleHeight);
@@ -958,6 +977,7 @@ export default {
 			for (let j = 0; j <= cols; j++) {
 				if (this.myCoursesSetting.showColLine && j < cols) {
 					if(this.myCoursesSetting.showRowTitle || j != 0) {
+						ctx.shadowColor = 'transparent';
 						ctx.lineWidth = 2;
 						ctx.beginPath();
 						ctx.moveTo(j * cellWidth + rowTitleWidth, 0);
@@ -967,29 +987,35 @@ export default {
 				}
 				if (this.myCoursesSetting.showColTitle && j < cols) {
 					ctx.font = '32px Noto Sans TC';
-					ctx.fillStyle = theme.colTitleColor;
+
+					if (this.backgroundImage) {
+						const x = j * cellWidth + cellWidth / 2 + rowTitleWidth + this.myCoursesSetting.tableBorder;
+						const y = colTitleHeight / 2 + this.myCoursesSetting.tableBorder;
+						const color = this.getPixelColor(ctx, x, y);
+						ctx.fillStyle = this.getContrastColor(color);
+						ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.3)';
+						ctx.shadowBlur = 3;
+						ctx.shadowOffsetX = 1;
+						ctx.shadowOffsetY = 1;
+					} else {
+						ctx.fillStyle = theme.colTitleColor;
+						ctx.shadowColor = 'transparent';
+						ctx.shadowBlur = 0;
+						ctx.shadowOffsetX = 0;
+						ctx.shadowOffsetY = 0;
+					}
+					
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
 					ctx.fillText(this.week_text[j], j * cellWidth + cellWidth / 2 + rowTitleWidth, colTitleHeight / 2);
 				}
 			}
 
-			for (let i = 0; i < rows; i++) {
-				for (let j = 0; j < cols; j++) {
-					const x = j * cellWidth + rowTitleWidth;
-					const y = i * cellHeight + colTitleHeight;
-
-					this.gridCells.push({
-						row: i,
-						col: j,
-						x: x,
-						y: y,
-						width: cellWidth,
-						height: cellHeight,
-					});
-				}
-			}
-
+			ctx.shadowColor = 'transparent';
+			ctx.shadowBlur = 0;
+			ctx.shadowOffsetX = 0;
+			ctx.shadowOffsetY = 0;
+			
 			let timeInfo = {
 				'0.5': ["07:00", "07:50"],
 				'1': ["08:00", "08:50"],
@@ -1336,6 +1362,25 @@ export default {
 				console.error('清除背景圖片失敗:', err);
 			}
 			this.updateTimetable(false);
+		},
+
+		getPixelColor(ctx, x, y) {
+			try {
+				const imageData = ctx.getImageData(x, y, 1, 1).data;
+				return {
+					r: imageData[0],
+					g: imageData[1],
+					b: imageData[2]
+				};
+			} catch (e) {
+				console.error('無法獲取像素顏色:', e);
+				return { r: 128, g: 128, b: 128 };
+			}
+		},
+
+		getContrastColor(color) {
+			const brightness = (color.r * 0.299 + color.g * 0.587 + color.b * 0.114) / 255;
+			return brightness > 0.7 ? '#888' : '#DDD';
 		},
 	},
 	mounted() {
