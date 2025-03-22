@@ -105,7 +105,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="cell is-secondary is-fluid is-scrollable">
+		<div class="cell is-secondary is-fluid is-scrollable" id="main">
 			<div class="ts-container has-top-padded-large is-fitted mobile-padded">
 				<div class="ts-wrap is-middle-aligned">
 					<h1 class="ts-header is-huge has-vertically-padded">進階搜尋</h1>
@@ -125,84 +125,112 @@
 				</div>
 			</div>
 			<div class="ts-container has-vertically-padded-large is-fitted" v-if="!loading">
-				<div class="ts-box has-bottom-spaced" v-if="filteredCourses.length > 0">
-					<table class="ts-table course-table">
-						<thead>
-							<tr>
-								<th>開課單位/班級</th>
-								<th>課程名稱</th>
-								<th>上課時間</th>
-								<th>修別/學分</th>
-								<th>授課老師</th>
-								<th>備註</th>
-								<th>&nbsp;</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr v-for="course in filteredCourses" :key="course.id" @click="showCourse(course)">
-								<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
-									<span class="mobile-only" v-if="!(course.id.includes('ALT_') && course.teacher.includes('分班'))">{{  course.teacher + ' 老師' }}</span>
-								</td>
-								<td class="c-name">
-									<span class="ts-icon is-volleyball-icon sport-icon"
-										v-if="course.name.includes('排球')"></span>
-									<span class="ts-icon is-basketball-icon sport-icon"
-										v-else-if="course.name.includes('籃球')"></span>
-									<span class="ts-icon is-table-tennis-paddle-ball-icon sport-icon"
-										v-else-if="course.name.includes('桌球')"></span>
-									<span class="ts-icon is-dumbbell-icon sport-icon"
-										v-else-if="course.name.includes('健身雕塑')"></span>
-									<span class="ts-icon is-people-pulling-icon sport-icon"
-										v-else-if="course.name.includes('防身術')"></span>
-									<span class="ts-icon is-people-robbery-icon sport-icon"
-										v-else-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
-									<span class="ts-icon is-child-reaching-icon sport-icon"
-										v-else-if="course.name.includes('身體律動')"></span>
-									<svg class="sport-icon-badminton" v-else-if="course.name.includes('羽球')" version="1.1"
-										xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-										<path
-											d="M22 10v-1.5c0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5v1.5h13zM17.055 11h-3.111l-1.948 16.555-0.084 0.755 3.587 2.69 3.587-2.69-0.084-0.751-1.948-16.558zM10.883 28.529l-2.883 2.471-3-3 4-17h3.938l-1.934 16.442-0.121 1.088zM20.068 11h1.957l3.975 17-2.982 3-2.865-2.471-0.12-1.084-1.923-16.445h1.957z">
-										</path>
-									</svg>{{ course.name }}
-								</td>
-								<td class="c-time">
-									<span v-for="time in course.time" class="time">
-										<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-											week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
-										<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
-									</span>
-								</td>
-								<td class="c-type-credit mobile-only absolute-right">
-									<span class="ts-badge is-small has-dark"
-										:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-										{{
-											course.type +
-											(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
-											' ' + course.credit
-										}} 學分
-									</span>
-								</td>
-								<td class="c-type-credit mobile-hidden">
-									<span class="ts-badge is-small is-dense is-end-spaced has-dark"
-										:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-										{{
-											course.type +
-											(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
-										}}
-									</span>{{ course.credit }}
-								</td>
-								<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
-								<td class="c-remark">{{ course.comment }}</td>
-								<td class="c-action">
-									<span class="mobile-only absolute-right ts-badge is-small is-dense has-dark is-red" v-if="isConflicted(course)">衝堂</span>
-									<span data-position="top" data-tooltip="衝堂" class="mobile-hidden ts-icon absolute-right is-circle-exclamation-icon is-t-red" v-if="isConflicted(course)" @click.stop=""></span>
-									<span class="ts-icon absolute-right is-star-icon" v-else-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course.id)"></span>
-									<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course.id)"></span>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+				<template v-if="filteredCourses.length > 0">
+					<div class="ts-box has-bottom-spaced">
+						<table class="ts-table course-table">
+							<thead>
+								<tr>
+									<th>開課單位/班級</th>
+									<th>課程名稱</th>
+									<th>上課時間</th>
+									<th>修別/學分</th>
+									<th>授課老師</th>
+									<th>備註</th>
+									<th>&nbsp;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="course in paginatedCourses" :key="course.id" @click="showCourse(course)">
+									<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
+										<span class="mobile-only" v-if="!(course.id.includes('ALT_') && course.teacher.includes('分班'))">{{  course.teacher + ' 老師' }}</span>
+									</td>
+									<td class="c-name">
+										<span class="ts-icon is-volleyball-icon sport-icon"
+											v-if="course.name.includes('排球')"></span>
+										<span class="ts-icon is-basketball-icon sport-icon"
+											v-else-if="course.name.includes('籃球')"></span>
+										<span class="ts-icon is-table-tennis-paddle-ball-icon sport-icon"
+											v-else-if="course.name.includes('桌球')"></span>
+										<span class="ts-icon is-dumbbell-icon sport-icon"
+											v-else-if="course.name.includes('健身雕塑')"></span>
+										<span class="ts-icon is-people-pulling-icon sport-icon"
+											v-else-if="course.name.includes('防身術')"></span>
+										<span class="ts-icon is-people-robbery-icon sport-icon"
+											v-else-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
+										<span class="ts-icon is-child-reaching-icon sport-icon"
+											v-else-if="course.name.includes('身體律動')"></span>
+										<svg class="sport-icon-badminton" v-else-if="course.name.includes('羽球')" version="1.1"
+											xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+											<path
+												d="M22 10v-1.5c0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5v1.5h13zM17.055 11h-3.111l-1.948 16.555-0.084 0.755 3.587 2.69 3.587-2.69-0.084-0.751-1.948-16.558zM10.883 28.529l-2.883 2.471-3-3 4-17h3.938l-1.934 16.442-0.121 1.088zM20.068 11h1.957l3.975 17-2.982 3-2.865-2.471-0.12-1.084-1.923-16.445h1.957z">
+											</path>
+										</svg>{{ course.name }}
+									</td>
+									<td class="c-time">
+										<span v-for="time in course.time" class="time">
+											<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
+												week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
+											<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
+										</span>
+									</td>
+									<td class="c-type-credit mobile-only absolute-right">
+										<span class="ts-badge is-small has-dark"
+											:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+											{{
+												course.type +
+												(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
+												' ' + course.credit
+											}} 學分
+										</span>
+									</td>
+									<td class="c-type-credit mobile-hidden">
+										<span class="ts-badge is-small is-dense is-end-spaced has-dark"
+											:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+											{{
+												course.type +
+												(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
+											}}
+										</span>{{ course.credit }}
+									</td>
+									<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
+									<td class="c-remark">{{ course.comment }}</td>
+									<td class="c-action">
+										<span class="mobile-only absolute-right ts-badge is-small is-dense has-dark is-red" v-if="isConflicted(course)">衝堂</span>
+										<span data-position="top" data-tooltip="衝堂" class="mobile-hidden ts-icon absolute-right is-circle-exclamation-icon is-t-red" v-if="isConflicted(course)" @click.stop=""></span>
+										<span class="ts-icon absolute-right is-star-icon" v-else-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course.id)"></span>
+										<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course.id)"></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div style="display: flex; justify-content: center;" v-if="totalPages > 1">
+						<div class="ts-pagination is-large is-relaxed has-top-spaced">
+							<a class="item is-first" :class="{'is-disabled': currentPage === 1}" @click="changePage(1)"></a>
+							<a class="item is-back" :class="{'is-disabled': currentPage === 1}" @click="changePage(currentPage - 1)"></a>
+							<div class="item is-active" style="align-items: flex-end; width: 6rem; padding: .5rem .25rem;">
+								{{ currentPage }}<small style="font-size: 80%;">{{ '/ ' + totalPages }}</small>
+							</div>
+							<a class="item is-next" :class="{'is-disabled': currentPage === totalPages}" @click="changePage(currentPage + 1)"></a>
+							<a class="item is-last" :class="{'is-disabled': currentPage === totalPages}" @click="changePage(totalPages)"></a>
+						</div>
+					</div>
+					<div class="ts-box ad is-hollowed box-mobile-spaced has-top-spaced-large" v-if="showAd">
+						<div class="ts-content">
+							<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+							<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
+							<ins class="adsbygoogle"
+								style="display:block; text-align:center;"
+								data-ad-layout="in-article"
+								data-ad-format="fluid"
+								data-ad-client="ca-pub-5900703871265800"
+								data-ad-slot="3164180037"></ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
+				</template>
 				<div class="ts-blankslate" v-else-if="courses.length == 0">
 					<span class="ts-icon is-circle-exclamation-icon"></span>
 					<div class="header">目前無課程資料</div>
@@ -247,7 +275,7 @@
 }
 </style>
 <script>
-import { mapMutations } from 'vuex';
+import { mapMutations, mapState } from 'vuex';
 export default {
 	head() {
 		return {
@@ -274,6 +302,9 @@ export default {
 			generalCourseTypes: [],
 			depts: {},
 			classes: [],
+
+			currentPage: 1,
+            itemsPerPage: 25,
 
 			loading: true,
 
@@ -304,6 +335,9 @@ export default {
 		this.fetchData();
 	},
 	computed: {
+		...mapState({
+			showAd: state => state.show_ad
+		}),
 		filterInfo() {
 			let info = [];
 			if(this.currentTerm) info.push(this.currentTerm.split('-')[0] + '-' + this.currentTerm.split('-')[1] + ' 學期');
@@ -382,7 +416,15 @@ export default {
 					return Array.from({ length: section[1] - section[0] + 1 }, (_, i) => week + '_' + this.time_section[section[0] + i]);
 				}).flat();
 			}).flat();
-		}
+		},
+		paginatedCourses() {
+            const start = (this.currentPage - 1) * this.itemsPerPage;
+            const end = start + this.itemsPerPage;
+            return this.filteredCourses.slice(start, end);
+        },
+        totalPages() {
+            return Math.ceil(this.filteredCourses.length / this.itemsPerPage);
+        },
 	},
 	methods: {
 		...mapMutations(['setSavedCourse']),
@@ -615,7 +657,17 @@ export default {
 			}
 			this.setSavedCourse([this.savedCourse]);
 			this.$root.$emit('updateSavedCourse', this.savedCourse);
-		}
+		},
+		changePage(page) {
+			if (page < 1 || page > this.totalPages || page === this.currentPage) return;
+			let scrollElement = document.getElementById('main');
+			const distanceToBottom = scrollElement.scrollHeight - scrollElement.scrollTop - scrollElement.clientHeight;
+			this.currentPage = page;
+			this.$nextTick(() => {
+				const newScrollPosition = scrollElement.scrollHeight - distanceToBottom - scrollElement.clientHeight;
+				scrollElement.scrollTo(0, newScrollPosition);
+			});
+		},
 	}
 }
 </script>
