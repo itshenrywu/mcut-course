@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2070/1Q01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111120701Q01",name:"電磁學",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"陳正龍",credit:b,classroom:b,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

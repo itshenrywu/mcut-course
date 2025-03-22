@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1E80/2401", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"11111E802401",name:"書報討論(一)",type:"必修",dept:"機械系碩士班",year:a,class:"甲",teacher:"郭啟全",credit:"0",classroom:"2",max:"28",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1570/5702", (function(a,b){return {data:[{course:{time:[[b,"1~4"]],id:"109315705702",name:"機率與統計",type:"重修",dept:"四技電子系",year:b,class:"暑",teacher:"李健宏",credit:a,classroom:a,max:a,min:"1",comment:"併110三上課程",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

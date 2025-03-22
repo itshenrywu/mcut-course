@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/0070/0219", (function(a,b){return {data:[{course:{time:[["7","8~8"]],id:"108400700219",name:"工讀實務實習(二)",type:"重修",dept:"四技化工系",year:a,class:"暑",teacher:"劉昭麟",credit:a,hour:"29",max:b,min:b,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4","1")));

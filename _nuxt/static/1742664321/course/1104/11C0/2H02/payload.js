@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/11C0/2H02", (function(a,b){return {data:[{course:{time:[[b,"2~4"],[b,"8~8"]],id:"110411C02H02",name:"精密定位技術",type:"選修",dept:"四技進修部機械系",year:a,class:"乙",teacher:"王海",credit:a,classroom:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","6")));

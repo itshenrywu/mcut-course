@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2070/2O01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"113220702O01",name:"基礎材料實驗",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"劉定宇",credit:a,classroom:"3",max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

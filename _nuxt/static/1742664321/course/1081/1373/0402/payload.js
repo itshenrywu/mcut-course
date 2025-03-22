@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1373/0402", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"108113730402",name:"實務專題(一)",type:"必修",dept:"四技化工系",year:"4",class:"乙",teacher:"吳永富",credit:"1",hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1170/0W01", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"108211700W01",name:"電動車輛實務(一)",type:"選修",dept:"四技機械系",year:"2",class:"丙",teacher:"黃道易",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

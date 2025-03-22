@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/15C0/1J01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"108215C01J01",name:"普通物理",type:"必修",dept:"四技進修部電子系",year:"1",class:"甲",teacher:"鄭信民",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

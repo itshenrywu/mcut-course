@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1580/0B01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"109115800B01",name:"RF電路設計",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"謝滄岩",credit:a,classroom:a,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1570/5901", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108115705901",name:"電子儀表實習",type:"重修",dept:"四技電子系",year:"4",class:"重",teacher:"何文吉",credit:a,hour:"3",max:"50",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/21A0/0G01", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"113121A00G01",name:"人工智慧",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"俞凱允",credit:a,classroom:a,max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

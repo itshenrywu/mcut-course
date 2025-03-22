@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/11C0/1G02", (function(a,b){return {data:[{course:{time:[["1",a],[b,a]],id:"108411C01G02",name:"汽車實習(一)",type:"重修",dept:"四技進修部機械系",year:"2",class:"暑",teacher:"黃道易",credit:b,hour:"4",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("9~12","3")));

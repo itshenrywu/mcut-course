@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21D0/3401", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108121D03401",name:"專案管理",type:"選修",dept:"四技在職專班工管系",year:"4",class:"甲",teacher:"張真誠",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

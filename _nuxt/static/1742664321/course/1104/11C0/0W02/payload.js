@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/11C0/0W02", (function(a,b){return {data:[{course:{time:[[b,"1~1"],[b,"5~7"]],id:"110411C00W02",name:"精密加工",type:"選修",dept:"四技進修部機械系",year:a,class:"乙",teacher:"郭啟全",credit:a,classroom:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","6")));

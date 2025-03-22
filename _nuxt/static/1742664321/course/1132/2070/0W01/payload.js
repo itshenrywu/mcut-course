@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2070/0W01", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"113220700W01",name:"程式設計實務",type:"必修",dept:"環實務",year:"4",class:"甲",teacher:"楊健貴",credit:a,classroom:a,max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

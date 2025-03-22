@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2270/2402", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"108122702402",name:"財務管理",type:"必修",dept:"四技經管系",year:"2",class:"乙",teacher:"楊子儀",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));
