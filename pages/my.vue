@@ -1011,6 +1011,22 @@ export default {
 				}
 			}
 
+			for (let i = 0; i < rows; i++) {
+				for (let j = 0; j < cols; j++) {
+					const x = j * cellWidth + rowTitleWidth;
+					const y = i * cellHeight + colTitleHeight;
+
+					this.gridCells.push({
+						row: i,
+						col: j,
+						x: x,
+						y: y,
+						width: cellWidth,
+						height: cellHeight,
+					});
+				}
+			}
+
 			ctx.shadowColor = 'transparent';
 			ctx.shadowBlur = 0;
 			ctx.shadowOffsetX = 0;
