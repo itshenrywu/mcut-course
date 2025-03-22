@@ -3,12 +3,12 @@
 		<div class="cell is-tertiary is-scrollable sidebar" :class="{ 'show': showMobileSidebar }">
 			<div class="ts-content">
 				<div class="ts-wrap is-vertical has-top-padded">
-					<button class="ts-close is-large mobile-only close-sidebar"
+					<button class="ts-close is-large mobile-only close-sidebar" aria-label="關閉此彈出視窗"
 						@click="showMobileSidebar = !showMobileSidebar"></button>
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">入學學年度</div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentYear" @change="chooseYear();">
+							<select v-model="currentYear" @change="chooseYear();" aria-label="入學學年度">
 								<option v-for="year in years" :value="year">{{ year + ' (U' +
 									(year.toString().substring(1, 4)) + ')' }}</option>
 							</select>
@@ -17,7 +17,7 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">入學系所/學程/組別</div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentDept" @change="chooseDept();">
+							<select v-model="currentDept" @change="chooseDept();" aria-label="入學系所/學程/組別">
 								<optgroup v-for="(dept_group, group) of depts[currentYear]" :label="group">
 									<option v-for="(dept, dept_id) of dept_group" :value="dept_id">{{ dept }}</option>
 								</optgroup>
@@ -27,7 +27,7 @@
 					<div v-if="currentDept != ''">
 						<div class="ts-text is-label has-bottom-padded-small">系所/學分學程總表</div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentRule" @change="saveRuleInput();">
+							<select v-model="currentRule" @change="saveRuleInput();" aria-label="系所/學分學程總表">
 								<option value="-1" disabled>請選擇...</option>
 								<option v-for="(rule, rule_id) of rules[currentYear]['_']" value="000"
 									v-if="rule.name == currentDeptName">系所課程總表</option>
@@ -42,7 +42,7 @@
 					<div v-if="currentRule != '-1'">
 						<div class="ts-text is-label has-bottom-padded-small">欲選課學期</div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentRuleTerm" @change="changeTerm();">
+							<select v-model="currentRuleTerm" @change="changeTerm();" aria-label="欲選課學期">
 								<option v-for="term in terms">{{ term }}</option>
 							</select>
 						</div>

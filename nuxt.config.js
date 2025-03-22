@@ -5,7 +5,7 @@ export default {
 		title: '明志科技大學選課小幫手',
 		meta: [
 			{ charset: 'utf-8' },
-			{ name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover' },
+			{ name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover' },
 
 			{ hid: 'og:title', property: 'og:title', content: '明志科技大學選課小幫手' },
 
@@ -51,7 +51,6 @@ export default {
 		fallback: '404.html',
 		async routes() {
 			const mode = process.env.MODE || 'prod';
-			if(mode != 'prod') return [];
 			const termsResponse = await axios.get('https://api.mcut-course.com/list.php?termlist');
 			const terms = termsResponse.data.term;
 			const courseIds = await Promise.all(
@@ -117,7 +116,13 @@ export default {
 					route: '/class/' + class_id + '/',
 					payload: classList[class_id]
 				}
-			});	
+			});
+
+			if (mode != 'prod') {
+				const _courseRoutes = courseRoutes.slice(0, 10);
+				const _ruleRoutes = ruleRoutes.slice(0, 10);
+				return [..._courseRoutes, ..._ruleRoutes];
+			}
 
 			return [...courseRoutes, ...classRoutes, ...ruleRoutes];
 		}

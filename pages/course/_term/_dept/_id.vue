@@ -45,7 +45,7 @@
 			</div>
 			<div class="ts-grid is-stretched has-top-spaced" v-if="course.name">
 				<div class="column is-16-wide mobile-fluid" v-if="similarCourses.length > 0">
-					<a class="ts-box" @click="viewSimilarCourses();" style="cursor: pointer;">	
+					<a class="ts-box" @click="viewSimilarCourses();" style="cursor: pointer;" aria-label="查看歷年開課紀錄">	
 						<div class="ts-content">
 							<div class="ts-grid is-compact is-middle-aligned">
 								<div class="column is-15-wide">
@@ -232,7 +232,7 @@
 			</table>
 			<br>
 		</div>
-		<NuxtLink to="/saved/" class="button-fab">
+		<NuxtLink to="/saved/" class="button-fab" aria-label="查看已儲存的課程">
 			<span class="ts-icon is-star-icon"></span>
 			<span class="ts-badge is-negative" v-if="savedCourse.length > 0">{{ savedCourse.length }}</span>
 		</NuxtLink>

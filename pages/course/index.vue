@@ -3,7 +3,7 @@
 		<div class="cell is-tertiary is-scrollable sidebar" :class="{ 'show': showMobileSidebar }">
 			<div class="ts-content">
 				<div class="ts-wrap is-vertical has-top-padded">
-					<button class="ts-close is-large mobile-only close-sidebar"
+					<button class="ts-close is-large mobile-only close-sidebar" aria-label="關閉此彈出視窗"
 						@click="showMobileSidebar = !showMobileSidebar"></button>
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">學年/學期</div>
@@ -26,14 +26,14 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">課程名稱 / 老師 / 序號</div>
 						<div class="ts-input is-fluid is-end-icon">
-							<input type="text" v-model.trim="searchQuery" @input="saveSearchInput(); currentPage = 1;">
+							<input type="text" aria-label="課程名稱 / 老師 / 序號" v-model.trim="searchQuery" @input="saveSearchInput(); currentPage = 1;">
 							<span class="ts-icon is-xmark-icon" @click="searchQuery = ''; saveSearchInput();" v-bind:style="{color: searchQuery=='' ? 'transparent' : 'var(--ts-gray-400)'}"></span>
 						</div>
 					</div>
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">開課單位（系所）</div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentDept" @change="chooseDept()">
+							<select v-model="currentDept" @change="chooseDept()" aria-label="開課單位（系所）">
 								<option selected="selected" value="">不限</option>
 								<optgroup v-for="(dept_group, group) of depts" :label="group">
 									<option v-for="dept in dept_group">{{ dept }}</option>
@@ -44,7 +44,7 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">開課班級</div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentClass" @change="saveSearchInput(); currentPage = 1;">
+							<select v-model="currentClass" @change="saveSearchInput(); currentPage = 1;" aria-label="開課班級">
 								<option selected="selected" value="">不限</option>
 								<option v-for="grade_class in classes">{{ grade_class }}</option>
 							</select>
@@ -54,7 +54,7 @@
 						<div class="ts-text is-label has-bottom-padded-small">修別 <span
 								v-show="currentDept && currentDept.includes('通識')">/ 通識類別</span></div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentType" @change="saveSearchInput(); currentPage = 1;">
+							<select v-model="currentType" @change="saveSearchInput(); currentPage = 1;" aria-label="修別">
 								<option value="" selected="selected">不限</option>
 								<option>必修</option>
 								<option>選修</option>
@@ -207,13 +207,13 @@
 					</div>
 					<div style="display: flex; justify-content: center;" v-if="totalPages > 1">
 						<div class="ts-pagination is-large is-relaxed has-top-spaced">
-							<a class="item is-first" :class="{'is-disabled': currentPage === 1}" @click="changePage(1)"></a>
-							<a class="item is-back" :class="{'is-disabled': currentPage === 1}" @click="changePage(currentPage - 1)"></a>
+							<div class="item is-first" :class="{'is-disabled': currentPage === 1}" @click="changePage(1)"></div>
+							<div class="item is-back" :class="{'is-disabled': currentPage === 1}" @click="changePage(currentPage - 1)"></div>
 							<div class="item is-active" style="align-items: flex-end; width: 6rem; padding: .5rem .25rem;">
 								{{ currentPage }}<small style="font-size: 80%;">{{ '/ ' + totalPages }}</small>
 							</div>
-							<a class="item is-next" :class="{'is-disabled': currentPage === totalPages}" @click="changePage(currentPage + 1)"></a>
-							<a class="item is-last" :class="{'is-disabled': currentPage === totalPages}" @click="changePage(totalPages)"></a>
+							<div class="item is-next" :class="{'is-disabled': currentPage === totalPages}" @click="changePage(currentPage + 1)"></div>
+							<div class="item is-last" :class="{'is-disabled': currentPage === totalPages}" @click="changePage(totalPages)"></div>
 						</div>
 					</div>
 					<div class="ts-box ad is-hollowed box-mobile-spaced has-top-spaced-large" v-if="showAd">
@@ -245,7 +245,7 @@
 			</div>
 			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>
-		<NuxtLink to="/saved/" class="button-fab">
+		<NuxtLink to="/saved/" class="button-fab" aria-label="查看已儲存的課程">
 			<span class="ts-icon is-star-icon"></span>
 			<span class="ts-badge is-negative" v-if="savedCourse.length > 0">{{ savedCourse.length }}</span>
 		</NuxtLink>

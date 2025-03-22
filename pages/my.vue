@@ -3,7 +3,7 @@
 		<div class="cell is-tertiary is-scrollable sidebar" :class="{ 'show': showMobileSidebar }">
 			<div class="ts-content">
 				<div class="ts-wrap is-vertical has-top-padded is-relaxed">
-					<button class="ts-close is-large mobile-only close-sidebar"
+					<button class="ts-close is-large mobile-only close-sidebar" aria-label="關閉側邊欄"
 						@click="showMobileSidebar = !showMobileSidebar"></button>
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">我的課程</div>
@@ -208,7 +208,7 @@
 							<div class="ts-header">{{ editingAction === 'new' ? '新增課程' : '修改課程' }}</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" @click="closeDialog()"></button>
+							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
@@ -259,12 +259,12 @@
 					<br>
 					<div class="ts-text is-label has-bottom-padded-small is-required">課程名稱</div>
 					<div class="ts-input is-fluid">
-						<input type="text" v-model.trim="editingCourse.name">
+						<input type="text" v-model.trim="editingCourse.name" area-label="課程名稱">
 					</div>
 					<br>
 					<div class="ts-text is-label has-bottom-padded-small">上課地點 / 個人備註</div>
 					<div class="ts-input is-fluid">
-						<input type="text" v-model.trim="editingCourse.classroom">
+						<input type="text" v-model.trim="editingCourse.classroom" area-label="上課地點 / 個人備註">
 					</div>
 					<br>
 					<button class="ts-button is-fluid" @click="editCourse()">{{ editingAction === 'new' ? '新增' : '修改' }}</button>
@@ -281,7 +281,7 @@
 							<div class="ts-text is-description">可以讓你在桌面或鎖定畫面上看到下一堂是什麼課，點擊還可以查看課程詳細資料！</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" @click="closeDialog()"></button>
+							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
@@ -330,7 +330,7 @@
 							<div class="ts-header">從學校系統匯入</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" @click="closeDialog()"></button>
+							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
