@@ -25,8 +25,9 @@
 					</div>
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">課程名稱 / 老師 / 序號</div>
-						<div class="ts-input is-fluid">
-							<input type="search" v-model.trim="searchQuery" @input="saveSearchInput()">
+						<div class="ts-input is-fluid is-end-icon">
+							<input type="text" v-model.trim="searchQuery" @input="saveSearchInput(); currentPage = 1;">
+							<span class="ts-icon is-xmark-icon" @click="searchQuery = ''; saveSearchInput();" v-bind:style="{color: searchQuery=='' ? 'transparent' : 'var(--ts-gray-400)'}"></span>
 						</div>
 					</div>
 					<div>
@@ -43,7 +44,7 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">開課班級</div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentClass" @change="saveSearchInput()">
+							<select v-model="currentClass" @change="saveSearchInput(); currentPage = 1;">
 								<option selected="selected" value="">不限</option>
 								<option v-for="grade_class in classes">{{ grade_class }}</option>
 							</select>
@@ -53,7 +54,7 @@
 						<div class="ts-text is-label has-bottom-padded-small">修別 <span
 								v-show="currentDept && currentDept.includes('通識')">/ 通識類別</span></div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentType" @change="saveSearchInput()">
+							<select v-model="currentType" @change="saveSearchInput(); currentPage = 1;">
 								<option value="" selected="selected">不限</option>
 								<option>必修</option>
 								<option>選修</option>
@@ -70,17 +71,17 @@
 						<div class="ts-selection is-fluid">
 							<label class="item">
 								<input type="radio" name="showConflict" :value="1" v-model="showConflict"
-									@change="saveSearchInput()" />
+									@change="saveSearchInput(); currentPage = 1;" />
 								<div class="text">顯示</div>
 							</label>
 							<label class="item">
 								<input type="radio" name="showConflict" :value="2" v-model="showConflict"
-									@change="saveSearchInput()" />
+									@change="saveSearchInput(); currentPage = 1;" />
 								<div class="text">置底</div>
 							</label>
 							<label class="item">
 								<input type="radio" name="showConflict" :value="0" v-model="showConflict"
-									@change="saveSearchInput()" />
+									@change="saveSearchInput(); currentPage = 1;" />
 								<div class="text">隱藏</div>
 							</label>
 						</div>
@@ -565,6 +566,7 @@ export default {
 			}
 
 			this.saveSearchInput();
+			this.currentPage = 1;
 		},
 		saveRequiredCourse() {
 			if(this.savedCourse.length == 0) {

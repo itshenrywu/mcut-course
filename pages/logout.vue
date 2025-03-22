@@ -26,6 +26,8 @@ export default {
 		} else {
 			let last_path = localStorage['last_path'];
 			localStorage.clear();
+			indexedDB.deleteDatabase('mcut-course');
+			
 			this.$root.$emit('showProfileImage', null);
 			this.setSavedCourse([]);
 			location.href = last_path || '/';

@@ -1295,7 +1295,7 @@ export default {
 
 		async initIndexedDB() {
 			return new Promise((resolve, reject) => {
-				const request = indexedDB.open('courseDB', 1);
+				const request = indexedDB.open('mcut-course', 1);
 				
 				request.onerror = () => reject('無法開啟 IndexedDB');
 				
