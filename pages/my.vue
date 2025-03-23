@@ -48,7 +48,7 @@
 						</div>
 					</div>
 
-					<div v-if="!showAd && !loading">
+					<div>
 						<div class="ts-grid is-middle-aligned" style="--gap: 0.1rem">
 							<div class="column is-4-wide">
 								<div class="ts-text is-label">背景</div>
@@ -123,14 +123,19 @@
 							<span class="ts-icon is-mobile-screen-icon"></span>
 							安裝 iOS 小工具
 						</button>
+						<a class="ts-button is-small is-fluid is-start-icon" @click="saveToCalendar()" v-show="!loading && !showAd">
+							<span class="ts-icon is-calendar-days-icon"></span>
+							存到行事曆
+						</a>
 					</div>
 
 					<div class="ts-text is-description mobile-hidden">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
 						<div class="ts-list is-small is-unordered">
-							<div class="item">這裡是用來製作個人課表的，「收藏的課程」若有修改，這裡不會同步！</div>
+							<div class="item">這裡是用來製作個人課表的，「收藏的課程」若有修改，請清空後重新同步！</div>
 							<div class="item">點擊空白處可新增課程</div>
 							<div class="item">點擊課程可修改資訊</div>
+							<div class="item">可以自訂主題或背景！</div>
 						</div>
 					</div>
 				</div>
@@ -144,30 +149,35 @@
 						<div class="ts-text is-description">
 							<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
 							<div class="ts-list is-small is-unordered">
-								<div class="item">這裡是用來製作個人課表的，「收藏的課程」若有修改，這裡不會同步！</div>
+								<div class="item">這裡是用來製作個人課表的，「收藏的課程」若有修改，請清空後重新同步！</div>
 								<div class="item">點擊空白處可新增課程</div>
 								<div class="item">點擊課程可修改資訊</div>
+								<div class="item">可以自訂主題或背景！</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="ts-grid">
-					<div class="column" :class="{'is-16-wide':isIos, 'is-8-wide': !isIos}">
-						<button class="ts-button is-fluid is-secondary is-start-icon" @click="showMobileSidebar = !showMobileSidebar">
-							<span class="ts-icon is-table-cells-icon"></span>
-							課表設定
-						</button>
-					</div>
-					<div class="column is-8-wide">
+				<button class="ts-button is-fluid is-secondary is-start-icon" @click="showMobileSidebar = !showMobileSidebar">
+					<span class="ts-icon is-table-cells-icon"></span>
+					課表設定
+				</button>
+				<div class="ts-grid is-evenly-divided has-top-spaced">
+					<div class="column">
 						<button class="ts-button is-fluid is-start-icon" @click="downloadImage()">
 							<span class="ts-icon is-download-icon"></span>
 							下載圖片
 						</button>
 					</div>
-					<div class="column" :class="{'is-8-wide':isIos, 'mobile-hidden': !isIos}">
+					<div class="column">
 						<button class="ts-button is-fluid is-start-icon" @click="showWidget()">
 							<span class="ts-icon is-mobile-screen-icon"></span>
-							安裝 iOS 小工具
+							iOS 小工具
+						</button>
+					</div>
+					<div class="column" v-if="!loading && !showAd">
+						<button class="ts-button is-fluid is-start-icon" @click="saveToCalendar()">
+							<span class="ts-icon is-calendar-days-icon"></span>
+							存到行事曆
 						</button>
 					</div>
 				</div>
@@ -218,7 +228,7 @@
 					target="_blank"
 					:to="`/course/${editingCourse.id.substring(0, 4)}/${editingCourse.id.substring(4, 8)}/${editingCourse.id.substring(8)}/`"
 					class="ts-button is-fluid is-secondary is-start-icon has-bottom-spaced-large"
-					v-if="editingCourse.id && editingCourse.id.length == 12 && editingCourse.originalName == editingCourse.name && !editingCourse.id.includes('ALT')">
+					v-if="editingCourse.id && editingCourse.id.length == 12 && !editingCourse.id.includes('ALT')">
 						<span class="ts-icon is-list-check-icon"></span>
 						查看課程詳細資料
 					</NuxtLink>
@@ -337,7 +347,7 @@
 				<div class="ts-divider"></div>
 				<div class="ts-content">
 					<div class="ts-wrap is-vertical">
-					<div>
+						<div>
 							<h2 class="ts-header is-large" style="display:inline;">1. 請至<a href="https://portal.mcut.edu.tw/" target="_blank" rel="nofollow">校園入口網</a>，前往應用系統 > 學生資訊查詢系統</h2>
 							<div class="ts-text is-description">請在手機或電腦的瀏覽器上執行，不要使用明志 App</div>
 						</div>
@@ -363,6 +373,41 @@
 								如果看到 <span class="ts-icon is-magnifying-glass-icon"></span> 和 <span class="ts-icon is-earth-asia-icon"></span> 兩個選項，請選擇 <span class="ts-icon is-earth-asia-icon"></span> 那一個。如果只有 <span class="ts-icon is-magnifying-glass-icon"></span>，請重新檢查是否輸入正確！
 							</div>
 							<img src="https://i.imgur.com/ZKRQvC7.jpeg" style="width:100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="ts-modal is-large" id="icsDialog">
+			<div class="content">
+				<div class="ts-content">
+					<div class="ts-grid">
+						<div class="column is-fluid">
+							<div class="ts-header">存到行事曆</div>
+						</div>
+						<div class="column">
+							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+						</div>
+					</div>
+				</div>
+				<div class="ts-divider"></div>
+				<div class="ts-content">
+					<div class="ts-wrap is-vertical">
+						<div>
+							<div class="ts-text has-bottom-spaced-small is-label">課表開始日期</div>
+							<div class="ts-input is-fluid">
+								<input type="date" v-model="icsStartDate">
+							</div>
+						</div>
+						<div>
+							<div class="ts-text has-bottom-spaced-small is-label">課表結束日期</div>
+							<div class="ts-input is-fluid">
+								<input type="date" v-model="icsEndDate" :min="icsStartDate">
+							</div>
+						</div>
+						<div>
+							<div class="ts-text is-description has-vertically-spaced">共 {{ icsWeek }} 週</div>
+							<a class="ts-button is-fluid" :class="{'is-disabled': !icsEndDate || !icsStartDate || icsEndDate < icsStartDate}" :href="icsUrl">匯出</a>
 						</div>
 					</div>
 				</div>
@@ -410,7 +455,7 @@
 }
 
 #page-my .ad.fixed .ts-text:last-child {
-	padding-top: 100px !important
+	padding-top: 125px !important
 }
 
 .file-button {
@@ -442,7 +487,7 @@
 }
 </style>
 <script>
-import { mapState } from 'vuex'
+import { mapState } from 'vuex';
 export default {
 	async asyncData({ $axios, params, payload }) {
 		
@@ -501,6 +546,26 @@ export default {
 			widgetColor: '#ffffff',
 
 			backgroundImage: null,
+
+			timeInfo: {
+				'0.5': ["07:00", "07:50"],
+				'1': ["08:00", "08:50"],
+				'2': ["09:00", "09:50"],
+				'3': ["10:00", "10:50"],
+				'4': ["11:00", "11:50"],
+				'4.5': ["12:00", "12:50"],
+				'5': ["13:00", "13:50"],
+				'6': ["14:00", "14:50"],
+				'7': ["15:00", "15:50"],
+				'8': ["16:00", "16:50"],
+				'8.5': ["17:00", "17:50"],
+				'9': ["18:40", "19:25"],
+				'10': ["19:30", "20:15"],
+				'11': ["20:25", "21:10"],
+				'12': ["21:15", "22:00"],
+			},
+			icsStartDate: '',
+			icsEndDate: '',
 
 			themes: [
 				{
@@ -603,6 +668,26 @@ export default {
 			return `const color=["${this.widgetBackgroundColor.replace('#','')}","${this.widgetColor.replace('#','')}"];` +
 			this.scriptableCodeFile.replace('__DATA__', encodeURIComponent(JSON.stringify(courses || [])));
 		},
+		icsWeek() {
+			if(this.icsStartDate && this.icsEndDate) {
+				const start = new Date(this.icsStartDate);
+				const end = new Date(this.icsEndDate);
+				const diffTime = Math.abs(end - start);
+				const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+				return Math.ceil(diffDays / 7);
+			}
+			return 0;
+		},
+		icsUrl() {
+			return 'https://api.mcut-course.com/ics.php?openExternalBrowser=1&d='+this.icsStartDate+','+this.icsEndDate+
+			'&c=' + encodeURIComponent(JSON.stringify(this.myCourses.map(c => [
+				c.id,
+				c.name,
+				c.classroom,
+				c.time[0],
+				c.time[1]
+			])))
+		}
 	},
 	methods: {
 		async loadFonts() {
@@ -757,7 +842,6 @@ export default {
 							}
 						}
 						if(!isConflict) {
-							console.log(course);
 							this.myCourses.push({
 								name: course.name.split('(')[0],
 								originalName: course.name.split('(')[0],
@@ -1031,24 +1115,6 @@ export default {
 			ctx.shadowBlur = 0;
 			ctx.shadowOffsetX = 0;
 			ctx.shadowOffsetY = 0;
-			
-			let timeInfo = {
-				'0.5': ["07:00", "07:50"],
-				'1': ["08:00", "08:50"],
-				'2': ["09:00", "09:50"],
-				'3': ["10:00", "10:50"],
-				'4': ["11:00", "11:50"],
-				'4.5': ["12:00", "12:50"],
-				'5': ["13:00", "13:50"],
-				'6': ["14:00", "14:50"],
-				'7': ["15:00", "15:50"],
-				'8': ["16:00", "16:50"],
-				'8.5': ["17:00", "17:50"],
-				'9': ["18:40", "19:25"],
-				'10': ["19:30", "20:15"],
-				'11': ["20:25", "21:10"],
-				'12': ["21:15", "22:00"],
-			};
 
 			this.myCourses.forEach(course => {
 				const start = this.time_section.indexOf(parseFloat(course.time[1].split('~')[0]))+1;
@@ -1072,7 +1138,7 @@ export default {
 				ctx.globalAlpha = 1.0;
 				let texts = [course.name];
 				if (this.myCoursesSetting.showCourseTime) {
-					texts.push(timeInfo[course.time[1].split('~')[0]][0] + ' ~ ' + timeInfo[course.time[1].split('~')[1]][1]);
+					texts.push(this.timeInfo[course.time[1].split('~')[0]][0] + ' ~ ' + this.timeInfo[course.time[1].split('~')[1]][1]);
 				}
 				if (this.myCoursesSetting.showCourseClassroom) {
 					texts.push(course.classroom);
@@ -1398,6 +1464,10 @@ export default {
 			const brightness = (color.r * 0.299 + color.g * 0.587 + color.b * 0.114) / 255;
 			return brightness > 0.7 ? '#888' : '#DDD';
 		},
+
+		async saveToCalendar() {
+			document.getElementById('icsDialog').showModal();
+		},
 	},
 	mounted() {
 		window.addEventListener('resize', () => {
@@ -1516,20 +1586,29 @@ export default {
 				})
 				.catch(err => console.error('載入背景圖片失敗:', err));
 		});
-		document.getElementById('editCourseDialog').addEventListener('click', (e) => {
-			if (e.target.tagName === 'DIALOG') {
-				document.getElementById('editCourseDialog').close();
-			}
-		});
-		document.getElementById('widgetDialog').addEventListener('click', (e) => {
-			if (e.target.tagName === 'DIALOG') {
-				document.getElementById('widgetDialog').close();
-			}
-		});
-		document.getElementById('importDialog').addEventListener('click', (e) => {
-			if (e.target.tagName === 'DIALOG') {
-				document.getElementById('importDialog').close();
-			}
+
+		const now = new Date();
+		const day = now.getDay();
+		const daysFromMonday = day === 0 ? 6 : day - 1;
+		const thisMonday = new Date(now);
+		thisMonday.setDate(now.getDate() - daysFromMonday);
+		const formatLocalDate = (date) => {
+			const year = date.getFullYear();
+			const month = String(date.getMonth() + 1).padStart(2, '0');
+			const day = String(date.getDate()).padStart(2, '0');
+			return `${year}-${month}-${day}`;
+		};
+		this.icsStartDate = formatLocalDate(thisMonday);
+		const endDate = new Date(thisMonday);
+		endDate.setDate(thisMonday.getDate() + 4);
+		this.icsEndDate = formatLocalDate(endDate);
+
+		['editCourseDialog', 'widgetDialog', 'importDialog', 'icsDialog'].forEach(dialog => {
+			document.getElementById(dialog).addEventListener('click', (e) => {
+				if (e.target.tagName === 'DIALOG') {
+					document.getElementById(dialog).close();
+				}
+			});
 		});
 	},
 }
