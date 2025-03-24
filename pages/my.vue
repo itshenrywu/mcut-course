@@ -392,21 +392,45 @@
 				</div>
 				<div class="ts-divider"></div>
 				<div class="ts-content">
-					<div class="ts-wrap is-vertical">
+					<div class="ts-wrap is-relaxed is-vertical">
 						<div>
-							<div class="ts-text has-bottom-spaced-small is-label">課表開始日期</div>
-							<div class="ts-input is-fluid">
-								<input type="date" v-model="icsStartDate">
+							<div class="ts-text is-label has-bottom-spaced-small">
+								提醒
+								<span class="ts-text is-secondary">（可設定的提醒數量會因手機品牌與行事曆軟體的不同而有所差異）</span>
+							</div>
+							<div class="ts-wrap">
+								<label class="ts-checkbox">
+									<input type="checkbox" value="10" v-model="icsReminders">
+									10 分鐘前
+								</label>
+								<label class="ts-checkbox">
+									<input type="checkbox" value="5" v-model="icsReminders">
+									5 分鐘前
+								</label>
+								<label class="ts-checkbox">
+									<input type="checkbox" value="0" v-model="icsReminders">
+									課程開始時
+								</label>
+							</div>
+						</div>
+						<div class="ts-grid is-middle-aligned">
+							<div class="column is-8-wide">
+								<div class="ts-text is-label has-bottom-spaced-small">課表開始日期</div>
+								<div class="ts-input is-fluid">
+									<input type="date" v-model="icsStartDate">
+								</div>
+							</div>
+							<div class="column is-8-wide">
+								<div class="ts-text is-label has-bottom-spaced-small">課表結束日期</div>
+								<div class="ts-input is-fluid">
+									<input type="date" v-model="icsEndDate" :min="icsStartDate">
+								</div>
+							</div>
+							<div class="column is-16-wide">
+								<div class="ts-text is-description">共 {{ icsWeek }} 週</div>
 							</div>
 						</div>
 						<div>
-							<div class="ts-text has-bottom-spaced-small is-label">課表結束日期</div>
-							<div class="ts-input is-fluid">
-								<input type="date" v-model="icsEndDate" :min="icsStartDate">
-							</div>
-						</div>
-						<div>
-							<div class="ts-text is-description has-vertically-spaced">共 {{ icsWeek }} 週</div>
 							<a class="ts-button is-fluid" :class="{'is-disabled': !icsEndDate || !icsStartDate || icsEndDate < icsStartDate}" :href="icsUrl">匯出</a>
 						</div>
 					</div>
@@ -566,6 +590,7 @@ export default {
 			},
 			icsStartDate: '',
 			icsEndDate: '',
+			icsReminders: [10, 5, 0],
 
 			themes: [
 				{
@@ -686,7 +711,7 @@ export default {
 				c.classroom,
 				c.time[0],
 				c.time[1]
-			])))
+			]))) + '&r=' + this.icsReminders.join(',');
 		}
 	},
 	methods: {
@@ -1243,9 +1268,9 @@ export default {
 		closeDialog() {
 			this.editingCourse = Object.freeze(this.defaultCourse);
 			this.editingAction = null;
-			document.getElementById('editCourseDialog').close();
-			document.getElementById('widgetDialog').close();
-			document.getElementById('importDialog').close();
+			['editCourseDialog', 'widgetDialog', 'importDialog', 'icsDialog'].forEach(dialog => {
+				document.getElementById(dialog).close();
+			});
 		},
 
 		editCourse() {
