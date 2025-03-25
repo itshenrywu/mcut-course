@@ -69,6 +69,7 @@ export default {
 						localStorage['auth_key'] = '';
 						localStorage['profile_image'] = '';
 						localStorage['profile_name'] = '';
+						localStorage['uid'] = '';
 						location.reload();
 					}
 					if(!res.data.hide_ad) {
@@ -83,18 +84,21 @@ export default {
 
 					if(res.data.image) localStorage['profile_image'] = res.data.image;
 					if(res.data.name) localStorage['profile_name'] = res.data.name;
+					if(res.data.uid) localStorage['uid'] = res.data.uid;
 					this.$root.$emit('showProfileImage', localStorage['profile_image']);
 				})
 				.catch((err) => {
 					localStorage['auth_key'] = '';
 					localStorage['profile_image'] = '';
 					localStorage['profile_name'] = '';
+					localStorage['uid'] = '';
 					location.reload();
 					this.$root.$emit('showProfileImage', '');
 				});
 			} else {
 				localStorage['myCourseSync'] = '';
 				localStorage['profile_name'] = '';
+				localStorage['uid'] = '';
 				this.setShowAd(true);
 				this.checkAdBlock();
 				this.$root.$emit('showProfileImage', '');

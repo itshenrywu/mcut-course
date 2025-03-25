@@ -52,12 +52,16 @@
 			<div class="ts-text is-description">
 				<span class="ts-badge is-small is-dense">提醒事項</span>
 				<div class="ts-list is-ordered">
-					<div class="item">請於付款後至 <a href="https://line.me/R/ti/p/%40221oslxd" target="_blank">MCUT Bot 客服中心</a> 提供截圖證明及「LINE 帳號名稱」，以利後續作業。</div>
-					<div class="item">處理時間約為 1 ~ 3 個工作天，請耐心等候。</div>
-					<div class="item">若您過去有贊助過 MCUT Bot，亦可直接聯繫客服領取無廣告特權！</div>
+					<div class="item">請於付款後至 <a href="https://line.me/R/ti/p/%40221oslxd" target="_blank">MCUT Bot 客服中心</a> 提供截圖證明及下方的代碼，以利後續作業。</div>
+					<div class="ts-box has-bottom-spaced-small">
+						<div class="ts-content is-dense">{{ uid }}</div>
+					</div>
+					<div class="item has-bottom-spaced-small">處理時間約為 1 ~ 3 個工作天，請耐心等候。</div>
+					<div class="item has-bottom-spaced-small">若您過去有贊助過 MCUT Bot，亦可直接聯繫客服領取無廣告特權！</div>
 				</div>
 			</div>
 		</div>
+		<loading v-show="loading" />
 	</div>
 </template>
 <style>
@@ -90,7 +94,9 @@ export default {
 	},
 	data() {
 		return {
-			viewing: 0
+			loading: true,
+			viewing: 0,
+			uid: '-'
 		}
 	},
 	computed: {
@@ -99,8 +105,24 @@ export default {
 		}),
 	},
 	mounted() {
-		localStorage['clickRemoveAd'] = 'true';
-		this.$root.$emit('checkRedDot');
+		if(!localStorage['auth_key']) {
+			location.href = '/login/';
+			this.loading = false;
+		} else {
+			this.profileImage = localStorage['profile_image'];
+			this.profileName = localStorage['profile_name'];
+			this.uid = localStorage['uid'];
+			this.$root.$on('showProfileImage', (profileImage) => {
+				this.profileImage = profileImage;
+				this.profileName = localStorage['profile_name'];
+				this.loading = false;
+			});
+
+			if(this.profileImage && this.profileName) {
+				localStorage['clickRemoveAd'] = 'true';
+				this.$root.$emit('checkRedDot');
+			}
+		}
 	},
 };
 </script>
