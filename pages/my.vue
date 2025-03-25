@@ -123,7 +123,7 @@
 							<span class="ts-icon is-mobile-screen-icon"></span>
 							安裝 iOS 小工具
 						</button>
-						<a class="ts-button is-small is-fluid is-start-icon" @click="saveToCalendar()" v-show="!loading && !showAd">
+						<a class="ts-button is-small is-fluid is-start-icon" @click="saveToCalendar()">
 							<span class="ts-icon is-calendar-days-icon"></span>
 							存到行事曆
 						</a>
@@ -174,7 +174,7 @@
 							iOS 小工具
 						</button>
 					</div>
-					<div class="column" v-if="!loading && !showAd">
+					<div class="column">
 						<button class="ts-button is-fluid is-start-icon" @click="saveToCalendar()">
 							<span class="ts-icon is-calendar-days-icon"></span>
 							存到行事曆
@@ -432,6 +432,23 @@
 						</div>
 						<div>
 							<a class="ts-button is-fluid" :class="{'is-disabled': !icsEndDate || !icsStartDate || icsEndDate < icsStartDate}" :href="icsUrl">匯出</a>
+							<div style="color: var(--ts-gray-600); font-size: .8rem;">
+								<div class="ts-header has-top-spaced">使用方式</div>
+								Apple 日曆
+								<div class="ts-list is-ordered">
+									<li>點擊匯出後，會出現「有可用的日曆檔案」，點擊「繼續」</li>
+									<li>預覽課表，確認無誤後，點擊「全部加入」</li>
+								</div>
+								Google 日曆
+								<div class="ts-list is-ordered">
+									<li>點擊匯出後，前往下載，開啟剛剛下載的檔案</li>
+									<li>預覽課表，確認無誤後，點擊「新增全部」</li>
+								</div>
+								TimeTree
+								<div class="ts-list is-ordered">
+									<li>TimeTree 無法直接匯入，但仍可使用其他方法，請參考<a target="_blank" rel="nofollow" href="https://support.timetreeapp.com/hc/zh-tw/articles/360000629341-%E5%B8%8C%E6%9C%9B%E4%BD%BF%E7%94%A8%E5%85%B6%E4%BB%96%E6%97%A5%E6%9B%86-%E5%A6%82-Google-%E6%97%A5%E6%9B%86">官方說明</a></li>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -590,7 +607,7 @@ export default {
 			},
 			icsStartDate: '',
 			icsEndDate: '',
-			icsReminders: [10, 5, 0],
+			icsReminders: [10],
 
 			themes: [
 				{
