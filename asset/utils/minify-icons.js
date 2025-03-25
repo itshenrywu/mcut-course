@@ -48,7 +48,11 @@ let icons = [
 	'is-users-icon',
 	'is-volleyball-icon',
 	'is-x-icon',
-	'is-xmark-icon'
+	'is-xmark-icon',
+	'is-bars-staggered-icon',
+	'is-file-lines-icon',
+	'is-circle-question-icon',
+	'is-wand-magic-sparkles-icon'
 ];
 
 const filePath = path.join(__dirname, '../tocas/icons.css');

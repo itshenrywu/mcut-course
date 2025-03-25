@@ -119,11 +119,11 @@
 							<span class="ts-icon is-download-icon"></span>
 							下載圖片
 						</button>
-						<button class="ts-button is-small is-fluid is-start-icon" @click="showWidget()" v-show="isIos">
+						<button class="ts-button is-small is-fluid is-start-icon" @click="showWidget()" v-show="isIos" :class="{'is-disabled': myCourses.length == 0}">
 							<span class="ts-icon is-mobile-screen-icon"></span>
 							安裝 iOS 小工具
 						</button>
-						<a class="ts-button is-small is-fluid is-start-icon" @click="saveToCalendar()">
+						<a class="ts-button is-small is-fluid is-start-icon" @click="saveToCalendar()" :class="{'is-disabled': myCourses.length == 0}">
 							<span class="ts-icon is-calendar-days-icon"></span>
 							存到行事曆
 						</a>
@@ -142,7 +142,6 @@
 			</div>
 		</div>
 		<div class="cell is-secondary is-fluid is-scrollable main" style="min-height:100%">
-			<profile mobile-only="true"></profile>
 			<div class="ts-container mobile-only">
 				<div class="ts-box has-bottom-spaced has-top-spaced-large">
 					<div class="ts-content">
@@ -169,13 +168,13 @@
 						</button>
 					</div>
 					<div class="column">
-						<button class="ts-button is-fluid is-start-icon" @click="showWidget()">
+						<button class="ts-button is-fluid is-start-icon" @click="showWidget()" :class="{'is-disabled': myCourses.length == 0}">
 							<span class="ts-icon is-mobile-screen-icon"></span>
 							iOS 小工具
 						</button>
 					</div>
 					<div class="column">
-						<button class="ts-button is-fluid is-start-icon" @click="saveToCalendar()">
+						<button class="ts-button is-fluid is-start-icon" @click="saveToCalendar()" :class="{'is-disabled': myCourses.length == 0}">
 							<span class="ts-icon is-calendar-days-icon"></span>
 							存到行事曆
 						</button>

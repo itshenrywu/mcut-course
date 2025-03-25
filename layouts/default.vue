@@ -3,9 +3,8 @@
 		<top-menu />
 		<Nuxt />
 		<div class="cell">
-			<div class="footer">Powered by <a href="https://line.me/R/ti/p/%40ptq1966v" target="_blank">MCUT Bot</a> /
-				<a href="https://henrywu.tw" target="_blank">Henry Wu</a> | 
-				<NuxtLink to="/about">建議或問題回報</NuxtLink>
+			<div class="footer">
+				Made by <a href="https://henrywu.tw" target="_blank">Henry Wu</a>
 			</div>
 		</div>
 	</div>
@@ -78,6 +77,8 @@ export default {
 					}
 					else {
 						this.setShowAd(false);
+						localStorage['clickRemoveAd'] = true;
+						this.$root.$emit('checkRedDot');
 					}
 
 					if(res.data.image) localStorage['profile_image'] = res.data.image;

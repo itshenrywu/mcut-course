@@ -2,41 +2,24 @@
 	<div class="cell">
 		<div class="print-only">明志科技大學選課小幫手 | mcut-course.com</div>
 		<div class="ts-container is-fitted navbar">
-			<div class="ts-grid">
-				<div class="column is-3-wide mobile-hidden"></div>
-				<div class="column is-10-wide mobile-fluid">
-					<div class="ts-tab is-center-aligned">
-						<NuxtLink
-							v-for="item in menuItems"
-							:key="item.path"
-							:to="isActive(item.path) ? '?' : item.path"
-							:class="{ 'is-active': isActive(item.path) }"
-							class="item"
-						>
-							<img v-if="item.path === '/my/' && profileImage" :src="'data:image/jpeg;base64,' + profileImage" class="profile-image">
-							<span v-else class="ts-icon" :class="item.icon"></span>
-							<div class="label">
-								{{ item.label }}
-								<span v-if="item.path === '/saved/' && savedCourse.length > 0" class="ts-badge is-small is-dense">
-									{{ savedCourse.length }}
-								</span>
-								<span v-if="item.path === '/info/' && showInfoHint" class="hint"></span>
-							</div>
-						</NuxtLink>
+			<div class="ts-tab is-center-aligned">
+				<NuxtLink
+					v-for="item in menuItems"
+					:key="item.path"
+					:to="isActive(item.path) ? '?' : item.path"
+					:class="{ 'is-active': isActive(item.path) }"
+					class="item"
+				>
+					<img v-if="item.path === '/my/' && profileImage" :src="'data:image/jpeg;base64,' + profileImage" class="profile-image">
+					<span v-else class="ts-icon" :class="item.icon"></span>
+					<div class="label">
+						{{ item.label }}
+						<span v-if="item.path === '/saved/' && savedCourse.length > 0" class="ts-badge is-small is-dense">
+							{{ savedCourse.length }}
+						</span>
+						<span v-if="item.path === '/more/' && showRedDot" class="hint"></span>
 					</div>
-				</div>
-				<div class="column is-3-wide mobile-hidden">
-					<div class="ts-tab is-end-aligned">
-						<NuxtLink to="/login/" class="item" v-if="!profileImage">
-							<span class="ts-icon is-arrow-right-to-bracket-icon"></span>
-							<div class="label">登入</div>
-						</NuxtLink>
-						<button class="item" v-else @click="logout()">
-							<div class="label">登出</div>
-							<span class="ts-icon is-arrow-right-from-bracket-icon"></span>
-						</button>
-					</div>
-				</div>
+				</NuxtLink>
 			</div>
 		</div>
 	</div>
@@ -76,6 +59,7 @@
 
 .profile-image.is-fluid {
 	width: 100%;
+	max-width: 50px;
 	height: auto;
 	aspect-ratio: 1 / 1;
 }
@@ -126,10 +110,10 @@ export default {
 			this.currentPath = to.path;
 		});
 
-		this.$root.$on('clickInfo', (savedCourse) => {
-			this.showInfoHint = localStorage['clickInfo_20241224'] !== 'true';
+		this.$root.$on('checkRedDot', () => {
+			this.showRedDot = localStorage['clickInfo_20241224'] !== 'true' || (localStorage['auth_key'] && localStorage['clickRemoveAd'] !== 'true');
 		});
-		this.showInfoHint = localStorage['clickInfo_20241224'] !== 'true';
+		this.showRedDot = localStorage['clickInfo_20241224'] !== 'true' || (localStorage['auth_key'] && localStorage['clickRemoveAd'] !== 'true');
 
 		if(localStorage['auth_key']) this.profileImage = localStorage['profile_image'];
 		this.$root.$on('showProfileImage', (profileImage) => {
@@ -141,7 +125,7 @@ export default {
 		return {
 			savedCourse: [],
 			currentPath: '',
-			showInfoHint: false,
+			showRedDot: false,
 			menuItems: [
 				{
 					path: '/',
@@ -159,9 +143,9 @@ export default {
 					icon: 'is-graduation-cap-icon',
 				},
 				{
-					path: '/info/',
-					label: '選課時間',
-					icon: 'is-clock-icon',
+					path: '/more/',
+					label: '更多功能',
+					icon: 'is-bars-staggered-icon',
 				},
 			],
 			profileImage: '',

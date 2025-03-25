@@ -1,6 +1,5 @@
 <template>
 	<div class="cell is-secondary is-fluid is-scrollable" id="page-saved">
-		<profile></profile>
 		<div class="ts-container has-top-padded-large is-fitted">
 			<div class="ts-grid is-compact is-middle-aligned mobile-padded">
 				<div class="column is-13-wide">
@@ -161,7 +160,7 @@
 										'is-green': coursesByStartTime[w][section][0].type == '選修',
 										'is-gray': coursesByStartTime[w][section][0].type == '重修',
 									}"
-									@click="showCourse(coursesByStartTime[w][section][0])" :style="{'height': (coursesByStartTime[w][section][0].period * 2.8) - .7 + 'rem'}">
+									@click="showCourse(coursesByStartTime[w][section][0])" :style="{'height': (coursesByStartTime[w][section][0].period * 3.5) - .7 + 'rem'}">
 									<div>{{ coursesByStartTime[w][section][0].name }}</div>
 								</div>
 							</td>
@@ -226,7 +225,7 @@
 	font-size: 12px !important;
 	line-height: 1rem;
 	padding: 0;
-	height: 2.7rem !important;
+	height: 3.5rem !important;
 	position: relative;
 }
 

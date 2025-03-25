@@ -9,6 +9,7 @@
     "gen": "MODE=dev nuxt generate",
     "gen-prod": "MODE=prod nuxt generate",
     "list-icons": "find . -name '*.vue' -exec grep -Eo 'is(-[a-zA-Z0-9]+)+-icon' {} + | awk -F: '{print $NF}' | sort | uniq",
+    "minify-icons": "node ./asset/utils/minify-icons.js",
     "minify-tocas": "npx cleancss -o static/css/tocas.min.css asset/tocas/tocas.css"
   },
   "dependencies": {

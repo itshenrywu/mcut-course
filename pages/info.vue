@@ -173,7 +173,7 @@ export default {
 	},
 	mounted() {
 		localStorage['clickInfo_20241224'] = 'true';
-		this.$root.$emit('clickInfo');
+		this.$root.$emit('checkRedDot');
 	},
 	computed: {
 		...mapState({
