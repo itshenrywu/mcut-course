@@ -57,7 +57,7 @@
 						<div class="ts-content is-dense">{{ uid }}</div>
 					</div>
 					<div class="item has-bottom-spaced-small">處理時間約為 1 ~ 3 個工作天，請耐心等候。</div>
-					<div class="item has-bottom-spaced-small">若您過去有贊助過 MCUT Bot，亦可直接聯繫客服領取無廣告特權！</div>
+					<div class="item has-bottom-spaced-small">若您過去一年內有贊助過 MCUT Bot，亦可直接聯繫客服領取無廣告特權！</div>
 				</div>
 			</div>
 		</div>
