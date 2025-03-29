@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1F8U/1202", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"11121F8U1202",name:"電磁相容",type:"選修",dept:"電機系碩士班",year:a,class:"甲",teacher:"廖兆祥",credit:b,classroom:b,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

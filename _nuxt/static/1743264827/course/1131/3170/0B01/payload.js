@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3170/0B01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"113131700B01",name:"模型製作",type:"必修",dept:"四技工設系",year:"1",class:"甲",teacher:"謝國榮",credit:a,classroom:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

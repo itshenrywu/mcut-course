@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/2001", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"111230702001",name:"印刷設計",type:"選修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"陳容蔚",credit:a,classroom:a,max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

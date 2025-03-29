@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2180/5001", {data:[{course:{time:[["4","6~8"]],id:"110121805001",name:"台塑企業管理機能研討",type:"必修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"張仁履",credit:"0",classroom:"3",max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

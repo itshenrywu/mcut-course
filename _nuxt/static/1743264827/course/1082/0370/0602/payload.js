@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0370/0602", (function(a){return {data:[{course:{time:[["7","6~6"]],id:"108203700602",name:"生物多樣性保育規劃",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"黃浚瑋",credit:a,hour:a,max:"40",min:"10",comment:"第2階段",otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("2")));

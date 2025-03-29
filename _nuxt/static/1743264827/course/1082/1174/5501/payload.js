@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1174/5501", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108211745501",name:"快速原型製造與實習",type:"選修",dept:"四技機械系",year:"4",class:"甲",teacher:"郭啟全",credit:a,hour:"3",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

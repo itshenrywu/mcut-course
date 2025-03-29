@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1670/1F01", (function(a){return {data:[{course:{time:[["5","5~6"]],id:"110216701F01",name:"水質分析實驗",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"洪明瑞",credit:"1",classroom:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

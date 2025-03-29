@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1574/2901", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108215742901",name:"半導體測試",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"鄭信民",credit:a,hour:a,max:"50",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

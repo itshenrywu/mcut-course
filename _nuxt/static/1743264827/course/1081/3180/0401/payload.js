@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3180/0401", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"108131800401",name:"設計研究(一)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"賴宛吟",credit:a,hour:a,max:"20",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));
