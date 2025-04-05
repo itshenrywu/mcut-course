@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/6270/0B01", (function(a){return {data:[{course:{time:[["3","3~4"]],id:"111262700B01",name:"線性代數",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"劉弘一",credit:a,classroom:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0470/0504", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"113204700504",name:"微積分(二)",type:"必修",dept:"四技材工系",year:"1",class:"乙",teacher:"陳隆暉",credit:a,classroom:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

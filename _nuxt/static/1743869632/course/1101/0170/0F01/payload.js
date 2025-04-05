@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0170/0F01", (function(a){return {data:[{course:{time:[[a,"4.5~5"]],id:"110101700F01",name:"文學鑑賞與情意表達",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"李慧琪",credit:a,classroom:a,max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

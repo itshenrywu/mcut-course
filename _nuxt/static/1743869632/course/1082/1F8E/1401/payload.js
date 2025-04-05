@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1F8E/1401", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"10821F8E1401",name:"電力系統穩定度(一)",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"王勝寬",credit:a,hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

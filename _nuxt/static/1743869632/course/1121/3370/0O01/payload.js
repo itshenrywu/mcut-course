@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3370/0O01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112133700O01",name:"數位插畫設計",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"徐港倫",credit:a,classroom:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

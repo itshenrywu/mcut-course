@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/11C0/1L02", (function(a,b){return {data:[{course:{time:[[b,"2~4"],[b,"5~7"]],id:"110411C01L02",name:"材料力學",type:"重修",dept:"四技進修部機械系",year:a,class:"暑",teacher:"郭啟全",credit:a,classroom:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

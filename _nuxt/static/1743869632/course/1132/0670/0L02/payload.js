@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0670/0L02", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"113206700L02",name:"體育(四)身體律動",type:"必修",dept:"體育組-四技(日)",year:a,class:"甲",teacher:"楊福珍",credit:"1",classroom:a,max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1570/5001", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"110115705001",name:"電磁學",type:"重修",dept:"四技電子系",year:"4",class:"重",teacher:"廖兆祥",credit:a,classroom:a,max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

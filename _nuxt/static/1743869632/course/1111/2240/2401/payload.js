@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2240/2401", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111122402401",name:"統計學(一)",type:"必修",dept:"四技經管系",year:a,class:"甲",teacher:"張明輝",credit:b,classroom:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

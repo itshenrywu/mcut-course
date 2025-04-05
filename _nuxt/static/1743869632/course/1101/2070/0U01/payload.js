@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2070/0U01", {data:[{course:{time:[["2","5~7"]],id:"110120700U01",name:"工程倫理與實務講座",type:"選修",dept:"環實務",year:"4",class:"甲",teacher:"劉定宇",credit:"1",classroom:"3",max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2280/3B01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"111122803B01",name:"商業智慧應用專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"黃銘圭",credit:a,classroom:a,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

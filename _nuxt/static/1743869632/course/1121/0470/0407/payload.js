@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0470/0407", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"112104700407",name:"微積分(一)",type:"必修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"施正元",credit:a,classroom:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

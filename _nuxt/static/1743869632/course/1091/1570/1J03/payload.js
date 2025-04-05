@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1570/1J03", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109115701J03",name:"程式設計實務",type:"必修",dept:"四技電子系",year:"1",class:"乙",teacher:"唐明中",credit:"2",classroom:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));
