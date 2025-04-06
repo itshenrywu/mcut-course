@@ -359,7 +359,7 @@
 								{{ message ? message[1] : '點選下方區塊即可複製' }}
 							</div>
 							<div class="ts-input is-solid">
-								<div class="ts-box" id="code1" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(1)"><div class="ts-content">(()=>{let e=document.querySelectorAll('[role="row"]');if(!e||0===e.length){alert("沒有找到任何課程，請確認頁面是否正確！");return}let t=[];e.forEach(e=>{let l=[];e.querySelectorAll('[role="gridcell"]').forEach(e=>{l.push(e.textContent.trim()),e.querySelector("a")&&l.push(e.querySelector("a").href.split("cid=")[1].split("&")[0])}),l.length>0&&t.push(l)});let l=encodeURIComponent(JSON.stringify(t));window.open(`https://mcut-course.com/my?import=${l}`)})();</div></div>
+								<div class="ts-box" id="code1" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(1)"><div class="ts-content">{{ importCodeFile }}</div></div>
 							</div>
 						</div>
 						<div>
@@ -579,6 +579,7 @@ export default {
 			},
 			ctx: null,
 			scriptableCodeFile: '',
+			importCodeFile: '',
 			message: null,
 			messageTimer: null,
 
@@ -1518,6 +1519,9 @@ export default {
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
 		this.$axios.get('/scriptable.min.js?v=2').then(res => {
 			this.scriptableCodeFile = res.data;
+		});
+		this.$axios.get('/import.js').then(res => {
+			this.importCodeFile = res.data;
 		});
 		try { this.myCourses = JSON.parse(localStorage.myCourses); } catch (e) { }
 		if(localStorage.auth_key) {
