@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1880/3401", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"109218803401",name:"固態物理",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"阮弼群",credit:a,classroom:a,max:"50",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

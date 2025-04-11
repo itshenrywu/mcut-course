@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/33C4/0301", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"109233C40301",name:"專題設計(二)",type:"必修",dept:"四技進修部視傳系",year:"4",class:"甲",teacher:"薛惠月",credit:a,classroom:"6",max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11")));

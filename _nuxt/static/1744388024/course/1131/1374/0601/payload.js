@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1374/0601", {data:[{course:{time:[["5","2~4"]],id:"113113740601",name:"工程倫理與實務講座",type:"必修",dept:"四技化工系",year:"4",class:"甲",teacher:"阮宏藝",credit:"1",classroom:"3",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

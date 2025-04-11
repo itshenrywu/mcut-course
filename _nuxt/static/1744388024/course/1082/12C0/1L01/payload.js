@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/12C0/1L01", (function(a,b){return {data:[{course:{time:[[a,"4~4.5"],[a,"8~9"]],id:"108212C01L01",name:"電子學與實習(二)",type:"必修",dept:"四技進修部電機系",year:"2",class:"甲",teacher:"蘇益立",credit:b,hour:b,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("6","4")));

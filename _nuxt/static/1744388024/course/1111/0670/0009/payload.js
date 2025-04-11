@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0670/0009", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"111106700009",name:"體育(一)",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"王學中",credit:a,classroom:"2",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1570/1T01", {data:[{course:{time:[["5","5~7"]],id:"110115701T01",name:"電路佈局實務",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"陳華彬",credit:"2",classroom:"3",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

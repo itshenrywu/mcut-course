@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0270/1G01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"110102701G01",name:"文化語言自由行",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"龔育緯",credit:a,classroom:a,max:"48",min:"10",comment:"",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/18C0/0201", (function(a,b){return {data:[{course:{time:[[b,"4~4"],[b,"5~6"]],id:"109218C00201",name:"品質管制",type:"必修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"陳世民",credit:a,classroom:a,max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","6")));

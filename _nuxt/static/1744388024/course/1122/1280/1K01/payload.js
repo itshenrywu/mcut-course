@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1280/1K01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"112212801K01",name:"微波光纖系統",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"蔡文星",credit:a,classroom:a,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3380/0K01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"112133800K01",name:"APP設計",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"李昌國",credit:a,classroom:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

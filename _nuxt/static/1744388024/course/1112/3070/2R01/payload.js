@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/2R01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"111230702R01",name:"財務報表分析",type:"選修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"薄榮薇",credit:a,classroom:a,max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));
