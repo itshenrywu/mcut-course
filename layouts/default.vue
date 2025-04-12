@@ -20,11 +20,9 @@ export default {
 		}
 	},
 	mounted() {
-		this.checkAdBlock();
 		if(!['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, ''))) localStorage['last_path'] = this.$router.currentRoute.path;
 		this.$watch('$route', () => {
 			this.checkLogin();
-			this.checkAdBlock();
 			if(!['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, ''))) localStorage['last_path'] = this.$router.currentRoute.path;
 		});
 		if(
@@ -51,14 +49,6 @@ export default {
 	},
 	methods: {
 		...mapMutations(['setShowAd']),
-		checkAdBlock() {
-			setTimeout(() => {
-				if (document.querySelector('.adsbygoogle') && document.querySelector('.adsbygoogle').offsetHeight == 0) {
-					document.querySelector('.ad .ts-content').innerHTML = '<div class="ts-text is-description has-bottom-padded-small">贊助商</div>\
-					<div class="ts-text is-secondary is-center-aligned has-vertically-padded">太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>';
-				}
-			}, 500);
-		},
 		checkLogin() {
 			if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
 				this.$axios.get(
@@ -74,7 +64,6 @@ export default {
 					}
 					if(!res.data.hide_ad) {
 						this.setShowAd(true);
-						this.checkAdBlock();
 					}
 					else {
 						this.setShowAd(false);
@@ -100,7 +89,6 @@ export default {
 				localStorage['profile_name'] = '';
 				localStorage['uid'] = '';
 				this.setShowAd(true);
-				this.checkAdBlock();
 				this.$root.$emit('showProfileImage', '');
 			}
 		}

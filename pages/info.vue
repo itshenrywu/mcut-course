@@ -53,7 +53,7 @@
 			<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="showAd">
 				<div class="ts-content">
 					<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
-					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous"></script>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelector('.ad .ts-content').innerHTML='<div class=&quot;ts-text is-description has-bottom-padded-small&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned has-vertically-padded&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>';"></script>
 					<ins class="adsbygoogle"
 						style="display:block; text-align:center;"
 						data-ad-layout="in-article"
