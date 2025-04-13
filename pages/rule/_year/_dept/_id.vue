@@ -371,7 +371,7 @@
 }
 </style>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
 		let depts = {};
@@ -457,6 +457,7 @@ export default {
 		}
 	},
 	methods: {
+		...mapMutations(['setSavedCourse']),
 		async init() {
 			let refreshId = false;
 			if (this.$route.params.id) {
@@ -602,7 +603,7 @@ export default {
 				})
 				.then((res) => {
 					if (res.isConfirmed) {
-						this.$store.dispatch('setSavedCourse', []);
+						this.setSavedCourse([]);
 						localStorage['term'] = this.currentRuleTerm;
 						localStorage['searchQuery'] = sid;
 						localStorage['dept'] = '';
