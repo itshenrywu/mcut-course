@@ -44,7 +44,7 @@
 				</div>
 			</div>
 			<div class="ts-grid is-stretched has-top-spaced" v-if="course.name">
-				<div class="column is-16-wide mobile-fluid" v-if="similarCourses.length > 0">
+				<div class="column is-16-wide mobile-fluid" id="similar-course-button" v-if="similarCourses.length > 0">
 					<a class="ts-box" @click="viewSimilarCourses();" style="cursor: pointer;" aria-label="查看歷年開課紀錄">	
 						<div class="ts-content">
 							<div class="ts-grid is-compact is-middle-aligned">
@@ -359,6 +359,11 @@
 }
 
 @media print {
+	.button-fab,
+	#similar-course-button {
+		display: none !important;
+	}
+
 	#page-course tbody tr td:first-child {
 		width: 12rem;
 	}

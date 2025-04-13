@@ -67,7 +67,19 @@
 		</div>
 		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%" v-else>
 			<div class="ts-container has-top-padded-large is-fitted mobile-padded">
-				<h1 class="ts-header is-huge has-top-padded has-bottom-padded-large">畢業學分門檻</h1>
+				<h1 class="ts-header is-huge has-top-padded has-bottom-padded-large">
+					畢業學分門檻
+					<div class="print-only" v-if="currentRule != '-1'" style="margin-left: 1rem;">
+						<template v-if="currentRule == '000'">
+							{{ currentYear }} 入學 /
+							{{ currentDeptName }}
+						</template>
+						<template v-else>
+							{{ currentYear }} 入學 /
+							{{ currentRuleName }}
+						</template>
+					</div>
+				</h1>
 				<button class="ts-button is-fluid is-secondary is-end-labeled-icon mobile-only"
 					@click="showMobileSidebar = !showMobileSidebar">
 					<template v-if="currentRule == '-1'">選擇課程總表</template>
@@ -233,7 +245,7 @@
 }
 
 #page-rule td:nth-child(4) {
-	width: 9rem;
+	width: 10rem;
 }
 
 #page-rule .rule_subtype {
@@ -319,6 +331,26 @@
 }
 
 @media print {
+	#page-rule {
+		overflow-y: visible !important;
+	}
+
+	#page-rule .ts-content.is-tertiary {
+		border-bottom: 1px solid var(--ts-gray-200);
+	}
+
+	#page-rule .ts-content.is-secondary {
+		border-bottom: 1px solid var(--ts-gray-200);
+	}
+
+	#page-rule td:first-child {
+		padding-left: 4rem;
+	}
+
+	#page-rule td.ts-text.is-description {
+		display: none;
+	}
+
 	.sidebar {
 		width: 0;
 		display: none;
