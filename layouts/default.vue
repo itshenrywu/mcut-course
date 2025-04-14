@@ -20,6 +20,26 @@ export default {
 		}
 	},
 	mounted() {
+		const wrapper = document.querySelector('.ts-app-layout.is-fullscreen');
+		if (!wrapper) return;
+		const observer = new MutationObserver((mutations) => {
+			mutations.forEach((mutation) => {
+				if (wrapper.style.height !== '') {
+					wrapper.style.height = '';
+				}
+				if (wrapper.style.minHeight !== '') {
+					wrapper.style.minHeight = '';
+				}
+			});
+		});
+		observer.observe(wrapper, {
+			attributes: true,
+			attributeFilter: ['style']
+		});
+		this.$once('hook:beforeDestroy', () => {
+			observer.disconnect();
+		});
+
 		if(!['login', 'logout', 'c'].includes(this.$router.currentRoute.path.replace(/\//g, ''))) localStorage['last_path'] = this.$router.currentRoute.path;
 		this.$watch('$route', () => {
 			this.checkLogin();
