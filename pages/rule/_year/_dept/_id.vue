@@ -207,7 +207,6 @@
 						</div>
 					</div>
 				</template>
-				<br>
 			</div>
 			<div class="ts-mask" v-show="showMobileSidebar" @click="showMobileSidebar = !showMobileSidebar"></div>
 		</div>

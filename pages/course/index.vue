@@ -659,6 +659,9 @@ export default {
 			}
 			this.setSavedCourse([this.savedCourse]);
 			this.$root.$emit('updateSavedCourse', this.savedCourse);
+			if(this.currentPage > this.totalPages) {
+				this.currentPage = this.totalPages;
+			}
 		},
 		changePage(page) {
 			if (page < 1 || page > this.totalPages || page === this.currentPage) return;
