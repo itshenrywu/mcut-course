@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1280/1H01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"112112801H01",name:"無線通訊系統",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"賴文政",credit:"3",classroom:a,max:"30",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

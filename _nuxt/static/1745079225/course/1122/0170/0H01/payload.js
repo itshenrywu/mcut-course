@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0170/0H01", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"112201700H01",name:"西洋電影賞析",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"蒲彥光",credit:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("")));

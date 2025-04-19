@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1170/0C03", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[b,"1~2"]],id:"110111700C03",name:"製造學",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"蔡習訓",credit:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

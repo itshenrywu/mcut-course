@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3372/0101", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"111133720101",name:"2D影像設計",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"薛惠月",credit:"3",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

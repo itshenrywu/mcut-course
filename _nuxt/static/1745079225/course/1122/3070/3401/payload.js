@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3070/3401", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"112230703401",name:"多媒體創作",type:"選修",dept:"行銷設計學程",year:"2",class:"甲",teacher:"何孟翰",credit:"3",classroom:a,max:"30",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

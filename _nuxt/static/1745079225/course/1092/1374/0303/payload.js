@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1374/0303", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"109213740303",name:"單元操作與輸送現象(二)",type:"重修",dept:"四技化工系",year:"4",class:"重",teacher:"黃錦鴻",credit:a,classroom:b,max:"65",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

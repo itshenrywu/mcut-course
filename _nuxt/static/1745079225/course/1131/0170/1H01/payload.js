@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/1H01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"113101701H01",name:"台灣史蹟與文化",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳冠穎",credit:"2",classroom:a,max:"45",min:"10",comment:a,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("")));

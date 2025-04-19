@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3180/0501", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"110231800501",name:"設計研究(二)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"謝政道",credit:"3",classroom:a,max:"20",min:"無下限",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

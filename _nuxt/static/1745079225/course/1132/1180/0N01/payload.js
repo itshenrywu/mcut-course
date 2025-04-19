@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1180/0N01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"113211800N01",name:"精密機械設計",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"王海",credit:"3",classroom:a,max:"14",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

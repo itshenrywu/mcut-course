@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2270/1402", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"110122701402",name:"人力資源管理",type:"必修",dept:"四技經管系",year:a,class:"甲",teacher:"盧建中",credit:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

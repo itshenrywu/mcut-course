@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3374/0701", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111133740701",name:"藝術影片解析",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"朱賢哲",credit:"3",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

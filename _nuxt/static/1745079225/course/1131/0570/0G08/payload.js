@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/0G08", (function(a){return {data:[{course:{time:[["4","7~8"],["5","6~6"]],id:"113105700G08",name:"普通物理",type:"必修",dept:"四技電機系",year:"1",class:"乙",teacher:"王孟忠",credit:"3",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

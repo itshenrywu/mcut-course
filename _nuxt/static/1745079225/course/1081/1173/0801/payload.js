@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1173/0801", (function(a){return {data:[{course:{time:[["4","5~8"]],id:"108111730801",name:"汽車感測與控制實驗",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"黃道易",credit:"1",hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

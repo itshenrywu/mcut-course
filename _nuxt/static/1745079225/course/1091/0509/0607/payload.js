@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0509/0607", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[b,"7~8"]],id:"109105090607",name:"歷史",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"沈明得",credit:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

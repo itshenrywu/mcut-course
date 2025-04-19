@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1174/3602", (function(a,b,c){return {data:[{course:{time:[[a,"1~2"],[b,"2~2"]],id:"113211743602",name:"工程數學(二)",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"蔡宜昌",credit:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

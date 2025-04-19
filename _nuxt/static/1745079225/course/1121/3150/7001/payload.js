@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3150/7001", (function(a){return {data:[{course:{time:[["1","1~3"]],id:"112131507001",name:"設計方法",type:"必修",dept:"四技工設系",year:"2",class:"甲",teacher:"林恆毅",credit:"3",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

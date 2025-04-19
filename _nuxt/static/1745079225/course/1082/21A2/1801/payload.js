@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/21A2/1801", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"108221A21801",name:"資料探勘",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"王文生",credit:a,hour:a,max:"25",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

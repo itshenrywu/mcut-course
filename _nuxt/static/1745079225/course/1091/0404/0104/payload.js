@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0404/0104", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"109104040104",name:"普通物理",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"張盛義",credit:"3",classroom:a,max:"23",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

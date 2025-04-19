@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2270/1401", (function(a,b){return {data:[{course:{time:[[a,"2~3"],[b,"4~4"]],id:"113122701401",name:"人力資源管理",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"張瀞",credit:b,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));
