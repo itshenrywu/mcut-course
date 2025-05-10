@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1280/1A01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112112801A01",name:"高等電力電子學",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"陳明宏",credit:"3",classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5")));

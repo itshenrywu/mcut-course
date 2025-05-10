@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/02C0/0501", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"109202C00501",name:"英語聽講(二)",type:"必修",dept:"四技進修部電機系",year:"2",class:"甲",teacher:"簡珮玲",credit:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

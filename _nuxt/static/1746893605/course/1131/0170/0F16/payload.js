@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/0F16", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"113101700F16",name:"文學鑑賞與情意表達",type:"必修",dept:"行銷設計學程",year:"1",class:"乙",teacher:"蒲彥光",credit:"2",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

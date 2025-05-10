@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3070/2S01", {data:[{course:{time:[["5","5~7"]],id:"112230702S01",name:"數位攝影",type:"選修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"鄭興宗",credit:"3",classroom:"",max:"65",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

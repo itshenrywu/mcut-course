@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1870/0N01", (function(a,b){return {data:[{course:{time:[["2",a],["4",a]],id:"111118700N01",name:"材料化學性質",type:"選修",dept:"四技材工系",year:b,class:"甲",teacher:"陳志平",credit:b,classroom:"",max:"50",min:"10",comment:"跨領域專班(本系可修)",otherinfo:null}}],fetch:{},mutations:[]}}("3~4","3")));

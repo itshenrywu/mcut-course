@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/6270/2301", (function(a){return {data:[{course:{time:[["5","3~4"]],id:"113162702301",name:"工業物聯網概論",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"黃冠群",credit:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

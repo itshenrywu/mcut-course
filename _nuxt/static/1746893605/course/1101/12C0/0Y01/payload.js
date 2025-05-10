@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/12C0/0Y01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"110112C00Y01",name:"自動控制",type:"必修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"謝飛虎",credit:"3",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

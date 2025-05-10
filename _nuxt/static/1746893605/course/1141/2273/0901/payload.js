@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2273/0901", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"114122730901",name:"國際貿易理論與實務",type:"選修",dept:"四技經管系",year:b,class:"甲",teacher:"張明輝",credit:b,classroom:"",max:"50",min:"10",comment:"帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("5~7","3")));

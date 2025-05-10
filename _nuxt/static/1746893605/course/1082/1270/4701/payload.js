@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1270/4701", {data:[{course:{time:[["2","5~7"]],id:"108212704701",name:"RFID應用實習",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"姜惟元",credit:"1",hour:"3",max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]});

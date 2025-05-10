@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/0128", (function(a,b){return {data:[{course:{time:[[a,"11~12"]],id:"113202700128",name:"工讀自學英文",type:"重修",dept:"外文組-四技(日)",year:a,class:"重",teacher:"廖益輝",credit:"2",classroom:b,max:"40",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

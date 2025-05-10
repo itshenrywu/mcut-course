@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/0Q01", (function(a){return {data:[{course:{time:[["1","0.5~2"]],id:"113105700Q01",name:"環境與生活",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"陳志霖",credit:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("")));

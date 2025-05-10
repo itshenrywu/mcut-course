@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/63P0/0A01", {data:[{course:{time:[["5","8.5~10"]],id:"112163P00A01",name:"電漿製程與應用",type:"選修",dept:"電漿薄膜博士學程",year:"1",class:"甲",teacher:"陳韋佑",credit:"3",classroom:"",max:"25",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

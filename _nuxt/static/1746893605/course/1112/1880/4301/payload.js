@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1880/4301", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"111218804301",name:"封裝製程與材料",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"阮弼群",credit:"3",classroom:a,max:"30",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

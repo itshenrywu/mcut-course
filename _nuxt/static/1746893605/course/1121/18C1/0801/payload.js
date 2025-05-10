@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/18C1/0801", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"112118C10801",name:"材料力學",type:"選修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"彭坤增",credit:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("6","")));

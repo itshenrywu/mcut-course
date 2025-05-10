@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2070/1001", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"113220701001",name:"工業安全與衛生",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"許金玉",credit:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

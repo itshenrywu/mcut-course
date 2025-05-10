@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1E80/5201", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"10811E805201",name:"超精密加工",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"蔡習訓",credit:a,hour:a,max:"12",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

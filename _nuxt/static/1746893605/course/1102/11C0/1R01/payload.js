@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/11C0/1R01", (function(a){return {data:[{course:{time:[["1","7~8.5"]],id:"110211C01R01",name:"內燃機",type:"必修",dept:"四技進修部機械系",year:"4",class:"甲",teacher:"陳鈞琳",credit:"3",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

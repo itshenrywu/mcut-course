@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/1801", (function(a,b){return {data:[{course:{time:[[a,"2~4"],[a,"5~7"]],id:"112130701801",name:"商業影音創作",type:"必修",dept:"四技行設專班",year:b,class:"甲",teacher:"何孟翰",credit:b,classroom:"",max:"30",min:"10",comment:"帶狀課程：7\u002F3-9\u002F1",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

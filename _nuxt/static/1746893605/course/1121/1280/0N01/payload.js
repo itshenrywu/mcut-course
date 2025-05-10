@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1280/0N01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"112112800N01",name:"人工智慧與智慧電網",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"羅慶權",credit:"3",classroom:a,max:"30",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

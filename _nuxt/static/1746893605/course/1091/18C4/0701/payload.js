@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/18C4/0701", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"109118C40701",name:"磁性材料",type:"選修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"沈智隆",credit:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

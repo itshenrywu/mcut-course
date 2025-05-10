@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/2X01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"112130702X01",name:"市場調查與數據分析",type:"選修",dept:"行銷設計學程",year:"2",class:"甲",teacher:"陳進隆",credit:"3",classroom:a,max:"29",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

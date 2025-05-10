@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3374/0302", {data:[{course:{time:[["1","9~11"]],id:"112133740302",name:"展示設計",type:"選修",dept:"四技視傳系",year:"4",class:"甲",teacher:"陳容蔚",credit:"3",classroom:"",max:"45",min:"10",comment:"陳容蔚老師授課，跨領域專班。",otherinfo:null}}],fetch:{},mutations:[]});

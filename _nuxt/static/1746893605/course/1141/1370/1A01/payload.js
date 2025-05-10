@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1370/1A01", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"114113701A01",name:"電化學",type:"選修",dept:"四技化工系",year:b,class:"甲",teacher:"盧奕廷",credit:b,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1674/0901", (function(a,b,c){return {data:[{course:{time:[["1",a],["2",a]],id:"113116740901",name:"風險評估",type:"選修",dept:"四技環安衛系",year:b,class:"甲",teacher:"許金玉",credit:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5~6","3","")));

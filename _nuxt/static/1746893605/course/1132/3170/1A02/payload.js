@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3170/1A02", {data:[{course:{time:[["4","5~7"]],id:"113231701A02",name:"數位工具應用",type:"選修",dept:"四技工設系",year:"2",class:"乙",teacher:"賴宛吟",credit:"3",classroom:"",max:"26",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3170/4302", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111231704302",name:"設計心理學",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"謝國榮",credit:"3",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

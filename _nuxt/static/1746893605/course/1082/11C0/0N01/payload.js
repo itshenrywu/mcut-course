@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/11C0/0N01", (function(a){return {data:[{course:{time:[["5","10~12"]],id:"108211C00N01",name:"自動控制",type:"必修",dept:"四技進修部機械系",year:a,class:"甲",teacher:"胡志中",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

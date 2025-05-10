@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3070/3001", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"113230703001",name:"創意行銷設計",type:"必修",dept:"行銷設計學程",year:a,class:"甲",teacher:"楊正翔",credit:"3",classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

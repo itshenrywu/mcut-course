@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0871/0102", (function(a,b){return {data:[{course:{time:[[a,"4~4"],["4","3~4"]],id:"113108710102",name:"普通化學",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"吳容銘",credit:"3",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

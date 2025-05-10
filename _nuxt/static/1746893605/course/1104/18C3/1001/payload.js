@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/18C3/1001", (function(a){return {data:[{course:{time:[["5","5~8"]],id:"110418C31001",name:"奈米檢測分析",type:"選修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"謝建國",credit:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

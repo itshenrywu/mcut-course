@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1572/1703", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[b,"5~6"]],id:"112115721703",name:"工程數學(一)",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"黃植振",credit:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));
