@@ -200,7 +200,7 @@ import { mapMutations } from 'vuex';
 export default {
 	async asyncData({ $axios }) {
 		let _terms = {};
-		let term_res = await $axios.get('https://api.mcut-course.com/list.php');
+		let term_res = await $axios.get('https://data.mcut-course.com/v1/terms.json');
 		term_res = term_res.data.terms || ["113-2","113-1","112-4","112-3","112-2","112-1","111-4","111-3","111-2","111-1","110-4","110-3","110-2","110-1","109-4","109-3","109-2","109-1","108-4","108-3","108-2","108-1"];
 		term_res.forEach(term => {
 			let _year = term.split('-')[0];
@@ -212,7 +212,7 @@ export default {
 		.sort((a, b) => Number(b[0]) - Number(a[0]))
 		.map(([year, term]) => ({ year: year, term: term }));
 
-		let classList = await $axios.get('https://api.mcut-course.com/class_list.php?type=home');
+		let classList = await $axios.get('https://data.mcut-course.com/v1/dept_class_list.json');
 		classList = classList.data || {};
 
 		return { terms, classList };
@@ -259,10 +259,10 @@ export default {
 				this.courses = res.course;
 				this.loading = false;
 			} else {
-				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
-					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
+				this.$axios.get('https://data.mcut-course.com/v1/course_list/' + this.currentTerm + '.json').then((res) => {
+					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data.courses);
 					localStorage['courseDataTime_' + this.currentTerm] = now;
-					this.courses = res.data.course;
+					this.courses = res.data.courses;
 					this.loading = false;
 				});
 			}
@@ -329,6 +329,8 @@ export default {
 			this.$router.push('/course/');
 		},
 		isLocked(type, subtype) {
+			if(!this.courses ||this.courses.length == 0) return false;
+
 			if(this.currentTerm.split('-')[1] >= 3 && ['體育'].includes(type)) return true;
 			if(type == '體育' && this.currentTerm.split('-')[0] <= 110) return true;
 

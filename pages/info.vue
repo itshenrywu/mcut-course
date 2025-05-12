@@ -44,7 +44,14 @@
 					</thead>
 					<tbody>
 						<tr v-for="info in info" :key="info[0]">
-							<td v-for="item in info" :class="{ 'is-empty': item === '' }">{{ item }}</td>
+							<td>{{ info[0] }}</td>
+							<td>{{ info[1] }}</td>
+							<td>{{ info[2][0] | formatDateTime }} ~ {{ info[2][1] | formatDateTime }}</td>
+							<td>{{ info[3][0] | formatDateTime }} ~ {{ info[3][1] | formatDateTime }}</td>
+							<td v-if="info[4] != '0'">{{ info[4] }} 學分</td>
+							<td v-else class="is-empty"></td>
+							<td v-if="info[5] != '0'">{{ info[5] }} 學分</td>
+							<td v-else class="is-empty"></td>
 						</tr>
 					</tbody>
 				</table>
@@ -153,8 +160,8 @@
 import { mapState } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
-		const res = await $axios.get('https://api.mcut-course.com/get_info.php?v2');
-		return { info: res.data, loading: false };
+		const res = await $axios.get('https://data.mcut-course.com/v1/selection_info.json');
+		return { info: res.data.selection_info, loading: false };
 	},
 	head() {
 		return {
@@ -169,6 +176,18 @@ export default {
 		return {
 			info: [],
 			loading: true
+		}
+	},
+	filters: {
+		formatDateTime(unixTime) {
+			const date = new Date(unixTime * 1000);
+			const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
+			const month = date.getMonth() + 1;
+			const day = date.getDate();
+			const weekday = weekdays[date.getDay()];
+			const hours = date.getHours().toString().padStart(2, '0');
+			const minutes = date.getMinutes().toString().padStart(2, '0');
+			return `${month}/${day} (${weekday}) ${hours}:${minutes}`;
 		}
 	},
 	mounted() {

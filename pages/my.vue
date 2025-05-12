@@ -863,15 +863,15 @@ export default {
 				data = JSON.parse(storedData);
 			} else {
 				try {
-					const res = await this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm);
-					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
+					const res = await this.$axios.get('https://data.mcut-course.com/v1/course_list/' + this.currentTerm + '.json');
+					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data.courses);
 					localStorage['courseDataTime_' + this.currentTerm] = now;
-					data = res.data;
+					data = res.data.courses;
 				} catch (e) {}
 			}
 			
 			let success = 0, fail = 0;
-			data.course.forEach(course => {
+			data.forEach(course => {
 				if(savedCourse.includes(course.id)) {
 					course.time.forEach(time => {
 						if(time[1].includes('0.5')) return;

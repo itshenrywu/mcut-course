@@ -10,7 +10,7 @@
 						<div class="ts-select is-fluid">
 							<div class="content" data-dropdown="term-dropdown">{{ currentTerm != '' ? currentTerm.split('-')[0] + ' 學年第 ' + currentTerm.split('-')[1] + ' 學期' : '' }}</div>
 							<div class="ts-dropdown is-dense" data-position="bottom-start" id="term-dropdown" style="height:60vh">
-								<template v-for="year_group of terms">
+								<template v-for="year_group of term_list">
 									<div class="header">{{ year_group.year }} 學年</div>
 									<div class="item is-indented" v-for="term of year_group.term" :class="{ 'is-selected': year_group.year+'-'+term == currentTerm }"
 										@click="chooseTerm(year_group.year+'-'+term)">
@@ -278,6 +278,10 @@
 <script>
 import { mapMutations, mapState } from 'vuex';
 export default {
+	async asyncData({ $axios, params, payload }) {
+		const res = await $axios.get('https://data.mcut-course.com/v1/terms.json');
+		return { terms: res.data.terms };
+	},
 	head() {
 		return {
 			title: '進階搜尋 | 明志科技大學選課小幫手',
@@ -293,6 +297,7 @@ export default {
 			week_text: ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''],
 			courses: [],
 			terms: {},
+			term_list: [],
 			defaultDeptGroup: {
 				'全校': [],
 				'四技日間部': [],
@@ -325,6 +330,18 @@ export default {
 		if (localStorage['searchQuery']) this.searchQuery = localStorage['searchQuery'];
 		if(['0','1','2'].includes(localStorage['showConflict'])) this.showConflict = localStorage['showConflict'];
 		else this.showConflict = 1;
+
+		let _terms = {};
+		this.terms.forEach(term => {
+			let _year = term.split('-')[0];
+			let _term = term.split('-')[1];
+			if (!_terms[_year]) _terms[_year] = [];
+			_terms[_year].push(_term);
+		});
+		this.term_list = Object.entries(_terms)
+		.sort((a, b) => Number(b[0]) - Number(a[0]))
+		.map(([year, term]) => ({ year: year, term: term }));
+
 		let savedCourse = await this.$store.dispatch('getSavedCourse');
 		if (savedCourse && savedCourse.length > 0) {
 			this.savedCourse = savedCourse;
@@ -332,7 +349,13 @@ export default {
 			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
 			localStorage['term'] = this.currentTerm;
 		}
-		else this.currentTerm = localStorage['term'] || '';
+		else if(localStorage['term'])  {
+			this.currentTerm = localStorage['term'];
+		}
+		else {
+			this.currentTerm = this.terms[this.terms.length - 1];
+		}
+			
 		this.fetchData();
 	},
 	computed: {
@@ -366,7 +389,10 @@ export default {
 			}
 			if(this.currentType == undefined && this.currentDept.includes('通識')) this.currentType = '選修';
 			if (this.currentType !== '') {
-				filtered = filtered.filter(course => course.type === this.currentType || course.otherinfo === this.currentType.split('- ')[1]);
+				console.log('currentType', this.currentType);
+				console.log('before filtered', filtered);
+				filtered = filtered.filter(course => course.type === this.currentType || (course.otherinfo && course.otherinfo === this.currentType.split('- ')[1]));
+				console.log('after filtered', filtered);
 			}
 			if (this.showConflict == 0) {
 				filtered = filtered.filter(course => !this.isConflicted(course));
@@ -438,28 +464,15 @@ export default {
 				const res = JSON.parse(storedData);
 				this.processData(res);
 			} else {
-				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
-					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
+				this.$axios.get('https://data.mcut-course.com/v1/course_list/' + this.currentTerm + '.json').then((res) => {
+					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data.courses);
 					localStorage['courseDataTime_' + this.currentTerm] = now;
-					this.processData(res.data);
+					this.processData(res.data.courses);
 				});
 			}
 		},
-		processData(data) {
-			data.course.forEach((course, index) => {
-				course.sortOrder = index;
-			});
-			this.courses = data.course;
-			var _terms = {};
-			data.term.forEach(term => {
-				let _year = term.split('-')[0];
-				let _term = term.split('-')[1];
-				if (!_terms[_year]) _terms[_year] = [];
-				_terms[_year].push(_term);
-			});
-			this.terms = Object.entries(_terms)
-			.sort((a, b) => Number(b[0]) - Number(a[0]))
-			.map(([year, term]) => ({ year: year, term: term }));
+		processData(course_list) {
+			this.courses = course_list;
 
 			this.depts = JSON.parse(JSON.stringify(this.defaultDeptGroup));
 
