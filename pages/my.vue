@@ -814,7 +814,7 @@ export default {
 				if(time[1].includes('0.5')) return;
 				let isConflict = false;	
 				for(let s = this.time_section_full.indexOf(time[1].split('~')[0]); s <= this.time_section_full.indexOf(time[1].split('~')[1]); s++) {
-					if(this.used_secion[time[0]].includes(this.time_section_full[s])) {
+					if(this.used_secion[time[0]] && this.used_secion[time[0]].includes(this.time_section_full[s])) {
 						isConflict = true;
 						break;
 					}
@@ -874,11 +874,11 @@ export default {
 			data.course.forEach(course => {
 				if(savedCourse.includes(course.id)) {
 					course.time.forEach(time => {
-						if(time[1].includes('0.5')) return;
+						if(time[1].includes('0.5') || parseInt(time[0]) > 5) return;
 						// 檢查是否衝堂
 						let isConflict = false;	
 						for(let s = this.time_section_full.indexOf(time[1].split('~')[0]); s <= this.time_section_full.indexOf(time[1].split('~')[1]); s++) {
-							if(this.used_secion[time[0]].includes(this.time_section_full[s])) {
+							if(this.used_secion[time[0]] && this.used_secion[time[0]].includes(this.time_section_full[s])) {
 								isConflict = true;
 								break;
 							}

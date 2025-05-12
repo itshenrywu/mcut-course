@@ -94,10 +94,10 @@ export default {
 		});
 
 		this.$root.$on('checkRedDot', () => {
-			this.showInfoRedDot = localStorage['clickInfo_20241224'] !== 'true';
+			this.showInfoRedDot = localStorage['clickInfo_20250512'] !== 'true';
 			this.showRemoveAdRedDot = localStorage['clickRemoveAd'] !== 'true';
 		});
-		this.showInfoRedDot = localStorage['clickInfo_20241224'] !== 'true';
+		this.showInfoRedDot = localStorage['clickInfo_20250512'] !== 'true';
 		this.showRemoveAdRedDot = localStorage['clickRemoveAd'] !== 'true';
 	}
 };

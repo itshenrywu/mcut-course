@@ -45,6 +45,7 @@
 					<tbody>
 						<tr v-for="info in info" :key="info[0]">
 							<td v-for="item in info" :class="{ 'is-empty': item === '' }">{{ item }}</td>
+							<td v-if="!info[1] && !info[2]" class="ts-text is-description mobile-only">{{info[0]}}選課資訊尚未公布<br><br></td>
 						</tr>
 					</tbody>
 				</table>
@@ -172,7 +173,7 @@ export default {
 		}
 	},
 	mounted() {
-		localStorage['clickInfo_20241224'] = 'true';
+		localStorage['clickInfo_20250512'] = 'true';
 		this.$root.$emit('checkRedDot');
 	},
 	computed: {
