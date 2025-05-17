@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1370/1M02", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"114113701M02",name:"物理化學實驗",type:"必修",dept:"四技化工系",year:"3",class:"乙",teacher:"陳順基",credit:"2",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

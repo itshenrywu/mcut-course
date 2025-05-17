@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0270/2S01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"112202702S01",name:"實用德語-漫遊德國",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"孫亞玲",credit:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("")));

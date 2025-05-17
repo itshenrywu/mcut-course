@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/1T01", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"114122701T01",name:"商用談判",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"李秉懿",credit:a,classroom:"",max:"50",min:"10",comment:"甲乙合班塊狀課程6\u002F12-27",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

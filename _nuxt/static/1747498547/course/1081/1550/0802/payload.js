@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1550/0802", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"108115500802",name:"數位邏輯設計實習",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"黃樹林",credit:a,hour:"3",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

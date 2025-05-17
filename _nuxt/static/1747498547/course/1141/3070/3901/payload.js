@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/3901", (function(a,b){return {data:[{course:{time:[[a,"2~4"],[a,"5~7"]],id:"114130703901",name:"視覺介面設計",type:"選修",dept:"行銷設計學程",year:b,class:"甲",teacher:"孫儷芳",credit:b,classroom:"",max:"56",min:"10",comment:"甲乙合班 帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

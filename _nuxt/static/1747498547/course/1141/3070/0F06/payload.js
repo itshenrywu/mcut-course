@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/0F06", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"114130700F06",name:"白紙創業",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"虞邦祥",credit:a,classroom:"",max:"20",min:"10",comment:"塊狀課程6\u002F12~6\u002F27",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

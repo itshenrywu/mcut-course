@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/2U02", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"113130702U02",name:"平面與編輯設計",type:"必修",dept:"行銷設計學程",year:"2",class:"乙",teacher:"陳容蔚",credit:"3",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

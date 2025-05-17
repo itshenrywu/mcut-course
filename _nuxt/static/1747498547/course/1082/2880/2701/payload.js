@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2880/2701", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108228802701",name:"環境風險分析",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"許金玉",credit:a,hour:a,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

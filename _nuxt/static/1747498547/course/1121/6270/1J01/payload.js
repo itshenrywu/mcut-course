@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/6270/1J01", (function(a){return {data:[{course:{time:[["2","9~10"]],id:"112162701J01",name:"英文閱讀與聽力訓練（一）",type:"選修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"傅雅庫",credit:"0.5",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

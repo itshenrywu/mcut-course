@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2270/1V03", {data:[{course:{time:[["3","7~8"]],id:"113222701V03",name:"生產與作業管理",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"陳琨太",credit:"2",classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

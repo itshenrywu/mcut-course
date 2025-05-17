@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1F8C/1101", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"11121F8C1101",name:"電信工程",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"楊超舜",credit:"3",classroom:b,max:"30",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("5","")));

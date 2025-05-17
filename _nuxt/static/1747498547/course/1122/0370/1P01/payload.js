@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0370/1P01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"112203701P01",name:"食物與世界經濟的脈絡",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"鄭銘德",credit:"2",classroom:b,max:"48",min:"10",comment:b,otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("1","")));

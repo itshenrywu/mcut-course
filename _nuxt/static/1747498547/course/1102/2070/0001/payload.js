@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2070/0001", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"110220700001",name:"普通生物學",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"劉昭麟",credit:"3",classroom:a,max:"20",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

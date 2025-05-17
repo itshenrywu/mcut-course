@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/2K01", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"114122702K01",name:"數位廣告與整合行銷",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"楊南進",credit:a,classroom:"",max:"50",min:"10",comment:"甲乙合班塊狀課程6\u002F12-6\u002F24",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

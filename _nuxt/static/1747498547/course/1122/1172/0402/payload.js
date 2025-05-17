@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1172/0402", (function(a,b){return {data:[{course:{time:[["1","2~2"],[a,"3~4"]],id:"112211720402",name:"機構學",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"謝文賓",credit:"3",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2070/0L08", {data:[{course:{time:[["5","9~12"]],id:"112120700L08",name:"頂石專題",type:"選修",dept:"四技材工系",year:"3",class:"甲",teacher:"黃啓賢",credit:"1",classroom:"",max:"100",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

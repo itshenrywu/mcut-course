@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0170/0R01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"113201700R01",name:"中國思想通論",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"施依吾",credit:"2",classroom:b,max:"45",min:"10",comment:b,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("1","")));

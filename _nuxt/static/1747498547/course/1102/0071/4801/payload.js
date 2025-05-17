@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0071/4801", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"110200714801",name:"現代詩及習作",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"李桂芳",credit:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("")));

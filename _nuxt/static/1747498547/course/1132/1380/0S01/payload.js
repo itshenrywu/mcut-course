@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1380/0S01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"113213800S01",name:"超臨界流體應用",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"吳弦聰",credit:"3",classroom:a,max:"40",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

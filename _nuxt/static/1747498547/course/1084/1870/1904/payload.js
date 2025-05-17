@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/1870/1904", (function(a,b){return {data:[{course:{time:[["5",a],["6",a]],id:"108418701904",name:"奈米檢測分析",type:"選修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"許翔林",credit:b,hour:b,max:"48",min:"10",comment:"107入學學生選修",otherinfo:null}}],fetch:{},mutations:[]}}("2~4","3")));

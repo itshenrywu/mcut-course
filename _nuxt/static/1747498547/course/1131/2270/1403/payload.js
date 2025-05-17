@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2270/1403", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"],[b,"8~8"]],id:"113122701403",name:"人力資源管理",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"陳心田",credit:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

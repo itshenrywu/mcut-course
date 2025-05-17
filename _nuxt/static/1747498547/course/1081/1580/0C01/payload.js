@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1580/0C01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"108115800C01",name:"數位訊號處理",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"張創然",credit:a,hour:a,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

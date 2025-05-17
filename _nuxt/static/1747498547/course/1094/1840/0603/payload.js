@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/1840/0603", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"109418400603",name:"材料科學導論(二)",type:"重修",dept:"四技材工系",year:a,class:"暑",teacher:"黃裕清",credit:"3",classroom:"",max:"50",min:"10",comment:"大四暑修（日、夜合班）",otherinfo:null}}],fetch:{},mutations:[]}}("4","6~8")));
