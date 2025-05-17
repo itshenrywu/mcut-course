@@ -43,9 +43,16 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr v-for="info in info" :key="info[0]">
-							<td v-for="item in info" :class="{ 'is-empty': item === '' }">{{ item }}</td>
-							<td v-if="!info[1] && !info[2]" class="ts-text is-description mobile-only">{{info[0]}}選課資訊尚未公布<br><br></td>
+						<tr v-for="info in info" :key="info[0]" :class="{ 'is-na': !info[1] && !info[2] }">
+							<template v-if="!info[1] && !info[2]">
+								<td>{{ info[0] }}</td><td class="is-empty"></td>
+								<td class="is-na">選課時間尚未公布</td>
+								<td class="is-empty"></td>
+								<td :class="{ 'is-empty': info[4] === '' }">{{ info[4] }}</td><td :class="{ 'is-empty': info[5] === '' }">{{ info[5] }}</td>
+							</template>
+							<template v-else>
+								<td v-for="item in info" :class="{ 'is-empty': item === '' }">{{ item }}</td>
+							</template>
 						</tr>
 					</tbody>
 				</table>
@@ -142,6 +149,14 @@
 
 	#page-info tr {
 		padding: .5rem 0 !important;
+	}
+
+	#page-info tr.is-na td.is-na {
+		color: var(--ts-gray-500);
+	}
+
+	#page-info tr.is-na td.is-na:before {
+		display: none;
 	}
 
 	#page-info .ts-grid .column.mobile-fluid {
