@@ -44,6 +44,9 @@ export default {
 	axios: {
 		baseURL: '/',
 	},
+	plugins: [
+		'~/plugins/axios'
+	],
 	'google-gtag': {
 		id: 'G-4WZWP0DJMR'
 	},
