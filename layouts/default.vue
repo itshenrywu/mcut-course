@@ -72,7 +72,7 @@ export default {
 		checkLogin() {
 			if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
 				this.$axios.get(
-					'https://api.mcut-course.com/user/?action=check' + (localStorage['profile_image'] ? '' : '&image=1'),
+					'https://mcut-course-api.henrywu.tw/user/?action=check' + (localStorage['profile_image'] ? '' : '&image=1'),
 					{ headers: { authorization: localStorage['auth_key'] } }
 				).then((res) => {
 					if(!res.data.success) {

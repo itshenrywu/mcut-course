@@ -200,7 +200,7 @@ import { mapMutations } from 'vuex';
 export default {
 	async asyncData({ $axios }) {
 		let _terms = {};
-		let term_res = await $axios.get('https://api.mcut-course.com/list.php');
+		let term_res = await $axios.get('https://mcut-course-api.henrywu.tw/list.php');
 		term_res = term_res.data.term || ["114-1","113-4","113-3","113-2","113-1","112-4","112-3","112-2","112-1","111-4","111-3","111-2","111-1","110-4","110-3","110-2","110-1","109-4","109-3","109-2","109-1","108-4","108-3","108-2","108-1"];
 		term_res.forEach(term => {
 			let _year = term.split('-')[0];
@@ -212,7 +212,7 @@ export default {
 		.sort((a, b) => Number(b[0]) - Number(a[0]))
 		.map(([year, term]) => ({ year: year, term: term }));
 
-		let classList = await $axios.get('https://api.mcut-course.com/class_list.php?type=home');
+		let classList = await $axios.get('https://mcut-course-api.henrywu.tw/class_list.php?type=home');
 		classList = classList.data || {};
 
 		return { terms, classList };
@@ -259,7 +259,7 @@ export default {
 				this.courses = res.course;
 				this.loading = false;
 			} else {
-				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
+				this.$axios.get('https://mcut-course-api.henrywu.tw/list.php?term=' + this.currentTerm).then((res) => {
 					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
 					localStorage['courseDataTime_' + this.currentTerm] = now;
 					this.courses = res.data.course;

@@ -12,8 +12,8 @@ export default {
 			{ hid: 'description', name: 'description', content: '明志科技大學選課小幫手，幫助您輕鬆查詢全校課表，快速進行課程預排與衝堂檢查，還可以查詢畢業學分門檻及選課時程！' },
 			{ hid: 'og:description', property: 'og:description', content: '明志科技大學選課小幫手，幫助您輕鬆查詢全校課表，快速進行課程預排與衝堂檢查，還可以查詢畢業學分門檻及選課時程！' },
 
-			{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com/default.jpg' },
-			{ hid: 'twitter:image', name: 'twitter:image', content: 'https://og.mcut-course.com/default.jpg' },
+			{ hid: 'og:image', property: 'og:image', content: 'https://mcut-course-og.henrywu.tw/default.jpg' },
+			{ hid: 'twitter:image', name: 'twitter:image', content: 'https://mcut-course-og.henrywu.tw/default.jpg' },
 
 			{ name: 'format-detection', content: 'telephone=no' },
 			{ hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' }
@@ -54,11 +54,11 @@ export default {
 		fallback: '404.html',
 		async routes() {
 			const mode = process.env.MODE || 'prod';
-			const termsResponse = await axios.get('https://api.mcut-course.com/list.php?termlist');
+			const termsResponse = await axios.get('https://mcut-course-api.henrywu.tw/list.php?termlist');
 			const terms = termsResponse.data.term;
 			const courseIds = await Promise.all(
 				terms.map(async (term) => {
-					const coursesResponse = await axios.get(`https://api.mcut-course.com/list.php?term=${term}`);
+					const coursesResponse = await axios.get(`https://mcut-course-api.henrywu.tw/list.php?term=${term}`);
 					const courses = coursesResponse.data.course;
 					return courses;
 				})
@@ -70,7 +70,7 @@ export default {
 				}
 			});
 
-			const ruleIdsResponse = await axios.get('https://api.mcut-course.com/rule/list2.php');
+			const ruleIdsResponse = await axios.get('https://mcut-course-api.henrywu.tw/rule/list2.php');
 			const rules = ruleIdsResponse.data.rules;
 			const depts = ruleIdsResponse.data.depts;
 			let ruleRoutes = [{
@@ -112,7 +112,7 @@ export default {
 				});
 			}
 
-			const classListResponse = await axios.get('https://api.mcut-course.com/class_list.php');
+			const classListResponse = await axios.get('https://mcut-course-api.henrywu.tw/class_list.php');
 			const classList = classListResponse.data;
 			let classRoutes = Object.keys(classList).map(class_id => {
 				return {

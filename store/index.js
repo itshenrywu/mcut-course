@@ -9,7 +9,7 @@ export const mutations = {
 	setSavedCourse(state, value) {
 		let savedCourse = value[0], sync = value[1] !== false;
 		if(sync && localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
-			this.$axios.post('https://api.mcut-course.com/user/?action=update&saved', 'saved=' + JSON.stringify(savedCourse), { headers: { authorization: localStorage['auth_key'] } })
+			this.$axios.post('https://mcut-course-api.henrywu.tw/user/?action=update&saved', 'saved=' + JSON.stringify(savedCourse), { headers: { authorization: localStorage['auth_key'] } })
 			.then(res => {
 				localStorage['savedCourseSync'] = res.data.updatedAt;
 			});
@@ -27,7 +27,7 @@ export const actions = {
 		} catch(e) {}
 
 		if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
-			await this.$axios.get('https://api.mcut-course.com/user/?action=get&saved&get_course=' + savedCourse.join(','), { headers: { authorization: localStorage['auth_key'] } })
+			await this.$axios.get('https://mcut-course-api.henrywu.tw/user/?action=get&saved&get_course=' + savedCourse.join(','), { headers: { authorization: localStorage['auth_key'] } })
 			.then(async res => {
 				let online = res.data.saved.filter(courseId => res.data.courseData[courseId] != undefined).sort();
 				let local = savedCourse.filter(courseId => res.data.courseData[courseId] != undefined).sort();
