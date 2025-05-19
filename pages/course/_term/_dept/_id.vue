@@ -16,7 +16,7 @@
 			<div class="ts-grid is-compact is-middle-aligned">
 				<div class="column is-10-wide mobile-fluid">
 					<div class="ts-text is-description">
-						{{ (course.id ? course.id.substring(0,3) + '-' + course.id.substring(3,4) + ' 學期・' : '' ) }}<span class="monospace">{{ course.id }}</span>
+						{{ (course.id ? course.id.substring(0,3) + ' 學年度第 ' + course.id.substring(3,4) + ' 學期・' : '' ) }}<span class="monospace">{{ course.id }}</span>
 					</div>
 					<h1 class="ts-header is-huge">{{ course.name }}</h1>
 				</div>
@@ -51,8 +51,8 @@
 								<div class="column is-15-wide">
 									<div class="ts-text is-description">
 										<span class="ts-badge is-small is-dense">提示</span>
-										<template v-if="newestYear != course.id.substring(0,3)">您正在查看前幾學期的開課資料，這門課在 {{newestYear}} 學年也有開設！</template>
-										<template v-else-if="similarCourses.some(course => course.id.substring(0,3) != newestYear)">這門課在前幾個學年也有開設，點此可查看歷年開課紀錄！</template>
+										<template v-if="course.id.substring(0,3) != newestYear && similarCourses.some(_course => _course.id.substring(0,3) == newestYear)">您正在查看前幾學期的開課資料，這門課在 {{newestYear}} 學年也有開設！</template>
+										<template v-else-if="similarCourses.some(_course => _course.id.substring(0,3) != course.id.substring(0,3))">這門課有在其他學年開設過，點此可查看歷年開課紀錄！</template>
 										<template v-else>這門課也有其他系所開設，點此可查看開課資料！</template>
 									</div>
 								</div>
@@ -300,9 +300,14 @@
 	padding: 0.5rem;
 	background: var(--ts-gray-100);
 	font-weight: bold;
-	margin: 0 -2rem .25rem;
+	margin: 0 -2rem;
 	position: sticky;
 	top: 0;
+}
+
+.term-group .item {
+	margin: 0 -2rem;
+	padding: 1rem 2rem;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -669,12 +674,13 @@ export default {
 						Object.keys(groupedCourses)
 							.sort((a, b) => b - a)
 							.forEach(termId => {
-								const termText = termId.substring(0, 3) + '-' + termId.substring(3, 4) + ' 學期';
+								const termText = termId.substring(0, 3) + ' 學年度第 ' + termId.substring(3, 4) + ' 學期';
 								html += '<div class="term-group"><div class="term-title">' + termText + '</div>';
 								groupedCourses[termId].forEach(course => {
 									html += '<a class="item" href="/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/">\
 										<div class="ts-header">' +
-											course.name + (course.type != this.course.type ? '&nbsp;<span class="ts-badge is-small is-dense">'+course.type+'</span>' : '') +
+											course.name + '&nbsp;\
+											<span class="ts-badge is-small is-dense '+({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]+'">'+course.type+'</span>' +
 										'</div>\
 										<div class="ts-text is-description is-start-aligned">' +
 											course.dept + '・' +
