@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0R07", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"114100700R07",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"盧信吉",credit:a,classroom:"",max:"50",min:"15",comment:"主題：透視當代中國(上課期間為6\u002F30至8\u002F4)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

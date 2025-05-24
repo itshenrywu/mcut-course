@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1870/1P01", {data:[{course:{time:[["2","9~11"]],id:"109118701P01",name:"太陽光電技術與系統整合應用",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"阮弼群",credit:"3",classroom:"",max:"25",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

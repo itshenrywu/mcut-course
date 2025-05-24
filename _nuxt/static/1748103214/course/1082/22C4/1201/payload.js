@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/22C4/1201", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"108222C41201",name:"企業流程管理",type:"選修",dept:"四技進修部經管系",year:a,class:"甲",teacher:"馬成珉",credit:b,hour:b,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

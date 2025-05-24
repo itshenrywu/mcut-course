@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0570/1101", {data:[{course:{time:[["1","5~7"]],id:"114105701101",name:"運動與健康",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"王學中",credit:"2",classroom:"",max:"45",min:"10",comment:"6\u002F2-8\u002F18管設學院學生不得選修",otherinfo:"自然科學"}}],fetch:{},mutations:[]});

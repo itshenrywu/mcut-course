@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1134/1870/1U04", (function(a,b){return {data:[{course:{time:[["5","9~12"]],id:"113418701U04",name:"材料頂石專題",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"黃啓賢",credit:a,classroom:b,max:"100",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

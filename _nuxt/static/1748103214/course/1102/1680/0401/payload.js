@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1680/0401", {data:[{course:{time:[["3","1~2"]],id:"110216800401",name:"科技論文寫作",type:"必修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"官文惠",credit:"2",classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

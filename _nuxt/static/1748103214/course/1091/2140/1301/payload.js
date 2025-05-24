@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2140/1301", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"109121401301",name:"作業研究(含實習)(一)",type:"重修",dept:"四技工管系",year:b,class:"重",teacher:"俞凱允",credit:b,classroom:"",max:"60",min:"10",comment:"帶狀課程7\u002F6-9\u002F4",otherinfo:null}}],fetch:{},mutations:[]}}("5~8","3")));

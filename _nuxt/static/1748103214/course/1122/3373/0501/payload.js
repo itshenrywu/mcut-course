@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3373/0501", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112233730501",name:"多媒體創作",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"王忠祥",credit:"3",classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

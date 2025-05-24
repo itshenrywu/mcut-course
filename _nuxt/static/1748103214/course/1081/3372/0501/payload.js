@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3372/0501", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108133720501",name:"商業攝影",type:"選修",dept:"四技視傳系",year:"4",class:"甲",teacher:"商耀元",credit:a,hour:a,max:"53",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

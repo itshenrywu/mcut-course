@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0170/0G17", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"112201700G17",name:"藝文涵養與社會參與",type:"必修",dept:"四技工設系",year:a,class:"甲",teacher:"施依吾",credit:"2",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/0T01", (function(a,b,c){return {data:[{course:{time:[["2",a],["5",a]],id:"113120700T01",name:"儀器分析實務",type:"必修",dept:"環實務",year:b,class:"甲",teacher:"陳順基",credit:b,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3~4","3","")));

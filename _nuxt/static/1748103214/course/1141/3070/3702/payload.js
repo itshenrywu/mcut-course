@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/3702", (function(a,b){return {data:[{course:{time:[[a,"2~4"],[a,"5~7"]],id:"114130703702",name:"商業影音創作",type:"必修",dept:"行銷設計學程",year:b,class:"乙",teacher:"李悟",credit:b,classroom:"",max:"42",min:"10",comment:"帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

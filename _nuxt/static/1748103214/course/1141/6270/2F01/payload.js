@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2F01", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"114162702F01",name:"可程式邏輯控制實務",type:"選修",dept:"人工智慧學程",year:b,class:"甲",teacher:"劉豐瑞",credit:b,classroom:"",max:"56",min:"10",comment:"實際授課教師祁存廣",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

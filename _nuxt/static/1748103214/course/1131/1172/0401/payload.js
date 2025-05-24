@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1172/0401", (function(a){return {data:[{course:{time:[["1","3~4"],["2","0.5~0.5"]],id:"113111720401",name:"機構學",type:"重修",dept:"四技機械系",year:"4",class:"重",teacher:"陳明彥",credit:"3",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

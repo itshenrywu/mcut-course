@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3140/5101", (function(a){return {data:[{course:{time:[["4","1~3"]],id:"112131405101",name:"基本設計",type:"必修",dept:"四技工設系",year:"1",class:"甲",teacher:"許定洋",credit:"3",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

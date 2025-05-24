@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1170/0C04", (function(a,b){return {data:[{course:{time:[["1",a],[b,a]],id:"113311700C04",name:"製造學",type:"重修",dept:"四技機械系",year:b,class:"暑",teacher:"許啟彬",credit:"3",classroom:"",max:"60",min:"10",comment:"併機三甲",otherinfo:null}}],fetch:{},mutations:[]}}("5~6","4")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/02C0/0001", (function(a){return {data:[{course:{time:[["6","7~9"]],id:"112102C00001",name:"英文(一)",type:"必修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"鄧心怡",credit:"3",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

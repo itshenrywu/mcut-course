@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0072/1024", {data:[{course:{time:[["4","7~8"]],id:"112200721024",name:"英文實務(二)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"簡珮玲",credit:"0",classroom:"",max:"55",min:"10",comment:"環資學院",otherinfo:null}}],fetch:{},mutations:[]});

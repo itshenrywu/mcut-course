@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1172/0304", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"111211720304",name:"工程熱力學(一)",type:"重修",dept:"四技機械系",year:"4",class:"重",teacher:"鍾永強",credit:"3",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

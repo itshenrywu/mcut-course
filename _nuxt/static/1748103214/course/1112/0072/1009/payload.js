@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0072/1009", {data:[{course:{time:[["4","5~6"]],id:"111200721009",name:"英文實務(二)",type:"必修",dept:"外文組-四技(日)",year:"2",class:"甲",teacher:"林雅瓊",credit:"0",classroom:"",max:"65",min:"10",comment:"電子",otherinfo:null}}],fetch:{},mutations:[]});

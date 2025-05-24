@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1270/3503", (function(a){return {data:[{course:{time:[["2","5~7"],[a,"2~4"]],id:"108312703503",name:"電力系統(一)",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"林志銘",credit:a,hour:a,max:"19",min:"5",comment:"大四課程五人開班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

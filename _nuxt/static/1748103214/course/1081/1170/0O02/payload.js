@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1170/0O02", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"108111700O02",name:"機械加工實習",type:"選修",dept:"四技機械系",year:b,class:"乙",teacher:"鄭春德",credit:b,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0670/0603", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"110106700603",name:"體育(三)",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"甘光熙",credit:"1",classroom:a,max:"55",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

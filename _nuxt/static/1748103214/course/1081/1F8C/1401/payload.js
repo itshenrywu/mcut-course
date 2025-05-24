@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1F8C/1401", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"10811F8C1401",name:"通訊組書報討論(三)",type:"必修",dept:"電機系碩士班",year:a,class:"甲",teacher:"古家豪",credit:"0",hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

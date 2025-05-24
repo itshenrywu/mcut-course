@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0509/0614", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"109205090614",name:"歷史",type:"必修",dept:"四技視傳系",year:"2",class:"甲",teacher:"陳明治",credit:"3",classroom:a,max:"55",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2280/1L01", (function(a){return {data:[{course:{time:[["2","9~10"]],id:"111222801L01",name:"進階商用英文(二)",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"王文生",credit:"0",classroom:a,max:"30",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

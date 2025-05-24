@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/1301", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"112220701301",name:"機器學習數學",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"吳永富",credit:"2",classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));
