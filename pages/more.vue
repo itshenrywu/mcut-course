@@ -10,6 +10,9 @@
 					<span class="ts-icon is-clock-icon"></span> 選課時間及說明
 					<div class="ts-badge has-inverted is-small is-dense is-negative" v-if="showInfoRedDot"></div>
 				</NuxtLink>
+				<NuxtLink to="/calendar" class="item">
+					<span class="ts-icon is-calendar-days-icon"></span> 行事曆
+				</NuxtLink>
 				<NuxtLink to="/remove-ad" class="item" v-if="profileImage && profileName && showAd">
 					<span class="ts-icon is-wand-magic-sparkles-icon"></span> 移除廣告
 					<div class="ts-badge has-inverted is-small is-dense is-negative" v-if="showRemoveAdRedDot"></div>

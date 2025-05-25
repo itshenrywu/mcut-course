@@ -52,7 +52,12 @@ let icons = [
 	'is-bars-staggered-icon',
 	'is-file-lines-icon',
 	'is-circle-question-icon',
-	'is-wand-magic-sparkles-icon'
+	'is-wand-magic-sparkles-icon',
+	'is-chevron-left-icon',
+	'is-chevron-right-icon',
+	'is-arrow-rotate-left-icon',
+	'is-arrow-rotate-right-icon',
+	'is-file-export-icon'
 ];
 
 const filePath = path.join(__dirname, '../tocas/icons.css');
