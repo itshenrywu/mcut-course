@@ -41,7 +41,10 @@
 					</div>
 				</div>
 				<div class="column is-4-wide larger">
-					<a class="item" @click="switchMonth('prev')" :class="currentMonth <= minMonth ? 'ts-text is-disabled' : ''">
+					<a v-if="currentView == 'dayGridMonth'" class="item" @click="switchMonth('prev')" :class="currentMonth <= minMonth ? 'ts-text is-disabled' : ''">
+						<span class="ts-icon is-chevron-left-icon"></span>
+					</a>
+					<a v-else class="item" @click="switchMonth('prev')" :class="Math.floor(currentMonth/100) <= Math.floor(minMonth/100) ? 'ts-text is-disabled' : ''">
 						<span class="ts-icon is-chevron-left-icon"></span>
 					</a>
 				</div>
@@ -49,7 +52,10 @@
 					<div class="item is-text">{{ title }}</div>
 				</div>
 				<div class="column is-4-wide larger" style="text-align: right;">
-					<a class="item" @click="switchMonth('next')" :class="currentMonth >= maxMonth ? 'ts-text is-disabled' : ''">
+					<a v-if="currentView == 'dayGridMonth'" class="item" @click="switchMonth('next')" :class="currentMonth >= maxMonth ? 'ts-text is-disabled' : ''">
+						<span class="ts-icon is-chevron-right-icon"></span>
+					</a>
+					<a v-else class="item" @click="switchMonth('next')" :class="Math.floor(currentMonth/100) >= Math.floor(maxMonth/100) ? 'ts-text is-disabled' : ''">
 						<span class="ts-icon is-chevron-right-icon"></span>
 					</a>
 				</div>
