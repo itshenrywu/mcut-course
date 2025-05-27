@@ -438,7 +438,7 @@ export default {
 				const res = JSON.parse(storedData);
 				this.processData(res);
 			} else {
-				this.$axios.get('https://mcut-course-api.henrywu.tw/list.php?term=' + this.currentTerm).then((res) => {
+				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
 					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
 					localStorage['courseDataTime_' + this.currentTerm] = now;
 					this.processData(res.data);

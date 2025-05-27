@@ -385,7 +385,7 @@ export default {
 			terms = payload.terms;
 			currentRuleName = payload.name;
 		} else {
-			const res = await $axios.get('https://mcut-course-api.henrywu.tw/rule/list2.php');
+			const res = await $axios.get('https://api.mcut-course.com/rule/list2.php');
 			depts = res.data.depts;
 			rules = res.data.rules;
 			terms = res.data.terms;
@@ -428,8 +428,8 @@ export default {
 				{ hid: 'twitter:title', name: 'twitter:title', content: (year_title ? year_title + ' 學年度入學 - ' : '') + (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
 
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com' + this.$router.currentRoute.path },
-				{ hid: 'og:image', property: 'og:image', content: 'https://mcut-course-og.henrywu.tw' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
-				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://mcut-course-og.henrywu.tw' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() }
+				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
+				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() }
 			]
 		};
 	},
@@ -501,7 +501,7 @@ export default {
 			this.notFound = false;
 			if(this.currentRule == '000') this.currentRuleName = this.currentDeptName;
 			else this.currentRuleName = Object.values(this.rules[this.currentYear]).find(item => this.currentRule in item)?.[this.currentRule].name;
-			this.$axios.get('https://mcut-course-api.henrywu.tw/rule/get.php?year=' + this.currentYear + '&dept=' + this.currentDept + '&rule=' + this.currentRule)
+			this.$axios.get('https://api.mcut-course.com/rule/get.php?year=' + this.currentYear + '&dept=' + this.currentDept + '&rule=' + this.currentRule)
 				.then(res => {
 					this.rule = res.data;
 					this.initializeShowProperty();
@@ -579,7 +579,7 @@ export default {
 				this.courses = JSON.parse(storedData).course;
 			} else {
 				this.loading = true;
-				this.$axios.get('https://mcut-course-api.henrywu.tw/list.php?term=' + this.currentRuleTerm).then((res) => {
+				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentRuleTerm).then((res) => {
 					localStorage['courseData_' + this.currentRuleTerm] = JSON.stringify(res.data);
 					localStorage['courseDataTime_' + this.currentRuleTerm] = now;
 					this.courses = res.data.course;

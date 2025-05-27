@@ -169,7 +169,7 @@
 import { mapState } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
-		const res = await $axios.get('https://mcut-course-api.henrywu.tw/get_info.php?v2');
+		const res = await $axios.get('https://api.mcut-course.com/get_info.php?v2');
 		return { info: res.data, loading: false };
 	},
 	head() {

@@ -721,7 +721,7 @@ export default {
 			return 0;
 		},
 		icsUrl() {
-			return 'https://mcut-course-api.henrywu.tw/ics.php?openExternalBrowser=1&d='+this.icsStartDate+','+this.icsEndDate+
+			return 'https://api.mcut-course.com/ics.php?openExternalBrowser=1&d='+this.icsStartDate+','+this.icsEndDate+
 			'&c=' + encodeURIComponent(JSON.stringify(this.myCourses.map(c => [
 				c.id,
 				c.name,
@@ -863,7 +863,7 @@ export default {
 				data = JSON.parse(storedData);
 			} else {
 				try {
-					const res = await this.$axios.get('https://mcut-course-api.henrywu.tw/list.php?term=' + this.currentTerm);
+					const res = await this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm);
 					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
 					localStorage['courseDataTime_' + this.currentTerm] = now;
 					data = res.data;
@@ -942,7 +942,7 @@ export default {
 				return course;
 			});
 			if(sync && localStorage.auth_key) {
-				this.$axios.post('https://mcut-course-api.henrywu.tw/user/?action=update',
+				this.$axios.post('https://api.mcut-course.com/user/?action=update',
 					'my=' + encodeURIComponent(JSON.stringify(this.myCourses)),
 					{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
 				)
@@ -1526,7 +1526,7 @@ export default {
 		try { this.myCourses = JSON.parse(localStorage.myCourses); } catch (e) { }
 		if(localStorage.auth_key) {
 			this.loading_get = true;
-			this.$axios.get('https://mcut-course-api.henrywu.tw/user/?action=get&my', { headers: { authorization: localStorage['auth_key'] } })
+			this.$axios.get('https://api.mcut-course.com/user/?action=get&my', { headers: { authorization: localStorage['auth_key'] } })
 			.then(res => {
 				this.loading_get = false;
 				if(!isNaN(new Date(localStorage['myCourseSync']).getTime()) && new Date(localStorage['myCourseSync']).getTime() < new Date(res.data.updatedAt).getTime()) {

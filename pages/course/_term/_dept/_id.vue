@@ -421,8 +421,8 @@ export default {
 				{ hid: 'og:description', name: 'og:description', content: this.course.dept + ' ' + this.course.year + ' ' + this.course.class + '・' + this.course.type + '・' + this.course.credit + ' 學分・' + this.course.teacher + ' 老師' },
 
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com' + this.$router.currentRoute.path },
-				{ hid: 'og:image', property: 'og:image', content: 'https://mcut-course-og.henrywu.tw' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
-				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://mcut-course-og.henrywu.tw' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() }
+				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
+				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() }
 			]
 		}
 	},
@@ -501,20 +501,20 @@ export default {
 			if (storedData && storedTime && (now - storedTime < 30 * 60 * 1000)) {
 				this.courses = JSON.parse(storedData).course;
 			} else {
-				this.$axios.get('https://mcut-course-api.henrywu.tw/list.php?term=' + this.currentTerm).then((res) => {
+				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
 					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
 					localStorage['courseDataTime_' + this.currentTerm] = now;
 					this.courses = res.data.course;
 				});
 			}
-			this.$axios.get('https://mcut-course-api.henrywu.tw/detail.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '') + '&ver=full').then(response => {
+			this.$axios.get('https://api.mcut-course.com/detail.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '') + '&ver=full').then(response => {
 				this.course = response.data[3] ?? {};
 				this.more = response.data[0] ?? [];
 				this.office_time = response.data[1] ?? [];
 				this.schedule = response.data[2] ?? [];
 				this.loading = false;
 			});
-			this.$axios.get('https://mcut-course-api.henrywu.tw/similar.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '')).then(response => {
+			this.$axios.get('https://api.mcut-course.com/similar.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '')).then(response => {
 				if(response.data.similar) {
 					this.similarCourses = response.data.similar;
 					this.newestYear = response.data.newest_year;
