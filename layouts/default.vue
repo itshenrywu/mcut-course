@@ -338,6 +338,16 @@ h1 {
 	color: #EE7996;
 }
 
+.ts-statistic .ts-icon {
+	margin-right: .25rem;
+	font-size: .9rem;
+	color: var(--ts-gray-500);
+}
+
+.ts-statistic .ts-icon:hover {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 767.98px) {
 	html {
 		font-size: 14px;
@@ -597,6 +607,10 @@ h1 {
 	}
 
 	.ad {
+		display: none;
+	}
+
+	.ts-statistic .ts-icon.is-circle-info-icon {
 		display: none;
 	}
 }

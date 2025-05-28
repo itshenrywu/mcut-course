@@ -27,13 +27,12 @@
 					<div class="ts-box">
 						<div class="ts-content">
 							<div class="ts-statistic">
-								<div class="value">{{ filteredCourses.reduce((sum, course) => sum +
-									Number(course.credit), 0) || 0 }}</div>
-								<div class="comparison">學分</div>
+								<div class="value">{{ filteredCourses.length || 0 }}</div>
+								<div class="comparison">門課程</div>
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-list-check-icon"></span>
+							<span class="ts-icon is-table-cells-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -41,12 +40,14 @@
 					<div class="ts-box">
 						<div class="ts-content">
 							<div class="ts-statistic">
-								<div class="value">{{ filteredCourses.length || 0 }}</div>
-								<div class="comparison">門課程</div>
+								<div class="value">{{ filteredCourses.reduce((sum, course) => sum +
+									Number(course.credit), 0) || 0 }}</div>
+								<div class="comparison">學分</div>
+								<span class="ts-icon is-circle-info-icon" v-if="filteredCourses.length >= 1" @click="showLimitInfo()"></span>
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-table-cells-icon"></span>
+							<span class="ts-icon is-list-check-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -539,6 +540,34 @@ export default {
 					}
 				});
 			}
+		},
+		showLimitInfo() {
+			this.$swal({
+				title: '四技日間部選課學分上下限',
+				html: `<table class="ts-table">
+					<thead>
+						<tr>
+							<th>學制/年級</th><th>上學期</th><th>下學期</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>一年級</td><td>16 / 27</td><td>16 / 27</td>
+						</tr>
+						<tr>
+							<td>二年級</td><td>16 / 27</td><td>16 / 27</td>
+						</tr>
+						<tr>
+							<td>三年級</td><td>9 / 27</td><td>9 / 32</td>
+						</tr>
+						<tr>
+							<td>四年級</td><td>9 / 27</td><td>9 / 27</td>
+						</tr>
+					</tbody>
+				</table>`,
+				showCloseButton: true,
+				showConfirmButton: false,
+			});
 		}
 	}
 }

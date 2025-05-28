@@ -280,16 +280,6 @@
 	padding: .25rem .75rem;
 }
 
-.ts-statistic .ts-icon {
-	margin-right: .25rem;
-	font-size: .9rem;
-	color: var(--ts-gray-500);
-}
-
-.ts-statistic .ts-icon:hover {
-	cursor: pointer;
-}
-
 .similar-courses .swal2-html-container {
 	overflow-x: hidden;
 	padding-top: 0;
@@ -373,10 +363,6 @@
 		width: 12rem;
 	}
 
-	#page-course .ts-icon.is-circle-info-icon {
-		display: none;
-	}
-
 	#page-course .time:first-child,
 	#page-course .time:nth-child(2) {
 		display: inline;
@@ -449,7 +435,7 @@ export default {
 			return;
 		}
 		this.savedCourse = await this.$store.dispatch('getSavedCourse');
-		if(!this.course || !this.course.name) {
+		if((!this.course || !this.course.name) && location.hostname != 'localhost') {
 			this.notFound = true;
 			return;
 		}
