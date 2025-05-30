@@ -141,95 +141,86 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr v-for="course in paginatedCourses" :key="course.id" @click="showCourse(course)">
-									<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
-										<span class="mobile-only" v-if="!(course.id.includes('ALT_') && course.teacher.includes('分班'))">{{  course.teacher + ' 老師' }}</span>
-									</td>
-									<td class="c-name">
-										<span class="ts-icon is-volleyball-icon sport-icon"
-											v-if="course.name.includes('排球')"></span>
-										<span class="ts-icon is-basketball-icon sport-icon"
-											v-else-if="course.name.includes('籃球')"></span>
-										<span class="ts-icon is-table-tennis-paddle-ball-icon sport-icon"
-											v-else-if="course.name.includes('桌球')"></span>
-										<span class="ts-icon is-dumbbell-icon sport-icon"
-											v-else-if="course.name.includes('健身雕塑')"></span>
-										<span class="ts-icon is-people-pulling-icon sport-icon"
-											v-else-if="course.name.includes('防身術')"></span>
-										<span class="ts-icon is-people-robbery-icon sport-icon"
-											v-else-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
-										<span class="ts-icon is-child-reaching-icon sport-icon"
-											v-else-if="course.name.includes('身體律動')"></span>
-										<svg class="sport-icon-badminton" v-else-if="course.name.includes('羽球')" version="1.1"
-											xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-											<path
-												d="M22 10v-1.5c0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5v1.5h13zM17.055 11h-3.111l-1.948 16.555-0.084 0.755 3.587 2.69 3.587-2.69-0.084-0.751-1.948-16.558zM10.883 28.529l-2.883 2.471-3-3 4-17h3.938l-1.934 16.442-0.121 1.088zM20.068 11h1.957l3.975 17-2.982 3-2.865-2.471-0.12-1.084-1.923-16.445h1.957z">
-											</path>
-										</svg>{{ course.name }}
-									</td>
-									<td class="c-time">
-										<span v-for="time in course.time" class="time">
-											<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-												week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
-											<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
-										</span>
-									</td>
-									<td class="c-type-credit mobile-only absolute-right">
-										<span class="ts-badge is-small has-dark"
-											:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-											{{
-												course.type +
-												(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
-												' ' + course.credit
-											}} 學分
-										</span>
-									</td>
-									<td class="c-type-credit mobile-hidden">
-										<span class="ts-badge is-small is-dense is-end-spaced has-dark"
-											:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-											{{
-												course.type +
-												(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
-											}}
-										</span>{{ course.credit }}
-									</td>
-									<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
-									<td class="c-remark">{{ course.comment }}</td>
-									<td class="c-action">
-										<span class="mobile-only absolute-right ts-badge is-small is-dense has-dark is-red" v-if="isConflicted(course)">衝堂</span>
-										<span data-position="top" data-tooltip="衝堂" class="mobile-hidden ts-icon absolute-right is-circle-exclamation-icon is-t-red" v-if="isConflicted(course)" @click.stop=""></span>
-										<span class="ts-icon absolute-right is-star-icon" v-else-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course.id)"></span>
-										<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course.id)"></span>
-									</td>
-								</tr>
+								<template v-for="(course, index) in filteredCourses">
+									<tr @click="showCourse(course)">
+										<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
+											<span class="mobile-only" v-if="!(course.id.includes('ALT_') && course.teacher.includes('分班'))">{{  course.teacher + ' 老師' }}</span>
+										</td>
+										<td class="c-name">
+											<span class="ts-icon is-volleyball-icon sport-icon"
+												v-if="course.name.includes('排球')"></span>
+											<span class="ts-icon is-basketball-icon sport-icon"
+												v-else-if="course.name.includes('籃球')"></span>
+											<span class="ts-icon is-table-tennis-paddle-ball-icon sport-icon"
+												v-else-if="course.name.includes('桌球')"></span>
+											<span class="ts-icon is-dumbbell-icon sport-icon"
+												v-else-if="course.name.includes('健身雕塑')"></span>
+											<span class="ts-icon is-people-pulling-icon sport-icon"
+												v-else-if="course.name.includes('防身術')"></span>
+											<span class="ts-icon is-people-robbery-icon sport-icon"
+												v-else-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
+											<span class="ts-icon is-child-reaching-icon sport-icon"
+												v-else-if="course.name.includes('身體律動')"></span>
+											<svg class="sport-icon-badminton" v-else-if="course.name.includes('羽球')" version="1.1"
+												xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+												<path
+													d="M22 10v-1.5c0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5v1.5h13zM17.055 11h-3.111l-1.948 16.555-0.084 0.755 3.587 2.69 3.587-2.69-0.084-0.751-1.948-16.558zM10.883 28.529l-2.883 2.471-3-3 4-17h3.938l-1.934 16.442-0.121 1.088zM20.068 11h1.957l3.975 17-2.982 3-2.865-2.471-0.12-1.084-1.923-16.445h1.957z">
+												</path>
+											</svg>{{ course.name }}
+										</td>
+										<td class="c-time">
+											<span v-for="time in course.time" class="time">
+												<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
+													week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
+												<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
+											</span>
+										</td>
+										<td class="c-type-credit mobile-only absolute-right">
+											<span class="ts-badge is-small has-dark"
+												:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+												{{
+													course.type +
+													(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
+													' ' + course.credit
+												}} 學分
+											</span>
+										</td>
+										<td class="c-type-credit mobile-hidden">
+											<span class="ts-badge is-small is-dense is-end-spaced has-dark"
+												:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+												{{
+													course.type +
+													(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
+												}}
+											</span>{{ course.credit }}
+										</td>
+										<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
+										<td class="c-remark">{{ course.comment }}</td>
+										<td class="c-action">
+											<span class="mobile-only absolute-right ts-badge is-small is-dense has-dark is-red" v-if="isConflicted(course)">衝堂</span>
+											<span data-position="top" data-tooltip="衝堂" class="mobile-hidden ts-icon absolute-right is-circle-exclamation-icon is-t-red" v-if="isConflicted(course)" @click.stop=""></span>
+											<span class="ts-icon absolute-right is-star-icon" v-else-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course.id)"></span>
+											<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course.id)"></span>
+										</td>
+									</tr>
+									<tr v-if="index%20 == 19 && filteredCourses.length >= 20" class="ad">
+										<td colspan="7">
+											<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+											<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="return; document.querySelectorAll('tr.ad td').forEach(td => td.innerHTML='<div class=&quot;ts-text is-description&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>');"></script>
+											<ins class="adsbygoogle"
+												style="display:block"
+												data-ad-format="fluid"
+												data-ad-layout-key="-ft+62+3a-cx+as"
+												data-ad-client="ca-pub-5900703871265800"
+												data-ad-slot="1984429220"></ins>
+											<script>
+												(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+										</td>
+									</tr>
+								</template>
 							</tbody>
 						</table>
-					</div>
-					<div style="display: flex; justify-content: center;" v-if="totalPages > 1">
-						<div class="ts-pagination is-large is-relaxed has-top-spaced">
-							<div class="item is-first" :class="{'is-disabled': currentPage === 1}" @click="changePage(1)"></div>
-							<div class="item is-back" :class="{'is-disabled': currentPage === 1}" @click="changePage(currentPage - 1)"></div>
-							<div class="item is-active" style="align-items: flex-end; width: 6rem; padding: .5rem .25rem;">
-								{{ currentPage }}<small style="font-size: 80%;">{{ '/ ' + totalPages }}</small>
-							</div>
-							<div class="item is-next" :class="{'is-disabled': currentPage === totalPages}" @click="changePage(currentPage + 1)"></div>
-							<div class="item is-last" :class="{'is-disabled': currentPage === totalPages}" @click="changePage(totalPages)"></div>
-						</div>
-					</div>
-					<div class="ts-box ad is-hollowed box-mobile-spaced has-top-spaced-large" v-if="showAd">
-						<div class="ts-content">
-							<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
-							<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelector('.ad .ts-content').innerHTML='<div class=&quot;ts-text is-description has-bottom-padded-small&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned has-vertically-padded&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>';"></script>
-							<ins class="adsbygoogle"
-								style="display:block; text-align:center;"
-								data-ad-layout="in-article"
-								data-ad-format="fluid"
-								data-ad-client="ca-pub-5900703871265800"
-								data-ad-slot="3164180037"></ins>
-							<script>
-								(adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-						</div>
 					</div>
 				</template>
 				<div class="ts-blankslate" v-else-if="courses.length == 0">
@@ -269,6 +260,11 @@
 	background: var(--ts-static-gray-600);
 	border-color: var(--ts-static-gray-600);
 	color: var(--ts-static-gray-50);
+}
+
+#page-search tr.ad:hover {
+	cursor: default;
+	background: transparent;
 }
 
 @media (max-width: 767.98px) {
@@ -418,11 +414,6 @@ export default {
 				}).flat();
 			}).flat();
 		},
-		paginatedCourses() {
-            const start = (this.currentPage - 1) * this.itemsPerPage;
-            const end = start + this.itemsPerPage;
-            return this.filteredCourses.slice(start, end);
-        },
         totalPages() {
             return Math.ceil(this.filteredCourses.length / this.itemsPerPage);
         },

@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+.ts-box {
+    --accent-color: initial;
+    --accent-foreground-color: initial;
+    --indicator-color: var(--accent-color, var(--ts-gray-900));
+    --indicator-width: 5px;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+.ts-box {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--ts-gray-300);
+    border-radius: var(--ts-border-radius-container);
+    overflow: hidden;
+    background: var(--ts-gray-50);
+}
+
+a.ts-box:hover {
+    border-color: var(--ts-gray-400);
+}
+
+/* ==========================================================================
+   Structure
+   ========================================================================== */
+
+.ts-box .symbol .ts-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0;
+    margin-right: 0;
+    pointer-events: none;
+    font-size: 8em;
+    line-height: 1.1em;
+    opacity: 0.1;
+}
+
+/* ==========================================================================
+   Variations
+   ========================================================================== */
+
+/**
+ * Horizontal
+ */
+
+.ts-box.is-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+/**
+ * Collapsed
+ */
+
+.ts-box.is-collapsed {
+    width: fit-content;
+}
+
+/**
+ * Indicated
+ */
+
+.ts-box.is-top-indicated {
+    border-top: var(--indicator-width) solid var(--indicator-color);
+}
+.ts-box.is-bottom-indicated {
+    border-bottom: var(--indicator-width) solid var(--indicator-color);
+}
+.ts-box.is-start-indicated {
+    border-left: var(--indicator-width) solid var(--indicator-color);
+}
+.ts-box.is-end-indicated {
+    border-right: var(--indicator-width) solid var(--indicator-color);
+}
+
+/**
+ * Emphasises
+ */
+
+.ts-box[class*="-indicated"].is-negative {
+    --indicator-color: var(--ts-negative-500);
+}
+
+.ts-box[class*="-indicated"].is-positive {
+    --indicator-color: var(--ts-positive-500);
+}
+
+.ts-box[class*="-indicated"].is-warning {
+    --indicator-color: var(--ts-warning-500);
+}
+
+/**
+ * Raised
+ */
+
+.ts-box.is-raised {
+    box-shadow: var(--ts-elevated-shadow);
+}
+
+/**
+ * Sharp
+ */
+
+.ts-box.is-sharp {
+    border-radius: 0;
+}
+
+/**
+ * Hollowed
+ */
+
+.ts-box.is-hollowed {
+    border: 4px dashed var(--ts-gray-300);
+    background: transparent;
+}

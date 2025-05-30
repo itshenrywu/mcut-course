@@ -1,0 +1,311 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+.ts-dropdown {
+    --object-distance: 0.8rem;
+    --min-width: 10rem;
+    --padding-multiplier: 1;
+
+    --ts-dropdown-min-width: 0px;
+    --ts-dropdown-position: absolute;
+    --accent-color: initial;
+    --accent-foreground-color: initial;
+}
+
+.ts-dropdown .item {
+    --indented-padding: 0px;
+    --color: inherit;
+}
+
+.ts-dropdown .item .ts-icon {
+    --color: inherit;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+.ts-dropdown {
+    position: var(--ts-dropdown-position);
+    display: none;
+    color: inherit;
+    flex-direction: column;
+    z-index: var(--ts-z-dropdown);
+    border: 1px solid var(--ts-gray-300);
+    border-radius: var(--ts-border-radius-element);
+    background: var(--ts-gray-50);
+    box-shadow: var(--ts-elevated-shadow);
+    font-size: var(--ts-font-size-14px);
+    padding: 0.4rem 0;
+    white-space: nowrap;
+    min-width: max(var(--ts-dropdown-min-width), var(--min-width));
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.ts-dropdown > .item {
+    font-family: inherit;
+    appearance: none;
+    border: unset;
+    font-size: inherit;
+    text-align: inherit;
+    background: transparent;
+    color: var(--color);
+    line-height: 1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.65rem calc(1rem * var(--padding-multiplier));
+    padding-left: calc((1rem + var(--indented-padding)) * var(--padding-multiplier));
+    gap: var(--object-distance);
+    min-width: 0;
+}
+
+.ts-dropdown .item .ts-icon {
+    color: var(--color);
+    font-size: 1.1em;
+}
+
+.ts-dropdown .item .description {
+    font-size: var(--ts-relative-small);
+    color: var(--ts-gray-500);
+
+    text-align: right;
+    margin-left: auto;
+    float: right;
+}
+
+.ts-dropdown .item:hover {
+    cursor: pointer;
+    background: var(--ts-gray-75);
+}
+
+.ts-dropdown .item .ts-grid {
+    flex: 1;
+}
+
+.ts-dropdown .divider {
+    border-top: 1px solid var(--ts-gray-300);
+    margin: 0.4rem 0;
+}
+
+/* ==========================================================================
+   Variations
+   ========================================================================== */
+
+/**
+ * Active
+ */
+
+.ts-dropdown .item.is-active {
+    background: var(--accent-color, var(--ts-gray-800));
+    color: var(--accent-foreground-color, var(--ts-gray-50));
+}
+
+/**
+ * Negative
+ */
+
+.ts-dropdown .item.is-negative {
+    color: var(--ts-negative-500);
+}
+
+/**
+ * Header
+ */
+
+.ts-dropdown .header {
+    color: var(--ts-gray-500);
+    line-height: 1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.65rem calc(1rem * var(--padding-multiplier));
+    padding-left: calc(1rem * var(--padding-multiplier));
+    gap: var(--object-distance);
+    pointer-events: none;
+    user-select: none;
+}
+
+.ts-dropdown .header:hover {
+    cursor: default;
+    background: transparent;
+}
+
+/**
+ * Indented
+ */
+
+.ts-dropdown .item.is-indented {
+    --indented-padding: 0.5rem;
+}
+
+/**
+ * Disabled
+ */
+
+.ts-dropdown .item[disabled],
+.ts-dropdown .item.is-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+}
+
+/**
+ * Selected
+ */
+
+.ts-dropdown .item.is-selected {
+    background: var(--accent-color, var(--ts-primary-700));
+    color: var(--accent-foreground-color, var(--ts-white));
+}
+
+.ts-dropdown .item.is-selected .ts-icon {
+    color: inherit;
+}
+
+.ts-dropdown .item.is-selected .description {
+    color: inherit;
+    opacity: 0.8;
+}
+
+/**
+ * Separated
+ */
+
+.ts-dropdown.is-separated {
+    --padding-multiplier: 0.8;
+
+    gap: 0.25rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.ts-dropdown.is-separated .item {
+    border-radius: var(--ts-border-radius-secondary);
+}
+
+/**
+ * Icon
+ */
+
+.ts-dropdown.is-start-icon .item .ts-icon {
+    min-width: 1rem;
+    text-align: center;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+.ts-dropdown.is-end-icon .item .ts-icon {
+    margin-left: auto;
+    min-width: 1rem;
+    text-align: center;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+/**
+ * Density
+ */
+
+.ts-dropdown.is-relaxed .item {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.ts-dropdown.is-dense .item {
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+}
+
+/**
+ * Visible
+ */
+
+.ts-dropdown.is-visible {
+    display: inline-flex;
+}
+
+/**
+ * Scrollable
+ */
+
+.ts-dropdown.is-scrollable {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/** (Below 766px) */
+@media screen and (max-width: 766px) {
+    .ts-dropdown.is-scrollable {
+        max-height: 10rem;
+    }
+}
+
+/** (Above 766px) */
+@media screen and (min-width: 766px) {
+    .ts-dropdown.is-scrollable {
+        max-height: 15rem;
+    }
+}
+
+/** (Above 993px) */
+@media screen and (min-width: 993px) {
+    .ts-dropdown.is-scrollable {
+        max-height: 19rem;
+    }
+}
+
+/**
+ * Positions
+ */
+
+.ts-dropdown.is-top-left {
+    bottom: calc(100% + 0.5rem);
+    left: 0;
+}
+
+.ts-dropdown.is-bottom-left {
+    top: calc(100% + 0.5rem);
+    left: 0;
+}
+
+.ts-dropdown.is-bottom-center {
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 0.5rem);
+}
+
+.ts-dropdown.is-top-center {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 0.5rem);
+}
+
+.ts-dropdown.is-top-right {
+    bottom: calc(100% + 0.5rem);
+    right: 0;
+}
+
+.ts-dropdown.is-bottom-right {
+    top: calc(100% + 0.5rem);
+    right: 0;
+}
+
+.ts-dropdown.is-top {
+    bottom: calc(100% + 0.5rem);
+    left: 0;
+    right: 0;
+    min-width: min-content;
+}
+
+.ts-dropdown.is-bottom {
+    top: calc(100% + 0.5rem);
+    left: 0;
+    right: 0;
+    min-width: min-content;
+}

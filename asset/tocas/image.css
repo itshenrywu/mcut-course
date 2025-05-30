@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+.ts-image {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Structure
+   ========================================================================== */
+
+.ts-image img {
+    vertical-align: top;
+}
+
+:where(.ts-image img:not([width])) {
+    width: 100%;
+}
+
+/* ==========================================================================
+   Variations
+   ========================================================================== */
+
+/**
+ * Circular
+ */
+
+.ts-image.is-circular img {
+    border-radius: 100rem !important;
+}
+
+/**
+ * Disabled
+ */
+
+.ts-image.is-disabled img {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/**
+ * Rounded
+ */
+
+.ts-image.is-rounded img {
+    border-radius: var(--ts-border-radius-element) !important;
+}
+
+/**
+ * Bordered
+ */
+
+.ts-image.is-bordered img {
+    border: 1px solid var(--ts-gray-300);
+}
+
+/**
+ * Covered
+ */
+
+.ts-image.is-covered img {
+    object-fit: cover;
+}
+
+/**
+ * Full
+ */
+
+.ts-image.is-full-width,
+.ts-image.is-full-width img {
+    width: 100%;
+}
+
+.ts-image.is-full-height,
+.ts-image.is-full-height img {
+    height: 100%;
+}
+
+/**
+ * Centered
+ */
+
+.ts-image.is-centered {
+    display: block;
+}
+.ts-image.is-centered img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Vertical Aligns
+ */
+
+.ts-image.is-top-aligned,
+.ts-image.is-top-aligned img {
+    vertical-align: top;
+}
+
+.ts-image.is-middle-aligned,
+.ts-image.is-middle-aligned img {
+    vertical-align: middle;
+}
+
+.ts-image.is-bottom-aligned,
+.ts-image.is-bottom-aligned img {
+    vertical-align: bottom;
+}
+
+/**
+ * Spaced
+ */
+
+.ts-image.is-spaced {
+    margin-left: 0.45rem;
+    margin-right: 0.45rem;
+}
+.ts-image.is-start-spaced {
+    margin-left: 0.45rem;
+}
+.ts-image.is-end-spaced {
+    margin-right: 0.45rem;
+}
+
+/**
+ * Aspect Ratio
+ */
+
+.ts-image.is-1-by-1 img,
+.ts-image.is-4-by-3 img,
+.ts-image.is-16-by-9 img {
+    object-fit: cover;
+}
+
+.ts-image.is-1-by-1 img {
+    aspect-ratio: 1 / 1;
+}
+.ts-image.is-4-by-3 img {
+    aspect-ratio: 4 / 3;
+}
+.ts-image.is-16-by-9 img {
+    aspect-ratio: 16 / 9;
+}
