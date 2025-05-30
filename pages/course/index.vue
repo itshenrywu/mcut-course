@@ -26,7 +26,7 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">課程名稱 / 老師 / 序號</div>
 						<div class="ts-input is-fluid is-end-icon">
-							<input type="text" aria-label="課程名稱 / 老師 / 序號" v-model.trim="searchQuery" @input="saveSearchInput(); currentPage = 1;">
+							<input type="text" aria-label="課程名稱 / 老師 / 序號" v-model.trim="searchQuery" @input="saveSearchInput();">
 							<span class="ts-icon is-xmark-icon" @click="searchQuery = ''; saveSearchInput();" v-bind:style="{color: searchQuery=='' ? 'transparent' : 'var(--ts-gray-400)'}"></span>
 						</div>
 					</div>
@@ -44,7 +44,7 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">開課班級</div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentClass" @change="saveSearchInput(); currentPage = 1;" aria-label="開課班級">
+							<select v-model="currentClass" @change="saveSearchInput();" aria-label="開課班級">
 								<option selected="selected" value="">不限</option>
 								<option v-for="grade_class in classes">{{ grade_class }}</option>
 							</select>
@@ -54,7 +54,7 @@
 						<div class="ts-text is-label has-bottom-padded-small">修別 <span
 								v-show="currentDept && currentDept.includes('通識')">/ 通識類別</span></div>
 						<div class="ts-select is-fluid">
-							<select v-model="currentType" @change="saveSearchInput(); currentPage = 1;" aria-label="修別">
+							<select v-model="currentType" @change="saveSearchInput();" aria-label="修別">
 								<option value="" selected="selected">不限</option>
 								<option>必修</option>
 								<option>選修</option>
@@ -71,17 +71,17 @@
 						<div class="ts-selection is-fluid">
 							<label class="item">
 								<input type="radio" name="showConflict" :value="1" v-model="showConflict"
-									@change="saveSearchInput(); currentPage = 1;" />
+									@change="saveSearchInput();" />
 								<div class="text">顯示</div>
 							</label>
 							<label class="item">
 								<input type="radio" name="showConflict" :value="2" v-model="showConflict"
-									@change="saveSearchInput(); currentPage = 1;" />
+									@change="saveSearchInput();" />
 								<div class="text">置底</div>
 							</label>
 							<label class="item">
 								<input type="radio" name="showConflict" :value="0" v-model="showConflict"
-									@change="saveSearchInput(); currentPage = 1;" />
+									@change="saveSearchInput();" />
 								<div class="text">隱藏</div>
 							</label>
 						</div>
@@ -203,7 +203,7 @@
 											<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course.id)"></span>
 										</td>
 									</tr>
-									<tr v-if="index%20 == 19 && filteredCourses.length >= 20" class="ad">
+									<tr v-if="(showAd && filteredCourses.length >= itemsPerPage && index%itemsPerPage == itemsPerPage-1 ) || (showAd && filteredCourses.length < itemsPerPage && index == filteredCourses.length - 1)" class="ad">
 										<td colspan="7">
 											<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
 											<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelectorAll('tr.ad td').forEach(td => td.innerHTML='<div class=&quot;ts-text is-description&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>');"></script>
@@ -300,7 +300,6 @@ export default {
 			depts: {},
 			classes: [],
 
-			currentPage: 1,
             itemsPerPage: 25,
 
 			loading: true,
@@ -414,9 +413,6 @@ export default {
 				}).flat();
 			}).flat();
 		},
-        totalPages() {
-            return Math.ceil(this.filteredCourses.length / this.itemsPerPage);
-        },
 	},
 	methods: {
 		...mapMutations(['setSavedCourse']),
@@ -557,7 +553,6 @@ export default {
 			}
 
 			this.saveSearchInput();
-			this.currentPage = 1;
 		},
 		saveRequiredCourse() {
 			if(this.savedCourse.length == 0) {
@@ -650,19 +645,6 @@ export default {
 			}
 			this.setSavedCourse([this.savedCourse]);
 			this.$root.$emit('updateSavedCourse', this.savedCourse);
-			if(this.currentPage > this.totalPages) {
-				this.currentPage = this.totalPages;
-			}
-		},
-		changePage(page) {
-			if (page < 1 || page > this.totalPages || page === this.currentPage) return;
-			let scrollElement = document.getElementById('main');
-			const distanceToBottom = scrollElement.scrollHeight - scrollElement.scrollTop - scrollElement.clientHeight;
-			this.currentPage = page;
-			this.$nextTick(() => {
-				const newScrollPosition = scrollElement.scrollHeight - distanceToBottom - scrollElement.clientHeight;
-				scrollElement.scrollTo(0, newScrollPosition);
-			});
 		},
 	}
 }
