@@ -206,7 +206,7 @@
 									<tr v-if="index%20 == 19 && filteredCourses.length >= 20" class="ad">
 										<td colspan="7">
 											<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
-											<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="return; document.querySelectorAll('tr.ad td').forEach(td => td.innerHTML='<div class=&quot;ts-text is-description&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>');"></script>
+											<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelectorAll('tr.ad td').forEach(td => td.innerHTML='<div class=&quot;ts-text is-description&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>');"></script>
 											<ins class="adsbygoogle"
 												style="display:block"
 												data-ad-format="fluid"
