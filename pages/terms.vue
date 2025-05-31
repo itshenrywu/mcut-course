@@ -27,31 +27,35 @@
 </template>
 
 <style>
-	#page-terms .ts-table {
-		table-layout: fixed;
-	}
+#page-terms .ts-table {
+	table-layout: fixed;
+}
 
-	#page-terms .ts-table td,
-	#page-terms .ts-table th {
-		font-size: .9rem;
-		padding: 1rem 0;
-		text-align: center;
-		vertical-align: middle;
-	}
+#page-terms .ts-table td,
+#page-terms .ts-table th {
+	font-size: .9rem;
+	padding: 1rem 0;
+	text-align: center;
+	vertical-align: middle;
+}
 
+#page-terms .ts-table th span {
+	display: inline-block;
+	margin-left: .125rem;
+}
+
+@media (max-width: 767.98px) {
 	#page-terms .ts-table th span {
-		display: inline-block;
-		margin-left: .125rem;
+		font-size: .6rem;
+		display: block;
+		margin-left: 0;
+		line-height: .8rem;
 	}
 
-	@media (max-width: 767.98px) {
-		#page-terms .ts-table th span {
-			font-size: .6rem;
-			display: block;
-			margin-left: 0;
-			line-height: .8rem;
-		}
+	#page-terms .ts-table td {
+		font-size: .75rem;
 	}
+}
 </style>
 
 <script>

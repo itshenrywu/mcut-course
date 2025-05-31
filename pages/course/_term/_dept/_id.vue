@@ -141,6 +141,10 @@
 			</div>
 			<table class="ts-table is-sticked has-top-spaced" v-if="course.name">
 				<tbody>
+					<tr v-if="course.hour">
+						<td>時數</td>
+						<td>{{ course.hour }} <small class="ts-text is-secondary"> (此為系統上的課程時數，實際上課時間請參考上方資訊)</small></td>
+					</tr>
 					<tr>
 						<td>人數限制</td>
 						<td>{{ course.min }} ~ {{ course.max }}</td>
