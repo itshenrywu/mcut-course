@@ -64,9 +64,9 @@
 		</section>
 		<div class="ts-container has-top-spaced-huge">
 			<div class="ts-grid has-top-spaced-huge is-stretched">
-				<div class="column is-4-by-5-wide mobile-fluid">
+				<div class="column is-4-by-5-wide tablet-fluid">
 					<div class="ts-grid">
-						<div class="column is-8-wide mobile-fluid">
+						<div class="column is-8-wide tablet-fluid">
 							<div class="ts-box is-raised" @click="goDetailSearch('')">
 								<div class="ts-content">
 									<div class="ts-header">進階搜尋<span class="ts-badge is-start-spaced is-dense is-small is-negative">Hot!</span></div>
@@ -75,7 +75,7 @@
 								<div class="symbol"><span class="ts-icon is-table-icon"></span></div>
 							</div>
 						</div>
-						<div class="column is-4-wide mobile-half">
+						<div class="column is-4-wide tablet-half">
 							<div class="ts-box" @click="goDetailSearch('體育')" :class="{'locked': isLocked('體育')}">
 								<div class="ts-content">
 									<div class="ts-header">體育自選</div>
@@ -84,7 +84,7 @@
 								<div class="symbol"><span class="ts-icon is-child-reaching-icon"></span></div>
 							</div>
 						</div>
-						<div class="column is-4-wide mobile-half">
+						<div class="column is-4-wide tablet-half">
 							<div class="ts-box" @click="goDetailSearch('社會實踐')" :class="{'locked': isLocked('社會實踐')}">
 								<div class="ts-content">
 									<div class="ts-header">{{ currentTerm.split('-')[0] <= 112 ? '經典教育與社會實踐':'永續發展與社會實踐' }}</div>
@@ -93,7 +93,7 @@
 								<div class="symbol"><span class="ts-icon is-x-icon"></span></div>
 							</div>
 						</div>
-						<div class="column is-4-wide mobile-half">
+						<div class="column is-4-wide tablet-half">
 							<div class="ts-box" @click="goDetailSearch('通識', '社會科學')" :class="{'locked': isLocked('通識', '社會科學')}">
 								<div class="ts-content">
 									<div class="ts-header">社會科學</div>
@@ -102,7 +102,7 @@
 								<div class="symbol"><span class="ts-icon is-users-icon"></span></div>
 							</div>
 						</div>
-						<div class="column is-4-wide mobile-half">
+						<div class="column is-4-wide tablet-half">
 							<div class="ts-box" @click="goDetailSearch('通識', '自然科學')" :class="{'locked': isLocked('通識', '自然科學')}">
 								<div class="ts-content">
 									<div class="ts-header">自然科學</div>
@@ -111,7 +111,7 @@
 								<div class="symbol"><span class="ts-icon is-seedling-icon"></span></div>
 							</div>
 						</div>
-						<div class="column is-4-wide mobile-half">
+						<div class="column is-4-wide tablet-half">
 							<div class="ts-box" @click="goDetailSearch('通識', '語言與全球化')" :class="{'locked': isLocked('通識', '語言與全球化')}">
 								<div class="ts-content">
 									<div class="ts-header">語言與全球化</div>
@@ -120,7 +120,7 @@
 								<div class="symbol"><span class="ts-icon is-earth-asia-icon"></span></div>
 							</div>
 						</div>
-						<div class="column is-4-wide mobile-half">
+						<div class="column is-4-wide tablet-half">
 							<div class="ts-box" @click="goDetailSearch('通識', '人文藝術')" :class="{'locked': isLocked('通識', '人文藝術')}">
 								<div class="ts-content">
 									<div class="ts-header">人文藝術</div>
@@ -131,7 +131,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-1-by-5-wide mobile-fluid">
+				<div class="column is-1-by-5-wide tablet-fluid">
 					<div class="ts-box is-raised saved" @click="goDetailSearch('saved')">
 						<div class="ts-content">
 							<div class="ts-header">收藏的課程<span class="ts-badge is-start-spaced is-dense is-small my" v-if="savedCourse.length > 0">{{ savedCourse.length }}</span></div>
@@ -392,9 +392,6 @@ export default {
 		},
 		showDropdown() {
 			if(document.getElementById('query-dropdown').classList.contains('is-visible')) return;
-			if(window.innerWidth <= 768) {
-				document.querySelector('.ts-input').scrollIntoView({ behavior: 'smooth', block: 'start' });
-			}
 			document.querySelector('[data-dropdown="query-dropdown"]').click();
 			this.searchByQuery();
 		},

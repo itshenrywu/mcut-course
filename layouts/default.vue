@@ -348,6 +348,18 @@ h1 {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 1023px) {
+	.ts-grid .column.tablet-fluid {
+		width: var(--16-wide);
+		max-width: var(--16-wide);
+	}
+
+	.ts-grid .column.tablet-half {
+		width: var(--8-wide);
+		max-width: var(--8-wide);
+	}
+}
+
 @media screen and (max-width: 767.98px) {
 	html {
 		font-size: 14px;

@@ -346,6 +346,8 @@ export default {
 				}
 				res.data.forEach(item => {
 					if(item.title.includes('放假') || item.title.includes('連假')) item.color = '#e74c3c';
+					else if(item.title.includes('選課') || item.title.includes('初選') || item.title.includes('加退選')) item.color = '#2980b9';
+					else if(item.title.includes('期中考') || item.title.includes('期末考') || item.title.includes('加退選')) item.color = '#e67e22';
 					else item.color = '#34495e';
 					this.eventList.push(item);
 				});

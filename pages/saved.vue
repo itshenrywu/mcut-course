@@ -547,7 +547,7 @@ export default {
 				html: `<table class="ts-table">
 					<thead>
 						<tr>
-							<th>學制/年級</th><th>上學期</th><th>下學期</th>
+							<th>年級</th><th>上學期</th><th>下學期</th>
 						</tr>
 					</thead>
 					<tbody>
