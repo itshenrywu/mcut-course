@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0170/1001", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"114101701001",name:"文學與人性心理描寫",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"涂藍云",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"上課期間為6\u002F30至8\u002F25",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2")));

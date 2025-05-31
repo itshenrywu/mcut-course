@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2140/1802", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"108221401802",name:"產業概論",type:"必修",dept:"四技工管系",year:"2",class:"乙",teacher:"林俊雄",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

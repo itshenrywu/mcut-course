@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1174/3701", (function(a){return {data:[{course:{time:[["1","1~2"],[a,"3~3"]],id:"108211743701",name:"機電整合",type:"必修",dept:"四技機械系",year:"2",class:"乙",teacher:"陳宏毅",credit:a,hour:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

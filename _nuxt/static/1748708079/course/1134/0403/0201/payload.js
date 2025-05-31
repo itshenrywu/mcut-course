@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1134/0403/0201", (function(a,b,c,d){return {data:[{course:{time:[["2",a],[b,a]],id:"113404030201",name:"微積分(二)",type:"重修",dept:"自然組(一)-四技(日)",year:b,class:"暑",teacher:"劉小篔",credit:c,hour:c,classroom:d,max:"50",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("2~4","4","3","")));

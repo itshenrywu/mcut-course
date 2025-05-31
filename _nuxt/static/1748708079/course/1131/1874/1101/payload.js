@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1874/1101", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[a,"8.5~8.5"],[c,b]],id:"113118741101",name:"工程倫理與實務講座",type:"必修",dept:"四技材工系",year:"4",class:"甲",teacher:"游洋雁",credit:"1",hour:c,classroom:d,max:"50",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("2","7~7","3","")));

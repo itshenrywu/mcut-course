@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/5701", (function(a){return {data:[{course:{time:[["2","2~4"],[a,"5~7"]],id:"114122705701",name:"企業倫理",type:"必修",dept:"四技經管系",year:a,class:"甲",teacher:"陳世民",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

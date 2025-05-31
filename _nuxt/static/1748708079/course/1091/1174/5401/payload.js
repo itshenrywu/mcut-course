@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1174/5401", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109111745401",name:"車輛材料",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"馮奎智",credit:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

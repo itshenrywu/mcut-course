@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/18C2/0701", (function(a,b){return {data:[{course:{time:[["5","1~3"]],id:"113218C20701",name:"材料物理性質",type:"必修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"吳鉉忠",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

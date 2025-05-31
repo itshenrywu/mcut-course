@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/1501", (function(a,b){return {data:[{course:{time:[["3","5~6"]],id:"113120701501",name:"工程統計",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"劉弘一",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

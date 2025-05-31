@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1872/1502", (function(a){return {data:[{course:{time:[["1","4~4"],[a,"3~4"]],id:"108118721502",name:"工程數學(一)",type:"必修",dept:"四技材工系",year:"2",class:"乙",teacher:"游洋雁",credit:a,hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

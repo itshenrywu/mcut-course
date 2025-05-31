@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/21A0/0E02", (function(a,b){return {data:[{course:{time:[[a,"1~4"],[a,"5~6"]],id:"110421A00E02",name:"深度學習",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"陳思翰",credit:"3",classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("6","")));

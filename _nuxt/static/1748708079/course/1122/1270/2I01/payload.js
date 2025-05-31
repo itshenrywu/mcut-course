@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1270/2I01", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"112212702I01",name:"大數據分析",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"邱機平",credit:b,hour:b,classroom:"",max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

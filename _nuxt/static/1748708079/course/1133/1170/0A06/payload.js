@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1170/0A06", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"113311700A06",name:"電腦輔助設計(一)",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"許啟彬",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"併機三丙",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

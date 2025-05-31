@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0870/0202", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"113108700202",name:"普通化學實驗(一)",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"程桂祥",credit:a,hour:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

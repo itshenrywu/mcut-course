@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/1401", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"111230701401",name:"大數據與商業分析",type:"選修",dept:"四技行設專班",year:"2",class:"甲",teacher:"林裕勛",credit:"3",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

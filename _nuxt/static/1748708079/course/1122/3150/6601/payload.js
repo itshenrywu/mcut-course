@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3150/6601", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"112231506601",name:"陶瓷設計",type:"選修",dept:"四技工設系",year:"4",class:"甲",teacher:"曾泰洋",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
