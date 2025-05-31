@@ -10,6 +10,9 @@
 					<span class="ts-icon is-clock-icon"></span> 選課時間及說明
 					<div class="ts-badge has-inverted is-small is-dense is-negative" v-if="showInfoRedDot"></div>
 				</NuxtLink>
+				<NuxtLink to="/terms" class="item">
+					<span class="ts-icon is-list-check-icon"></span> 四技日間部學期安排說明
+				</NuxtLink>
 				<NuxtLink to="/calendar" class="item">
 					<span class="ts-icon is-calendar-days-icon"></span> 行事曆
 				</NuxtLink>
