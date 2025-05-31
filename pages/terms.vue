@@ -1,7 +1,7 @@
 <template>
 	<div class="cell is-secondary is-fluid is-scrollable" id="page-terms">
-		<div class="ts-container is-narrow has-vertically-padded">
-			<h1 class="ts-header is-huge has-vertically-padded">四技日間部學期安排說明</h1>
+		<div class="ts-container is-narrow has-top-padded-large has-bottom-padded is-fitted">
+			<h1 class="ts-header is-huge has-vertically-padded mobile-padded">四技日間部學期安排說明</h1>
 			<div class="ts-box">
 				<table class="ts-table is-celled">
 					<thead>
@@ -18,7 +18,7 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="ts-text is-description is-small has-top-padded">
+			<div class="ts-text is-description is-small has-top-padded mobile-padded">
 				* 雖然時間是在暑假，但實際上是要上大三上學期的課程（跟一般上課一樣，會有期中考、期末考）
 			</div>
 		</div>
