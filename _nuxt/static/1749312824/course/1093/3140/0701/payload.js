@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/3140/0701", (function(a,b){return {data:[{course:{time:[["1",a],["2",a]],id:"109331400701",name:"傢俱設計",type:"重修",dept:"四技工設系",year:"4",class:"暑",teacher:"高清漢",credit:"3",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1~3","")));

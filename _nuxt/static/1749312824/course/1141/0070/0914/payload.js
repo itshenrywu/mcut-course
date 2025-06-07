@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0914", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"114100700914",name:"實習前職場素養訓練",type:"必修",dept:"四技工管系",year:"3",class:"甲",teacher:"林俊雄",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

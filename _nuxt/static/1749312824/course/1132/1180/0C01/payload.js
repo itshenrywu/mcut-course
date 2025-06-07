@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1180/0C01", {data:[{course:{time:[["3","3~4"]],id:"113211800C01",name:"書報討論(二)",type:"必修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"胡志中",credit:"0",hour:"2",classroom:"",max:"35",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

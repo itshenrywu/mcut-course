@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0270/1S05", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"111202701S05",name:"生活與職場英文(中級)(二)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"張錫恩",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"電機電子AI中C",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

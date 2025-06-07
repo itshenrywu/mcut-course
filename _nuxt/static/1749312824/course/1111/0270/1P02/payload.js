@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0270/1P02", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"111102701P02",name:"生活與職場英文(中級)(一)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"劉學真",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"機械中B",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

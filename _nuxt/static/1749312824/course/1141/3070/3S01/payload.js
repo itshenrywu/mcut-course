@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/3S01", (function(a){return {data:[{course:{time:[[a,"3~4"],["5","5~6"]],id:"114130703S01",name:"行銷設計英文",type:"選修",dept:"行銷設計學程",year:"3",class:"甲",teacher:"梁旨見",credit:a,hour:"2",classroom:"",max:"60",min:"10",comment:"甲乙合班 帶狀課程6\u002F30-8\u002F29 English-taught",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

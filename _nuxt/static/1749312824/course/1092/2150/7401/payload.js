@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2150/7401", (function(a){return {data:[{course:{time:[["1","1~3"]],id:"109221507401",name:"設施規劃",type:"必修",dept:"四技工管系",year:"2",class:"甲",teacher:"郭宜雍",credit:"3",classroom:a,max:"67",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

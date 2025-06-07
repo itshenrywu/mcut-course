@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3170/0X01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"112131700X01",name:"產品設計實務",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"陳建志",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"第二專長-限外系可修6\u002F5-9\u002F8上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

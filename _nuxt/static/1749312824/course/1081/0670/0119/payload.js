@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0670/0119", {data:[{course:{time:[["3","7~8"]],id:"108106700119",name:"體育(一)",type:"必修",dept:"四技機械系",year:"1",class:"乙",teacher:"陳建彰",credit:"0",hour:"2",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

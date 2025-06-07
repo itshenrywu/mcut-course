@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2170/1I01", (function(a){return {data:[{course:{time:[[a,"2~4"],["4","5~7"]],id:"112121701I01",name:"作業研究(一)",type:"重修",dept:"四技工管系",year:a,class:"重",teacher:"陳子家",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"帶狀課程 7\u002F3~9\u002F1甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

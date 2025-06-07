@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1670/1B02", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"111116701B02",name:"火災學",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"鄭翰陽",credit:b,hour:b,classroom:c,max:"70",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

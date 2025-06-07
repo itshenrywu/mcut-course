@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2070/0X06", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"113220700X06",name:"奈米光觸媒的綠色環境應用",type:"選修",dept:"環資學院",year:"2",class:"甲",teacher:"黃錦鴻",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"限環資學院大二可選\u002F English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1270/4901", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"111112704901",name:"光電工程概論",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"吳長洲",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

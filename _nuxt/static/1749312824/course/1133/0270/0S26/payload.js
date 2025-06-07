@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/0270/0S26", (function(a){return {data:[{course:{time:[["3","1~4"]],id:"113302700S26",name:"英文實務(三)",type:"重修",dept:"外文組-四技(日)",year:"4",class:"暑",teacher:"張慎琪",credit:"0",hour:"2",classroom:a,max:"40",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

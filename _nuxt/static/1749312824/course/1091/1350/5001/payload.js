@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1350/5001", {data:[{course:{time:[["1","1~3"]],id:"109113505001",name:"化工程序與安全",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"程桂祥",credit:"3",classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2140/0802", (function(a){return {data:[{course:{time:[["4","3~4"],["5","1~1"]],id:"109221400802",name:"統計學(一)",type:"必修",dept:"四技工管系",year:"1",class:"乙",teacher:"陳昆皇",credit:"3",classroom:a,max:"70",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/0A01", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"114111700A01",name:"電腦輔助設計(一)",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"許啟彬",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

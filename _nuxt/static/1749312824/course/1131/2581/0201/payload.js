@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2581/0201", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"113125810201",name:"企業流程分析與管理",type:"選修",dept:"工管系碩士班",year:a,class:"甲",teacher:"阮業春",credit:b,hour:b,classroom:c,max:"25",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

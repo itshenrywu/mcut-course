@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0070/0005", (function(a){return {data:[{course:{time:[["2","0.5~0.5"]],id:"109200700005",name:"設計思考",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"林金祥",credit:a,classroom:"",max:"56",min:"10",comment:"上課日期:110\u002F03\u002F13(六)-110\u002F03\u002F14(日)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

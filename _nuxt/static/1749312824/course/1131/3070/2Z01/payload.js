@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/2Z01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"113130702Z01",name:"影像剪輯與聲音設計",type:"選修",dept:"行銷設計學程",year:"2",class:"甲",teacher:"何孟翰",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

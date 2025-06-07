@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0871/0106", (function(a){return {data:[{course:{time:[[a,"3~4"],["4","1~1"]],id:"108108710106",name:"普通化學",type:"必修",dept:"四技機械系",year:"1",class:"丙",teacher:"吳喬松",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));
