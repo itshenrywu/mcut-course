@@ -32,47 +32,56 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<div>
-						<div class="ts-grid is-middle-aligned" style="--gap: 0.1rem">
-							<div class="column is-4-wide">
-								<div class="ts-text is-label">主題</div>
+						<div class="ts-text is-label has-bottom-spaced-small">背景</div>
+						<div class="ts-select is-fluid has-bottom-spaced-small">
+							<div class="content" data-dropdown="background-dropdown">
+								<span class="ts-icon is-circular is-image-icon" v-if="backgrounds.find(b => b.id === myCoursesSetting.background).id == 'image'"></span>
+								<span class="ts-icon is-circular is-square-icon" v-else-if="backgrounds.find(b => b.id === myCoursesSetting.background).id == 'custom'" :style="{ background: myCoursesSetting.backgroundColor }"></span>
+								<span class="ts-icon is-circular is-square-icon" v-else :style="{ background: backgrounds.find(b => b.id === myCoursesSetting.background).color }"></span>
+								{{ backgrounds.find(b => b.id === myCoursesSetting.background).name }}
 							</div>
-							<div class="column is-12-wide">
-								<div class="ts-select is-fluid">
-									<select v-model="myCoursesSetting.theme" @change="updateTimetable(false)">
-										<option v-for="theme of themes" :value="theme.id">{{ theme.name }}</option>
-									</select>
+							<div class="ts-dropdown is-dense" data-position="bottom-start" id="background-dropdown">
+								<div class="item is-indented" v-for="background of backgrounds"
+								:class="{ 'is-selected': background.id === myCoursesSetting.background, 'dropdown-item-input': background.id == 'image' || background.id == 'custom' }"
+								@click="chooseBackground(background.id)">
+									<template v-if="background.id == 'image'">
+										<span class="ts-icon is-circular is-image-icon"></span>
+										{{ backgroundImage == null ? '選擇圖片' : '重新選擇圖片' }}
+										<input type="file" accept="image/png, image/jpeg, image/jpg" @change="handleBackgroundImage">
+									</template>
+									<template v-else-if="background.id == 'custom'">
+										<span class="ts-icon is-circular is-square-icon" :style="{ background: myCoursesSetting.backgroundColor }"></span>
+										{{ background.name }}
+										<input type="color" v-model="myCoursesSetting.backgroundColor" @change="updateTimetable(false)">
+									</template>
+									<template v-else>
+										<span class="ts-icon is-circular is-square-icon" :style="{ background: background.color }"></span>
+										{{ background.name }}
+									</template>
 								</div>
 							</div>
 						</div>
 					</div>
-
+					
 					<div>
-						<div class="ts-grid is-middle-aligned" style="--gap: 0.1rem">
-							<div class="column is-4-wide">
-								<div class="ts-text is-label">背景</div>
+						<div class="ts-text is-label has-bottom-padded-small">主題</div>
+						<div class="ts-select is-fluid" :class="{ 'is-light': themes.find(t => t.id === myCoursesSetting.theme).type === 'light' }">
+							<div class="content" data-dropdown="theme-dropdown"
+							style="border-radius: var(--ts-border-radius-element); height: 100%"
+							:style="{ background: getColorBar(themes.find(t => t.id === myCoursesSetting.theme).courseColor) }">
+								&nbsp;
 							</div>
-							<div class="column is-12-wide">
-								<div class="file-button" v-if="backgroundImage == null">
-									<button class="ts-button is-outlined is-fluid is-start-icon">
-										<span class="ts-icon is-image-icon"></span>
-										選擇圖片
-									</button>
-									<input type="file" accept="image/png, image/jpeg, image/jpg" @change="handleBackgroundImage">
-								</div>
-								<div class="ts-buttons" v-else>
-									<div class="file-button">
-										<button class="ts-button is-outlined is-fluid is-start-icon">
-											<span class="ts-icon is-image-icon"></span>
-											重選
-										</button>
-										<input type="file" accept="image/png, image/jpeg, image/jpg" @change="handleBackgroundImage">
+							<div class="ts-dropdown" data-position="bottom-start" id="theme-dropdown">
+								<template v-for="type in ['light', 'dark']">
+									<div class="item is-indented" v-for="theme of themes.filter(t => t.type === type)"
+										:class="{ 'is-selected': theme.id === myCoursesSetting.theme }"
+										@click="chooseTheme(theme.id)"
+										:style="{ background: getColorBar(theme.courseColor) }">
+										&nbsp;
 									</div>
-									<button class="ts-button is-outlined is-negative is-icon" @click="clearBackgroundImage">
-										<span class="ts-icon is-xmark-icon"></span>
-									</button>
-								</div>
+								</template>
 							</div>
 						</div>
 					</div>
@@ -80,29 +89,33 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">顯示/隱藏</div>
 						<div class="ts-wrap is-vertical is-compact">
-							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showRowLine" @change="updateTimetable(false)" />
-								水平格線
-							</label>
-							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showColLine" @change="updateTimetable(false)" />
-								垂直格線
-							</label>
-							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showRowTitle" @change="updateTimetable(false)" />
-								節次
-							</label>
-							<label class="ts-checkbox">
-								<input type="checkbox" v-model="myCoursesSetting.showColTitle" @change="updateTimetable(false)" />
-								星期
-							</label>
+							<div class="ts-wrap">
+								<label class="ts-checkbox">
+									<input type="checkbox" v-model="myCoursesSetting.showRowLine" @change="updateTimetable(false)" />
+									水平格線
+								</label>
+								<label class="ts-checkbox">
+									<input type="checkbox" v-model="myCoursesSetting.showColLine" @change="updateTimetable(false)" />
+									垂直格線
+								</label>
+							</div>
+							<div class="ts-wrap">
+								<label class="ts-checkbox">
+									<input type="checkbox" v-model="myCoursesSetting.showRowTitle" @change="updateTimetable(false)" />
+									節次
+								</label>
+								<label class="ts-checkbox">
+									<input type="checkbox" v-model="myCoursesSetting.showColTitle" @change="updateTimetable(false)" />
+									星期
+								</label>
+							</div>
 							<label class="ts-checkbox">
 								<input type="checkbox" v-model="myCoursesSetting.showCourseTime" @change="updateTimetable(false)" />
-								課程：上課時間
+								上課時間
 							</label>
 							<label class="ts-checkbox">
 								<input type="checkbox" v-model="myCoursesSetting.showCourseClassroom" @change="updateTimetable(false)" />
-								課程：上課地點 / 個人備註
+								上課地點 / 備註
 							</label>
 						</div>
 					</div>
@@ -183,7 +196,7 @@
 			</div>
 			<div class="ts-container has-top-padded has-bottom-padded is-fitted">
 				<div class="timetable-container" id="timetable-container">
-					<div class="ts-box" :style="{backgroundColor: this.themes.filter(theme => theme.id === this.myCoursesSetting.theme)[0].backgroundColor}">
+					<div class="ts-box" :style="{backgroundColor: this.themes.find(theme => theme.id === this.myCoursesSetting.theme).backgroundColor}">
 						<canvas id="timetableCanvas" v-show="!loading"></canvas>
 					</div>
 				</div>
@@ -363,7 +376,7 @@
 							</div>
 						</div>
 						<div>
-							<h2 class="ts-header is-large" style="display:inline;">4. <span class="ts-badge is-end-spaced is-negative">重要!</span>在最前面加上 <span class="ts-text is-code" style="font-family: monospace;">javascript:</span></h2>
+							<h2 class="ts-header is-large" style="display:inline;">4. <span class="ts-badge is-end-spaced is-negative">重要 !</span>在最前面加上 <span class="ts-text is-code" style="font-family: monospace;">javascript:</span></h2>
 							<div class="ts-text is-description">請自行輸入，用複製貼上的話可能會失敗</div>
 						</div>
 						<div>
@@ -498,12 +511,12 @@
 	padding-top: 125px !important
 }
 
-.file-button {
+.dropdown-item-input {
 	width: 100%;
 	position: relative;
 }
 
-.file-button input {
+.dropdown-item-input input {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -512,8 +525,8 @@
 	opacity: 0;
 }
 
-.ts-buttons .file-button .ts-button:first-child {
-	border-right: 0;
+.ts-select.is-light:after {
+	color: var(--ts-gray-300);
 }
 
 @media (prefers-color-scheme: light) {
@@ -576,6 +589,8 @@ export default {
 				showCourseTime: true,
 				tableBorder: 32,
 				theme: 1,
+				background: 'white',
+				backgroundColor: '#FFF',
 			},
 			ctx: null,
 			scriptableCodeFile: '',
@@ -609,46 +624,64 @@ export default {
 			icsEndDate: '',
 			icsReminders: [10],
 
+			backgrounds: [
+				{
+					id: 'white',
+					name: '白色',
+					color: '#FFF',
+				},
+				{
+					id: 'dark-gray',
+					name: '深灰色',
+					color: '#333',
+				},
+				{
+					id: 'custom',
+					name: '自訂顏色',
+					color: '#FFF',
+				},
+				{
+					id: 'image',
+					name: '自訂圖片',
+					color: '#FFF',
+				}
+			],
+
 			themes: [
 				{
 					id: 1,
-					name: '彩色',
-					backgroundColor: '#FFF',
+					type: 'light',
 					courseColor: ['#F8BBD0','#FFCDD2','#FFE0B2','#FFF9C4','#F0F4C3','#C8E6C9','#B2EBF2','#BBDEFB','#C5CAE9','#D1C4E9','#D7CCC8','#DDD'],
 					titleColor: '#333',
 					textColor: '#666',
-					borderColor: '#DDD',
-					colTitleColor: '#999'
+				},
+				{
+					id: 5,
+					type: 'light',
+					courseColor: ['#f1c0e8','#ffcfd2','#fde4cf','#fbf8cc','#b9fbc0','#98f5e1','#8eecf5','#90dbf4','#a3c4f3','#cfbaf0'],
+					titleColor: '#555',
+					textColor: '#888',
 				},
 				{
 					id: 2,
-					name: '彩色（深色模式）',
-					backgroundColor: '#333',
+					type: 'dark',
 					courseColor: ['#C0392B','#E74C3C','#E67E22','#F9A825','#2ECC71','#27AE60','#1ABC9C','#3498DB','#2980B9','#8E44AD','#6D4C41','#444'],
 					titleColor: '#FFF',
 					textColor: '#F2F2F2',
-					borderColor: '#555',
-					colTitleColor: '#BBB'
 				},
 				{
 					id: 3,
-					name: '黑白',
+					type: 'light',
 					courseColor: ['#DDD'],
-					backgroundColor: '#FFF',
 					titleColor: '#333',
 					textColor: '#666',
-					borderColor: '#DDD',
-					colTitleColor: '#999'
 				},
 				{
 					id: 4,
-					name: '黑白（深色模式）',
+					type: 'dark',
 					courseColor: ['#444'],
-					backgroundColor: '#333',
 					titleColor: '#FFF',
 					textColor: '#F2F2F2',
-					borderColor: '#555',
-					colTitleColor: '#BBB'
 				},
 			]
 		}
@@ -729,9 +762,26 @@ export default {
 				c.time[0],
 				c.time[1]
 			]))) + '&r=' + this.icsReminders.join(',');
-		}
+		},
 	},
 	methods: {
+		getColorBar(colors) {
+			if (!colors || colors.length < 2) {
+				return colors && colors[0] ? colors[0] : '#DDD';
+			}
+			let per = 100 / colors.length;
+			let step = per;
+			let gradient = '';
+			for(let i = 0; i < colors.length; i++) {
+				gradient += colors[i] + ' ' + step + '%,';
+				if(i < colors.length - 1) {
+					gradient += colors[i+1] + ' ' + (step + 0.1) + '%,';
+					step += per;
+				}
+			}
+			return 'linear-gradient(to right, ' + gradient.slice(0, -1) + ')';
+		},
+
 		async loadFonts() {
 			await document.fonts.load('14px "Noto Sans TC"');
 		},
@@ -757,6 +807,19 @@ export default {
 			this.messageTimer = setTimeout(() => {
 				this.message = null;
 			}, 3000);
+		},
+
+		chooseBackground(backgroundId) {
+			this.myCoursesSetting.background = backgroundId;
+			if(backgroundId != 'image') {
+				this.clearBackgroundImage();
+			}
+			this.updateTimetable(false);
+		},
+
+		chooseTheme(themeId) {
+			this.myCoursesSetting.theme = themeId;
+			this.updateTimetable(false);
 		},
 
 		checkSection() {
@@ -1009,18 +1072,9 @@ export default {
 				}
 			};
 
-			let theme = this.themes.filter(theme => theme.id === this.myCoursesSetting.theme)[0];
-			const rows = this.time_section.length;
-			const cols = this.week_text.length;
+			let theme = this.themes.find(theme => theme.id === this.myCoursesSetting.theme);
 			const ctx = this.ctx;
-			
 			ctx.canvas._tableBorder = this.myCoursesSetting.tableBorder || 32;
-
-			const colTitleHeight = this.myCoursesSetting.showColTitle ? (ctx.canvas.height - this.myCoursesSetting.tableBorder * 2) * 0.035 : 0;
-			const cellHeight = (this.myCoursesSetting.showColTitle ? 0.965 : 1) * (ctx.canvas.height - this.myCoursesSetting.tableBorder * 2) / rows;
-			const rowTitleWidth = this.myCoursesSetting.showRowTitle ? (ctx.canvas.width - this.myCoursesSetting.tableBorder * 2) * 0.05 : 0;
-			const cellWidth = (this.myCoursesSetting.showRowTitle ? 0.95 : 1) * (ctx.canvas.width - this.myCoursesSetting.tableBorder * 2) / cols;
-
 			ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
 			if (this.backgroundImage) {
@@ -1042,7 +1096,7 @@ export default {
 				};
 				img.src = this.backgroundImage;
 			} else {
-				ctx.fillStyle = theme.backgroundColor;
+				ctx.fillStyle = this.myCoursesSetting.background == 'custom' ? this.myCoursesSetting.backgroundColor : this.backgrounds.find(b => b.id === this.myCoursesSetting.background).color;
 				ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 				this.drawTimetableContent(ctx, theme);
 			}
@@ -1059,11 +1113,10 @@ export default {
 			
 			ctx.translate(this.myCoursesSetting.tableBorder, this.myCoursesSetting.tableBorder);
 			
-			ctx.strokeStyle = theme.borderColor;
+			ctx.strokeStyle = 'rgba(50%, 50%, 50%, 0.2)';
 			this.gridCells = [];
 
 			for (let i = 0; i <= rows; i++) {
-				ctx.fillStyle = theme.colTitleColor;
 				if (this.myCoursesSetting.showRowLine && i < rows) {
 					if(this.myCoursesSetting.showColTitle || i != 0) {
 						ctx.shadowColor = 'transparent';
@@ -1076,24 +1129,14 @@ export default {
 				}
 				if (this.myCoursesSetting.showRowTitle && i < rows) {
 					ctx.font = (String(this.time_section[i]).includes('.5') ? 26 : 30) + 'px Noto Sans TC';
-
-					if (this.backgroundImage) {
-						const x = rowTitleWidth / 2 + this.myCoursesSetting.tableBorder;
-						const y = i * cellHeight + cellHeight / 2 + colTitleHeight + this.myCoursesSetting.tableBorder;
-						const color = this.getPixelColor(ctx, x, y);
-						ctx.fillStyle = this.getContrastColor(color);
-						ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.3)';
-						ctx.shadowBlur = 3;
-						ctx.shadowOffsetX = 1;
-						ctx.shadowOffsetY = 1;
-					} else {
-						ctx.fillStyle = theme.colTitleColor;
-						ctx.shadowColor = 'transparent';
-						ctx.shadowBlur = 0;
-						ctx.shadowOffsetX = 0;
-						ctx.shadowOffsetY = 0;
-					}
-					
+					const x = rowTitleWidth / 2 + this.myCoursesSetting.tableBorder;
+					const y = i * cellHeight + cellHeight / 2 + colTitleHeight + this.myCoursesSetting.tableBorder;
+					const color = this.getPixelColor(ctx, x, y);
+					ctx.fillStyle = this.getContrastColor(color);
+					ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.3)';
+					ctx.shadowBlur = 3;
+					ctx.shadowOffsetX = 1;
+					ctx.shadowOffsetY = 1;
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
 					ctx.fillText(this.time_section[i], rowTitleWidth / 2, i * cellHeight + cellHeight / 2 + colTitleHeight);
@@ -1113,24 +1156,14 @@ export default {
 				}
 				if (this.myCoursesSetting.showColTitle && j < cols) {
 					ctx.font = '32px Noto Sans TC';
-
-					if (this.backgroundImage) {
-						const x = j * cellWidth + cellWidth / 2 + rowTitleWidth + this.myCoursesSetting.tableBorder;
-						const y = colTitleHeight / 2 + this.myCoursesSetting.tableBorder;
-						const color = this.getPixelColor(ctx, x, y);
-						ctx.fillStyle = this.getContrastColor(color);
-						ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.3)';
-						ctx.shadowBlur = 3;
-						ctx.shadowOffsetX = 1;
-						ctx.shadowOffsetY = 1;
-					} else {
-						ctx.fillStyle = theme.colTitleColor;
-						ctx.shadowColor = 'transparent';
-						ctx.shadowBlur = 0;
-						ctx.shadowOffsetX = 0;
-						ctx.shadowOffsetY = 0;
-					}
-					
+					const x = j * cellWidth + cellWidth / 2 + rowTitleWidth + this.myCoursesSetting.tableBorder;
+					const y = colTitleHeight / 2 + this.myCoursesSetting.tableBorder;
+					const color = this.getPixelColor(ctx, x, y);
+					ctx.fillStyle = this.getContrastColor(color);
+					ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.3)';
+					ctx.shadowBlur = 3;
+					ctx.shadowOffsetX = 1;
+					ctx.shadowOffsetY = 1;
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
 					ctx.fillText(this.week_text[j], j * cellWidth + cellWidth / 2 + rowTitleWidth, colTitleHeight / 2);
@@ -1594,19 +1627,24 @@ export default {
 			course.editing = false;
 		});
 		try {
-			this.myCoursesSetting = JSON.parse(localStorage.myCoursesSetting);
-		} catch (e) {
-			this.myCoursesSetting = {
-				showColTitle: true,
-				showRowTitle: true,
-				showColLine: true,
-				showRowLine: true,
-				showCourseClassroom: true,
-				showCourseTime: true,
-				tableBorder: 32,
-				theme: 1,
-			};
-		}
+			let myCoursesSetting = JSON.parse(localStorage.myCoursesSetting);
+			Object.keys(myCoursesSetting).forEach(key => {
+				if(myCoursesSetting[key] !== undefined) {
+					this.myCoursesSetting[key] = myCoursesSetting[key];
+				}
+			});
+			console.log('test');
+			if(myCoursesSetting.background === undefined) {
+				console.log(this.backgrounds);
+				if(this.themes.find(t => t.id === myCoursesSetting.theme).type === 'light') {
+					this.myCoursesSetting.background = 'white';
+					this.myCoursesSetting.backgroundColor = '#FFF';
+				} else {
+					this.myCoursesSetting.background = 'dark-gray';
+					this.myCoursesSetting.backgroundColor = '#333';
+				}
+			}
+		} catch (e) { }
 		this.loadFonts().then(() => {
 			this.setCanvasSize();
 			const canvas = document.getElementById('timetableCanvas');
