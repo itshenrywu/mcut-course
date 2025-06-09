@@ -664,84 +664,91 @@ export default {
 			],
 
 			themes: [
-				{
+				{ // 白色
 					id: 3,
 					type: 'light',
 					courseColor: ['#DDD'],
 					titleColor: '#333',
 					textColor: '#666',
 				},
-				{
+				{ // 深灰色
 					id: 4,
 					type: 'dark',
 					courseColor: ['#444'],
 					titleColor: '#FFF',
 					textColor: '#F2F2F2',
 				},
-				{
+				{ // 淺色彩虹
 					id: 1,
 					type: 'light',
 					courseColor: ['#F8BBD0', '#FFCDD2', '#FFE0B2', '#FFF9C4', '#F0F4C3', '#C8E6C9', '#B2EBF2', '#BBDEFB', '#C5CAE9', '#D1C4E9', '#D7CCC8', '#DDD'],
 					titleColor: '#333',
 					textColor: '#666',
 				},
-				{
+				{ // 淺色彩虹2
 					id: 5,
 					type: 'light',
 					courseColor: ['#f1c0e8', '#ffcfd2', '#fde4cf', '#fbf8cc', '#b9fbc0', '#98f5e1', '#8eecf5', '#90dbf4', '#a3c4f3', '#cfbaf0'],
 					titleColor: '#333',
 					textColor: '#666',
 				},
-				{
+				{ // 春日
 					id: 8,
 					type: 'light',
 					courseColor: ['#fec5bb', '#fcd5ce', '#fae1dd', '#f8edeb', '#e8e8e4', '#d8e2dc', '#ece4db', '#ffe5d9', '#ffd7ba', '#fec89a'],
 					titleColor: '#333',
 					textColor: '#666',
 				},
-				{
+				{ // 繽紛
 					id: 10,
 					type: 'light',
 					courseColor: ['#eae4e9', '#fff1e6', '#fde2e4', '#fad2e1', '#e2ece9', '#bee1e6', '#f0efeb', '#dfe7fd', '#cddafd'],
 					titleColor: ['#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333'],
 					textColor: ['#666', '#666', '#666', '#666', '#666', '#666', '#666', '#666', '#666'],
 				},
-				{
-					id: 9,
-					type: 'light',
-					courseColor: ['#d9ed92', '#b5e48c', '#99d98c', '#76c893', '#52b69a', '#34a0a4', '#168aad', '#1a759f', '#1e6091', '#184e77'],
-					titleColor: ['#333', '#333', '#333', '#333', '#333', '#333', '#fff', '#fff', '#fff', '#fff'],
-					textColor: ['#666', '#666', '#666', '#666', '#666', '#666', '#eee', '#eee', '#eee', '#eee'],
-				},
-				{
+				{ // 藍
 					id: 6,
 					type: 'dark',
-					courseColor: ['#caf0f8', '#ade8f4', '#ade8f4', '#48cae4', '#00b4d8', '#0096c7', '#0077b6', '#023e8a'],
-					titleColor: ['#023e8a', '#023e8a', '#023e8a', '#023e8a', '#fff', '#fff', '#fff', '#fff'],
-					textColor: ['#023e8a', '#023e8a', '#023e8a', '#023e8a', '#fff', '#fff', '#fff', '#fff'],
+					courseColor: ['#e3f2fd', '#bbdefb', '#90caf9', '#64b5f6', '#42a5f5', '#2196f3', '#1e88e5', '#1976d2', '#1565c0', '#0d47a1'],
+					titleColor: ['#023e8a', '#023e8a', '#023e8a', '#023e8a', '#023e8a', '#fff', '#fff', '#fff', '#fff', '#fff'],
+					textColor: ['#023e8a', '#023e8a', '#023e8a', '#023e8a', '#023e8a', '#fff', '#fff', '#fff', '#fff', '#fff'],
 				},
-				{
+				{ // 綠
 					id: 7,
 					type: 'dark',
 					courseColor: ['#d8f3dc', '#b7e4c7', '#95d5b2', '#74c69d', '#52b788', '#40916c', '#2d6a4f'],
 					titleColor: ['#1b4332', '#1b4332', '#1b4332', '#1b4332', '#fff', '#fff', '#fff'],
 					textColor: ['#1b4332', '#1b4332', '#1b4332', '#1b4332', '#fff', '#fff', '#fff'],
 				},
-				{
-					id: 12,
+				{ // 黃綠藍
+					id: 9,
 					type: 'light',
-					courseColor: ['#fae0e4', '#f7cad0', '#f9bec7', '#fbb1bd', '#ff99ac', '#ff85a1', '#ff7096', '#ff5c8a', '#ff477e', '#ff0a54'],
-					titleColor: ['#333', '#333', '#333', '#333', '#333', '#fff', '#fff', '#fff', '#fff', '#fff'],
-					textColor: ['#666', '#666', '#666', '#666', '#666', '#fff', '#fff', '#fff', '#fff', '#fff'],
+					courseColor: ['#d9ed92', '#b5e48c', '#99d98c', '#76c893', '#52b69a', '#34a0a4', '#168aad', '#1a759f', '#1e6091', '#184e77'],
+					titleColor: ['#333', '#333', '#333', '#333', '#333', '#333', '#fff', '#fff', '#fff', '#fff'],
+					textColor: ['#666', '#666', '#666', '#666', '#666', '#666', '#eee', '#eee', '#eee', '#eee'],
 				},
-				{
+				{ // 粉藍紫
 					id: 11,
 					type: 'light',
 					courseColor: ['#f72585', '#b5179e', '#7209b7', '#560bad', '#480ca8', '#3a0ca3', '#3f37c9', '#4361ee', '#4895ef', '#4cc9f0'],
 					titleColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#333', '#333'],
 					textColor: ['#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#555', '#555'],
 				},
-				{
+				{ // 大地
+					id: 12,
+					type: 'light',
+					courseColor: ['#582f0e', '#7f4f24', '#936639', '#a68a64', '#b6ad90', '#c2c5aa', '#a4ac86', '#656d4a', '#414833', '#333d29'],
+					titleColor: ['#fff', '#fff', '#333', '#333', '#333', '#333', '#333', '#fff', '#fff', '#fff'],
+					textColor: ['#eee', '#eee', '#666', '#666', '#666', '#666', '#666', '#eee', '#eee', '#eee'],
+				},
+				{ // 深色繽紛
+					id: 13,
+					type: 'light',
+					courseColor: ['#f94144', '#f3722c', '#f8961e', '#f9844a', '#f9c74f', '#90be6d', '#43aa8b', '#4d908e', '#577590', '#277da1'],
+					titleColor: ['#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333'],
+					textColor: ['#666', '#666', '#666', '#666', '#666', '#666', '#666', '#666', '#666', '#666'],
+				},
+				{ // 深色彩虹
 					id: 2,
 					type: 'dark',
 					courseColor: ['#C0392B', '#E74C3C', '#E67E22', '#F9A825', '#2ECC71', '#27AE60', '#1ABC9C', '#3498DB', '#2980B9', '#8E44AD', '#6D4C41', '#444'],
