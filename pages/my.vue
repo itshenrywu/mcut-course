@@ -54,7 +54,6 @@
 									<template v-else-if="background.id == 'custom'">
 										<span class="ts-icon is-circular is-square-icon" :style="{ background: myCoursesSetting.backgroundColor }"></span>
 										{{ background.name }}
-										<input type="color" v-model="myCoursesSetting.backgroundColor" @change="updateTimetable(false)">
 									</template>
 									<template v-else>
 										<span class="ts-icon is-circular is-square-icon" :style="{ background: background.color }"></span>
@@ -466,6 +465,24 @@
 				</div>
 			</div>
 		</dialog>
+		<dialog class="ts-modal is-large" id="colorDialog">
+			<div class="content">
+				<div class="ts-content">
+					<div class="ts-grid">
+						<div class="column is-fluid">
+							<div class="ts-header">選擇背景顏色</div>
+						</div>
+						<div class="column">
+							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+						</div>
+					</div>
+				</div>
+				<div class="ts-divider"></div>
+				<div style="padding: 2rem; display: flex; justify-content: center;">
+					<div id="picker"></div>
+				</div>
+			</div>
+		</dialog>
 		<loading v-show="loading || loading_get" />
 	</div>
 </template>
@@ -541,6 +558,7 @@
 </style>
 <script>
 import { mapState } from 'vuex';
+import iro from '@jaames/iro';
 export default {
 	async asyncData({ $axios, params, payload }) {
 		
@@ -659,8 +677,8 @@ export default {
 					id: 5,
 					type: 'light',
 					courseColor: ['#f1c0e8','#ffcfd2','#fde4cf','#fbf8cc','#b9fbc0','#98f5e1','#8eecf5','#90dbf4','#a3c4f3','#cfbaf0'],
-					titleColor: '#555',
-					textColor: '#888',
+					titleColor: '#444',
+					textColor: '#777',
 				},
 				{
 					id: 2,
@@ -813,6 +831,32 @@ export default {
 			this.myCoursesSetting.background = backgroundId;
 			if(backgroundId != 'image') {
 				this.clearBackgroundImage();
+			}
+			if(backgroundId == 'custom') {
+				document.getElementById('colorDialog').showModal();
+				const pickerElement = document.getElementById('picker');
+				if (pickerElement) {
+					pickerElement.innerHTML = '';
+				}
+				let colorPicker = new iro.ColorPicker("#picker", {
+					color: this.myCoursesSetting.backgroundColor,
+					layout: [
+						{ 
+							component: iro.ui.Box,
+							options: {}
+						},
+						{
+							component: iro.ui.Slider,
+							options: {
+								sliderType: 'hue'
+							}
+						}
+					]
+				});
+				colorPicker.on('color:change', (color) => {
+					this.myCoursesSetting.backgroundColor = color.hexString;
+					this.updateTimetable(false);
+				});
 			}
 			this.updateTimetable(false);
 		},
@@ -1318,7 +1362,7 @@ export default {
 		closeDialog() {
 			this.editingCourse = Object.freeze(this.defaultCourse);
 			this.editingAction = null;
-			['editCourseDialog', 'widgetDialog', 'importDialog', 'icsDialog'].forEach(dialog => {
+			['editCourseDialog', 'widgetDialog', 'importDialog', 'icsDialog', 'colorDialog'].forEach(dialog => {
 				document.getElementById(dialog).close();
 			});
 		},
