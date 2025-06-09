@@ -73,14 +73,12 @@
 								&nbsp;
 							</div>
 							<div class="ts-dropdown" data-position="bottom-start" id="theme-dropdown">
-								<template v-for="type in ['light', 'dark']">
-									<div class="item is-indented" v-for="theme of themes.filter(t => t.type === type)"
-										:class="{ 'is-selected': theme.id === myCoursesSetting.theme }"
-										@click="chooseTheme(theme.id)"
-										:style="{ background: getColorBar(theme.courseColor) }">
-										&nbsp;
-									</div>
-								</template>
+								<div class="item is-indented" v-for="theme of themes"
+									:class="{ 'is-selected': theme.id === myCoursesSetting.theme }"
+									@click="chooseTheme(theme.id)"
+									:style="{ background: getColorBar(theme.courseColor) }">
+									&nbsp;
+								</div>
 							</div>
 						</div>
 					</div>
@@ -667,27 +665,6 @@ export default {
 
 			themes: [
 				{
-					id: 1,
-					type: 'light',
-					courseColor: ['#F8BBD0','#FFCDD2','#FFE0B2','#FFF9C4','#F0F4C3','#C8E6C9','#B2EBF2','#BBDEFB','#C5CAE9','#D1C4E9','#D7CCC8','#DDD'],
-					titleColor: '#333',
-					textColor: '#666',
-				},
-				{
-					id: 5,
-					type: 'light',
-					courseColor: ['#f1c0e8','#ffcfd2','#fde4cf','#fbf8cc','#b9fbc0','#98f5e1','#8eecf5','#90dbf4','#a3c4f3','#cfbaf0'],
-					titleColor: '#444',
-					textColor: '#777',
-				},
-				{
-					id: 2,
-					type: 'dark',
-					courseColor: ['#C0392B','#E74C3C','#E67E22','#F9A825','#2ECC71','#27AE60','#1ABC9C','#3498DB','#2980B9','#8E44AD','#6D4C41','#444'],
-					titleColor: '#FFF',
-					textColor: '#F2F2F2',
-				},
-				{
 					id: 3,
 					type: 'light',
 					courseColor: ['#DDD'],
@@ -701,7 +678,77 @@ export default {
 					titleColor: '#FFF',
 					textColor: '#F2F2F2',
 				},
-			]
+				{
+					id: 1,
+					type: 'light',
+					courseColor: ['#F8BBD0', '#FFCDD2', '#FFE0B2', '#FFF9C4', '#F0F4C3', '#C8E6C9', '#B2EBF2', '#BBDEFB', '#C5CAE9', '#D1C4E9', '#D7CCC8', '#DDD'],
+					titleColor: '#333',
+					textColor: '#666',
+				},
+				{
+					id: 5,
+					type: 'light',
+					courseColor: ['#f1c0e8', '#ffcfd2', '#fde4cf', '#fbf8cc', '#b9fbc0', '#98f5e1', '#8eecf5', '#90dbf4', '#a3c4f3', '#cfbaf0'],
+					titleColor: '#333',
+					textColor: '#666',
+				},
+				{
+					id: 8,
+					type: 'light',
+					courseColor: ['#fec5bb', '#fcd5ce', '#fae1dd', '#f8edeb', '#e8e8e4', '#d8e2dc', '#ece4db', '#ffe5d9', '#ffd7ba', '#fec89a'],
+					titleColor: '#333',
+					textColor: '#666',
+				},
+				{
+					id: 10,
+					type: 'light',
+					courseColor: ['#eae4e9', '#fff1e6', '#fde2e4', '#fad2e1', '#e2ece9', '#bee1e6', '#f0efeb', '#dfe7fd', '#cddafd'],
+					titleColor: ['#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333'],
+					textColor: ['#666', '#666', '#666', '#666', '#666', '#666', '#666', '#666', '#666'],
+				},
+				{
+					id: 9,
+					type: 'light',
+					courseColor: ['#d9ed92', '#b5e48c', '#99d98c', '#76c893', '#52b69a', '#34a0a4', '#168aad', '#1a759f', '#1e6091', '#184e77'],
+					titleColor: ['#333', '#333', '#333', '#333', '#333', '#333', '#fff', '#fff', '#fff', '#fff'],
+					textColor: ['#666', '#666', '#666', '#666', '#666', '#666', '#eee', '#eee', '#eee', '#eee'],
+				},
+				{
+					id: 6,
+					type: 'dark',
+					courseColor: ['#caf0f8', '#ade8f4', '#ade8f4', '#48cae4', '#00b4d8', '#0096c7', '#0077b6', '#023e8a'],
+					titleColor: ['#023e8a', '#023e8a', '#023e8a', '#023e8a', '#fff', '#fff', '#fff', '#fff'],
+					textColor: ['#023e8a', '#023e8a', '#023e8a', '#023e8a', '#fff', '#fff', '#fff', '#fff'],
+				},
+				{
+					id: 7,
+					type: 'dark',
+					courseColor: ['#d8f3dc', '#b7e4c7', '#95d5b2', '#74c69d', '#52b788', '#40916c', '#2d6a4f'],
+					titleColor: ['#1b4332', '#1b4332', '#1b4332', '#1b4332', '#fff', '#fff', '#fff'],
+					textColor: ['#1b4332', '#1b4332', '#1b4332', '#1b4332', '#fff', '#fff', '#fff'],
+				},
+				{
+					id: 12,
+					type: 'light',
+					courseColor: ['#fae0e4', '#f7cad0', '#f9bec7', '#fbb1bd', '#ff99ac', '#ff85a1', '#ff7096', '#ff5c8a', '#ff477e', '#ff0a54'],
+					titleColor: ['#333', '#333', '#333', '#333', '#333', '#fff', '#fff', '#fff', '#fff', '#fff'],
+					textColor: ['#666', '#666', '#666', '#666', '#666', '#fff', '#fff', '#fff', '#fff', '#fff'],
+				},
+				{
+					id: 11,
+					type: 'light',
+					courseColor: ['#f72585', '#b5179e', '#7209b7', '#560bad', '#480ca8', '#3a0ca3', '#3f37c9', '#4361ee', '#4895ef', '#4cc9f0'],
+					titleColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#333', '#333'],
+					textColor: ['#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#555', '#555'],
+				},
+				{
+					id: 2,
+					type: 'dark',
+					courseColor: ['#C0392B', '#E74C3C', '#E67E22', '#F9A825', '#2ECC71', '#27AE60', '#1ABC9C', '#3498DB', '#2980B9', '#8E44AD', '#6D4C41', '#444'],
+					titleColor: '#FFF',
+					textColor: '#F2F2F2',
+				},
+			],
 		}
 	},
 	computed: {
@@ -1081,18 +1128,18 @@ export default {
 					this.fill();
 				};
 			}
-			CanvasRenderingContext2D.prototype.wrapText = function (context, texts, x, y, maxWidth, lineHeight, theme) {
+			CanvasRenderingContext2D.prototype.wrapText = function (context, texts, x, y, maxWidth, lineHeight, theme, courseColorIndex) {
 				let index = 0;
 				const tableBorder = this.canvas._tableBorder;
 				for (let text of texts) {
 					if (index == 0) {
 						ctx.font = (32 - tableBorder * 0.05) + 'px Noto Sans TC';
-						ctx.fillStyle = theme.titleColor;
+						ctx.fillStyle = Array.isArray(theme.titleColor) ? theme.titleColor[courseColorIndex] : theme.titleColor;
 						ctx.textAlign = 'left';
 						ctx.textBaseline = 'middle';
 					} else {
 						ctx.font = (24 - tableBorder * 0.05) + 'px Noto Sans TC';
-						ctx.fillStyle = theme.textColor;
+						ctx.fillStyle = Array.isArray(theme.textColor) ? theme.textColor[courseColorIndex] : theme.textColor;
 						ctx.textAlign = 'left';
 						ctx.textBaseline = 'middle';
 					}
@@ -1177,7 +1224,7 @@ export default {
 					const y = i * cellHeight + cellHeight / 2 + colTitleHeight + this.myCoursesSetting.tableBorder;
 					const color = this.getPixelColor(ctx, x, y);
 					ctx.fillStyle = this.getContrastColor(color);
-					ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.3)';
+					ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)';
 					ctx.shadowBlur = 3;
 					ctx.shadowOffsetX = 1;
 					ctx.shadowOffsetY = 1;
@@ -1204,7 +1251,7 @@ export default {
 					const y = colTitleHeight / 2 + this.myCoursesSetting.tableBorder;
 					const color = this.getPixelColor(ctx, x, y);
 					ctx.fillStyle = this.getContrastColor(color);
-					ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.3)';
+					ctx.shadowColor = this.getContrastColor(color) === '#888' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)';
 					ctx.shadowBlur = 3;
 					ctx.shadowOffsetX = 1;
 					ctx.shadowOffsetY = 1;
@@ -1262,7 +1309,7 @@ export default {
 				if (this.myCoursesSetting.showCourseClassroom) {
 					texts.push(course.classroom);
 				}
-				ctx.wrapText(ctx, texts, x + 20, y + 35, cellWidth - 35, 38, theme);
+				ctx.wrapText(ctx, texts, x + 20, y + 35, cellWidth - 35, 38, theme, courseNameList.indexOf(course.name) % theme.courseColor.length);
 			});
 			ctx.translate(-this.myCoursesSetting.tableBorder, -this.myCoursesSetting.tableBorder);
 		},
@@ -1677,7 +1724,6 @@ export default {
 					this.myCoursesSetting[key] = myCoursesSetting[key];
 				}
 			});
-			console.log('test');
 			if(myCoursesSetting.background === undefined) {
 				console.log(this.backgrounds);
 				if(this.themes.find(t => t.id === myCoursesSetting.theme).type === 'light') {
