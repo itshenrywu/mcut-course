@@ -1322,6 +1322,13 @@ export default {
 		},
 
 		downloadImage() {
+			let background = this.backgrounds.find(b => b.id === this.myCoursesSetting.background).id;
+			if(background == 'custom') background = this.myCoursesSetting.background.replace('#', '').replace('-', '_');
+			this.$gtag('event', 'button_click', {
+				button_name: 'download_image',
+				action: 'click',
+				category: 'background-' + this.myCoursesSetting.background + '-theme-' + this.myCoursesSetting.theme,
+			});
 			const canvas = document.getElementById('timetableCanvas');
 			if(window.innerWidth > 768) {
 				canvas.toBlob((blob) => {
