@@ -476,8 +476,18 @@
 					</div>
 				</div>
 				<div class="ts-divider"></div>
-				<div style="padding: 2rem; display: flex; justify-content: center;">
-					<div id="picker"></div>
+				<div class="picker-container" :style="{'background': myCoursesSetting.backgroundColor}">
+					<div id="picker" style="padding: 2rem; background: var(--ts-gray-100); border-radius: var(--ts-border-radius-container);"></div>
+					<br>
+					<div class="ts-input is-large">
+						<input type="text"
+							v-model="myCoursesSetting.backgroundColorHex"
+							@input="updateBackgroundColor"
+							@blur="validateAndFormatColor"
+							placeholder="#FFFFFF"
+							maxlength="7"
+							style="text-transform: uppercase;">
+					</div>
 				</div>
 			</div>
 		</dialog>
@@ -544,6 +554,23 @@
 	color: var(--ts-gray-300);
 }
 
+.picker-container {
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.picker-container .ts-input {
+	font-family: monospace;
+	width: 9rem;
+}
+
+.picker-container .ts-input input {
+	text-align: center;
+}
+
 @media (prefers-color-scheme: light) {
 	#page-my .sidebar .ts-button.is-secondary,
 	#page-my .sidebar .ts-range input {
@@ -607,6 +634,7 @@ export default {
 				theme: 1,
 				background: 'white',
 				backgroundColor: '#FFF',
+				backgroundColorHex: '',
 			},
 			ctx: null,
 			scriptableCodeFile: '',
@@ -716,13 +744,13 @@ export default {
 				{ // 綠
 					id: 7,
 					type: 'dark',
-					courseColor: ['#d8f3dc', '#b7e4c7', '#95d5b2', '#74c69d', '#52b788', '#40916c', '#2d6a4f'],
-					titleColor: ['#1b4332', '#1b4332', '#1b4332', '#1b4332', '#fff', '#fff', '#fff'],
-					textColor: ['#1b4332', '#1b4332', '#1b4332', '#1b4332', '#fff', '#fff', '#fff'],
+					courseColor: ['#d8f3dc', '#b7e4c7', '#95d5b2', '#74c69d', '#52b788', '#40916c', '#2d6a4f', '#1b4332'],
+					titleColor: ['#081c15', '#081c15', '#081c15', '#081c15', '#fff', '#fff', '#fff', '#fff'],
+					textColor: ['#1b4332', '#1b4332', '#1b4332', '#1b4332', '#fff', '#fff', '#fff', '#fff'],
 				},
 				{ // 黃綠藍
 					id: 9,
-					type: 'light',
+					type: 'dark',
 					courseColor: ['#d9ed92', '#b5e48c', '#99d98c', '#76c893', '#52b69a', '#34a0a4', '#168aad', '#1a759f', '#1e6091', '#184e77'],
 					titleColor: ['#333', '#333', '#333', '#333', '#333', '#333', '#fff', '#fff', '#fff', '#fff'],
 					textColor: ['#444', '#444', '#444', '#444', '#444', '#444', '#eee', '#eee', '#eee', '#eee'],
@@ -734,9 +762,16 @@ export default {
 					titleColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#333', '#333'],
 					textColor: ['#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#eee', '#444', '#444'],
 				},
+				{
+					id: 14,
+					type: 'dark',
+					courseColor: ['#ff7b00', '#ff8800', '#ff9500', '#ffa200', '#ffb700', '#ffc300', '#ffd000', '#ffdd00', '#ffea00'],
+					titleColor: ['#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333', '#333'],
+					textColor: ['#444', '#444', '#444', '#444', '#444', '#444', '#444', '#444', '#444'],
+				},
 				{ // 大地
 					id: 12,
-					type: 'light',
+					type: 'dark',
 					courseColor: ['#582f0e', '#7f4f24', '#936639', '#a68a64', '#b6ad90', '#c2c5aa', '#a4ac86', '#656d4a', '#414833', '#333d29'],
 					titleColor: ['#fff', '#fff', '#333', '#333', '#333', '#333', '#333', '#fff', '#fff', '#fff'],
 					textColor: ['#eee', '#eee', '#444', '#444', '#444', '#444', '#444', '#eee', '#eee', '#eee'],
@@ -887,6 +922,7 @@ export default {
 				this.clearBackgroundImage();
 			}
 			if(backgroundId == 'custom') {
+				this.myCoursesSetting.backgroundColorHex = this.myCoursesSetting.backgroundColor;
 				document.getElementById('colorDialog').showModal();
 				const pickerElement = document.getElementById('picker');
 				if (pickerElement) {
@@ -894,8 +930,9 @@ export default {
 				}
 				let colorPicker = new iro.ColorPicker("#picker", {
 					color: this.myCoursesSetting.backgroundColor,
+					width: 280,
 					layout: [
-						{ 
+						{
 							component: iro.ui.Box,
 							options: {}
 						},
@@ -904,15 +941,63 @@ export default {
 							options: {
 								sliderType: 'hue'
 							}
-						}
+						},
 					]
 				});
+				pickerElement.colorPicker = colorPicker;
 				colorPicker.on('color:change', (color) => {
 					this.myCoursesSetting.backgroundColor = color.hexString;
+					this.myCoursesSetting.backgroundColorHex = color.hexString.toUpperCase();
 					this.updateTimetable(false);
 				});
+				colorPicker.on('input:end', (color) => {});
 			}
 			this.updateTimetable(false);
+		},
+
+		updateBackgroundColor() {
+			let colorValue = this.myCoursesSetting.backgroundColorHex.trim().toUpperCase();
+			if (colorValue.length === 6 && /^[0-9A-F]{6}$/.test(colorValue)) {
+				colorValue = '#' + colorValue;
+				this.myCoursesSetting.backgroundColorHex = colorValue;
+			}
+			if (!/^#[0-9A-F]{6}$/.test(colorValue)) {
+				return;
+			}
+			this.myCoursesSetting.backgroundColor = colorValue;
+			const pickerElement = document.getElementById('picker');
+			if (pickerElement && pickerElement.querySelector('.IroColorPicker')) {
+				try {
+					const colorPicker = pickerElement.colorPicker;
+					if (colorPicker && colorPicker.color) {
+						colorPicker.color.hexString = colorValue;
+					}
+				} catch (error) {
+					console.warn('無法同步 colorPicker 顏色:', error);
+				}
+			}
+			
+			this.updateTimetable(false);
+		},
+
+		validateAndFormatColor() {
+			let colorValue = this.myCoursesSetting.backgroundColorHex.trim().toUpperCase();
+			colorValue = colorValue.replace(/^#+/, '');
+			if (/^[0-9A-F]{6}$/.test(colorValue)) {
+				this.myCoursesSetting.backgroundColorHex = '#' + colorValue;
+				this.myCoursesSetting.backgroundColor = '#' + colorValue;
+				this.updateTimetable(false);
+				const pickerElement = document.getElementById('picker');
+				if (pickerElement && pickerElement.colorPicker) {
+					try {
+						pickerElement.colorPicker.color.hexString = '#' + colorValue;
+					} catch (error) {
+						console.warn('無法同步 colorPicker 顏色:', error);
+					}
+				}
+			} else {
+				this.myCoursesSetting.backgroundColorHex = this.myCoursesSetting.backgroundColor;
+			}
 		},
 
 		chooseTheme(themeId) {
