@@ -633,7 +633,7 @@ export default {
 				tableBorder: 32,
 				theme: 1,
 				background: 'white',
-				backgroundColor: '#FFF',
+				backgroundColor: '#FFFFFF',
 				backgroundColorHex: '',
 			},
 			ctx: null,
@@ -1827,10 +1827,10 @@ export default {
 				console.log(this.backgrounds);
 				if(this.themes.find(t => t.id === myCoursesSetting.theme).type === 'light') {
 					this.myCoursesSetting.background = 'white';
-					this.myCoursesSetting.backgroundColor = '#FFF';
+					this.myCoursesSetting.backgroundColor = '#FFFFFF';
 				} else {
 					this.myCoursesSetting.background = 'dark-gray';
-					this.myCoursesSetting.backgroundColor = '#333';
+					this.myCoursesSetting.backgroundColor = '#333333';
 				}
 			}
 		} catch (e) { }
