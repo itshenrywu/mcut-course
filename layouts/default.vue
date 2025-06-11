@@ -230,25 +230,25 @@ h1 {
 }
 
 .is-orange {
-	background-color: #FF914A;
+	background-color: hsl(24, 100%, 62%);
 	color: #FFF;
 	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
 }
 
 .is-green {
-	background-color: #08CA81;
+	background-color: hsl(157, 92%, 38%);
 	color: #FFF;
 	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
 }
 
 .is-gray {
-	background-color: #9E9E9E;
+	background-color: hsl(0, 0%, 59%);
 	color: #FFF;
 	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
 }
 
 .is-red {
-	background-color: #EE7996;
+	background-color: hsl(345, 77%, 67%);
 	color: #FFF;
 	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
 }

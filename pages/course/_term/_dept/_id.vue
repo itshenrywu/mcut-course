@@ -147,7 +147,12 @@
 					</tr>
 					<tr>
 						<td>人數限制</td>
-						<td>{{ course.min }} ~ {{ course.max }}</td>
+						<td>
+							<template v-if="course.min == '無下限' && course.max == '無上限'">無限制</template>
+							<template v-else-if="course.min == '無下限'">最多 {{ course.max }} 人</template>
+							<template v-else-if="course.max == '無上限'">最少 {{ course.min }} 人</template>
+							<template v-else>{{ course.min }} ~ {{ course.max }} 人</template>
+						</td>
 					</tr>
 					<tr>
 						<td>備註</td>
@@ -177,7 +182,20 @@
 						</td>
 						<td v-else v-html="m[1]" ></td>
 					</tr>
-					<tr v-if="office_time.length > 0">
+					<tr v-if="office_time_new.length > 0">
+						<td>Office Time</td>
+						<td id="office_time">
+							<table class="ts-table is-dense">
+								<tbody>
+									<tr v-for="o in office_time_new">
+										<td class="is-collapsed" v-html="o[0]"></td>
+										<td v-html="o[1]" style="white-space: pre-wrap;"></td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr v-else-if="office_time.length > 0">
 						<td>Office Time</td>
 						<td>
 							<div class="ts-list is-unordered">
@@ -304,6 +322,11 @@
 	padding: 1rem 2rem;
 }
 
+#office_time tbody tr td:first-child {
+	width: 1px;
+	font-weight: normal;
+}
+
 @media screen and (max-width: 767.98px) {
 	#page-course .time {
 		display: inline-block;
@@ -355,6 +378,21 @@
 	#page-course .ts-content.is-in-table {
 		padding: .25rem 1rem .5rem;
 	}
+
+	tbody tr td#office_time tr {
+		border-top: none
+	}
+
+	tbody tr td#office_time td {
+		width: auto!important;
+		display: table-cell;
+		padding-top: .125rem!important;
+		padding-bottom: .125rem!important;
+	}
+
+	tbody tr td#office_time td:first-child {
+		padding-right: 1rem
+	}
 }
 
 @media print {
@@ -392,6 +430,7 @@ export default {
 			courses: [],
 			more: [],
 			office_time: [],
+			office_time_new: [],
 			schedule: [],
 			savedCourse: [],
 			loading: true,
@@ -501,6 +540,7 @@ export default {
 				this.course = response.data[3] ?? {};
 				this.more = response.data[0] ?? [];
 				this.office_time = response.data[1] ?? [];
+				this.office_time_new = response.data[4] ?? [];
 				this.schedule = response.data[2] ?? [];
 				this.loading = false;
 			});
