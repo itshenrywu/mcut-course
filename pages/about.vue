@@ -7,7 +7,7 @@
 			</p>
 			<h1 class="ts-header is-huge has-top-padded-large">資料來源及免責聲明</h1>
 			<p>
-				本站資料擷取自<a rel="nofollow" target="_blank" href="https://bit.ly/4eqiQKH">明志科技大學年度開課資料查詢系統</a>及<a rel="nofollow" target="_blank" href="https://bit.ly/3TKmBCq">入學課程總表查詢系統</a>。
+				本站資料擷取自<a rel="nofollow" target="_blank" href="https://pse.is/7qmpj8">明志科技大學年度開課資料查詢系統</a>及<a rel="nofollow" target="_blank" href="https://pse.is/7qmpsp">入學課程總表查詢系統</a>。
 			</p>
 			<p>
 				學校每日 00:00 及 12:00 更新開課資料，因此本站課程查詢功能將於每日 00:30 及 12:30 前同步課程資料。<br>
