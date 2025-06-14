@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1570/1T02", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"113215701T02",name:"電路佈局實務",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"陳華彬",credit:"2",hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

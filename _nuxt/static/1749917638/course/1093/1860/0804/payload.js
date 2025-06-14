@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1860/0804", {data:[{course:{time:[["1","6~8"],["2","2~4"]],id:"109318600804",name:"物理冶金(一)",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"曾傳銘",credit:"3",classroom:"",max:"15",min:"10",comment:"大四暑修",otherinfo:null}}],fetch:{},mutations:[]});

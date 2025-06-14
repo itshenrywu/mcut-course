@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/21A2/1601", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"108221A21601",name:"全球運籌管理",type:"選修",dept:"工管系碩專班",year:a,class:"甲",teacher:"邱文智",credit:b,hour:b,max:"25",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

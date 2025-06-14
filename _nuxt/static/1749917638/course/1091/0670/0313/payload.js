@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0670/0313", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"109106700313",name:"體育(三)",type:"必修",dept:"四技經管系",year:"2",class:"甲",teacher:"楊福珍",credit:"0",classroom:a,max:"55",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

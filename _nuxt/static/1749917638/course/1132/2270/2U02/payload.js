@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2270/2U02", (function(a){return {data:[{course:{time:[["2","6~8"]],id:"113222702U02",name:"產業分析概論",type:"選修",dept:"四技經管系",year:"1",class:"丙",teacher:"侯文治",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

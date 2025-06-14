@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/12C0/1001", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"111112C01001",name:"微處理機",type:"必修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"蘇益立",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1370/0P02", (function(a,b,c){return {data:[{course:{time:[[a,"1~3"]],id:"112113700P02",name:"計算機程式設計",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"蔡榮進",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

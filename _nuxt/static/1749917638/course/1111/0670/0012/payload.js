@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0670/0012", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"111106700012",name:"體育(一)",type:"必修",dept:"半導體學程",year:b,class:"甲",teacher:"黃志成",credit:b,hour:a,classroom:c,max:"45",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));
