@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2270/0Y01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"109122700Y01",name:"應用統計",type:"必修",dept:"四技經管系",year:"4",class:"甲",teacher:"孫儷芳",credit:"3",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

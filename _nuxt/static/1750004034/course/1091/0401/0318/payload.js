@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0401/0318", (function(a,b){return {data:[{course:{time:[["2","8~8.5"]],id:"109104010318",name:"大學之道",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"楊岳儒",credit:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

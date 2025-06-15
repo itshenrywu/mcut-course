@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/2150/8403", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"110321508403",name:"人機介面",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"李育奇",credit:a,hour:a,classroom:"",max:"50",min:"5",comment:"跨領域專班(本系可修)7\u002F4~9\u002F2 與三甲合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11")));

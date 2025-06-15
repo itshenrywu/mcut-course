@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1170/0N01", (function(a){return {data:[{course:{time:[[a,"9~10"]],id:"108111700N01",name:"科技產業英文",type:"選修",dept:"四技機械系",year:"4",class:"甲",teacher:"林麗寬",credit:a,hour:"2",max:"50",min:"10",comment:"工程學院四年級各系合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

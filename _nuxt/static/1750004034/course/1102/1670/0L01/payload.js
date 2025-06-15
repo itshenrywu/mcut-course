@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1670/0L01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"110216700L01",name:"環境科學與工程概論(二)",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"陳錫金",credit:b,hour:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

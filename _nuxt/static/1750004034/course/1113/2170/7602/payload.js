@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/2170/7602", (function(a,b){return {data:[{course:{time:[[a,"2~4"],[b,"5~7"]],id:"111321707602",name:"專案管理",type:"重修",dept:"四技工管系",year:b,class:"暑",teacher:"林俊雄",credit:a,hour:a,classroom:"",max:"10",min:"5",comment:"暑修併三甲帶狀7\u002F3-9\u002F1",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1370/0T01", (function(a,b,c){return {data:[{course:{time:[[b,"3~4"],[b,"5~6"]],id:"112113700T01",name:"儀器分析",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"吳紹榮",credit:a,hour:a,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1","")));

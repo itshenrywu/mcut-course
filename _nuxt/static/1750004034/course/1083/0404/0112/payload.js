@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/0404/0112", (function(a,b,c){return {data:[{course:{time:[["2",a],[b,a]],id:"108304040112",name:"普通物理",type:"重修",dept:"自然組(二)-四技(日)",year:b,class:"暑",teacher:"張盛義",credit:c,hour:c,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2~4","4","3")));

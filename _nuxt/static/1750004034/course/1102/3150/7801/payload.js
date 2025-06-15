@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3150/7801", (function(a,b){return {data:[{course:{time:[["1",a],["5",a]],id:"110231507801",name:"產品設計(二)",type:"必修",dept:"四技工設系",year:"2",class:"甲",teacher:"賴宛吟",credit:"3",hour:"6",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1~3","")));

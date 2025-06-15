@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0070/0F09", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"111100700F09",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"沈明得",credit:a,hour:a,classroom:"",max:"40",min:"15",comment:"造紙與印刷術，上課期間7\u002F4- 8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

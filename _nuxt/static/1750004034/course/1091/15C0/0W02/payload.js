@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/15C0/0W02", (function(a){return {data:[{course:{time:[["7","9~9"]],id:"109115C00W02",name:"校外實習(三)",type:"重修",dept:"四技進修部電子系",year:"3",class:"重",teacher:"謝滄岩",credit:"2",classroom:a,max:"5",min:"無下限",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

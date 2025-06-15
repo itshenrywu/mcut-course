@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2070/0401", (function(a){return {data:[{course:{time:[["5","9~12"]],id:"109120700401",name:"頂石專題(一)",type:"選修",dept:"環實務",year:"3",class:"甲",teacher:"黃啓賢",credit:"1",classroom:a,max:"20",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

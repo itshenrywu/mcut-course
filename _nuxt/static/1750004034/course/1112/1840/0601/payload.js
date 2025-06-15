@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1840/0601", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"111218400601",name:"材料科學導論(二)",type:"必修",dept:"四技材工系",year:a,class:"甲",teacher:"黃裕清",credit:b,hour:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));
