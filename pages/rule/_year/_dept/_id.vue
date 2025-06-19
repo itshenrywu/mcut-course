@@ -571,17 +571,16 @@ export default {
 		changeTerm() {
 			this.initializeShowProperty();
 			localStorage['ruleTerm'] = this.currentRuleTerm;
-			const now = new Date().getTime();
 			const storedData = localStorage['courseData_' + this.currentRuleTerm];
 			const storedTime = localStorage['courseDataTime_' + this.currentRuleTerm];
 
-			if (storedData && storedTime && (now - storedTime < 30 * 60 * 1000)) {
+			if (storedData && storedTime && process.env.GEN_TIME == storedTime) {
 				this.courses = JSON.parse(storedData).course;
 			} else {
 				this.loading = true;
 				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentRuleTerm).then((res) => {
 					localStorage['courseData_' + this.currentRuleTerm] = JSON.stringify(res.data);
-					localStorage['courseDataTime_' + this.currentRuleTerm] = now;
+					localStorage['courseDataTime_' + this.currentRuleTerm] = process.env.GEN_TIME;
 					this.courses = res.data.course;
 					this.loading = false;
 				});

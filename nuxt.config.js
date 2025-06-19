@@ -1,6 +1,9 @@
 import axios from 'axios'
 export default {
 	target: 'static',
+	env: {
+		GEN_TIME: new Date().getTime()
+	},
 	head: {
 		title: '明志科技大學選課小幫手',
 		meta: [

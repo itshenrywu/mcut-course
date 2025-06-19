@@ -417,17 +417,16 @@ export default {
 	methods: {
 		...mapMutations(['setSavedCourse']),
 		fetchData() {
-			const now = new Date().getTime();
 			const storedData = localStorage['courseData_' + this.currentTerm];
 			const storedTime = localStorage['courseDataTime_' + this.currentTerm];
 
-			if (storedData && storedTime && (now - storedTime < 30 * 60 * 1000)) {
+			if (storedData && storedTime && process.env.GEN_TIME == storedTime) {
 				const res = JSON.parse(storedData);
 				this.processData(res);
 			} else {
 				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
 					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
-					localStorage['courseDataTime_' + this.currentTerm] = now;
+					localStorage['courseDataTime_' + this.currentTerm] = process.env.GEN_TIME;
 					this.processData(res.data);
 				});
 			}
