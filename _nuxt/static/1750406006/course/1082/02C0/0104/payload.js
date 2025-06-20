@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/02C0/0104", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108202C00104",name:"英文(二)",type:"必修",dept:"四技進修部機械系",year:"1",class:"甲",teacher:"梁傑榮",credit:a,hour:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

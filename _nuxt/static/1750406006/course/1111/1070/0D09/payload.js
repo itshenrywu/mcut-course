@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1070/0D09", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"111110700D09",name:"科技英文閱讀與聽力訓練(五)",type:"選修",dept:"工程學院",year:c,class:"甲",teacher:"黃植振",credit:"0",hour:a,classroom:"",max:"50",min:"10",comment:"工程學院榮譽學程英文課程",otherinfo:null}}],fetch:{},mutations:[]}}("1","4.5~4.5","3")));

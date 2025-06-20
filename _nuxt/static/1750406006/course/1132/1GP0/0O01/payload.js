@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1GP0/0O01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"11321GP00O01",name:"生醫訊號處理",type:"選修",dept:"生醫暨醫材博士學程",year:a,class:"甲",teacher:"屋瑪",credit:b,hour:b,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

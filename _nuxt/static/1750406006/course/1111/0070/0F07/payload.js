@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0070/0F07", (function(a){return {data:[{course:{time:[["7","0.5~1"]],id:"111100700F07",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"郭如蘋",credit:a,hour:a,classroom:"",max:"40",min:"15",comment:"亞瑟王文學經典閱讀(管院生勿選)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/15C2/0601", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"110115C20601",name:"電子電路設計實務",type:"重修",dept:"四技進修部電子系",year:"1",class:"重",teacher:"王美惠",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

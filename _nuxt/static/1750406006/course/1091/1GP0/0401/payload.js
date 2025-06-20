@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1GP0/0401", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"10911GP00401",name:"醫學工程導論",type:"必修",dept:"生醫暨醫材博士學程",year:a,class:"甲",teacher:"王琪芸",credit:b,hour:b,classroom:"",max:"20",min:"2",comment:"多位教師分授",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

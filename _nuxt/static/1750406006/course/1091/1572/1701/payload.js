@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1572/1701", (function(a,b){return {data:[{course:{time:[[a,"9~12"]],id:"109115721701",name:"工程數學(一)",type:"重修",dept:"四技電子系",year:a,class:"重",teacher:"黃國倉",credit:a,hour:a,classroom:b,max:"45",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

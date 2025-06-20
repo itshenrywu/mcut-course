@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1150/7601", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"113211507601",name:"半導體製程",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"洪國永",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"第1階段。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1570/1H01", (function(a){return {data:[{course:{time:[["1","7~8.5"]],id:"110115701H01",name:"半導體產業實務講座",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"王志良",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

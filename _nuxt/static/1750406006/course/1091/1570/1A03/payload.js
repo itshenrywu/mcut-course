@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1570/1A03", (function(a){return {data:[{course:{time:[[a,"6~8"]],id:"109115701A03",name:"半導體材料檢測",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"鄭信民",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，微電子模組選修。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

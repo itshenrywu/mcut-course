@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/0S01", (function(a,b,c){return {data:[{course:{time:[["1",a],["2","1~4"],[b,a]],id:"113121700S01",name:"程式設計(含實習)(一)",type:"重修",dept:"四技工管系",year:c,class:"重",teacher:"鄭明顯",credit:c,hour:b,classroom:"",max:"25",min:"10",comment:"帶狀課程 7\u002F1~8\u002F30 甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1~2","4","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0870/0601", (function(a,b){return {data:[{course:{time:[["5","5~6"]],id:"113208700601",name:"普通化學暨實驗(二)",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"林孟芳",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

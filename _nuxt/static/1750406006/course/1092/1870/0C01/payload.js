@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1870/0C01", {data:[{course:{time:[["1","9~11"]],id:"109218700C01",name:"鋼鐵製程與處理",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"黎佳霖",credit:"3",classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

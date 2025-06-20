@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0K16", (function(a,b){return {data:[{course:{time:[["4",a],["5",a]],id:"112100700K16",name:"大學之道",type:"必修",dept:"四技工設系",year:b,class:"甲",teacher:"林恆毅",credit:b,hour:"2",classroom:"",max:"56",min:"10",comment:"授課老師：許定洋老師",otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","1")));

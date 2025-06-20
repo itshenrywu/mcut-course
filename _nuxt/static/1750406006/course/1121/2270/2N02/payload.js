@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2270/2N02", (function(a,b){return {data:[{course:{time:[[a,"5~7"],["4","3~4"]],id:"112122702N02",name:"人工智慧與資訊管理 (含實習)",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"馬成珉",credit:"3",hour:"5",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

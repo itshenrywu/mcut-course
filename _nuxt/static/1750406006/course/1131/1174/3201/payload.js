@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1174/3201", (function(a,b){return {data:[{course:{time:[["2","1~1"],["5","7~8"]],id:"113111743201",name:"車廠經營與實務分析",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"黃道易",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

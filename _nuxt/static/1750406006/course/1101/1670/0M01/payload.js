@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1670/0M01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"110116700M01",name:"防火工程",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"黃培誠",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

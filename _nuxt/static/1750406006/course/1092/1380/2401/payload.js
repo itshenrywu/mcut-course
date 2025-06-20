@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1380/2401", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109213802401",name:"工程數值分析與應用",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"蔡榮進",credit:a,classroom:b,max:"40",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

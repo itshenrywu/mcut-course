@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3380/0M01", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"109133800M01",name:"當代電影",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"朱賢哲",credit:a,hour:a,classroom:b,max:"20",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

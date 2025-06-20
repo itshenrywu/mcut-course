@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/class/1132/627/10", {data:[{classData:["人工智慧學程","1","甲"]}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1880/1201", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"108118801201",name:"電漿製程與應用",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"謝章興",credit:a,hour:a,max:"50",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

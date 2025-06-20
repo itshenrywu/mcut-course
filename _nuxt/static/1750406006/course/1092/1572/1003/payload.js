@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1572/1003", {data:[{course:{time:[["1","7~8.5"]],id:"109215721003",name:"光電子學",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"陳正雄",credit:"3",classroom:"",max:"50",min:"10",comment:"甲乙合班授課，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]});

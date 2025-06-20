@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/15C0/1X01", (function(a,b){return {data:[{course:{time:[["6","1~4"]],id:"110415C01X01",name:"半導體製程概論",type:"重修",dept:"四技進修部電子系",year:a,class:"暑",teacher:"曾宗亮",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

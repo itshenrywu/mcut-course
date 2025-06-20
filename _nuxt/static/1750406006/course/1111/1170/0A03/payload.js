@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1170/0A03", (function(a,b){return {data:[{course:{time:[["1","9~11"]],id:"111111700A03",name:"電腦輔助設計(一)",type:"選修",dept:"四技機械系",year:"2",class:"乙",teacher:"王創茂",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
