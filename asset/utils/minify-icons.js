@@ -67,6 +67,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 		console.error('Error reading file:', err);
 		return;
 	}
+	let char_code = [];
 	let css = '';
 	const lines = data.split('\n');
 	let current_line = 0;
@@ -75,6 +76,10 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 			if (lines[current_line].includes(icons[i])) {
 				css += lines[current_line] + '\n';
 				while(!lines[current_line].includes('}')) {
+					if (lines[current_line].includes('content:')) {
+						char_code.push(lines[current_line].split('"')[1]);
+					}
+
 					current_line++;
 					css += lines[current_line] + '\n';
 				}
@@ -90,6 +95,8 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 		}
 	}
 
+	console.log(char_code);
+
 	const newFilePath = path.join(__dirname, '../tocas/icons_new.css');
 	fs.writeFile(newFilePath, css, (err) => {
 		if (err) {
@@ -97,5 +104,56 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 			return;
 		}
 		console.log('Icons css generated successfully');
+	});
+
+	const subsetFont = require('subset-font');
+	// for each font file in icons/
+	fs.readdir(path.join(__dirname, '../tocas/fonts/icons'), (err, files) => {
+		if (err) {
+			console.error('讀取字型檔錯誤：', err);
+			return;
+		}
+		for (let i = 0; i < files.length; i++) {
+			if (files[i].includes('new')) {
+				fs.unlink(path.join(__dirname, '../tocas/fonts/icons/', files[i]), (err) => {
+					if (err) {
+						console.error('刪除字型檔錯誤：', err);
+					} else {
+						console.log(`✅ 已成功刪除字型檔：${files[i]}`);
+					}
+				});
+				continue;
+			}
+			fs.readFile(path.join(__dirname, '../tocas/fonts/icons/', files[i]), (err, fontBuffer) => {
+				if (err) {
+					console.error('讀取字型檔錯誤：', err);
+					return;
+				}
+				
+				subsetFont(fontBuffer, char_code.join(''), {
+					targetFormat: files[i].split('.')[1],
+				})
+				.then(subsetBuffer => {
+					fs.writeFile(path.join(__dirname, '../tocas/fonts/icons/', files[i].replace('.', '_new.')), subsetBuffer, (err) => {
+						if (err) {
+							console.error('寫入子集字型檔錯誤：', err);
+						} else {
+							console.log(`✅ 已成功產生精簡字型檔：${files[i].replace('.', '_new.')}`);
+						}
+					});
+
+					fs.copyFile(path.join(__dirname, '../tocas/fonts/icons/', files[i]), path.join(__dirname, '../../static/css/fonts/icons/', files[i].replace('.', '_new.')), (err) => {
+						if (err) {
+							console.error('複製字型檔錯誤：', err);
+						} else {
+							console.log(`✅ 已成功複製字型檔：${files[i]}`);
+						}
+					});
+				})
+				.catch(err => {
+					console.error('子集化錯誤：', err);
+				});
+			});
+		}
 	});
 });
