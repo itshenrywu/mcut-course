@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1570/0Q03", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"110215700Q03",name:"程式設計實務",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"黃樹林",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"第二專長課程，限外系學生修課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

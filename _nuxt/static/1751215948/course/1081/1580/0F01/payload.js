@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1580/0F01", (function(a){return {data:[{course:{time:[["2","6~8"]],id:"108115800F01",name:"Java程式實務進階",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"謝筱齡",credit:a,hour:a,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

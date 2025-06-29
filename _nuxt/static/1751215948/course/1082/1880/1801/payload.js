@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1880/1801", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"108218801801",name:"半導體元件物理",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"陳政營",credit:b,hour:b,max:"65",min:a,comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

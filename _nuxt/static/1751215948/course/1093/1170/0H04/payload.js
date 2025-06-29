@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1170/0H04", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"109311700H04",name:"車輛技術與整合實驗(二)",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"黃道易",credit:a,classroom:"",max:"60",min:"10",comment:"併機三丙",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

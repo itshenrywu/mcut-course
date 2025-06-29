@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2070/2901", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"112120702901",name:"能源材料與製程導論",type:"選修",dept:"環實務",year:"2",class:"甲",teacher:"郭亮吟",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"第二專長(本系可修)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

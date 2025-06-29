@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3370/0K01", (function(a,b){return {data:[{course:{time:[["4",b],["5",b]],id:"114133700K01",name:"創意行銷設計",type:"必修",dept:"四技視傳系",year:a,class:"甲",teacher:"商耀元",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程：6\u002F30~8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3","5~7")));

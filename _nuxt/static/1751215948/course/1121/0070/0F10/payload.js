@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0F10", (function(a){return {data:[{course:{time:[["7","0.5~0.5"]],id:"112100700F10",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"陳建彰",credit:a,hour:a,classroom:"",max:"48",min:"15",comment:"搭配課程：健身運動心理學",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

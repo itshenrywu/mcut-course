@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2280/3901", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"109122803901",name:"人力資源管理專題",type:"必修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"顏婉竹",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

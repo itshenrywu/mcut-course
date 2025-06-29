@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1170/5101", (function(a,b){return {data:[{course:{time:[[a,"6~7"]],id:"109211705101",name:"創意思考",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"傅本然",credit:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

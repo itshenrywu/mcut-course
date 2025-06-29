@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/21C0/0J01", (function(a,b){return {data:[{course:{time:[["6","2~4"]],id:"109121C00J01",name:"物料管理",type:"必修",dept:"四技進修部工管系",year:"4",class:"甲",teacher:"韓慶森",credit:a,hour:a,classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
