@@ -31,7 +31,7 @@ export default {
 			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.18/dark.min.css', media: "(prefers-color-scheme: dark)"}
 		],
 		script: [
-			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.js' }
+			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.3/tocas.min.js' }
 		]
 	},
 	components: true,
