@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2280/4501", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"112222804501",name:"消費者行為專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"張瀞",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

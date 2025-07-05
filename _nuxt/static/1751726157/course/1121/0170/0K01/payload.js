@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0170/0K01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"112101700K01",name:"小說中的人生百態",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"施依吾",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"管設學院學生不得選修",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1070/0D03", (function(a){return {data:[{course:{time:[[a,"8.5~9"]],id:"112110700D03",name:"科技英文閱讀與聽力訓練(五)",type:"選修",dept:"工程學院",year:a,class:"甲",teacher:"陳嘉蕙",credit:"0",hour:"1",classroom:"",max:"48",min:"10",comment:"限工程學院選課(榮譽學程課程)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

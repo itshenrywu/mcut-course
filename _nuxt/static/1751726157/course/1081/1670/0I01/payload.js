@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1670/0I01", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"108116700I01",name:"職業安全衛生技術特論",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"黃奕舜",credit:a,hour:a,max:"64",min:"10",comment:"配合證照推動濃縮於1-7週上課",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~12")));

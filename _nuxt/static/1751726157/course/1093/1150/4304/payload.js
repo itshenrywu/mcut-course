@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1150/4304", (function(a,b){return {data:[{course:{time:[["2","9~12"],[a,"9~10"]],id:"109311504304",name:"材料力學(一)",type:"重修",dept:"四技機械系",year:a,class:"暑",teacher:"張國棟",credit:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

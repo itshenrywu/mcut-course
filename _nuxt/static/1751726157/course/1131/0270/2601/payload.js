@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0270/2601", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"113102702601",name:"生活美語",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"曾雅萍",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2","")));

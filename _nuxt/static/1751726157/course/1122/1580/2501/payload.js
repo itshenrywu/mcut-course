@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1580/2501", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"112215802501",name:"電子構裝實務",type:"選修",dept:"電子系碩士班",year:a,class:"甲",teacher:"王志良",credit:b,hour:b,classroom:c,max:"30",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

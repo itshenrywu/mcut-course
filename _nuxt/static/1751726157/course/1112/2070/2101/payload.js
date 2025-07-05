@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2070/2101", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"111220702101",name:"材料科學導論",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"陳正龍",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));
