@@ -393,7 +393,7 @@ export default {
 		}
 
 		let currentYear = new Date().getFullYear() - 1911;
-		if (new Date().getMonth() < 8) currentYear--;
+		if ((new Date().getMonth() + 1) <= 6) currentYear--;
 		for (let year = currentYear; year >= 108; year--) {
 			years.push(year);
 		}
