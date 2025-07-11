@@ -450,9 +450,32 @@ export default {
 				{ hid: 'og:description', name: 'og:description', content: this.course.dept + ' ' + this.course.year + ' ' + this.course.class + '・' + this.course.type + '・' + this.course.credit + ' 學分・' + this.course.teacher + ' 老師' },
 
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com' + this.$router.currentRoute.path },
-				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
-				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() }
-			]
+				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + process.env.GEN_TIME },
+				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + process.env.GEN_TIME }
+			],
+			script: this.course.name ? [{
+				hid: 'schema-breadcrumb',
+				type: 'application/ld+json',
+				json: {
+					'@context': 'https://schema.org',
+					'@type': 'BreadcrumbList',
+					'itemListElement': [{
+						'@type': 'ListItem',
+						'position': 1,
+						'name': this.course.id.substring(0,3) + '-' + this.course.id.substring(3,4) + ' 學期',
+						'item': 'https://mcut-course.com/course/'
+					},{
+						'@type': 'ListItem',
+						'position': 2,
+						'name': this.course.dept + ' ' + this.course.year + ' ' + this.course.class,
+						'item': 'https://mcut-course.com/course/'
+					},{
+						'@type': 'ListItem',
+						'position': 3,
+						'name': this.course.name
+					}]
+				}
+			}] : []
 		}
 	},
 	filters: {

@@ -428,9 +428,27 @@ export default {
 				{ hid: 'twitter:title', name: 'twitter:title', content: (year_title ? year_title + ' 學年度入學 - ' : '') + (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
 
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com' + this.$router.currentRoute.path },
-				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() },
-				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + Date.now() }
-			]
+				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + process.env.GEN_TIME },
+				{ hid: 'twitter:image', name: 'twitter:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + process.env.GEN_TIME }
+			],
+			script: (year_title && this.currentRuleName) ? [{
+				hid: 'schema-breadcrumb',
+				type: 'application/ld+json',
+				json: {
+					'@context': 'https://schema.org',
+					'@type': 'BreadcrumbList',
+					'itemListElement': [{
+						'@type': 'ListItem',
+						'position': 1,
+						'name': year_title + ' 學年度入學',
+						'item': 'https://mcut-course.com/rule/'
+					},{
+						'@type': 'ListItem',
+						'position': 3,
+						'name': this.currentRuleName + '課程總表'
+					}]
+				}
+			}] : []
 		};
 	},
 	computed: {
