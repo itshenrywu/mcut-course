@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1280/0L01", (function(a,b){return {data:[{course:{time:[["2","4~4"],[a,"2~3"]],id:"113112800L01",name:"5G 通訊量測技術",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"楊超舜",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

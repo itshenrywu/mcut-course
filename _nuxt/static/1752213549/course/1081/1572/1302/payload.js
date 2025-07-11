@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1572/1302", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108115721302",name:"微處理機應用實習",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"黃政光",credit:"1",hour:"3",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

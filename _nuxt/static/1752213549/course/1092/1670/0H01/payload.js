@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1670/0H01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"109216700H01",name:"室內空氣品質",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"洪明瑞",credit:"3",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

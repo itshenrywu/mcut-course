@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/18C3/0601", (function(a,b){return {data:[{course:{time:[["6","7~9"]],id:"113218C30601",name:"陶瓷材料",type:"選修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"黎佳霖",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

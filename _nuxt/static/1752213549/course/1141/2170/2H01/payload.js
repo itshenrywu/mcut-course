@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2170/2H01", {data:[{course:{time:[["4","2~4"],["5","5~5"]],id:"114121702H01",name:"碳管理規劃與實務操作",type:"選修",dept:"四技工管系",year:"3",class:"甲",teacher:"王建智",credit:"1",hour:"2",classroom:"",max:"50",min:"10",comment:"帶狀課程6\u002F30-8\u002F29 甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

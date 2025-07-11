@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1570/1D01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"110215701D01",name:"高速電路",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"賴文正",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班授課，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2240/1601", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"108122401601",name:"管理數學",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"陳世文",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

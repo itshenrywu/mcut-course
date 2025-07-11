@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1180/0401", (function(a,b){return {data:[{course:{time:[["2","7~8.5"]],id:"110211800401",name:"工業人工智慧",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"鄒慶士",credit:a,hour:a,classroom:b,max:"12",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

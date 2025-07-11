@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1171/0402", (function(a,b){return {data:[{course:{time:[["4","1~1"],["5","1~2"]],id:"110111710402",name:"車輛工程概論",type:"選修",dept:"四技機械系",year:"1",class:"丙",teacher:"章哲寰",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

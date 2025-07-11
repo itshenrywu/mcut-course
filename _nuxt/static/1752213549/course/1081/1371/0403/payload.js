@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1371/0403", (function(a,b){return {data:[{course:{time:[[a,"4.5~6"]],id:"108113710403",name:"普通化學(一)",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"簡良榮",credit:b,hour:b,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

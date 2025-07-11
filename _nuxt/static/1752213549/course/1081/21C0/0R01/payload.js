@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21C0/0R01", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108121C00R01",name:"人力資源管理",type:"選修",dept:"四技進修部工管系",year:a,class:"甲",teacher:"陳哲堯",credit:a,hour:a,max:"50",min:"10",comment:"與職管四甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

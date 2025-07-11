@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1874/1102", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"112118741102",name:"工程倫理與實務講座",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"彭坤增",credit:"1",hour:"3",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

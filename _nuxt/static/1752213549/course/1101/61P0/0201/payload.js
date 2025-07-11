@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/61P0/0201", (function(a){return {data:[{course:{time:[[a,"9~10"]],id:"110161P00201",name:"書報討論(一)",type:"必修",dept:"能源電池博士班",year:"1",class:"甲",teacher:"楊純誠",credit:"0.5",hour:a,classroom:"",max:"20",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1150/8205", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112211508205",name:"機械元件設計(一)",type:"重修",dept:"四技機械系",year:"4",class:"重",teacher:"蔡習訓",credit:a,hour:a,classroom:b,max:"60",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

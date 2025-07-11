@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1872/0101", {data:[{course:{time:[["5","5~7"]],id:"109218720101",name:"陶瓷材料",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"陳政營",credit:"3",classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

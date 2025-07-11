@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3370/3901", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"109133703901",name:"個案研究",type:"選修",dept:"四技視傳系",year:"4",class:"甲",teacher:"莊妙仙",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

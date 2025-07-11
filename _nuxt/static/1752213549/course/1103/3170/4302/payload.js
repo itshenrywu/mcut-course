@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/3170/4302", (function(a,b,c){return {data:[{course:{time:[["1",a],[b,a]],id:"110331704302",name:"設計心理學",type:"重修",dept:"四技工設系",year:b,class:"暑",teacher:"楊俊明",credit:c,hour:c,classroom:"",max:"60",min:"5",comment:"與設三合班 帶狀課程7\u002F4-9\u002F2",otherinfo:null}}],fetch:{},mutations:[]}}("1~3","4","3")));

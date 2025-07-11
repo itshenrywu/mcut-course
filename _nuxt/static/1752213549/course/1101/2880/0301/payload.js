@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2880/0301", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"110128800301",name:"環境物化處理",type:"必修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"官文惠",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

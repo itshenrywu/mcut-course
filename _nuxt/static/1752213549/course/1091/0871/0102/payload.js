@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0871/0102", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"109108710102",name:"普通化學",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"吳喬松",credit:a,hour:a,classroom:b,max:"23",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
