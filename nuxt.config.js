@@ -81,7 +81,7 @@ export default {
 				component: 'pages/rule/_year/_dept/_id.vue'
 			}];
 			let currentYear = new Date().getFullYear() - 1911;
-			if (new Date().getMonth() < 8) currentYear--;
+			if ((new Date().getMonth() + 1) <= 6) currentYear--;
 			for (let year = 107; year <= currentYear; year++) {
 				Object.values(depts[year]).forEach(dept_group => {
 					Object.keys(dept_group).forEach((dept_id) => {
