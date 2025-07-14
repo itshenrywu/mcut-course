@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0770/0708", {data:[{course:{time:[["5","7~8"]],id:"112107700708",name:"全民國防教育軍事訓練(一)",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"李大偉",credit:"0",hour:"2",classroom:"",max:"100",min:"10",comment:"與工智一甲合併授課",otherinfo:null}}],fetch:{},mutations:[]});

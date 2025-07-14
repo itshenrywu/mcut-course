@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1270/0U01", {data:[{course:{time:[["5","1~4"]],id:"111212700U01",name:"通信原理與實習",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"王柏仁",credit:"3",hour:"4",classroom:"",max:"68",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]});

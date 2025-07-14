@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2274/0701", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109222740701",name:"國際企業管理",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"張瀞",credit:a,classroom:"",max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

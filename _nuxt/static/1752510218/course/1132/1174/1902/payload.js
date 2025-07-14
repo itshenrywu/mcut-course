@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1174/1902", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"113211741902",name:"塑膠模具設計與模流分析",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"蔡習訓",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

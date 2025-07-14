@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/11C0/1601", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"110211C01601",name:"模具設計與模流分析",type:"選修",dept:"四技進修部機械系",year:"4",class:"乙",teacher:"王頌文",credit:a,hour:a,classroom:b,max:"54",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

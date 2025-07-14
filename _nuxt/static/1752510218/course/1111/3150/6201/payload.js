@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3150/6201", (function(a,b){return {data:[{course:{time:[["1",a],["4",a]],id:"111131506201",name:"產品設計(一)",type:"必修",dept:"四技工設系",year:"2",class:"甲",teacher:"謝國榮",credit:"3",hour:"6",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1~3","")));

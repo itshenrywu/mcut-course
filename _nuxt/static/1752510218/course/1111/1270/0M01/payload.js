@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1270/0M01", (function(a){return {data:[{course:{time:[["5","5~8"]],id:"111112700M01",name:"實習前技術訓練",type:"必修",dept:"四技電機系",year:"3",class:"甲",teacher:"邱聰輝",credit:"1",hour:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

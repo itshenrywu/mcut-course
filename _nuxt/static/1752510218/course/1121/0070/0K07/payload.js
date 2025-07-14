@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0K07", (function(a,b,c){return {data:[{course:{time:[["4",a],["5",a]],id:"112100700K07",name:"大學之道",type:"必修",dept:"四技環安衛系",year:b,class:"甲",teacher:"吳容銘",credit:b,hour:"2",classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","1","")));

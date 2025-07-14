@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1E80/7601", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"11111E807601",name:"英文強化課程",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"黃翊之",credit:"0",hour:a,classroom:"",max:"28",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

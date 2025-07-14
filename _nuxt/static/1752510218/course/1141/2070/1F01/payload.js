@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2070/1F01", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"114120701F01",name:"材料分析暨實驗",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"張峻瑜",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

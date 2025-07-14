@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2272/0101", (function(a){return {data:[{course:{time:[["4","3~4"],["5","5~7"]],id:"109222720101",name:"成本與管理會計(含實習)",type:"必修",dept:"四技經管系",year:"1",class:"甲",teacher:"吳明鋗",credit:"3",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

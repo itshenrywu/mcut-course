@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1270/1O01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109212701O01",name:"FPGA\u002FCPLD實務",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"陳瓊安",credit:a,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

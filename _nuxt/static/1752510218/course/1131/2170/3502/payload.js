@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/3502", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[c,b]],id:"113121703502",name:"實務專題(二)",type:"必修",dept:"四技工管系",year:"4",class:"乙",teacher:"陳安哲",credit:a,hour:c,classroom:d,max:"60",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5","2","")));

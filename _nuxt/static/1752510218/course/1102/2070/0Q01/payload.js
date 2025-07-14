@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2070/0Q01", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"110220700Q01",name:"基石專題",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"杜鶴芸",credit:a,hour:"3",classroom:"",max:"50",min:"10",comment:"不上選課系統",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

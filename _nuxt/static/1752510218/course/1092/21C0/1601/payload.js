@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/21C0/1601", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"109221C01601",name:"企業資源規劃",type:"選修",dept:"四技進修部工管系",year:"4",class:"甲",teacher:"白恭瑞",credit:"3",classroom:a,max:"20",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

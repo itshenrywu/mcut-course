@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/2W01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"112130702W01",name:"資訊圖像設計",type:"必修",dept:"行銷設計學程",year:"2",class:"甲",teacher:"林金祥",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"EMI全英文授課-學時型",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

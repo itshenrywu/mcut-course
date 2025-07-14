@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/remove-ad", {data:[{}],fetch:{},mutations:[]});

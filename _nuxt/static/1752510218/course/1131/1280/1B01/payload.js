@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1280/1B01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113112801B01",name:"電力系統運轉與控制",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"林志銘",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

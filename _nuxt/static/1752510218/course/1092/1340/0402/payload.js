@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1340/0402", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"109213400402",name:"分析化學暨實驗",type:"選修",dept:"四技化工系",year:a,class:"乙",teacher:"阮宏藝",credit:"3",classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));
