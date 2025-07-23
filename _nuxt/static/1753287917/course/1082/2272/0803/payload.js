@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2272/0803", (function(a){return {data:[{course:{time:[[a,"9~10"]],id:"108222720803",name:"商用英文(一)",type:"重修",dept:"四技經管系",year:"4",class:"重",teacher:"吳明鋗",credit:"1",hour:a,max:"60",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/6270/0H01", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"111262700H01",name:"網路概論",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"陳延禎",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

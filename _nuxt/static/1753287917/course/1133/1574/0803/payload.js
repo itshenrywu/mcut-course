@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1574/0803", (function(a){return {data:[{course:{time:[["5","5~8"]],id:"113315740803",name:"光電應用實務",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"吳亞芬",credit:a,hour:a,classroom:"",max:"2",min:"1",comment:"併114三上(乙班)課程",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

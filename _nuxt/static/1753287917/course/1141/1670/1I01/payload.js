@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1670/1I01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114116701I01",name:"實務專題研究(三)",type:"必修",dept:"四技環安衛系",year:"3",class:"甲",teacher:"吳容銘",credit:"1",hour:"2",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

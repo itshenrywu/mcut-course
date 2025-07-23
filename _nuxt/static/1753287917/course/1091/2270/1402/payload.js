@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2270/1402", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"109122701402",name:"人力資源管理",type:"必修",dept:"四技經管系",year:"2",class:"甲",teacher:"李秉懿",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

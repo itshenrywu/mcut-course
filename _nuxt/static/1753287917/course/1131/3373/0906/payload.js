@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3373/0906", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"113133730906",name:"視覺介面設計",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"李昌國",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

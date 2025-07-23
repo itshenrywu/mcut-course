@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/6270/1W01", (function(a,b){return {data:[{course:{time:[["2","3~4"],[a,"7~8"]],id:"113162701W01",name:"電腦視覺",type:"選修",dept:"人工智慧學程",year:a,class:"甲",teacher:"李建興",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

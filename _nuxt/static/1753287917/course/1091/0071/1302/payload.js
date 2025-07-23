@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0071/1302", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"109100711302",name:"生活日語",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"徐碧茹",credit:b,hour:b,classroom:"",max:"48",min:"10",comment:"已修過任一進階日語課程者，不得再選修",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2")));

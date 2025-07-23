@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2140/0802", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"112221400802",name:"統計學(一)",type:"必修",dept:"四技工管系",year:"1",class:"乙",teacher:"俞凱允",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

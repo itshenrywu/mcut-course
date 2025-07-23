@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1570/1M01", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"110215701M01",name:"電子電路模擬實務",type:"必修",dept:"四技電子系",year:"2",class:"甲",teacher:"許宏彬",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
