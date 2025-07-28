@@ -45,25 +45,29 @@ function getNext() {
 
 function createWidget() {
 	let w = new ListWidget;
+	let gradient = new LinearGradient();
+	gradient.locations = [0, 1];
+	gradient.colors = [new Color(`"${color[0]}"`), new Color(`"${color[1]}"`)];
+	w.backgroundGradient = gradient;
 	w.backgroundColor = new Color(color[0]);
 	let l = getNext();
 	if (l) {
 		let h = w.addText("下一堂課");
-		h.textColor = new Color(color[1]), h.textOpacity = .9, h.font = Font.mediumSystemFont(12), w.addSpacer(8);
+		h.textColor = new Color(color[2]), h.textOpacity = .9, h.font = Font.mediumSystemFont(12), w.addSpacer(8);
 		let n = w.addText(l.n);
-		n.textColor = new Color(color[1]), n.font = Font.boldSystemFont(16), w.addSpacer(4);
+		n.textColor = new Color(color[2]), n.font = Font.boldSystemFont(16), w.addSpacer(4);
 		if (config.widgetFamily === "accessoryRectangular") {
 			let d = w.addText(`${l.st} ~ ${l.et} 在${l.c}`);
-			d.textColor = new Color(color[1]), d.font = Font.systemFont(14);
+			d.textColor = new Color(color[2]), d.font = Font.systemFont(14);
 		} else {
 			let t = w.addText(`${l.st} ~ ${l.et}`);
-			t.textColor = new Color(color[1]), t.font = Font.systemFont(14);
+			t.textColor = new Color(color[2]), t.font = Font.systemFont(14);
 			let d = w.addText(l.c || '');
-			d.textColor = new Color(color[1]), d.font = Font.systemFont(14);
+			d.textColor = new Color(color[2]), d.font = Font.systemFont(14);
 		}
 	} else {
 		let i = w.addText("今天沒有課了！");
-		i.textColor = new Color(color[1]), i.font = Font.boldSystemFont(18);
+		i.textColor = new Color(color[2]), i.font = Font.boldSystemFont(18);
 	}
 	w.url = 'https://mcut-course.com/' + ((l && l.i && l.i.length == 12) ? 'course/' + l.i.substring(0, 4) + '/' + l.i.substring(4, 8) + '/' + l.i.substring(8) : 'my') + '/';
 	return w;

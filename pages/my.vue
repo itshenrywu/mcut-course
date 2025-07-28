@@ -311,12 +311,33 @@
 					<h2 class="ts-header is-large">2. 挑選喜歡的顏色</h2>
 					<div class="ts-grid">
 						<div class="column is-8-wide">
-							<div class="ts-text is-label has-bottom-spaced-small">背景顏色</div>
-							<div class="ts-input">
-								<input type="color" v-model="widgetBackgroundColor">
+							<div class="widget-demo" :style="{ background: `linear-gradient(${widgetBackgroundColor}, ${ (widgetBackgroundGradient ? widgetBackgroundColor2 : widgetBackgroundColor) })`, color: widgetColor }">
+								<div class="pre">下一堂課</div>
+								<div class="title">課程名稱</div>
+								<div class="info">13:00 ~ 15:50</div>
 							</div>
 						</div>
 						<div class="column is-8-wide">
+							<div class="ts-wrap is-middle-aligned has-bottom-spaced-small">
+								<div class="ts-text is-label">背景顏色</div>
+								<label class="ts-checkbox is-small" style="padding-top: .25rem;">
+									<input type="checkbox" v-model="widgetBackgroundGradient">
+									漸層
+								</label>
+							</div>
+							<div class="ts-wrap">
+								<div>
+									<div class="ts-input">
+										<input type="color" v-model="widgetBackgroundColor">
+									</div>
+								</div>
+								<div v-if="widgetBackgroundGradient">
+									<div class="ts-input">
+										<input type="color" v-model="widgetBackgroundColor2">
+									</div>
+								</div>
+							</div>
+							<br>
 							<div class="ts-text is-label has-bottom-spaced-small">文字顏色</div>
 							<div class="ts-input">
 								<input type="color" v-model="widgetColor">
@@ -326,14 +347,14 @@
 					<h2 class="ts-header is-large" style="margin-bottom:0;">3. 複製以下程式碼</h2>
 					<div class="ts-text is-description">
 						課程每次修改後須重新更改一次程式碼<br>
-						{{ message ? message[1] : '點選下方區塊即可複製' }}
+						<div v-html="message ? message[1] : '點擊下方區塊即可複製'"></div>
 					</div>
 					<div class="ts-input is-solid">
 						<div class="ts-box" id="code0" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(0)"><div class="ts-content">{{ scriptableCode }}</div></div>
 					</div>
 					<br>
 					<h2 class="ts-header is-large" style="display:inline;">4. 開啟 Scriptable，按&nbsp;<span class="ts-icon is-circle-plus-icon"></span>，貼上程式碼，按&nbsp;<span>Done</span></h2>
-					<h2 class="ts-header is-large">5. 在桌面新增小工具，選擇 Scriptable</h2>
+					<h2 class="ts-header is-large">5. 在桌面或鎖定畫面新增小工具，選擇 Scriptable</h2>
 					<h2 class="ts-header is-large">6. 長按小工具 > 編輯小工具，Script 設定成你剛剛新增的專案</h2>
 					<div class="ts-text is-description">
 						還是看不懂的話就看一下<a href="https://www.youtube.com/watch?v=QUG2U66lzOM" target="_blank">影片</a>吧～
@@ -365,9 +386,7 @@
 						</div>
 						<div>
 							<h2 class="ts-header is-large" style="display:inline;">3. 看到自己的課表後，在瀏覽器網址列把所有網址刪掉後，貼上以下程式碼：</h2>
-							<div class="ts-text is-description">
-								{{ message ? message[1] : '點選下方區塊即可複製' }}
-							</div>
+							<div class="ts-text is-description" v-html="message ? message[1] : '點擊下方區塊即可複製'"></div>
 							<div class="ts-input is-solid">
 								<div class="ts-box" id="code1" style="font-size:.8rem; height: 5rem; overflow-y: scroll; font-family: monospace;" @click="copyCode(1)"><div class="ts-content">{{ importCodeFile }}</div></div>
 							</div>
@@ -578,6 +597,28 @@
 	}
 }
 
+.widget-demo {
+	border-radius: 1rem;
+	background: var(--ts-gray-100);
+	padding: 1.6rem;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.widget-demo .pre {
+	font-size: .75rem;
+}
+
+.widget-demo .title {
+	font-weight: bold;
+}
+
+.widget-demo .info {
+	font-size: .875rem;
+}
+
 @media (max-width: 767.98px) {
 }
 </style>
@@ -642,7 +683,9 @@ export default {
 			message: null,
 			messageTimer: null,
 
-			widgetBackgroundColor: '#34495e',
+			widgetBackgroundGradient: true,
+			widgetBackgroundColor: '#487eb0',
+			widgetBackgroundColor2: '#40739e',
 			widgetColor: '#ffffff',
 
 			backgroundImage: null,
@@ -847,7 +890,7 @@ export default {
 					i: (course.name == course.originalName && course.id.length == 12 && !course.id.includes('ALT')) ? course.id : '',
 				});
 			});
-			return `const color=["${this.widgetBackgroundColor.replace('#','')}","${this.widgetColor.replace('#','')}"];` +
+			return `const color=["${this.widgetBackgroundColor.replace('#','')}","${(this.widgetBackgroundGradient ? this.widgetBackgroundColor2 : this.widgetBackgroundColor).replace('#','')}","${this.widgetColor.replace('#','')}"];` +
 			this.scriptableCodeFile.replace('__DATA__', encodeURIComponent(JSON.stringify(courses || [])));
 		},
 		icsWeek() {
@@ -908,7 +951,7 @@ export default {
 			window.getSelection().removeAllRanges();
 			this.message = [
 				'success',
-				'程式碼已複製！',
+				'<span style="color: var(--ts-positive-400)">程式碼已複製！</span>',
 			];
 			if(this.messageTimer) clearTimeout(this.messageTimer);
 			this.messageTimer = setTimeout(() => {
@@ -1506,6 +1549,7 @@ export default {
 		},
 
 		closeDialog() {
+			this.message = null;
 			this.editingCourse = Object.freeze(this.defaultCourse);
 			this.editingAction = null;
 			['editCourseDialog', 'widgetDialog', 'importDialog', 'icsDialog', 'colorDialog'].forEach(dialog => {
@@ -1740,7 +1784,7 @@ export default {
 		});
 		this.editingCourse = Object.freeze(this.defaultCourse);
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
-		this.$axios.get('/scriptable.min.js?v=2').then(res => {
+		this.$axios.get('/scriptable.min.js?v=3').then(res => {
 			this.scriptableCodeFile = res.data;
 		});
 		this.$axios.get('/import.js').then(res => {
