@@ -47,7 +47,7 @@ function createWidget() {
 	let w = new ListWidget;
 	let gradient = new LinearGradient();
 	gradient.locations = [0, 1];
-	gradient.colors = [new Color(`"${color[0]}"`), new Color(`"${color[1]}"`)];
+	gradient.colors = [new Color(color[0]), new Color(color[1])];
 	w.backgroundGradient = gradient;
 	w.backgroundColor = new Color(color[0]);
 	let l = getNext();

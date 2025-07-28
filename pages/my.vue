@@ -1784,7 +1784,7 @@ export default {
 		});
 		this.editingCourse = Object.freeze(this.defaultCourse);
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
-		this.$axios.get('/scriptable.min.js?v=3').then(res => {
+		this.$axios.get('/scriptable.min.js?v=4').then(res => {
 			this.scriptableCodeFile = res.data;
 		});
 		this.$axios.get('/import.js').then(res => {
