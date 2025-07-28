@@ -57,8 +57,8 @@ function createWidget() {
 		let n = w.addText(l.n);
 		n.textColor = new Color(color[2]), n.font = Font.boldSystemFont(16), w.addSpacer(4);
 		if (config.widgetFamily === "accessoryRectangular") {
-			let d = w.addText(`${l.st} ~ ${l.et} 在${l.c}`);
-			d.textColor = new Color(color[2]), d.font = Font.systemFont(14);
+			let d = w.addText(`${l.st} ~ ${l.et}${l.c ? ' / ' + l.c : ''}`);
+			d.textColor = new Color(color[2]), d.font = Font.systemFont(10);
 		} else {
 			let t = w.addText(`${l.st} ~ ${l.et}`);
 			t.textColor = new Color(color[2]), t.font = Font.systemFont(14);

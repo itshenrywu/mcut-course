@@ -608,15 +608,16 @@
 }
 
 .widget-demo .pre {
-	font-size: .75rem;
+	font-size: .9rem;
 }
 
 .widget-demo .title {
+	font-size: 1.2rem;
 	font-weight: bold;
 }
 
 .widget-demo .info {
-	font-size: .875rem;
+	font-size: 1.05rem;
 }
 
 @media (max-width: 767.98px) {
@@ -685,7 +686,7 @@ export default {
 
 			widgetBackgroundGradient: true,
 			widgetBackgroundColor: '#487eb0',
-			widgetBackgroundColor2: '#40739e',
+			widgetBackgroundColor2: '#341f97',
 			widgetColor: '#ffffff',
 
 			backgroundImage: null,
@@ -1784,7 +1785,7 @@ export default {
 		});
 		this.editingCourse = Object.freeze(this.defaultCourse);
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
-		this.$axios.get('/scriptable.min.js?v=4').then(res => {
+		this.$axios.get('/scriptable.min.js?v=5').then(res => {
 			this.scriptableCodeFile = res.data;
 		});
 		this.$axios.get('/import.js').then(res => {
