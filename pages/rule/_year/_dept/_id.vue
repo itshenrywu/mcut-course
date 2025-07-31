@@ -625,9 +625,10 @@ export default {
 									course.name + '&nbsp;\
 									<span class="ts-badge is-small is-dense '+({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]+'">'+course.type+'</span>' +
 								'</div>\
-								<div class="ts-text is-description is-start-aligned">' +
-									course.dept + '・' +
+								<div class="ts-text is-description is-start-aligned" style="line-height:1.4;">' +
+									course.dept + ' ' + course.year + ' ' + course.class + '・' +
 									course.teacher + ' 老師' +
+									(course.comment ? '<br>' + course.comment : '') +
 								'</div>\
 							</a>';
 						}).join('');
