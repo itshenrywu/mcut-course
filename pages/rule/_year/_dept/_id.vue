@@ -482,7 +482,6 @@ export default {
 	methods: {
 		...mapMutations(['setSavedCourse']),
 		async init() {
-			let refreshId = false;
 			if (this.$route.params.id) {
 				this.currentYear = this.$route.params.year;
 				this.currentDept = this.$route.params.dept;
@@ -502,6 +501,10 @@ export default {
 			this.saveRuleInput();
 		},
 		saveRuleInput() {
+			if (this.currentRule == undefined) {
+				this.currentRule = '-1';
+				return;
+			}
 			if (this.currentRule == '-1') return;
 			localStorage['ruleYear'] = this.currentYear;
 			localStorage['ruleDept'] = this.currentDept;
