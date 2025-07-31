@@ -632,21 +632,34 @@ export default {
 					showCloseButton: true,
 				}).then((result) => {
 					if (result.isConfirmed) {
-						const el = document.createElement('textarea');
-						el.value = document.location.origin + document.location.pathname;
-						document.body.appendChild(el);
-						el.select();
-						document.execCommand('copy');
-						document.body.removeChild(el);
-
-						this.$swal({
-							title: '已複製分享連結',
-							icon: 'success',
-							toast: true,
-							timer: 3000,
-							timerProgressBar: true,
-							position: 'bottom-start',
-							showConfirmButton: false,
+						navigator.clipboard.writeText(document.location.origin + document.location.pathname)
+						.then(() => {
+							this.$swal({
+								title: '已複製分享連結',
+								icon: 'success',
+								toast: true,
+								timer: 3000,
+								timerProgressBar: true,
+								position: 'bottom-start',
+								showConfirmButton: false,
+							});
+						})
+						.catch(() => {
+							const el = document.createElement('textarea');
+							el.value = document.location.origin + document.location.pathname;
+							document.body.appendChild(el);
+							el.select();
+							document.execCommand('copy');
+							document.body.removeChild(el);
+							this.$swal({
+								title: '已複製分享連結',
+								icon: 'success',
+								toast: true,
+								timer: 3000,
+								timerProgressBar: true,
+								position: 'bottom-start',
+								showConfirmButton: false,
+							});
 						});
 					}
 				});

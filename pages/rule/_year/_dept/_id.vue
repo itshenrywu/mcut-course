@@ -43,7 +43,7 @@
 						<div class="ts-text is-label has-bottom-padded-small">欲選課學期</div>
 						<div class="ts-select is-fluid">
 							<select v-model="currentRuleTerm" @change="changeTerm();" aria-label="欲選課學期">
-								<option v-for="term in terms">{{ term }}</option>
+								<option v-for="term in terms" :value="term">{{ term.split('-')[0] + ' 學年第 ' + term.split('-')[1] + ' 學期' }}</option>
 							</select>
 						</div>
 					</div>
@@ -149,11 +149,17 @@
 												</td>
 												<td class="r-remark">
 													<span v-if="['永續發展與社會實踐', '經典教育與社會實踐'].includes(rule_item.name)" @click.stop="showInfo(rule_item.name)">
-														通識中心 X+1 課程，詳細說明 <span class="ts-icon is-angle-right-icon"></span>
+														課程說明 <span class="ts-icon is-circle-info-icon"></span>
 													</span>
-													<span v-else-if="rule_item.remark && rule_item.remark.trim() != ''">
-														{{ rule_item.remark }}
-													</span>
+													<template v-else-if="rule_item.remark && rule_item.remark.trim() != ''">
+														<span v-if="rule_item.remark.trim().length > 60" @click.stop="showInfo(rule_item.name, rule_item.remark)">
+															{{ rule_item.remark.trim().substring(0, 60) + '...' }}
+															<span class="ts-icon is-circle-info-icon"></span>
+														</span>
+														<span v-else>
+															{{ rule_item.remark }}
+														</span>
+													</template>
 												</td>
 											</tr>
 										</tbody>
@@ -606,38 +612,32 @@ export default {
 		},
 		async showFindCourse(sid) {
 			if(this.findCourses(sid).length == 0) return;
-			let savedCourse = await this.$store.dispatch('getSavedCourse');
-			
-			if(savedCourse.length >= 1 && savedCourse[0].substring(0,4) != this.currentRuleTerm.replace('-', '')) {
-				this.$swal({
-					icon: 'warning',
-					title: '欲選課學期與收藏的課程學期不同',
-					html: '目前收藏的課程為 '+savedCourse[0].substring(0,3)+'-'+savedCourse[0].substring(3,4)+' 學期，是否要清空並切換至 ' + this.currentRuleTerm + ' 學期以檢視相符的課程？',
-					confirmButtonText: '切換並檢視',
-					cancelButtonText: '取消',
-					showCancelButton: true,
-				})
-				.then((res) => {
-					if (res.isConfirmed) {
-						this.setSavedCourse([]);
-						localStorage['term'] = this.currentRuleTerm;
-						localStorage['searchQuery'] = sid;
-						localStorage['dept'] = '';
-						localStorage['class'] = '';
-						localStorage['type'] = '';
-						this.$router.push('/course/');
-					}
-				});
-				return;
-			}
-			localStorage['term'] = this.currentRuleTerm;
-			localStorage['searchQuery'] = sid;
-			localStorage['dept'] = '';
-			localStorage['class'] = '';
-			localStorage['type'] = '';
-			this.$router.push('/course/');
+			this.$swal({
+				title: '開設於 ' + this.currentRuleTerm.split('-')[0] + ' 學年第 ' + this.currentRuleTerm.split('-')[1] + ' 學期的相符課程 (' + this.findCourses(sid).length + ')',
+				customClass: {
+					container: 'similar-courses',
+				},
+				html: '<div class="ts-menu is-small is-dense is-separated alt_course_courses" style="max-height:75vh">' +
+					(() => {
+						return this.findCourses(sid).map(course => {
+							return '<a target="_blank" class="item" href="/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/">\
+								<div class="ts-header">' +
+									course.name + '&nbsp;\
+									<span class="ts-badge is-small is-dense '+({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]+'">'+course.type+'</span>' +
+								'</div>\
+								<div class="ts-text is-description is-start-aligned">' +
+									course.dept + '・' +
+									course.teacher + ' 老師' +
+								'</div>\
+							</a>';
+						}).join('');
+					})() +
+					'</div>',
+				showConfirmButton: false,
+				showCloseButton: true,
+			});
 		},
-		showInfo(name) {
+		showInfo(name, remark) {
 			if(['永續發展與社會實踐', '經典教育與社會實踐'].includes(name)) {
 				this.$swal({
 					title: name + ' 開課方式',
@@ -647,14 +647,21 @@ export default {
 					<div class="ts-header is-large">2. 由通識中心開設課程</div>\
 					<p style="margin-bottom:0">課程會開設在大三及大四，類似通識選修，將於選課系統上供學生選課。</p>\
 					</div>',
-					showConfirmButton: this.findCourses('00700F'),
-					confirmButtonText: '查看 '+this.currentRuleTerm+' 開課課程',
+					showConfirmButton: false,
 					showCloseButton: true
 				})
 				.then((res) => {
 					if (res.isConfirmed) {
 						this.showFindCourse('00700F');
 					}
+				});
+			}
+			else if (remark) {
+				this.$swal({
+					title: name,
+					html: '<div style="text-align:left">' + remark + '</div>',
+					showConfirmButton: false,
+					showCloseButton: true
 				});
 			}
 		},

@@ -10,7 +10,7 @@
 					:class="{ 'is-active': isActive(item.path) }"
 					class="item"
 				>
-					<img v-if="item.path === '/my/' && profileImage" :src="'data:image/jpeg;base64,' + profileImage" class="profile-image">
+					<img v-if="item.path === '/more/' && profileImage" :src="'data:image/jpeg;base64,' + profileImage" class="profile-image">
 					<span v-else class="ts-icon" :class="item.icon"></span>
 					<div class="label">
 						{{ item.label }}

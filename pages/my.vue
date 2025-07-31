@@ -320,7 +320,7 @@
 						<div class="column is-8-wide">
 							<div class="ts-wrap is-middle-aligned has-bottom-spaced-small">
 								<div class="ts-text is-label">背景顏色</div>
-								<label class="ts-checkbox is-small" style="padding-top: .25rem;">
+								<label class="ts-checkbox is-small">
 									<input type="checkbox" v-model="widgetBackgroundGradient">
 									漸層
 								</label>
@@ -943,13 +943,15 @@ export default {
 		},
 
 		copyCode(id) {
-			const code = document.getElementById('code' + id);
-			const range = document.createRange();
-			range.selectNode(code);
-			window.getSelection().removeAllRanges();
-			window.getSelection().addRange(range);
-			document.execCommand('copy');
-			window.getSelection().removeAllRanges();
+			const el = document.getElementById('code' + id);
+			navigator.clipboard.writeText(el.textContent)
+			.then(() => {})
+			.catch(() => {
+				document.body.appendChild(el);
+				el.select();
+				document.execCommand('copy');
+				document.body.removeChild(el);
+			});
 			this.message = [
 				'success',
 				'<span style="color: var(--ts-positive-400)">程式碼已複製！</span>',

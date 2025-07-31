@@ -500,46 +500,6 @@ export default {
 		changeDisplayType() {
 			localStorage['displayType'] = this.displayType ? '1' : '';
 		},
-		exportSavedCourse() {
-			let ids = '';
-			this.filteredCourses.forEach((course, index) => {
-				if (index == 0) ids += course.id;
-				else ids += course.id.substring(4);
-			});
-
-			if (navigator.share && window.innerWidth < 768) {
-				navigator.share({
-					title: '收藏的課程 | 明志科技大學選課小幫手',
-					url: document.location.origin + document.location.pathname + '?ids=' + ids
-				});
-			} else {
-				this.$swal({
-					title: '匯出收藏的課程',
-					html: '將以下連結複製後，在其他裝置貼上即可匯入<br><div class="ts-box has-top-spaced"><div class="ts-content is-start-aligned is-dense">' + document.location.origin + document.location.pathname + '?ids=' + ids + '</div></div>',
-					confirmButtonText: '複製網址',
-					showCloseButton: true
-				}).then((result) => {
-					if (result.isConfirmed) {
-						const el = document.createElement('textarea');
-						el.value = document.location.origin + document.location.pathname + '?ids=' + ids;
-						document.body.appendChild(el);
-						el.select();
-						document.execCommand('copy');
-						document.body.removeChild(el);
-
-						this.$swal({
-							title: '已複製分享連結',
-							icon: 'success',
-							toast: true,
-							timer: 3000,
-							timerProgressBar: true,
-							position: 'bottom-start',
-							showConfirmButton: false,
-						});
-					}
-				});
-			}
-		},
 		showLimitInfo() {
 			this.$swal({
 				title: '四技日間部選課學分上下限',
