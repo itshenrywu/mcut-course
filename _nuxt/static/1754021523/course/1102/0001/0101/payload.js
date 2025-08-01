@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0001/0101", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"110200010101",name:"國文",type:"重修",dept:"國文組-四技(日)",year:a,class:"重",teacher:"林溫芳",credit:a,hour:a,classroom:"",max:"2",min:"1",comment:"供大三工讀實習學生選課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

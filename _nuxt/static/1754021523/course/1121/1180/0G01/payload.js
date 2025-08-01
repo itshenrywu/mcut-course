@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1180/0G01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112111800G01",name:"工程分析",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"梁晶煒",credit:a,hour:a,classroom:"",max:"28",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

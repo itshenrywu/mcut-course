@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1170/2W01", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"111211702W01",name:"電動車輛實務",type:"選修",dept:"四技機械系",year:"2",class:"丙",teacher:"陳明彥",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

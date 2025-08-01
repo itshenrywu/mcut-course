@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/18C3/0501", (function(a,b,c){return {data:[{course:{time:[[b,"4~4"],[b,"5~6"]],id:"112218C30501",name:"X光繞射導論",type:"必修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"黃宗鈺",credit:a,hour:a,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","5","")));

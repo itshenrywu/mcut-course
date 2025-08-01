@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/A137/0101", (function(a){return {data:[{course:{time:[["7","1~1"]],id:"1092A1370101",name:"綠色化學技術叢論",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"簡文鎮",credit:a,classroom:"",max:"40",min:"10",comment:"第1階段",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

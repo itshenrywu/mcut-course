@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/12C0/1701", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"109112C01701",name:"電力系統 (一)",type:"必修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"謝飛虎",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("6","3","")));

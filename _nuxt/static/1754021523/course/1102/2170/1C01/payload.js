@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2170/1C01", (function(a){return {data:[{course:{time:[[a,"7~8"],["5","1~1"]],id:"110221701C01",name:"人工智慧概論",type:"選修",dept:"四技工管系",year:"1",class:"甲",teacher:"邱慧怡",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

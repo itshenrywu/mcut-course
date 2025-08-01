@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/0071/1303", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108300711303",name:"生活日語",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"徐碧茹",credit:b,hour:b,max:"6",min:a,comment:"與大三通識課程併班",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/166A/0301", (function(a){return {data:[{course:{time:[["5","5~8"]],id:"1111166A0301",name:"環境化學",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"李育輯",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"跨領域專班(本系可修)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

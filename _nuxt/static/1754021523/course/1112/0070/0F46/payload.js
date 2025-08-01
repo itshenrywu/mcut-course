@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0F46", (function(a){return {data:[{course:{time:[["7","0.5~0.5"]],id:"111200700F46",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"林立仁",credit:a,hour:a,classroom:"",max:"48",min:"15",comment:"搭配「環實務藝文涵養與社會參與」",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

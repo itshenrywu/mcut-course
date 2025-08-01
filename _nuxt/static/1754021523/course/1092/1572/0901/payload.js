@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1572/0901", {data:[{course:{time:[["4","7~8.5"]],id:"109215720901",name:"組合語言與微處理機實務",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"黃政光",credit:"3",classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2170/7601", (function(a,b){return {data:[{course:{time:[["2",b],["4",b]],id:"109121707601",name:"專案管理",type:"選修",dept:"四技工管系",year:a,class:"甲",teacher:"邱育智",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"帶狀課程7\u002F6-9\u002F4 甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

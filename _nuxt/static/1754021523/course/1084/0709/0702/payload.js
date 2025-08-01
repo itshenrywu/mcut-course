@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/0709/0702", (function(a,b){return {data:[{course:{time:[[a,"9~12"]],id:"108407090702",name:"小說欣賞",type:"選修",dept:"通識中心進修部",year:a,class:"甲",teacher:"葉衽榤",credit:b,hour:b,max:"48",min:"20",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

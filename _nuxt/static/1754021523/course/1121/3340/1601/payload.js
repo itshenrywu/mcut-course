@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3340/1601", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"112133401601",name:"造形基礎",type:"必修",dept:"四技視傳系",year:a,class:"甲",teacher:"薛惠月",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

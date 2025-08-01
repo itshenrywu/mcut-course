@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2270/4901", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"109122704901",name:"人力訓練與發展",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"李文玄",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

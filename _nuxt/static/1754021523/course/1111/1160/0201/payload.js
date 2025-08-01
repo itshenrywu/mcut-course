@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1160/0201", (function(a,b){return {data:[{course:{time:[["1",b],["2",b]],id:"111111600201",name:"材料科學導論(一)",type:"重修",dept:"四技材工系",year:a,class:"重",teacher:"吳鉉忠",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"與大四暑修併班",otherinfo:null}}],fetch:{},mutations:[]}}("3","8~8.5")));

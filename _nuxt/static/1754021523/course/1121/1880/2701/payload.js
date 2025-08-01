@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1880/2701", (function(a){return {data:[{course:{time:[["4","1~2"]],id:"112118802701",name:"科技論文寫作(三)",type:"必修",dept:"材料系碩士班",year:a,class:"甲",teacher:"童敬維",credit:"1",hour:a,classroom:"",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

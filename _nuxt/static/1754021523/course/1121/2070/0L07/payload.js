@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2070/0L07", (function(a,b){return {data:[{course:{time:[["5","9~12"]],id:"112120700L07",name:"頂石專題",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"黃啓賢",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
