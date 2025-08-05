@@ -13,7 +13,7 @@
 										@click="chooseTerm(year_group.year+'-'+term)">
 										第 {{ term }} 學期
 										<span class="description" v-if="term == '1'">上學期 / 二升三暑期</span>
-										<span class="description" v-else-if="term == '2'">下學期 / 大三實習</span>
+										<span class="description" v-else-if="term == '2'">{{ getSecondTermText(year_group.year, term) }}</span>
 										<span class="description" v-else>暑修</span>
 									</div>
 								</template>
@@ -393,6 +393,12 @@ export default {
 			if(document.getElementById('query-dropdown').classList.contains('is-visible')) return;
 			document.querySelector('[data-dropdown="query-dropdown"]').click();
 			this.searchByQuery();
+		},
+		getSecondTermText(year, term) {
+			if(year+'-'+term == Object.keys(this.classList)[0]) {
+				if(Object.values(this.classList[year + '-' + term]).flat().every(item => item.startsWith('3'))) return '大三實習';
+			}
+			return '下學期 / 大三實習';
 		},
 		slideToggle(dept) {
 			if (this.display.includes(dept)) this.display = this.display.filter(item => item != dept);
