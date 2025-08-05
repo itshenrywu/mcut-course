@@ -456,7 +456,7 @@ export default {
 				else if (dept.includes('碩') || dept.includes('博') || dept.includes('在職專班')) this.depts['碩士/碩專/博士/在職專班'].push(dept);
 				else if (
 					(dept.includes('四技') && dept.includes('系')) ||
-					['人工智慧學程', '環實務', '半導體學程', '行銷設計學程', '四技行設專班'].includes(dept)
+					['人工智慧學程', '環實務', '電池專班', '半導體學程', '行銷設計學程', '四技行設專班'].includes(dept)
 				) this.depts['四技日間部'].push(dept);
 				else this.depts['全校'].push(dept);
 			});
