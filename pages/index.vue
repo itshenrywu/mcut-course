@@ -200,9 +200,8 @@ import { mapMutations } from 'vuex';
 export default {
 	async asyncData({ $axios }) {
 		let _terms = {};
-		let term_res = await $axios.get('https://api.mcut-course.com/list.php');
-		term_res = term_res.data.term || ["114-1","113-4","113-3","113-2","113-1","112-4","112-3","112-2","112-1","111-4","111-3","111-2","111-1","110-4","110-3","110-2","110-1","109-4","109-3","109-2","109-1","108-4","108-3","108-2","108-1"];
-		term_res.forEach(term => {
+		const list = await $axios.get('https://api.mcut-course.com/list.php');
+		list.data.term.forEach(term => {
 			let _year = term.split('-')[0];
 			let _term = term.split('-')[1];
 			if (!_terms[_year]) _terms[_year] = [];
@@ -212,10 +211,12 @@ export default {
 		.sort((a, b) => Number(b[0]) - Number(a[0]))
 		.map(([year, term]) => ({ year: year, term: term }));
 
+		const default_term = list.data.course[0].id.substring(0, 3) + '-' + list.data.course[0].id.substring(3, 4);
+
 		let classList = await $axios.get('https://api.mcut-course.com/class_list.php?type=home');
 		classList = classList.data || {};
 
-		return { terms, classList };
+		return { terms, classList, default_term };
 	},
 	data() {
 		return {
@@ -230,7 +231,8 @@ export default {
 				course: [],
 				teacher: []
 			},
-			loading: false
+			loading: false,
+			default_term: null
 		}
 	},
 	mounted() {
@@ -246,7 +248,8 @@ export default {
 				this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
 				localStorage['term'] = this.currentTerm;
 			}
-			else this.currentTerm = localStorage['term'] || this.terms[0].year + '-' + this.terms[0].term[0];
+			else this.currentTerm = localStorage['term'] || this.default_term || this.terms[0].year + '-' + this.terms[0].term[0];
+			console.log('default_term', this.default_term);
 			this.fetchData();
 		},
 		fetchData() {
