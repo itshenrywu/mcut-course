@@ -3,12 +3,30 @@
 		<div class="ts-container is-very-narrow has-vertically-padded">
 			<profile v-if="!loading"></profile>
 			<div class="ts-content has-top-spaced">
+				<div class="ts-text is-description">偏好設定</div>
+			</div>
+			<div class="ts-menu">
+				<div class="item" data-dropdown="theme-dropdown">
+					明暗色系
+					<div class="ts-badge has-inverted">
+						<span class="ts-icon" :class="[`is-${themes[currentTheme].icon}-icon`]"></span>
+						{{ themes[currentTheme].name }}
+					</div>
+				</div>
+				<div class="ts-dropdown" id="theme-dropdown">
+					<button class="item" v-for="(theme, key) in themes" :key="key" @click="setTheme(key)">
+						<span class="ts-icon" :class="[`is-${theme.icon}-icon`]"></span>
+						{{ theme.name }}
+					</button>
+				</div>
+			</div>
+			<div class="ts-content has-top-spaced">
 				<div class="ts-text is-description">更多功能</div>
 			</div>
 			<div class="ts-menu is-start-icon">
 				<NuxtLink to="/info" class="item">
 					<span class="ts-icon is-clock-icon"></span> 選課時間及說明
-					<div class="ts-badge has-inverted is-small is-dense is-negative" v-if="showInfoRedDot"></div>
+					<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="showInfoRedDot"></div>
 				</NuxtLink>
 				<NuxtLink to="/terms" class="item">
 					<span class="ts-icon is-list-check-icon"></span> 四技日間部學期安排說明
@@ -18,11 +36,11 @@
 				</NuxtLink>
 				<NuxtLink to="/remove-ad" class="item" v-if="profileImage && profileName && showAd">
 					<span class="ts-icon is-wand-magic-sparkles-icon"></span> 移除廣告
-					<div class="ts-badge has-inverted is-small is-dense is-negative" v-if="showRemoveAdRedDot"></div>
+					<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="showRemoveAdRedDot"></div>
 				</NuxtLink>
 			</div>
 			<div class="ts-content has-top-spaced">
-				<div class="ts-text is-description">相關說明及支援</div>
+				<div class="ts-text is-description">說明及支援</div>
 			</div>
 			<div class="ts-menu is-start-icon">
 				<NuxtLink to="/about" class="item">
@@ -53,7 +71,7 @@
 	</div>
 </template>
 <style>
-#page-more .ts-menu .item .ts-badge{
+#page-more .ts-menu .item .ts-badge.red-dot {
 	width: .5rem;
 	height: .5rem;
 	display: block;
@@ -70,7 +88,22 @@ export default {
 			profileImage: '',
 			profileName: '',
 			showInfoRedDot: false,
-			showRemoveAdRedDot: false
+			showRemoveAdRedDot: false,
+			themes: {
+				system: {
+					name: '根據裝置設定',
+					icon: 'gear'
+				},
+				light: {
+					name: '淺色',
+					icon: 'sun'
+				},
+				dark: {
+					name: '深色',
+					icon: 'moon'
+				}
+			},
+			currentTheme: 'system'
 		}
 	},
 	head() {
@@ -105,6 +138,15 @@ export default {
 		});
 		this.showInfoRedDot = localStorage['clickInfo_20250512'] !== 'true';
 		this.showRemoveAdRedDot = localStorage['clickRemoveAd'] !== 'true';
+		this.currentTheme = ['system', 'light', 'dark'].includes(localStorage['theme']) ? localStorage['theme'] : 'system';
+	},
+	methods: {
+		setTheme(theme) {
+			this.currentTheme = theme;
+			localStorage['theme'] = theme;
+			document.documentElement.classList.remove('is-light', 'is-dark');
+			document.documentElement.classList.add(`is-${theme}`);
+		}
 	}
 };
 </script>

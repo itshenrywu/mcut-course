@@ -57,7 +57,10 @@ let icons = [
 	'is-chevron-right-icon',
 	'is-arrow-rotate-left-icon',
 	'is-arrow-rotate-right-icon',
-	'is-file-export-icon'
+	'is-file-export-icon',
+	'is-gear-icon',
+	'is-sun-icon',
+	'is-moon-icon'
 ];
 
 const filePath = path.join(__dirname, '../tocas/icons.css');

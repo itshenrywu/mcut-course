@@ -26,13 +26,25 @@ export default {
 			{ rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
 			{ rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
 			{ rel: "manifest", href: "/site.webmanifest" },
-			{ rel: 'stylesheet', 'href': '/css/tocas.min.css?v=20250620' },
+			{ rel: 'stylesheet', 'href': '/css/tocas.min.css?v=20250807' },
 			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css', media: "(prefers-color-scheme: light)"},
 			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.18/dark.min.css', media: "(prefers-color-scheme: dark)"}
 		],
 		script: [
-			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.3/tocas.min.js' }
-		]
+			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.3/tocas.min.js' },
+			{
+				hid: 'theme-script',
+				innerHTML: `
+					theme = localStorage['theme'] || 'system';
+					document.documentElement.classList.remove('is-light', 'is-dark');
+					document.documentElement.classList.add('is-' + theme);
+				`,
+				type: 'text/javascript',
+			}
+		],
+		__dangerouslyDisableSanitizersByTagID: {
+			'theme-script': ['innerHTML']
+		}
 	},
 	components: true,
 	modules: [

@@ -37,6 +37,9 @@
 .ts-icon.is-angle-right-icon::before {
     content: "\f105";
 }
+.ts-icon.is-sun-icon::before {
+    content: "\f185";
+}
 .ts-icon.is-graduation-cap-icon::before {
     content: "\f19d";
 }
@@ -66,6 +69,12 @@
 }
 .ts-icon.is-arrow-rotate-left-icon::before {
     content: "\f0e2";
+}
+.ts-icon.is-gear-icon::before {
+    content: "\f013";
+}
+.ts-icon.is-moon-icon::before {
+    content: "\f186";
 }
 .ts-icon.is-angle-down-icon::before {
     content: "\f107";
