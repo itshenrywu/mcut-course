@@ -28,7 +28,7 @@
 						<div class="ts-text is-label has-bottom-padded-small">系所/學分學程總表</div>
 						<div class="ts-select is-fluid">
 							<select v-model="currentRule" @change="saveRuleInput();" aria-label="系所/學分學程總表">
-								<option value="-1" disabled>請選擇...</option>
+								<option :value="`-1`" disabled>請選擇...</option>
 								<option v-for="(rule, rule_id) of rules[currentYear]['_']" value="000"
 									v-if="rule.name == currentDeptName">系所課程總表</option>
 								<optgroup v-for="(rule_group, group) of rules[currentYear]" :label="group"
