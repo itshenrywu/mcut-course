@@ -9,13 +9,13 @@
 				<div class="item" data-dropdown="theme-dropdown">
 					明暗色系
 					<div class="ts-badge has-inverted">
-						<span class="ts-icon" :class="[`is-${themes[currentTheme].icon}-icon`]"></span>
+						<span class="ts-icon" :class="[`is-${themes[currentTheme].icon}-icon`]" :style="{ color: themes[currentTheme].icon_color }"></span>
 						{{ themes[currentTheme].name }}
 					</div>
 				</div>
 				<div class="ts-dropdown" id="theme-dropdown">
 					<button class="item" v-for="(theme, key) in themes" :key="key" @click="setTheme(key)">
-						<span class="ts-icon" :class="[`is-${theme.icon}-icon`]"></span>
+						<span class="ts-icon" :class="[`is-${theme.icon}-icon`]" :style="{ color: theme.icon_color }"></span>
 						{{ theme.name }}
 					</button>
 				</div>
@@ -92,15 +92,18 @@ export default {
 			themes: {
 				system: {
 					name: '根據裝置設定',
-					icon: 'gear'
+					icon: 'gear',
+					icon_color: '#3498db',
 				},
 				light: {
 					name: '淺色',
-					icon: 'sun'
+					icon: 'sun',
+					icon_color: '#f1c40f',
 				},
 				dark: {
 					name: '深色',
-					icon: 'moon'
+					icon: 'moon',
+					icon_color: '#6c5ce7',
 				}
 			},
 			currentTheme: 'system'
@@ -146,6 +149,8 @@ export default {
 			localStorage['theme'] = theme;
 			document.documentElement.classList.remove('is-light', 'is-dark');
 			document.documentElement.classList.add(`is-${theme}`);
+			if(theme == 'system') theme = 'auto';
+			document.body.setAttribute('data-swal2-theme', theme);
 		}
 	}
 };

@@ -20,6 +20,8 @@ export default {
 		}
 	},
 	mounted() {
+		document.body.setAttribute('data-swal2-theme', localStorage['theme'] == 'system' ? 'auto' : localStorage['theme']);
+
 		const wrapper = document.querySelector('.ts-app-layout.is-fullscreen');
 		if (!wrapper) return;
 		const observer = new MutationObserver((mutations) => {

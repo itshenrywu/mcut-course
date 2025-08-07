@@ -27,17 +27,16 @@ export default {
 			{ rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
 			{ rel: "manifest", href: "/site.webmanifest" },
 			{ rel: 'stylesheet', 'href': '/css/tocas.min.css?v=20250807' },
-			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css', media: "(prefers-color-scheme: light)"},
-			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.18/dark.min.css', media: "(prefers-color-scheme: dark)"}
+			{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.min.css'},
 		],
 		script: [
 			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.3/tocas.min.js' },
 			{
 				hid: 'theme-script',
 				innerHTML: `
-					theme = localStorage['theme'] || 'system';
+					let themeSetting = localStorage['theme'] || 'system';
 					document.documentElement.classList.remove('is-light', 'is-dark');
-					document.documentElement.classList.add('is-' + theme);
+					document.documentElement.classList.add('is-' + themeSetting);
 				`,
 				type: 'text/javascript',
 			}
