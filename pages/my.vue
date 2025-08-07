@@ -620,6 +620,14 @@
 	font-size: 1.05rem;
 }
 
+#page-my .ts-wrap>.ts-text+.ts-checkbox {
+	margin-top: 0;
+}
+
+#page-my .ts-wrap>.ts-text+.ts-checkbox input {
+	margin-top: 4px;
+}
+
 @media (max-width: 767.98px) {
 }
 </style>
