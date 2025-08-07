@@ -20,7 +20,7 @@ export default {
 		}
 	},
 	mounted() {
-		document.body.setAttribute('data-swal2-theme', localStorage['theme'] == 'system' ? 'auto' : localStorage['theme']);
+		document.body.setAttribute('data-swal2-theme', localStorage['theme'] == 'system' ? 'auto' : (localStorage['theme'] || 'auto'));
 
 		const wrapper = document.querySelector('.ts-app-layout.is-fullscreen');
 		if (!wrapper) return;

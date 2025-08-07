@@ -34,7 +34,7 @@ export default {
 			{
 				hid: 'theme-script',
 				innerHTML: `
-					let themeSetting = localStorage['theme'] || 'system';
+					themeSetting = localStorage['theme'] || 'system';
 					document.documentElement.classList.remove('is-light', 'is-dark');
 					document.documentElement.classList.add('is-' + themeSetting);
 				`,

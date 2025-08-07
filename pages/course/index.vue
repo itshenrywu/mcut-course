@@ -642,6 +642,9 @@ export default {
 			} else {
 				this.savedCourse.push(course_id);
 			}
+			if(this.showConflict == 2) {
+				this.saveSearchInput();
+			}
 			this.setSavedCourse([this.savedCourse]);
 			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		},

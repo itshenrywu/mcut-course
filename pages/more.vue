@@ -96,12 +96,12 @@ export default {
 					icon_color: '#3498db',
 				},
 				light: {
-					name: '淺色',
+					name: '淺色模式',
 					icon: 'sun',
 					icon_color: '#f1c40f',
 				},
 				dark: {
-					name: '深色',
+					name: '深色模式',
 					icon: 'moon',
 					icon_color: '#6c5ce7',
 				}
