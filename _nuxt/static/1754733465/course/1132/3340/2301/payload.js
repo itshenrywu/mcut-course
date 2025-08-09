@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3340/2301", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"113233402301",name:"進階網頁設計",type:"選修",dept:"四技視傳系",year:"1",class:"甲",teacher:"王忠祥",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

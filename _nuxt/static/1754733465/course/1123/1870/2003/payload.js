@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/1870/2003", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"112318702003",name:"半導體製程",type:"重修",dept:"四技材工系",year:c,class:"暑",teacher:"阮弼群",credit:a,hour:a,classroom:"",max:"84",min:"1",comment:"與大三併班",otherinfo:null}}],fetch:{},mutations:[]}}("3","3~4","4")));

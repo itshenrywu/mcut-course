@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1274/0301", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108212740301",name:"人工智慧",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"林君玲",credit:a,hour:a,max:"54",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

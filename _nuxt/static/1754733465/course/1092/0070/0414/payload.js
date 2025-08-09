@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0070/0414", (function(a,b){return {data:[{course:{time:[["7","10~10"]],id:"109200700414",name:"工讀實務實習(四)",type:"重修",dept:"四技電子系",year:a,class:"重",teacher:"吳亞芬",credit:a,classroom:b,max:"1",min:"無下限",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("5","")));

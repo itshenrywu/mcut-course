@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0870/0901", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"114108700901",name:"普通化學實驗(一)",type:"必修",dept:"四技材工系",year:"1",class:"甲",teacher:"阮宏藝",credit:"2",hour:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

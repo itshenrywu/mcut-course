@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0503", (function(a,b){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"112100700503",name:"勤勞教育(一)",type:"必修",dept:"四技材工系",year:a,class:"甲",teacher:"童敬維",credit:"0",hour:"0.5",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

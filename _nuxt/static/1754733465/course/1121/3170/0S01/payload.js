@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3170/0S01", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"112131700S01",name:"設計競賽實務",type:"選修",dept:"四技工設系",year:"4",class:"甲",teacher:"許定洋",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

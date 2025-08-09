@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2272/1203", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114122721203",name:"組織理論與管理",type:"選修",dept:"四技經管系",year:"2",class:"丙",teacher:"范玉英",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

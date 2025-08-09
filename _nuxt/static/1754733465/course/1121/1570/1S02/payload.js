@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1570/1S02", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"112115701S02",name:"工程倫理與專業實務講座",type:"必修",dept:"四技電子系",year:"4",class:"乙",teacher:"唐明中",credit:a,hour:"2",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

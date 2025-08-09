@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/1901", (function(a,b){return {data:[{course:{time:[[a,"2~4"],[a,"5~5"]],id:"108100711901",name:"史傳文學選讀",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"李慧琪",credit:b,hour:b,max:"48",min:"10",comment:"上課日期為7\u002F8至9\u002F6",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("4","2")));

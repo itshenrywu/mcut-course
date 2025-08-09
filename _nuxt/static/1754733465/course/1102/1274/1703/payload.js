@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1274/1703", {data:[{course:{time:[["3","5~6"]],id:"110212741703",name:"工業配電實務",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"古家豪",credit:"1",hour:"2",classroom:"",max:"56",min:"10",comment:"限工程學院四年級各系合班授課",otherinfo:null}}],fetch:{},mutations:[]});

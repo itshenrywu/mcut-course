@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0071/3601", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"108200713601",name:"易經與人生",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"鄭慶武",credit:b,hour:b,max:"48",min:"10",comment:"",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("1","2")));

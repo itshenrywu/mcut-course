@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2170/2301", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"114121702301",name:"服務業管理",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"陳一郎",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

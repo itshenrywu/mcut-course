@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2070/3701", (function(a,b){return {data:[{course:{time:[["1","5~7"]],id:"114120703701",name:"電子顯微鏡分析",type:"選修",dept:"半導體學程",year:"4",class:"甲",teacher:"張峻瑜",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

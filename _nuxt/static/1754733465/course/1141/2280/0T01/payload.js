@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2280/0T01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114122800T01",name:"公司財務管理",type:"必修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"李家如",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));
