@@ -66,7 +66,7 @@
 					
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">主題</div>
-						<div class="ts-select is-fluid" :class="{ 'is-light': themes.find(t => t.id === myCoursesSetting.theme).type === 'light' }">
+						<div class="ts-select theme-select is-fluid" :class="{ 'is-light': themes.find(t => t.id === myCoursesSetting.theme).type === 'light' }">
 							<div class="content" data-dropdown="theme-dropdown"
 							style="border-radius: var(--ts-border-radius-element); height: 100%"
 							:style="{ background: getColorBar(themes.find(t => t.id === myCoursesSetting.theme).courseColor) }">
@@ -569,8 +569,12 @@
 	opacity: 0;
 }
 
-.ts-select.is-light:after {
-	color: var(--ts-gray-300);
+.ts-select.theme-select:after {
+	color: var(--ts-static-gray-100);
+}
+
+.ts-select.theme-select.is-light:after {
+	color: var(--ts-static-gray-600);
 }
 
 .picker-container {
@@ -595,6 +599,16 @@
 	#page-my .sidebar .ts-range input {
 		background: var(--ts-gray-400);
 	}
+
+	.is-dark #page-my .sidebar .ts-button.is-secondary,
+	.is-dark #page-my .sidebar .ts-range input {
+		background: var(--ts-gray-100);
+	}
+}
+
+.is-light #page-my .sidebar .ts-button.is-secondary,
+.is-light #page-my .sidebar .ts-range input {
+	background: var(--ts-gray-400);
 }
 
 .widget-demo {
