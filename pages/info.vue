@@ -169,8 +169,8 @@
 import { mapState } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
-		const res = await $axios.get('https://api.mcut-course.com/get_info.php?v2');
-		return { info: res.data, loading: false };
+		const res = await $axios.get('https://api.mcut-course.com/info.php');
+		return { info: res.data.info, rev: res.data.rev, loading: false };
 	},
 	head() {
 		return {
@@ -188,7 +188,7 @@ export default {
 		}
 	},
 	mounted() {
-		localStorage['clickInfo_20250512'] = 'true';
+		localStorage['clickInfo_' + process.env.REV] = 'true';
 		this.$root.$emit('checkRedDot');
 	},
 	computed: {

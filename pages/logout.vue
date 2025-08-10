@@ -25,7 +25,11 @@ export default {
 			location.href = localStorage['last_path'] || '/';
 		} else {
 			let last_path = localStorage['last_path'];
-			localStorage.clear();
+			Object.keys(localStorage).forEach((key) => {
+				if(!['theme', 'acceptTerms', 'clickInfo_' + process.env.REV].includes(key)) {
+					localStorage.removeItem(key);
+				}
+			});
 			indexedDB.deleteDatabase('mcut-course');
 			
 			this.$root.$emit('showProfileImage', null);
