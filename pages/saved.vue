@@ -252,6 +252,12 @@
 	overflow: hidden;
 }
 
+#limit-info td,
+#limit-info th {
+	text-align: center;
+	vertical-align: middle;
+}
+
 @media (max-width: 767.98px) {
 	#page-saved .ts-grid .column.mobile-fluid .ts-button {
 		width: calc(50% - .5rem);
@@ -503,24 +509,27 @@ export default {
 		showLimitInfo() {
 			this.$swal({
 				title: '四技日間部選課學分上下限',
-				html: `<table class="ts-table">
+				html: `<table class="ts-table" id="limit-info">
 					<thead>
 						<tr>
-							<th>年級</th><th>上學期</th><th>下學期</th>
+							<th rowspan="2">年級</th><th colspan="2">上學期</th><th colspan="2">下學期</th>
+						</tr>
+						<tr>
+							<th>下限</th><th>上限</th><th>下限</th><th>上限</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>一年級</td><td>16 / 27</td><td>16 / 27</td>
+							<td>一年級</td><td>16</td><td>27</td><td>16</td><td>27</td>
 						</tr>
 						<tr>
-							<td>二年級</td><td>16 / 27</td><td>16 / 27</td>
+							<td>二年級</td><td>16</td><td>27</td><td>16</td><td>27</td>
 						</tr>
 						<tr>
-							<td>三年級</td><td>9 / 27</td><td>9 / 32</td>
+							<td>三年級</td><td>9</td><td>32</td><td>9</td><td>32</td>
 						</tr>
 						<tr>
-							<td>四年級</td><td>9 / 27</td><td>9 / 27</td>
+							<td>四年級</td><td>9</td><td>32</td><td>9</td><td>32</td>
 						</tr>
 					</tbody>
 				</table>`,
