@@ -14,7 +14,6 @@
 				<div class="ts-content">
 					<span class="ts-badge has-bottom-spaced-small is-small is-dense">注意事項</span>
 					<div class="ts-list is-ordered">
-						<div class="item">四技部必修課程已由系統自動預選，選修課程（四技通識、專業課程）須自行選課。</div>
 						<div class="item">選課確認時，「相同名稱但時段分開」的課程會分開顯示，計算累積學分時算一次即可。</div>
 						<div class="item">
 							若無登入過校園入口網，選課密碼預設為身分證字號（大寫）。若忘記密碼請洽電算中心
