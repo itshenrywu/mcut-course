@@ -526,10 +526,10 @@ export default {
 							<td>二年級</td><td>16</td><td>27</td><td>16</td><td>27</td>
 						</tr>
 						<tr>
-							<td>三年級</td><td>9</td><td>32</td><td>9</td><td>32</td>
+							<td>三年級</td><td>9</td><td>27</td><td>9</td><td>32</td>
 						</tr>
 						<tr>
-							<td>四年級</td><td>9</td><td>32</td><td>9</td><td>32</td>
+							<td>四年級</td><td>9</td><td>27</td><td>9</td><td>27</td>
 						</tr>
 					</tbody>
 				</table>`,
