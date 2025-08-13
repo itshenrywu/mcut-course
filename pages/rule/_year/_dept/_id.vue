@@ -383,12 +383,14 @@ export default {
 		let rules = {};
 		let years = [];
 		let terms = [];
+		let description = '明志科技大學選課小幫手，幫助您輕鬆查詢全校課表，快速進行課程預排與衝堂檢查，還可以查詢畢業學分門檻及選課時程！';
 		let currentRuleName = '';
 
 		if (payload) {
 			depts = payload.depts;
 			rules = payload.rules;
 			terms = payload.terms;
+			description = payload.description ?? '明志科技大學選課小幫手，幫助您輕鬆查詢全校課表，快速進行課程預排與衝堂檢查，還可以查詢畢業學分門檻及選課時程！';
 			currentRuleName = payload.name;
 		} else {
 			const res = await $axios.get('https://api.mcut-course.com/rule/list2.php');
@@ -403,7 +405,7 @@ export default {
 		for (let year = currentYear; year >= 108; year--) {
 			years.push(year);
 		}
-		return { depts, rules, years, terms, currentRuleName };
+		return { depts, rules, years, terms, currentRuleName, description };
 	},
 	data() {
 		return {
@@ -432,6 +434,9 @@ export default {
 			meta: [
 				{ hid: 'og:title', property: 'og:title', content: (year_title ? year_title + ' 學年度入學 - ' : '') + (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
 				{ hid: 'twitter:title', name: 'twitter:title', content: (year_title ? year_title + ' 學年度入學 - ' : '') + (this.currentRuleName || '') + '課程總表 | 明志科技大學選課小幫手' },
+
+				{ hid: 'description', name: 'description', content: this.description },
+				{ hid: 'og:description', property: 'og:description', content: this.description },
 
 				{ hid: 'og:url', property: 'og:url', content: 'https://mcut-course.com' + this.$router.currentRoute.path },
 				{ hid: 'og:image', property: 'og:image', content: 'https://og.mcut-course.com' + this.$router.currentRoute.path + '.jpg?t=' + process.env.GEN_TIME },

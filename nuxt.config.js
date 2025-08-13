@@ -98,6 +98,7 @@ export default async () => {
 				}];
 				let currentYear = new Date().getFullYear() - 1911;
 				if ((new Date().getMonth() + 1) <= 6) currentYear--;
+				const ruleDescription = (await axios.get('https://api.mcut-course.com/rule/description.php')).data;
 				for (let year = 107; year <= currentYear; year++) {
 					Object.values(depts[year]).forEach(dept_group => {
 						Object.keys(dept_group).forEach((dept_id) => {
@@ -109,7 +110,8 @@ export default async () => {
 											name: dept_group[dept_id],
 											rules: ruleIdsResponse.data.rules,
 											depts: ruleIdsResponse.data.depts,
-											terms: ruleIdsResponse.data.terms
+											terms: ruleIdsResponse.data.terms,
+											description: ruleDescription?.[year]?.[dept_id]?.['000'] || ''
 										}
 									});
 									return;
@@ -122,7 +124,8 @@ export default async () => {
 											name: rule_group[rule_id].name,
 											rules: ruleIdsResponse.data.rules,
 											depts: ruleIdsResponse.data.depts,
-											terms: ruleIdsResponse.data.terms
+											terms: ruleIdsResponse.data.terms,
+											description: ruleDescription?.[year]?.[dept_id]?.[rule_id] || ''
 										}
 									});
 								});
