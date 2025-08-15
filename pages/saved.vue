@@ -22,6 +22,14 @@
 					</div>
 				</div>
 			</div>
+			<div class="ts-box" v-if="savedCourse.length > 0 && filteredCourses.length < savedCourse.length">
+				<div class="ts-content">
+					<div class="ts-text is-description has-bottom-spaced-small">
+						<span class="ts-badge is-small is-dense is-negative">提醒</span> 收藏的課程中有 {{ savedCourse.length - filteredCourses.length }} 門課程已下架，請重新搜尋並收藏。
+					</div>
+					<button class="ts-button is-primary is-outlined" @click="clearSavedRemovedCourse()">清除已下架的課程</button>
+				</div>
+			</div>
 			<div class="ts-grid has-top-spaced mobile-padded" v-if="filteredCourses.length > 0">
 				<div class="column is-8-wide mobile-half">
 					<div class="ts-box">
@@ -441,6 +449,15 @@ export default {
 						this.currentTerm = '';
 					}
 				});
+		},
+		clearSavedRemovedCourse() {
+			this.savedCourse = this.savedCourse.filter(id => this.courses.some(course => course.id === id));
+			this.$swal({
+				title: '已清除已下架的課程', icon: 'success', toast: true,
+				timer: 3000, timerProgressBar: true,
+				position: 'bottom-start', showConfirmButton: false,
+			});
+			this.setSavedCourse([this.savedCourse]);
 		},
 		showCourse(course) {
 			if (course.id.includes('ALT_')) {
