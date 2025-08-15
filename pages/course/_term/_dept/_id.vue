@@ -112,8 +112,8 @@
 							<div class="ts-statistic">
 								<div class="value" id="course-time">
 									<span v-for="time in course.time" class="time">
-										<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{ week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
-										<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
+										<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{ week_text(time[0], course) + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
+										<template v-else>{{ week_text(time[0], course) + ' ' + time[1] + ' 節' }}</template>
 									</span>
 								</div>
 								<span class="ts-icon is-circle-info-icon" v-if="course.time.length >= 1" @click="showTimeInfo()"></span>
@@ -425,7 +425,6 @@ export default {
 	data() {
 		return {
 			time_section: ['0.5', '1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
-			week_text: ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''],
 			course: {},
 			courses: [],
 			more: [],
@@ -511,6 +510,13 @@ export default {
 		...mapState({
 			showAd: state => state.show_ad
 		}),
+		week_text() {
+			return (day, course) => {
+				let _day = ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''][day];
+				if(course.comment.includes('塊狀')) return '';
+				return _day;
+			}
+		},
 		hasCoursedTime() {
 			if (this.savedCourse.length == 0) return [];
 			if (this.savedCourse[0].substring(0, 4) !== this.course.id.substring(0, 4)) return [];
@@ -697,19 +703,23 @@ export default {
 				this.course.name.includes('設計思考')
 			)) {
 				timeInfoText = '「'+this.course.name+'」課程於系統上無表定上課時間，請參考備註或教學進度表，也可以詢問授課老師/班級導師。';
-			} else {
+			}
+			else {
 				this.course.time.forEach(time => {
 					let week = time[0];
 					let section = time[1].split('~').map(section => this.time_section.indexOf(section));
-					timeInfoText += '星期' + this.week_text[week].replace(/[\(\)]/g,'') + '　' + timeInfo[section[0]][0] + ' ~ ' + timeInfo[section[1]][1] + '<br>';
+					timeInfoText += (this.week_text(week, this.course) ? '星期' + this.week_text(week, this.course).replace(/[\(\)]/g,'') + '　' : '') + timeInfo[section[0]][0] + ' ~ ' + timeInfo[section[1]][1] + '<br>';
 				});
+				if(this.course.comment.includes('塊狀') && this.course.time.some(time => time[0] == 6)) {
+					timeInfoText += '塊狀課程，上課日期請參考備註或教學進度表';
+				}
 			}
 			this.$swal({
 				title: '上課時間',
 				html: '<div style="text-align:left">' + timeInfoText + '</div>',
 				showConfirmButton: false,
 				showCloseButton: true,
-				width: timeInfoText.includes('無固定') ? '28rem' : '20rem',
+				width: timeInfoText.includes('無固定') || timeInfoText.includes('塊狀課程') ? '28rem' : '20rem',
 			});
 		},
 		viewSimilarCourses() {

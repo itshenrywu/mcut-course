@@ -111,8 +111,8 @@
 							<td class="c-time">
 								<span v-for="time in course.time" class="time">
 									<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-										week_text[time[0]] + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
-									<template v-else>{{ week_text[time[0]] + ' ' + time[1] + ' 節' }}</template>
+										week_text(time[0], course) + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
+									<template v-else>{{ week_text(time[0], course) + ' ' + time[1] + ' 節' }}</template>
 								</span>
 							</td>
 							<td class="c-type-credit mobile-only absolute-right">
@@ -148,7 +148,7 @@
 					<thead>
 						<tr>
 							<th>&nbsp;</th>
-							<th v-for="w in 6">{{ week_text[w].replace(/[()]/g, '') }}</th>
+							<th v-for="w in 6">{{ week_text(w) }}</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -293,7 +293,6 @@ export default {
 	data() {
 		return {
 			time_section: ['0.5', '1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
-			week_text: ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''],
 			info: [],
 			loading: true,
 			courses: [],
@@ -362,6 +361,13 @@ export default {
 		...mapState({
 			showAd: state => state.show_ad
 		}),
+		week_text() {
+			return (day, course) => {
+				let _day = ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''][day];
+				if(course?.comment?.includes('塊狀')) return '';
+				return _day;
+			}
+		},
 		filteredCourses() {
 			return this.courses.filter(course => this.savedCourse.includes(course.id));
 		},
