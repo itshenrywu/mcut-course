@@ -2,6 +2,9 @@ import axios from 'axios'
 
 export default async () => {
 	const revResponse = await axios.get('https://api.mcut-course.com/info.php');
+	if(revResponse.data.rev.length < 8) {
+		process.exit(1);
+	}
 	
 	return {
 		target: 'static',
