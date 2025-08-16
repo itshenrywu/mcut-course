@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2273/0804", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"114122730804",name:"國際禮儀",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"范玉英",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

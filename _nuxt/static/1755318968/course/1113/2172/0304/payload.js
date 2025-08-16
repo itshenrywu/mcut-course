@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/2172/0304", (function(a){return {data:[{course:{time:[["1","5~8"],["2","1~4"]],id:"111321720304",name:"統計學(含實習)(二)",type:"重修",dept:"四技工管系",year:a,class:"暑",teacher:"王建智",credit:"3",hour:a,classroom:"",max:"10",min:"5",comment:"暑修併三甲帶狀7\u002F3-9\u002F1",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

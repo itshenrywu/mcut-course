@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0670/0706", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"110206700706",name:"體育(四)",type:"必修",dept:"四技化工系",year:b,class:"乙",teacher:"吳國誠",credit:a,hour:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

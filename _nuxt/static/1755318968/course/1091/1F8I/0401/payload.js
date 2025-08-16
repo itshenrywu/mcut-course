@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1F8I/0401", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"10911F8I0401",name:"數位控制",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"陳瓊安",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

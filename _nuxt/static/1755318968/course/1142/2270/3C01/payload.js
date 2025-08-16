@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/3C01", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"114222703C01",name:"專業證照(二)",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"林鴻裕",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"第2階段(未選修專業證照(ㄧ)和外系不可選修)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

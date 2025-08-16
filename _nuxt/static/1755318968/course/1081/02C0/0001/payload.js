@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/02C0/0001", (function(a){return {data:[{course:{time:[["6","7~9"]],id:"108102C00001",name:"英文(一)",type:"必修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"王菁珛",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

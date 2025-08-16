@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3370/0A01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112133700A01",name:"數位藝術",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"鄒秉軒",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

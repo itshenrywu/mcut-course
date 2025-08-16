@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1572/1101", (function(a){return {data:[{course:{time:[["5","9~12"]],id:"110115721101",name:"JAVA技術與應用實務",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"陳信嘉",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"跨領域學程，限外系學生修課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

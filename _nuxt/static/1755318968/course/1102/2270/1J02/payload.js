@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2270/1J02", (function(a){return {data:[{course:{time:[[a,"6~8"]],id:"110222701J02",name:"產業實務講座",type:"必修",dept:"四技經管系",year:"4",class:"乙",teacher:"廖宜慶",credit:"1",hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

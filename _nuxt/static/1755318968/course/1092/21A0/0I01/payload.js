@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/21A0/0I01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"109221A00I01",name:"資料探勘",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"劉弘一",credit:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

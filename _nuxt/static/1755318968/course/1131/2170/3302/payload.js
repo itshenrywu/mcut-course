@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/3302", (function(a,b){return {data:[{course:{time:[["1",b],[a,b],["4","5~6"]],id:"113121703302",name:"企業倫理",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"游淑萍",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"帶狀課程 7\u002F1~8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("3","3~4")));

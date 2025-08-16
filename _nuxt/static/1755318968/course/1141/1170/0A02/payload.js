@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/0A02", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"114111700A02",name:"電腦輔助設計(一)",type:"選修",dept:"四技機械系",year:"2",class:"甲",teacher:"宋旻峰",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

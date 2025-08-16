@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/2B01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"112130702B01",name:"商業軟體應用",type:"選修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"陳世民",credit:a,hour:a,classroom:"",max:"59",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

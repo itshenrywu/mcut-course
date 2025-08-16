@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1850/0604", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"108318500604",name:"材料物理性質",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"陳政營",credit:a,hour:a,max:"50",min:"1",comment:"與材三甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("3","3~4")));

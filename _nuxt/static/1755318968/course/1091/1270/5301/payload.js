@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1270/5301", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"109112705301",name:"工業配電",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"古家豪",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

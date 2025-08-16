@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1170/1D02", (function(a,b){return {data:[{course:{time:[["5","1~2"]],id:"111111701D02",name:"普通化學",type:"必修",dept:"四技機械系",year:"1",class:"乙",teacher:"李英正",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

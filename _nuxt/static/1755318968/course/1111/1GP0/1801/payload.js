@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1GP0/1801", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"11111GP01801",name:"電化學特論",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"曼尼",credit:b,hour:b,classroom:"",max:"20",min:a,comment:"English-taught course，與材料系碩士班併班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

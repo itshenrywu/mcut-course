@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/1B02", (function(a,b){return {data:[{course:{time:[["1","3~4"],[a,"1~2"]],id:"114111701B02",name:"材料力學與實驗",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"郭啟全",credit:"3",hour:"4",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

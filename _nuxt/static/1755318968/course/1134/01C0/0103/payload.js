@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1134/01C0/0103", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"],[a,"5~7"]],id:"113401C00103",name:"國文(二)",type:"重修",dept:"通識中心進修部",year:"4",class:"暑",teacher:"林溫芳",credit:b,hour:b,classroom:c,max:"無上限",min:"無下限",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("6","3","")));

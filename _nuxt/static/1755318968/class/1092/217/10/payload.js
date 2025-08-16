@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/class/1092/217/10", {data:[{classData:["四技工管系","1","甲"]}],fetch:{},mutations:[]});

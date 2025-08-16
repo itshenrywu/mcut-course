@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/1T01", (function(a,b,c){return {data:[{course:{time:[["2","3~4"],[a,"2~2"]],id:"114111701T01",name:"智慧快速模具設計與製造",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"郭啟全",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

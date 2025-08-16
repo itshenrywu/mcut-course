@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1570/0B02", (function(a){return {data:[{course:{time:[["3","5~5"]],id:"109215700B02",name:"電子工程專業能力認證課程",type:"必修",dept:"四技電子系",year:"4",class:"乙",teacher:"許宏彬",credit:"0",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

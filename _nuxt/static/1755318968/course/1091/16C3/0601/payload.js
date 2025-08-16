@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/16C3/0601", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109116C30601",name:"污水工程",type:"重修",dept:"四技進修部環安衛系",year:"4",class:"重",teacher:"陳錫金",credit:a,hour:a,classroom:"",max:"5",min:"1",comment:"併入日間部4甲【污水工程】",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

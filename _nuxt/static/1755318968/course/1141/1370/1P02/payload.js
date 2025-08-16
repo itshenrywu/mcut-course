@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1370/1P02", (function(a){return {data:[{course:{time:[["1","6~8"]],id:"114113701P02",name:"儀器分析實驗",type:"選修",dept:"四技化工系",year:"4",class:"乙",teacher:"阮宏藝",credit:"2",hour:"3",classroom:a,max:"40",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

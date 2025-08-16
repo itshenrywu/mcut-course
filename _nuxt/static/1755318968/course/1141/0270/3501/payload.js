@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0270/3501", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"114102703501",name:"英語多元文化故事分享技巧演練",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"李潔嵐",credit:b,hour:b,classroom:c,max:"45",min:"10",comment:c,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2","")));

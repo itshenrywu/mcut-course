@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3380/0E01", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"112233800E01",name:"文化批評理論",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"李昌國",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

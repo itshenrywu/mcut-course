@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2A01", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"114162702A01",name:"雲端技術實務",type:"選修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"劉豐瑞",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"實際授課教師：朱韋澔老師",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/4113", {data:[{course:{time:[["4","7~8"]],id:"114130704113",name:"創意整合實作",type:"必修",dept:"四技工設系",year:"3",class:"乙",teacher:"杜海勇",credit:"1",hour:"2",classroom:"",max:"56",min:"10",comment:"English-taught course，經三丙+設三乙併班",otherinfo:null}}],fetch:{},mutations:[]});

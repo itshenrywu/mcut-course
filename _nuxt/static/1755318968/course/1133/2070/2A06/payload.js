@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/2070/2A06", (function(a){return {data:[{course:{time:[[a,"7~11"]],id:"113320702A06",name:"電池組裝與分析實作",type:"重修",dept:"環實務",year:"4",class:"暑",teacher:"簡文鎮",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"不上選課系統。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

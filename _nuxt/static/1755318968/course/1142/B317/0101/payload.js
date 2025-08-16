@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/B317/0101", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"1142B3170101",name:"產品設計(四)",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"林恆毅",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"第2階段選課，外系不可修讀",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

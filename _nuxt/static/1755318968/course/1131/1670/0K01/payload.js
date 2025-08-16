@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1670/0K01", (function(a,b){return {data:[{course:{time:[[b,"3~4"],[a,"4~4"]],id:"113116700K01",name:"環境科學與工程概論(一)",type:"必修",dept:"四技環安衛系",year:b,class:"甲",teacher:"程裕祥",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3","2")));
