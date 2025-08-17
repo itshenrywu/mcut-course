@@ -438,7 +438,7 @@ export default {
 			depts = payload.depts;
 			rules = payload.rules;
 			terms = payload.terms;
-			description = payload.description ?? '明志科技大學選課小幫手，幫助您輕鬆查詢全校課表，快速進行課程預排與衝堂檢查，還可以查詢畢業學分門檻及選課時程！';
+			description = payload.description != '' ? payload.description : '明志科技大學選課小幫手，幫助您輕鬆查詢全校課表，快速進行課程預排與衝堂檢查，還可以查詢畢業學分門檻及選課時程！';
 			currentRuleName = payload.name;
 		} else {
 			const res = await $axios.get('https://api.mcut-course.com/rule/list2.php');
