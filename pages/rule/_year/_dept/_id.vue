@@ -101,7 +101,7 @@
 						<div class="ts-list is-ordered">
 							<div class="item">請先選擇<b>「入學學年度」</b>及<b>「入學系所/學程/組別」</b>。</div>
 							<div class="item">須修畢你的<b>「系所學程總表」</b><span
-									v-if="currentDeptName && !(currentDeptName.includes('博士') || currentDeptName.includes('碩士') || currentDeptName.includes('在職專班') || currentDeptName.includes('國際學生專班') || currentDeptName.includes('菁英班') || currentDeptName.includes('學位學程'))">，並須<b>任選一個學分學程（跨領域或第二專長）</b></span>才能畢業。
+									v-if="currentDeptName && !(currentDeptName.includes('博士') || currentDeptName.includes('碩士') || currentDeptName.includes('在職專班') || currentDeptName.includes('國際學生專班') || currentDeptName.includes('菁英班') || currentDeptName.includes('學位學程') || currentDeptName.includes('能源電池科技專班'))">，並須<b>任選一個學分學程（跨領域或第二專長）</b></span>才能畢業。
 							</div>
 							<div class="item">點擊各分類即可展開該分類課程。</div>
 							<div class="item">欲選課前切換<b>「欲選課學期」</b>，即可查看該學期是否有開課。</div>
@@ -152,8 +152,8 @@
 														課程說明 <span class="ts-icon is-circle-info-icon"></span>
 													</span>
 													<template v-else-if="rule_item.remark && rule_item.remark.trim() != ''">
-														<span v-if="rule_item.remark.trim().length > 60" @click.stop="showInfo(rule_item.name, rule_item.remark)">
-															{{ rule_item.remark.trim().substring(0, 60) + '...' }}
+														<span v-if="rule_item.remark.trim().length > 50" @click.stop="showInfo(rule_item.name, rule_item.remark)">
+															{{ rule_item.remark.trim().substring(0, 50) + '...' }}
 															<span class="ts-icon is-circle-info-icon"></span>
 														</span>
 														<span v-else>
@@ -182,6 +182,54 @@
 								(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
 						</div>
+					</div>
+
+					<div class="ts-box has-vertically-spaced-large" v-if="rule.guide" v-for="guide_type in rule.guide">
+						<div class="ts-content is-tertiary is-dense">
+							修課指引 - {{ guide_type.name }}
+							<div class="ts-text is-description" v-if="guide_type.req.length >= 6">
+								{{ guide_type.req }}
+							</div>
+							<div class="ts-text is-description" v-if="guide_type.remark.length >= 6">
+								備註：{{ guide_type.remark }}
+							</div>
+						</div>
+						<template v-for="guide_subtype in guide_type.data">
+							<div class="ts-content is-secondary is-dense rule_subtype_name"
+								@click="guide_subtype.show = !guide_subtype.show">
+								・
+								{{ guide_subtype.name }}
+								<span class="ts-icon" :class="{ 'is-angle-down-icon': !guide_subtype.show, 'is-angle-up-icon': guide_subtype.show }"></span>
+							</div>
+							<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
+								<div v-show="guide_subtype.show" class="rule_subtype">
+									<table class="ts-table">
+										<tbody>
+											<tr v-for="rule_item in guide_subtype.data" :class="{'is-not-clickable':findCourses(rule_item.id).length == 0}" @click="showFindCourse(rule_item.id)">
+												<td>{{ rule_item.name }}</td>
+												<td>{{ rule_item.term }}</td>
+												<td>{{ rule_item.credit }} 學分</td>
+												<td class="ts-text is-description">
+													<template v-if="courses && findCourses(rule_item.id).length >= 1">
+														{{ findCourses(rule_item.id).length }} 門相符課程
+														<span class="ts-icon is-angle-right-icon"></span>
+													</template>
+												</td>
+												<td class="r-remark">
+													<span v-if="rule_item.remark.trim().length > 50" @click.stop="showInfo(rule_item.name, rule_item.remark)">
+														{{ rule_item.remark.trim().substring(0, 50) + '...' }}
+														<span class="ts-icon is-circle-info-icon"></span>
+													</span>
+													<span v-else>
+														{{ rule_item.remark }}
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</transition>
+						</template>
 					</div>
 					<div class="ts-box has-vertically-spaced-large" v-if="rule.remark && rule.remark.length > 0">
 						<div class="ts-content" id="remark">
@@ -417,6 +465,7 @@ export default {
 
 			rules: {},
 			rule: {},
+			guide: [],
 			terms: [],
 			years: [],
 			allAourses: [],
@@ -549,6 +598,12 @@ export default {
 			this.rule.data.forEach(rule_type => {
 				rule_type.data.forEach(rule_subtype => {
 					this.$set(rule_subtype, 'show', false);
+				});
+			});
+			if(!this.rule.guide) return;
+			this.rule.guide.forEach(guide_type => {
+				guide_type.data.forEach(guide_subtype => {
+					this.$set(guide_subtype, 'show', false);
 				});
 			});
 		},
