@@ -24,6 +24,9 @@
 				<div class="ts-text is-description">更多功能</div>
 			</div>
 			<div class="ts-menu is-start-icon">
+				<NuxtLink to="/guide" class="item">
+					<span class="ts-icon is-clipboard-check-icon"></span> 選課指南
+				</NuxtLink>
 				<NuxtLink to="/info" class="item">
 					<span class="ts-icon is-clock-icon"></span> 選課時間及說明
 					<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="showInfoRedDot"></div>
