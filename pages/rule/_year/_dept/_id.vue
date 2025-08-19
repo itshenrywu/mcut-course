@@ -198,7 +198,10 @@
 							<div class="ts-content is-secondary is-dense rule_subtype_name"
 								@click="guide_subtype.show = !guide_subtype.show">
 								・
-								{{ guide_subtype.name }}
+								{{ guide_subtype.name?.replace(/\(.*?\)/g, "") }}
+								<span class="ts-badge is-small is-dense is-start-spaced is-outlined" v-if="guide_subtype.name?.match(/\((.*?)\)/)">
+									{{ [...guide_subtype.name.matchAll(/\((.*?)\)/g)].map(m => m[1]).join(', ').replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
+								</span>
 								<span class="ts-icon" :class="{ 'is-angle-down-icon': !guide_subtype.show, 'is-angle-up-icon': guide_subtype.show }"></span>
 							</div>
 							<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
