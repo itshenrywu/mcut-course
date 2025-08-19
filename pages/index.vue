@@ -94,18 +94,18 @@
 							</div>
 						</div>
 						<div class="column is-4-wide tablet-half">
-							<div class="ts-box" @click="goDetailSearch('通識', '社會科學')" :class="{'locked': isLocked('通識', '社會科學')}">
+							<div class="ts-box" @click="goDetailSearch('通識', '社會研究與未來趨勢,社會科學')" :class="{'locked': isLocked('通識', '社會研究與未來趨勢,社會科學')}">
 								<div class="ts-content">
-									<div class="ts-header">社會科學</div>
+									<div class="ts-header">{{ currentTerm.split('-')[0] >= 112 ? '社會研究與未來趨勢' : '社會科學' }}</div>
 									<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
 								</div>
 								<div class="symbol"><span class="ts-icon is-users-icon"></span></div>
 							</div>
 						</div>
 						<div class="column is-4-wide tablet-half">
-							<div class="ts-box" @click="goDetailSearch('通識', '自然科學')" :class="{'locked': isLocked('通識', '自然科學')}">
+							<div class="ts-box" @click="goDetailSearch('通識', '自然科學與環境永續,自然科學')" :class="{'locked': isLocked('通識', '自然科學與環境永續,自然科學')}">
 								<div class="ts-content">
-									<div class="ts-header">自然科學</div>
+									<div class="ts-header">{{ currentTerm.split('-')[0] >= 112 ? '自然科學與環境永續' : '自然科學' }}</div>
 									<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
 								</div>
 								<div class="symbol"><span class="ts-icon is-seedling-icon"></span></div>
@@ -305,7 +305,18 @@ export default {
 			else if(type == '通識') {
 				localStorage['dept'] = '通識中心四技';
 				localStorage['class'] = '';
-				localStorage['type'] = '- '+subtype;
+				localStorage['type'] = '';
+				subtype.split(',').forEach(sub => {
+					if(this.courses.some(course => course.otherinfo?.includes(sub))) localStorage['type'] = '- ' + sub;
+				});
+				if(localStorage['type'] == '') {
+					this.$swal({
+						icon: 'error',
+						title: '這個學期還沒有開設此類課程',
+						text: '請切換學期或改天再試'
+					});
+					return;
+				}
 			}
 			else if (type == '社會實踐') {
 				localStorage['dept'] = '通識中心四技';
@@ -335,7 +346,7 @@ export default {
 			if(type == '體育' && this.currentTerm.split('-')[0] <= 110) return true;
 
 			if(type == '社會實踐' && this.courses.filter(course => course.dept == '通識中心四技' && course.id.includes('00700F')).length == 0) return true;
-			if(type == '通識' && this.courses.filter(course => course.dept == '通識中心四技' && course.otherinfo && course.otherinfo.includes(subtype)).length == 0) return true;
+			if(type == '通識' && this.courses.filter(course => course.dept == '通識中心四技' && course.otherinfo && subtype.split(',').some(sub => course.otherinfo.includes(sub))).length == 0) return true;
 
 			return false;
 		},

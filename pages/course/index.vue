@@ -367,7 +367,21 @@ export default {
 			}
 			if(this.currentType == undefined && this.currentDept.includes('通識')) this.currentType = '選修';
 			if (this.currentType !== '') {
-				filtered = filtered.filter(course => course.type === this.currentType || course.otherinfo === this.currentType.split('- ')[1]);
+				filtered = filtered.filter(course => {
+					if(course.type === this.currentType) return true;
+					else if(this.currentType.includes('-') && course.otherinfo) {
+						if(
+							(course.otherinfo.includes('社會研究與未來趨勢') || course.otherinfo.includes('社會科學')) &&
+							(this.currentType.split('- ')[1] == '社會研究與未來趨勢' || this.currentType.split('- ')[1] == '社會科學')
+						) return true;
+						else if(
+							(course.otherinfo.includes('自然科學與環境永續') || course.otherinfo.includes('自然科學')) &&
+							(this.currentType.split('- ')[1] == '自然科學與環境永續' || this.currentType.split('- ')[1] == '自然科學')
+						) return true;
+						else if(course.otherinfo == this.currentType.split('- ')[1]) return true;
+					}
+					return false;
+				});
 			}
 			if (this.showConflict == 0) {
 				filtered = filtered.filter(course => !this.isConflicted(course));
