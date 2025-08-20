@@ -34,7 +34,7 @@ export default async () => {
 				{ rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
 				{ rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
 				{ rel: 'manifest', href: '/site.webmanifest' },
-				{ rel: 'stylesheet', 'href': '/css/tocas.min.css?v=20250807' },
+				{ rel: 'stylesheet', 'href': '/css/tocas.min.css?v=20250820' },
 				{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.min.css'},
 			],
 			script: [

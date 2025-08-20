@@ -237,10 +237,10 @@
 												</td>
 												<td>
 													<b v-html="s[3]"></b>
-													<div class="ts-text is-description" v-html="s[4]"></div>
-													<div class="ts-text is-secondary" v-if="s[5]" v-html="'作業：' + s[5]">
+													<div class="ts-text is-description" v-html="s[5]"></div>
+													<div class="ts-text is-secondary" v-if="s[4]" v-html="`<span class='ts-chip is-outlined'>作業</span> ` + s[4]">
 													</div>
-													<div class="ts-text is-secondary" v-if="s[6]" v-html="'備註：' + s[6]">
+													<div class="ts-text is-secondary" v-if="s[6]" v-html="`<span class='ts-chip is-outlined'>備註</span> ` + s[6]">
 													</div>
 												</td>
 											</tr>
@@ -325,6 +325,13 @@
 #office_time tbody tr td:first-child {
 	width: 1px;
 	font-weight: normal;
+}
+
+#page-course .ts-chip {
+	padding: 0rem .35rem;
+	line-height: 1;
+	font-size: var(--ts-font-size-11px);
+	margin-top: -.2rem
 }
 
 @media screen and (max-width: 767.98px) {
