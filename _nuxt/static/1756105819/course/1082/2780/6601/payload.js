@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2780/6601", (function(a,b){return {data:[{course:{time:[[b,"1~1"],[a,"5~6"]],id:"108227806601",name:"細胞組織培養",type:"選修",dept:"化工系生工碩士班",year:b,class:"甲",teacher:"劉昭麟",credit:a,hour:a,max:"20",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

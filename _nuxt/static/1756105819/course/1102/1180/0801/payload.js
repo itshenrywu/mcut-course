@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1180/0801", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"110211800801",name:"組織工程",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"王琪芸",credit:a,hour:a,classroom:"",max:"12",min:"5",comment:"English-taught course，與生醫暨醫材博班併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

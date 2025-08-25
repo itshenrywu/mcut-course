@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1174/4101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109111744101",name:"基本感測實驗",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"梁晶煒",credit:"1",hour:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

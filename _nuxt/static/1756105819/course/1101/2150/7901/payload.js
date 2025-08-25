@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2150/7901", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~8"],["4","1~4"]],id:"110121507901",name:"生產管理(含實習)",type:"重修",dept:"四技工管系",year:b,class:"重",teacher:"陳琨太",credit:b,hour:"5",classroom:"",max:"50",min:"10",comment:"帶狀課程：上課時間為7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

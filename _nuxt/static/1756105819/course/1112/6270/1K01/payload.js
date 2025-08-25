@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/6270/1K01", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"111262701K01",name:"英文閱讀與聽力訓練（二）",type:"選修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"馬耀祖",credit:"0.5",hour:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

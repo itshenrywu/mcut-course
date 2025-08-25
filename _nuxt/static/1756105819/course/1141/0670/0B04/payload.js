@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0670/0B04", (function(a,b){return {data:[{course:{time:[["5","3~4"]],id:"114106700B04",name:"體育(三)桌球",type:"必修",dept:"體育組-四技(日)",year:a,class:"甲",teacher:"林宜欣",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

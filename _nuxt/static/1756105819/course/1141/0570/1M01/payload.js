@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0570/1M01", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"114105701M01",name:"北台灣水鳥觀察及調查",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳志霖",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"自然科學與環境永續"}}],fetch:{},mutations:[]}}("2","")));

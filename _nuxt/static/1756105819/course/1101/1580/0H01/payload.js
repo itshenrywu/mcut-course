@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1580/0H01", (function(a){return {data:[{course:{time:[["2","6~8"]],id:"110115800H01",name:"系統監視與效能分析",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"謝筱齡",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

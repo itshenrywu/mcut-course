@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/6270/1U01", (function(a){return {data:[{course:{time:[["4","6~6"],["5","1~2"]],id:"112162701U01",name:"進階Python程式設計",type:"選修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"高黃江",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

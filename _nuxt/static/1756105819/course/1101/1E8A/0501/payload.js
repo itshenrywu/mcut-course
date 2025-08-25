@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1E8A/0501", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"11011E8A0501",name:"熱流量測與分析",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"張國棟",credit:a,hour:a,classroom:b,max:"12",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

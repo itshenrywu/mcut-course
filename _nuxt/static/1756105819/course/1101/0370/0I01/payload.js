@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0370/0I01", (function(a,b){return {data:[{course:{time:[["4","9~10"]],id:"110103700I01",name:"AI與法律",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"蔡孟彥",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2","")));

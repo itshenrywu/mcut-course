@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1872/0501", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"108218720501",name:"材料製程概論",type:"選修",dept:"四技材工系",year:"1",class:"甲",teacher:"蕭育生",credit:a,hour:a,max:"50",min:"10",comment:"材一甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1623", (function(a){return {data:[{course:{time:[["7","8~8"]],id:"114200701623",name:"工讀實務實習(二)",type:"必修",dept:"四技工管系",year:"3",class:"乙",teacher:"張秉裕",credit:"4",hour:"40",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

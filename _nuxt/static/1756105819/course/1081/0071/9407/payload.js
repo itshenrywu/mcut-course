@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/9407", {data:[{course:{time:[["5","3~4"]],id:"108100719407",name:"全民國防教育軍事訓練(一)",type:"必修",dept:"四技視傳系",year:"1",class:"甲",teacher:"李大偉",credit:"0",hour:"2",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/6270/0E01", (function(a,b){return {data:[{course:{time:[["1","5~6"]],id:"112162700E01",name:"工程機率與統計(一)",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"劉弘一",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

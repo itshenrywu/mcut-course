@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3370/0T01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114133700T01",name:"視覺設計理論與實務",type:"必修",dept:"四技視傳系",year:a,class:"甲",teacher:"李淑珠",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2070/2901", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"114120702901",name:"能源材料與製程導論",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"黃文澤",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"第二專長(本系可修)；Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

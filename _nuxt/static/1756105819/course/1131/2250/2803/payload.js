@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2250/2803", (function(a,b){return {data:[{course:{time:[[a,"5~5"],["2","6~7"]],id:"113122502803",name:"服務業管理",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"楊南進",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

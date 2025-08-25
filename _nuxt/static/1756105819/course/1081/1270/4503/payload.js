@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1270/4503", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"108112704503",name:"專題製作(二)",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"吳啟耀",credit:"1",hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

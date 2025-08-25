@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/12C0/1T01", (function(a,b){return {data:[{course:{time:[["6","2~4"]],id:"111112C01T01",name:"物聯網",type:"選修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"謝飛虎",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
