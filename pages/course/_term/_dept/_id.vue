@@ -26,10 +26,10 @@
 							<button class="ts-button is-start-icon is-secondary is-negative is-disabled" v-if="isConflicted()">
 								<span class="ts-icon is-triangle-exclamation-icon"></span>衝堂
 							</button>
-							<button class="ts-button is-start-icon" v-else-if="savedCourse.includes(course.id)" @click="saveCourse()">
+							<button class="ts-button is-start-icon" v-else-if="savedCourse.includes(course.id)" @click="saveCourse(0)">
 								<span class="ts-icon is-star-icon"></span>已收藏
 							</button>
-							<button class="ts-button is-start-icon is-secondary" v-else @click="saveCourse()">
+							<button class="ts-button is-start-icon is-secondary" v-else @click="saveCourse(1)">
 								<span class="ts-icon is-regular is-star-icon"></span>收藏
 							</button>
 						</template>
@@ -586,8 +586,9 @@ export default {
 				}
 			});
 		},
-		async saveCourse() {
-			if (this.savedCourse.includes(this.course.id)) {
+		async saveCourse(save) {
+			this.savedCourse = await this.$store.dispatch('getSavedCourse');
+			if (!save) {
 				this.savedCourse = this.savedCourse.filter(item => item !== this.course.id);
 				this.$swal({
 					title: '已取消收藏「' + this.course.name + '」', icon: 'success', toast: true,

@@ -14,6 +14,7 @@ export const mutations = {
 				localStorage['savedCourseSync'] = res.data.updatedAt;
 			});
 		}
+		savedCourse = Array.from(new Set(savedCourse));
 		localStorage['savedCourse'] = JSON.stringify(savedCourse || []);
 		state.savedCourse = savedCourse;
 	}
