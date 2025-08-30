@@ -265,7 +265,6 @@
 											<template v-else>
 												<div
 													v-for="course in processedSchedule[w].courses"
-													:key="course.id"
 													:class="['course-block', course.className]"
 													:style="course.style"
 													@click="showCourse(course)"
@@ -466,7 +465,6 @@ export default {
 			showMobileSidebar: false,
 
 			displayType: '',
-			maxEndSection: 12,
 		}
 	},
 	async mounted() {
@@ -632,8 +630,7 @@ export default {
 		},
 		processedSchedule() {
 			const schedule = {};
-			const
-			days = Object.keys(this.coursesByStartTime);
+			const days = Object.keys(this.coursesByStartTime);
 
 			for (const day of days) {
 				if (!this.coursesByStartTime[day]) continue;
@@ -719,6 +716,17 @@ export default {
 
 			return schedule;
 		},
+		maxEndSection: function() {
+			if(this.currentClass == '') return 8;
+			let maxSection = 0;
+			this.filteredCourses.forEach(course => {
+				course.time.forEach(time => {
+					let endSection = Number(time[1].split('~')[1]);
+					if (endSection > maxSection) maxSection = endSection;
+				});
+			});
+			return maxSection;
+		}
 	},
 	methods: {
 		...mapMutations(['setSavedCourse']),
