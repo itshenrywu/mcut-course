@@ -142,8 +142,8 @@
 							</label>
 						</div>
 					</div>
-					<div class="ts-box has-bottom-spaced">
-						<table class="ts-table course-table" v-if="displayType == '1'">
+					<div v-if="displayType == '1'" class="ts-box has-bottom-spaced">
+						<table class="ts-table course-table">
 							<thead>
 								<tr>
 									<th>開課單位/班級</th>
@@ -236,35 +236,37 @@
 								</template>
 							</tbody>
 						</table>
-						<table v-else class="ts-table is-dense is-celled is-definition timetable" :class="{ 'showSat': coursesByStartTime[6] && currentClass }">
-							<thead>
-								<tr>
-									<th class="time-header"></th>
-									<th v-for="w in 6" :key="'header-' + w">{{ week_text(w).replace(/\(|\)/g,'') }}</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="time-column">
-										<div
-											v-for="section in time_section"
-											v-if="section <= maxEndSection"
-											:key="section"
-											class="time-slot">
-											{{ section }}
-										</div>
-									</td>
-									<td v-for="w in 6" :key="'day-' + w" class="day-column">
-										<template v-if="processedSchedule[w]">
+					</div>
+					<template v-else>
+						<div class="ts-box has-bottom-spaced">
+							<table class="ts-table is-dense is-celled is-definition timetable" :class="{ 'showSat': coursesByStartTime[6] && currentClass }">
+								<thead>
+									<tr>
+										<th class="time-header"></th>
+										<th v-for="w in 6" :key="'header-' + w">{{ week_text(w).replace(/\(|\)/g,'') }}</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="time-column">
+											<div
+												v-for="section in time_section"
+												v-if="section <= maxEndSection"
+												:key="section"
+												class="time-slot">
+												{{ section }}
+											</div>
+										</td>
+										<td v-for="w in 6" :key="'day-' + w" class="day-column">
 											<template v-if="!currentClass">
-												<div v-if="w==3" style="margin-left: -300%; width: 700%; font-size: 1.2rem">請先選擇開課單位及班級以使用課表檢視，或用列表檢視</div>
+												<div v-if="w==3" style="margin-left: -300%; width: 700%; font-size: 1.2rem">請先選擇開課單位及班級以使用課表檢視，或改用列表檢視</div>
 											</template>
-											<div v-else-if="processedSchedule[w].tooManyOverlaps" class="overlap-warning">
+											<div v-else-if="processedSchedule[w]?.tooManyOverlaps" class="overlap-warning">
 												該天有過多重疊課程，<br>請改用列表檢視
 											</div>
 											<template v-else>
 												<div
-													v-for="course in processedSchedule[w].courses"
+													v-for="course in processedSchedule[w]?.courses"
 													:class="['course-block', course.className]"
 													:style="course.style"
 													@click="showCourse(course)"
@@ -275,12 +277,28 @@
 													</div>
 												</div>
 											</template>
-										</template>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<br>
+						<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="filteredCourses.length > 0 && showAd">
+							<div class="ts-content">
+								<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelector('.ad .ts-content').innerHTML='<div class=&quot;ts-text is-description has-bottom-padded-small&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned has-vertically-padded&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>';"></script>
+								<ins class="adsbygoogle"
+									style="display:block; text-align:center;"
+									data-ad-layout="in-article"
+									data-ad-format="fluid"
+									data-ad-client="ca-pub-5900703871265800"
+									data-ad-slot="3164180037"></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+						</div>
+					</template>
 				</template>
 				<div class="ts-blankslate" v-else-if="courses.length == 0">
 					<span class="ts-icon is-circle-exclamation-icon"></span>
@@ -390,7 +408,7 @@
 
 .day-column {
 	position: relative;
-	padding: 0;
+	padding: 0 .25rem !important;
 }
 
 .course-block {
@@ -417,6 +435,10 @@
 @media (max-width: 767.98px) {
 	.course-block {
 		font-size: .7rem;
+	}
+
+	.overlap-warning {
+		font-size: .8rem;
 	}
 }
 </style>
@@ -718,7 +740,7 @@ export default {
 		},
 		maxEndSection: function() {
 			if(this.currentClass == '') return 8;
-			let maxSection = 0;
+			let maxSection = 8;
 			this.filteredCourses.forEach(course => {
 				course.time.forEach(time => {
 					let endSection = Number(time[1].split('~')[1]);
