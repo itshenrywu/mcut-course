@@ -70,7 +70,7 @@
 					<label class="item">
 						<input type="radio" name="displayType" v-model="displayType" value="1"
 							@change="changeDisplayType()">
-						<div class="text">表格檢視</div>
+						<div class="text">列表檢視</div>
 					</label>
 				</div>
 			</div>
@@ -156,7 +156,7 @@
 					<thead>
 						<tr>
 							<th>&nbsp;</th>
-							<th v-for="w in 6">{{ week_text(w) }}</th>
+							<th v-for="w in 6">{{ week_text(w).replace(/\(|\)/g,'') }}</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -170,7 +170,10 @@
 										'is-gray': coursesByStartTime[w][section][0].type == '重修',
 									}"
 									@click="showCourse(coursesByStartTime[w][section][0])" :style="{'height': (coursesByStartTime[w][section][0].period * 3.5) - .7 + 'rem'}">
-									<div>{{ coursesByStartTime[w][section][0].name }}</div>
+									<div>
+										{{ coursesByStartTime[w][section][0].name }}
+										<small v-if="!coursesByStartTime[w][section][0]?.teacher?.includes('分班')"><br>{{ coursesByStartTime[w][section][0].teacher }}</small>
+									</div>
 								</div>
 							</td>
 						</tr>
@@ -231,7 +234,6 @@
 }
 
 .course-timetable td {
-	font-size: 12px !important;
 	line-height: 1rem;
 	padding: 0;
 	height: 3.5rem !important;
@@ -267,6 +269,10 @@
 }
 
 @media (max-width: 767.98px) {
+	.course-timetable td {
+		font-size: 12px !important;
+	}
+
 	#page-saved .ts-grid .column.mobile-fluid .ts-button {
 		width: calc(50% - .5rem);
 	}

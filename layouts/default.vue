@@ -249,6 +249,50 @@ h1 {
 	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
 }
 
+.is-light .timetable .is-orange,
+.is-light .course-timetable .is-orange {
+	background-color: hsl(24, 100%, 95%);
+	color: var(--ts-gray-700);
+	text-shadow: none;
+}
+
+.is-light .timetable .is-green,
+.is-light .course-timetable .is-green {
+	background-color: hsl(157, 92%, 95%);
+	color: var(--ts-gray-700);
+	text-shadow: none;
+}
+
+.is-light .timetable .is-gray,
+.is-light .course-timetable .is-gray {
+	background-color: hsl(0, 0%, 95%);
+	color: var(--ts-gray-700);
+	text-shadow: none;
+}
+
+@media (prefers-color-scheme: light) {
+	.timetable .is-orange,
+	.course-timetable .is-orange {
+		background-color: hsl(24, 100%, 95%);
+		color: var(--ts-gray-700);
+		text-shadow: none;
+	}
+
+	.timetable .is-green,
+	.course-timetable .is-green {
+		background-color: hsl(157, 92%, 95%);
+		color: var(--ts-gray-700);
+		text-shadow: none;
+	}
+
+	.timetable .is-gray,
+	.course-timetable .is-gray {
+		background-color: hsl(0, 0%, 95%);
+		color: var(--ts-gray-700);
+		text-shadow: none;
+	}
+}
+
 .is-red {
 	background-color: hsl(345, 77%, 67%);
 	color: #FFF;
@@ -601,14 +645,6 @@ h1 {
 		overflow: visible;
 	}
 
-	.ts-button {
-		display: none;
-	}
-
-	.ts-app-layout.is-fullscreen .navbar {
-		display: none;
-	}
-
 	.print-only {
 		display: block;
 		text-align: center;
@@ -616,15 +652,12 @@ h1 {
 	}
 
 	.course-table td.c-action,
-	.ts-selection {
-		display: none;
-	}
-
-	.ad {
-		display: none;
-	}
-
-	.ts-statistic .ts-icon.is-circle-info-icon {
+	.ts-selection,
+	.ad,
+	.ts-statistic .ts-icon.is-circle-info-icon,
+	.button-fab,
+	.ts-app-layout.is-fullscreen .navbar,
+	.ts-button {
 		display: none;
 	}
 }

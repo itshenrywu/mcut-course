@@ -19,7 +19,7 @@ export default function ({ $axios, app }) {
 			if (res.isConfirmed) {
 				location.reload();
 			} else {
-				window.open('https://line.me/R/ti/p/%40221oslxd');
+				window.open('https://forms.gle/LrykpuGU9AL92svA6?openExternalBrowser=1');
 			}
 		});
 		return Promise.reject(error);
