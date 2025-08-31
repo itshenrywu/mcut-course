@@ -37,10 +37,6 @@
 				<NuxtLink to="/calendar" class="item">
 					<span class="ts-icon is-calendar-days-icon"></span> 行事曆
 				</NuxtLink>
-				<NuxtLink to="/remove-ad" class="item" v-if="profileImage && profileName && showAd">
-					<span class="ts-icon is-wand-magic-sparkles-icon"></span> 移除廣告
-					<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="showRemoveAdRedDot"></div>
-				</NuxtLink>
 			</div>
 			<div class="ts-content has-top-spaced">
 				<div class="ts-text is-description">說明及支援</div>
