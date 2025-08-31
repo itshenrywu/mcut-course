@@ -238,6 +238,12 @@
 						</table>
 					</div>
 					<template v-else>
+						<div class="ts-box has-bottom-spaced" v-if="!currentClass || !currentDept">
+							<div class="ts-content">
+								<span class="ts-text is-negative is-bold">課表檢視無法在此搜尋條件下使用</span><br>
+								請先選擇開課單位及班級以使用課表檢視，或改用列表檢視。
+							</div>
+						</div>
 						<div class="ts-box has-bottom-spaced">
 							<table class="ts-table is-dense is-celled is-definition timetable" :class="{ 'showSat': coursesByStartTime[6] && currentClass }">
 								<thead>
@@ -258,24 +264,23 @@
 											</div>
 										</td>
 										<td v-for="w in 6" :key="'day-' + w" class="day-column">
-											<template v-if="!currentClass">
-												<div v-if="w==3" style="margin-left: -300%; width: 700%; font-size: 1.2rem">請先選擇開課單位及班級以使用課表檢視，或改用列表檢視</div>
-											</template>
-											<div v-else-if="processedSchedule[w]?.tooManyOverlaps" class="overlap-warning">
-												該天有過多重疊課程，<br>請改用列表檢視
-											</div>
-											<template v-else>
-												<div
-													v-for="course in processedSchedule[w]?.courses"
-													:class="['course-block', course.className]"
-													:style="course.style"
-													@click="showCourse(course)"
-													>
-													<div>
-														{{ course.name }}
-														<small v-if="!course?.teacher?.includes('分班')"><br />{{ course.teacher }}</small>
-													</div>
+											<template v-if="currentClass">
+												<div v-if="processedSchedule[w]?.tooManyOverlaps" class="overlap-warning">
+													該天有過多重疊課程，<br>請改用列表檢視
 												</div>
+												<template v-else>
+													<div
+														v-for="course in processedSchedule[w]?.courses"
+														:class="['course-block', course.className]"
+														:style="course.style"
+														@click="showCourse(course)"
+														>
+														<div>
+															{{ course.name }}
+															<small v-if="!course?.teacher?.includes('分班')"><br />{{ course.teacher }}</small>
+														</div>
+													</div>
+												</template>
 											</template>
 										</td>
 									</tr>
@@ -433,12 +438,17 @@
 }
 
 @media (max-width: 767.98px) {
+	.timetable th,
+	.time-slot {
+		font-size: .8rem;
+	}
+
 	.course-block {
-		font-size: .7rem;
+		font-size: .75rem;
 	}
 
 	.overlap-warning {
-		font-size: .8rem;
+		font-size: .7rem;
 	}
 }
 </style>
