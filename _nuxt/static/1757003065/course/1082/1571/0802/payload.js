@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1571/0802", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"108215710802",name:"程式設計與資料結構實務",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"林義楠",credit:b,hour:b,max:"50",min:"10",comment:"甲乙合班授課，系統模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

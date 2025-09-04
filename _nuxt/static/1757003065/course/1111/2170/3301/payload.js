@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2170/3301", (function(a){return {data:[{course:{time:[[a,"6~8"],["5","2~4"]],id:"111121703301",name:"企業倫理",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"林俊雄",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"帶狀課程：上課時間為7\u002F4-9\u002F2",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

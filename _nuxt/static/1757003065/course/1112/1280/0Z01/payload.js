@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1280/0Z01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"111212800Z01",name:"天線設計",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"古家豪",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/2L01", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"114111702L01",name:"數控工具機與實務",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"胡力元",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

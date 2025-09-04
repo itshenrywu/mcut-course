@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/2Y01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"114122702Y01",name:"創新管理",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"林晋寬",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

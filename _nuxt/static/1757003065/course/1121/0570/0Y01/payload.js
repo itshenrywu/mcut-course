@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0570/0Y01", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"112105700Y01",name:"自然科學概論",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳志霖",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"自然科學與環境永續"}}],fetch:{},mutations:[]}}("2","")));

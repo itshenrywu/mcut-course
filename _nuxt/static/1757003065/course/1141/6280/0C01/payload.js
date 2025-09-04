@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6280/0C01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114162800C01",name:"基礎程式設計(C++)",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"劉城甫",credit:b,hour:b,classroom:"",max:"50",min:a,comment:"TAICA-陽明交大開課。",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

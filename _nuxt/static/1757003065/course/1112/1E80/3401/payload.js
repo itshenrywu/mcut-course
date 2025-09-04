@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1E80/3401", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"11121E803401",name:"書報討論(二)",type:"必修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"胡志中",credit:"0",hour:a,classroom:b,max:"28",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

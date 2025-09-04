@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0070/0015", (function(a){return {data:[{course:{time:[["2","0.5~0.5"]],id:"109200700015",name:"設計思考",type:"必修",dept:"四技視傳系",year:a,class:"甲",teacher:"楊朝明",credit:a,classroom:"",max:"56",min:"10",comment:"上課日期:110\u002F03\u002F13~14",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

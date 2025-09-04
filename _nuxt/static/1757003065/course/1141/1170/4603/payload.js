@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/4603", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"114111704603",name:"熱傳學",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"陳明光",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

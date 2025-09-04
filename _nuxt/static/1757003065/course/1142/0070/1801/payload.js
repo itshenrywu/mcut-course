@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1801", (function(a){return {data:[{course:{time:[["7","10~10"]],id:"114200701801",name:"工讀實務實習(四)",type:"必修",dept:"四技電機系",year:"3",class:"乙",teacher:"楊超舜",credit:"4",hour:"40",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

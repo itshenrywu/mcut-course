@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6280/0E01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"114162800E01",name:"電腦視覺實務與深度學習",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"李建興",credit:b,hour:b,classroom:"",max:"50",min:a,comment:"TAICA-台大,限大四碩士,修課限制詳教務處",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

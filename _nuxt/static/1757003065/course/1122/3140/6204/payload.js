@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3140/6204", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"112231406204",name:"基本產品設計",type:"必修",dept:"四技工設系",year:"1",class:"乙",teacher:"江潤華",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

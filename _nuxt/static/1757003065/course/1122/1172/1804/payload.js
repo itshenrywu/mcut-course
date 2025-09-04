@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1172/1804", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"112211721804",name:"工程數學(一)",type:"重修",dept:"四技機械系",year:a,class:"重",teacher:"楊岳儒",credit:b,hour:b,classroom:c,max:"60",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

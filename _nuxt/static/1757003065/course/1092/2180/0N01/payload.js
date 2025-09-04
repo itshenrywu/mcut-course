@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2180/0N01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109221800N01",name:"高等類神經網路",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"陳思翰",credit:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

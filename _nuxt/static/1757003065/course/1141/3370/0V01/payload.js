@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3370/0V01", (function(a,b){return {data:[{course:{time:[["1","5~7"]],id:"114133700V01",name:"電影解析與行銷",type:"選修",dept:"四技視傳系",year:"4",class:"甲",teacher:"朱賢哲",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

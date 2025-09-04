@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0622", (function(a,b){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"111200700622",name:"勤勞教育(二)",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"崔砢",credit:"0",hour:"0.5",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0470/0410", (function(a,b){return {data:[{course:{time:[["2","3~4"],["4","4~4"]],id:"112104700410",name:"微積分(一)",type:"必修",dept:"四技機械系",year:"1",class:"甲",teacher:"蔡宗謀",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

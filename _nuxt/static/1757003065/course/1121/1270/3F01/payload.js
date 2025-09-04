@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1270/3F01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"112112703F01",name:"天線實務",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"古家豪",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

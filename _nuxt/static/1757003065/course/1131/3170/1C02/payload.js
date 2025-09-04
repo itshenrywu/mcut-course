@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3170/1C02", (function(a){return {data:[{course:{time:[[a,"6~8"],["5","1~3"]],id:"113131701C02",name:"APP應用程式設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"謝政道",credit:a,hour:a,classroom:"",max:"26",min:"10",comment:"帶狀課程：上課時間為7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

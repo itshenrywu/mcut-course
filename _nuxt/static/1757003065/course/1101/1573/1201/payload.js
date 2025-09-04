@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1573/1201", (function(a){return {data:[{course:{time:[["2","1~4"]],id:"110115731201",name:"Android應用程式開發實務",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"唐明中",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));
