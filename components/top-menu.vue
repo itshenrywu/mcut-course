@@ -111,9 +111,9 @@ export default {
 		});
 
 		this.$root.$on('checkRedDot', () => {
-			this.showRedDot = localStorage['clickInfo_' + process.env.REV] !== 'true' || (localStorage['auth_key'] && localStorage['clickRemoveAd'] !== 'true');
+			this.showRedDot = localStorage['clickInfo_' + process.env.REV] !== 'true';
 		});
-		this.showRedDot = localStorage['clickInfo_' + process.env.REV] !== 'true' || (localStorage['auth_key'] && localStorage['clickRemoveAd'] !== 'true');
+		this.showRedDot = localStorage['clickInfo_' + process.env.REV] !== 'true';
 
 		if(localStorage['auth_key']) this.profileImage = localStorage['profile_image'];
 		this.$root.$on('showProfileImage', (profileImage) => {
