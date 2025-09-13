@@ -47,6 +47,19 @@
 							</select>
 						</div>
 					</div>
+					<div v-if="currentRule != '-1'">
+						<div class="ts-text is-label has-bottom-padded-small">排序方式</div>
+						<div class="ts-wrap is-vertical is-compact">
+							<label class="ts-radio is-small">
+								<input name="ring" type="radio" v-model="term_sort" value="year_term" @change="changeTermSort()">
+								上 → 下學期，再依年級排序
+							</label>
+							<label class="ts-radio is-small">
+								<input name="ring" type="radio" v-model="term_sort" value="term" @change="changeTermSort()">
+								依年級、學期排序
+							</label>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -99,13 +112,14 @@
 					<div class="ts-content">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">注意事項</span>
 						<div class="ts-list is-ordered">
-							<div class="item">請先選擇<b>「入學學年度」</b>及<b>「入學系所/學程/組別」</b>。</div>
-							<div class="item">須修畢你的<b>「系所學程總表」</b><span
-									v-if="currentDeptName && !(currentDeptName.includes('博士') || currentDeptName.includes('碩士') || currentDeptName.includes('在職專班') || currentDeptName.includes('國際學生專班') || currentDeptName.includes('菁英班') || currentDeptName.includes('學位學程') || currentDeptName.includes('能源電池科技專班'))">，並須<b>任選一個學分學程（跨領域或第二專長）</b></span>才能畢業。
+							<div class="item">請先選擇<b>入學學年度</b>及<b>入學系所/學程/組別</b>。</div>
+							<div class="item">須修畢你的<b>系所學程總表</b><span
+								v-if="currentDeptName && !(currentDeptName.includes('博士') || currentDeptName.includes('碩士') || currentDeptName.includes('在職專班') || currentDeptName.includes('國際學生專班') || currentDeptName.includes('菁英班') || currentDeptName.includes('學位學程') || currentDeptName.includes('能源電池科技專班'))">，並須<b>任選一個學分學程（跨領域或第二專長）</b></span>才能畢業。
 							</div>
 							<div class="item">點擊各分類即可展開該分類課程。</div>
-							<div class="item">欲選課前切換<b>「欲選課學期」</b>，即可查看該學期是否有開課。</div>
-							<div class="item">此頁面僅提供<b>「畢業學分門檻」</b>，其他畢業門檻（如路跑、英文等）請見學校規定。</div>
+							<div class="item">欲選課前切換<b>欲選課學期</b>，即可查看該學期是否有開課。</div>
+							<div class="item">此頁面僅提供<b>畢業學分門檻</b>，其他畢業門檻（如路跑、英文等）請見學校規定。</div>
+							<div class="item" v-if="Object.keys(rules[currentYear]?.['跨領域'] || {})?.includes(currentRule)"><span class="ts-badge is-small is-dense is-primary">外系</span> 標示表示<b>非您所選的入學系所</b>的課程。此標示僅供參考，實際依照開課為準。</div>
 						</div>
 					</div>
 				</div>
@@ -138,7 +152,11 @@
 									<table class="ts-table">
 										<tbody>
 											<tr v-for="rule_item in rule_subtype.data" :class="{'is-not-clickable':findCourses(rule_item.id).length == 0}" @click="showFindCourse(rule_item.id)">
-												<td>{{ rule_item.name }}</td>
+												<td>
+													{{ rule_item.name }}
+													<span class="ts-badge is-small is-dense is-start-spaced is-primary" v-if="Object.keys(rules[currentYear]?.['跨領域'] || {})?.includes(currentRule) && rule_item.id.startsWith('AA')">外校</span>
+													<span class="ts-badge is-small is-dense is-start-spaced is-primary" v-else-if="Object.keys(rules[currentYear]?.['跨領域'] || {})?.includes(currentRule) && course_dept?.[rule_item.id]?.length > 0 && !course_dept?.[rule_item.id]?.includes(currentDept)">外系</span>
+												</td>
 												<td>{{ rule_item.term }}</td>
 												<td>{{ rule_item.credit }} 學分</td>
 												<td class="ts-text is-description">
@@ -152,8 +170,8 @@
 														課程說明 <span class="ts-icon is-circle-info-icon"></span>
 													</span>
 													<template v-else-if="rule_item.remark && rule_item.remark.trim() != ''">
-														<span v-if="rule_item.remark.trim().length > 50" @click.stop="showInfo(rule_item.name, rule_item.remark)">
-															{{ rule_item.remark.trim().substring(0, 50) + '...' }}
+														<span v-if="rule_item.remark.trim().length > 100" @click.stop="showInfo(rule_item.name, rule_item.remark)">
+															{{ rule_item.remark.trim().substring(0, 100) + '...' }}
 															<span class="ts-icon is-circle-info-icon"></span>
 														</span>
 														<span v-else>
@@ -209,7 +227,11 @@
 									<table class="ts-table">
 										<tbody>
 											<tr v-for="rule_item in guide_subtype.data" :class="{'is-not-clickable':findCourses(rule_item.id).length == 0}" @click="showFindCourse(rule_item.id)">
-												<td>{{ rule_item.name }}</td>
+												<td>
+													{{ rule_item.name }}
+													<span class="ts-badge is-small is-dense is-start-spaced is-primary" v-if="Object.keys(rules[currentYear]?.['跨領域'] || {})?.includes(currentRule) && rule_item.id.startsWith('AA')">外校</span>
+													<span class="ts-badge is-small is-dense is-start-spaced is-primary" v-else-if="Object.keys(rules[currentYear]?.['跨領域'] || {})?.includes(currentRule) && course_dept?.[rule_item.id]?.length > 0 && !course_dept?.[rule_item.id]?.includes(currentDept)">外系</span>
+												</td>
 												<td>{{ rule_item.term }}</td>
 												<td>{{ rule_item.credit }} 學分</td>
 												<td class="ts-text is-description">
@@ -219,8 +241,8 @@
 													</template>
 												</td>
 												<td class="r-remark">
-													<span v-if="rule_item.remark.trim().length > 50" @click.stop="showInfo(rule_item.name, rule_item.remark)">
-														{{ rule_item.remark.trim().substring(0, 50) + '...' }}
+													<span v-if="rule_item.remark.trim().length > 100" @click.stop="showInfo(rule_item.name, rule_item.remark)">
+														{{ rule_item.remark.trim().substring(0, 100) + '...' }}
 														<span class="ts-icon is-circle-info-icon"></span>
 													</span>
 													<span v-else>
@@ -325,6 +347,11 @@
 #page-rule tr.is-not-clickable:hover {
 	background-color: transparent;
 	cursor: default;
+}
+
+#page-rule .ts-badge.is-primary {
+	background-color: var(--ts-static-primary-600);
+	color: #FFF;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -477,6 +504,14 @@ export default {
 			notFound: false,
 
 			showMobileSidebar: false,
+
+			course_dept: {},
+
+			term_sort_key: {
+				year_term: ['一上', '二上', '三上', '四上', '一下', '二下', '三下', '四下'],
+				term: ['一上', '一下', '二上', '二下', '三上', '三下', '四上', '四下'],
+			},
+			term_sort: 'year_term',
 		};
 	},
 	head() {
@@ -539,6 +574,10 @@ export default {
 	methods: {
 		...mapMutations(['setSavedCourse']),
 		async init() {
+			this.$axios.get('https://api.mcut-course.com/rule/get_dept.php')
+			.then(res => {
+				this.course_dept = res.data;
+			});
 			if (this.$route.params.id) {
 				this.currentYear = this.$route.params.year;
 				this.currentDept = this.$route.params.dept;
@@ -551,6 +590,8 @@ export default {
 
 			if (this.terms.includes(localStorage['ruleTerm'])) this.currentRuleTerm = localStorage['ruleTerm'];
 			else if (this.terms.includes(localStorage['term'])) this.currentRuleTerm = localStorage['term'];
+			if (localStorage['term_sort']) this.term_sort = localStorage['term_sort'];
+			else this.term_sort = 'year_term';
 
 			if (this.currentRuleTerm == '') this.currentRuleTerm = this.terms[0];
 
@@ -596,21 +637,30 @@ export default {
 				});
 			this.changeTerm();
 		},
-		initializeShowProperty() {
+		initializeShowProperty(set_show = true) {
 			if(!this.rule || !this.rule.data) return;
 			this.rule.data.forEach(rule_type => {
 				rule_type.data.forEach(rule_subtype => {
-					this.$set(rule_subtype, 'show', false);
+					rule_subtype.data.sort((a, b) => {
+						return this.term_sort_key[this.term_sort].indexOf(a.term) - this.term_sort_key[this.term_sort].indexOf(b.term);
+					});
+					if(set_show) this.$set(rule_subtype, 'show', false);
 				});
 			});
 			if(!this.rule.guide) return;
 			this.rule.guide.forEach(guide_type => {
 				guide_type.data.forEach(guide_subtype => {
-					this.$set(guide_subtype, 'show', false);
+					if(set_show) this.$set(guide_subtype, 'show', false);
 				});
 			});
 		},
+		changeTermSort() {
+			this.initializeShowProperty(0);
+			localStorage['term_sort'] = this.term_sort;
+		},
 		formatRemark(remark) {
+			remark = remark.replace(/外系/g, '<span style="color: var(--ts-static-primary-600);">外系</span>');
+
 			let list_styles = [];
 			let rows = remark.split('\r\n');
 			let _rows = [];
