@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1380/1902", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"108113801902",name:"高等儀器分析",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"吳紹榮",credit:a,hour:a,max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

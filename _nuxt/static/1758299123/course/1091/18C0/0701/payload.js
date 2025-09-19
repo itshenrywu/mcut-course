@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/18C0/0701", (function(a,b){return {data:[{course:{time:[["5","7~8.5"]],id:"109118C00701",name:"機電整合實務",type:"選修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"蔡宜昌",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0370/0X01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"112103700X01",name:"性別與認同",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"于學正",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"修過「兩性關係」課程者，不得選修",otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2")));

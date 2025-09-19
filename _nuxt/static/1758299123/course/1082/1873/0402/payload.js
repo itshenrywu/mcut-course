@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1873/0402", (function(a,b,c){return {data:[{course:{time:[[b,a],[c,a],["4",a]],id:"108218730402",name:"綠色奈米資源學程實務專題",type:"選修",dept:"四技材工系",year:b,class:"甲",teacher:"黃啟賢",credit:"1",hour:c,max:"100",min:"10",comment:"材二甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("8.5~8.5","2","3")));

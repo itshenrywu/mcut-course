@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0670/0401", (function(a){return {data:[{course:{time:[["1","5~6"]],id:"109206700401",name:"體育(四)",type:"必修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"羅玉枝",credit:"0",classroom:a,max:"55",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

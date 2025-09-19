@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3180/0401", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"114131800401",name:"設計研究(一)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"謝國榮",credit:a,hour:a,classroom:b,max:"20",min:"無下限",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

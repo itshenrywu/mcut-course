@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1270/2C01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112212702C01",name:"物聯網應用實務",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"羅慶權",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

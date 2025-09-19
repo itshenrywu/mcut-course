@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/1G01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114130701G01",name:"專業實務講座",type:"必修",dept:"四技行設專班",year:"4",class:"乙",teacher:"沈明得",credit:"1",hour:"3",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

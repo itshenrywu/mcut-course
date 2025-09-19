@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/1E01", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"114111701E01",name:"計算機程式與實習",type:"必修",dept:"四技機械系",year:"1",class:"甲",teacher:"胡志中",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

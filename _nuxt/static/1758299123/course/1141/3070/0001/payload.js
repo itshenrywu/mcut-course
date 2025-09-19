@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/0001", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"114130700001",name:"創意整合(一)",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"楊朝明",credit:b,hour:b,classroom:"",max:"35",min:"10",comment:"甲乙合班；管設學院合併上課",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

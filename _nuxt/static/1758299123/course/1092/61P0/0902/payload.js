@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/61P0/0902", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"109261P00902",name:"高等固態化學",type:"選修",dept:"能源電池博士班",year:"1",class:"甲",teacher:"洪太峰",credit:"3",classroom:a,max:"20",min:"2",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

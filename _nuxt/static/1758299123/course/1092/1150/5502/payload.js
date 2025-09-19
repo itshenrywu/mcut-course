@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1150/5502", (function(a){return {data:[{course:{time:[["4","3~4"],["5","2~2"]],id:"109211505502",name:"材料力學(二)",type:"選修",dept:"四技機械系",year:"2",class:"丙",teacher:"張文慶",credit:"3",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

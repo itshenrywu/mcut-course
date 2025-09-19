@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3170/0Q01", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"109131700Q01",name:"福祉設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"許定洋",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"跨領域7\u002F6-9\u002F4，工設系不可選",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11")));

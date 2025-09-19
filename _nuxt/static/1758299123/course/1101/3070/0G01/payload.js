@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0G01", (function(a){return {data:[{course:{time:[["6","5~7"]],id:"110130700G01",name:"最小可行產品",type:"選修",dept:"管理暨設計學院",year:a,class:"甲",teacher:"林晋寬",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"塊狀課程6\u002F17-7\u002F2，合班，限管設學院",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

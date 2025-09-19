@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6280/0001", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"114162800001",name:"人工智慧導論",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"劉豐瑞",credit:b,hour:b,classroom:"",max:"50",min:a,comment:"TAICA-成大開課,修課限制詳教務處公告",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

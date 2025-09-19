@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2280/1K01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"110122801K01",name:"創新與創業管理專題",type:"選修",dept:"經管系碩士班",year:a,class:"甲",teacher:"彭成義",credit:b,hour:b,classroom:"",max:"30",min:"5",comment:"授課教師：彭成義",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

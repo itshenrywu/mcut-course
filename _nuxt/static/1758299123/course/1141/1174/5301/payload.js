@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1174/5301", (function(a,b){return {data:[{course:{time:[[a,"3~3"],["5","7~8"]],id:"114111745301",name:"新能源工程導論",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"宋旻峰",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

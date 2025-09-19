@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1150/8303", (function(a){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"110311508303",name:"模具設計與製造",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"蔡習訓",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"併機三乙",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

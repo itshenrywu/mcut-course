@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1180/0001", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"110111800001",name:"控制系統設計與應用",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"蔡宜昌",credit:b,hour:b,classroom:c,max:"12",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/0C03", (function(a,b,c){return {data:[{course:{time:[[a,"1~1"],["5","5~6"]],id:"114111700C03",name:"製造學",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"許啟彬",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

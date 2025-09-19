@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/2P01", (function(a,b,c){return {data:[{course:{time:[[a,b],["4",b]],id:"113120702P01",name:"化工熱力學",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"張峻瑜",credit:a,hour:a,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","3~4","")));

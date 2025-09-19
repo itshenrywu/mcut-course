@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6280/0F01", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"114162800F01",name:"智慧人機互動",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"劉豐瑞",credit:b,hour:b,classroom:"",max:"100",min:a,comment:"TAICA-臺科大,限大四碩士,修課限制詳教務處",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

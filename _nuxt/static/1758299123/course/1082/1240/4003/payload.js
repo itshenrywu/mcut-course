@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1240/4003", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108212404003",name:"FPGA\u002FCPLD實習",type:"重修",dept:"四技電機系",year:"4",class:"重",teacher:"陳瓊安",credit:"1",hour:a,max:"50",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6280/0301", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114162800301",name:"資料探勘與應用",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"劉豐瑞",credit:b,hour:b,classroom:"",max:"100",min:a,comment:"TAICA-清大(全英),限大四碩士,限制詳教務處",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

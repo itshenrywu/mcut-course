@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6280/0D01", (function(a){return {data:[{course:{time:[["2","5~6"],["3","2~4"]],id:"114162800D01",name:"統計學暨實習",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"陳思翰",credit:"4",hour:"5",classroom:"",max:"50",min:a,comment:"TAICA-台大(全英),修課限制詳教務處公告",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

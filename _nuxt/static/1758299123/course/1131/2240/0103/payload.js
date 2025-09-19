@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2240/0103", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"113122400103",name:"經濟學(一)",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"侯文治",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

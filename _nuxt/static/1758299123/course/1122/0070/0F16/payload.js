@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0F16", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"112200700F16",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"4",class:"乙",teacher:"李潔嵐",credit:a,hour:a,classroom:"",max:"40",min:"15",comment:"主題：西方經典與顛覆童話賞析，限大四",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

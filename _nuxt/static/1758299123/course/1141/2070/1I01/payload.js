@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2070/1I01", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"114120701I01",name:"反應工程",type:"必修",dept:"半導體學程",year:"4",class:"甲",teacher:"盧奕廷",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

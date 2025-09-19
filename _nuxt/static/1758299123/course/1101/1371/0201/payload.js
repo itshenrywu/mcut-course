@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1371/0201", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"110113710201",name:"計算機程式",type:"選修",dept:"四技化工系",year:"1",class:"甲",teacher:"蔡榮進",credit:a,hour:a,classroom:"",max:"42",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

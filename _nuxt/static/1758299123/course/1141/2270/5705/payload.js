@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/5705", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"114122705705",name:"企業倫理",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"楊南進",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

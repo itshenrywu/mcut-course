@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1174/6103", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"108111746103",name:"車輛保養實務",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"蔡育伸",credit:"1",hour:a,max:"50",min:"10",comment:"工程學院四年級各系合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

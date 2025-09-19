@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0R05", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"114100700R05",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"柳薇芬",credit:a,hour:a,classroom:"",max:"40",min:"15",comment:"從永續認識CSR及ESC",otherinfo:null}}],fetch:{},mutations:[]}}("1")));
