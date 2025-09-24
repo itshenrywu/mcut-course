@@ -24,6 +24,9 @@
 				<div class="ts-text is-description">更多功能</div>
 			</div>
 			<div class="ts-menu is-start-icon">
+				<NuxtLink to="/road" class="item">
+					<span class="ts-icon is-person-chalkboard-icon"></span> 大學之道環境與行動路線查詢
+				</NuxtLink>
 				<NuxtLink to="/guide" class="item">
 					<span class="ts-icon is-clipboard-check-icon"></span> 選課指南
 				</NuxtLink>
