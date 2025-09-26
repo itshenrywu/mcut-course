@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/61P0/0A01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114161P00A01",name:"綠色化學工程技術",type:"選修",dept:"能源電池博士班",year:a,class:"甲",teacher:"約瑟",credit:b,hour:b,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

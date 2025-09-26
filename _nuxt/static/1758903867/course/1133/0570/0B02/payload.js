@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/0570/0B02", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"113305700B02",name:"健身運動心理學",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"陳建彰",credit:b,hour:b,classroom:"",max:"5",min:a,comment:"併大三上課，上課期間為6\u002F30至8\u002F25",otherinfo:"自然科學與環境永續"}}],fetch:{},mutations:[]}}("1","2")));

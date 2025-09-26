@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2280/2E01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"110122802E01",name:"服務理論與實務專題",type:"選修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"陳昭蓉",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

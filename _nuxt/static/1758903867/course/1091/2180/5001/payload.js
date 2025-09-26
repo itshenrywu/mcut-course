@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2180/5001", {data:[{course:{time:[["4","6~8"]],id:"109121805001",name:"台塑企業管理機能研討",type:"必修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"郭憲章",credit:"0",hour:"3",classroom:"",max:"25",min:"5",comment:"與碩經二合班",otherinfo:null}}],fetch:{},mutations:[]});

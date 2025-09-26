@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1172/0202", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109211720202",name:"單晶片原理與應用",type:"選修",dept:"四技機械系",year:"2",class:"丙",teacher:"游孟潔",credit:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/61P0/0701", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113161P00701",name:"奈米科技與電池材料合成技術",type:"選修",dept:"能源電池博士班",year:a,class:"甲",teacher:"壽雅史",credit:b,hour:b,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

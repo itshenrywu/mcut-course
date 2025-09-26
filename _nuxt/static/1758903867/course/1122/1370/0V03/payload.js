@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1370/0V03", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"112213700V03",name:"材料科學導論",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"李國通",credit:b,hour:b,classroom:"",max:"65",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

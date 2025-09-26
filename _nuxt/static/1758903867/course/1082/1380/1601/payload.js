@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1380/1601", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108213801601",name:"觸媒原理與應用",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"邱淑哲",credit:a,hour:a,max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/18C2/0901", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"108218C20901",name:"材料製程概論",type:"選修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"彭坤增",credit:b,hour:b,max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

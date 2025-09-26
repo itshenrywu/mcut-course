@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1674/0201", (function(a,b,c){return {data:[{course:{time:[[a,b],[a,"8~8"],[c,b]],id:"108116740201",name:"實務專題研究(四)",type:"必修",dept:"四技環安衛系",year:c,class:"甲",teacher:"崔砢",credit:"1",hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","1~1","4")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1150/4301", (function(a,b){return {data:[{course:{time:[["2","9~11"]],id:"111111504301",name:"材料力學(一)",type:"重修",dept:"四技機械系",year:"4",class:"重",teacher:"劉秋霖",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

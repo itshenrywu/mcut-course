@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/2001", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"108100712001",name:"現代小說選讀",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"張淑芬",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2")));

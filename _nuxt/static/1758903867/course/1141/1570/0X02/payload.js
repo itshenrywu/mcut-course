@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1570/0X02", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114115700X02",name:"近代物理",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"史德智",credit:b,hour:b,classroom:"",max:"65",min:"10",comment:"甲乙合班，微電子模組必須完成選修課程。",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

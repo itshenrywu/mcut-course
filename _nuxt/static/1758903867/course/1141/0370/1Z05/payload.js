@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/1Z05", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"114103701Z05",name:"近代世界的形成",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"陳鈺明",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"工設、視傳",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

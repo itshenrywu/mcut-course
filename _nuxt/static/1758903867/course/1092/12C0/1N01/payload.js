@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/12C0/1N01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"109212C01N01",name:"程式設計實務",type:"必修",dept:"四技進修部電機系",year:"2",class:"甲",teacher:"王柏仁",credit:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

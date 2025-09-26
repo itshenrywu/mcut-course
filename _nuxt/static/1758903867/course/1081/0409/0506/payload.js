@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0409/0506", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~5"]],id:"108104090506",name:"憲政與發展",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"陳鈺明",credit:b,hour:b,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

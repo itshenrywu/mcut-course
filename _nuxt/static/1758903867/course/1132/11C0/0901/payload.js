@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/11C0/0901", (function(a,b,c){return {data:[{course:{time:[["2",a],["3",a]],id:"113211C00901",name:"產業實務實習(一)",type:"必修",dept:"四技進修部機械系",year:b,class:"甲",teacher:"黃道易",credit:b,hour:"8",classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("9~12","4","")));

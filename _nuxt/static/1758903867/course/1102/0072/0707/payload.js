@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0072/0707", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"110200720707",name:"英語聽講(初級)(二)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"歐貞秀",credit:"1",hour:a,classroom:"",max:"40",min:"10",comment:"管設初A",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

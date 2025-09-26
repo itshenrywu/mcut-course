@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1140/1102", (function(a,b){return {data:[{course:{time:[[a,"4~4"],["5","5~6"]],id:"108211401102",name:"靜力學",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"胡志中",credit:b,hour:b,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));
