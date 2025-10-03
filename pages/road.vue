@@ -27,8 +27,8 @@
 								<tr>
 									<td class="is-collapsed">路線</td>
 									<td>
-										{{ row.路線編號 }}
-										{{ filteredDetail.length > 1 ? ' - ' + filteredDetail[3] : '' }}
+										<span class="ts-text is-secondary">{{ '路線 ' + row.路線編號 + (filteredDetail.length > 1 ? ' - ' : '') }}</span>
+										<span v-if="filteredDetail.length > 1" v-html="filteredDetail[3]"></span>
 									</td>
 								</tr>
 								<tr v-if="filteredDetail.length > 1">
@@ -146,15 +146,4 @@ export default {
 };
 </script>
 <style>
-#page-road span {
-	padding-left: 0.5rem;
-	color: var(--ts-gray-500);
-}
-
-@media (max-width: 768px) {
-	#page-road span {
-		padding-left: 0;
-		display: block;
-	}
-}
 </style>

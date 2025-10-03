@@ -16,7 +16,7 @@
 										@click="chooseTerm(year_group.year+'-'+term)">
 										第 {{ term }} 學期
 										<span class="description" v-if="term == '1'">上學期 / 二升三暑期</span>
-										<span class="description" v-else-if="term == '2'">下學期 / 大三實習</span>
+										<span class="description" v-else-if="term == '2'">{{ getSecondTermText(year_group.year, term) }}</span>
 										<span class="description" v-else>暑修</span>
 									</div>
 								</template>
@@ -1000,6 +1000,12 @@ export default {
 		},
 		changeDisplayType() {
 			localStorage['displayType'] = this.displayType ? '1' : '';
+		},
+		getSecondTermText(year, term) {
+			if(year == this.terms[0].year && term == this.terms[0].term[0]) {
+				if(this.courses.every(item => item.year.startsWith('3'))) return '大三實習';
+			}
+			return '下學期 / 大三實習';
 		},
 	}
 }
