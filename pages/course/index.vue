@@ -186,8 +186,8 @@
 										<td class="c-time">
 											<span v-for="time in course.time" class="time">
 												<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-													week_text(time[0], course) + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
-												<template v-else>{{ week_text(time[0], course) + ' ' + time[1] + ' 節' }}</template>
+													week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
+												<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>
 											</span>
 										</td>
 										<td class="c-type-credit mobile-only absolute-right">
@@ -276,7 +276,7 @@
 														@click="showCourse(course)"
 														>
 														<div>
-															{{ course.name }}
+															{{ formatCourseName(course) }}
 															<small v-if="!course?.teacher?.includes('分班')"><br />{{ course.teacher }}</small>
 														</div>
 													</div>
@@ -520,8 +520,8 @@ export default {
 		}),
 		week_text() {
 			return (day, course) => {
-				let _day = ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''][day];
-				if(course?.comment.includes('塊狀')) return '';
+				let _day = ['(其他)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(其他)'][day];
+				if(course?.comment.includes('塊狀')) return '(其他)';
 				return _day;
 			}
 		},
@@ -600,6 +600,16 @@ export default {
 				this.currentClass != '' &&
 				(this.currentType == '必修' || this.currentType == '') &&
 				!['通識中心四技', '國文組-四技(日)', '外文組-四技(日)', '社會組-四技(日)', '體育組-四技(日)', '自然組-四技(日)', '自然組(二)-四技(日)', '工程學院', '環資學院', '管理暨設計學院', 'TAICA'].includes(this.currentDept)
+		},
+		formatCourseName(course) {
+			return (course) => {
+				let name = course?.name || '';
+				console.log(name);
+				if(name.startsWith('體育(') && name.includes(')') && name.split(')')[1].length >= 1) {
+					name = name.split(')')[1];
+				}
+				return name;
+			};
 		},
 		isConflicted(_course) {
 			return (_course) => {
@@ -715,13 +725,17 @@ export default {
 
 
 				const maxOverlap = Math.max(0, ...processedCourses.map(c => c.totalColumns));
-
-				if (maxOverlap > 3) {
+				let maxColumnsAllowed = 5;
+				if (window.innerWidth < 768) {
+					maxColumnsAllowed = 3;
+				}
+				if (maxOverlap > maxColumnsAllowed) {
 					schedule[day] = {
 						courses: [],
 						tooManyOverlaps: true,
 					};
-				} else {
+				}
+				else {
 					schedule[day] = {
 						courses: processedCourses.map(course => {
 							const width = 100 / course.totalColumns;

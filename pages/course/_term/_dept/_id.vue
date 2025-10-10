@@ -519,8 +519,8 @@ export default {
 		}),
 		week_text() {
 			return (day, course) => {
-				let _day = ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''][day];
-				if(course.comment.includes('塊狀')) return '';
+				let _day = ['(無固定)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(無固定)'][day];
+				if(course.comment.includes('塊狀')) return '(無固定)';
 				return _day;
 			}
 		},
@@ -710,24 +710,29 @@ export default {
 				this.course.name.includes('工讀自學英文') ||
 				this.course.name.includes('設計思考')
 			)) {
-				timeInfoText = '「'+this.course.name+'」課程於系統上無表定上課時間，請參考備註或教學進度表，也可以詢問授課老師/班級導師。';
+				timeInfoText = '系統上無表定上課時間，請參考備註及教學進度表，或詢問授課老師及開課單位。';
+			}
+			else if(this.course.comment.includes('塊狀') && this.course.time.some(time => time[0] == 6)) {
+				timeInfoText += '塊狀課程，實際上課時間請參考備註及教學進度表，或詢問授課老師及開課單位。';
+			}
+			else if (this.course.time.some(time => time[0] == 0 || time[0] == 7)) {
+				timeInfoText += '無表定上課時間，請參考備註及教學進度表，或詢問授課老師及開課單位。';
 			}
 			else {
 				this.course.time.forEach(time => {
 					let week = time[0];
 					let section = time[1].split('~').map(section => this.time_section.indexOf(section));
-					timeInfoText += (this.week_text(week, this.course) ? '星期' + this.week_text(week, this.course).replace(/[\(\)]/g,'') + '　' : '') + timeInfo[section[0]][0] + ' ~ ' + timeInfo[section[1]][1] + '<br>';
+					let week_text = this.week_text(week, this.course);
+					timeInfoText += (week_text && week_text != '(無表定)' ? '星期' + week_text.replace(/[\(\)]/g,'') + '　' : '') +
+					timeInfo[section[0]][0] + ' ~ ' + timeInfo[section[1]][1] + '<br>';
 				});
-				if(this.course.comment.includes('塊狀') && this.course.time.some(time => time[0] == 6)) {
-					timeInfoText += '塊狀課程，上課日期請參考備註或教學進度表';
-				}
 			}
 			this.$swal({
 				title: '上課時間',
 				html: '<div style="text-align:left">' + timeInfoText + '</div>',
 				showConfirmButton: false,
 				showCloseButton: true,
-				width: timeInfoText.includes('無固定') || timeInfoText.includes('塊狀課程') ? '28rem' : '20rem',
+				width: timeInfoText.includes('無表定') || timeInfoText.includes('塊狀課程') || timeInfoText.includes('無固定') ? '30rem' : '20rem',
 			});
 		},
 		viewSimilarCourses() {

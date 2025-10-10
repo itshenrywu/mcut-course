@@ -170,11 +170,7 @@
 														課程說明 <span class="ts-icon is-circle-info-icon"></span>
 													</span>
 													<template v-else-if="rule_item.remark && rule_item.remark.trim() != ''">
-														<span v-if="rule_item.remark.trim().length > 100" @click.stop="showInfo(rule_item.name, rule_item.remark)">
-															{{ rule_item.remark.trim().substring(0, 100) + '...' }}
-															<span class="ts-icon is-circle-info-icon"></span>
-														</span>
-														<span v-else>
+														<span @click.stop="showInfo(rule_item.name, rule_item.remark)">
 															{{ rule_item.remark }}
 														</span>
 													</template>
@@ -241,11 +237,7 @@
 													</template>
 												</td>
 												<td class="r-remark">
-													<span v-if="rule_item.remark.trim().length > 100" @click.stop="showInfo(rule_item.name, rule_item.remark)">
-														{{ rule_item.remark.trim().substring(0, 100) + '...' }}
-														<span class="ts-icon is-circle-info-icon"></span>
-													</span>
-													<span v-else>
+													<span @click.stop="showInfo(rule_item.name, rule_item.remark)">
 														{{ rule_item.remark }}
 													</span>
 												</td>
@@ -310,6 +302,10 @@
 	color: var(--ts-gray-500);
 }
 
+#page-rule table {
+	table-layout: fixed;
+}
+
 #page-rule td:nth-child(1) {
 	width: 40%;
 }
@@ -337,6 +333,10 @@
 #page-rule td.r-remark {
 	font-size: .8rem;
 	color: var(--ts-gray-500);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 30%;
 }
 
 #page-rule tr:hover {
@@ -396,7 +396,8 @@
 		padding: 0;
 	}
 
-	#page-rule td:nth-child(4) {
+	#page-rule td:nth-child(4),
+	#page-rule td.r-remark {
 		width: 100%;
 	}
 

@@ -119,8 +119,8 @@
 							<td class="c-time">
 								<span v-for="time in course.time" class="time">
 									<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-										week_text(time[0], course) + ' 第 ' + time[1].split('~')[0] + ' 節' }}</template>
-									<template v-else>{{ week_text(time[0], course) + ' ' + time[1] + ' 節' }}</template>
+										week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
+									<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>
 								</span>
 							</td>
 							<td class="c-type-credit mobile-only absolute-right">
@@ -381,8 +381,8 @@ export default {
 		}),
 		week_text() {
 			return (day, course) => {
-				let _day = ['', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', ''][day];
-				if(course?.comment?.includes('塊狀')) return '';
+				let _day = ['(其他)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(其他)'][day];
+				if(course?.comment?.includes('塊狀')) return '(其他)';
 				return _day;
 			}
 		},
