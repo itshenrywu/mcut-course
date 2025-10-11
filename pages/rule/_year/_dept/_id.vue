@@ -33,8 +33,9 @@
 									v-if="rule.name == currentDeptName">系所課程總表</option>
 								<optgroup v-for="(rule_group, group) of rules[currentYear]" :label="group"
 									v-if="group != '_'">
-									<option v-for="(rule, rule_id) of rule_group" :value="rule_id"
-										:disabled="rule.hide_for == currentDeptName">{{ rule.name }}</option>
+									<option v-for="[rule_id, rule] of sortRulesByDept(rule_group)" :value="rule_id" :disabled="rule.hide_for == currentDeptName">
+										{{ rule.dept ? formatDeptName(rule.dept) + ' - ' : '' }}{{ rule.name }}
+									</option>
 								</optgroup>
 							</select>
 						</div>
@@ -513,6 +514,23 @@ export default {
 				term: ['一上', '一下', '二上', '二下', '三上', '三下', '四上', '四下'],
 			},
 			term_sort: 'year_term',
+			
+			dept_short_name: {
+				'機械工程系': '機械系',
+				'電子工程系': '電子系',
+				'電機工程系': '電機系',
+				'環境與安全衛生工程系': '環安衛系',
+				'材料工程系': '材工系',
+				'管理暨設計學院': '管設學院',
+				'工業工程與管理系': '工管系',
+				'經營管理系': '經管系',
+				'工業設計系': '工設系',
+				'視覺傳達設計系': '視傳系',
+				'化學工程系': '化工系',
+				'環資跨領域實務菁英班': '環實務',
+				'半導體材料與製程學士學位學程': '半導體',
+				'通識教育中心': '通識中心',
+			},
 		};
 	},
 	head() {
@@ -564,6 +582,14 @@ export default {
 				return this.courses.filter(course => course.id.includes(this.currentRuleTerm.replace('-', '') + sid));
 			}
 		},
+		formatDeptName() {
+			return (name) => {
+				if(this.dept_short_name[name]) {
+					return this.dept_short_name[name];
+				}
+				return name;
+			}
+		},
 	},
 	mounted() {
 		this.$root.$on('showAd', () => { this.showAd = true; });
@@ -574,6 +600,22 @@ export default {
 	},
 	methods: {
 		...mapMutations(['setSavedCourse']),
+		sortRulesByDept(ruleGroup) {
+			const deptOrder = Object.keys(this.dept_short_name);
+			return Object.entries(ruleGroup).sort(([, a], [, b]) => {
+				if (a.dept && b.dept) {
+					const aIndex = deptOrder.indexOf(a.dept);
+					const bIndex = deptOrder.indexOf(b.dept);
+					if (aIndex === -1 && bIndex === -1) return a.dept.localeCompare(b.dept);
+					if (aIndex === -1) return 1;
+					if (bIndex === -1) return -1;
+					return aIndex - bIndex;
+				}
+				if (a.dept && !b.dept) return -1;
+				if (!a.dept && b.dept) return 1;
+				return a.name.localeCompare(b.name);
+			});
+		},
 		async init() {
 			this.$axios.get('https://api.mcut-course.com/rule/get_dept.php')
 			.then(res => {
