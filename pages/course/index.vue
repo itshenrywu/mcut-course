@@ -399,12 +399,13 @@
 }
 
 .time-slot {
-	height: 4rem;
+	height: 3.9rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 0.9rem;
 	color: #666;
+	border-bottom: 1px solid var(--ts-gray-200);
 }
 
 .time-slot:last-child {
@@ -416,17 +417,33 @@
 	padding: 0 .25rem !important;
 }
 
+.day-column::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: repeating-linear-gradient(
+		to bottom,
+		transparent 0,
+		transparent calc(4rem - 1px),
+		var(--ts-gray-200) calc(4rem - 1px),
+		var(--ts-gray-200) 4rem
+	);
+	pointer-events: none;
+}
+
 .course-block {
 	position: absolute;
 	box-sizing: border-box;
 	padding: 0.1rem;
 	border-radius: 4px;
 	color: white;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	cursor: pointer;
 	overflow: hidden;
 	margin: 0 2px;
-	border-left: 3px solid rgba(0, 0, 0, 0.1);
 	line-height: 1rem;
 	display: flex;
 	align-items: center;
@@ -604,7 +621,6 @@ export default {
 		formatCourseName(course) {
 			return (course) => {
 				let name = course?.name || '';
-				console.log(name);
 				if(name.startsWith('體育(') && name.includes(')') && name.split(')')[1].length >= 1) {
 					name = name.split(')')[1];
 				}
@@ -748,8 +764,8 @@ export default {
 									"is-gray": course.type == "重修",
 								},
 								style: {
-									top: `${course.startIndex * SLOT_HEIGHT + 0.25}rem`,
-									height: `${course.period * SLOT_HEIGHT - 0.25}rem`,
+									top: `${course.startIndex * SLOT_HEIGHT + 0.2}rem`,
+									height: `${course.period * SLOT_HEIGHT - 0.4}rem`,
 									width: `calc(${width}% - 4px)`,
 									left: `${left}%`,
 								},
