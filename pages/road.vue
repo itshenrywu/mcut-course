@@ -4,7 +4,7 @@
 			<h1 class="ts-header is-huge has-vertically-padded">大學之道環境與行動路線查詢</h1>
 			<div class="ts-text is-label has-bottom-padded-small">學號</div>
 			<div class="ts-input is-fluid">
-				<input type="text" v-model.trim="studentId" />
+				<input type="text" v-model.trim="studentId" placeholder="請輸入學號 ..." />
 			</div>
 			<br>
 			<template v-if="studentId.length == 9 && studentId.toUpperCase().startsWith('U') && detail.length > 0">
