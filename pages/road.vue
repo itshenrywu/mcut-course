@@ -4,10 +4,10 @@
 			<h1 class="ts-header is-huge has-vertically-padded">大學之道環境與行動路線查詢</h1>
 			<div class="ts-text is-label has-bottom-padded-small">學號</div>
 			<div class="ts-input is-fluid">
-				<input type="text" v-model.trim="studentId" placeholder="請輸入學號 ..." />
+				<input type="text" v-model.trim="uid" placeholder="請輸入學號 ..." />
 			</div>
 			<br>
-			<template v-if="studentId.length == 9 && studentId.toUpperCase().startsWith('U') && detail.length > 0">
+			<template v-if="uid.length == 9 && uid.toUpperCase().startsWith('U') && detail.length > 0">
 				<div class="ts-box" v-if="filteredData.length > 0">
 					<div v-for="(row, index) in filteredData" :key="row.學號" :class="{'has-top-spaced': index > 0}">
 						<table class="ts-table is-definition is-fluid">
@@ -107,7 +107,7 @@ export default {
 	data() {
 		return {
 			data: [],
-			studentId: '',
+			uid: '',
 			detail: []
 		}
 	},
@@ -116,27 +116,49 @@ export default {
 			showAd: state => state.show_ad
 		}),
 		filteredData() {
-			if (!this.studentId) return [];
+			if (!this.uid) return [];
 			return this.data.filter(row => 
-				row.學號 && row.學號.includes(this.studentId.toUpperCase())
+				row.學號 && row.學號.includes(this.uid.toUpperCase())
 			);
 		},
 		filteredDetail() {
-			if (!this.studentId) return [];
+			if (!this.uid) return [];
 			return this.detail.find(row => 
 				row[0] == this.filteredData[0].路線編號
 			);
 		}
 	},
+	watch: {
+		uid(newVal) {
+			const uid = (newVal || '').trim().toUpperCase();
+			const isValid = /^[A-Z0-9]{9}$/.test(uid) && uid.startsWith('U');
+			if (isValid) {
+				if(localStorage.auth_key) {
+					this.$axios.post('https://api.mcut-course.com/user/?action=update',
+						'uid=' + uid,
+						{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
+					)
+					.then(res => {
+						localStorage['uid'] = uid;
+					})
+					.catch((err) => {})
+				}
+				else {
+					localStorage['uid'] = uid;
+				}
+			}
+		}
+	},
 	mounted() {
+		if (localStorage['uid']) this.uid = localStorage['uid'];
 		this.fetchData();
 	},
 	methods: {
 		fetchData() {
 			this.$axios.get('https://api.mcut-course.com/road.php').then(response => {
 				this.data = response.data;
-				if (window.location.hostname === 'localhost' && this.data.length > 0) {
-					this.studentId = this.data[0].學號 || '';
+				if (window.location.hostname === 'localhost' && this.data.length > 0 && !localStorage['uid']) {
+					this.uid = this.data[0].學號 || '';
 				}
 			});
 			this.$axios.get('https://api.mcut-course.com/road_detail.php').then(response => {

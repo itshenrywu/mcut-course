@@ -133,6 +133,9 @@
 .ts-icon.is-people-robbery-icon::before {
     content: "\e536";
 }
+.ts-icon.is-passport-icon::before {
+    content: "\f5ab";
+}
 .ts-icon.is-file-export-icon::before {
     content: "\f56e";
 }

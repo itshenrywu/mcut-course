@@ -21,12 +21,20 @@
 				</div>
 			</div>
 			<div class="ts-content has-top-spaced">
-				<div class="ts-text is-description">更多功能</div>
+				<div class="ts-text is-description">課程相關查詢</div>
 			</div>
 			<div class="ts-menu is-start-icon">
 				<NuxtLink to="/road" class="item">
 					<span class="ts-icon is-person-chalkboard-icon"></span> 大學之道環境與行動路線查詢
 				</NuxtLink>
+				<NuxtLink to="/passport" class="item">
+					<span class="ts-icon is-passport-icon"></span> 英語學習護照點數查詢
+				</NuxtLink>
+			</div>
+			<div class="ts-content has-top-spaced">
+				<div class="ts-text is-description">選課相關說明 / 其他查詢</div>
+			</div>
+			<div class="ts-menu is-start-icon">
 				<NuxtLink to="/guide" class="item">
 					<span class="ts-icon is-clipboard-check-icon"></span> 選課指南
 				</NuxtLink>

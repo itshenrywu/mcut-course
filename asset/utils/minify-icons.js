@@ -60,7 +60,8 @@ let icons = [
 	'is-file-export-icon',
 	'is-gear-icon',
 	'is-sun-icon',
-	'is-moon-icon'
+	'is-moon-icon',
+	'is-passport-icon'
 ];
 
 const filePath = path.join(__dirname, '../tocas/icons.css');

@@ -4,10 +4,10 @@
 			<h1 class="ts-header is-huge has-vertically-padded">英語學習護照點數查詢</h1>
 			<div class="ts-text is-label has-bottom-padded-small">學號</div>
 			<div class="ts-input is-fluid">
-				<input type="text" v-model.trim="studentId" placeholder="請輸入學號 ..." />
+				<input type="text" v-model.trim="uid" placeholder="請輸入學號 ..." />
 			</div>
 			<br>
-			<template v-if="studentId.length == 9 && studentId.toUpperCase().startsWith('U')">
+			<template v-if="uid.length == 9 && uid.toUpperCase().startsWith('U')">
 				<loading v-if="isLoading" loading-text="載入中..." />
 				<template v-else-if="data.length > 0">
 					<div class="ts-text is-label has-bottom-padded-small">統計</div>
@@ -120,7 +120,7 @@ export default {
 	data() {
 		return {
 			data: [],
-			studentId: '',
+			uid: '',
 			isLoading: false
 		}
 	},
@@ -147,20 +147,32 @@ export default {
 		}
 	},
 	watch: {
-		studentId(newVal) {
+		uid(newVal) {
 			const uid = (newVal || '').trim().toUpperCase();
 			const isValid = /^[A-Z0-9]{9}$/.test(uid) && uid.startsWith('U');
 			if (isValid) {
 				this.fetchData(uid);
+				if(localStorage.auth_key) {
+					this.$axios.post('https://api.mcut-course.com/user/?action=update',
+						'uid=' + uid,
+						{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
+					)
+					.then(res => {
+						localStorage['uid'] = uid;
+					})
+					.catch((err) => {})
+				}
+				else {
+					localStorage['uid'] = uid;
+				}
 			} else {
 				this.data = [];
 			}
 		}
 	},
 	mounted() {
-		if (window.location.hostname === 'localhost') {
-			this.studentId = 'U13337050'; // for test
-		}
+		if (localStorage['uid']) this.uid = localStorage['uid'];
+		else if (window.location.hostname === 'localhost') this.uid = 'U13337050';
 	},
 	methods: {
 		fetchData(uid) {
