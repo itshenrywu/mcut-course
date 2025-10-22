@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3140/5002", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"112131405002",name:"工業設計概論",type:"必修",dept:"四技工設系",year:"1",class:"乙",teacher:"楊俊明",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

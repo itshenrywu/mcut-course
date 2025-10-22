@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0670/0513", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"109206700513",name:"體育(二)",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"王學中",credit:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

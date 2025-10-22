@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1270/2K01", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"112212702K01",name:"積體電路設計",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"賴文政",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

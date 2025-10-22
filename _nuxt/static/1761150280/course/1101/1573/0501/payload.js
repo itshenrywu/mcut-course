@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1573/0501", (function(a,b){return {data:[{course:{time:[["5","1~4"]],id:"110115730501",name:"信號與系統",type:"必修",dept:"四技電子系",year:a,class:"甲",teacher:"楊萬興",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

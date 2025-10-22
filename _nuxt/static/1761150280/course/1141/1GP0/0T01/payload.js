@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1GP0/0T01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"11411GP00T01",name:"細胞生物技術學",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"王琪芸",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

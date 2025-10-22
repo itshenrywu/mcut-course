@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1E05", (function(a){return {data:[{course:{time:[["7","10~10"]],id:"114200701E05",name:"專業研究實習(四)",type:"必修",dept:"四技材工系",year:"3",class:"乙",teacher:"曾傳銘",credit:"5",hour:"40",classroom:a,max:"100",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

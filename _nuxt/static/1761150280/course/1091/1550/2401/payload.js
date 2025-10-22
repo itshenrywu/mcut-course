@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1550/2401", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"109115502401",name:"電子學實習(二)",type:"必修",dept:"四技電子系",year:"2",class:"甲",teacher:"謝滄岩",credit:"1",hour:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

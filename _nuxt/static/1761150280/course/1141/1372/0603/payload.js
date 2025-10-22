@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1372/0603", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"114113720603",name:"工程數學(一)",type:"必修",dept:"四技化工系",year:"2",class:"乙",teacher:"吳弦聰",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

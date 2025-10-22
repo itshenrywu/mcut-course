@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0370/0C01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"108203700C01",name:"飲食與文化",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"馮典章",credit:b,hour:b,max:"48",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("1","2")));

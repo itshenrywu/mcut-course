@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2270/0P01", (function(a,b){return {data:[{course:{time:[[a,"5~7"],[b,"2~3"]],id:"108122700P01",name:"會計學(含實習)",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"李家如",credit:"3",hour:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","5")));

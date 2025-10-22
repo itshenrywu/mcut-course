@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1580/2801", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"113215802801",name:"半導體元件模擬與測試",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"畢少強",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

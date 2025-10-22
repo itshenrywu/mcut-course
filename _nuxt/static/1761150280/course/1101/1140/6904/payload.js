@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1140/6904", (function(a,b){return {data:[{course:{time:[["2","1~2"],["5","8~8"]],id:"110111406904",name:"動力學",type:"重修",dept:"四技機械系",year:"4",class:"重",teacher:"劉秋霖",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

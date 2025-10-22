@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0270/1501", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"114102701501",name:"歡迎來到德國(一)",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"孫亞玲",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2","")));

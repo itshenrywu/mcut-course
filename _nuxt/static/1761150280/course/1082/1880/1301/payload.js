@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1880/1301", {data:[{course:{time:[["3","5~6"]],id:"108218801301",name:"書報討論(二)",type:"必修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"劉定宇",credit:"0",hour:"2",max:"70",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]});

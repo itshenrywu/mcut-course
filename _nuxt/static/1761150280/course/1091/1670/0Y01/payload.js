@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1670/0Y01", (function(a,b){return {data:[{course:{time:[["3","8~8.5"]],id:"109116700Y01",name:"避難系統",type:"選修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"李冠賢",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

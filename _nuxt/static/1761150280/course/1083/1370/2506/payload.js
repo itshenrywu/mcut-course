@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1370/2506", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"],[a,"5~5"]],id:"108313702506",name:"化工熱力學",type:"重修",dept:"四技化工系",year:a,class:"暑",teacher:"蔡榮進",credit:b,hour:b,max:c,min:c,comment:"與化三甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3","2")));

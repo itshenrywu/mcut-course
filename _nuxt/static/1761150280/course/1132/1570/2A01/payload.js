@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1570/2A01", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["4","1~1"]],id:"113215702A01",name:"電子學(一)",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"王志良",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/11C0/2C01", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"110211C02C01",name:"電子學與實習",type:"必修",dept:"四技進修部機械系",year:b,class:"乙",teacher:"楊岳儒",credit:"2",hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

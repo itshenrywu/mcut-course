@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3340/1701", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"108133401701",name:"網頁設計",type:"必修",dept:"四技視傳系",year:"1",class:"甲",teacher:"林金祥",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

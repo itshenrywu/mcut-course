@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1880/0401", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112118800401",name:"薄膜科學與工程",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"陳韋佑",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"授課老師：陳韋佑 English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));
