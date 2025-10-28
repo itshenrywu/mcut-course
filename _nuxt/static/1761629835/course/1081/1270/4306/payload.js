@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1270/4306", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"108112704306",name:"電磁學",type:"必修",dept:"四技電機系",year:"4",class:"乙",teacher:"古家豪",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

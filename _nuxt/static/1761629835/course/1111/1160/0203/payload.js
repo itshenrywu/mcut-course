@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1160/0203", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"111111600203",name:"材料科學導論(一)",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"黃宗鈺",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

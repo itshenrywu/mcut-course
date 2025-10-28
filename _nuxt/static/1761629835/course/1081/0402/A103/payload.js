@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0402/A103", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"10810402A103",name:"英文(高級)(一)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"葉明倫",credit:a,hour:a,max:"40",min:"10",comment:"電機電子高A",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

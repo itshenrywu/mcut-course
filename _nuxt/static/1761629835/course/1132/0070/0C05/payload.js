@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0C05", (function(a){return {data:[{course:{time:[["7","10~10"]],id:"113200700C05",name:"工讀實務實習(四)",type:"必修",dept:"四技電機系",year:"3",class:"乙",teacher:"蔡文星",credit:"4",hour:"29",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

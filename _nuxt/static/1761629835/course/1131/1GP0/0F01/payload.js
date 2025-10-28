@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1GP0/0F01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"11311GP00F01",name:"生醫感測器",type:"選修",dept:"生醫暨醫材博士學程",year:a,class:"甲",teacher:"曼尼",credit:b,hour:b,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

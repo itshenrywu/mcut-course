@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1270/0C01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"112212700C01",name:"模擬軟體應用",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"王柏仁",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

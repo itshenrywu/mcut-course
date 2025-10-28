@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/18C2/0702", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"108218C20702",name:"材料物理性質",type:"必修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"蕭育生",credit:b,hour:b,max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2580/4101", (function(a){return {data:[{course:{time:[["4","6~8"]],id:"109225804101",name:"商業智慧",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"王文生",credit:"3",classroom:a,max:"25",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/0L04", (function(a,b,c){return {data:[{course:{time:[["4",b],[a,"0.5~0.5"],[a,b],[a,"8.5~8.5"]],id:"113120700L04",name:"頂石專題",type:"選修",dept:"四技材工系",year:c,class:"甲",teacher:"蘇家弘",credit:"1",hour:c,classroom:"",max:"100",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("5","4.5~4.5","3")));

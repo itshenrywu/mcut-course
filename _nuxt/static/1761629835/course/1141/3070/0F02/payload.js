@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/0F02", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"114130700F02",name:"白紙創業",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"虞邦祥",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"甲乙合班，塊狀課程6\u002F12~6\u002F27",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

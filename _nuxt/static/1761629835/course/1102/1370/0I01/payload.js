@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1370/0I01", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"110213700I01",name:"化工實務專題(二 )",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"蘇家弘",credit:"1",hour:a,classroom:"",max:"120",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

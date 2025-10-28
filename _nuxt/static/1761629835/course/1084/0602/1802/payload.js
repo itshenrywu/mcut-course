@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/0602/1802", (function(a){return {data:[{course:{time:[["4","9~12"]],id:"108406021802",name:"觀光英語",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"梁傑榮",credit:a,hour:a,max:"48",min:"20",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

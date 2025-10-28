@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3170/1A01", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"111131701A01",name:"數位工具應用",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"鄭鴻旗",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"限修過工設系「基本產品設計」之學生可選",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

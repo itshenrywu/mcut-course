@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/12C0/1P01", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"110212C01P01",name:"自動控制實務",type:"必修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"謝飛虎",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"與職電三合併授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

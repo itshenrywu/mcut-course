@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1272/1001", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["4","3~3"]],id:"109212721001",name:"工程數學(二)",type:"必修",dept:"四技電機系",year:"2",class:"甲",teacher:"王勝寬",credit:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

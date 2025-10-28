@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1270/2T01", (function(a){return {data:[{course:{time:[["4","5~8"]],id:"112112702T01",name:"數位訊號處理實務",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"王柏仁",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

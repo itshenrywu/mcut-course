@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1570/5703", (function(a,b,c){return {data:[{course:{time:[["2",a],[b,a]],id:"113315705703",name:"機率與統計",type:"重修",dept:"四技電子系",year:b,class:"暑",teacher:"史德智",credit:c,hour:c,classroom:"",max:"10",min:"1",comment:"併114三上(甲班)課程",otherinfo:null}}],fetch:{},mutations:[]}}("1~2","4","3")));

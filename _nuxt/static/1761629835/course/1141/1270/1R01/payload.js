@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/1R01", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~7"]],id:"114112701R01",name:"微處理機與實習",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"祁存廣",credit:"3",hour:"4",classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("5")));

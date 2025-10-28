@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0204", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"110130700204",name:"創意整合(三)",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"陳進隆",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

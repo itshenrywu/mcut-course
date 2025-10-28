@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1580/0D01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"112215800D01",name:"程式設計進階",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"黎玉線",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

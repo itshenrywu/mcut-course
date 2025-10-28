@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0770/0915", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"114107700915",name:"全民國防教育軍事訓練(一)",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"陶韻然",credit:"0.5",hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

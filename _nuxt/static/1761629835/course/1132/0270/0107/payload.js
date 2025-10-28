@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/0107", (function(a,b){return {data:[{course:{time:[["7","11~11"]],id:"113202700107",name:"工讀自學英文",type:"必修",dept:"四技材工系",year:"3",class:"乙",teacher:"柳薇芬",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

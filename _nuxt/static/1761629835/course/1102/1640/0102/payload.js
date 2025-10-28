@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1640/0102", (function(a,b){return {data:[{course:{time:[["1","9~11"]],id:"110216400102",name:"工程圖學",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"粘朝益",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
