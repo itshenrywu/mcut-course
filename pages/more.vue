@@ -1,7 +1,7 @@
 <template>
 	<div class="cell is-secondary is-fluid is-scrollable" id="page-more">
 		<div class="ts-container is-very-narrow has-vertically-padded">
-			<profile v-if="!loading"></profile>
+			<profile :loading="loading"></profile>
 			<div class="ts-content has-top-spaced">
 				<div class="ts-text is-description">偏好設定</div>
 			</div>

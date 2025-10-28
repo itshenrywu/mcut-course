@@ -14,7 +14,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="ts-box is-raised has-top-spaced-large" v-else>
+	<div class="ts-box is-raised has-top-spaced-large" v-else-if="!loading">
 		<div class="ts-content is-secondary">
 			<div class="ts-grid is-middle-aligned profile-form is-compact">
 				<div class="column is-2-wide">
@@ -33,6 +33,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="ts-box is-raised has-top-spaced-large" v-else style="height: 5.2rem"></div>
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -41,6 +42,10 @@ export default {
 		mobileOnly: {
 			type: String,
 			default: ''
+		},
+		loading: {
+			type: Boolean,
+			default: true
 		}
 	},
 	data() {
