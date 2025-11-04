@@ -22,24 +22,30 @@
 			</div>
 			<div class="has-top-spaced">
 				<loading v-if="loading" />
-				<div v-else class="ts-box">
-					<table class="ts-table is-striped">
-						<thead>
-							<tr>
-								<th style="width: 11rem">班級</th>
-								<th style="width: 6rem">授課老師</th>
-								<th style="width: 10rem">地點</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr v-for="exam in filteredExams" :key="exam.join()">
-								<td>{{ formatClassName(exam[0]) }}</td>
-								<td>{{ exam[2] }}</td>
-								<td>{{ formatLocation(exam[5]) }}</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+				<template v-else>
+					<div class="ts-text has-bottom-padded-small is-center-aligned is-large" v-if="filteredExams[0]?.[3] && filteredExams[0]?.[4]">
+						<span class="ts-icon is-clock-icon"></span>
+						{{ filteredExams[0]?.[3] + ' ' + filteredExams[0]?.[4] }}
+					</div>
+					<div class="ts-box">
+						<table class="ts-table is-striped">
+							<thead>
+								<tr>
+									<th style="width: 11rem">班級</th>
+									<th style="width: 6rem">授課老師</th>
+									<th style="width: 10rem">地點</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="exam in filteredExams" :key="exam.join()">
+									<td>{{ formatClassName(exam[0]) }}</td>
+									<td>{{ exam[2] }}</td>
+									<td>{{ formatLocation(exam[5]) }}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</template>
 			</div>
 		</div>
 	</div>
