@@ -81,6 +81,21 @@
 					路線 25 ~ 32：鄭雅雲小姐 <a href="tel:0229089899,2224">分機 2224</a><br>
 					路線 33 ~ 40：謝佩芳小姐 <a href="tel:0229089899,2229">分機 2229</a>
 				</div>
+				<div class="ts-box ad is-hollowed has-top-spaced" v-if="showAd">
+					<div class="ts-content">
+						<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelector('.ad .ts-content').innerHTML='<div class=&quot;ts-text is-description has-bottom-padded-small&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned has-vertically-padded&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>';"></script>
+						<ins class="adsbygoogle"
+							style="display:block; text-align:center;"
+							data-ad-layout="in-article"
+							data-ad-format="fluid"
+							data-ad-client="ca-pub-5900703871265800"
+							data-ad-slot="3164180037"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+				</div>
 			</template>
 		</div>
 	</div>

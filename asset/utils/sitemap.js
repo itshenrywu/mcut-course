@@ -48,6 +48,8 @@ function generateSitemap(baseUrl, distPath = './dist') {
 			`https://${cleanBaseUrl}/my/`,
 			`https://${cleanBaseUrl}/course/`,
 			`https://${cleanBaseUrl}/rule/`,
+			`https://${cleanBaseUrl}/passport/`,
+			`https://${cleanBaseUrl}/road/`,
 			...courseUrls,
 			...classUrls,
 		].join('\n');
