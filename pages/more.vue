@@ -2,10 +2,10 @@
 	<div class="cell is-secondary is-fluid is-scrollable" id="page-more">
 		<div class="ts-container is-very-narrow has-vertically-padded">
 			<profile :loading="loading"></profile>
-			<div class="ts-content has-top-spaced">
+			<div class="ts-content has-top-spaced is-vertically-fitted">
 				<div class="ts-text is-description">偏好設定</div>
 			</div>
-			<div class="ts-menu">
+			<div class="ts-menu is-dense">
 				<div class="item" data-dropdown="theme-dropdown">
 					明暗色系
 					<div class="ts-badge has-inverted">
@@ -20,24 +20,24 @@
 					</button>
 				</div>
 			</div>
-			<div class="ts-content has-top-spaced">
+			<div class="ts-content has-top-spaced is-vertically-fitted">
 				<div class="ts-text is-description">課程相關查詢</div>
 			</div>
-			<div class="ts-menu is-start-icon">
+			<div class="ts-menu is-start-icon is-dense">
 				<NuxtLink to="/road" class="item">
 					<span class="ts-icon is-person-chalkboard-icon"></span> 大學之道環境與行動路線查詢
 				</NuxtLink>
 				<NuxtLink to="/passport" class="item">
 					<span class="ts-icon is-passport-icon"></span> 英語學習護照點數查詢
 				</NuxtLink>
+				<NuxtLink to="/exam" class="item">
+					<span class="ts-icon is-clipboard-check-icon"></span> {{ examDate ? examDate + ' ' : '' }}英語段考考場查詢
+				</NuxtLink>
 			</div>
-			<div class="ts-content has-top-spaced">
+			<div class="ts-content has-top-spaced is-vertically-fitted">
 				<div class="ts-text is-description">選課相關說明 / 其他查詢</div>
 			</div>
-			<div class="ts-menu is-start-icon">
-				<NuxtLink to="/guide" class="item">
-					<span class="ts-icon is-clipboard-check-icon"></span> 選課指南
-				</NuxtLink>
+			<div class="ts-menu is-start-icon is-dense">
 				<NuxtLink to="/info" class="item">
 					<span class="ts-icon is-clock-icon"></span> 選課時間及說明
 					<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="showInfoRedDot"></div>
@@ -49,10 +49,10 @@
 					<span class="ts-icon is-calendar-days-icon"></span> 行事曆
 				</NuxtLink>
 			</div>
-			<div class="ts-content has-top-spaced">
+			<div class="ts-content has-top-spaced is-vertically-fitted">
 				<div class="ts-text is-description">說明及支援</div>
 			</div>
-			<div class="ts-menu is-start-icon">
+			<div class="ts-menu is-start-icon is-dense">
 				<NuxtLink to="/about" class="item">
 					<span class="ts-icon is-file-lines-icon"></span> 關於本站、資料來源及免責聲明
 				</NuxtLink>
@@ -92,6 +92,21 @@
 <script>
 import { mapState } from 'vuex'
 export default {
+	async asyncData({ $axios }) {
+		try {
+			const response = await $axios.get('https://api.mcut-course.com/exam.php');
+			const examData = response.data || [];
+
+			let examDate = '';
+			if (examData.length > 0 && examData[0][3]) {
+				examDate = examData[0][3];
+			}
+			
+			return { examDate };
+		} catch (error) {
+			return { examDate: '' };
+		}
+	},
 	data() {
 		return {
 			loading: true,
@@ -99,6 +114,7 @@ export default {
 			profileName: '',
 			showInfoRedDot: false,
 			showRemoveAdRedDot: false,
+			examDate: '',
 			themes: {
 				system: {
 					name: '根據裝置設定',
