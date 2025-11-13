@@ -1,11 +1,11 @@
 <template>
 	<div class="cell">
 		<div class="print-only">明志科技大學選課小幫手 | mcut-course.com</div>
-		<div style="background-color: var(--ts-gray-800); padding: .5rem 0">
+		<!-- <div style="background-color: var(--ts-gray-800); padding: .5rem 0">
 			<div class="ts-container" style="text-align: center; color: var(--ts-gray-50); font-size: .9rem">
 				<span class="ts-badge is-negative is-small is-dense">服務異常</span> 因本站遭學校限制連線，部分功能（如課程詳細資訊、畢業學分門檻）可能偶爾會無法查詢，我們正在努力解決中，造成不便敬請見諒。
 			</div>
-		</div>
+		</div> -->
 		<div class="ts-container is-fitted navbar">
 			<div class="ts-tab is-center-aligned">
 				<NuxtLink
