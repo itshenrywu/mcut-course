@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1580/3301", (function(a,b,c){return {data:[{course:{time:[[a,"6~8"]],id:"113115803301",name:"嵌入式多媒體應用",type:"選修",dept:"電子系碩士班",year:a,class:"甲",teacher:"黃樹林",credit:b,hour:b,classroom:c,max:"40",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

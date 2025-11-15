@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1174/3405", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["4","1~1"]],id:"108211743405",name:"普通物理(二)",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"黃鐘禎",credit:b,hour:b,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

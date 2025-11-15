@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1880/0F01", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"112218800F01",name:"電子顯微鏡學",type:"必修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"李志偉",credit:a,hour:a,classroom:"",max:"70",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

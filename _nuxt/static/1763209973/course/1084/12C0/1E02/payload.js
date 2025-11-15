@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/12C0/1E02", {data:[{course:{time:[["5","9~12"]],id:"108412C01E02",name:"電動機控制應用與實習",type:"選修",dept:"四技進修部電機系",year:"3",class:"乙",teacher:"吳啟耀",credit:"1",hour:"2",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

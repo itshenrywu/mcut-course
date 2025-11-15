@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0370/1301", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"112203701301",name:"國際關係與世界局勢",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"王惟貞",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("1","2","")));

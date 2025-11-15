@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0570/0Z02", (function(a){return {data:[{course:{time:[["1","11~12"]],id:"112205700Z02",name:"人與環境",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"黃浚瑋",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"第1階段",otherinfo:"自然科學與環境永續"}}],fetch:{},mutations:[]}}("2")));

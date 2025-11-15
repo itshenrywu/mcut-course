@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/0U01", (function(a){return {data:[{course:{time:[["2","5~6"],[a,"1~2"],["4","3~4"]],id:"113121700U01",name:"套裝程式與資料分析",type:"選修",dept:"四技工管系",year:a,class:"甲",teacher:"洪哲裕",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"帶狀課程 7\u002F1~8\u002F30 甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

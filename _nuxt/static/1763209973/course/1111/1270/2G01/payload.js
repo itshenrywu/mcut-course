@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1270/2G01", (function(a,b){return {data:[{course:{time:[["5","1~3"]],id:"111112702G01",name:"電機先修課程",type:"必修",dept:"四技電機系",year:"1",class:"甲",teacher:"古家豪",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

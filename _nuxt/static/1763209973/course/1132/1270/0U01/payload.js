@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1270/0U01", (function(a,b){return {data:[{course:{time:[[a,"5~6"],[b,"3~4"]],id:"113212700U01",name:"通信原理與實習",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"蔡文星",credit:a,hour:b,classroom:"",max:"60",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

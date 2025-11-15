@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1170/3I02", (function(a,b){return {data:[{course:{time:[["1",a],["2",a]],id:"113311703I02",name:"車輛動力學",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"鍾永強",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"併機三丙",otherinfo:null}}],fetch:{},mutations:[]}}("3~4","3")));

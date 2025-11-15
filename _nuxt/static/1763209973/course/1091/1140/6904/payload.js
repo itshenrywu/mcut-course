@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1140/6904", (function(a,b){return {data:[{course:{time:[["1","9~11"]],id:"109111406904",name:"動力學",type:"重修",dept:"四技機械系",year:"2",class:"重",teacher:"鍾永強",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

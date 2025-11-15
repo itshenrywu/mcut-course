@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/18C4/0101", (function(a,b){return {data:[{course:{time:[["5","7~8.5"]],id:"111118C40101",name:"金屬材料",type:"必修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"簡順億",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1274/1801", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"108112741801",name:"虛擬儀控軟體應用(LABVIEW)",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"邱聰輝",credit:a,hour:"2",max:"50",min:"10",comment:"工程學院四年級各系合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

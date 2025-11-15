@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1860/0304", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"110118600304",name:"材料熱力學(一)",type:"重修",dept:"四技材工系",year:"2",class:"重",teacher:"黃啓賢",credit:a,hour:a,classroom:"",max:"84",min:"5",comment:"夜間重修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

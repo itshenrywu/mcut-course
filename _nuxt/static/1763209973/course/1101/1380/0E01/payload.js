@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1380/0E01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"110113800E01",name:"光催化：基本原理與應用",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"黃錦鴻",credit:a,hour:a,classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

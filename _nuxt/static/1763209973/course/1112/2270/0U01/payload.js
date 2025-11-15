@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2270/0U01", (function(a,b){return {data:[{course:{time:[["5","6~8"]],id:"111222700U01",name:"管理經濟",type:"必修",dept:"四技經管系",year:"2",class:"乙",teacher:"薄榮薇",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
