@@ -28,7 +28,7 @@
 						{{ filteredExams[0]?.[3] + ' ' + filteredExams[0]?.[4] }}
 					</div>
 					<div class="ts-box">
-						<table class="ts-table is-striped">
+						<table class="ts-table">
 							<thead>
 								<tr>
 									<th style="width: 11rem">班級</th>

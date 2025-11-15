@@ -40,7 +40,7 @@
 					</div>
 					<div class="ts-text is-label has-bottom-padded-small">紀錄</div>
 					<div class="ts-box" >
-						<table class="ts-table is-celled is-fluid passport-log">
+						<table class="ts-table is-fluid passport-log">
 							<thead>
 								<tr>
 									<th class="is-collapsed is-center-aligned">日期</th>
