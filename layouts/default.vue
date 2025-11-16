@@ -109,7 +109,6 @@ export default {
 			} else {
 				localStorage['myCourseSync'] = '';
 				localStorage['profile_name'] = '';
-				localStorage['uid'] = '';
 				this.setShowAd(true);
 				this.$root.$emit('showProfileImage', '');
 			}

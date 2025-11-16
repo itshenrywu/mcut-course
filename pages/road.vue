@@ -173,7 +173,7 @@ export default {
 			this.$axios.get('https://api.mcut-course.com/road.php').then(response => {
 				this.data = response.data;
 				if (window.location.hostname === 'localhost' && this.data.length > 0 && !localStorage['uid']) {
-					this.uid = this.data[0].學號 || '';
+					// this.uid = this.data[0].學號 || '';
 				}
 			});
 			this.$axios.get('https://api.mcut-course.com/road_detail.php').then(response => {
