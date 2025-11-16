@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1170/1U01", (function(a,b){return {data:[{course:{time:[[a,"2~4"],["5","1~1"]],id:"110111701U01",name:"電子學與實驗",type:"必修",dept:"四技機械系",year:"2",class:"乙",teacher:"胡志中",credit:a,hour:"4",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

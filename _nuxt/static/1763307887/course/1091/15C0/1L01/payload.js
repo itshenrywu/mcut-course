@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/15C0/1L01", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"109115C01L01",name:"數位邏輯設計實務",type:"必修",dept:"四技進修部電子系",year:"2",class:"甲",teacher:"林義楠",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

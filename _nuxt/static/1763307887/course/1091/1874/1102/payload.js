@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1874/1102", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"109118741102",name:"工程倫理與實務講座",type:"必修",dept:"四技材工系",year:"4",class:"乙",teacher:"林延儒",credit:"1",hour:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

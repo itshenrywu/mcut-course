@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0070/0504", (function(a,b){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"109100700504",name:"勤勞教育(一)",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"陳慶隆",credit:"0",hour:"0.5",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2170/1P01", (function(a,b){return {data:[{course:{time:[[a,"2~3"]],id:"111121701P01",name:"工業工程與管理概論",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"陳昆皇",credit:a,hour:"2",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

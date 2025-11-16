@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0072/0601", (function(a){return {data:[{course:{time:[["1","5~6"]],id:"108100720601",name:"英文實務(一)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"林麗寬",credit:"0",hour:a,max:"56",min:"10",comment:"機械甲+工設",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

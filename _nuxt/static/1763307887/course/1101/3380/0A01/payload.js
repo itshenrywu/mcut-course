@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3380/0A01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"110133800A01",name:"設計關懷與視覺表現",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"莊妙仙",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

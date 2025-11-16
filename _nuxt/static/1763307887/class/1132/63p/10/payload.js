@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/class/1132/63p/10", {data:[{classData:["電漿薄膜博士學程","1","甲"]}],fetch:{},mutations:[]});

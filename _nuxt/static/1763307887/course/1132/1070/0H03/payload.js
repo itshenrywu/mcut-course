@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1070/0H03", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"113210700H03",name:"特色專題(二)",type:"選修",dept:"工程學院",year:"4",class:"甲",teacher:"許宏彬",credit:a,hour:"6",classroom:"",max:"50",min:"10",comment:"限工程學院學生選課(榮譽學程課程)",otherinfo:null}}],fetch:{},mutations:[]}}("3","7~8.5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2180/0I01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"111121800I01",name:"創新服務與研發管理",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"阮業春",credit:a,hour:a,classroom:b,max:"25",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

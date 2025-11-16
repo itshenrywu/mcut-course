@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1880/4201", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"111218804201",name:"有機光電材料與元件",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"陳志平",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
