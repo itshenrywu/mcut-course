@@ -803,7 +803,7 @@ export default {
 			return schedule;
 		},
 		maxEndSection: function() {
-			if(this.currentClass == '') return 8;
+			if(this.currentClass == '' && !this.currentDept.includes('通識')) return 8;
 			let maxSection = 8;
 			this.filteredCourses.forEach(course => {
 				course.time.forEach(time => {
