@@ -238,14 +238,17 @@
 						</table>
 					</div>
 					<template v-else>
-						<div class="ts-box has-bottom-spaced" v-if="!currentClass || !currentDept">
+						<div class="ts-box has-bottom-spaced" v-if="(!currentClass && !currentDept.includes('通識')) || !currentDept">
 							<div class="ts-content">
 								<span class="ts-text is-negative is-bold">課表檢視無法在此搜尋條件下使用</span><br>
 								請先選擇開課單位及班級以使用課表檢視，或改用列表檢視。
 							</div>
 						</div>
 						<div class="ts-box has-bottom-spaced">
-							<table class="ts-table is-dense is-celled is-definition timetable" :class="{ 'showSat': coursesByStartTime[6] && currentClass }">
+							<table class="ts-table is-dense is-celled is-definition timetable" :class="{
+								'showSat': coursesByStartTime[6] && currentClass,
+								'showOnlyMonAndThu': showOnlyMonAndThu
+							}">
 								<thead>
 									<tr>
 										<th class="time-header"></th>
@@ -264,7 +267,7 @@
 											</div>
 										</td>
 										<td v-for="w in 6" :key="'day-' + w" class="day-column">
-											<template v-if="currentClass">
+											<template v-if="currentClass || currentDept.includes('通識')">
 												<div v-if="processedSchedule[w]?.tooManyOverlaps" class="overlap-warning">
 													該天有過多重疊課程，<br>請改用列表檢視
 												</div>
@@ -374,14 +377,9 @@
 	width: 20%;
 }
 
-.timetable.showSat th,
-.timetable.showSat td {
-	width: 16.666%;
-}
-
 .timetable th:first-child,
 .timetable td:first-child {
-	width: 2rem;
+	width: 2rem !important;
 }
 
 .timetable th:nth-child(7),
@@ -389,8 +387,28 @@
 	display: none !important;
 }
 
+.timetable.showSat th,
+.timetable.showSat td {
+	width: 16.666%;
+}
+
 .timetable.showSat th:nth-child(7),
 .timetable.showSat td:nth-child(7) {
+	display: table-cell !important;
+}
+
+.timetable.showOnlyMonAndThu th,
+.timetable.showOnlyMonAndThu td {
+	display: none;
+	width: 50%;
+}
+
+.timetable.showOnlyMonAndThu th:nth-child(1),
+.timetable.showOnlyMonAndThu td:nth-child(1),
+.timetable.showOnlyMonAndThu th:nth-child(2),
+.timetable.showOnlyMonAndThu td:nth-child(2),
+.timetable.showOnlyMonAndThu th:nth-child(5),
+.timetable.showOnlyMonAndThu td:nth-child(5) {
 	display: table-cell !important;
 }
 
@@ -742,9 +760,15 @@ export default {
 
 				const maxOverlap = Math.max(0, ...processedCourses.map(c => c.totalColumns));
 				let maxColumnsAllowed = 5;
-				if (window.innerWidth < 768) {
+				if (window.innerWidth < 414) {
+					maxColumnsAllowed = 2;
+				}
+				else if (window.innerWidth < 768) {
 					maxColumnsAllowed = 3;
 				}
+				if(this.showOnlyMonAndThu) maxColumnsAllowed += 3;
+				console.log(window.innerWidth, maxColumnsAllowed);
+
 				if (maxOverlap > maxColumnsAllowed) {
 					schedule[day] = {
 						courses: [],
@@ -788,6 +812,9 @@ export default {
 				});
 			});
 			return maxSection;
+		},
+		showOnlyMonAndThu() {
+			return this.currentDept.includes('通識') && !this.coursesByStartTime[2] && !this.coursesByStartTime[3] && !this.coursesByStartTime[5] && !this.coursesByStartTime[6];
 		}
 	},
 	methods: {
