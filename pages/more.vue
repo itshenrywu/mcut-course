@@ -24,9 +24,9 @@
 				<div class="ts-text is-description">課程相關查詢</div>
 			</div>
 			<div class="ts-menu is-start-icon is-dense">
-				<NuxtLink to="/road" class="item">
+				<!-- <NuxtLink to="/road" class="item">
 					<span class="ts-icon is-person-chalkboard-icon"></span> 大學之道環境與行動路線查詢
-				</NuxtLink>
+				</NuxtLink> -->
 				<NuxtLink to="/passport" class="item">
 					<span class="ts-icon is-passport-icon"></span> 英語學習護照點數查詢
 				</NuxtLink>
