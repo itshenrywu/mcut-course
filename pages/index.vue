@@ -307,7 +307,10 @@ export default {
 				localStorage['class'] = '';
 				localStorage['type'] = '';
 				subtype.split(',').forEach(sub => {
-					if(this.courses.some(course => course.otherinfo?.includes(sub))) localStorage['type'] = '- ' + sub;
+					if(this.courses.some(course => course.otherinfo?.includes(sub))) {
+						localStorage['type'] = '- ' + sub;
+						return;
+					}
 				});
 				if(localStorage['type'] == '') {
 					this.$swal({
