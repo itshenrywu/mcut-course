@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2170/8201", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"110121708201",name:"供應鏈管理",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"陳昆皇",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

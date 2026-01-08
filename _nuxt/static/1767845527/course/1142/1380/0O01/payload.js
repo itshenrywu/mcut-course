@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1380/0O01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114213800O01",name:"生醫工程",type:"選修",dept:"化工系生工碩士班",year:a,class:"甲",teacher:"蔡育霖",credit:b,hour:b,classroom:c,max:"10",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

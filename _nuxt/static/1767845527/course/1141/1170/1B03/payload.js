@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/1B03", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[c,b]],id:"114111701B03",name:"材料力學與實驗",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"邱昱仁",credit:c,hour:"4",classroom:d,max:"56",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("2","5~6","3","")));

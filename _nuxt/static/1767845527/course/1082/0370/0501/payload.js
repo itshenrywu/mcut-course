@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0370/0501", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"108203700501",name:"生態系統服務與環境管理",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"黃浚瑋",credit:b,hour:b,max:"48",min:"10",comment:"",otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("1","2")));

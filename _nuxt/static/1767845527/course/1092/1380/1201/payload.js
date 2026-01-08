@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1380/1201", (function(a){return {data:[{course:{time:[["2","1~2"]],id:"109213801201",name:"專題研究(二)",type:"必修",dept:"化工系碩士班",year:a,class:"甲",teacher:"杜鶴芸",credit:a,classroom:"",max:"40",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

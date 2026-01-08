@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1280/1C01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114212801C01",name:"電力系統穩定度",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"陳瓊安",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course(李浩賢老師授課)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

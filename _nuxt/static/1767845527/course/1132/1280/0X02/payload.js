@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1280/0X02", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"113212800X02",name:"數位電路設計",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"陳瓊安",credit:b,hour:b,classroom:"",max:"20",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/0E01", (function(a){return {data:[{course:{time:[[a,"9~10"]],id:"113120700E01",name:"科技英文(二)",type:"選修",dept:"環資學院",year:a,class:"甲",teacher:"詹承學",credit:"1",hour:a,classroom:"",max:"48",min:"10",comment:"限環資學院可選 English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

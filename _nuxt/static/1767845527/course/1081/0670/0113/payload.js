@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0670/0113", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"108106700113",name:"體育(一)",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"王學中",credit:"0",hour:"2",max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0170/0G05", (function(a,b){return {data:[{course:{time:[[a,"4.5~5"]],id:"114201700G05",name:"藝文涵養與社會參與",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"李慧琪",credit:a,hour:a,classroom:b,max:"54",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

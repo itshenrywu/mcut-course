@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0370/1I01", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"112203701I01",name:"生死學",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"張家禎",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2","")));

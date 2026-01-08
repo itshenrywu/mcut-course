@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1F8C/1001", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"10821F8C1001",name:"微波工程",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"姜惟元",credit:a,hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

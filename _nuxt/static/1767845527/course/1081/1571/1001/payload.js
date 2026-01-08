@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1571/1001", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108115711001",name:"C語言程式設計實習",type:"重修",dept:"四技電子系",year:"4",class:"重",teacher:"謝宗儒",credit:"1",hour:"3",max:"50",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5")));

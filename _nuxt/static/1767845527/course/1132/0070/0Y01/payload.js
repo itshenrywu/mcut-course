@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0Y01", (function(a){return {data:[{course:{time:[["7","0.5~2"]],id:"113200700Y01",name:"淡水河流域川廢調查",type:"選修",dept:"通識中心四技",year:"1",class:"丙",teacher:"陳志霖",credit:"2",hour:"3",classroom:a,max:"無上限",min:"無下限",comment:a,otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("")));

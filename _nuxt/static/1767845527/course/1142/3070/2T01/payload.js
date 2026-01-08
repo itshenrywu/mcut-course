@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3070/2T01", (function(a){return {data:[{course:{time:[["5","1~1"]],id:"114230702T01",name:"專業證照(二)",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"林金祥",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

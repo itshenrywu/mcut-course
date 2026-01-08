@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/61P0/0C01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"114161P00C01",name:"高等電化學實驗分析技術",type:"選修",dept:"能源電池博士班",year:"1",class:"甲",teacher:"陳振興",credit:a,hour:a,classroom:"",max:"10",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

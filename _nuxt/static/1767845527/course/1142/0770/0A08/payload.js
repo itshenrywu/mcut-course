@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0770/0A08", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"114207700A08",name:"全民國防教育軍事訓練(二)",type:"必修",dept:"行銷設計學程",year:"1",class:"乙",teacher:"翁智賢",credit:"0.5",hour:"2",classroom:a,max:"30",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1270/0U02", (function(a,b){return {data:[{course:{time:[["1","9~12"]],id:"112112700U02",name:"通信原理與實習",type:"重修",dept:"四技電機系",year:a,class:"重",teacher:"廖兆祥",credit:"3",hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

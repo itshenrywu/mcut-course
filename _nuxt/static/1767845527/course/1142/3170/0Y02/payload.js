@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3170/0Y02", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114231700Y02",name:"Arduino 互動程式設計",type:"選修",dept:"四技工設系",year:a,class:"乙",teacher:"梁旨見",credit:b,hour:b,classroom:"",max:"56",min:"7",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1570/1W01", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"112215701W01",name:"專題製作(四)",type:"必修",dept:"四技電子系",year:"4",class:"甲",teacher:"吳亞芬",credit:"1",hour:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

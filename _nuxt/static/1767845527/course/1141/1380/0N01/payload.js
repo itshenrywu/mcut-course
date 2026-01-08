@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1380/0N01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"114113800N01",name:"高等細胞生物學",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"王建能",credit:a,hour:a,classroom:b,max:"10",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

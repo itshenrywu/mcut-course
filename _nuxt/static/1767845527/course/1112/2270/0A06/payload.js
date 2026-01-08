@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2270/0A06", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111222700A06",name:"數位行銷",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"劉為開",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"跨領域專班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

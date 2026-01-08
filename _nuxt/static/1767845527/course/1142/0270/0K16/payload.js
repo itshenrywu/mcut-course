@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0270/0K16", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"114202700K16",name:"英語聽講(中級)(二)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"劉學真",credit:"1",hour:a,classroom:"",max:"40",min:"10",comment:"管設中D",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/11C0/1G01", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"108211C01G01",name:"汽車實習(一)",type:"必修",dept:"四技進修部機械系",year:"1",class:"甲",teacher:"陳柏翰",credit:a,hour:"4",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

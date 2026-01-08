@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1380/0D01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114213800D01",name:"深度學習之化工應用",type:"選修",dept:"化工系碩士班",year:a,class:"甲",teacher:"傅俊中",credit:b,hour:b,classroom:c,max:"40",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

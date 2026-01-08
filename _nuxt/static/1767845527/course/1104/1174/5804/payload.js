@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/1174/5804", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"110411745804",name:"機械工程專業能力認證課程",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"陳宏毅",credit:"0",hour:a,classroom:b,max:"50",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

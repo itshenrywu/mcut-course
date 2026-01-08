@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1270/2C02", (function(a){return {data:[{course:{time:[["1","7~8.5"]],id:"114212702C02",name:"物聯網應用實務",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"張德仁",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"跨領域專班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

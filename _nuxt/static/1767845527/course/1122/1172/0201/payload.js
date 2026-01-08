@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1172/0201", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"112211720201",name:"單晶片原理與應用",type:"選修",dept:"四技機械系",year:"2",class:"乙",teacher:"陳源林",credit:a,hour:a,classroom:b,max:"46",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

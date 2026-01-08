@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/2K04", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"114222702K04",name:"數位廣告與整合行銷",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"廖宜慶",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班，授課老師陳思穎",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

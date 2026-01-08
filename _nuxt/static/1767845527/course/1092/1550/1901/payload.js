@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1550/1901", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"109215501901",name:"電子學(三)",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"曾宗亮",credit:"3",classroom:"",max:"50",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

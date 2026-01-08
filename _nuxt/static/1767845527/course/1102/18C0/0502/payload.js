@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/18C0/0502", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"110218C00502",name:"模流分析",type:"選修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"張玄聰",credit:b,hour:b,classroom:"",max:"65",min:"10",comment:"講師:張玄聰",otherinfo:null}}],fetch:{},mutations:[]}}("6","3")));
