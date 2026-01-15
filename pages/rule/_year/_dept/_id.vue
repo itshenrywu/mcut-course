@@ -140,13 +140,14 @@
 						<template v-for="rule_subtype in rule_type.data">
 							<div class="ts-content is-secondary is-dense rule_subtype_name"
 								@click="rule_subtype.show = !rule_subtype.show">
-								・
-								{{ rule_subtype.name.split('（')[0] }}
-								<span class="ts-badge is-small is-dense is-outlined is-start-spaced">
-									{{ rule_subtype.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
-								</span>
-								<span class="ts-icon"
-									:class="{ 'is-angle-down-icon': !rule_subtype.show, 'is-angle-up-icon': rule_subtype.show }"></span>
+								<div>
+									・
+									{{ rule_subtype.name.split('（')[0] }}
+									<span class="ts-badge is-small is-dense is-outlined is-start-spaced">
+										{{ rule_subtype.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
+									</span>
+								</div>
+								<span class="ts-icon" :class="{ 'is-angle-down-icon': !rule_subtype.show, 'is-angle-up-icon': rule_subtype.show }"></span>
 							</div>
 							<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
 								<div v-show="rule_subtype.show" class="rule_subtype">
@@ -210,11 +211,13 @@
 						<template v-for="guide_subtype in guide_type.data">
 							<div class="ts-content is-secondary is-dense rule_subtype_name"
 								@click="guide_subtype.show = !guide_subtype.show">
-								・
-								{{ guide_subtype.name?.replace(/\(.*?\)/g, "") }}
-								<span class="ts-badge is-small is-dense is-start-spaced is-outlined" v-if="guide_subtype.name?.match(/\((.*?)\)/)">
-									{{ [...guide_subtype.name.matchAll(/\((.*?)\)/g)].map(m => m[1]).join(', ').replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
-								</span>
+								<div>
+									・
+									{{ guide_subtype.name?.replace(/\(.*?\)/g, "") }}
+									<span class="ts-badge is-small is-dense is-start-spaced is-outlined" v-if="guide_subtype.name?.match(/\((.*?)\)/)">
+										{{ [...guide_subtype.name.matchAll(/\((.*?)\)/g)].map(m => m[1]).join(', ').replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
+									</span>
+								</div>
 								<span class="ts-icon" :class="{ 'is-angle-down-icon': !guide_subtype.show, 'is-angle-up-icon': guide_subtype.show }"></span>
 							</div>
 							<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
@@ -283,9 +286,16 @@
 	</div>
 </template>
 <style>
-#page-rule .ts-box .ts-icon.is-angle-up-icon,
-#page-rule .ts-box .ts-icon.is-angle-down-icon {
-	float: right;
+#page-rule .rule_subtype_name {
+	display: flex;
+}
+
+#page-rule .rule_subtype_name > div {
+	flex: 1;
+}
+
+#page-rule .rule_subtype_name > span {
+	flex: 0;
 }
 
 #page-rule li {
