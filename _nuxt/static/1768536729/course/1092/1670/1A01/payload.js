@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1670/1A01", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"109216701A01",name:"化學系統消防安全設備",type:"選修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"鄭翰陽",credit:"3",classroom:a,max:"65",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

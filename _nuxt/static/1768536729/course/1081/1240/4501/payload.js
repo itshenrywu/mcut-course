@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1240/4501", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108112404501",name:"感測器",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"莊政達",credit:b,hour:b,max:"56",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

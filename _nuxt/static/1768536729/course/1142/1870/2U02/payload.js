@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1870/2U02", (function(a,b){return {data:[{course:{time:[["4","7~8.5"]],id:"114218702U02",name:"基礎材料實驗",type:"必修",dept:"四技材工系",year:a,class:"甲",teacher:"簡順億",credit:a,hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

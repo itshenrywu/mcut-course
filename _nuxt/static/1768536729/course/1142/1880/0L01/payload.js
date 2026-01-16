@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1880/0L01", (function(a,b){return {data:[{course:{time:[["4","6~8"]],id:"114218800L01",name:"AI工具在材料研究的實務應用",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"吳鉉忠",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

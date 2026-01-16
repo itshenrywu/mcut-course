@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/12C0/2301", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"110212C02301",name:"電力電子應用",type:"必修",dept:"四技進修部電機系",year:a,class:"甲",teacher:"蘇益立",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"與職電三合併授課",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

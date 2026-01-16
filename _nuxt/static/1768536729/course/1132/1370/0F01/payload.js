@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1370/0F01", (function(a,b){return {data:[{course:{time:[["3","5~6"]],id:"113213700F01",name:"化工產業與人工智慧應用",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"傅俊中",credit:"1",hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

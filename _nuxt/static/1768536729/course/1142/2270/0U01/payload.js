@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/0U01", (function(a,b){return {data:[{course:{time:[["1","5~7"]],id:"114222700U01",name:"管理經濟",type:"必修",dept:"四技經管系",year:"2",class:"甲",teacher:"李淑華",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

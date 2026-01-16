@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/3140/6501", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"108231406501",name:"造形設計",type:"選修",dept:"四技工設系",year:"1",class:"甲",teacher:"簡銘彥",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

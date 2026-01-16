@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1571/0201", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["5","1~1"]],id:"112115710201",name:"基本電學",type:"選修",dept:"四技電子系",year:b,class:"甲",teacher:"賴文正",credit:b,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

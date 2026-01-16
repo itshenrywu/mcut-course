@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1260/3401", (function(a,b){return {data:[{course:{time:[["4","9~12"]],id:"112112603401",name:"電路學",type:"重修",dept:"四技電機系",year:a,class:"重",teacher:"蘇益立",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

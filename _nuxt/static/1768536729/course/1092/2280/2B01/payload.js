@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2280/2B01", {data:[{course:{time:[["4","2~4"]],id:"109222802B01",name:"企業倫理專題",type:"必修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"楊淑宜",credit:"3",classroom:"",max:"30",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]});

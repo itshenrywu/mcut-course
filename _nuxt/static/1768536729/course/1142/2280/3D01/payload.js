@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2280/3D01", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"114222803D01",name:"行動商務應用專題",type:"選修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"杜海勇",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

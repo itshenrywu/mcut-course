@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/3H01", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"114112703H01",name:"電腦網路概論",type:"選修",dept:"四技電機系",year:"4",class:"丙",teacher:"王得貴",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"限法國專班選課，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

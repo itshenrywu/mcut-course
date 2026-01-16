@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1571/0301", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"113215710301",name:"光電工程概論",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"許宏彬",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"跨領域專班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

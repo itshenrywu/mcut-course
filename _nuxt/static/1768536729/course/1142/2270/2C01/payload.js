@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/2C01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114222702C01",name:"智慧零售管理",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"陳明發",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

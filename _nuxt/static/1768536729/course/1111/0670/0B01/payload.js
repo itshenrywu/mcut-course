@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0670/0B01", (function(a,b){return {data:[{course:{time:[["5","5~6"]],id:"111106700B01",name:"體育(三)桌球",type:"選修",dept:"體育組-四技(日)",year:a,class:"甲",teacher:"陳建彰",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

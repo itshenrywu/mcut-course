@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/61P0/0F01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"114261P00F01",name:"高分子電解膜合成與在鋰離子電池應用",type:"選修",dept:"能源電池博士班",year:"1",class:"甲",teacher:"洪太峰",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

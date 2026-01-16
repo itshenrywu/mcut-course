@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/0P02", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"114103700P02",name:"憲政與法治",type:"重修",dept:"社會組-四技(日)",year:"4",class:"重",teacher:"黃淑芳",credit:a,hour:a,classroom:"",max:"50",min:"5",comment:"社會哲學領域課程",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

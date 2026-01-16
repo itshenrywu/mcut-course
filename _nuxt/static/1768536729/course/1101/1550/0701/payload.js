@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1550/0701", (function(a,b){return {data:[{course:{time:[[a,"9~12"]],id:"110115500701",name:"電子學(二)",type:"重修",dept:"四技電子系",year:a,class:"重",teacher:"廖兆祥",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

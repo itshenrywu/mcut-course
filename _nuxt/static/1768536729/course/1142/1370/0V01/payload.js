@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1370/0V01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"114213700V01",name:"材料科學導論",type:"選修",dept:"四技化工系",year:"1",class:"甲",teacher:"阮宏藝",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1270/2J02", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"114212702J02",name:"影像處理概論",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"祁存廣",credit:a,hour:a,classroom:"",max:"32",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

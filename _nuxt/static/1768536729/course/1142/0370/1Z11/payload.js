@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/1Z11", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"114203701Z11",name:"近代世界的形成",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"盧信吉",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"環實務\u002F半導體",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1270/1H01", (function(a,b){return {data:[{course:{time:[[a,"4~4"],["5","3~4"]],id:"113112701H01",name:"通訊實務",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"楊超舜",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

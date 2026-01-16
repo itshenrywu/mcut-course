@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1273/0402", (function(a,b,c){return {data:[{course:{time:[["4",b],["5",b]],id:"110112730402",name:"電力電子學",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"楊宗振",credit:a,hour:a,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1~2","")));

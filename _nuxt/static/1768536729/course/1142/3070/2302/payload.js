@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3070/2302", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114230702302",name:"互動式數位程式設計與應用",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"邱伯儒",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"甲乙合班，授課老師為邱伯儒、盧俊諺",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

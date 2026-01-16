@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/class/1142/307/40", {data:[{classData:["行銷設計學程","4","甲"]}],fetch:{},mutations:[]});

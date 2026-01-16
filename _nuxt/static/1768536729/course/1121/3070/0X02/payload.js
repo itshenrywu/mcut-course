@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/0X02", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"112130700X02",name:"資訊圖像設計",type:"必修",dept:"四技行設專班",year:"2",class:"乙",teacher:"林金祥",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

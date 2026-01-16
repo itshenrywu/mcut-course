@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/2B03", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114222702B03",name:"資本市場與金融科技",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"葛同",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

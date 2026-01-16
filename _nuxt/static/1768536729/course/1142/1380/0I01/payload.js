@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1380/0I01", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"114213800I01",name:"發酵工程",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"簡良榮",credit:a,hour:a,classroom:b,max:"10",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

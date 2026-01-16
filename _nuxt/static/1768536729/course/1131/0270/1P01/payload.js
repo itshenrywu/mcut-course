@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0270/1P01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"113102701P01",name:"生活與職場英文(中級)(一)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"朱秀瑜",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"機械AI中A",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

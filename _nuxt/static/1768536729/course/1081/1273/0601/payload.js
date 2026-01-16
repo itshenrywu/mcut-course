@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1273/0601", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"108112730601",name:"通訊實習",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"郭慶祥",credit:"1",hour:a,max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2280/0T01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111122800T01",name:"公司財務管理",type:"必修",dept:"經管系碩士班",year:a,class:"甲",teacher:"陳偉銘",credit:b,hour:b,classroom:"",max:"30",min:"5",comment:"授課老師:陳偉銘",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1570/2I02", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114215702I02",name:"光電科學",type:"選修",dept:"四技電子系",year:"1",class:"乙",teacher:"劉舜維",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班,微電子組必選Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

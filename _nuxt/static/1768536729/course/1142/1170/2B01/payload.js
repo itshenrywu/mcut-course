@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1170/2B01", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"114211702B01",name:"無人載具技術與應用",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"徐瑋隆",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

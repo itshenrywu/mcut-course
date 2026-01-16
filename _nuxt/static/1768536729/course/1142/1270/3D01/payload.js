@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1270/3D01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"114212703D01",name:"科技論文習作",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"黃翊之",credit:"1",hour:a,classroom:"",max:"30",min:"10",comment:"English-taught course甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

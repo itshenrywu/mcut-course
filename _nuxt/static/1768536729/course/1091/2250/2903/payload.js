@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2250/2903", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109122502903",name:"電子商務",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"黃銘圭",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

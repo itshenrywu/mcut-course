@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1280/1701", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114212801701",name:"離散最佳化",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"潘晉發",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

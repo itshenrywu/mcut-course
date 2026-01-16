@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2170/3501", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[c,b]],id:"114121703501",name:"實務專題(二)",type:"必修",dept:"四技工管系",year:"4",class:"甲",teacher:"陳昆皇",credit:a,hour:c,classroom:d,max:"60",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5","2","")));

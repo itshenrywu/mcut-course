@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/2X01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"114220702X01",name:"半導體元件與製程整合",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"黃裕銘",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","2","")));

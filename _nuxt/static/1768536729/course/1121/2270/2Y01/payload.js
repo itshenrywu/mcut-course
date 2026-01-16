@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2270/2Y01", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"112122702Y01",name:"創新管理",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"廖宜慶",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

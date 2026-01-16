@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/1C01", (function(a,b){return {data:[{course:{time:[["1","1~2"]],id:"114220701C01",name:"流體力學",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"吳永富",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));
