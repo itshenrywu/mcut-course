@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0070/0407", {data:[{course:{time:[["7","10~10"]],id:"108200700407",name:"工讀實務實習(四)",type:"必修",dept:"四技工設系",year:"3",class:"甲",teacher:"謝政道",credit:"5",hour:"29",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

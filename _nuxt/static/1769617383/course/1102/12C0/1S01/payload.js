@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/12C0/1S01", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"110212C01S01",name:"自動量測實務",type:"選修",dept:"四技進修部電機系",year:a,class:"甲",teacher:"邱聰輝",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1GP0/1P01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"11421GP01P01",name:"服務設計",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"江潤華",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

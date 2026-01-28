@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0021", (function(a){return {data:[{course:{time:[[a,"10~10"]],id:"112200700021",name:"設計思考",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"邱慧怡",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"113\u002F1\u002F15 開始上課，其他上課時間請詳閱公告。",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

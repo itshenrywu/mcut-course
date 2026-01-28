@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6270/2S01", (function(a){return {data:[{course:{time:[["3","8~8.5"]],id:"114262702S01",name:"工程倫理與工業人工智慧講座(二)",type:"必修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"劉弘一",credit:"1",hour:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

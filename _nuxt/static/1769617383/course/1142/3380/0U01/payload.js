@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3380/0U01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114233800U01",name:"書報討論",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"莊妙仙",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

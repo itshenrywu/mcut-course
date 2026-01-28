@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3373/0501", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109233730501",name:"多媒體創作",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"陳容蔚",credit:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

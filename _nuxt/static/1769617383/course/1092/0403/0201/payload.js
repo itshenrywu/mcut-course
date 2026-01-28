@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0403/0201", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"109204030201",name:"微積分(二)",type:"必修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"費毓港",credit:"3",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

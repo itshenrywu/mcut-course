@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/3J02", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"114222703J02",name:"管理會計",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"薄榮薇",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1380/0K01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"113213800K01",name:"高等分子生物學",type:"選修",dept:"化工系生工碩士班",year:a,class:"甲",teacher:"温凡志",credit:b,hour:b,classroom:"",max:"10",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1250/0602", (function(a,b,c){return {data:[{course:{time:[[a,"1~3"]],id:"109112500602",name:"微處理機",type:"必修",dept:"四技電機系",year:a,class:"甲",teacher:"陳瓊安",credit:b,hour:b,classroom:c,max:"68",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

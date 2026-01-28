@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1180/0J01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114111800J01",name:"精密機械特論",type:"選修",dept:"機械系碩士班",year:a,class:"甲",teacher:"郭啟全",credit:b,hour:b,classroom:c,max:"14",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

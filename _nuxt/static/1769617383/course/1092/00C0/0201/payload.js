@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/00C0/0201", (function(a){return {data:[{course:{time:[["6","3~4"]],id:"109200C00201",name:"心理學",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"于學正",credit:"2",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1F8E/1201", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"10921F8E1201",name:"電力電子電路分析與設計",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"楊宗振",credit:"3",classroom:a,max:"20",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

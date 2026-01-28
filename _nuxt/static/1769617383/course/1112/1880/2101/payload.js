@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1880/2101", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"111218802101",name:"複合材料",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"賴怡廷",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

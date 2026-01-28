@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/18C0/0I01", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"108218C00I01",name:"產品設計實務",type:"選修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"郭文宗",credit:a,hour:a,max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

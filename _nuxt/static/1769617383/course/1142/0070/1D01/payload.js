@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1D01", (function(a,b){return {data:[{course:{time:[["7","10~10"]],id:"114200701D01",name:"專業研究實習(四)",type:"必修",dept:"四技電子系",year:"3",class:"甲",teacher:"吳亞芬",credit:"4",hour:"40",classroom:a,max:b,min:b,comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("","1")));

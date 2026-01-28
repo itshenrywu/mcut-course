@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2270/0J01", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"108222700J01",name:"組織行為",type:"必修",dept:"四技經管系",year:a,class:"甲",teacher:"盧建中",credit:b,hour:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

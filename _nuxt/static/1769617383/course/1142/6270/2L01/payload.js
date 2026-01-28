@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6270/2L01", (function(a,b){return {data:[{course:{time:[[a,"0.5~1"]],id:"114262702L01",name:"跨領域頂石專題(一)",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"林淯慈",credit:a,hour:"2",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));
