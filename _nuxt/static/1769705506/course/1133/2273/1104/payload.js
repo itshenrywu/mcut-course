@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/2273/1104", (function(a){return {data:[{course:{time:[["5","1~4"]],id:"113322731104",name:"商用英文(三)",type:"重修",dept:"四技經管系",year:"4",class:"暑",teacher:"陳勁宏",credit:a,hour:"2",classroom:"",max:"60",min:a,comment:"暑修併三乙帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0370/1O02", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"113203701O02",name:"美台社會經濟關係",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳鈺明",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2","")));

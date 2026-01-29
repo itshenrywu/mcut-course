@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0370/0Q08", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"111203700Q08",name:"歷史思辨",type:"選修",dept:"社會組-四技(日)",year:"2",class:"甲",teacher:"沈明得",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"材料二甲+乙及環實務二",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

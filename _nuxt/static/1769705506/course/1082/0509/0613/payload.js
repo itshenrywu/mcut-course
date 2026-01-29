@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0509/0613", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"108205090613",name:"歷史",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"沈明得",credit:a,hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

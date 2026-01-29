@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/1201", (function(a,b){return {data:[{course:{time:[["4","3~4"]],id:"114220701201",name:"半導體物理",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"吳永富",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

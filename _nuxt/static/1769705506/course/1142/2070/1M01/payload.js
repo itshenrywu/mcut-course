@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/1M01", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"114220701M01",name:"半導體製程暨實驗(三)",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"黃裕銘",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","2","")));

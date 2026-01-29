@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1570/4501", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114115704501",name:"嵌入式系統",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"唐明中",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班，資工系統模組必須完成選修課程。",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

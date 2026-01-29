@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1170/0E02", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"110211700E02",name:"機電整合與實習",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"蔡宜昌",credit:"2",hour:a,classroom:"",max:"60",min:"10",comment:"公費生併110學年第一學期進修部4年級",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

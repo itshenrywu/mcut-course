@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2173/0201", (function(a){return {data:[{course:{time:[["2","5~7"],[a,"3~4"],[a,"5~5"]],id:"110121730201",name:"網頁程式設計",type:"選修",dept:"四技工管系",year:a,class:"甲",teacher:"鍾震耀",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班 帶狀課程：上課時間為7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

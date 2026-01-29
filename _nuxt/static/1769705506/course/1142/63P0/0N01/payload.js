@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/63P0/0N01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114263P00N01",name:"奈米製程與材料",type:"選修",dept:"電漿薄膜博士學程",year:"1",class:"甲",teacher:"黎有福",credit:b,hour:b,classroom:"",max:"25",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

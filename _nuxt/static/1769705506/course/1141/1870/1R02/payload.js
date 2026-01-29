@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1870/1R02", (function(a){return {data:[{course:{time:[["5","8~8.5"]],id:"114118701R02",name:"材料專題(二)",type:"必修",dept:"四技材工系",year:"4",class:"乙",teacher:"黃啓賢",credit:"1",hour:"2",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

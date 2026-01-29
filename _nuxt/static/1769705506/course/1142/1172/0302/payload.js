@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1172/0302", (function(a){return {data:[{course:{time:[["1","1~2"],[a,"2~2"]],id:"114211720302",name:"工程熱力學(一)",type:"必修",dept:"四技機械系",year:"2",class:"乙",teacher:"陳明光",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1574/1301", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"114115741301",name:"車載嵌入式系統",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"林義楠",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

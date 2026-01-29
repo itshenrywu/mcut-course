@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/16C3/0501", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"109116C30501",name:"作業環境測定",type:"重修",dept:"四技進修部環安衛系",year:a,class:"重",teacher:"洪明瑞",credit:b,hour:b,classroom:"",max:"5",min:"1",comment:"併入日間部4重【作業環境監測】",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

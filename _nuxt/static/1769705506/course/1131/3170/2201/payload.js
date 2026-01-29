@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3170/2201", (function(a,b,c,d,e){return {data:[{course:{time:[[a,b],[a,c],[d,b],[d,c],[e,b],[e,c]],id:"113131702201",name:"企業倫理",type:"必修",dept:"四技工設系",year:a,class:"甲",teacher:"謝政道",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("3","4~4","5~5","4","5")));

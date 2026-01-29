@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0401/0302", (function(a,b,c){return {data:[{course:{time:[[a,"8~8.5"]],id:"110104010302",name:"大學之道",type:"必修",dept:"四技電子系",year:b,class:"乙",teacher:"陳耀添",credit:b,hour:a,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

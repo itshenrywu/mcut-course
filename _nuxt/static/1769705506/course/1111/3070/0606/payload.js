@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3070/0606", {data:[{course:{time:[["4","9~11"]],id:"111130700606",name:"英文閱讀與聽力訓練（一）",type:"選修",dept:"管理暨設計學院",year:"1",class:"甲",teacher:"馬耀祖",credit:"0",hour:"3",classroom:"",max:"59",min:"10",comment:"榮譽學程 English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1670/1O01", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"114116701O01",name:"大數據分析在環境工程上的應用",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"許金玉",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

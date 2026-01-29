@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1870/2L01", (function(a){return {data:[{course:{time:[["5","5~8"]],id:"114118702L01",name:"積層製造原理與實務",type:"選修",dept:"四技材工系",year:"3",class:"甲",teacher:"范姜博鈞",credit:a,hour:a,classroom:"",max:"24",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0270/0X01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"109102700X01",name:"跨領域專業英文簡報實務",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"堯里昂",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"限大二以上學生選修",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

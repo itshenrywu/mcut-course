@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1674/1301", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114216741301",name:"廢棄物資源化工程",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"嚴莉婷",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

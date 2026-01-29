@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/11C0/0K01", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"111211C00K01",name:"機構學",type:"重修",dept:"四技進修部機械系",year:a,class:"重",teacher:"胡志中",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

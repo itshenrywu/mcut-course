@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/63P0/1301", (function(a){return {data:[{course:{time:[["4","8~8"]],id:"113263P01301",name:"物理冶金與材料科學",type:"選修",dept:"電漿薄膜博士學程",year:a,class:"甲",teacher:"胡特曼",credit:a,hour:a,classroom:"",max:"25",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

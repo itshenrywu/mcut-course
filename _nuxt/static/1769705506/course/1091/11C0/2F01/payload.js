@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/11C0/2F01", (function(a,b,c){return {data:[{course:{time:[[b,"4~4"],[b,"5~6"]],id:"109111C02F01",name:"鑄造學",type:"選修",dept:"四技進修部機械系",year:a,class:"乙",teacher:"劉秋霖",credit:a,hour:a,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","5","")));

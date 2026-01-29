@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1134/1870/2C04", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"113418702C04",name:"材料科學導論(二)",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"彭坤增",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"與大三重修併班+進修部",otherinfo:null}}],fetch:{},mutations:[]}}("3","5~6")));
