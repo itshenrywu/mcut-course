@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/258I/1301", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"1101258I1301",name:"實驗設計",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"陳昆皇",credit:b,hour:b,classroom:c,max:"25",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

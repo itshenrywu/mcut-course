@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0870/0102", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114208700102",name:"普通化學(二)",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"吳紹榮",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

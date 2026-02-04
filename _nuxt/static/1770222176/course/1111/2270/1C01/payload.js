@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2270/1C01", (function(a,b){return {data:[{course:{time:[[b,"1~4"],[b,"5~6"]],id:"111122701C01",name:"激勵與領導",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"陳心田",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"帶狀課程7\u002F4-9\u002F2甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1570/1R01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"110215701R01",name:"微處理機系統實務",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"黃政光",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

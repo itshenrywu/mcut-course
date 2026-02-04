@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1280/0U01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"109212800U01",name:"綠色能源組書報討論(二)",type:"必修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"楊宗振",credit:"0",classroom:a,max:"20",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1880/3701", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114218803701",name:"光電工程與材料",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"童敬維",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

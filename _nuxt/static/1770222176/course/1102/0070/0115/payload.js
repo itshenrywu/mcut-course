@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0070/0115", (function(a){return {data:[{course:{time:[["7","7~7"]],id:"110200700115",name:"工讀實務實習(一)",type:"必修",dept:"四技經管系",year:"3",class:"甲",teacher:"陳世民",credit:"4",hour:"29",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

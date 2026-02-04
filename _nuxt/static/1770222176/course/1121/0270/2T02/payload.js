@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0270/2T02", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112102702T02",name:"基礎華語(一)",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"林麗寬",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

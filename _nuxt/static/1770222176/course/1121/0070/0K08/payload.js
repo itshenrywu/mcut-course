@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0K08", (function(a,b,c){return {data:[{course:{time:[["4",a],["5",a]],id:"112100700K08",name:"大學之道",type:"必修",dept:"環實務",year:b,class:"甲",teacher:"陳隆暉",credit:b,hour:"2",classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1GP0/1D01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"11221GP01D01",name:"材料實驗分析",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"陳正劭",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

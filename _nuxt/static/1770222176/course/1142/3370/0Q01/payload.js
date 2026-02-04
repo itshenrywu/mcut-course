@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3370/0Q01", (function(a,b){return {data:[{course:{time:[["1","5~7"]],id:"114233700Q01",name:"履歷設計",type:"選修",dept:"四技視傳系",year:"4",class:"甲",teacher:"陳容蔚",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0170/0G07", (function(a,b){return {data:[{course:{time:[["3","2~3"]],id:"114201700G07",name:"藝文涵養與社會參與",type:"必修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"蒲彥光",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

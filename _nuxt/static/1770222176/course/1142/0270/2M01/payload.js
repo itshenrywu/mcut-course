@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0270/2M01", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"114202702M01",name:"實用美語會話",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"吳柏德",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2","")));

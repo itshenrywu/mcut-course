@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/01C0/0005", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"108101C00005",name:"國文(一)",type:"必修",dept:"四技進修部機械系",year:"1",class:"乙",teacher:"施依吾",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

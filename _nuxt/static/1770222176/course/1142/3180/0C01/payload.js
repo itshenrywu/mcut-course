@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3180/0C01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"114231800C01",name:"社會設計",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"賴宛吟",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

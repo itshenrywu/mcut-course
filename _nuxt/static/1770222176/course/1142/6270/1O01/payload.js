@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6270/1O01", (function(a){return {data:[{course:{time:[["5","6~8"]],id:"114262701O01",name:"英文簡報與寫作（二）",type:"選修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"詹承學",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

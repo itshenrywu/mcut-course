@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0670/0418", (function(a){return {data:[{course:{time:[["5","5~6"]],id:"108206700418",name:"體育(四)",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"許義章",credit:"0",hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

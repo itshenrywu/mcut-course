@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0871/0201", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"111108710201",name:"普通化學實驗",type:"必修",dept:"環實務",year:b,class:"甲",teacher:"郭亮吟",credit:b,hour:a,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1","")));

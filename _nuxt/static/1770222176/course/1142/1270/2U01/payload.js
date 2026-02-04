@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1270/2U01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114212702U01",name:"工業配電實務",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"羅慶權",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

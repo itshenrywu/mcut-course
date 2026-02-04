@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1570/2G02", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114215702G02",name:"固態電子學",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"邱國源",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"甲乙合班，微電子模組必需完成選修課程",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));
