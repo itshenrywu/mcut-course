@@ -56,8 +56,8 @@
 				<NuxtLink to="/about" class="item">
 					<span class="ts-icon is-file-lines-icon"></span> 關於本站、資料來源及免責聲明
 				</NuxtLink>
-				<a href="https://forms.gle/LrykpuGU9AL92svA6?openExternalBrowser=1" target="_blank" class="item">
-					<span class="ts-icon is-circle-question-icon"></span> 建議及問題回報表單
+				<a href="https://henrywu.tw/?openExternalBrowser=1" target="_blank" class="item">
+					<span class="ts-icon is-circle-question-icon"></span> 建議及問題回報
 				</a>
 			</div>
 
