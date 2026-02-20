@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1270/1R01", {data:[{course:{time:[["5","1~4"]],id:"111112701R01",name:"微處理機與實習",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"陳瓊安",credit:"3",hour:"4",classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]});

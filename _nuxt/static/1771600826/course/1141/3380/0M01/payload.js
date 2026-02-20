@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3380/0M01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"114133800M01",name:"當代電影",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"楊欣茹",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

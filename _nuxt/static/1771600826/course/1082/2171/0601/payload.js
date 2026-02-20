@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2171/0601", (function(a){return {data:[{course:{time:[["2","2~4"],[a,"4~4"]],id:"108221710601",name:"資料庫管理(含實習)",type:"必修",dept:"四技工管系",year:"1",class:"甲",teacher:"鄭明顯",credit:"3",hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

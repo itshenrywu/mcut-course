@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1571/0501", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"112115710501",name:"網路概論",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"謝筱齡",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"限法國專班選課，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

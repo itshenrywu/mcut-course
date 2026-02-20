@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1860/1602", (function(a){return {data:[{course:{time:[["5","5~8"]],id:"110118601602",name:"金屬材料",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"林長毅",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"跨領域專班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

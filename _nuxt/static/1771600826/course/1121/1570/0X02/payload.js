@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1570/0X02", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112115700X02",name:"近代物理",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"王逸平",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"甲乙合班，微電子模組必須完成選修課程。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

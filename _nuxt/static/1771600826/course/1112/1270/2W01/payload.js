@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1270/2W01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"111212702W01",name:"晶片設計導論",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"陳瓊安",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課.English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

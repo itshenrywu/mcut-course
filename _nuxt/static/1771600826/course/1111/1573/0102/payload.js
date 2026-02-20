@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1573/0102", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"111115730102",name:"固態照明元件",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"王逸平",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班授課，微電子模組選修。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

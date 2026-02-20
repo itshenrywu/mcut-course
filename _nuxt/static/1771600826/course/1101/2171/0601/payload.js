@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2171/0601", (function(a,b){return {data:[{course:{time:[["1",a],["5",a]],id:"110121710601",name:"資料庫管理(含實習)",type:"選修",dept:"四技工管系",year:b,class:"甲",teacher:"邱慧怡",credit:b,hour:"4",classroom:"",max:"50",min:"10",comment:"跨領域 不限系 帶狀課程7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("9~12","3")));

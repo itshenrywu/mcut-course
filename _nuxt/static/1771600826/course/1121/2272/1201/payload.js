@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2272/1201", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"112122721201",name:"組織理論與管理",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"陳心田",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

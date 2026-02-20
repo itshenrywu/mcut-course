@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0170/0T01", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"112101700T01",name:"哲學家的思維與方法",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"于學正",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1870/2903", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"114218702903",name:"薄膜製程",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"彭坤增",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"跨領域專班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

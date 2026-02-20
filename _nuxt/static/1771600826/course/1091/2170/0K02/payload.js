@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2170/0K02", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"109121700K02",name:"應用英文(三)",type:"必修",dept:"四技工管系",year:"3",class:"乙",teacher:"季天蓓",credit:"1",hour:a,classroom:"",max:"60",min:"10",comment:"帶狀課程7\u002F6-9\u002F4",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

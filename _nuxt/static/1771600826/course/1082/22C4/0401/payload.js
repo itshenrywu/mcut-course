@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/22C4/0401", (function(a){return {data:[{course:{time:[["1","9~10"]],id:"108222C40401",name:"商用英文(四)",type:"必修",dept:"四技進修部經管系",year:"4",class:"甲",teacher:"吳明鋗",credit:a,hour:a,max:"48",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

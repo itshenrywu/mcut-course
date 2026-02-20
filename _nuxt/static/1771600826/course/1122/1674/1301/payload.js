@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1674/1301", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"112216741301",name:"廢棄物資源化工程",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"官文惠",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"分授范振軒老師(由主任暫掛名)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

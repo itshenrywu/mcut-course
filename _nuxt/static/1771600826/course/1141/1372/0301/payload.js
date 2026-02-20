@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1372/0301", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"114113720301",name:"分子生物學",type:"選修",dept:"四技化工系",year:"2",class:"甲",teacher:"簡良榮",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

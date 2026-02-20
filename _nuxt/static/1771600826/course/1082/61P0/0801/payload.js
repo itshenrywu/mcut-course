@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/61P0/0801", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"108261P00801",name:"鋰離子電池技術",type:"選修",dept:"能源電池博士班",year:a,class:"甲",teacher:"吳溪煌",credit:b,hour:b,max:"20",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

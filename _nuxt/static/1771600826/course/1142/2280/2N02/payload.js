@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2280/2N02", (function(a){return {data:[{course:{time:[["7","0.5~0.5"]],id:"114222802N02",name:"企業實務實習",type:"選修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"張瀞",credit:a,hour:a,classroom:"",max:"10",min:"無下限",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("9")));

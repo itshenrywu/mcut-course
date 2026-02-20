@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0404/0109", (function(a){return {data:[{course:{time:[["2","4~4"],["5","5~6"]],id:"108104040109",name:"普通物理",type:"必修",dept:"四技電機系",year:"1",class:"甲",teacher:"姜惟元",credit:a,hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

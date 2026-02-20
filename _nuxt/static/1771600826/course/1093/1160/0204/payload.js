@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1160/0204", (function(a){return {data:[{course:{time:[[a,"9~12"]],id:"109311600204",name:"材料科學導論(一)",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"阮弼群",credit:a,classroom:"",max:"50",min:"10",comment:"與大三重修併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

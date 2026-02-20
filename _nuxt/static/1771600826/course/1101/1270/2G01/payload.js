@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1270/2G01", (function(a,b,c){return {data:[{course:{time:[[a,"1~2"],["5","4~4"]],id:"110112702G01",name:"電機先修課程",type:"必修",dept:"四技電機系",year:a,class:"甲",teacher:"吳長洲",credit:b,hour:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

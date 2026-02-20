@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1570/2G01", (function(a){return {data:[{course:{time:[["5","6~8"]],id:"113115702G01",name:"固態電子學",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"邱國源",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

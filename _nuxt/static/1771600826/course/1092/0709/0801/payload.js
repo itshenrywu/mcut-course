@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0709/0801", (function(a){return {data:[{course:{time:[["6","5~6"]],id:"109207090801",name:"健康體適能",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"黃志成",credit:"2",classroom:a,max:"25",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

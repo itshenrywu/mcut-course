@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0118", (function(a){return {data:[{course:{time:[["7","7~7"]],id:"111200700118",name:"工讀實務實習(一)",type:"必修",dept:"四技材工系",year:"3",class:"甲",teacher:"林孟芳",credit:"4",hour:"29",classroom:a,max:"40",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1374/1101", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108213741101",name:"生物技術",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"劉昭麟",credit:a,hour:a,max:"48",min:"10",comment:"化四甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

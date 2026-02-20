@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/01C0/0201", (function(a){return {data:[{course:{time:[["4","9~10"]],id:"109201C00201",name:"旅行與旅行書寫",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"張家禎",credit:"2",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

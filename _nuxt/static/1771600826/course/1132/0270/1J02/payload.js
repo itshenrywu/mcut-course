@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/1J02", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"113202701J02",name:"實用西班牙語",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"龔育緯",credit:b,hour:b,classroom:c,max:"45",min:"10",comment:c,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2","")));

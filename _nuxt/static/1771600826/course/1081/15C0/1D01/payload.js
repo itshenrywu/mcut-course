@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/15C0/1D01", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"108115C01D01",name:"可靠度工程",type:"必修",dept:"四技進修部電子系",year:"4",class:"甲",teacher:"曾宗亮",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

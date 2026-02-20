@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2170/1K02", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"],[b,"8~8"]],id:"113221701K02",name:"品質管理(含實習)",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"俞凱允",credit:b,hour:"4",classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

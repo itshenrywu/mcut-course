@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1171/0701", (function(a){return {data:[{course:{time:[[a,"1~1"],["4","1~2"]],id:"108211710701",name:"車輛電子學",type:"必修",dept:"四技機械系",year:"2",class:"丙",teacher:"楊岳儒",credit:a,hour:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

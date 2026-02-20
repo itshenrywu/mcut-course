@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2180/0Q01", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"111221800Q01",name:"人機系統專論",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"陳安哲",credit:a,hour:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

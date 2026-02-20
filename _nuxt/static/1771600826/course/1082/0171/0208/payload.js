@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0171/0208", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108201710208",name:"國文(二)",type:"必修",dept:"四技電機系",year:"1",class:"乙",teacher:"呂湘瑜",credit:a,hour:a,max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

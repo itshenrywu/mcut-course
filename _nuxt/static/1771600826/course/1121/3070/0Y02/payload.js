@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/0Y02", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"112130700Y02",name:"市場調查與數據分析",type:"選修",dept:"四技行設專班",year:"2",class:"乙",teacher:"陳進隆",credit:a,hour:a,classroom:"",max:"29",min:"10",comment:"與行設二甲合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

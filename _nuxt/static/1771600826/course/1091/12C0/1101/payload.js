@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/12C0/1101", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"109112C01101",name:"微處理機應用與實習",type:"必修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"陳瓊安",credit:"1",hour:"3",classroom:a,max:"47",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

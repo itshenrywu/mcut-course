@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2274/1201", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[b,"2~2"]],id:"113122741201",name:"國際金融管理",type:"選修",dept:"四技經管系",year:b,class:"甲",teacher:"林鴻裕",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

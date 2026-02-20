@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1270/0R01", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"108212700R01",name:"Linux作業系統與實習",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"王得貴",credit:"3",hour:a,max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

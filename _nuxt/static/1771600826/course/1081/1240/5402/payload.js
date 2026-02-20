@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1240/5402", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108112405402",name:"程式設計實習",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"邱機平",credit:a,hour:"3",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

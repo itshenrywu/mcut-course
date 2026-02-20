@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1874/1201", {data:[{course:{time:[["1","7~8.5"]],id:"109218741201",name:"再生能源材料",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"林延儒",credit:"3",classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

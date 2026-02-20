@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/18C2/0101", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"108218C20101",name:"材料理化(二)",type:"必修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"林孟芳",credit:b,hour:b,max:"30",min:"10",comment:"將聘新教師授課(暫時掛系主任)",otherinfo:null}}],fetch:{},mutations:[]}}("6","3")));

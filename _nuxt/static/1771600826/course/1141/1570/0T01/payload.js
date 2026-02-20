@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1570/0T01", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"114115700T01",name:"實習前技術訓練",type:"必修",dept:"四技電子系",year:"3",class:"甲",teacher:"陳華彬",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

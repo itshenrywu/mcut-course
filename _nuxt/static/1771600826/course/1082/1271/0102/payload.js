@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1271/0102", (function(a){return {data:[{course:{time:[["4","1~3"]],id:"108212710102",name:"PCB佈線實習",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"白凱仁",credit:a,hour:"3",max:"52",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

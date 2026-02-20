@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/3U01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114122703U01",name:"企業概論",type:"選修",dept:"四技經管系",year:"1",class:"甲",teacher:"陳樹全",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

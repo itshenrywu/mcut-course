@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0F04", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"113100700F04",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"朱秀瑜",credit:a,hour:a,classroom:"",max:"40",min:"15",comment:"主題：多元文化導論(上課期間為7\u002F1至8\u002F5)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

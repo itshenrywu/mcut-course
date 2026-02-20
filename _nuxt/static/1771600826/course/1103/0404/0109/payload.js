@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/0404/0109", (function(a,b,c,d){return {data:[{course:{time:[["2",a],[b,a]],id:"110304040109",name:"普通物理",type:"重修",dept:"自然組(二)-四技(日)",year:b,class:"暑",teacher:"劉岳峰",credit:c,hour:c,classroom:d,max:"50",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("2~4","4","3","")));

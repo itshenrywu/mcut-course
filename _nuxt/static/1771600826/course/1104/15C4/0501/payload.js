@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/15C4/0501", (function(a,b){return {data:[{course:{time:[["5","1~4"]],id:"110415C40501",name:"網路資料庫實務",type:"重修",dept:"四技進修部電子系",year:a,class:"暑",teacher:"林義楠",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

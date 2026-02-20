@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/2L01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"110222802L01",name:"企業電子化專題",type:"選修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"林裕勛",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

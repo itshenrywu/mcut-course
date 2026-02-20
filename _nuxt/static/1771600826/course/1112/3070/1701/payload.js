@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/1701", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"111230701701",name:"數位廣告與整合行銷",type:"選修",dept:"四技行設專班",year:"2",class:"甲",teacher:"孫儷芳",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

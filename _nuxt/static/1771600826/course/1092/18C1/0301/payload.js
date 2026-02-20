@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/18C1/0301", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"109218C10301",name:"材料科學導論(二)",type:"必修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"程志賢",credit:"3",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

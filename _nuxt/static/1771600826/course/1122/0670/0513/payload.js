@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0670/0513", (function(a,b,c){return {data:[{course:{time:[[a,"1~2"]],id:"112206700513",name:"體育(二)",type:"必修",dept:"四技化工系",year:b,class:"乙",teacher:"劉宛蓁",credit:b,hour:a,classroom:c,max:"500",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

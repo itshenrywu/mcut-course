@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2880/0801", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109128800801",name:"氣膠科技",type:"選修",dept:"環安衛系碩士班",year:a,class:"甲",teacher:"程裕祥",credit:b,hour:b,classroom:"",max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

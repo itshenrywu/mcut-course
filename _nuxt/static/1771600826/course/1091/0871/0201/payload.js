@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0871/0201", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"109108710201",name:"普通化學實驗",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"葉照賢",credit:a,hour:"3",classroom:b,max:"23",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

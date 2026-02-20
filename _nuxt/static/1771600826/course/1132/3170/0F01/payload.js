@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3170/0F01", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"113231700F01",name:"進階電腦繪圖",type:"選修",dept:"四技工設系",year:"1",class:"甲",teacher:"黃羽萱",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1880/0C01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108118800C01",name:"高等材料科學",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"黃宗鈺",credit:a,hour:a,max:"50",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

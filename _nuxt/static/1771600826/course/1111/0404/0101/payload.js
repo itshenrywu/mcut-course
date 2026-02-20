@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0404/0101", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"111104040101",name:"普通物理",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"鄧鴻源",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

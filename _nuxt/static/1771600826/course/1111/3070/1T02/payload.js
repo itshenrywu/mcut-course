@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3070/1T02", (function(a){return {data:[{course:{time:[[a,"1~1"]],id:"111130701T02",name:"專業證照(一)",type:"選修",dept:"四技行設專班",year:a,class:"乙",teacher:"林金祥",credit:a,hour:a,classroom:"",max:"28",min:"10",comment:"與行設學程併班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

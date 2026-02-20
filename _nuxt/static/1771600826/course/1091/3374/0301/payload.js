@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3374/0301", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"109133740301",name:"展示設計",type:"選修",dept:"四技視傳系",year:"4",class:"甲",teacher:"李淑珠",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

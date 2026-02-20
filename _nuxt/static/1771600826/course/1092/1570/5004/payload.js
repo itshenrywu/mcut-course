@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1570/5004", {data:[{course:{time:[["5","5~7"]],id:"109215705004",name:"電磁學",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"鄭信民",credit:"3",classroom:"",max:"50",min:"10",comment:"甲乙合班授課，微電子模組必需完成選修課程",otherinfo:null}}],fetch:{},mutations:[]});

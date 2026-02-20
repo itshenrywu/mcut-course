@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1170/4903", {data:[{course:{time:[["5","2~4"]],id:"108211704903",name:"機械工程實驗(一)",type:"必修",dept:"四技機械系",year:"4",class:"丙",teacher:"劉晉奇",credit:"1",hour:"3",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

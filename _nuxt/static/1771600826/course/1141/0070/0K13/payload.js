@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0K13", (function(a,b,c){return {data:[{course:{time:[["4",a],["5",a]],id:"114100700K13",name:"大學之道",type:"必修",dept:"四技機械系",year:b,class:"丙",teacher:"蔡宜昌",credit:b,hour:"2",classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","1","")));

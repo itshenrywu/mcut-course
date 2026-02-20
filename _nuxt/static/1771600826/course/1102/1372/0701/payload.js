@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1372/0701", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"110213720701",name:"工程數學(二)",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"蔡榮進",credit:b,hour:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

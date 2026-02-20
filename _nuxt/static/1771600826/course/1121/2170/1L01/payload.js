@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2170/1L01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"112121701L01",name:"工程倫理與實務講座",type:"必修",dept:"四技工管系",year:"4",class:"甲",teacher:"王建智",credit:"1",hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

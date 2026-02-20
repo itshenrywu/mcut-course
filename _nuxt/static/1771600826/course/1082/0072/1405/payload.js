@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0072/1405", {data:[{course:{time:[["5","1~2"]],id:"108200721405",name:"全民國防教育軍事訓練(二)",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"李大偉",credit:"0",hour:"2",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

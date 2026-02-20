@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0870/0203", (function(a,b,c){return {data:[{course:{time:[[a,"7~8.5"]],id:"112108700203",name:"普通化學實驗(一)",type:"必修",dept:"四技材工系",year:b,class:"甲",teacher:"黃錦鴻",credit:b,hour:a,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1","")));

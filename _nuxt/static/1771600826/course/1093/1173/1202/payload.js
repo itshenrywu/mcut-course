@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1173/1202", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"109311731202",name:"控制工程軟體應用",type:"重修",dept:"四技機械系",year:a,class:"暑",teacher:"蔡宜昌",credit:"3",classroom:"",max:"56",min:"10",comment:"併機三乙",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

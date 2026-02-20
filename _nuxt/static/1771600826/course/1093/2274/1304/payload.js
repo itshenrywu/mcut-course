@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/2274/1304", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"109322741304",name:"商用英文(四)",type:"重修",dept:"四技經管系",year:a,class:"暑",teacher:"夏珮玲",credit:"1",classroom:"",max:"20",min:"5",comment:"帶狀課程7\u002F5~9\u002F3(併入三年級)",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

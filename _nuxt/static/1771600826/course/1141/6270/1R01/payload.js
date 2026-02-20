@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/1R01", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"114162701R01",name:"數位邏輯",type:"必修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"郭振洋",credit:a,hour:a,classroom:b,max:"56",min:"無下限",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

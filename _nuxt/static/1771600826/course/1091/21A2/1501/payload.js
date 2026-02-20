@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/21A2/1501", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"109121A21501",name:"創新服務與研發管理",type:"選修",dept:"工管系碩專班",year:a,class:"甲",teacher:"葉神丑",credit:b,hour:b,classroom:"",max:"25",min:"5",comment:"與碩士班合班",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

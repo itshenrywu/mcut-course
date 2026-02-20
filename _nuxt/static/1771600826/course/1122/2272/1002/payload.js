@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2272/1002", (function(a,b){return {data:[{course:{time:[["5","1~2"]],id:"112222721002",name:"商用英文(二)",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"張鳳暉",credit:"1",hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

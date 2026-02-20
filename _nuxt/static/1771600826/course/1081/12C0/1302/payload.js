@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/12C0/1302", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"108112C01302",name:"感測器",type:"選修",dept:"四技進修部電機系",year:a,class:"乙",teacher:"林郁修",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

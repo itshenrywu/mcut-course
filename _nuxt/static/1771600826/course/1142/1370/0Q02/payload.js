@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1370/0Q02", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"114213700Q02",name:"質能平衡",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"程桂祥",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

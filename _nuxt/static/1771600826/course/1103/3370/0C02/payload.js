@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/3370/0C02", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"110333700C02",name:"設計英文",type:"重修",dept:"四技視傳系",year:"4",class:"暑",teacher:"徐維國",credit:"1",hour:a,classroom:"",max:"5",min:"無下限",comment:"與大三合班",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1350/5401", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"109113505401",name:"合成化學實驗",type:"選修",dept:"四技化工系",year:b,class:"甲",teacher:"李英正",credit:a,hour:b,classroom:"",max:"30",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

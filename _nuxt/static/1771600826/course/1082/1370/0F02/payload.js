@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1370/0F02", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"108213700F02",name:"化工產業與人工智慧應用",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"劉宗宏",credit:"1",hour:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

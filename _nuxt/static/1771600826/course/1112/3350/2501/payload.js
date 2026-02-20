@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3350/2501", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"111233502501",name:"印刷設計",type:"選修",dept:"四技視傳系",year:"1",class:"甲",teacher:"曾郁雯",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

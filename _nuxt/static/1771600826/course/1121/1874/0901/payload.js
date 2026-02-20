@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1874/0901", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"112118740901",name:"固態物理導論",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"姚栢文",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

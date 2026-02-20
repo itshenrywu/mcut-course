@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0509/0605", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"109105090605",name:"歷史",type:"必修",dept:"四技工設系",year:"2",class:"甲",teacher:"陳明治",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

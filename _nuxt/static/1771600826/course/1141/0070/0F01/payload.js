@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0F01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"114100700F01",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"林美良",credit:b,hour:b,classroom:"",max:"40",min:"15",comment:"主題：眾神的遊戲，限大四",otherinfo:null}}],fetch:{},mutations:[]}}("4","1")));

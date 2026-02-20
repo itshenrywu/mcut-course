@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2270/5702", (function(a){return {data:[{course:{time:[[a,"5~7"],["5","2~4"]],id:"109122705702",name:"企業倫理",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"顏婉竹",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"帶狀課程7\u002F6~9\u002F4",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

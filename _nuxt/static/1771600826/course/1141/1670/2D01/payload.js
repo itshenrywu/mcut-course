@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1670/2D01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"114116702D01",name:"淨零碳排導論",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"崔砢",credit:b,hour:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

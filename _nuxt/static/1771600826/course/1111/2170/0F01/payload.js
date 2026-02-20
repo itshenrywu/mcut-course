@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2170/0F01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"111121700F01",name:"工業衛生",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"張仁履",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

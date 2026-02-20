@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/2V01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114112702V01",name:"人工智慧實務",type:"必修",dept:"四技機械系",year:a,class:"丁",teacher:"潘晉發",credit:b,hour:b,classroom:"",max:"32",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

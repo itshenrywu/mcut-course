@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2780/7001", {data:[{course:{time:[["4","5~7"]],id:"109227807001",name:"蛋白質純化技術暨實務",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"張煜光",credit:"3",classroom:"",max:"20",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]});

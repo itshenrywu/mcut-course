@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1350/4804", (function(a,b,c){return {data:[{course:{time:[["1",a],[b,a]],id:"108313504804",name:"電化學",type:"重修",dept:"四技化工系",year:"4",class:"暑",teacher:"吳永富",credit:c,hour:c,max:"5",min:b,comment:"與化三甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("1~2","2","3")));

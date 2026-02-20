@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0409/0513", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"108204090513",name:"憲政與發展",type:"必修",dept:"四技電機系",year:"2",class:"甲",teacher:"蔡孟彥",credit:b,hour:b,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

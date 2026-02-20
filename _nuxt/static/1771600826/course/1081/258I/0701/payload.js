@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/258I/0701", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"1081258I0701",name:"應用人因工程",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"林伯鴻",credit:a,hour:a,max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

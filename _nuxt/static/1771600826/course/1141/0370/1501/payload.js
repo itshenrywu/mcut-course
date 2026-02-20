@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/1501", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"114103701501",name:"當代中國概論",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"盧信吉",credit:b,hour:b,classroom:c,max:"45",min:"10",comment:c,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("1","2","")));

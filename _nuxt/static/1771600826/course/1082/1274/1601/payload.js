@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1274/1601", {data:[{course:{time:[["2","8.5~8.5"]],id:"108212741601",name:"電機工程專業能力認證課程",type:"必修",dept:"四技電機系",year:"4",class:"甲",teacher:"邱聰輝",credit:"0",hour:"1",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

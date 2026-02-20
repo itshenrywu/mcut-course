@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/2270/3902", (function(a,b){return {data:[{course:{time:[[a,"2~4"],[a,"5~7"]],id:"110322703902",name:"投資學",type:"重修",dept:"四技經管系",year:"4",class:"暑",teacher:"張家瑞",credit:b,hour:b,classroom:"",max:"50",min:"5",comment:"帶狀課程7\u002F4-9\u002F2併入大三",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0270/0101", (function(a,b){return {data:[{course:{time:[[a,"9~10"]],id:"114202700101",name:"工讀自學英文",type:"重修",dept:"外文組-四技(日)",year:"4",class:"重",teacher:"陳勁宏",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

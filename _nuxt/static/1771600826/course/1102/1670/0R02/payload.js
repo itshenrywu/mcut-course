@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1670/0R02", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"110216700R02",name:"質能均衡",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"吳容銘",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"與環實務一併班",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

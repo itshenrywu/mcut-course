@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1170/0001", (function(a,b){return {data:[{course:{time:[["5","5~6"]],id:"111211700001",name:"靜力學",type:"必修",dept:"四技機械系",year:"1",class:"甲",teacher:"黃世欽",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

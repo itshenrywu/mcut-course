@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1GP0/0201", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"11111GP00201",name:"論文研究(一)",type:"必修",dept:"生醫暨醫材博士學程",year:a,class:"甲",teacher:"朱承軒",credit:"0",hour:b,classroom:"",max:"20",min:b,comment:"English-taught course，指導教授1對1授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

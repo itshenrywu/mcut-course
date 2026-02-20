@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21C0/0W01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"108121C00W01",name:"供應鏈管理",type:"選修",dept:"四技進修部工管系",year:a,class:"甲",teacher:"邱育智",credit:b,hour:b,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

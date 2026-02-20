@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3340/2101", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"110133402101",name:"視覺創意思考",type:"選修",dept:"四技視傳系",year:"1",class:"甲",teacher:"徐正浩",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"徐正浩老師授課，跨領域專班。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

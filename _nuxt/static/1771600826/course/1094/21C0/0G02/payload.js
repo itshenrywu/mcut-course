@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/21C0/0G02", (function(a,b){return {data:[{course:{time:[[a,"9~12"],["6","5~6"]],id:"109421C00G02",name:"人因工程",type:"重修",dept:"四技進修部工管系",year:"1",class:"暑",teacher:"郭佳珍",credit:"3",classroom:b,max:"50",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1570/1V02", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"113215701V02",name:"電子電路模擬實務",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"吳亞芬",credit:a,hour:"3",classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

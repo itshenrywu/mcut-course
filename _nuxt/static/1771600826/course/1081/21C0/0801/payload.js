@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21C0/0801", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"108121C00801",name:"生產管理(一)",type:"必修",dept:"四技進修部工管系",year:a,class:"甲",teacher:"蘇力萍",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

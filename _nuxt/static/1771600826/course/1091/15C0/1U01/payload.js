@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/15C0/1U01", (function(a,b){return {data:[{course:{time:[["5","7~8.5"]],id:"109115C01U01",name:"電化學方法與應用",type:"必修",dept:"四技進修部電子系",year:a,class:"甲",teacher:"劉志毅",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

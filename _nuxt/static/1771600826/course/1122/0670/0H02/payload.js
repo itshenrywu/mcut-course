@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0670/0H02", (function(a,b){return {data:[{course:{time:[["5","5~6"]],id:"112206700H02",name:"體育(四)籃球",type:"必修",dept:"體育組-四技(日)",year:a,class:"甲",teacher:"許義章",credit:"1",hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

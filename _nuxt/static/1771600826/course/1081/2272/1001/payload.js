@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2272/1001", {data:[{course:{time:[["4","9~12"]],id:"108122721001",name:"商用英文(二)",type:"重修",dept:"四技經管系",year:"3",class:"重",teacher:"朱璽叡",credit:"1",hour:"2",max:"50",min:"5",comment:"帶狀課程7\u002F8-9\u002F6",otherinfo:null}}],fetch:{},mutations:[]});

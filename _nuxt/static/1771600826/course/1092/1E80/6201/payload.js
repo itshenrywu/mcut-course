@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1E80/6201", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"10921E806201",name:"精密機械設計",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"王海",credit:"3",classroom:b,max:"12",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("5","")));

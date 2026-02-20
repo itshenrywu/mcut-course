@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/18C2/0201", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"110118C20201",name:"工程數學",type:"必修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"彭坤增",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/258I/0701", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"1111258I0701",name:"應用人因工程",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"李育奇",credit:a,hour:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

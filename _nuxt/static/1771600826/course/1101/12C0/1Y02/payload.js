@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/12C0/1Y02", (function(a,b){return {data:[{course:{time:[["5","9~11"]],id:"110112C01Y02",name:"通訊原理",type:"選修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"王柏仁",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

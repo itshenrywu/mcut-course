@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/2L02", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"114112702L02",name:"人機介面應用",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"祁存廣",credit:a,hour:a,classroom:"",max:"32",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

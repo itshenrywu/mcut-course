@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2270/2Z01", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"113222702Z01",name:"創業管理",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"陳明發",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/3H02", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"114122703H02",name:"會計學",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"薄榮薇",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

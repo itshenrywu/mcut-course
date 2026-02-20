@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1160/0203", (function(a,b){return {data:[{course:{time:[[a,"9~10"],["5","1~2"]],id:"108311600203",name:"材料科學導論(一)",type:"重修",dept:"四技材工系",year:a,class:"暑",teacher:"黃裕清",credit:b,hour:b,max:"34",min:"1",comment:"與大三重修併班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1880/0A01", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"114218800A01",name:"奈米生醫與綠色材料",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"王冠勛",credit:a,hour:a,classroom:b,max:"50",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

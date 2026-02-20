@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1270/2Z02", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"114212702Z02",name:"感測器",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"潘晉發",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/15C0/2301", (function(a){return {data:[{course:{time:[["6","5~7"]],id:"108115C02301",name:"電路學",type:"必修",dept:"四技進修部電子系",year:"1",class:"甲",teacher:"林義楠",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

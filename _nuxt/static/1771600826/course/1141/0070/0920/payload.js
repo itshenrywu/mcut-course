@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0920", (function(a,b,c){return {data:[{course:{time:[[a,b],["2",b]],id:"114100700920",name:"實習前職場素養訓練",type:"必修",dept:"四技機械系",year:"3",class:"丙",teacher:"劉小篔",credit:a,hour:a,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5","")));

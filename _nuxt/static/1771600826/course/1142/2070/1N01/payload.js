@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/1N01", (function(a){return {data:[{course:{time:[["5","5~6"]],id:"114220701N01",name:"半導體實務講座",type:"必修",dept:"半導體學程",year:"4",class:"甲",teacher:"阮弼群",credit:"1",hour:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

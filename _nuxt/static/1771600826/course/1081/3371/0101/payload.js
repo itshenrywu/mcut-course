@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3371/0101", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"108133710101",name:"文字造形設計",type:"選修",dept:"四技視傳系",year:"1",class:"甲",teacher:"劉瑞芬",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

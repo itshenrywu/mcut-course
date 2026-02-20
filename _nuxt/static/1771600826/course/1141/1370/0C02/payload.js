@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1370/0C02", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"114113700C02",name:"化工產業之機電實務講座",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"施正元",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"環資、工程學院可選(機四丙除外）",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

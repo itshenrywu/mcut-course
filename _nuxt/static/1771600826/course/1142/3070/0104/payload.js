@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3070/0104", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"114230700104",name:"創意整合(二)",type:"選修",dept:"四技工管系",year:a,class:"甲",teacher:"林恆毅",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班；管設學院併班上課",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

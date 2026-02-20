@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/18C0/0A01", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"110118C00A01",name:"鑄造學",type:"選修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"梁煥昌",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"兼任老師：梁煥昌，暫掛黃啟賢",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

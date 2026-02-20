@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1374/0701", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"111213740701",name:"綠色化學技術暨實驗",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"施正元",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

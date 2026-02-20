@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1550/0302", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"112115500302",name:"固態電子學",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"田青禾",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"甲乙合班，微電子模組必須完成選修課程。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

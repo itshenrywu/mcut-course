@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/15C0/2901", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"109115C02901",name:"固態電子學",type:"必修",dept:"四技進修部電子系",year:a,class:"甲",teacher:"曾宗亮",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

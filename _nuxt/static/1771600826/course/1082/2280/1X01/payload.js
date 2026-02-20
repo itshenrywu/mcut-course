@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2280/1X01", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"108222801X01",name:"生產與作業管理專題",type:"必修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"陳琨太",credit:b,hour:b,max:"30",min:a,comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("5","2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1172/1601", (function(a,b,c){return {data:[{course:{time:[["1","7~7"],[a,"6~7"]],id:"114211721601",name:"機械材料",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"胡力元",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/21A0/0H01", (function(a,b){return {data:[{course:{time:[["4","9~11"]],id:"113121A00H01",name:"工業4.0",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"鞠志遠",credit:a,hour:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

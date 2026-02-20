@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6270/1501", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],["4","6~6"]],id:"113262701501",name:"數位影像處理",type:"選修",dept:"人工智慧學程",year:a,class:"甲",teacher:"李建興",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

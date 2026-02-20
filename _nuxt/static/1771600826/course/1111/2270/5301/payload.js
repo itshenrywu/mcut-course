@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2270/5301", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"111122705301",name:"專案管理",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"林裕勛",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"帶狀課程7\u002F4-9\u002F2甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

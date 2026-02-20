@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1580/4903", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108215804903",name:"高科技專利實務",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"賴文正",credit:b,hour:b,max:"30",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/21A0/0I01", (function(a,b){return {data:[{course:{time:[["4","9~11"]],id:"112221A00I01",name:"資料探勘",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"鄭明顯",credit:a,hour:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1670/0T01", (function(a){return {data:[{course:{time:[["4","1~2"]],id:"108116700T01",name:"物理化學",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"劉禎淑",credit:a,hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

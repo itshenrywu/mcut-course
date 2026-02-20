@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1270/0802", (function(a,b,c){return {data:[{course:{time:[["1","3~4"],[a,"4~4"]],id:"110112700802",name:"信號與系統",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"楊超舜",credit:b,hour:b,classroom:c,max:"70",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

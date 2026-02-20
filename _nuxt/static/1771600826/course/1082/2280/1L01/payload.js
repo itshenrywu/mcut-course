@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2280/1L01", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"108222801L01",name:"進階商用英文(二)",type:"必修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"朱璽叡",credit:"0",hour:"2",max:"30",min:a,comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("5")));

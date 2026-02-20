@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2270/0R02", (function(a){return {data:[{course:{time:[["3","2~3"]],id:"108122700R02",name:"商用英文會話",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"夏珮玲",credit:a,hour:"2",max:"30",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

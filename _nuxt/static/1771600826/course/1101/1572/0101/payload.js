@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1572/0101", (function(a,b,c){return {data:[{course:{time:[[a,"1~3"]],id:"110115720101",name:"線性代數",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"洪偉文",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

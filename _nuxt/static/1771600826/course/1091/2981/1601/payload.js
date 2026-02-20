@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2981/1601", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109129811601",name:"設計研究方法",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"梁又文",credit:a,hour:a,classroom:b,max:"20",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1174/3804", (function(a){return {data:[{course:{time:[["2","1~2"],[a,"5~6"]],id:"110311743804",name:"自動控制(一)",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"陳宏毅",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"併機三甲",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

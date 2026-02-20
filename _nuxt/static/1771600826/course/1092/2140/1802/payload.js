@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2140/1802", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109221401802",name:"產業概論",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"游淑萍",credit:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/2F01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"112220702F01",name:"電子材料",type:"選修",dept:"半導體學程",year:"2",class:"甲",teacher:"阮弼群",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3180/0D01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"113131800D01",name:"工業設計",type:"必修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"賴宛吟",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

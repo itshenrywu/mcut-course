@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/12C0/0Z01", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"109112C00Z01",name:"自動控制應用與實習",type:"必修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"邱機平",credit:"1",hour:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

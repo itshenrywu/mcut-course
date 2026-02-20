@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/0G02", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"113105700G02",name:"普通物理",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"陳宗德",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

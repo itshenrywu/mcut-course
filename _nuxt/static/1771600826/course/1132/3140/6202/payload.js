@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3140/6202", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113231406202",name:"基本產品設計",type:"必修",dept:"四技工設系",year:a,class:"乙",teacher:"楊俊明",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

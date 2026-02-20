@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1680/0001", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108116800001",name:"高等廢棄物處理技術",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"張小道",credit:a,hour:a,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

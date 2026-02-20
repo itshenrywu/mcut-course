@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1272/0301", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114112720301",name:"機率與統計",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"蔡文星",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

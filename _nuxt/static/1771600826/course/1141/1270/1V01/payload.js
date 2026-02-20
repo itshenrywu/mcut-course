@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/1V01", (function(a,b){return {data:[{course:{time:[["3","8.5~8.5"]],id:"114112701V01",name:"專題製作(二)",type:"重修",dept:"四技電機系",year:"4",class:"重",teacher:"陳瓊安",credit:a,hour:a,classroom:b,max:"5",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

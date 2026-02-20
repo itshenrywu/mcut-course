@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0871/0105", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"110208710105",name:"普通化學",type:"選修",dept:"四技電子系",year:"1",class:"甲",teacher:"邱國源",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，微電子模組必需完成選修課程",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

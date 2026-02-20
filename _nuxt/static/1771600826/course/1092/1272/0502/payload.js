@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1272/0502", (function(a,b){return {data:[{course:{time:[[a,"4~4"],["4","3~4"]],id:"109212720502",name:"電子學(二)",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"陳瓊安",credit:"3",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

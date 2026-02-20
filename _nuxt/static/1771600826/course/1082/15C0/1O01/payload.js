@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/15C0/1O01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"108215C01O01",name:"電磁學",type:"必修",dept:"四技進修部電子系",year:"2",class:"甲",teacher:"廖兆祥",credit:a,hour:a,max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

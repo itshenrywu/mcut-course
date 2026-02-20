@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/0U01", (function(a,b){return {data:[{course:{time:[[a,"8~8.5"],["2","8.5~8.5"]],id:"113120700U01",name:"工程倫理與實務講座",type:"必修",dept:"環實務",year:"4",class:"甲",teacher:"鄭有為",credit:a,hour:"3",classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

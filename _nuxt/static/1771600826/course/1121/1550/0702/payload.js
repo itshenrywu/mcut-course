@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1550/0702", (function(a){return {data:[{course:{time:[[a,"1~1"],["5","7~8"]],id:"112115500702",name:"電子學(二)",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"田青禾",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

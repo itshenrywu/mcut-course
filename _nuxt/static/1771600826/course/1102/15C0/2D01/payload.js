@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/15C0/2D01", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"110215C02D01",name:"科技英文進階",type:"必修",dept:"四技進修部電子系",year:"4",class:"甲",teacher:"廖益輝",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

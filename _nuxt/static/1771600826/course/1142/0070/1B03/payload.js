@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1B03", (function(a,b){return {data:[{course:{time:[["7","8~8"]],id:"114200701B03",name:"專業研究實習(二)",type:"必修",dept:"四技化工系",year:"3",class:"乙",teacher:"程桂祥",credit:"4",hour:"40",classroom:a,max:b,min:b,comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("","2")));

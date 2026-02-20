@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/1901", (function(a,b,c){return {data:[{course:{time:[[a,"6~8"]],id:"113105701901",name:"普通物理實驗",type:"必修",dept:"環實務",year:b,class:"甲",teacher:"李孟錡",credit:b,hour:a,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1","")));

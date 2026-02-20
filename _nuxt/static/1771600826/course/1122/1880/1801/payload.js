@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1880/1801", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"112218801801",name:"半導體元件物理",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"阮弼群",credit:a,hour:a,classroom:"",max:"50",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3070/0105", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"112230700105",name:"創意整合(二)",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"楊朝明",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"管設學院併班上課",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

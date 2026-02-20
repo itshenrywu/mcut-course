@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1180/0E01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"114211800E01",name:"科技論文寫作",type:"必修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"陳明光",credit:b,hour:b,classroom:"",max:"35",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","2")));

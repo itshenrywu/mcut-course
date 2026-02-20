@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/15C0/1F01", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"108215C01F01",name:"實習討論",type:"必修",dept:"四技進修部電子系",year:"4",class:"甲",teacher:"張創然",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

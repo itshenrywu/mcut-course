@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1140/0701", (function(a,b){return {data:[{course:{time:[[a,"9~12"]],id:"110111400701",name:"電機學",type:"重修",dept:"四技機械系",year:a,class:"重",teacher:"楊岳儒",credit:a,hour:a,classroom:b,max:"60",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

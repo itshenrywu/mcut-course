@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1170/2Q02", (function(a,b){return {data:[{course:{time:[["3","8~8"]],id:"113111702Q02",name:"專題實務",type:"選修",dept:"四技機械系",year:"2",class:"乙",teacher:"郭啟全",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

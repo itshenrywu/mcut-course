@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1870/1702", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"108218701702",name:"腐蝕與防蝕",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"林孟芳",credit:a,hour:a,max:"64",min:"10",comment:"材四甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

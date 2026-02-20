@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0509/0616", (function(a){return {data:[{course:{time:[["1","1~3"]],id:"108205090616",name:"歷史",type:"必修",dept:"四技經管系",year:"2",class:"甲",teacher:"張淑惠",credit:a,hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

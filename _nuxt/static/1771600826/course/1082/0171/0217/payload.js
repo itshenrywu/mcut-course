@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0171/0217", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"108201710217",name:"國文(二)",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"林溫芳",credit:a,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/0B01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"112130700B01",name:"英文簡報與寫作（一）",type:"選修",dept:"管理暨設計學院",year:"4",class:"甲",teacher:"林柏翰",credit:"0",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

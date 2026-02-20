@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2274/1301", {data:[{course:{time:[["4","1~4"]],id:"110122741301",name:"商用英文(四)",type:"必修",dept:"四技經管系",year:"3",class:"甲",teacher:"夏珮玲",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"帶狀課程7\u002F5~9\u002F3",otherinfo:null}}],fetch:{},mutations:[]});

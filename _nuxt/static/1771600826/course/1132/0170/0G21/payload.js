@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0170/0G21", (function(a,b){return {data:[{course:{time:[["3","1~2"]],id:"113201700G21",name:"藝文涵養與社會參與",type:"必修",dept:"四技機械系",year:"1",class:"乙",teacher:"林立仁",credit:a,hour:a,classroom:b,max:"54",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

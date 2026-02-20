@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1270/2C01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"113212702C01",name:"物聯網應用實務",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"王柏仁",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

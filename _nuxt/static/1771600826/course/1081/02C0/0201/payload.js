@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/02C0/0201", (function(a){return {data:[{course:{time:[[a,"11~12"]],id:"108102C00201",name:"英語聽講(一)",type:"必修",dept:"四技進修部經管系",year:"4",class:"甲",teacher:"廖益輝",credit:a,hour:"2",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/18C4/0801", (function(a,b){return {data:[{course:{time:[["5","7~8.5"]],id:"110118C40801",name:"奈米製程",type:"必修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"阮弼群",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

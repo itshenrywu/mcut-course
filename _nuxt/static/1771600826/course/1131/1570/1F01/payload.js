@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1570/1F01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"113115701F01",name:"Python機器學習應用實務技術",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"黎玉線",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班,資工系統模組選修,English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

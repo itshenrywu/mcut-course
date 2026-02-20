@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1124/0070/0420", (function(a){return {data:[{course:{time:[["7","10~10"]],id:"112400700420",name:"工讀實務實習(四)",type:"重修",dept:"四技經管系",year:"4",class:"暑",teacher:"廖宜慶",credit:"5",hour:"29",classroom:a,max:"10",min:"1",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

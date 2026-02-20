@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1372/0702", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"113213720702",name:"工程數學(二)",type:"選修",dept:"四技化工系",year:"2",class:"乙",teacher:"劉昭麟",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"化工製程模組",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

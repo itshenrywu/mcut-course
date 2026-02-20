@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3180/0601", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"108131800601",name:"設計專業實習(一)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"賴宛吟",credit:a,hour:a,max:"20",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

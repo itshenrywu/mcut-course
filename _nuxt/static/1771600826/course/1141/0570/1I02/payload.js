@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0570/1I02", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"114105701I02",name:"普通物理實驗(一)",type:"必修",dept:"四技材工系",year:"1",class:"乙",teacher:"蘇莉真",credit:"2",hour:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

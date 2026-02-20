@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1570/0T02", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"114115700T02",name:"實習前技術訓練",type:"必修",dept:"四技電子系",year:"3",class:"乙",teacher:"吳亞芬",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

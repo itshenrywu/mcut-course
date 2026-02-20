@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/0Q04", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"112220700Q04",name:"基石專題",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"吳容銘",credit:a,hour:"3",classroom:"",max:"48",min:"10",comment:"不上選課系統",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

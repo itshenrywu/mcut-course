@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2270/1G02", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"110222701G02",name:"人力資源管理法令",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"孟憲章",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3170/0G02", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114131700G02",name:"進階表現技法",type:"選修",dept:"四技工設系",year:"2",class:"乙",teacher:"黃羽萱",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

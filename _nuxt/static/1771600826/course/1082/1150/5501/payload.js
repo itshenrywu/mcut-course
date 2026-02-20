@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1150/5501", (function(a){return {data:[{course:{time:[[a,"5~5"],["4","5~6"]],id:"108211505501",name:"材料力學(二)",type:"選修",dept:"四技機械系",year:"2",class:"甲",teacher:"劉秋霖",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

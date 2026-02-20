@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0770/0A05", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"113207700A05",name:"全民國防教育軍事訓練(二)",type:"必修",dept:"四技化工系",year:"1",class:"甲",teacher:"陶韻然",credit:"0.5",hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

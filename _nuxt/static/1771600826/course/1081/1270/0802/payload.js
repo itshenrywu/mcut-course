@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1270/0802", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"108112700802",name:"信號與系統",type:"重修",dept:"四技電機系",year:a,class:"重",teacher:"王柏仁",credit:a,hour:a,max:"50",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

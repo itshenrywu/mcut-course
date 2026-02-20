@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0270/1E01", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"111202701E01",name:"西班牙生活探索",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"龔育緯",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2","")));

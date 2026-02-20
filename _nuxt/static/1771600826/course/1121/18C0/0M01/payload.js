@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/18C0/0M01", (function(a,b){return {data:[{course:{time:[["6","7~9"]],id:"112118C00M01",name:"真空技術與實務",type:"選修",dept:"四技進修部材工系",year:"2",class:"甲",teacher:"沈智隆",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

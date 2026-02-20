@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0104", (function(a){return {data:[{course:{time:[["7","7~7"]],id:"113200700104",name:"工讀實務實習(一)",type:"必修",dept:"四技電機系",year:"3",class:"甲",teacher:"古家豪",credit:"4",hour:"29",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

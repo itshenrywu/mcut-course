@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/2M01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"110222802M01",name:"企業研究方法",type:"選修",dept:"國際企業管理碩士",year:b,class:"甲",teacher:"陳昭蓉",credit:b,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

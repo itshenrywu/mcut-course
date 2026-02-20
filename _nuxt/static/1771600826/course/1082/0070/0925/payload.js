@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0070/0925", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"108200700925",name:"實習前職場素養訓練",type:"必修",dept:"四技材工系",year:"3",class:"甲",teacher:"黃裕清",credit:a,hour:a,max:"100",min:a,comment:"大三至法國交換",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

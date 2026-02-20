@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1180/0201", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"111211800201",name:"數值熱傳",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"章哲寰",credit:a,hour:a,classroom:"",max:"14",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

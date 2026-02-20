@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2250/2901", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~5"],[a,"6~6"]],id:"108122502901",name:"電子商務",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"林裕勛",credit:b,hour:b,max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2240/2002", (function(a,b,c){return {data:[{course:{time:[[a,"1~3"]],id:"110222402002",name:"統計學(二)",type:"必修",dept:"四技經管系",year:a,class:"甲",teacher:"盧建中",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

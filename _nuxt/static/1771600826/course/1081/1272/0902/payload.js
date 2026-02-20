@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1272/0902", (function(a){return {data:[{course:{time:[["1","3~4"],["5","2~2"]],id:"108112720902",name:"工程數學(一)",type:"必修",dept:"四技電機系",year:"2",class:"乙",teacher:"郭慶祥",credit:a,hour:a,max:"68",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

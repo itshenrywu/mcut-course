@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1670/0C02", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"110316700C02",name:"人因工程",type:"重修",dept:"四技環安衛系",year:"4",class:"暑",teacher:"鄭慶武",credit:b,hour:b,classroom:"",max:"10",min:a,comment:"暑修併入環三上",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

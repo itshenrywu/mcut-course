@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1174/3804", (function(a){return {data:[{course:{time:[["1","7~8"],[a,"1~2"]],id:"109311743804",name:"自動控制(一)",type:"重修",dept:"四技機械系",year:a,class:"暑",teacher:"梁晶煒",credit:"3",classroom:"",max:"60",min:"10",comment:"併機三甲",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

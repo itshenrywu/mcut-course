@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3380/0L01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108133800L01",name:"使用者體驗設計",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"梁又文",credit:a,hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

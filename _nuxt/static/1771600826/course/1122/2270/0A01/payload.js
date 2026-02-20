@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2270/0A01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112222700A01",name:"數位行銷",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"張瀞",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

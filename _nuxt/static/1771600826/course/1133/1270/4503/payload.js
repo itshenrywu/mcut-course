@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1270/4503", (function(a,b){return {data:[{course:{time:[[a,"2~4"],["2","5~7"]],id:"113312704503",name:"專題製作(二)",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"陳瓊安",credit:a,hour:"3",classroom:b,max:"10",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/2N03", (function(a,b){return {data:[{course:{time:[[a,"1~4"],[a,"5~9"]],id:"110222802N03",name:"企業實務實習",type:"選修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"孫儷芳",credit:b,hour:b,classroom:"",max:"30",min:"1",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("6","9")));

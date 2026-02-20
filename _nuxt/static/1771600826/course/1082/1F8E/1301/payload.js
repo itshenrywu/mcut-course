@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1F8E/1301", (function(a){return {data:[{course:{time:[["1","5~6"]],id:"10821F8E1301",name:"電力組書報討論(四)",type:"必修",dept:"電機系碩士班",year:a,class:"甲",teacher:"林郁修",credit:"0",hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

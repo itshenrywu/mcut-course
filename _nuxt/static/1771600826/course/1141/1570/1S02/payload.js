@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1570/1S02", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"114115701S02",name:"工程倫理與專業實務講座",type:"必修",dept:"四技電子系",year:"4",class:"乙",teacher:"許宏彬",credit:"1",hour:"2",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

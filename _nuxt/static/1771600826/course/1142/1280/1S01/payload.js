@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1280/1S01", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"114212801S01",name:"科技英文寫作",type:"選修",dept:"電機系碩士班",year:a,class:"甲",teacher:"黃翊之",credit:a,hour:"2",classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

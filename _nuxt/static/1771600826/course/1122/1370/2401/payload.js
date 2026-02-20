@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1370/2401", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"112213702401",name:"反應工程",type:"必修",dept:"四技化工系",year:"4",class:"甲",teacher:"蘇家弘",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/0070/0F26", (function(a,b){return {data:[{course:{time:[[a,"9~10"]],id:"112300700F26",name:"經典教育與社會實踐",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"陳志霖",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

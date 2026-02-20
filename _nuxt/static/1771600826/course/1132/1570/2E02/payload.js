@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1570/2E02", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113215702E02",name:"電子學實習(二)",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"羅靛",credit:"1",hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

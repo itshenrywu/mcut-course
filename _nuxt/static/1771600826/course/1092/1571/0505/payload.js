@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1571/0505", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109215710505",name:"網路概論",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"陳延禎",credit:"3",classroom:"",max:"50",min:"10",comment:"甲乙合班，資工系統模組必需完成選修課程",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

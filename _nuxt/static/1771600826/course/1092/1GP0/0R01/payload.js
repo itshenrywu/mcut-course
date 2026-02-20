@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1GP0/0R01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"10921GP00R01",name:"醫療照護產品設計",type:"選修",dept:"生醫暨醫材博士學程",year:a,class:"甲",teacher:"許定洋",credit:"3",classroom:b,max:"20",min:"2",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

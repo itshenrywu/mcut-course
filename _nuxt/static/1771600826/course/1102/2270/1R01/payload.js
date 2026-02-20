@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2270/1R01", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"110222701R01",name:"人際關係與商業溝通",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"張哲遠",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"第2階段選課(外系不可選)週一(9-11節)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

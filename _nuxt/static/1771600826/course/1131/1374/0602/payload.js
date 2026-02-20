@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1374/0602", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"113113740602",name:"工程倫理與實務講座",type:"必修",dept:"四技化工系",year:"4",class:"乙",teacher:"杜鶴芸",credit:"1",hour:"3",classroom:a,max:"55",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

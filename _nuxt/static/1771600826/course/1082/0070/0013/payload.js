@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0070/0013", (function(a){return {data:[{course:{time:[["2","0.5~0.5"]],id:"108200700013",name:"設計思考",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"游淑萍",credit:a,hour:a,max:"56",min:"10",comment:"3\u002F7-3\u002F8上課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

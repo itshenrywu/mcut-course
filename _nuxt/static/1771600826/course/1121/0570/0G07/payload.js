@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0570/0G07", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"112105700G07",name:"普通物理",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"黃信健",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

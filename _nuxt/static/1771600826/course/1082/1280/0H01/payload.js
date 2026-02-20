@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1280/0H01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108212800H01",name:"人工智慧應用",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"林郁修",credit:a,hour:a,max:"20",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

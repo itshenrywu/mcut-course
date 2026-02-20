@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1372/0702", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],[a,"5~5"]],id:"110213720702",name:"工程數學(二)",type:"必修",dept:"四技化工系",year:"2",class:"乙",teacher:"吳永富",credit:b,hour:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

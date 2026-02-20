@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/2150/7702", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"],[b,"5~7"]],id:"111321507702",name:"物料管理",type:"重修",dept:"四技工管系",year:a,class:"暑",teacher:"陳琨太",credit:c,hour:c,classroom:"",max:"10",min:b,comment:"暑修併三甲帶狀7\u002F3-9\u002F1",otherinfo:null}}],fetch:{},mutations:[]}}("4","5","3")));

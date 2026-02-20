@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1F8N/1201", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"11021F8N1201",name:"離散最佳化",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"林君玲",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course(併生醫博班)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

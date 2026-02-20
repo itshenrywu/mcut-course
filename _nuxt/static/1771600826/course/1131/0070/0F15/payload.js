@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0F15", (function(a){return {data:[{course:{time:[["5","3~4"]],id:"113100700F15",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"4",class:"乙",teacher:"張淑芬",credit:a,hour:a,classroom:"",max:"45",min:"15",comment:"故事與心理學，限大四，上九週",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

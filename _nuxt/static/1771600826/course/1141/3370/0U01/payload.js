@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3370/0U01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114133700U01",name:"色彩計畫",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"劉瑞芬",credit:b,hour:b,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

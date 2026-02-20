@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1880/0001", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111118800001",name:"薄膜科技",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"姚栢文",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

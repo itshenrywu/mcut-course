@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1870/0I01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"110218700I01",name:"鋼鐵特論",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"簡順億",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

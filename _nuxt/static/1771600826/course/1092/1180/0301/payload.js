@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1180/0301", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109211800301",name:"模糊邏輯與類神經網路控制",type:"選修",dept:"機械系碩士班",year:a,class:"甲",teacher:"游孟潔",credit:"3",classroom:b,max:"12",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

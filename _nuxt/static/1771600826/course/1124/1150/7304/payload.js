@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1124/1150/7304", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[c,b]],id:"112411507304",name:"專題製作(二)",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"郭啟全",credit:"1",hour:a,classroom:d,max:"60",min:c,comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("3","5~7","5","")));

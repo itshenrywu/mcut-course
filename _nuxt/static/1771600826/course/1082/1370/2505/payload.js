@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1370/2505", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108213702505",name:"化工熱力學",type:"重修",dept:"四技化工系",year:"4",class:"重",teacher:"杜鶴芸",credit:a,hour:a,max:"65",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

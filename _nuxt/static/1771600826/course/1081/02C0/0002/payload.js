@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/02C0/0002", (function(a){return {data:[{course:{time:[["5","6~8"]],id:"108102C00002",name:"英文(一)",type:"必修",dept:"四技進修部電子系",year:"1",class:"甲",teacher:"陳勁宏",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

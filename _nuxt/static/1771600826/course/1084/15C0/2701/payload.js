@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/15C0/2701", (function(a){return {data:[{course:{time:[["5","7~11"]],id:"108415C02701",name:"產業專題(一)",type:"必修",dept:"四技進修部電子系",year:"1",class:"甲",teacher:"林義楠",credit:a,hour:a,max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

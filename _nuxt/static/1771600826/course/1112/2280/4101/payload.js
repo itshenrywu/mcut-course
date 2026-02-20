@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2280/4101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111222804101",name:"國際企業管理專題",type:"選修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"廖宜慶",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

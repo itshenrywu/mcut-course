@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/1573/0505", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"111315730505",name:"信號與系統",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"楊萬興",credit:b,hour:b,classroom:"",max:a,min:"1",comment:"併112三上(甲班)課程，限電子系學生修課",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

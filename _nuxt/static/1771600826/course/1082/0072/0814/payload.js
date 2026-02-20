@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0072/0814", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"108200720814",name:"英語聽講(中級)(二)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"黃碧霞",credit:"1",hour:a,max:"40",min:"10",comment:"管設中D",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

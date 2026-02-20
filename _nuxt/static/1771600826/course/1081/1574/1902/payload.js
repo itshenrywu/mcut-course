@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1574/1902", {data:[{course:{time:[["5","5~7"]],id:"108115741902",name:"工程倫理與專業實務講座",type:"必修",dept:"四技電子系",year:"4",class:"乙",teacher:"王志良",credit:"1",hour:"3",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

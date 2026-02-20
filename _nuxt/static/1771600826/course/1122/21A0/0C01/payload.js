@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/21A0/0C01", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"112221A00C01",name:"機器學習",type:"選修",dept:"工管系碩專班",year:a,class:"甲",teacher:"王建智",credit:b,hour:b,classroom:c,max:"25",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

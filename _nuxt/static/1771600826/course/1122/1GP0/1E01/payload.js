@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1GP0/1E01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"11221GP01E01",name:"生物科技特論",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"王琪芸",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

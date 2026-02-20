@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/1570/5704", (function(a,b){return {data:[{course:{time:[["2",b],[a,b]],id:"112315705704",name:"機率與統計",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"王逸平",credit:a,hour:a,classroom:"",max:"5",min:"1",comment:"併113三上(甲班)課程",otherinfo:null}}],fetch:{},mutations:[]}}("3","3~4")));

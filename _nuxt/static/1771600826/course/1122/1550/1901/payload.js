@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1550/1901", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"112215501901",name:"電子學(三)",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"李健宏",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/1H05", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],[b,"2~2"]],id:"113120701H05",name:"電化學工程",type:"必修",dept:"半導體學程",year:b,class:"甲",teacher:"吳永富",credit:a,hour:a,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/D137/0102", (function(a){return {data:[{course:{time:[["7","5~5"]],id:"1082D1370102",name:"生物科技與生質能源產業",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"簡良榮",credit:a,hour:a,max:"40",min:"10",comment:"第2階段，化工系不可選",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

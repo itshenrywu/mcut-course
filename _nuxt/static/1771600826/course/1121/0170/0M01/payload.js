@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0170/0M01", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"112101700M01",name:"現代小說選讀",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"張淑芬",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2","")));

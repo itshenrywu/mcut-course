@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3340/1802", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"112133401802",name:"色彩學",type:"必修",dept:"四技視傳系",year:"1",class:"甲",teacher:"劉瑞芬",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"劉瑞芬老師授課，跨領域專班。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0072/1003", (function(a){return {data:[{course:{time:[["1","5~6"]],id:"110200721003",name:"英文實務(二)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"張若妍",credit:"0",hour:a,classroom:"",max:"55",min:"10",comment:"機械",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

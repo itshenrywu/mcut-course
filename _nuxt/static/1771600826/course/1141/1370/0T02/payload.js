@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1370/0T02", (function(a,b,c){return {data:[{course:{time:[["2",b],["4",b]],id:"114113700T02",name:"儀器分析",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"程桂祥",credit:a,hour:a,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","7~8","")));

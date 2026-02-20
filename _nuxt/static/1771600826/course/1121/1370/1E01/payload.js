@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1370/1E01", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"112113701E01",name:"生化工程",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"簡良榮",credit:b,hour:b,classroom:"",max:"65",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

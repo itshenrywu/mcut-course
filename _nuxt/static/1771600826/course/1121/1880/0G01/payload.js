@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1880/0G01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"112118800G01",name:"電化學特論",type:"選修",dept:"材料系碩士班",year:a,class:"甲",teacher:"童敬維",credit:b,hour:b,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

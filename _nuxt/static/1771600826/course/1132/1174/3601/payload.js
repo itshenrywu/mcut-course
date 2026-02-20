@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1174/3601", (function(a,b){return {data:[{course:{time:[["1","7~8"],["4","8~8"]],id:"113211743601",name:"工程數學(二)",type:"選修",dept:"四技機械系",year:"2",class:"甲",teacher:"鍾永強",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0170/1002", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"114101701002",name:"文學與人性心理描寫",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"張莞苓",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2","")));

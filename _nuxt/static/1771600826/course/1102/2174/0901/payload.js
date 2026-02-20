@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2174/0901", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"110221740901",name:"決策分析",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"鍾震耀",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

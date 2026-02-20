@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0270/0T12", {data:[{course:{time:[["1","5~6"]],id:"112202700T12",name:"英文實務(四)",type:"必修",dept:"外文組-四技(日)",year:"4",class:"甲",teacher:"曾雅萍",credit:"0",hour:"2",classroom:"",max:"58",min:"10",comment:"材料+環安+環實務+電子",otherinfo:null}}],fetch:{},mutations:[]});

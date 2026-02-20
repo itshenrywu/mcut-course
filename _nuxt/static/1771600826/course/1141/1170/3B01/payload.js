@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/3B01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"114111703B01",name:"機械元件設計(一)",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"許啟彬",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

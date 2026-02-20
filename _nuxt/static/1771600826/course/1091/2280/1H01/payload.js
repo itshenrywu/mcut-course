@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2280/1H01", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"109122801H01",name:"進階英文寫作",type:"必修",dept:"經管系碩士班",year:a,class:"甲",teacher:"林金祥",credit:"1",hour:a,classroom:"",max:"30",min:"5",comment:"全英授課 併入IMBA",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

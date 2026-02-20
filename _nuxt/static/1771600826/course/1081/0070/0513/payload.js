@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0070/0513", (function(a){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"108100700513",name:"勤勞教育(一)",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"黃浚瑋",credit:"0",hour:"0.5",max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/3001", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"114220703001",name:"基礎材料實驗",type:"必修",dept:"電池專班",year:a,class:"甲",teacher:"劉定宇",credit:a,hour:"2",classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

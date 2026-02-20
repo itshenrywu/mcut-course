@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2272/1001", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"114222721001",name:"商用英文(二)",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"王瑀",credit:"1",hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

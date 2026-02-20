@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0170/0G16", (function(a,b){return {data:[{course:{time:[["4","3~4"]],id:"114201700G16",name:"藝文涵養與社會參與",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"李桂芳",credit:a,hour:a,classroom:b,max:"54",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

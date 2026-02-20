@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/2270/2U04", (function(a){return {data:[{course:{time:[["2","5~7"],[a,"2~4"]],id:"113322702U04",name:"產業分析概論",type:"重修",dept:"四技經管系",year:"4",class:"暑",teacher:"廖宜慶",credit:a,hour:a,classroom:"",max:"50",min:"無下限",comment:"暑修併三甲帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

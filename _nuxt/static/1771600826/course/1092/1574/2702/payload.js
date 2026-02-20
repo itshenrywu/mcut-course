@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1574/2702", {data:[{course:{time:[["3","9~10"]],id:"109215742702",name:"模擬軟體應用(MATLAB)",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"蔡宜昌",credit:"1",classroom:"",max:"50",min:"10",comment:"限工程學院四年級選修。",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3350/0801", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"112233500801",name:"3D電腦繪圖",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"邱伯儒",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

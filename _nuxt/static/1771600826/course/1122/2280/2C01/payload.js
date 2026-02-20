@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2280/2C01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112222802C01",name:"策略管理專題",type:"必修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"廖宜慶",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1F8N/1201", {data:[{course:{time:[["2","2~4"]],id:"10921F8N1201",name:"離散最佳化",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"林君玲",credit:"3",classroom:"",max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1270/0N01", (function(a,b){return {data:[{course:{time:[[a,"5~5"],["5","1~2"]],id:"113112700N01",name:"電機創新與專利",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"吳長洲",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

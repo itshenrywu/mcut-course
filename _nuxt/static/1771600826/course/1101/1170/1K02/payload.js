@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1170/1K02", (function(a,b){return {data:[{course:{time:[["4","9~11"]],id:"110111701K02",name:"精密量測與實習",type:"選修",dept:"四技機械系",year:"2",class:"乙",teacher:"王海",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

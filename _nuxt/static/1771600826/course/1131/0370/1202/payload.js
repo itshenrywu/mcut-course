@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/1202", (function(a,b){return {data:[{course:{time:[["1","4~4"],[a,"6~7"]],id:"113103701202",name:"國際關係",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"盧信吉",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"電機(甲+乙)",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

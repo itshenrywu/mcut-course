@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1170/0L02", (function(a,b){return {data:[{course:{time:[["1","2~2"],[a,"5~6"]],id:"109211700L02",name:"電子學",type:"必修",dept:"四技機械系",year:a,class:"甲",teacher:"胡志中",credit:"3",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

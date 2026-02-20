@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/1374/0305", (function(a,b,c){return {data:[{course:{time:[[b,"7~8"],[a,"1~2"]],id:"112313740305",name:"單元操作與輸送現象(二)",type:"重修",dept:"四技化工系",year:"4",class:"暑",teacher:"杜鶴芸",credit:a,hour:a,classroom:c,max:"10",min:b,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1","")));

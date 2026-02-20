@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1573/1301", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"109315731301",name:"網路管理",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"羅安良",credit:b,classroom:"",max:b,min:a,comment:"併110三上課程",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

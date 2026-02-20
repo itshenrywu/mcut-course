@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/63P0/0801", (function(a,b){return {data:[{course:{time:[[a,"8.5~10"]],id:"112163P00801",name:"材料分析概論",type:"選修",dept:"電漿薄膜博士學程",year:"1",class:"甲",teacher:"黎有福",credit:b,hour:b,classroom:"",max:"25",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0071/3101", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"108200713101",name:"初級日語文法與聽講",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"徐碧茹",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1140/5202", (function(a){return {data:[{course:{time:[["4","1~3"]],id:"108111405202",name:"電腦輔助機械製圖(一)",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"謝文賓",credit:a,hour:"3",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

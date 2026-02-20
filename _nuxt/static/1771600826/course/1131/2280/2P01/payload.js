@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2280/2P01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"113122802P01",name:"創新與創業管理專題",type:"選修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"杜海勇",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

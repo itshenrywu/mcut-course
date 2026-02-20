@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2170/0W01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"108121700W01",name:"數據科學概論",type:"選修",dept:"四技工管系",year:a,class:"甲",teacher:"陳琨太",credit:b,hour:b,max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

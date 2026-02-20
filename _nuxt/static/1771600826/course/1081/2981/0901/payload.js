@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2981/0901", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108129810901",name:"產品製造方法",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"謝政道",credit:a,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

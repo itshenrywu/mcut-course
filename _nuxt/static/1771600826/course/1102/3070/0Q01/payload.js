@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3070/0Q01", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"110230700Q01",name:"印刷設計",type:"選修",dept:"四技行設專班",year:"1",class:"甲",teacher:"陳進隆",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

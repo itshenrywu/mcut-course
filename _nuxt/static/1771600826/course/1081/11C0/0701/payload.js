@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/11C0/0701", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"108111C00701",name:"靜力學",type:"必修",dept:"四技進修部機械系",year:"2",class:"甲",teacher:"胡志中",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

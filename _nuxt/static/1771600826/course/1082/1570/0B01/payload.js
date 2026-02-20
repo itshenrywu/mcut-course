@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1570/0B01", {data:[{course:{time:[["3","5~5"]],id:"108215700B01",name:"電子工程專業能力認證課程",type:"必修",dept:"四技電子系",year:"4",class:"甲",teacher:"唐明中",credit:"0",hour:"1",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

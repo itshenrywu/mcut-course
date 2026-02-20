@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/2X01", (function(a){return {data:[{course:{time:[[a,"7~7"]],id:"110222802X01",name:"獨立研究(二)",type:"選修",dept:"國際企業管理碩士",year:a,class:"甲",teacher:"張哲遠",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course(授課老師:張哲遠、李育奇)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

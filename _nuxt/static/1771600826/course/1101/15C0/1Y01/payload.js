@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/15C0/1Y01", (function(a,b){return {data:[{course:{time:[["5","9~11"]],id:"110115C01Y01",name:"半導體測試",type:"必修",dept:"四技進修部電子系",year:"4",class:"甲",teacher:"王逸平",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1270/1D01", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"110112701D01",name:"量測電路設計",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"林君玲",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

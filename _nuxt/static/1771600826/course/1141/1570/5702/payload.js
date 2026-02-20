@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1570/5702", (function(a,b,c){return {data:[{course:{time:[["2",b],["4",b]],id:"114115705702",name:"機率與統計",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"史德智",credit:a,hour:a,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","3~4","")));

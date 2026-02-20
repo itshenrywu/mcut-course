@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/1A01", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"113105701A01",name:"普通物理",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"陳楷仁",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

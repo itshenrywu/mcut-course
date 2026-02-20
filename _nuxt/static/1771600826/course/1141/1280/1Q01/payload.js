@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1280/1Q01", (function(a){return {data:[{course:{time:[[a,"8~8.5"]],id:"114112801Q01",name:"書報討論(一)",type:"必修",dept:"電機系碩士班",year:a,class:"甲",teacher:"潘晉發",credit:a,hour:"2",classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

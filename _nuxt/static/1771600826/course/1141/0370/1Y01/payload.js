@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/1Y01", (function(a){return {data:[{course:{time:[["1","1~2"]],id:"114103701Y01",name:"歷史思辨",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"張淑惠",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"機械(甲+乙)",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

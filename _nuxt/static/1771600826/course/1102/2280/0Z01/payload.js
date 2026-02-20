@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/0Z01", (function(a,b){return {data:[{course:{time:[["2","6~8"]],id:"110222800Z01",name:"管理經濟專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"雷迪宇",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

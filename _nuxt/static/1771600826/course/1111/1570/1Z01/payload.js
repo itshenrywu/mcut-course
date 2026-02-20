@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1570/1Z01", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"111115701Z01",name:"人工智慧物聯網概論",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"謝筱齡",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"甲乙合班授課，English-taught course。",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

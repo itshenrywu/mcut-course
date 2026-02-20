@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/6270/2001", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"112162702001",name:"C程式語言",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"王得貴",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

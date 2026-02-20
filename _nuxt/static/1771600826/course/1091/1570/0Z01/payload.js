@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1570/0Z01", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"109115700Z01",name:"人工智慧基礎程式設計",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"黃樹林",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

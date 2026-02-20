@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1373/0301", {data:[{course:{time:[["3","7~8.5"]],id:"109213730301",name:"綠色奈米資源學程實務專題討論",type:"選修",dept:"四技化工系",year:"2",class:"甲",teacher:"吳永富",credit:"1",classroom:"",max:"120",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

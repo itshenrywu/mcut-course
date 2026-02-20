@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2880/1201", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"110128801201",name:"研究方法論",type:"必修",dept:"環安衛系碩士班",year:a,class:"甲",teacher:"吳容銘",credit:b,hour:b,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

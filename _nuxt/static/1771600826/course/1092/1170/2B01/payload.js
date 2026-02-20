@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1170/2B01", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"109211702B01",name:"無人載具技術與應用",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"洪國永",credit:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

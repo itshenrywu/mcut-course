@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/61P0/1D01", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"114261P01D01",name:"專題討論(二)",type:"必修",dept:"能源電池博士班",year:b,class:"甲",teacher:"洪太峰",credit:b,hour:a,classroom:"",max:"20",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1172/0403", (function(a,b){return {data:[{course:{time:[[a,"3~4"],["5","8~8"]],id:"114211720403",name:"機構學",type:"必修",dept:"四技機械系",year:"2",class:"乙",teacher:"張文慶",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0502", {data:[{course:{time:[["7","0.5~0.5"]],id:"114100700502",name:"勤勞教育(一)",type:"重修",dept:"通識中心四技",year:"4",class:"重",teacher:"蒲彥光",credit:"0",hour:"0.5",classroom:"",max:"10",min:"5",comment:"上課時間、地點另行公告於通識官網",otherinfo:null}}],fetch:{},mutations:[]});

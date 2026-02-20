@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0401/0326", (function(a,b,c){return {data:[{course:{time:[[a,"8~8.5"]],id:"111104010326",name:"大學之道",type:"必修",dept:"四技行設專班",year:b,class:"乙",teacher:"沈明得",credit:b,hour:a,classroom:c,max:"35",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

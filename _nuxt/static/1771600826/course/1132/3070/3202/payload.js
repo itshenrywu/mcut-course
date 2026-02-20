@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3070/3202", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"113230703202",name:"數位行銷",type:"必修",dept:"行銷設計學程",year:"2",class:"乙",teacher:"侯文治",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

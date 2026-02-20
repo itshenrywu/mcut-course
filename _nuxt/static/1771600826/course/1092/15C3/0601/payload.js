@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/15C3/0601", (function(a,b){return {data:[{course:{time:[["6","1~3"]],id:"109215C30601",name:"光電工程實務",type:"必修",dept:"四技進修部電子系",year:a,class:"甲",teacher:"王逸平",credit:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21A1/2001", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108121A12001",name:"企業資源規劃專論",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"王文生",credit:a,hour:a,max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

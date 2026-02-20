@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1571/1103", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"113215711103",name:"物件導向程式設計實務",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"林義楠",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"跨領域專班，限外系學生修課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

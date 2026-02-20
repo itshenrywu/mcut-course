@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1870/1504", (function(a,b){return {data:[{course:{time:[["2","5~6"],[a,"6~7"]],id:"113318701504",name:"X光繞射導論",type:"重修",dept:"四技材工系",year:a,class:"暑",teacher:"黃宗鈺",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"與大三甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

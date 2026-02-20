@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1E80/7401", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"10921E807401",name:"熱管理工程與實務",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"王添益",credit:a,classroom:"",max:"12",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

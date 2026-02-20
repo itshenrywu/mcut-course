@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3350/2101", (function(a,b){return {data:[{course:{time:[["1","5~7"]],id:"112233502101",name:"當代創作",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"李昌國",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

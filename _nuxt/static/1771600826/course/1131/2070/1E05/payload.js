@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/1E05", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"113120701E05",name:"半導體製程暨實驗(一)",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"張峻瑜",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","2","")));

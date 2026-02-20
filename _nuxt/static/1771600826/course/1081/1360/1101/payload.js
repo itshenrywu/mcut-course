@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1360/1101", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"108113601101",name:"生化工程",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"邱振堯",credit:b,hour:b,max:"65",min:"10",comment:"化四甲乙合班上課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

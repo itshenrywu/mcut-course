@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/0M02", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"114112700M02",name:"實習前技術訓練",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"楊超舜",credit:"1",hour:"2",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

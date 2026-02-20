@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0071/6101", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"109200716101",name:"國際關係與世界局勢",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"王惟貞",credit:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("")));

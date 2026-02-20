@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3170/0L02", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114231700L02",name:"互動設計",type:"選修",dept:"四技工設系",year:a,class:"乙",teacher:"賴宛吟",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

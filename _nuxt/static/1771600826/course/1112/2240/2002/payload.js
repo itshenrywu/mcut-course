@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2240/2002", (function(a,b){return {data:[{course:{time:[["5","6~8"]],id:"111222402002",name:"統計學(二)",type:"必修",dept:"四技經管系",year:"2",class:"甲",teacher:"李文玄",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

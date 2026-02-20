@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/3501", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"114220703501",name:"光電半導體元件與應用",type:"選修",dept:"半導體學程",year:"4",class:"甲",teacher:"吳永富",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

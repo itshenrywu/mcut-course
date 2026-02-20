@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1320/1002", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"108213201002",name:"有機化學實驗",type:"必修",dept:"四技化工系",year:"2",class:"乙",teacher:"李英正",credit:"1",hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

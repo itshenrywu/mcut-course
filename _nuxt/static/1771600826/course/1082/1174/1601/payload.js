@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1174/1601", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108211741601",name:"表面製程",type:"選修",dept:"四技機械系",year:"4",class:"甲",teacher:"郭啟全",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

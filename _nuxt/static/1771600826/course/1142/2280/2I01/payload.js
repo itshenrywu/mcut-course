@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2280/2I01", (function(a){return {data:[{course:{time:[[a,"6~8"]],id:"114222802I01",name:"投資管理專題",type:"選修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"雷迪宇",credit:a,hour:a,classroom:"",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

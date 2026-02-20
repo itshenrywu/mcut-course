@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1174/2603", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"108111742603",name:"工程倫理與專業實務講座",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"張國棟",credit:"1",hour:"3",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

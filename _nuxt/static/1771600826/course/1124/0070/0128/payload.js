@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1124/0070/0128", (function(a,b){return {data:[{course:{time:[["7","7~7"]],id:"112400700128",name:"工讀實務實習(一)",type:"重修",dept:"四技材工系",year:a,class:"暑",teacher:"陳勝吉",credit:a,hour:"29",classroom:b,max:"5",min:"1",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

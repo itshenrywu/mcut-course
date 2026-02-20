@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/A007/0201", (function(a,b){return {data:[{course:{time:[[a,"11~12"]],id:"1142A0070201",name:"社會議題、關懷與責任",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳志霖",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"第1階段",otherinfo:null}}],fetch:{},mutations:[]}}("3","2")));

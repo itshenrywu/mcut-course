@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/2V02", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114130702V02",name:"行銷管理",type:"必修",dept:"行銷設計學程",year:"2",class:"乙",teacher:"楊正翔",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0403/0107", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"109104030107",name:"微積分(一)",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"黃志賢",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

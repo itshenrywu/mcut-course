@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1670/0V01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"110216700V01",name:"溫室氣體減量與管理",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"許金玉",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

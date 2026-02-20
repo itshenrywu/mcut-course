@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3170/1E03", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114131701E03",name:"工業設計概論",type:"必修",dept:"四技工設系",year:a,class:"乙",teacher:"江潤華",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

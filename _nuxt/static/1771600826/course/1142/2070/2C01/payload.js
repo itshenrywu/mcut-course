@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/2C01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"114220702C01",name:"鋰電池產業實務專題講座",type:"選修",dept:"環實務",year:a,class:"甲",teacher:"黃文澤",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"第二專長(本系可修)",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

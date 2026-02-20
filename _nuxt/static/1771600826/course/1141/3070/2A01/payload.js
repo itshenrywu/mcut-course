@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/2A01", (function(a){return {data:[{course:{time:[[a,"5~7"],["5","2~4"]],id:"114130702A01",name:"企業倫理",type:"必修",dept:"行銷設計學程",year:a,class:"甲",teacher:"林恆毅",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

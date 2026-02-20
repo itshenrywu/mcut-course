@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2070/0301", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"110120700301",name:"應用程式設計(二)",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"林志銘",credit:a,hour:a,classroom:b,max:"27",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

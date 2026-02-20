@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1140/7501", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108211407501",name:"內燃機",type:"必修",dept:"四技機械系",year:"4",class:"丙",teacher:"蔡育伸",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

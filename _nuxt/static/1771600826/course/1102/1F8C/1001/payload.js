@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1F8C/1001", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"11021F8C1001",name:"微波工程",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"楊超舜",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

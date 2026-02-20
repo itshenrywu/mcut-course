@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1550/0702", (function(a,b){return {data:[{course:{time:[[a,"1~1"],["5","1~2"]],id:"111115500702",name:"電子學(二)",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"曾宗亮",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

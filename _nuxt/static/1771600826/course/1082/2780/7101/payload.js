@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2780/7101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108227807101",name:"基因工程技術暨實務",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"簡良榮",credit:b,hour:b,max:"20",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

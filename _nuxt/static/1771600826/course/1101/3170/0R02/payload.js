@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3170/0R02", (function(a){return {data:[{course:{time:[["4","5~8"]],id:"110131700R02",name:"醫療照護產品設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"許定洋",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"跨領域6\u002F7-9\u002F10，工設系不可選",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

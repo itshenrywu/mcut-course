@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2240/2003", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"113222402003",name:"統計學(二)",type:"必修",dept:"四技經管系",year:"2",class:"丙",teacher:"葛同",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

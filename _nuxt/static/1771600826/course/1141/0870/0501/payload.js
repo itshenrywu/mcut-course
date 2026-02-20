@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0870/0501", (function(a,b){return {data:[{course:{time:[["4","6~7"]],id:"114108700501",name:"普通化學暨實驗(一)",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"劉昭麟",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

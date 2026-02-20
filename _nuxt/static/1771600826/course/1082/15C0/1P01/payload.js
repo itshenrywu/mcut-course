@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/15C0/1P01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"108215C01P01",name:"半導體材料科學導論",type:"必修",dept:"四技進修部電子系",year:"2",class:"甲",teacher:"王志良",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

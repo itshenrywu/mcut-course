@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2070/3301", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"114120703301",name:"奈米材料與技術",type:"選修",dept:"半導體學程",year:"1",class:"甲",teacher:"黃文澤",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

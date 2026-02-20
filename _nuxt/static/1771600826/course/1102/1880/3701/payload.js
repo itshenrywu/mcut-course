@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1880/3701", (function(a,b){return {data:[{course:{time:[["4","7~8.5"]],id:"110218803701",name:"光電工程與材料",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"謝建國",credit:a,hour:a,classroom:b,max:"20",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

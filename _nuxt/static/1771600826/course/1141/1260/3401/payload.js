@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1260/3401", (function(a,b){return {data:[{course:{time:[["1","6~8"]],id:"114112603401",name:"電路學",type:"重修",dept:"四技電機系",year:"4",class:"重",teacher:"彭金龍",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

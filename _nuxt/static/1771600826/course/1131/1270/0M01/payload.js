@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1270/0M01", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"113112700M01",name:"實習前技術訓練",type:"必修",dept:"四技電機系",year:"3",class:"甲",teacher:"古家豪",credit:"1",hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3150/6202", (function(a){return {data:[{course:{time:[["1","2~4"],[a,"5~7"]],id:"114131506202",name:"產品設計(一)",type:"必修",dept:"四技工設系",year:"2",class:"甲",teacher:"高清漢",credit:a,hour:"6",classroom:"",max:"56",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

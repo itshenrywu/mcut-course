@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1580/0M01", (function(a,b,c){return {data:[{course:{time:[[a,"6~8"]],id:"110115800M01",name:"資訊安全",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"蘇品長",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

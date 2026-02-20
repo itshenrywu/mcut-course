@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1F03", (function(a){return {data:[{course:{time:[["7","7~7"]],id:"114200701F03",name:"海外交換學習(一)",type:"必修",dept:"四技經管系",year:"3",class:"乙",teacher:"薄榮薇",credit:"4",hour:"40",classroom:a,max:"10",min:"1",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

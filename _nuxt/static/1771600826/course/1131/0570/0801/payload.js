@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/0801", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"113105700801",name:"人工智慧概論",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"黃浚瑋",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"機械、電機、電子、工智及工管系不得選修",otherinfo:"自然科學與環境永續"}}],fetch:{},mutations:[]}}("2")));

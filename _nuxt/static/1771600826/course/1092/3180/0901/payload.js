@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3180/0901", {data:[{course:{time:[["6","5~7"]],id:"109231800901",name:"設計專業實習(四)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"賴宛吟",credit:"3",classroom:"",max:"20",min:"無下限",comment:"非實體課程",otherinfo:null}}],fetch:{},mutations:[]});

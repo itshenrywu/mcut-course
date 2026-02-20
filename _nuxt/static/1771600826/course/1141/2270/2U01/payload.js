@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/2U01", (function(a){return {data:[{course:{time:[["2","5~7"],[a,"2~4"]],id:"114122702U01",name:"產業分析概論",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"廖宜慶",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

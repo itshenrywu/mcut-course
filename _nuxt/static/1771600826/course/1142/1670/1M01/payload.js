@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1670/1M01", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"114216701M01",name:"環境工程單元操作實驗",type:"必修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"程裕祥",credit:"1",hour:"2",classroom:a,max:"65",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

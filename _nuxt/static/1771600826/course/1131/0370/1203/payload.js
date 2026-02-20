@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/1203", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113103701203",name:"國際關係",type:"必修",dept:"社會組-四技(日)",year:"2",class:"甲",teacher:"盧信吉",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"工設、視傳",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

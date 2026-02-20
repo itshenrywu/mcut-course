@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0072/0612", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"109100720612",name:"英文實務(一)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"簡素琤",credit:"0",hour:a,classroom:"",max:"60",min:"10",comment:"材料乙+環安+環實務+視傳",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

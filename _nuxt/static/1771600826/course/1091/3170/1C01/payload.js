@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3170/1C01", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"109131701C01",name:"APP應用程式設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"謝政道",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"限修過工設系「數位工具應用」之學生可選",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11")));

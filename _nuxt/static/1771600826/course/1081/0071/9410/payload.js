@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/9410", {data:[{course:{time:[["5","1~2"]],id:"108100719410",name:"全民國防教育軍事訓練(一)",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"黃志偉",credit:"0",hour:"2",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1371/0602", (function(a,b){return {data:[{course:{time:[["2","1~3"]],id:"111113710602",name:"普通化學實驗(一)",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"鄭有為",credit:a,hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

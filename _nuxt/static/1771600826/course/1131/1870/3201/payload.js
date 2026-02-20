@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1870/3201", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113118703201",name:"電漿製程實驗",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"姚栢文",credit:"1",hour:"3",classroom:"",max:"21",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

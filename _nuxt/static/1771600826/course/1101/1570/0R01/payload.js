@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1570/0R01", (function(a){return {data:[{course:{time:[[a,"9~12"]],id:"110115700R01",name:"嵌入式系統與視覺化編程實務",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"唐明中",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"第二專長，限外系學生修課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

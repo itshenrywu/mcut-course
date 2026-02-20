@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1372/0602", (function(a,b,c){return {data:[{course:{time:[["1","1~2"],[a,"3~3"]],id:"113113720602",name:"工程數學(一)",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"劉昭麟",credit:b,hour:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

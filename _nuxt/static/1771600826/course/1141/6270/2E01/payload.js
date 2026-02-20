@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2E01", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"114162702E01",name:"智慧製造技術",type:"選修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"劉城甫",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1270/3B01", (function(a){return {data:[{course:{time:[["4","1~3"]],id:"112212703B01",name:"網路分析",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"邱聰輝",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

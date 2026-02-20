@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1273/0403", {data:[{course:{time:[["2","5~8"]],id:"109312730403",name:"電力電子學",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"楊宗振",credit:"3",classroom:"",max:"50",min:"5",comment:"暑修併四技三甲上課",otherinfo:null}}],fetch:{},mutations:[]});

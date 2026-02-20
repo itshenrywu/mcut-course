@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/1J02", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"114103701J02",name:"社會科學導論",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"盧信吉",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2","")));

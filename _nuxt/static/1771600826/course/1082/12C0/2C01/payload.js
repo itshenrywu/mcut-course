@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/12C0/2C01", (function(a){return {data:[{course:{time:[["5","8~9"]],id:"108212C02C01",name:"網路分析",type:"必修",dept:"四技進修部電機系",year:"1",class:"甲",teacher:"邱聰輝",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

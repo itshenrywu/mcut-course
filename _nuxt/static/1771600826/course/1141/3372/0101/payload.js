@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3372/0101", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"114133720101",name:"2D影像設計",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"曾郁雯",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

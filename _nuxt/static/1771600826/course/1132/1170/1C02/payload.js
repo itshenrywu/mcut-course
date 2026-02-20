@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/1C02", (function(a,b){return {data:[{course:{time:[[a,"6~7"],[b,"3~4"]],id:"113211701C02",name:"材料科學與工程實驗",type:"必修",dept:"四技機械系",year:a,class:"甲",teacher:"洪貫壹",credit:b,hour:"4",classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

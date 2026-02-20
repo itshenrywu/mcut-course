@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2170/1Q02", (function(a){return {data:[{course:{time:[["1","2~3"]],id:"112221701Q02",name:"產業概論",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"邱慧怡",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

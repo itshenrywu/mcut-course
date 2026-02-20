@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1174/6202", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"108211746202",name:"管線設計概論",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"蔡宜昌",credit:"1",hour:"2",max:"50",min:"10",comment:"限工程學院四年級選修",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

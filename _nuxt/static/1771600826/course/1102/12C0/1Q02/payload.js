@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/12C0/1Q02", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"110212C01Q02",name:"工業配電",type:"必修",dept:"四技進修部電機系",year:a,class:"甲",teacher:"古家豪",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"與職電四合併授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

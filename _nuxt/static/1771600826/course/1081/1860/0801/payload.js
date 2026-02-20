@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1860/0801", (function(a,b){return {data:[{course:{time:[["4","8~8.5"],[b,"5~6"]],id:"108118600801",name:"物理冶金(一)",type:"重修",dept:"四技材工系",year:a,class:"重",teacher:"程志賢",credit:a,hour:a,max:"50",min:b,comment:"與大四暑修併班",otherinfo:null}}],fetch:{},mutations:[]}}("3","5")));

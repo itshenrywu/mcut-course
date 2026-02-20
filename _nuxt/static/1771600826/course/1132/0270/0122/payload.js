@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/0122", (function(a,b){return {data:[{course:{time:[["7","11~11"]],id:"113202700122",name:"工讀自學英文",type:"必修",dept:"四技工設系",year:"3",class:"甲",teacher:"朱秀瑜",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

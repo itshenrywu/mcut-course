@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3170/0R02", (function(a){return {data:[{course:{time:[["1","5~7"],["5","6~8"]],id:"113131700R02",name:"醫療照護產品設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"許定洋",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

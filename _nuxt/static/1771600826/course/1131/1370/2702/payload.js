@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1370/2702", (function(a,b,c){return {data:[{course:{time:[[a,"5~5"],[b,"3~4"]],id:"113113702702",name:"程序設計",type:"必修",dept:"四技化工系",year:b,class:"乙",teacher:"傅俊中",credit:a,hour:a,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","4","")));

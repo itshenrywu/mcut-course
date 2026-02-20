@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1870/1Y02", (function(a,b,c){return {data:[{course:{time:[[a,"7~8.5"]],id:"112218701Y02",name:"Python程式語言與應用",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"吳鉉忠",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

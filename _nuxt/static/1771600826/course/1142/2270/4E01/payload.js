@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/4E01", (function(a,b){return {data:[{course:{time:[["4","1~2"]],id:"114222704E01",name:"程式設計",type:"必修",dept:"四技經管系",year:"1",class:"甲",teacher:"林裕勛",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1170/1D01", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"111111701D01",name:"普通化學",type:"重修",dept:"四技機械系",year:a,class:"重",teacher:"陳政佑",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","2","")));

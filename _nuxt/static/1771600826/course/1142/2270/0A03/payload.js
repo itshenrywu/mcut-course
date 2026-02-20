@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/0A03", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"114222700A03",name:"數位行銷",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"楊南進",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

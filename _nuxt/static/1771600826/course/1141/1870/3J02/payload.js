@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1870/3J02", (function(a,b){return {data:[{course:{time:[[a,"1~1"],[a,"5~6"]],id:"114118703J02",name:"數理基礎先修課程",type:"選修",dept:"四技材工系",year:"1",class:"乙",teacher:"吳鉉忠",credit:a,hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

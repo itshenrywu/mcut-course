@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1872/0202", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114218720202",name:"電子材料",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"張麗君",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

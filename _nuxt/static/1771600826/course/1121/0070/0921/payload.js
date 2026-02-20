@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0921", (function(a,b,c){return {data:[{course:{time:[[a,b],["2",b]],id:"112100700921",name:"實習前職場素養訓練",type:"必修",dept:"環實務",year:"3",class:"甲",teacher:"鄭有為",credit:a,hour:a,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5","")));

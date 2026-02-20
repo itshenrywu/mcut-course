@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0270/1U01", (function(a){return {data:[{course:{time:[["4","11~12"]],id:"114202701U01",name:"從網路學英文",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"葉明倫",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"第1階段",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

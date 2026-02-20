@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1070/0604", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"108110700604",name:"跨領域頂石專題(二)",type:"選修",dept:"工程學院",year:a,class:"甲",teacher:"陳延禎",credit:"1",hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

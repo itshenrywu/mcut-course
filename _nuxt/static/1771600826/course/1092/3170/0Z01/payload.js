@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3170/0Z01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"109231700Z01",name:"AR\u002FVR 虛擬程式設計",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"賴宛吟",credit:a,classroom:"",max:"60",min:"10",comment:"限修過數位工具應用者選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

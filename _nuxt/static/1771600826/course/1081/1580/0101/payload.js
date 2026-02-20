@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1580/0101", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"108115800101",name:"書報討論(一)",type:"必修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"畢少強",credit:"0",hour:"2",max:"30",min:a,comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("5")));

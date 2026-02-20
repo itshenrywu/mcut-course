@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2270/5401", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111222705401",name:"管理個案分析",type:"必修",dept:"四技經管系",year:"4",class:"乙",teacher:"虞邦祥",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

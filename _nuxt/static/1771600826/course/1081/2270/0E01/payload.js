@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2270/0E01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"108122700E01",name:"行動商務",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"林裕勛",credit:a,hour:a,max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

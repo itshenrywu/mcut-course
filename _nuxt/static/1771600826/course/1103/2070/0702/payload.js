@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/2070/0702", (function(a,b){return {data:[{course:{time:[[b,"3~4"],[b,"5~8"]],id:"110320700702",name:"實務專題",type:"重修",dept:"環實務",year:"4",class:"暑",teacher:"李志偉",credit:a,hour:"3",classroom:"",max:a,min:a,comment:"暑修",otherinfo:null}}],fetch:{},mutations:[]}}("1","6")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1880/4301", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"108218804301",name:"封裝製程與材料",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"謝心心",credit:a,hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

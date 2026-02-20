@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0470/0201", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"109104700201",name:"科學思維與應用",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"劉小篔",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("2","")));

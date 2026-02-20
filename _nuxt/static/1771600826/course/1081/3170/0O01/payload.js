@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3170/0O01", (function(a,b,c){return {data:[{course:{time:[["2",a],[b,a]],id:"108131700O01",name:"設計應用英文(三)",type:"必修",dept:"四技工設系",year:b,class:"甲",teacher:"謝政道",credit:c,hour:c,max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F8-9\u002F6",otherinfo:null}}],fetch:{},mutations:[]}}("8~8","3","1")));

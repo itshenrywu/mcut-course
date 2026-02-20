@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1570/1L02", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"110115701L02",name:"微處理機應用",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"黃政光",credit:a,hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

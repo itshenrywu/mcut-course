@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/22C4/1101", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"108122C41101",name:"知識管理",type:"選修",dept:"四技進修部經管系",year:a,class:"甲",teacher:"陳心田",credit:b,hour:b,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1374/0502", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"112213740502",name:"有機化學(二)",type:"選修",dept:"四技化工系",year:"2",class:"乙",teacher:"李英正",credit:b,hour:b,classroom:"",max:"65",min:"10",comment:"應用化學模組",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

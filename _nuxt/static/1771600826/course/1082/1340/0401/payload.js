@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1340/0401", {data:[{course:{time:[["5","5~8"]],id:"108213400401",name:"分析化學暨實驗",type:"選修",dept:"四技化工系",year:"1",class:"甲",teacher:"朱良",credit:"3",hour:"4",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6270/0J04", (function(a,b){return {data:[{course:{time:[["3","3~4"]],id:"114262700J04",name:"計算機組織與結構",type:"重修",dept:"人工智慧學程",year:"4",class:"重",teacher:"黃樹林",credit:a,hour:a,classroom:b,max:"40",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

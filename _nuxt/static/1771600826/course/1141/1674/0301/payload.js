@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1674/0301", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"114116740301",name:"工程倫理與實務講座",type:"必修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"崔砢",credit:"1",hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

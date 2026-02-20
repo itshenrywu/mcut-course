@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2273/0904", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114122730904",name:"國際貿易理論與實務",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"楊桂柔",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

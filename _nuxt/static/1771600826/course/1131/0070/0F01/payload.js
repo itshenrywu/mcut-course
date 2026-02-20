@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0F01", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"113100700F01",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"劉岳峰",credit:a,hour:a,classroom:"",max:"50",min:"15",comment:"主題：物理學家經典閱讀(管院學生不得修)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

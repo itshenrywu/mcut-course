@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2150/7602", (function(a){return {data:[{course:{time:[["4","1~2"],["5","2~4"]],id:"109221507602",name:"品質管理(含實習)",type:"必修",dept:"四技工管系",year:"2",class:"乙",teacher:"陳昆皇",credit:"3",classroom:a,max:"65",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

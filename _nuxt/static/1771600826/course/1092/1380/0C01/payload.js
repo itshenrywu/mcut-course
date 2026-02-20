@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1380/0C01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"109213800C01",name:"高分子加工電腦模擬",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"蔡習訓",credit:"3",classroom:a,max:"42",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

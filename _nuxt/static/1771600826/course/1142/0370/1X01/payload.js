@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/1X01", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"114203701X01",name:"全民國防教育軍事訓練(國防科技)",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"劉銘昶",credit:"1",hour:a,classroom:b,max:"55",min:"10",comment:"限大二以上，軍訓選修兩門，僅能擇一修課",otherinfo:b}}],fetch:{},mutations:[]}}("2","")));

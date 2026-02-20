@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/0127", (function(a,b,c){return {data:[{course:{time:[[a,"9~10"]],id:"113202700127",name:"工讀自學英文",type:"重修",dept:"外文組-四技(日)",year:a,class:"重",teacher:"簡珮玲",credit:b,hour:b,classroom:c,max:"40",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","2","")));

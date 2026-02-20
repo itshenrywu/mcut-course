@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0370/0P03", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"111103700P03",name:"憲政與法治",type:"選修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"吳忠進",credit:b,hour:b,classroom:"",max:"54",min:"10",comment:"電機二甲+電機二乙",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

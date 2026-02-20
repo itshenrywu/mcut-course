@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2070/0L01", (function(a,b,c){return {data:[{course:{time:[["4",b],[a,"0.5~0.5"],[a,b],[a,"8.5~8.5"]],id:"114120700L01",name:"頂石專題",type:"選修",dept:"四技材工系",year:c,class:"甲",teacher:"劉禎淑",credit:"1",hour:c,classroom:"",max:"100",min:"10",comment:"不上選課系統",otherinfo:null}}],fetch:{},mutations:[]}}("5","4.5~4.5","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1280/1R01", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"113212801R01",name:"書報討論(二)",type:"必修",dept:"電機系碩士班",year:b,class:"甲",teacher:"張麗君",credit:b,hour:a,classroom:c,max:"30",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

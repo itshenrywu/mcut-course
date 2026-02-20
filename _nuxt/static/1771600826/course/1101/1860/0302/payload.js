@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1860/0302", (function(a,b,c){return {data:[{course:{time:[[b,"5~5"],[a,"5~6"]],id:"110118600302",name:"材料熱力學(一)",type:"必修",dept:"四技材工系",year:b,class:"甲",teacher:"林延儒",credit:a,hour:a,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","2","")));

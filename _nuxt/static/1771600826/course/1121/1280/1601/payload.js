@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1280/1601", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112112801601",name:"最佳控制",type:"選修",dept:"電機系碩士班",year:a,class:"甲",teacher:"張嘉德",credit:b,hour:b,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

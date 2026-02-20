@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1172/0302", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"112111720302",name:"工程熱力學(一)",type:"重修",dept:"四技機械系",year:a,class:"重",teacher:"張雅竹",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

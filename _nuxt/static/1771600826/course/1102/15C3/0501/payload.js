@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/15C3/0501", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"110215C30501",name:"計算機輔助電路設計",type:"必修",dept:"四技進修部電子系",year:"4",class:"甲",teacher:"何文吉",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

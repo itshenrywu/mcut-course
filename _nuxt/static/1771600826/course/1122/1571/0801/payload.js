@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1571/0801", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"112215710801",name:"程式設計與資料結構實務",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"陳耀添",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

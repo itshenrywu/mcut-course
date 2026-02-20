@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2270/5702", (function(a){return {data:[{course:{time:[[a,"6~8"],["5","2~4"]],id:"110122705702",name:"企業倫理",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"虞邦祥",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"帶狀課程7\u002F5~9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

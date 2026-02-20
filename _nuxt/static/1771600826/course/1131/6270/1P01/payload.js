@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/6270/1P01", (function(a){return {data:[{course:{time:[["1","3~4"],[a,"6~6"]],id:"113162701P01",name:"資料結構",type:"必修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"高黃江",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

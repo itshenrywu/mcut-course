@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0617", (function(a){return {data:[{course:{time:[["2","0.5~0.5"]],id:"111200700617",name:"勤勞教育(二)",type:"必修",dept:"四技工管系",year:"1",class:"甲",teacher:"陳昆皇",credit:"0",hour:"0.5",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

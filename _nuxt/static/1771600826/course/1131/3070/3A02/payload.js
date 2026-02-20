@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/3A02", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"113130703A02",name:"移地見學",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"林金祥",credit:a,hour:a,classroom:"",max:"15",min:"10",comment:"塊狀課程 6\u002F15~6\u002F23",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

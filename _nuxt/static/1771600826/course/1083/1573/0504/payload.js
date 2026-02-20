@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1573/0504", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"108315730504",name:"信號與系統",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"汪桓生",credit:b,hour:b,max:a,min:"無下限",comment:"併109三上課程。",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

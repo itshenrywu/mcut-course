@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1570/0F01", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"111215700F01",name:"科技英文進階",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"黃翊之",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"甲乙合班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2280/0W01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"109122800W01",name:"組織行為專題",type:"必修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"楊淑宜",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

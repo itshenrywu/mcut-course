@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/0T08", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"113202700T08",name:"英文實務(四)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"陳勁宏",credit:"0",hour:"2",classroom:"",max:"48",min:"10",comment:"機械+電機",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

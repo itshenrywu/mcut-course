@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0670/0112", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"108106700112",name:"體育(一)",type:"必修",dept:"四技工設系",year:a,class:"甲",teacher:"黃志成",credit:"0",hour:"2",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

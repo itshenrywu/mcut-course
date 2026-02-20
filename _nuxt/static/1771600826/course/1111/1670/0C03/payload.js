@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1670/0C03", (function(a,b){return {data:[{course:{time:[["1","1~4"]],id:"111116700C03",name:"人因工程",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"鄭慶武",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2140/1301", (function(a,b){return {data:[{course:{time:[["1","9~12"],[a,"5~8"]],id:"108121401301",name:"作業研究(含實習)(一)",type:"重修",dept:"四技工管系",year:b,class:"重",teacher:"翁偉泰",credit:b,hour:"4",max:"60",min:a,comment:"帶狀課程7\u002F8-9\u002F6，甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

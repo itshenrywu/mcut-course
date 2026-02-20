@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1380/1B01", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"113213801B01",name:"基因工程技術暨實務",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"王建能",credit:a,hour:a,classroom:"",max:"10",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

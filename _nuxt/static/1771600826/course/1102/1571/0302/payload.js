@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1571/0302", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"110215710302",name:"光電工程概論",type:"選修",dept:"四技電子系",year:"1",class:"乙",teacher:"劉舜維",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班授課，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

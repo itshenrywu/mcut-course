@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3340/1901", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"113233401901",name:"平面設計",type:"必修",dept:"四技視傳系",year:"1",class:"甲",teacher:"莊妙仙",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

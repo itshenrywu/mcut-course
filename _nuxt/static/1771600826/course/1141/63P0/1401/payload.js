@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/63P0/1401", (function(a,b){return {data:[{course:{time:[["4","6~7"]],id:"114163P01401",name:"書報討論(一)",type:"必修",dept:"電漿薄膜博士學程",year:a,class:"甲",teacher:"陳韋佑",credit:a,hour:b,classroom:"",max:"25",min:b,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1880/3101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108118803101",name:"太陽能電池特論",type:"選修",dept:"材料系碩士班",year:a,class:"甲",teacher:"許翔林",credit:b,hour:b,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

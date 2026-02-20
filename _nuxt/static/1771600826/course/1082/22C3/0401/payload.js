@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/22C3/0401", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"108222C30401",name:"策略管理",type:"必修",dept:"四技進修部經管系",year:"4",class:"甲",teacher:"黃銘圭",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

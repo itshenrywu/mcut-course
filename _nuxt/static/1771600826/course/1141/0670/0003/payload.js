@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0670/0003", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"114106700003",name:"體育(一)",type:"必修",dept:"四技電子系",year:a,class:"甲",teacher:"邱秀霞",credit:a,hour:"2",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

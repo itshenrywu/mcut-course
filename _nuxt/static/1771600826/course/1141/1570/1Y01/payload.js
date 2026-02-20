@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1570/1Y01", (function(a){return {data:[{course:{time:[["3","7~7"]],id:"114115701Y01",name:"專題實務",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"陳華彬",credit:a,hour:a,classroom:"",max:"80",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

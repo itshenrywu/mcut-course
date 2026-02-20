@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1E80/4401", (function(a){return {data:[{course:{time:[["4","1~2"]],id:"10821E804401",name:"專題研究(二)",type:"必修",dept:"機械系碩士班",year:a,class:"甲",teacher:"陳宏毅",credit:a,hour:"2",max:"24",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

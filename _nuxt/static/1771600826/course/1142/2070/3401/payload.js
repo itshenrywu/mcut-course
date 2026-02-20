@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/3401", (function(a,b){return {data:[{course:{time:[[a,"6~7"]],id:"114220703401",name:"永續發展與技術創新",type:"選修",dept:"半導體學程",year:"4",class:"甲",teacher:"黃文澤",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1274/1602", {data:[{course:{time:[["2","8.5~8.5"]],id:"108212741602",name:"電機工程專業能力認證課程",type:"必修",dept:"四技電機系",year:"4",class:"乙",teacher:"蔡文星",credit:"0",hour:"1",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

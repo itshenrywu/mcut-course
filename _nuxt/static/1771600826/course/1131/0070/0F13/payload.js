@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0F13", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"113100700F13",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"黃平宇",credit:b,hour:b,classroom:"",max:"50",min:"15",comment:"經典推理小說閱讀，限大四，上九週",otherinfo:null}}],fetch:{},mutations:[]}}("4","1")));

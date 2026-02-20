@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1114/18C2/0402", (function(a,b){return {data:[{course:{time:[["5",a],["6",a]],id:"111418C20402",name:"材料熱力學(一)",type:"重修",dept:"四技進修部材工系",year:"2",class:"暑",teacher:"簡順億",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"與日間部併班上課",otherinfo:null}}],fetch:{},mutations:[]}}("5~7","3")));

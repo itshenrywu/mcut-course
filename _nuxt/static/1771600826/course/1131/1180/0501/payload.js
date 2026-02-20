@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1180/0501", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113111800501",name:"進階動力學",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"張文慶",credit:b,hour:b,classroom:"",max:"14",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3070/1201", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"112230701201",name:"廣告設計",type:"必修",dept:"四技行設專班",year:"2",class:"乙",teacher:"楊朝明",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:".",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

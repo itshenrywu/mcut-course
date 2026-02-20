@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/2U01", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"113211702U01",name:"汽車實務(一)",type:"選修",dept:"四技機械系",year:"1",class:"丙",teacher:"黃道易",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

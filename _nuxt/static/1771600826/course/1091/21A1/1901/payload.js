@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/21A1/1901", (function(a,b){return {data:[{course:{time:[["1","9~11"]],id:"109121A11901",name:"人因工程專題",type:"選修",dept:"工管系碩專班",year:"2",class:"甲",teacher:"林伯鴻",credit:a,hour:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1880/4501", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114218804501",name:"高等材料選擇與設計",type:"選修",dept:"材料系碩士班",year:a,class:"甲",teacher:"姚栢文",credit:b,hour:b,classroom:c,max:"30",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

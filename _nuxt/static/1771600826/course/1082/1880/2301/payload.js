@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1880/2301", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"108218802301",name:"奈米元件與智權策略",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"胡登凱",credit:a,hour:a,max:"35",min:"5",comment:"兼任教師胡登凱授課(先掛黃啟賢)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2140/1601", (function(a){return {data:[{course:{time:[["2","5~7"],[a,"7~8"]],id:"108221401601",name:"工作研究(含實習)",type:"必修",dept:"四技工管系",year:"1",class:"甲",teacher:"張仁履",credit:a,hour:"5",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

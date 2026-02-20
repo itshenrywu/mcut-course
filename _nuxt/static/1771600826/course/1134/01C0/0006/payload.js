@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1134/01C0/0006", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"],[a,"5~7"]],id:"113401C00006",name:"國文(一)",type:"重修",dept:"通識中心進修部",year:"4",class:"暑",teacher:"張淑芬",credit:b,hour:b,classroom:c,max:"無上限",min:"無下限",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("6","3","")));

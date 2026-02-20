@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1574/0803", (function(a){return {data:[{course:{time:[["2","5~8"]],id:"110115740803",name:"光電應用實務",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"許宏彬",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班授課，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

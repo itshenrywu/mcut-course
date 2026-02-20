@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/0270/2003", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"113302702003",name:"觀光日語入門",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"徐碧茹",credit:b,hour:b,classroom:"",max:"8",min:a,comment:"併大三上課，上課期間為6\u002F30至8\u002F25",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0670/0519", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"112206700519",name:"體育(二)",type:"必修",dept:"行銷設計學程",year:a,class:"乙",teacher:"吳宇豐",credit:a,hour:"2",classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

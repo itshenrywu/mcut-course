@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/1U01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"114103701U01",name:"全民國防教育軍事訓練(國防政策)",type:"選修",dept:"通識中心四技",year:b,class:"甲",teacher:"翁智賢",credit:a,hour:b,classroom:c,max:"45",min:"10",comment:"限大二以上，軍訓選修三門，僅能擇一修課",otherinfo:c}}],fetch:{},mutations:[]}}("1","2","")));

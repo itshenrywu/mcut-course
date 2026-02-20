@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0027", (function(a){return {data:[{course:{time:[["5","0.5~0.5"]],id:"111200700027",name:"設計思考",type:"必修",dept:"行銷設計學程",year:a,class:"甲",teacher:"劉為開",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"112\u002F2\u002F6 開始上課，其他上課時間請詳閱公告。",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

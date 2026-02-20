@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1240/5101", (function(a,b){return {data:[{course:{time:[["4","9~12"]],id:"109112405101",name:"程式設計",type:"重修",dept:"四技電機系",year:a,class:"重",teacher:"莊政達",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

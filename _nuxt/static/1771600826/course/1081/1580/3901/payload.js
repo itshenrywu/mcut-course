@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1580/3901", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"108115803901",name:"類比積體電路設計",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"周孝興",credit:b,hour:b,max:"30",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

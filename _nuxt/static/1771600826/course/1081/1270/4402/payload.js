@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1270/4402", {data:[{course:{time:[["5","2~4"]],id:"108112704402",name:"自動控制實習",type:"必修",dept:"四技電機系",year:"4",class:"乙",teacher:"林君玲",credit:"1",hour:"3",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

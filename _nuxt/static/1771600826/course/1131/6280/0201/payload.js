@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/6280/0201", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113162800201",name:"金融科技導論",type:"選修",dept:"TAICA",year:b,class:"甲",teacher:"劉豐瑞",credit:a,hour:a,classroom:"",max:"45",min:b,comment:"臺灣大專院校人工智慧學程聯盟課程",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

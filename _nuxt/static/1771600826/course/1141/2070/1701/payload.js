@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2070/1701", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"114120701701",name:"物理化學(一)",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"黃文澤",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

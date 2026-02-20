@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/0403/0116", (function(a,b,c){return {data:[{course:{time:[["1",a],["2",a]],id:"110304030116",name:"微積分(一)",type:"重修",dept:"自然組(一)-四技(日)",year:"4",class:"暑",teacher:"陳隆暉",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("9~11","3","")));

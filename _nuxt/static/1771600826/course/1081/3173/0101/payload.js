@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3173/0101", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"108131730101",name:"產品設計(三)",type:"必修",dept:"四技工設系",year:b,class:"甲",teacher:"謝政道",credit:b,hour:a,max:"56",min:"10",comment:"塊狀課程：上課時間為6\u002F20-7\u002F5",otherinfo:null}}],fetch:{},mutations:[]}}("6","3")));

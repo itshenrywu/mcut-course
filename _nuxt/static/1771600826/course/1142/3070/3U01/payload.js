@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3070/3U01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114230703U01",name:"腳本創作",type:"必修",dept:"行銷設計學程",year:a,class:"甲",teacher:"朱賢哲",credit:b,hour:b,classroom:c,max:"35",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

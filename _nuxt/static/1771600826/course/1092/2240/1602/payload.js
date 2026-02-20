@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2240/1602", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"109222401602",name:"管理數學",type:"重修",dept:"四技經管系",year:a,class:"重",teacher:"陳隆暉",credit:a,classroom:"",max:"50",min:"10",comment:"與二年級併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

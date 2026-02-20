@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2070/0801", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"111120700801",name:"材料科學導論",type:"必修",dept:"環實務",year:"1",class:"甲",teacher:"吳鉉忠",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

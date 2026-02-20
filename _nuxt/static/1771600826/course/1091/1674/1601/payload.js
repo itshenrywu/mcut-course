@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1674/1601", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"109116741601",name:"環境保護法規",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"許銘志",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

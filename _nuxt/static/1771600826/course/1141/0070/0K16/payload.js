@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0K16", (function(a,b,c){return {data:[{course:{time:[["4",a],["5",a]],id:"114100700K16",name:"大學之道",type:"必修",dept:"四技環安衛系",year:b,class:"甲",teacher:"嚴莉婷",credit:b,hour:"2",classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","1","")));

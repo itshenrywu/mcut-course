@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1870/2801", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"108118702801",name:"材料專題(一)",type:"必修",dept:"四技材工系",year:a,class:"甲",teacher:"陳勝吉",credit:"1",hour:a,max:"100",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

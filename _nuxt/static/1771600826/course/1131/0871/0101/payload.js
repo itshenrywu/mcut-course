@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0871/0101", (function(a,b){return {data:[{course:{time:[[a,"5~5"],["4","5~6"]],id:"113108710101",name:"普通化學",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"蘇家弘",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

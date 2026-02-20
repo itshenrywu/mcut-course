@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1870/0001", (function(a,b){return {data:[{course:{time:[["1",b],["4",b]],id:"109118700001",name:"材料選擇與設計",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"謝章興",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","7~8")));

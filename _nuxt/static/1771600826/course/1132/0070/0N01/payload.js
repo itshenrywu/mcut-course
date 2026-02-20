@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0N01", (function(a,b){return {data:[{course:{time:[["7","0.5~0.5"]],id:"113200700N01",name:"培力增能實務",type:"選修",dept:"通識中心四技",year:a,class:"丙",teacher:"簡良榮",credit:a,hour:a,classroom:b,max:"無上限",min:"無下限",comment:b,otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("1","")));

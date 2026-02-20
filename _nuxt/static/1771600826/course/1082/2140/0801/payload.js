@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2140/0801", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"108221400801",name:"統計學(一)",type:"必修",dept:"四技工管系",year:"1",class:"甲",teacher:"王建智",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1250/0902", {data:[{course:{time:[["4","7~8.5"]],id:"108212500902",name:"微處理機實習",type:"必修",dept:"四技電機系",year:"2",class:"乙",teacher:"王勝寬",credit:"1",hour:"3",max:"52",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

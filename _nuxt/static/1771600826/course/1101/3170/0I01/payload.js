@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3170/0I01", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"110131700I01",name:"進階電腦輔助工業設計",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"郭文宗",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

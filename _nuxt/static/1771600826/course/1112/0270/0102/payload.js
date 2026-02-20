@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0270/0102", (function(a,b){return {data:[{course:{time:[["7","11~11"]],id:"111202700102",name:"工讀自學英文",type:"必修",dept:"四技視傳系",year:"3",class:"甲",teacher:"高如雲",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

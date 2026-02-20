@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1570/0W01", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"110215700W01",name:"人工智慧概論",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"董一志",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

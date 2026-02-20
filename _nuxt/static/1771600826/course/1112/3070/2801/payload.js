@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/2801", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"111230702801",name:"進階網頁程式設計",type:"選修",dept:"四技行設專班",year:"1",class:"乙",teacher:"林金祥",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"與行設一甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

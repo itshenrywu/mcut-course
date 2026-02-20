@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1540/1001", (function(a,b){return {data:[{course:{time:[["1","9~12"]],id:"109115401001",name:"電子學(一)",type:"重修",dept:"四技電子系",year:a,class:"重",teacher:"毛建秋",credit:a,hour:a,classroom:b,max:"45",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

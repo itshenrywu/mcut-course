@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/2170/3503", (function(a,b,c,d){return {data:[{course:{time:[["3",a],[b,"0.5~1"],["5",a]],id:"113321703503",name:"實務專題(二)",type:"重修",dept:"四技工管系",year:b,class:"暑",teacher:"白恭瑞",credit:c,hour:"2",classroom:d,max:"60",min:c,comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","4","1","")));

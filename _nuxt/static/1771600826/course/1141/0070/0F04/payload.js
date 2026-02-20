@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0F04", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"114100700F04",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:"4",class:"乙",teacher:"蒲彥光",credit:a,hour:a,classroom:"",max:"45",min:"15",comment:"主題：詩歌經典詮釋",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

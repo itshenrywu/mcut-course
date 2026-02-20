@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1170/0L01", (function(a){return {data:[{course:{time:[[a,"1~2"],["4","1~1"]],id:"108111700L01",name:"電子學",type:"必修",dept:"四技機械系",year:"2",class:"乙",teacher:"朱承軒",credit:a,hour:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

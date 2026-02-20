@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0071/5701", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"110200715701",name:"傳統婦女與中國政治",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳冠穎",credit:a,hour:a,classroom:b,max:"53",min:"10",comment:b,otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2","")));

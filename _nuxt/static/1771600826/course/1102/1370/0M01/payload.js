@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1370/0M01", (function(a){return {data:[{course:{time:[["1","1~3"]],id:"110213700M01",name:"生物技術暨實驗",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"簡良榮",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

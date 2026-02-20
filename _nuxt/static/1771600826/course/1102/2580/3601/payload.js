@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2580/3601", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"110225803601",name:"高等品質管理",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"邱文智",credit:a,hour:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

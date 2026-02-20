@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1174/5301", (function(a){return {data:[{course:{time:[["2","5~6"],[a,"1~1"]],id:"108111745301",name:"新能源工程導論",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"王添益",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

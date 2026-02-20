@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1170/1X01", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"114211701X01",name:"進階電腦輔助機械製圖",type:"選修",dept:"四技機械系",year:"1",class:"乙",teacher:"邱昱仁",credit:a,hour:a,classroom:b,max:"54",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

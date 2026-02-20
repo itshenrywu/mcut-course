@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2A01", (function(a,b){return {data:[{course:{time:[["1","9~11"]],id:"114162702A01",name:"雲端技術實務",type:"選修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"羅安良",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

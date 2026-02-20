@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0120", (function(a){return {data:[{course:{time:[["7","7~7"]],id:"112200700120",name:"工讀實務實習(一)",type:"必修",dept:"環實務",year:"3",class:"甲",teacher:"鄭有為",credit:"4",hour:"29",classroom:a,max:"14",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3170/0Q01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"113231700Q01",name:"福祉設計",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"林鎮山",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

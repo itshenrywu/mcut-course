@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/258I/1901", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"1082258I1901",name:"柔性運算",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"陳琨太",credit:a,hour:a,max:"26",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

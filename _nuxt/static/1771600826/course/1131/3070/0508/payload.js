@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/0508", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"113130700508",name:"創意整合實作",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"游淑萍",credit:"1",hour:a,classroom:"",max:"60",min:"10",comment:"塊狀課程6\u002F3-6\u002F13",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/2J01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114220702J01",name:"光電材料製程實務",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"張峻瑜",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

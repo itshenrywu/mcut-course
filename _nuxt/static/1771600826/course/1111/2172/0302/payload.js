@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2172/0302", (function(a,b){return {data:[{course:{time:[["1","4.5~5"],[a,"3~4"]],id:"111121720302",name:"統計學(含實習)(二)",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"王建智",credit:"3",hour:"4",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

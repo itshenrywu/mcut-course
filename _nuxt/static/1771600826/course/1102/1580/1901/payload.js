@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1580/1901", (function(a,b,c){return {data:[{course:{time:[[a,"6~8"]],id:"110215801901",name:"資料庫應用實務",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"蘇品長",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

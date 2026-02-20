@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3070/3K01", (function(a){return {data:[{course:{time:[["4","8~8"]],id:"112230703K01",name:"行銷設計趨勢導讀（二）",type:"選修",dept:"行銷設計學程",year:"2",class:"甲",teacher:"林金祥",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

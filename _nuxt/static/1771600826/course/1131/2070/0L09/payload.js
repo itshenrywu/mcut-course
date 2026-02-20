@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/0L09", (function(a,b,c,d){return {data:[{course:{time:[["4",b],[a,"0.5~0.5"],[a,b],[a,"8.5~8.5"]],id:"113120700L09",name:"頂石專題",type:"選修",dept:"四技環安衛系",year:c,class:"甲",teacher:"蘇家弘",credit:"1",hour:c,classroom:d,max:"50",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("5","4.5~4.5","3","")));

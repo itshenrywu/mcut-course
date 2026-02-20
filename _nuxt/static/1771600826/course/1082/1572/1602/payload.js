@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1572/1602", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108215721602",name:"電子電路模擬實習",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"吳亞芬",credit:"1",hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

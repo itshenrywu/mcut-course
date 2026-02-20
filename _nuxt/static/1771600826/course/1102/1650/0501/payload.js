@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1650/0501", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"110216500501",name:"環境微生物學",type:"必修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"陳錫金",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

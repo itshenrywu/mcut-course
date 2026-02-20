@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1370/2505", (function(a,b){return {data:[{course:{time:[["2","9~11"]],id:"112213702505",name:"化工熱力學",type:"重修",dept:"四技化工系",year:"4",class:"重",teacher:"吳弦聰",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

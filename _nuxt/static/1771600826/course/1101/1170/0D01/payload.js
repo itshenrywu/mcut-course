@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1170/0D01", (function(a,b,c){return {data:[{course:{time:[["2","6~7"],[a,"2~2"]],id:"110111700D01",name:"奈微米系統",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"鍾永強",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

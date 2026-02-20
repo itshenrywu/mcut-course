@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1180/0H01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"112111800H01",name:"功能材料原理與應用",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"陳正劭",credit:a,hour:a,classroom:"",max:"14",min:"5",comment:"English-taught course，與生醫暨醫材博班併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

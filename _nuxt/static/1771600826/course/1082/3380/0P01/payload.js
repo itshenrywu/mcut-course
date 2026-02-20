@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/3380/0P01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108233800P01",name:"認知心理",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"薛惠月",credit:a,hour:a,max:"30",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

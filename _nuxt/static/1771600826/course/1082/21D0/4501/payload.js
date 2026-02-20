@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/21D0/4501", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108221D04501",name:"管理實務與個案",type:"選修",dept:"四技在職專班工管系",year:"4",class:"甲",teacher:"張真誠",credit:a,hour:a,max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

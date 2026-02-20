@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1680/0101", {data:[{course:{time:[["4","6~8"]],id:"109216800101",name:"高等環境生物技術",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"張小道",credit:"3",classroom:"",max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]});

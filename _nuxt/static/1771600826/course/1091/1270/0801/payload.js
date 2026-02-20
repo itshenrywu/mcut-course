@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1270/0801", (function(a,b){return {data:[{course:{time:[["5","1~3"]],id:"109112700801",name:"信號與系統",type:"必修",dept:"四技電機系",year:"2",class:"甲",teacher:"蔡文星",credit:a,hour:a,classroom:b,max:"68",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

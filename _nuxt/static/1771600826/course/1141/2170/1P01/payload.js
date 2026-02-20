@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2170/1P01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"114121701P01",name:"工業工程與管理概論",type:"選修",dept:"四技工管系",year:a,class:"甲",teacher:"鄭明顯",credit:a,hour:"2",classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

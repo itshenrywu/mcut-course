@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3170/0X01", (function(a,b){return {data:[{course:{time:[["2",b],["4",b]],id:"109131700X01",name:"產品設計實務",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"陳建志",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程時間7\u002F6-9\u002F4，工設系不可選",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11")));

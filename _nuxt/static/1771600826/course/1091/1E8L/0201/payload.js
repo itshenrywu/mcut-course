@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1E8L/0201", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"10911E8L0201",name:"光學檢測",type:"選修",dept:"機械系碩士班",year:a,class:"甲",teacher:"朱承軒",credit:b,hour:b,classroom:c,max:"12",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

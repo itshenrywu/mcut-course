@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1371/0501", (function(a){return {data:[{course:{time:[["1","3~4"],["2","1~2"]],id:"108113710501",name:"普通化學(二)",type:"重修",dept:"四技化工系",year:a,class:"重",teacher:"李國通",credit:a,hour:a,max:"48",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

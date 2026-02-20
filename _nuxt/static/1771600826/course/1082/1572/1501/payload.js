@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1572/1501", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"108215721501",name:"半導體元件",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"許宏彬",credit:a,hour:a,max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2880/3801", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"108228803801",name:"環境毒物學",type:"選修",dept:"環安衛系碩士班",year:a,class:"甲",teacher:"陳錫金",credit:b,hour:b,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

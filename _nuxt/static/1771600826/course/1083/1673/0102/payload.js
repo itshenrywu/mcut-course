@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1673/0102", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"108316730102",name:"儀器分析",type:"重修",dept:"四技環安衛系",year:"4",class:"暑",teacher:"陳慶隆",credit:b,hour:b,max:"10",min:a,comment:"與環三甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

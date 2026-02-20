@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2170/1V02", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114221701V02",name:"線性代數",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"翁偉泰",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

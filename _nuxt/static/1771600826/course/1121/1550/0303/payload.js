@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1550/0303", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"112115500303",name:"固態電子學",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"田青禾",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"甲乙合班。",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

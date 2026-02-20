@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0071/0101", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"109200710101",name:"智慧財產權導論",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"蔡孟彥",credit:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("")));

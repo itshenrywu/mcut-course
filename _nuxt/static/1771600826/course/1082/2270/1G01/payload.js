@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2270/1G01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108222701G01",name:"人力資源管理法令",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"陳金福",credit:a,hour:a,max:"50",min:"10",comment:"甲乙併班 授課老師:陳金福",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

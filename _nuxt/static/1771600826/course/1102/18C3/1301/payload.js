@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/18C3/1301", (function(a){return {data:[{course:{time:[["5","7~8.5"]],id:"110218C31301",name:"薄膜製程",type:"必修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"姚栢文",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"新聘教師-姚栢文",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

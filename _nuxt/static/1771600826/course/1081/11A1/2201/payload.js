@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/11A1/2201", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"108111A12201",name:"工程分析",type:"必修",dept:"機械系碩專班",year:"2",class:"甲",teacher:"鍾永強",credit:a,hour:a,max:"12",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

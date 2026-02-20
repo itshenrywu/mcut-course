@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1571/0303", (function(a,b){return {data:[{course:{time:[["5","9~11"]],id:"110215710303",name:"光電工程概論",type:"重修",dept:"四技電子系",year:"2",class:"重",teacher:"王逸平",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

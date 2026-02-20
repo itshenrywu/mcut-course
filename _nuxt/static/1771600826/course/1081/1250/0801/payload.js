@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1250/0801", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"108112500801",name:"機率",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"王柏仁",credit:b,hour:b,max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

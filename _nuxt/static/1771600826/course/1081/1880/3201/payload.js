@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1880/3201", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108118803201",name:"陶瓷製程",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"陳彥友",credit:b,hour:b,max:"30",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

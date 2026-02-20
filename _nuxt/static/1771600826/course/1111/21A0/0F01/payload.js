@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/21A0/0F01", (function(a,b){return {data:[{course:{time:[["2","9~11"]],id:"111121A00F01",name:"統計與資料科學",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"俞凱允",credit:a,hour:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1E80/7001", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"10811E807001",name:"功能材料原理與應用",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"馮奎智",credit:a,hour:a,max:"12",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/61P0/0501", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"114261P00501",name:"英文科技論文寫作(二)",type:"必修",dept:"能源電池博士班",year:a,class:"甲",teacher:"約瑟",credit:a,hour:b,classroom:"",max:"20",min:b,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

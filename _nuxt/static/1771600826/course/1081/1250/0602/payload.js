@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1250/0602", (function(a){return {data:[{course:{time:[[a,"3~4"],["5","7~7"]],id:"108112500602",name:"微處理機",type:"必修",dept:"四技電機系",year:"2",class:"乙",teacher:"王勝寬",credit:a,hour:a,max:"68",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

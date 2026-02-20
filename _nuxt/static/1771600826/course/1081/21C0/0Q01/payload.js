@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21C0/0Q01", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108121C00Q01",name:"系統分析與設計",type:"選修",dept:"四技進修部工管系",year:a,class:"甲",teacher:"王文生",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

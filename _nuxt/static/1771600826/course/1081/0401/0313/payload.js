@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0401/0313", (function(a,b){return {data:[{course:{time:[[a,"8~8.5"]],id:"108104010313",name:"大學之道",type:"必修",dept:"環實務",year:b,class:"甲",teacher:"黃浚瑋",credit:b,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

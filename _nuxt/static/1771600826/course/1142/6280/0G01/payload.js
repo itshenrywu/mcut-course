@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6280/0G01", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"114262800G01",name:"智慧製造執行系統",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"劉豐瑞",credit:b,hour:b,classroom:"",max:"100",min:a,comment:"TAICA-成大開課,限大四碩士",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

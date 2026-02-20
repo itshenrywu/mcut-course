@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/18C2/0701", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"108118C20701",name:"材料物理性質",type:"必修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"唐健富",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

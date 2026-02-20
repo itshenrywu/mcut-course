@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/9801", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"108100719801",name:"宗教與性別",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"莊蕙綺",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2")));

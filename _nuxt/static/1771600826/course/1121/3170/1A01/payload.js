@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3170/1A01", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"112131701A01",name:"數位工具應用",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"高宇宏",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"授課老師：高宇宏老師",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

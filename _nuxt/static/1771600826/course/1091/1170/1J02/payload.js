@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1170/1J02", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"109111701J02",name:"機械工程概論",type:"選修",dept:"四技機械系",year:"1",class:"丙",teacher:"章哲寰",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

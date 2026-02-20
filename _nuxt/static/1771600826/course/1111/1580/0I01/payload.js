@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1580/0I01", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"111115800I01",name:"人工智慧系統建模及分析",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"沈榮麟",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

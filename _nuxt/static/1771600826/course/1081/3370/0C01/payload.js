@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3370/0C01", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"108133700C01",name:"設計英文",type:"必修",dept:"四技視傳系",year:"3",class:"甲",teacher:"鄭仰霖",credit:"1",hour:a,max:"60",min:"10",comment:"帶狀課程：上課時間為7\u002F8-9\u002F6",otherinfo:null}}],fetch:{},mutations:[]}}("2","5~7")));

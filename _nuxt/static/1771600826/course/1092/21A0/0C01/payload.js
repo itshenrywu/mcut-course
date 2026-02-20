@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/21A0/0C01", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"109221A00C01",name:"機器學習",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"陳昆皇",credit:"3",classroom:a,max:"25",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

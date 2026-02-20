@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0071/6001", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"110200716001",name:"世界古文明",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"王惟貞",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("1","2","")));

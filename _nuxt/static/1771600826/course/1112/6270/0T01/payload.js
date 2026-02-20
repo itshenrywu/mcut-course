@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/6270/0T01", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"111262700T01",name:"靜力學",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"劉豐瑞",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

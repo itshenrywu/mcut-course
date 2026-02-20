@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2270/1W02", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"112222701W02",name:"企業資源規劃",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"陳世民",credit:a,hour:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

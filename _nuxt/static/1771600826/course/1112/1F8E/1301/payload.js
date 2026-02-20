@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1F8E/1301", (function(a,b){return {data:[{course:{time:[["3","5~6"]],id:"11121F8E1301",name:"電力組書報討論(四)",type:"必修",dept:"電機系碩士班",year:a,class:"甲",teacher:"羅慶權",credit:"0",hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

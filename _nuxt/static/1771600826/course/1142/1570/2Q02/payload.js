@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1570/2Q02", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"114215702Q02",name:"電子學實習(二)",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"許宏彬",credit:a,hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

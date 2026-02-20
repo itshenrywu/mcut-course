@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/33C2/1201", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108233C21201",name:"商業攝影",type:"選修",dept:"四技進修部視傳系",year:a,class:"甲",teacher:"鄭興宗",credit:a,hour:a,max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

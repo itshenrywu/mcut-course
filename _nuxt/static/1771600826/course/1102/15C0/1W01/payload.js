@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/15C0/1W01", (function(a,b){return {data:[{course:{time:[["5","9~11"]],id:"110215C01W01",name:"微處理機實務",type:"必修",dept:"四技進修部電子系",year:a,class:"甲",teacher:"葉濰銘",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

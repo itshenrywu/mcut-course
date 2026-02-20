@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/3P01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114130703P01",name:"體驗設計",type:"選修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"孫儷芳",credit:a,hour:a,classroom:"",max:"42",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

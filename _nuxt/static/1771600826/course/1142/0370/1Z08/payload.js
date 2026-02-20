@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/1Z08", (function(a){return {data:[{course:{time:[["1","3~4"]],id:"114203701Z08",name:"近代世界的形成",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"馮典章",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"材料(甲+乙)",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

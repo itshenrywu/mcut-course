@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/0070/0R22", (function(a){return {data:[{course:{time:[[a,"8~8.5"]],id:"113300700R22",name:"永續發展與社會實踐",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"盧信吉",credit:a,hour:a,classroom:"",max:"5",min:"無下限",comment:"透視當代中國",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

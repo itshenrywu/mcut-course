@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2780/6801", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108227806801",name:"生化程序工程技術",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"張煜光",credit:a,hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

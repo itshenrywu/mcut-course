@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1580/2101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108115802101",name:"半導體工程實務",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"鄭信民",credit:b,hour:b,max:"30",min:a,comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

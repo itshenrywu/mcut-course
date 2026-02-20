@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/278O/0601", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"1081278O0601",name:"生物技術特論",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"劉昭麟",credit:a,hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

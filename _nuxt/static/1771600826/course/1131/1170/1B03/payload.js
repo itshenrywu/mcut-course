@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1170/1B03", (function(a,b){return {data:[{course:{time:[["1","2~3"],[a,"3~4"]],id:"113111701B03",name:"材料力學與實驗",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"張文慶",credit:"3",hour:"4",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

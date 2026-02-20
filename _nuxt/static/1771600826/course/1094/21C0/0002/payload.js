@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/21C0/0002", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[c,b]],id:"109421C00002",name:"微積分",type:"重修",dept:"四技進修部工管系",year:a,class:"暑",teacher:"蔡宗謀",credit:c,classroom:d,max:"50",min:"2",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("1","9~11","3","")));

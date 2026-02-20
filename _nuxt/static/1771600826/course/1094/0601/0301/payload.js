@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/0601/0301", (function(a,b){return {data:[{course:{time:[[a,"9~12"]],id:"109406010301",name:"經典與大眾文化",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"李慧琪",credit:a,classroom:b,max:"48",min:"20",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

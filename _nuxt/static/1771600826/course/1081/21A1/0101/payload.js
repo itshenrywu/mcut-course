@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21A1/0101", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"108121A10101",name:"研究方法與論文寫作",type:"必修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"俞凱允",credit:a,hour:a,max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

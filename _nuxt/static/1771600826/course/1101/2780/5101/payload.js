@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2780/5101", (function(a,b,c){return {data:[{course:{time:[[a,"1~3"]],id:"110127805101",name:"生化儀器分析暨實作",type:"選修",dept:"化工系生工碩士班",year:a,class:"甲",teacher:"余佳純",credit:b,hour:b,classroom:c,max:"20",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

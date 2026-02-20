@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/2274/1303", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"108322741303",name:"商用英文(四)",type:"重修",dept:"四技經管系",year:a,class:"暑",teacher:"朱璽叡",credit:"1",hour:"2",max:"60",min:"5",comment:"帶狀課程7\u002F6~9\u002F4甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

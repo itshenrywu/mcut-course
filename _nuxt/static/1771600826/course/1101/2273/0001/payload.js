@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2273/0001", (function(a){return {data:[{course:{time:[[a,"2~4"],["5","5~7"]],id:"110122730001",name:"實務專題製作(一)",type:"必修",dept:"四技經管系",year:a,class:"甲",teacher:"廖宜慶",credit:"1",hour:a,classroom:"",max:"60",min:"10",comment:"帶狀課程7\u002F5~9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

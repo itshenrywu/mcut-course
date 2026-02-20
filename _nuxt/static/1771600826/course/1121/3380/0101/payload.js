@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3380/0101", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"112133800101",name:"視覺傳達設計(一)",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"莊妙仙",credit:b,hour:b,classroom:c,max:"20",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

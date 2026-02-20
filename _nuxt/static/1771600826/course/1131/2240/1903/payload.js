@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2240/1903", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"113122401903",name:"企業概論",type:"選修",dept:"四技經管系",year:"1",class:"丙",teacher:"杜海勇",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/12C0/0T01", (function(a){return {data:[{course:{time:[["6","5~7"]],id:"109212C00T01",name:"現代電機",type:"選修",dept:"四技進修部電機系",year:"4",class:"甲",teacher:"謝飛虎",credit:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

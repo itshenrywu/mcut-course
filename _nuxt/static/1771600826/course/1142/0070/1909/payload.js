@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1909", (function(a){return {data:[{course:{time:[["7","10~10"]],id:"114200701909",name:"工讀實務實習(四)",type:"必修",dept:"四技化工系",year:"3",class:"乙",teacher:"程桂祥",credit:"5",hour:"40",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

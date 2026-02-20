@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1570/1G01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"113115701G01",name:"網路資料庫設計",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"蘇品長",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

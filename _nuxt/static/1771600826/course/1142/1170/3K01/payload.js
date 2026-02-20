@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1170/3K01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114211703K01",name:"電動車輛測試實務",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"楊岳儒",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

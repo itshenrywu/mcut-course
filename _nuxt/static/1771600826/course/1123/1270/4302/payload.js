@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/1270/4302", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[c,b]],id:"112312704302",name:"電磁學",type:"重修",dept:"四技電機系",year:a,class:"暑",teacher:"古家豪",credit:d,hour:d,classroom:"",max:"20",min:c,comment:"暑修併四技三甲上課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3~4","5","3")));

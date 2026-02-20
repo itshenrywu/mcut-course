@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1372/0201", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"111213720201",name:"高分子加工暨實驗",type:"選修",dept:"四技化工系",year:"2",class:"甲",teacher:"吳紹榮",credit:a,hour:"4",classroom:"",max:"65",min:"無下限",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

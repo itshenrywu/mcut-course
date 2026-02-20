@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1380/1G01", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"114113801G01",name:"專題研究(一)",type:"必修",dept:"化工系生工碩士班",year:b,class:"甲",teacher:"傅俊中",credit:b,hour:a,classroom:"",max:"10",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

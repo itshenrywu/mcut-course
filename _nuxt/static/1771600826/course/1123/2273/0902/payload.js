@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/2273/0902", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"112322730902",name:"國際貿易理論與實務",type:"重修",dept:"四技經管系",year:"4",class:"暑",teacher:"張明輝",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"暑修併三甲帶狀7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("3","5~7")));

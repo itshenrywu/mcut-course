@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3180/0G01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"109231800G01",name:"國際設計競賽實務與研習",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"李鍇朮",credit:"3",classroom:a,max:"20",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

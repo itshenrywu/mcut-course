@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1580/0201", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"113115800201",name:"專題研究(一)",type:"必修",dept:"電子系碩士班",year:b,class:"甲",teacher:"黃樹林",credit:b,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course，限電子系學生修課。",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

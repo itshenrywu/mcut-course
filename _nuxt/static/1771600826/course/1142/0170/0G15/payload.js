@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0170/0G15", (function(a,b){return {data:[{course:{time:[["4","1~2"]],id:"114201700G15",name:"藝文涵養與社會參與",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"李桂芳",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

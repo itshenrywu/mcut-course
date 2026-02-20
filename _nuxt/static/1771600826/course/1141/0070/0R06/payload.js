@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0R06", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"114100700R06",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"蔡宗謀",credit:a,hour:a,classroom:"",max:"50",min:"15",comment:"數學科普的體驗(管院生勿選)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

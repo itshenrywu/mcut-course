@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1180/0B01", (function(a,b,c){return {data:[{course:{time:[[a,"8~8.5"]],id:"112111800B01",name:"專題研究(一)",type:"必修",dept:"機械系碩士班",year:b,class:"甲",teacher:"郭啟全",credit:b,hour:"2",classroom:c,max:"40",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","1","")));

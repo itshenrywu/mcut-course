@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1350/1201", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~5"]],id:"111213501201",name:"物理化學(二)",type:"選修",dept:"四技化工系",year:"2",class:"甲",teacher:"劉宗宏",credit:b,hour:b,classroom:"",max:"65",min:"10",comment:"應用化學模組",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

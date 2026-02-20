@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1171/0701", (function(a,b){return {data:[{course:{time:[["1","7~8"],[a,"4~4"]],id:"109211710701",name:"車輛電子學",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"胡志中",credit:"3",classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

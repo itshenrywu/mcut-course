@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1370/0F02", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"114213700F02",name:"化工產業與人工智慧應用",type:"必修",dept:"四技化工系",year:b,class:"乙",teacher:"陳政佑",credit:a,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

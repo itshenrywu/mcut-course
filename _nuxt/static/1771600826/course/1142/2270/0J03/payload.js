@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/0J03", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114222700J03",name:"組織行為",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"楊南進",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

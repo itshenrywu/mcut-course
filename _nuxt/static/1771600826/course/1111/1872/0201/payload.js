@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1872/0201", (function(a){return {data:[{course:{time:[["4","6~8.5"]],id:"111118720201",name:"電子材料",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"張麗君",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"跨領域專班-限外系修課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1672/1401", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108116721401",name:"流體力學",type:"重修",dept:"四技環安衛系",year:"4",class:"重",teacher:"洪明瑞",credit:a,hour:a,max:"55",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

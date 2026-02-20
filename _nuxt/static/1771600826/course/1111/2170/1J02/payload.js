@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2170/1J02", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"111121701J02",name:"生產管理(含實習)",type:"重修",dept:"四技工管系",year:a,class:"重",teacher:"陳昆皇",credit:a,hour:c,classroom:"",max:"60",min:"10",comment:"甲乙合班 帶狀課程：上課時間為7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("3","1~4","4")));

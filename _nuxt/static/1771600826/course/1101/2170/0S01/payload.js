@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2170/0S01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"],[b,"1~2"]],id:"110121700S01",name:"程式設計(含實習)(一)",type:"必修",dept:"四技工管系",year:"1",class:"甲",teacher:"白恭瑞",credit:a,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","4","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/2170/3503", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"112321703503",name:"實務專題(二)",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"游淑萍",credit:"1",hour:"2",classroom:"",max:"10",min:a,comment:"暑修併三甲帶狀7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3140/5001", (function(a,b){return {data:[{course:{time:[["4","1~3"]],id:"111131405001",name:"工業設計概論",type:"必修",dept:"四技工設系",year:"1",class:"甲",teacher:"謝政道",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

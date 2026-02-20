@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0O01", (function(a,b){return {data:[{course:{time:[["7","2~2"]],id:"113200700O01",name:"全球素養與跨文化認知 (二)",type:"選修",dept:"通識中心四技",year:a,class:"丙",teacher:"李潔嵐",credit:a,hour:a,classroom:b,max:"無上限",min:"無下限",comment:b,otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("1","")));

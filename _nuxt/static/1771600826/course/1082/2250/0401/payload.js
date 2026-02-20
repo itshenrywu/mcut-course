@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2250/0401", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108222500401",name:"商事法",type:"選修",dept:"四技經管系",year:"1",class:"甲",teacher:"林柏翰",credit:a,hour:a,max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

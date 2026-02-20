@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1370/0M01", (function(a,b){return {data:[{course:{time:[[a,"8.5~10"]],id:"114213700M01",name:"生物技術暨實驗",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"王建能",credit:a,hour:a,classroom:"",max:b,min:b,comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","10")));

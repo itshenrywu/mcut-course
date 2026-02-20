@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2240/0503", (function(a,b){return {data:[{course:{time:[["1","9~11"]],id:"111222400503",name:"經濟學(二)",type:"重修",dept:"四技經管系",year:"4",class:"重",teacher:"張家瑞",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

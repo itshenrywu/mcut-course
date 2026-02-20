@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1370/2807", (function(a,b,c){return {data:[{course:{time:[[b,"1~4"]],id:"113313702807",name:"公用設施",type:"重修",dept:"四技化工系",year:b,class:"暑",teacher:"施正元",credit:a,hour:a,classroom:c,max:a,min:"1",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","4","")));

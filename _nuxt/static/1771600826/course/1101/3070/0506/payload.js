@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0506", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"110130700506",name:"創意整合實作",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"楊朝明",credit:"1",hour:a,classroom:"",max:"56",min:"10",comment:"塊狀課程第一階段6\u002F7-6\u002F16 甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

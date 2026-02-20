@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/2801", (function(a){return {data:[{course:{time:[["1","5~6"],[a,"8~8"]],id:"113121702801",name:"系統模擬",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"陳琨太",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

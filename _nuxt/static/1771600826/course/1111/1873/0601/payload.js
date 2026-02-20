@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1873/0601", (function(a,b){return {data:[{course:{time:[["1",b],["2",b]],id:"111118730601",name:"相變化",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"林延儒",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","7~8")));

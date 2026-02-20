@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/0Q01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114112700Q01",name:"物件導向程式設計實務",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"劉恩成",credit:a,hour:a,classroom:"",max:"32",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

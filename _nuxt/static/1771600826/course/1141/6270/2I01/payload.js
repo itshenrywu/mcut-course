@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2I01", (function(a,b){return {data:[{course:{time:[["3","8~8"]],id:"114162702I01",name:"人工智慧應用規劃實務",type:"選修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"劉弘一",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

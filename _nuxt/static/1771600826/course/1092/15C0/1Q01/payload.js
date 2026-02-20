@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/15C0/1Q01", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"109215C01Q01",name:"電子實務(二)",type:"必修",dept:"四技進修部電子系",year:"2",class:"甲",teacher:"王逸平",credit:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

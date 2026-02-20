@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0171/0209", (function(a){return {data:[{course:{time:[["4","1~3"]],id:"108201710209",name:"國文(二)",type:"必修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"張淑芬",credit:a,hour:a,max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/4801", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"114222704801",name:"策略管理",type:"必修",dept:"四技經管系",year:"4",class:"甲",teacher:"盧建中",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

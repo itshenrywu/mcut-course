@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0570/0201", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"111105700201",name:"生態調查技術與原理",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"曾兆祥",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("1","2","")));

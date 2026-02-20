@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1870/0002", (function(a){return {data:[{course:{time:[["1","3~4"],[a,"7~8"]],id:"110318700002",name:"材料選擇與設計",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"姚栢文",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"與大三甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

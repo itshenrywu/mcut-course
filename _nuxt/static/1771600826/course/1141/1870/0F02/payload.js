@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1870/0F02", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"114118700F02",name:"真空技術與實務",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"張奇龍",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

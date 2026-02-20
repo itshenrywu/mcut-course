@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1170/1W02", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"109211701W02",name:"塑膠射出成型技術實務",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"蔡習訓",credit:a,classroom:"",max:"50",min:"10",comment:"限工程學院四年級各系合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

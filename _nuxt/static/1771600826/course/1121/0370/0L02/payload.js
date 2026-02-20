@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0370/0L02", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"112103700L02",name:"美國文化與社會發展",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳鈺明",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2","")));

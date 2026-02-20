@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0270/0T12", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"109202700T12",name:"英文實務(四)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"林雅瓊",credit:"0",classroom:"",max:"55",min:"10",comment:"電機+電子",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

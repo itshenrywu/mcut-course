@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6280/0H01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114262800H01",name:"大型語言模型與資訊安全系統",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"劉豐瑞",credit:b,hour:b,classroom:"",max:"100",min:a,comment:"TAICA-臺科大開課(全英),限碩士",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/1I04", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["5","4~4"]],id:"113121701I04",name:"作業研究(一)",type:"必修",dept:"四技工管系",year:"2",class:"乙",teacher:"翁偉泰",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0270/0120", (function(a,b){return {data:[{course:{time:[[a,"9~10"]],id:"108202700120",name:"工讀自學英文",type:"重修",dept:"外文組-四技(日)",year:a,class:"重",teacher:"張家瑋",credit:b,hour:b,max:"56",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4","2")));

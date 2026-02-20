@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1380/1D01", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"114113801D01",name:"產業實務與書報討論(一)",type:"必修",dept:"化工系生工碩士班",year:b,class:"甲",teacher:"傅俊中",credit:b,hour:a,classroom:c,max:"10",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

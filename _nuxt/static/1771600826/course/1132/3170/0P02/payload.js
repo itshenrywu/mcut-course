@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3170/0P02", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"113231700P02",name:"應用色彩學",type:"選修",dept:"四技工設系",year:"1",class:"乙",teacher:"高清漢",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

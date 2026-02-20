@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2270/1Q01", {data:[{course:{time:[["2","2~4"]],id:"109222701Q01",name:"策略性人力資源管理",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"陳心田",credit:"3",classroom:"",max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]});

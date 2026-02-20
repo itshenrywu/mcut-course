@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/22C1/0201", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"108222C10201",name:"會計學(二)",type:"重修",dept:"四技進修部經管系",year:"4",class:"重",teacher:"李家如",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

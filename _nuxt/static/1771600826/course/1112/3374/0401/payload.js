@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3374/0401", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"111233740401",name:"作品集設計",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"薛惠月",credit:b,hour:b,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

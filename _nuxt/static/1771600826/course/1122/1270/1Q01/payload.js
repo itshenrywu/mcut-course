@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1270/1Q01", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"112212701Q01",name:"電腦網路概論與實習",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"王得貴",credit:a,hour:"4",classroom:"",max:"40",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

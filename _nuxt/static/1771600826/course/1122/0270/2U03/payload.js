@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0270/2U03", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112202702U03",name:"基礎華語(二)",type:"必修",dept:"四技工設系",year:"1",class:"乙",teacher:"林溫芳",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

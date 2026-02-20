@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1270/0Y01", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"108212700Y01",name:"電動機控制與實習",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"吳啟耀",credit:"3",hour:"4",max:"60",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

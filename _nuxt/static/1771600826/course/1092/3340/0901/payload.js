@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3340/0901", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"109233400901",name:"視覺心理學",type:"選修",dept:"四技視傳系",year:"1",class:"甲",teacher:"薛惠月",credit:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/01C0/0101", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"109201C00101",name:"國文(二)",type:"必修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"張淑芬",credit:"3",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1280/0F01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112212800F01",name:"模糊邏輯系統",type:"選修",dept:"電機系碩士班",year:a,class:"甲",teacher:"張嘉德",credit:b,hour:b,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

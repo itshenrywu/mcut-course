@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1280/1E01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114212801E01",name:"電磁相容",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"古家豪",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

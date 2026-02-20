@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3070/0703", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"109230700703",name:"英文閱讀與聽力訓練（二）",type:"選修",dept:"管理暨設計學院",year:a,class:"甲",teacher:"費安",credit:"0",classroom:"",max:"30",min:"10",comment:"管設學院榮譽學程大一必修",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

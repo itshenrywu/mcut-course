@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1280/0D01", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"109112800D01",name:"人工智慧",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"林郁修",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/2171/0602", (function(a){return {data:[{course:{time:[["1",a],["5",a]],id:"109321710602",name:"資料庫管理(含實習)",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"邱慧怡",credit:"3",classroom:"",max:"50",min:"10",comment:"與三甲合班 帶狀課程7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("9~12")));

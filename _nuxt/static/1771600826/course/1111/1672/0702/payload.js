@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1672/0702", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"111116720702",name:"污水工程",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"陳錫金",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

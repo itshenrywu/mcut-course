@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2280/1K01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114122801K01",name:"創新與創業管理專題",type:"選修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"林晋寬",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1874/1102", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"110118741102",name:"工程倫理與實務講座",type:"必修",dept:"四技材工系",year:"4",class:"乙",teacher:"黃宗鈺",credit:a,hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1170/4504", (function(a,b){return {data:[{course:{time:[["1",a],["2",a]],id:"113311704504",name:"流體力學",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"張國棟",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"併機三甲",otherinfo:null}}],fetch:{},mutations:[]}}("7~8","3")));

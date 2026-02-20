@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1919", (function(a){return {data:[{course:{time:[["7","10~10"]],id:"114200701919",name:"工讀實務實習(四)",type:"必修",dept:"行銷設計學程",year:"3",class:"乙",teacher:"吳宇豐",credit:"5",hour:"40",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

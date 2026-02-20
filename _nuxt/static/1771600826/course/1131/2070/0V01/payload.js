@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/0V01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8.5"]],id:"113120700V01",name:"應用程式設計",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"楊健貴",credit:b,hour:b,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

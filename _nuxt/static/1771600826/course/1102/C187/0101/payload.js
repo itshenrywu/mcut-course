@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/C187/0101", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"1102C1870101",name:"品質工程",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"張麗君",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"第1階段(材料系不可選)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

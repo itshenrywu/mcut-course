@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1580/4601", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"112115804601",name:"科技論文寫作",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"王逸平",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

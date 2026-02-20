@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1270/0T01", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"],[b,"9~10"]],id:"110112700T01",name:"電機機械與實習",type:"重修",dept:"四技電機系",year:a,class:"重",teacher:"吳啟耀",credit:a,hour:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","4","")));

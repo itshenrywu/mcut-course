@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0509/1301", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"108105091301",name:"生涯規劃與發展",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"于學正",credit:a,hour:a,max:"48",min:"10",comment:"管設學院學生不得選修",otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/61P0/0401", (function(a,b){return {data:[{course:{time:[[a,"9~10"]],id:"111161P00401",name:"英文科技論文寫作(一)",type:"必修",dept:"能源電池博士班",year:b,class:"甲",teacher:"章哲寰",credit:b,hour:a,classroom:"",max:"20",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

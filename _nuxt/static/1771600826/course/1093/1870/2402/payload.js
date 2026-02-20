@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1870/2402", {data:[{course:{time:[["1","1~4"]],id:"109318702402",name:"近代物理",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"盧榮宏",credit:"3",classroom:"",max:"50",min:"10",comment:"與大三併班",otherinfo:null}}],fetch:{},mutations:[]});

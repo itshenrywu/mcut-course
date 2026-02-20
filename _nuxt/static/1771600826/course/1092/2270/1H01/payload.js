@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2270/1H01", {data:[{course:{time:[["5","5~7"]],id:"109222701H01",name:"行動商務與APP實作",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"陳昆皇",credit:"3",classroom:"",max:"60",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]});

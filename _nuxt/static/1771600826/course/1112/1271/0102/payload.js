@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1271/0102", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"111212710102",name:"PCB佈線實習",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"陳明宏",credit:a,hour:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3350/0601", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"111133500601",name:"環境視覺設計",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"李淑珠",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"塊狀課程：上課時間為6\u002F16-7\u002F1",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1870/1802", (function(a,b){return {data:[{course:{time:[[b,"3~4"],["5","7~8"]],id:"108218701802",name:"材料表面工程",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"彭坤增",credit:a,hour:a,max:"35",min:b,comment:"大三至法國交換",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

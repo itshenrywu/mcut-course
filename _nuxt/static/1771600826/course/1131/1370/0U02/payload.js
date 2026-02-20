@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1370/0U02", (function(a){return {data:[{course:{time:[["3","1~4"]],id:"113113700U02",name:"化學技術實習",type:"選修",dept:"四技化工系",year:"2",class:"乙",teacher:"程桂祥",credit:"1",hour:"4",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

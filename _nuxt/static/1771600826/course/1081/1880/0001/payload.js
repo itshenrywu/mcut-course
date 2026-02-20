@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1880/0001", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108118800001",name:"薄膜科技",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"李志偉",credit:b,hour:b,max:"15",min:a,comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

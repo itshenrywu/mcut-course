@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1270/0I01", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"110112700I01",name:"工程倫理與專業實務講座",type:"必修",dept:"四技電機系",year:"4",class:"甲",teacher:"王勝寬",credit:"1",hour:"3",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

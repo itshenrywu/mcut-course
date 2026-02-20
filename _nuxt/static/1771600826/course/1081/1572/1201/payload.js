@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1572/1201", (function(a){return {data:[{course:{time:[["1","7~8.5"]],id:"108115721201",name:"MOS電路分析與模擬",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"陳華彬",credit:a,hour:a,max:"40",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

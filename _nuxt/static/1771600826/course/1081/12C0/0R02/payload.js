@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/12C0/0R02", {data:[{course:{time:[["6","1~2"]],id:"108112C00R02",name:"電機機械應用與實習",type:"選修",dept:"四技進修部電機系",year:"3",class:"甲",teacher:"吳添保",credit:"1",hour:"2",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1280/0D02", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"112112800D02",name:"人工智慧",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"鄭美龍",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course，三組合併授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

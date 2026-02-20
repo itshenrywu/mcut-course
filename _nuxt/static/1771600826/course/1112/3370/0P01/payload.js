@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3370/0P01", (function(a,b){return {data:[{course:{time:[["1","5~7"]],id:"111233700P01",name:"微電影創作",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"鄭興宗",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

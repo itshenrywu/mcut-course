@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3070/0603", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"111130700603",name:"英文閱讀與聽力訓練（一）",type:"選修",dept:"管理暨設計學院",year:a,class:"甲",teacher:"杜海勇",credit:"0",hour:"3",classroom:"",max:"40",min:"10",comment:"榮譽學程English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

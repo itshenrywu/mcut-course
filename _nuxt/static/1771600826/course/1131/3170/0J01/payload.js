@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3170/0J01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"113131700J01",name:"交通工具設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"簡銘彥",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

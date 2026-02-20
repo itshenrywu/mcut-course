@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1540/0401", (function(a){return {data:[{course:{time:[[a,"5~5"],["4","1~2"]],id:"108215400401",name:"電路學",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"陳華彬",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

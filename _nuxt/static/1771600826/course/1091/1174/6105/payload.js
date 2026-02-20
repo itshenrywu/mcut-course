@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1174/6105", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"109111746105",name:"車輛保養實務",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"陳柏翰",credit:a,hour:"2",classroom:"",max:"50",min:"10",comment:"工程學院四年級各系合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1172/1803", (function(a,b){return {data:[{course:{time:[[b,"7~7"],[a,"1~2"]],id:"114111721803",name:"工程數學(一)",type:"必修",dept:"四技機械系",year:b,class:"丙",teacher:"梁晶煒",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3","2")));

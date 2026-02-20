@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0402/C207", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"11020402C207",name:"英文(初級)(二)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"江純萍",credit:a,hour:a,classroom:"",max:"40",min:"無下限",comment:"管設初A",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

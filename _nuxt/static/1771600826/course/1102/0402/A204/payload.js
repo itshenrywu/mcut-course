@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0402/A204", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"11020402A204",name:"英文(高級)(二)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"費安",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"電機電子菁英A(English-taught course)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

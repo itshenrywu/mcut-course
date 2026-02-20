@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0171/0101", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"111101710101",name:"國文(一)",type:"重修",dept:"國文組-四技(日)",year:"1",class:"重",teacher:"林溫芳",credit:a,hour:a,classroom:b,max:"50",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

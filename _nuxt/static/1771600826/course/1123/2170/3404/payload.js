@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/2170/3404", (function(a,b,c){return {data:[{course:{time:[["3",a],[b,a],[c,"0.5~1"]],id:"112321703404",name:"實務專題(一)",type:"重修",dept:"四技工管系",year:b,class:"暑",teacher:"陳昆皇",credit:"1",hour:"2",classroom:"",max:"10",min:c,comment:"暑修併三甲帶狀7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","4","5")));

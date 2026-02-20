@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2250/4001", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"108122504001",name:"行銷管理",type:"必修",dept:"四技經管系",year:a,class:"甲",teacher:"虞邦祥",credit:b,hour:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

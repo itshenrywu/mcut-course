@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0570/1704", (function(a,b){return {data:[{course:{time:[[a,"2~3"]],id:"114205701704",name:"科學思維與應用",type:"必修",dept:"自然組(二)-四技(日)",year:a,class:"丙",teacher:"陳隆暉",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"English-taught course(經3丙+設3乙)",otherinfo:null}}],fetch:{},mutations:[]}}("3","2")));

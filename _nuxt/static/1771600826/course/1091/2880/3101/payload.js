@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2880/3101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109128803101",name:"高等儀器分析",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"陳慶隆",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

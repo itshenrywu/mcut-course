@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/11C0/1N01", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"109211C01N01",name:"工程熱力學",type:"必修",dept:"四技進修部機械系",year:a,class:"甲",teacher:"傅本然",credit:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

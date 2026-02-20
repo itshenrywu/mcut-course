@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6280/0501", (function(a,b){return {data:[{course:{time:[["4","6~8"]],id:"114262800501",name:"機率與統計",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"劉豐瑞",credit:b,hour:b,classroom:"",max:"50",min:a,comment:"TAICA-臺大開課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

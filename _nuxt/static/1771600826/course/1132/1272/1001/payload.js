@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1272/1001", (function(a){return {data:[{course:{time:[["1","1~3"]],id:"113212721001",name:"工程數學(二)",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"郭慶祥",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/33C2/1301", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108133C21301",name:"動態攝影",type:"選修",dept:"四技進修部視傳系",year:a,class:"甲",teacher:"鄭興宗",credit:a,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0071/2501", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"110200712501",name:"性別角色與關係",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"陳志霖",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2","")));

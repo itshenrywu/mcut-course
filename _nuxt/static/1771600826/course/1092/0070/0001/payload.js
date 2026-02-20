@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0070/0001", (function(a){return {data:[{course:{time:[["2","0.5~0.5"]],id:"109200700001",name:"設計思考",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"崔砢",credit:a,classroom:"",max:"55",min:"10",comment:"3\u002F13-3\u002F14(8:30-17:30)上課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0670/0311", (function(a,b){return {data:[{course:{time:[["5","3~4"]],id:"109106700311",name:"體育(三)",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"吳承螢",credit:"0",hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

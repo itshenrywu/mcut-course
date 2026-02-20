@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/2L01", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"112220702L01",name:"合成化學",type:"選修",dept:"半導體學程",year:"2",class:"甲",teacher:"張峻瑜",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

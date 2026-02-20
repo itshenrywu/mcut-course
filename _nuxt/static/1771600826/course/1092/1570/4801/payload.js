@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1570/4801", {data:[{course:{time:[["1","7~8.5"]],id:"109215704801",name:"系統程式",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"劉俊緯",credit:"3",classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]});

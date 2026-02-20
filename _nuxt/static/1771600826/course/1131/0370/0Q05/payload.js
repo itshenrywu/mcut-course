@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/0Q05", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"113103700Q05",name:"歷史思辨",type:"必修",dept:"社會組-四技(日)",year:"2",class:"甲",teacher:"沈明得",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"工設、視傳",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

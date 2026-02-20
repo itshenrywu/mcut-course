@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/3340/2501", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"108233402501",name:"設計史",type:"必修",dept:"四技視傳系",year:"2",class:"甲",teacher:"李淑珠",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

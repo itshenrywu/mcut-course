@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/11C0/1O01", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"110211C01O01",name:"車輛動力實驗",type:"必修",dept:"四技進修部機械系",year:a,class:"甲",teacher:"陳嘉祥",credit:a,hour:"4",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

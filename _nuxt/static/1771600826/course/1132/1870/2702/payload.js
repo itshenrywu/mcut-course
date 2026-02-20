@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1870/2702", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"113218702702",name:"奈米檢測分析實驗",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"盧榮宏",credit:"1",hour:a,classroom:"",max:"25",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

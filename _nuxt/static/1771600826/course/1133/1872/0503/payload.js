@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1872/0503", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"113318720503",name:"材料製程概論",type:"重修",dept:"四技材工系",year:a,class:"暑",teacher:"謝建國",credit:b,hour:b,classroom:"",max:"60",min:"1",comment:"與大三併班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

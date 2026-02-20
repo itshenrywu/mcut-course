@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3170/0O01", (function(a,b,c){return {data:[{course:{time:[["2",a],[b,a]],id:"110131700O01",name:"設計應用英文(三)",type:"必修",dept:"四技工設系",year:b,class:"甲",teacher:"高清漢",credit:c,hour:c,classroom:"",max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("8~8","3","1")));

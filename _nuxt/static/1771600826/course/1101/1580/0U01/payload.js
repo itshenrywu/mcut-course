@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1580/0U01", (function(a,b){return {data:[{course:{time:[["2","6~8"]],id:"110115800U01",name:"半導體太陽能電池",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"曾宗亮",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

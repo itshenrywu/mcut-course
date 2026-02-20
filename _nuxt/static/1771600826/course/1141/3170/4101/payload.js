@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3170/4101", (function(a,b,c,d,e,f){return {data:[{course:{time:[[d,a],[d,b],[e,a],[e,b],["3","0.5~4.5"],[c,a],[c,b]],id:"114131704101",name:"專題設計(一)",type:"必修",dept:"四技工設系",year:c,class:"甲",teacher:"謝政道",credit:"6",hour:"12",classroom:f,max:"56",min:"10",comment:f,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","4.5~4.5","4","1","2","")));

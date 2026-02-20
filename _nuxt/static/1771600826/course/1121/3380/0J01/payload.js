@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3380/0J01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"112133800J01",name:"質性研究方法",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"林金祥",credit:b,hour:b,classroom:"",max:"20",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

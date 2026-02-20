@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2280/2M01", (function(a){return {data:[{course:{time:[[a,"6~8"]],id:"113222802M01",name:"企業研究方法",type:"必修",dept:"國際企業管理碩士",year:a,class:"甲",teacher:"林裕勛",credit:a,hour:"3",classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

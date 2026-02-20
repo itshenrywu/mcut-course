@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3380/1901", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"113233801901",name:"設計傳達研究",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"王忠祥",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

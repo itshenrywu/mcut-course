@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/11C0/1T01", (function(a){return {data:[{course:{time:[["3","1~2"]],id:"108111C01T01",name:"顧客關懷與接待實務",type:"選修",dept:"四技進修部機械系",year:"1",class:"甲",teacher:"徐源茂",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

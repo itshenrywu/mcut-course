@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/33C4/0501", (function(a){return {data:[{course:{time:[["6","5~7"]],id:"108133C40501",name:"多媒體創作",type:"選修",dept:"四技進修部視傳系",year:"4",class:"甲",teacher:"邱伯儒",credit:a,hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

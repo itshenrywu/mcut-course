@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2273/1102", {data:[{course:{time:[["5","1~4"]],id:"114122731102",name:"商用英文(三)",type:"必修",dept:"四技經管系",year:"3",class:"乙",teacher:"陳勁宏",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]});

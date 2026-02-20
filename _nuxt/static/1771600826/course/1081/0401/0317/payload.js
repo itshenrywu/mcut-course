@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0401/0317", (function(a,b){return {data:[{course:{time:[[a,"8~8.5"]],id:"108104010317",name:"大學之道",type:"必修",dept:"四技工管系",year:b,class:"乙",teacher:"游淑萍",credit:b,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

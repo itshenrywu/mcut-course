@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2580/3501", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111125803501",name:"演算法設計與分析",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"白恭瑞",credit:b,hour:b,classroom:"",max:"25",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

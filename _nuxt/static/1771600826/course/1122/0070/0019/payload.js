@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0019", (function(a,b){return {data:[{course:{time:[[a,"10~10"]],id:"112200700019",name:"設計思考",type:"必修",dept:"行銷設計學程",year:a,class:"乙",teacher:"沈明得",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

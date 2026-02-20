@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0670/0405", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"108206700405",name:"體育(四)",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"秦文華",credit:"0",hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

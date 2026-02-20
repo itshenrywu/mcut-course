@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1270/0J01", {data:[{course:{time:[["2","5~7"]],id:"109212700J01",name:"物聯網應用實習",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"姜惟元",credit:"1",classroom:"",max:"60",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/2170/7603", {data:[{course:{time:[["6","5~8"]],id:"109321707603",name:"專案管理",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"林俊雄",credit:"3",classroom:"",max:"50",min:"5",comment:"管三合班塊狀第二階6\u002F18-6\u002F30",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3370/4601", (function(a,b){return {data:[{course:{time:[["3",a],["5",a]],id:"110233704601",name:"專題設計(二)",type:"必修",dept:"四技視傳系",year:"4",class:"甲",teacher:"朱賢哲",credit:"6",hour:"8",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("5~8","")));

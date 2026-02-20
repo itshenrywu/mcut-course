@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1580/0T01", {data:[{course:{time:[["2","7~8.5"]],id:"109215800T01",name:"服務導向架構-框架與應用",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"謝筱齡",credit:"3",classroom:"",max:"30",min:"5",comment:"全英文課程。",otherinfo:null}}],fetch:{},mutations:[]});
