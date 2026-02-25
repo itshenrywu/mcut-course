@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0770/0A16", (function(a){return {data:[{course:{time:[["3","3~4"]],id:"114207700A16",name:"全民國防教育軍事訓練(二)",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"翁智賢",credit:"0.5",hour:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

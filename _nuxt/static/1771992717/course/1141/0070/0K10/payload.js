@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0K10", (function(a,b,c){return {data:[{course:{time:[["4",a],["5",a]],id:"114100700K10",name:"大學之道",type:"必修",dept:"四技化工系",year:b,class:"乙",teacher:"杜鶴芸",credit:b,hour:"2",classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/3P01", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"114122703P01",name:"商用英文(四)",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"林柏翰",credit:"1",hour:a,classroom:"",max:"70",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

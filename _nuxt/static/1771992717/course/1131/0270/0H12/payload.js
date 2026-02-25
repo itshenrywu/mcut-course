@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0270/0H12", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"113102700H12",name:"英語聽講(中級)(一)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"黃平宇",credit:"1",hour:a,classroom:"",max:"40",min:"10",comment:"管設中A",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

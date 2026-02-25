@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2170/1T02", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"114121701T02",name:"會計學",type:"必修",dept:"四技工管系",year:"1",class:"乙",teacher:"林俊雄",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

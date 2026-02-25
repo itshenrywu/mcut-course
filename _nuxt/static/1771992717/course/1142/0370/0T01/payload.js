@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/0T01", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"114203700T01",name:"智慧財產權導論",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"戴凡芹",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2","")));

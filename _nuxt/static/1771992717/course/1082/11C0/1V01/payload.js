@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/11C0/1V01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108211C01V01",name:"車輛空調與實務分析",type:"選修",dept:"四技進修部機械系",year:"1",class:"甲",teacher:"徐源茂",credit:a,hour:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1380/0H01", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"114113800H01",name:"產業實務與書報討論(一)",type:"必修",dept:"化工系碩士班",year:b,class:"甲",teacher:"吳弦聰",credit:b,hour:a,classroom:c,max:"40",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

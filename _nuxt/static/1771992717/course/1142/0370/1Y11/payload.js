@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/1Y11", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"114203701Y11",name:"歷史思辨",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"陳冠穎",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"環實務\u002F半導體",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

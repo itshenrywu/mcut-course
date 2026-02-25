@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1870/0J01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109118700J01",name:"光電材料製程實務",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"黃裕清",credit:b,hour:b,classroom:"",max:"55",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

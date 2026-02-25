@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3170/0E01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114231700E01",name:"電腦輔助工業設計",type:"必修",dept:"四技工設系",year:a,class:"甲",teacher:"林恆毅",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

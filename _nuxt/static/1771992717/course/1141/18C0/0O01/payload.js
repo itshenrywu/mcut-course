@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/18C0/0O01", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"114118C00O01",name:"奈米製程與材料",type:"必修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"簡順億",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

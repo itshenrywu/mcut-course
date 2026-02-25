@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1680/0R01", (function(a){return {data:[{course:{time:[["4","6~8"]],id:"113116800R01",name:"水資源工程",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"陳錫金",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

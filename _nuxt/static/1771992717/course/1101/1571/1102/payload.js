@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1571/1102", (function(a){return {data:[{course:{time:[["5","9~11"]],id:"110115711102",name:"物件導向程式設計實務",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"葉濰銘",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"跨領域專班。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

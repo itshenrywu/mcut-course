@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1150/7001", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["4","2~2"]],id:"109211507001",name:"切削學",type:"選修",dept:"四技機械系",year:"2",class:"甲",teacher:"劉秋霖",credit:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

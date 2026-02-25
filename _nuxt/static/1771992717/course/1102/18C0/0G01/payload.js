@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/18C0/0G01", (function(a,b){return {data:[{course:{time:[["5","1~3"]],id:"110218C00G01",name:"電控元件簡介",type:"選修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"王得貴",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

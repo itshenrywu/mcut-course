@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0270/1H02", (function(a){return {data:[{course:{time:[["1","9~10"]],id:"112202701H02",name:"從美劇出發-情境式英語學習",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"葉明倫",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"第2階段",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

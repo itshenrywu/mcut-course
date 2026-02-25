@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2280/1Y01", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"109122801Y01",name:"進階英文寫作",type:"必修",dept:"國際企業管理碩士",year:a,class:"甲",teacher:"林金祥",credit:"1",hour:a,classroom:"",max:"30",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

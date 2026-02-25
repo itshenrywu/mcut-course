@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0070/0005", (function(a){return {data:[{course:{time:[["2","0.5~0.5"]],id:"108200700005",name:"設計思考",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"林金祥",credit:a,hour:a,max:"55",min:"10",comment:"109\u002F03\u002F07-08上課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

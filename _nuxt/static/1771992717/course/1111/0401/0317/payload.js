@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0401/0317", (function(a,b,c){return {data:[{course:{time:[[a,"8~8.5"]],id:"111104010317",name:"大學之道",type:"必修",dept:"四技環安衛系",year:b,class:"甲",teacher:"崔砢",credit:b,hour:a,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

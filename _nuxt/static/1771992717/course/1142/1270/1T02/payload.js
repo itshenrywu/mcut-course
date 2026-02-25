@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1270/1T02", (function(a){return {data:[{course:{time:[[a,"1~1"],["5","2~3"]],id:"114212701T02",name:"人工智慧概論",type:"必修",dept:"四技電機系",year:"2",class:"乙",teacher:"賴文政",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

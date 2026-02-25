@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/61P0/0J02", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"109261P00J02",name:"電池檢測與分析",type:"選修",dept:"能源電池博士班",year:"1",class:"甲",teacher:"洪太峰",credit:"3",classroom:b,max:"20",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

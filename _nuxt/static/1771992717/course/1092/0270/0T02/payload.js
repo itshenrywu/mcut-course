@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0270/0T02", {data:[{course:{time:[["1","5~6"]],id:"109202700T02",name:"英文實務(四)",type:"必修",dept:"外文組-四技(日)",year:"4",class:"甲",teacher:"林雅淑",credit:"0",classroom:"",max:"48",min:"10",comment:"材料+環安",otherinfo:null}}],fetch:{},mutations:[]});

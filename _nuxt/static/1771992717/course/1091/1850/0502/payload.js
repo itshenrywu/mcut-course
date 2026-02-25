@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1850/0502", (function(a,b){return {data:[{course:{time:[["1","5~6"],["2","3~4"]],id:"109118500502",name:"材料機械性質",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"黃宗鈺",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
