@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1274/1102", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"114212741102",name:"機器人學",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"劉恩成",credit:a,hour:a,classroom:"",max:"32",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

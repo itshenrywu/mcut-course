@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0K21", (function(a,b,c){return {data:[{course:{time:[["4",a],["5",a]],id:"114100700K21",name:"大學之道",type:"必修",dept:"行銷設計學程",year:b,class:"甲",teacher:"李淑華",credit:b,hour:"2",classroom:c,max:"35",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/0018", (function(a){return {data:[{course:{time:[["5","0.5~0.5"]],id:"114200700018",name:"設計思考",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"林裕勛",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"上課時間:115\u002F03\u002F06(五) -115\u002F03\u002F08(日)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

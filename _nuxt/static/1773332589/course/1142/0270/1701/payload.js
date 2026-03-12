@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0270/1701", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"114202701701",name:"法國設計與工藝之美",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"符雯珊",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2","")));

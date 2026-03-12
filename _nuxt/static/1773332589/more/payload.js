@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/more", {data:[{examDate:"3\u002F24"}],fetch:{},mutations:[]});

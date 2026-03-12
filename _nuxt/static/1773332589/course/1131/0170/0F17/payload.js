@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/0F17", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"113101700F17",name:"文學鑑賞與情意表達",type:"必修",dept:"四技工管系",year:"1",class:"甲",teacher:"涂藍云",credit:a,hour:a,classroom:b,max:"54",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

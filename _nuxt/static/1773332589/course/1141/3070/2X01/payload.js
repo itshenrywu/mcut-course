@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/2X01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"114130702X01",name:"市場調查與數據分析",type:"選修",dept:"行銷設計學程",year:"2",class:"甲",teacher:"楊正翔",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2280/3F01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114122803F01",name:"商業智慧應用專題",type:"選修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"林淯慈",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

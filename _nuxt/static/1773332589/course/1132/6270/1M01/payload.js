@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6270/1M01", (function(a){return {data:[{course:{time:[["3","6~7"]],id:"113262701M01",name:"英文閱讀與聽力訓練（四）",type:"選修",dept:"人工智慧學程",year:a,class:"甲",teacher:"吳柏德",credit:"0.5",hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

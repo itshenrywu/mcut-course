@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1850/0502", (function(a,b,c){return {data:[{course:{time:[["2",b],["4",b]],id:"111118500502",name:"材料機械性質",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"賴怡廷",credit:a,hour:a,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1~2","")));

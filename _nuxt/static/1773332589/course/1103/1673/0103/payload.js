@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1673/0103", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],["5","5~6"]],id:"110316730103",name:"儀器分析",type:"重修",dept:"環實務",year:a,class:"暑",teacher:"陳順基",credit:b,hour:b,classroom:"",max:c,min:c,comment:"與實務三甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3","1")));

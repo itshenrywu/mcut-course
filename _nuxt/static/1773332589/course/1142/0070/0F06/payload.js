@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/0F06", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"114200700F06",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"蔡宗謀",credit:b,hour:b,classroom:"",max:"35",min:"15",comment:"數學科普的體驗，限大四",otherinfo:null}}],fetch:{},mutations:[]}}("4","1")));

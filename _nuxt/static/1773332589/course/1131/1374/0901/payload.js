@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1374/0901", (function(a){return {data:[{course:{time:[[a,"6~6"],["5","6~7"]],id:"113113740901",name:"化工裝置設計",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"施正元",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

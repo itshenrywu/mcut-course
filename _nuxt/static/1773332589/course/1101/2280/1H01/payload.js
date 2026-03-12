@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2280/1H01", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"110122801H01",name:"進階英文寫作",type:"必修",dept:"經管系碩士班",year:b,class:"甲",teacher:"簡伊佐",credit:"1",hour:b,classroom:"",max:"30",min:a,comment:"授課教師：簡伊佐",otherinfo:null}}],fetch:{},mutations:[]}}("5","2")));

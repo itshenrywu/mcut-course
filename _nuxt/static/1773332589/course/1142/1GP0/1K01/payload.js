@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1GP0/1K01", (function(a,b){return {data:[{course:{time:[["3","8~8.5"]],id:"11421GP01K01",name:"論文研究(二)",type:"必修",dept:"生醫暨醫材博士學程",year:a,class:"甲",teacher:"陳炳宜",credit:a,hour:b,classroom:"",max:"20",min:b,comment:"English-taught course，指導教授1對1授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

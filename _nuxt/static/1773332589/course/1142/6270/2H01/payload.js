@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6270/2H01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"114262702H01",name:"生成式人工智慧",type:"選修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"陳思翰",credit:a,hour:a,classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

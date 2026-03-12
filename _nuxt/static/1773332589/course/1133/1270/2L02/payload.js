@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1270/2L02", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"113312702L02",name:"人機介面應用",type:"重修",dept:"四技電機系",year:a,class:"暑",teacher:"張德仁",credit:b,hour:b,classroom:"",max:"20",min:"5",comment:"暑修併四技三甲上課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

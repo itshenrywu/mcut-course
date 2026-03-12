@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0871/0104", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"114208710104",name:"普通化學",type:"選修",dept:"四技電子系",year:"1",class:"乙",teacher:"曾宗亮",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

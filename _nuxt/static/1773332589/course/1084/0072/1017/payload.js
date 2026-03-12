@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/0072/1017", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"108400721017",name:"英文實務(二)",type:"重修",dept:"外文組-四技(日)",year:a,class:"暑",teacher:"林雅淑",credit:"0",hour:"2",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

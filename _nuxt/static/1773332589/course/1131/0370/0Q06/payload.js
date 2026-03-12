@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/0Q06", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"113103700Q06",name:"歷史思辨",type:"必修",dept:"社會組-四技(日)",year:"2",class:"甲",teacher:"陳冠穎",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"機械丙+環安衛",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

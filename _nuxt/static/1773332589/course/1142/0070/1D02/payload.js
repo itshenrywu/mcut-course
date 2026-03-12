@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1D02", (function(a){return {data:[{course:{time:[["7","10~10"]],id:"114200701D02",name:"專業研究實習(四)",type:"必修",dept:"四技機械系",year:"3",class:"乙",teacher:"蔡習訓",credit:"4",hour:"40",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

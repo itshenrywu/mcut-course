@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/1901", (function(a,b){return {data:[{course:{time:[[a,b],["4",b]],id:"113130701901",name:"行銷設計英文",type:"選修",dept:"四技行設專班",year:a,class:"乙",teacher:"張瀞",credit:"0",hour:"2",classroom:"",max:"25",min:"10",comment:"帶狀課程7\u002F1-8\u002F30 甲乙合班 乙班併入甲班",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~3")));

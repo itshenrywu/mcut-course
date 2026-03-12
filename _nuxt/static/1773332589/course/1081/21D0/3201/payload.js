@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21D0/3201", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108121D03201",name:"生活應用人因",type:"選修",dept:"四技在職專班工管系",year:"4",class:"甲",teacher:"蕭志宇",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

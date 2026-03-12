@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0709/0201", (function(a){return {data:[{course:{time:[[a,"9~10"]],id:"108207090201",name:"詩歌欣賞",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"張家禎",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1880/2901", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"110118802901",name:"進階表面處理",type:"選修",dept:"材料系碩士班",year:a,class:"甲",teacher:"張奇龍",credit:b,hour:b,classroom:c,max:"10",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

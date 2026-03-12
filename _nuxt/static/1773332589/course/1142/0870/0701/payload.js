@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0870/0701", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"114208700701",name:"普通化學實驗",type:"必修",dept:"四技環安衛系",year:b,class:"甲",teacher:"嚴莉婷",credit:b,hour:a,classroom:"",max:"65",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

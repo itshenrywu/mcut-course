@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1280/0K01", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"114112800K01",name:"智慧數位通信",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"劉恩成",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

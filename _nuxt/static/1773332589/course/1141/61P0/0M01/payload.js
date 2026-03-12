@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/61P0/0M01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114161P00M01",name:"高等儲能技術",type:"選修",dept:"能源電池博士班",year:"1",class:"甲",teacher:"吳溪煌",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

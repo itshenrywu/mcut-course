@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0370/0F01", (function(a,b){return {data:[{course:{time:[["7","1~1"]],id:"112203700F01",name:"社團領導",type:"選修",dept:"通識中心四技",year:a,class:"丙",teacher:"簡良榮",credit:a,hour:"2",classroom:b,max:"無上限",min:"無下限",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("1","")));

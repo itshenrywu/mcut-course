@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1280/0Q01", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"111212800Q01",name:"智慧通訊組書報討論(二)",type:"必修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"楊超舜",credit:"0",hour:"2",classroom:a,max:"30",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

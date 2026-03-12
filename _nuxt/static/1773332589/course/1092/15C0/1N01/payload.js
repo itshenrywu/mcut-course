@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/15C0/1N01", (function(a){return {data:[{course:{time:[["6","1~3"]],id:"109215C01N01",name:"電腦輔助資料表達於工程之應用",type:"必修",dept:"四技進修部電子系",year:"2",class:"甲",teacher:"陳信嘉",credit:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

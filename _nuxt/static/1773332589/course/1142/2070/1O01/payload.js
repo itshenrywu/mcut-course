@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/1O01", (function(a){return {data:[{course:{time:[["5","7~8"]],id:"114220701O01",name:"實務專題(二)",type:"必修",dept:"半導體學程",year:"4",class:"甲",teacher:"吳永富",credit:"1",hour:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

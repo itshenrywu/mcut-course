@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1180/0101", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"111211800101",name:"替代能源技術",type:"選修",dept:"機械系碩士班",year:a,class:"甲",teacher:"邱昱仁",credit:b,hour:b,classroom:c,max:"14",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

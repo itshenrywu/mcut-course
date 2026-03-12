@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/1U01", {data:[{course:{time:[["2","5~8"]],id:"114122701U01",name:"會計學(含實習)",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"張明輝",credit:"3",hour:"4",classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

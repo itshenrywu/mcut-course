@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1674/1301", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"109216741301",name:"廢棄物資源化工程",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"吳容銘",credit:"3",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

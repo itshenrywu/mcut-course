@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/0Q03", (function(a,b,c){return {data:[{course:{time:[["4",a],[b,"4.5~4.5"],[b,a]],id:"114220700Q03",name:"基石專題",type:"選修",dept:"四技材工系",year:c,class:"甲",teacher:"阮宏藝",credit:c,hour:"3",classroom:"",max:"30",min:"10",comment:"不上選課系統",otherinfo:null}}],fetch:{},mutations:[]}}("8.5~8.5","5","1")));

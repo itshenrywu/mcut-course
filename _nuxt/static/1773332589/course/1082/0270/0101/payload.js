@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0270/0101", (function(a){return {data:[{course:{time:[["7","11~11"]],id:"108202700101",name:"工讀自學英文",type:"必修",dept:"四技環安衛系",year:"3",class:"甲",teacher:"葉明倫",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

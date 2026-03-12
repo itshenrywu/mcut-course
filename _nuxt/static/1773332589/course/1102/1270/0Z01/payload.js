@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1270/0Z01", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"110212700Z01",name:"數位信號處理與實習",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"謝飛虎",credit:"3",hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("4")));
