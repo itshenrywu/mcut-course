@@ -28,7 +28,7 @@
 					<span class="ts-icon is-person-chalkboard-icon"></span> 大學之道環境與行動路線查詢
 				</NuxtLink> -->
 				<NuxtLink to="/passport" class="item">
-					<span class="ts-icon is-passport-icon"></span> 英語學習護照點數查詢
+					<span class="ts-icon is-passport-icon"></span> 114 學年英語學習護照點數查詢
 				</NuxtLink>
 				<NuxtLink to="/exam" class="item">
 					<span class="ts-icon is-clipboard-check-icon"></span> {{ examDate ? examDate + ' ' : '' }}英語段考考場查詢
