@@ -320,7 +320,8 @@
 }
 
 #page-rule td:nth-child(2) {
-	width: 4rem;
+	min-width: 4rem;
+	max-width: 6rem;
 }
 
 #page-rule td:nth-child(3) {
@@ -454,7 +455,12 @@
 	}
 
 	#page-rule td:nth-child(2) {
-		width: 5rem;
+		min-width: 5rem;
+		max-width: 7rem;
+	}
+
+	#page-rule td.r-remark {
+		white-space: normal;
 	}
 
 	#page-rule .ts-box .ts-icon.is-angle-up-icon,
