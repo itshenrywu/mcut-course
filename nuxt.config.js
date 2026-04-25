@@ -100,7 +100,6 @@ export default async () => {
 					component: 'pages/rule/_year/_dept/_id.vue'
 				}];
 				let currentYear = new Date().getFullYear() - 1911;
-				if ((new Date().getMonth() + 1) <= 6) currentYear--;
 				const ruleDescription = (await axios.get('https://api.mcut-course.com/rule/description.php')).data;
 				for (let year = 108; year <= currentYear; year++) {
 					Object.values(depts[year] || {}).forEach(dept_group => {
