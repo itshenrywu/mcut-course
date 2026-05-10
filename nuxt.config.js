@@ -147,8 +147,8 @@ export default async () => {
 				});
 
 				if (mode != 'prod') {
-					const _courseRoutes = courseRoutes.slice(0, 10);
-					const _ruleRoutes = ruleRoutes.slice(0, 10);
+					const _courseRoutes = courseRoutes.slice(0, 2000);
+					const _ruleRoutes = ruleRoutes.slice(0, 2000);
 					return [..._courseRoutes, ..._ruleRoutes];
 				}
 
