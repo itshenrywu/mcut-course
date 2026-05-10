@@ -214,16 +214,9 @@ h1 {
 .sport-icon {
 	display: inline-block;
 	color: var(--ts-gray-500);
-	width: 1.4rem;
-}
-
-.sport-icon-badminton {
-	width: 1.4rem;
-	padding-left: 0.15rem;
-	padding-right: 0.15rem;
-	height: 1.4rem;
-	margin-bottom: -0.3rem;
-	fill: var(--ts-gray-500);
+	width: 1.2rem;
+	font-size: 1.2rem;
+	line-height: 1rem;
 }
 
 .swal2-modal .swal2-title {
@@ -556,7 +549,7 @@ h1 {
 	}
 
 	.course-table td.c-class:before {
-		content: "\f164";
+		content: "\f165";
 	}
 
 	.course-table td.c-time::before {

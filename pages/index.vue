@@ -81,7 +81,7 @@
 									<div class="ts-header">體育自選</div>
 									<div class="ts-text is-small is-description">大二至大四自選體育</div>
 								</div>
-								<div class="symbol"><span class="ts-icon is-child-reaching-icon"></span></div>
+								<div class="symbol"><span class="ts-icon is-run-icon"></span></div>
 							</div>
 						</div>
 						<div class="column is-4-wide tablet-half">

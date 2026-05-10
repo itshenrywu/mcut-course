@@ -163,26 +163,13 @@
 										</td>
 										<td class="c-name">
 											{{ course.name }}
-											<span class="ts-icon is-volleyball-icon sport-icon"
-												v-if="course.name.includes('排球')"></span>
-											<span class="ts-icon is-basketball-icon sport-icon"
-												v-else-if="course.name.includes('籃球')"></span>
-											<span class="ts-icon is-table-tennis-paddle-ball-icon sport-icon"
-												v-else-if="course.name.includes('桌球')"></span>
-											<span class="ts-icon is-dumbbell-icon sport-icon"
-												v-else-if="course.name.includes('健身雕塑')"></span>
-											<span class="ts-icon is-people-pulling-icon sport-icon"
-												v-else-if="course.name.includes('防身術')"></span>
-											<span class="ts-icon is-people-robbery-icon sport-icon"
-												v-else-if="course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
-											<span class="ts-icon is-child-reaching-icon sport-icon"
-												v-else-if="course.name.includes('身體律動')"></span>
-											<svg class="sport-icon-badminton" v-else-if="course.name.includes('羽球')" version="1.1"
-												xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-												<path
-													d="M22 10v-1.5c0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5v1.5h13zM17.055 11h-3.111l-1.948 16.555-0.084 0.755 3.587 2.69 3.587-2.69-0.084-0.751-1.948-16.558zM10.883 28.529l-2.883 2.471-3-3 4-17h3.938l-1.934 16.442-0.121 1.088zM20.068 11h1.957l3.975 17-2.982 3-2.865-2.471-0.12-1.084-1.923-16.445h1.957z">
-												</path>
-											</svg>
+											<span class="ts-icon is-volleyball--duotone-icon sport-icon" v-if="course.name.includes('排球')"></span>
+											<span class="ts-icon is-basketball--duotone-icon sport-icon" v-else-if="course.name.includes('籃球')"></span>
+											<span class="ts-icon is-ping-pong--duotone-icon sport-icon" v-else-if="course.name.includes('桌球')"></span>
+											<span class="ts-icon is-barbell--duotone-icon sport-icon" v-else-if="course.name.includes('健身雕塑')"></span>
+											<span class="ts-icon is-person-simple-tai-chi--duotone-icon sport-icon" v-else-if="course.name.includes('防身術') || course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
+											<span class="ts-icon is-person-simple-walk--duotone-icon sport-icon" v-else-if="course.name.includes('身體律動')"></span>
+											<span class="ts-icon sport-icon" v-else-if="course.name.includes('羽球')"></span>
 										</td>
 										<td class="c-time">
 											<span v-for="time in course.time" class="time">

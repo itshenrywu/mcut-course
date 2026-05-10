@@ -398,7 +398,7 @@
 						<div>
 							<h2 class="ts-header is-large" style="display:inline;">5. 按下 Enter/送出後，課表就會匯入了！</h2>
 							<div class="ts-text is-description">
-								如果看到 <span class="ts-icon is-magnifying-glass-icon"></span> 和 <span class="ts-icon is-earth-asia-icon"></span> 兩個選項，請選擇 <span class="ts-icon is-earth-asia-icon"></span> 那一個。如果只有 <span class="ts-icon is-magnifying-glass-icon"></span>，請重新檢查是否輸入正確！
+								如果看到 <span class="ts-icon is-search-icon"></span> 和 <span class="ts-icon is-earth-icon"></span> 兩個選項，請選擇 <span class="ts-icon is-earth-icon"></span> 那一個。如果只有 <span class="ts-icon is-search-icon"></span>，請重新檢查是否輸入正確！
 							</div>
 							<img src="https://i.imgur.com/ZKRQvC7.jpeg" style="width:100%;">
 						</div>
