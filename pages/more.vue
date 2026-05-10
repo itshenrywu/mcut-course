@@ -25,13 +25,13 @@
 			</div>
 			<div class="ts-menu is-start-icon is-dense">
 				<!-- <NuxtLink to="/road" class="item">
-					<span class="ts-icon is-person-chalkboard-icon"></span> 大學之道環境與行動路線查詢
+					<大學之道環境與行動路線查詢
 				</NuxtLink> -->
 				<NuxtLink to="/passport" class="item">
-					<span class="ts-icon is-passport-icon"></span> 114 學年英語學習護照點數查詢
+					114 學年英語學習護照點數查詢
 				</NuxtLink>
 				<NuxtLink to="/exam" class="item">
-					<span class="ts-icon is-clipboard-check-icon"></span> {{ examDate ? examDate + ' ' : '' }}英語段考考場查詢
+					{{ examDate ? examDate + ' ' : '' }}英語段考考場查詢
 				</NuxtLink>
 			</div>
 			<div class="ts-content has-top-spaced is-vertically-fitted">
@@ -39,14 +39,14 @@
 			</div>
 			<div class="ts-menu is-start-icon is-dense">
 				<NuxtLink to="/info" class="item">
-					<span class="ts-icon is-clock-icon"></span> 選課時間及說明
+					選課時間及說明
 					<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="showInfoRedDot"></div>
 				</NuxtLink>
 				<NuxtLink to="/terms" class="item">
-					<span class="ts-icon is-list-check-icon"></span> 四技日間部學期安排說明
+					四技日間部學期安排說明
 				</NuxtLink>
 				<NuxtLink to="/calendar" class="item">
-					<span class="ts-icon is-calendar-days-icon"></span> 行事曆
+					行事曆
 				</NuxtLink>
 			</div>
 			<div class="ts-content has-top-spaced is-vertically-fitted">
@@ -54,10 +54,10 @@
 			</div>
 			<div class="ts-menu is-start-icon is-dense">
 				<NuxtLink to="/about" class="item">
-					<span class="ts-icon is-file-lines-icon"></span> 關於本站、資料來源及免責聲明
+					關於本站、資料來源及免責聲明
 				</NuxtLink>
 				<a href="https://henrywu.tw/?openExternalBrowser=1" target="_blank" class="item">
-					<span class="ts-icon is-circle-question-icon"></span> 建議及問題回報
+					建議及問題回報
 				</a>
 			</div>
 
@@ -118,7 +118,7 @@ export default {
 			themes: {
 				system: {
 					name: '根據裝置設定',
-					icon: 'gear',
+					icon: 'settings',
 					icon_color: '#3498db',
 				},
 				light: {

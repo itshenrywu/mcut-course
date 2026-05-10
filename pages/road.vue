@@ -67,7 +67,7 @@
 				<div v-else-if="data.length > 0" class="ts-box">
 					<div class="ts-header is-icon is-center-aligned has-vertically-spaced-large">
 						<br><br>
-						<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+						<span class="ts-icon ts-icon is-circle-alert-icon"></span>
 						找不到該學號的資料
 						<br><br>
 					</div>

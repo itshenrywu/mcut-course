@@ -7,7 +7,7 @@
 				</div>
 				<div class="column is-5-wide" style="text-align: right;">
 					<NuxtLink class="ts-button is-small is-dense is-start-icon is-circular" to="/login/">
-						<span class="ts-icon is-arrow-right-to-bracket-icon"></span>
+						<span class="ts-icon is-log-in-icon"></span>
 						登入
 					</NuxtLink>
 				</div>
@@ -27,7 +27,7 @@
 				<div class="column is-5-wide" style="text-align: right;">
 					<button class="ts-button is-small is-dense is-end-icon is-circular" @click="logout()">
 						登出
-						<span class="ts-icon is-arrow-right-from-bracket-icon"></span>
+						<span class="ts-icon is-log-out-icon"></span>
 					</button>
 				</div>
 			</div>

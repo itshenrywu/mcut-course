@@ -535,11 +535,10 @@ h1 {
 		padding-top: .5rem;
 	}
 
-	.course-table td.c-name:before,
 	.course-table td.c-time:before,
 	.course-table td.c-class:before,
 	.course-table td.c-class span:before {
-		font-family: icons;
+		font-family: Icons;
 		font-weight: 400;
 		font-style: normal;
 		display: inline-table;
@@ -553,19 +552,15 @@ h1 {
 		margin-right: .5rem;
 		font-size: .8rem;
 		line-height: 1rem;
-		opacity: .75;
-	}
-
-	.course-table td.c-name:before {
-		content: "\f02d";
+		opacity: .9;
 	}
 
 	.course-table td.c-class:before {
-		content: "\f0c0";
+		content: "\f164";
 	}
 
 	.course-table td.c-time::before {
-		content: "\f073";
+		content: "\f177";
 	}
 
 	.course-table td.c-class {
@@ -578,7 +573,7 @@ h1 {
 
 	.course-table td.c-class span:before {
 		margin-left: .5rem;
-		content: "\e53d";
+		content: "\f1fc";
 	}
 
 	.course-table td.c-time {
@@ -591,7 +586,6 @@ h1 {
 
 	.course-table td.c-remark {
 		order: 6;
-		padding-left: 2.7rem;
 		padding-bottom: .5rem;
 	}
 

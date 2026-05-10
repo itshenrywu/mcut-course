@@ -22,7 +22,7 @@
 					</div>
 					<div class="column is-12-wide mobile-fluid">
 						<div class="ts-input is-start-icon is-huge is-relaxed is-solid" @click="showDropdown()">
-							<span class="ts-icon is-magnifying-glass-icon"></span>
+							<span class="ts-icon is-search-icon"></span>
 							<input type="search" placeholder="搜尋課程名稱 / 老師 / 序號 ..." v-model.trim="searchQuery" @input="searchByQuery()" />
 						</div>
 						<div data-dropdown="query-dropdown"></div>
@@ -72,7 +72,7 @@
 									<div class="ts-header">進階搜尋<span class="ts-badge is-start-spaced is-dense is-small is-negative">Hot!</span></div>
 									<div class="ts-text is-small is-description">依系所、班級、修別搜尋</div>
 								</div>
-								<div class="symbol"><span class="ts-icon is-table-icon"></span></div>
+								<div class="symbol"><span class="ts-icon is-grid-icon"></span></div>
 							</div>
 						</div>
 						<div class="column is-4-wide tablet-half">
@@ -90,7 +90,7 @@
 									<div class="ts-header">{{ currentTerm.split('-')[0] <= 112 ? '經典教育與社會實踐':'永續發展與社會實踐' }}</div>
 									<div class="ts-text is-small is-description">通識中心 X+1 課程</div>
 								</div>
-								<div class="symbol"><span class="ts-icon is-x-icon"></span></div>
+								<div class="symbol"><span class="ts-icon is-repeat-icon"></span></div>
 							</div>
 						</div>
 						<div class="column is-4-wide tablet-half">
@@ -108,7 +108,7 @@
 									<div class="ts-header">{{ currentTerm.split('-')[0] >= 112 ? '自然科學與環境永續' : '自然科學' }}</div>
 									<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
 								</div>
-								<div class="symbol"><span class="ts-icon is-seedling-icon"></span></div>
+								<div class="symbol"><span class="ts-icon is-leaf-icon"></span></div>
 							</div>
 						</div>
 						<div class="column is-4-wide tablet-half">
@@ -117,7 +117,7 @@
 									<div class="ts-header">語言與全球化</div>
 									<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
 								</div>
-								<div class="symbol"><span class="ts-icon is-earth-asia-icon"></span></div>
+								<div class="symbol"><span class="ts-icon is-globe-icon"></span></div>
 							</div>
 						</div>
 						<div class="column is-4-wide tablet-half">
@@ -160,8 +160,8 @@
 				<div class="dept_name" @click="slideToggle(dept)">
 					<div class="ts-header is-big">{{ dept }}</div>
 					<span class="ts-icon" :class="{
-						'is-angle-down-icon': !display.includes(dept),
-						'is-angle-up-icon': display.includes(dept)
+						'is-chevron-down-icon': !display.includes(dept),
+						'is-chevron-up-icon': display.includes(dept)
 					}"></span>
 				</div>
 				<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
@@ -187,7 +187,7 @@
 				<br>
 			</template>
 			<div class="ts-blankslate" v-if="!loading && (!classList[currentTerm] || classList[currentTerm].length == 0)">
-				<span class="ts-icon is-circle-exclamation-icon"></span>
+				<span class="ts-icon is-circle-alert-icon"></span>
 				<div class="header">目前還沒有本學期的課表</div>
 				<div class="description">請切換學期或改天再試</div>
 			</div>

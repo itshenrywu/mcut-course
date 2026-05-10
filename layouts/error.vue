@@ -2,7 +2,7 @@
 	<div class="ts-app-center">
 		<div v-if="error.statusCode === 404">
 			<div class="ts-header is-icon is-center-aligned is-big">
-				<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+				<span class="ts-icon ts-icon is-circle-alert-icon"></span>
 				找不到此頁面
 			</div>
 			<div class="ts-text is-center-aligned has-top-padded">
@@ -12,7 +12,7 @@
 		</div>
 		<div v-else>
 			<div class="ts-header is-icon is-center-aligned is-big">
-				<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+				<span class="ts-icon ts-icon is-circle-alert-icon"></span>
 				發生錯誤
 			</div>
 			<div class="ts-text is-center-aligned has-top-padded">請<a href="/c">清除本機資料後</a>再試。</div>

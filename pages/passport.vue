@@ -65,7 +65,7 @@
 				<div v-else class="ts-box">
 					<div class="ts-header is-icon is-center-aligned has-vertically-spaced-large">
 						<br><br><br>
-						<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+						<span class="ts-icon ts-icon is-circle-alert-icon"></span>
 						目前沒有此學號的紀錄
 						<br><br><br><br>
 					</div>

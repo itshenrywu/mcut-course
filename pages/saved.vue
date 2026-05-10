@@ -40,7 +40,7 @@
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-table-cells-icon"></span>
+							<span class="ts-icon is-sheet-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-list-check-icon"></span>
+							<span class="ts-icon is-list-checks-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -146,7 +146,7 @@
 							<td class="c-remark">{{ course.comment }}</td>
 							<td class="c-action">
 								<span class="ts-icon absolute-right is-star-icon" v-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course)"></span>
-								<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course)"></span>
+								<span class="ts-icon absolute-right is-star-o-icon" v-else @click.stop="saveCourse(course)"></span>
 							</td>
 						</tr>
 					</tbody>
@@ -181,7 +181,7 @@
 				</table>
 			</div>
 			<div class="ts-blankslate" v-else>
-				<span class="ts-icon is-circle-exclamation-icon"></span>
+				<span class="ts-icon is-circle-alert-icon"></span>
 				<div class="header">目前還沒有收藏的課程</div>
 				<div class="description">快到「全校課表」收藏有興趣的課程吧！</div>
 			</div>

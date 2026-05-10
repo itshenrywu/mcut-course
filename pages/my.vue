@@ -9,7 +9,7 @@
 						<div class="ts-text is-label has-bottom-padded-small">我的課程</div>
 						<div class="ts-wrap is-dense">
 							<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="showImportDialog()">
-								<span class="ts-icon is-file-import-icon"></span>
+								<span class="ts-icon is-import-icon"></span>
 								從學校系統匯入
 							</button>
 							<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="importFromSaved()" v-show="savedCourses.length > 0">
@@ -130,7 +130,7 @@
 							下載圖片
 						</button>
 						<button class="ts-button is-small is-fluid is-start-icon" @click="showWidget()" v-show="isIos" :class="{'is-disabled': myCourses.length == 0}">
-							<span class="ts-icon is-mobile-screen-icon"></span>
+							<span class="ts-icon is-phone-icon"></span>
 							安裝 iOS 小工具
 						</button>
 						<a class="ts-button is-small is-fluid is-start-icon" @click="saveToCalendar()" :class="{'is-disabled': myCourses.length == 0}">
@@ -167,7 +167,7 @@
 					</div>
 				</div>
 				<button class="ts-button is-fluid is-secondary is-start-icon" @click="showMobileSidebar = !showMobileSidebar">
-					<span class="ts-icon is-table-cells-icon"></span>
+					<span class="ts-icon is-sheet-icon"></span>
 					課表設定
 				</button>
 				<div class="ts-grid is-evenly-divided has-top-spaced">
@@ -179,7 +179,7 @@
 					</div>
 					<div class="column">
 						<button class="ts-button is-fluid is-start-icon" @click="showWidget()" :class="{'is-disabled': myCourses.length == 0}">
-							<span class="ts-icon is-mobile-screen-icon"></span>
+							<span class="ts-icon is-phone-icon"></span>
 							iOS 小工具
 						</button>
 					</div>
@@ -238,12 +238,12 @@
 					:to="`/course/${editingCourse.id.substring(0, 4)}/${editingCourse.id.substring(4, 8)}/${editingCourse.id.substring(8)}/`"
 					class="ts-button is-fluid is-secondary is-start-icon has-bottom-spaced-large"
 					v-if="editingCourse.id && editingCourse.id.length == 12 && !editingCourse.id.includes('ALT')">
-						<span class="ts-icon is-list-check-icon"></span>
+						<span class="ts-icon is-list-checks-icon"></span>
 						查看課程詳細資料
 					</NuxtLink>
 					<div class="ts-box is-start-indicated has-bottom-spaced-large" v-if="message" :class="{'is-negative': message[0] === 'error'}">
 						<div class="ts-content"><div class="ts-header">{{ message[1] }}</div></div>
-						<div class="symbol"><span class="ts-icon is-circle-exclamation-icon"></span></div>
+						<div class="symbol"><span class="ts-icon is-circle-alert-icon"></span></div>
 					</div>
 					<div class="ts-text is-label has-bottom-padded-small is-required">上課時間</div>
 					<div class="ts-grid is-middle-aligned">
@@ -609,6 +609,7 @@
 .is-light #page-my .sidebar .ts-button.is-secondary,
 .is-light #page-my .sidebar .ts-range input {
 	background: var(--ts-gray-400);
+	opacity: .9;
 }
 
 .widget-demo {

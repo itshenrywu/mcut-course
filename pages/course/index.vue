@@ -27,7 +27,7 @@
 						<div class="ts-text is-label has-bottom-padded-small">課程名稱 / 老師 / 序號</div>
 						<div class="ts-input is-fluid is-end-icon">
 							<input type="text" aria-label="課程名稱 / 老師 / 序號" v-model.trim="searchQuery" @input="saveSearchInput();">
-							<span class="ts-icon is-xmark-icon" @click="searchQuery = ''; saveSearchInput();" v-bind:style="{color: searchQuery=='' ? 'transparent' : 'var(--ts-gray-400)'}"></span>
+							<span class="ts-icon is-x-icon" @click="searchQuery = ''; saveSearchInput();" v-bind:style="{color: searchQuery=='' ? 'transparent' : 'var(--ts-gray-400)'}"></span>
 						</div>
 					</div>
 					<div>
@@ -162,6 +162,7 @@
 											<span class="mobile-only" v-if="!(course.id.includes('ALT_') && course.teacher.includes('分班'))">{{  course.teacher + ' 老師' }}</span>
 										</td>
 										<td class="c-name">
+											{{ course.name }}
 											<span class="ts-icon is-volleyball-icon sport-icon"
 												v-if="course.name.includes('排球')"></span>
 											<span class="ts-icon is-basketball-icon sport-icon"
@@ -181,7 +182,7 @@
 												<path
 													d="M22 10v-1.5c0-3.59-2.91-6.5-6.5-6.5s-6.5 2.91-6.5 6.5v1.5h13zM17.055 11h-3.111l-1.948 16.555-0.084 0.755 3.587 2.69 3.587-2.69-0.084-0.751-1.948-16.558zM10.883 28.529l-2.883 2.471-3-3 4-17h3.938l-1.934 16.442-0.121 1.088zM20.068 11h1.957l3.975 17-2.982 3-2.865-2.471-0.12-1.084-1.923-16.445h1.957z">
 												</path>
-											</svg>{{ course.name }}
+											</svg>
 										</td>
 										<td class="c-time">
 											<span v-for="time in course.time" class="time">
@@ -213,9 +214,9 @@
 										<td class="c-remark">{{ course.comment }}</td>
 										<td class="c-action">
 											<span class="mobile-only absolute-right ts-badge is-small is-dense has-dark is-red" v-if="isConflicted(course)">衝堂</span>
-											<span data-position="top" data-tooltip="衝堂" class="mobile-hidden ts-icon absolute-right is-circle-exclamation-icon is-t-red" v-if="isConflicted(course)" @click.stop=""></span>
+											<span data-position="top" data-tooltip="衝堂" class="mobile-hidden ts-icon absolute-right is-circle-alert-icon is-t-red" v-if="isConflicted(course)" @click.stop=""></span>
 											<span class="ts-icon absolute-right is-star-icon" v-else-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course.id)"></span>
-											<span class="ts-icon absolute-right is-star-icon is-regular" v-else @click.stop="saveCourse(course.id)"></span>
+											<span class="ts-icon absolute-right is-star-o-icon" v-else @click.stop="saveCourse(course.id)"></span>
 										</td>
 									</tr>
 									<tr v-if="(showAd && filteredCourses.length >= itemsPerPage && index%itemsPerPage == itemsPerPage-1 ) || (showAd && filteredCourses.length < itemsPerPage && index == filteredCourses.length - 1)" class="ad">
@@ -309,12 +310,12 @@
 					</template>
 				</template>
 				<div class="ts-blankslate" v-else-if="courses.length == 0">
-					<span class="ts-icon is-circle-exclamation-icon"></span>
+					<span class="ts-icon is-circle-alert-icon"></span>
 					<div class="header">目前無課程資料</div>
 					<div class="description">請稍後再試</div>
 				</div>
 				<div class="ts-blankslate" v-else>
-					<span class="ts-icon is-circle-exclamation-icon"></span>
+					<span class="ts-icon is-circle-alert-icon"></span>
 					<div class="header">找不到符合條件的課程</div>
 					<div class="description">請嘗試修改您的條件，或選擇其他學期</div>
 				</div>
