@@ -62,7 +62,15 @@ export default async () => {
 		],
 		sweetalert: {
 			confirmButtonColor: 'var(--ts-primary-600)',
-			cancelButtonColor: 'var(--ts-static-gray-500)'
+			cancelButtonColor: 'var(--ts-static-gray-500)',
+			animation: false,
+			showClass: {
+			backdrop: 'swal2-noanimation',
+				popup: '',
+			},
+			hideClass: {
+				popup: '',
+			},
 		},
 		axios: {
 			baseURL: '/',

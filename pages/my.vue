@@ -227,11 +227,10 @@
 							<div class="ts-header">{{ editingAction === 'new' ? '新增課程' : '修改課程' }}</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="ts-content" v-if="editingCourse">
 					<NuxtLink
 					target="_blank"
@@ -300,11 +299,10 @@
 							<div class="ts-text is-description">可以讓你在桌面或鎖定畫面上看到下一堂是什麼課，點擊還可以查看課程詳細資料！</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="ts-content">
 					<h2 class="ts-header is-large">1. 安裝 Scriptable</h2>
 					<a href="https://apps.apple.com/tw/app/scriptable/id1405459188"><img style="width: 150px" src="https://i.imgur.com/Tq43Fdb.png"></a>
@@ -370,11 +368,10 @@
 							<div class="ts-header">從學校系統匯入</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="ts-content">
 					<div class="ts-wrap is-vertical">
 						<div>
@@ -414,11 +411,10 @@
 							<div class="ts-header">存到行事曆</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="ts-content">
 					<div class="ts-wrap is-relaxed is-vertical">
 						<div>
@@ -490,11 +486,10 @@
 							<div class="ts-header">選擇背景顏色</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="picker-container" :style="{'background': myCoursesSetting.backgroundColor}">
 					<div id="picker" style="padding: 2rem; background: var(--ts-gray-100); border-radius: var(--ts-border-radius-container);"></div>
 					<br>
@@ -592,6 +587,29 @@
 
 .picker-container .ts-input input {
 	text-align: center;
+}
+
+.ts-modal .ts-close {
+	background: transparent;
+	color: var(--ts-gray-400);
+	font-size: 1.6rem;
+	font-weight: 900;
+}
+
+.ts-modal .ts-close:hover {
+	color: #f27474;
+}
+
+.ts-modal > .content > .ts-content:first-child {
+	padding-top: 1rem;
+}
+
+.ts-modal > .content > .ts-content {
+	padding: .5rem 1rem;
+}
+
+.ts-modal > .content > .ts-content:last-child {
+	padding-bottom: 1rem;
 }
 
 @media (prefers-color-scheme: light) {
