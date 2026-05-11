@@ -211,14 +211,6 @@ h1 {
 	justify-content: center;
 }
 
-.sport-icon {
-	display: inline-block;
-	color: var(--ts-gray-500);
-	width: 1.2rem;
-	font-size: 1.2rem;
-	line-height: 1rem;
-}
-
 .swal2-modal .swal2-title {
 	font-size: 1.5rem;
 }

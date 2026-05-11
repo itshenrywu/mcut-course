@@ -38,8 +38,8 @@
 						<div class="ts-select is-fluid has-bottom-spaced-small">
 							<div class="content" data-dropdown="background-dropdown">
 								<span class="ts-icon is-circular is-image-icon" v-if="backgrounds.find(b => b.id === myCoursesSetting.background).id == 'image'"></span>
-								<span class="ts-icon is-circular is-square-icon" v-else-if="backgrounds.find(b => b.id === myCoursesSetting.background).id == 'custom'" :style="{ background: myCoursesSetting.backgroundColor }"></span>
-								<span class="ts-icon is-circular is-square-icon" v-else :style="{ background: backgrounds.find(b => b.id === myCoursesSetting.background).color }"></span>
+								<span class="ts-icon is-circular" v-else-if="backgrounds.find(b => b.id === myCoursesSetting.background).id == 'custom'" :style="{ background: myCoursesSetting.backgroundColor }"></span>
+								<span class="ts-icon is-circular" v-else :style="{ background: backgrounds.find(b => b.id === myCoursesSetting.background).color }"></span>
 								{{ backgrounds.find(b => b.id === myCoursesSetting.background).name }}
 							</div>
 							<div class="ts-dropdown is-dense" data-position="bottom-start" id="background-dropdown">
@@ -52,11 +52,11 @@
 										<input type="file" accept="image/png, image/jpeg, image/jpg" @change="handleBackgroundImage">
 									</template>
 									<template v-else-if="background.id == 'custom'">
-										<span class="ts-icon is-circular is-square-icon" :style="{ background: myCoursesSetting.backgroundColor }"></span>
+										<span class="ts-icon is-circular" :style="{ background: myCoursesSetting.backgroundColor }"></span>
 										{{ background.name }}
 									</template>
 									<template v-else>
-										<span class="ts-icon is-circular is-square-icon" :style="{ background: background.color }"></span>
+										<span class="ts-icon is-circular" :style="{ background: background.color }"></span>
 										{{ background.name }}
 									</template>
 								</div>

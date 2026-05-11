@@ -24,9 +24,6 @@
 								<span class="ts-icon is-rotate-ccw-icon" v-else></span>
 								回今年
 							</a>
-							<a @click="switchMonth('export')" style="display:none;">
-								<span class="ts-icon is-file-export-icon"></span> 匯出
-							</a>
 						</div>
 					</div>
 				</div>

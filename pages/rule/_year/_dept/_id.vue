@@ -125,7 +125,7 @@
 					</div>
 				</div>
 				<div class="ts-header is-icon is-center-aligned has-vertically-padded-large" v-if="loading">
-					<span class="ts-icon is-spinning is-spinner-icon"></span>
+					<span class="ts-icon is-spinning is-loader-icon"></span>
 					<div class="has-top-padded-small">讀取中...</div>
 				</div>
 				<template v-if="!loading && currentRule != '-1'">

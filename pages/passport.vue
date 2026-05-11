@@ -8,7 +8,7 @@
 			</div>
 			<br>
 			<template v-if="uid.length == 9 && uid.toUpperCase().startsWith('U')">
-				<loading v-if="isLoading" loading-text="載入中..." />
+				<loading v-if="isLoading" loading-text="讀取中..." />
 				<template v-else-if="data.length > 0">
 					<div class="ts-text is-label has-bottom-padded-small">統計</div>
 					<table class="ts-table is-fluid">

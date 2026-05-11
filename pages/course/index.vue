@@ -163,13 +163,6 @@
 										</td>
 										<td class="c-name">
 											{{ course.name }}
-											<span class="ts-icon is-volleyball--duotone-icon sport-icon" v-if="course.name.includes('排球')"></span>
-											<span class="ts-icon is-basketball--duotone-icon sport-icon" v-else-if="course.name.includes('籃球')"></span>
-											<span class="ts-icon is-ping-pong--duotone-icon sport-icon" v-else-if="course.name.includes('桌球')"></span>
-											<span class="ts-icon is-barbell--duotone-icon sport-icon" v-else-if="course.name.includes('健身雕塑')"></span>
-											<span class="ts-icon is-person-simple-tai-chi--duotone-icon sport-icon" v-else-if="course.name.includes('防身術') || course.name.includes('特工武術') || course.name.includes('跆拳道')"></span>
-											<span class="ts-icon is-person-simple-walk--duotone-icon sport-icon" v-else-if="course.name.includes('身體律動')"></span>
-											<span class="ts-icon sport-icon" v-else-if="course.name.includes('羽球')"></span>
 										</td>
 										<td class="c-time">
 											<span v-for="time in course.time" class="time">
