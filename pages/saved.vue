@@ -55,7 +55,7 @@
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-list-checks-icon"></span>
+							<span class="ts-icon is-clipboard-list-icon"></span>
 						</div>
 					</div>
 				</div>
