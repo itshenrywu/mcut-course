@@ -134,7 +134,7 @@
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-user-icon"></span>
+							<span class="ts-icon is-teacher-icon"></span>
 						</div>
 					</div>
 				</div>

@@ -542,7 +542,7 @@ h1 {
 		backface-visibility: hidden;
 		color: var(--ts-gray-500);
 		overflow: hidden;
-		margin-right: .5rem;
+		margin-right: .25rem;
 		font-size: .8rem;
 		line-height: 1rem;
 		opacity: .9;
@@ -566,7 +566,7 @@ h1 {
 
 	.course-table td.c-class span:before {
 		margin-left: .5rem;
-		content: "\f1fc";
+		content: "\f1fd";
 	}
 
 	.course-table td.c-time {
