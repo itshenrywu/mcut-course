@@ -155,7 +155,8 @@ export default async () => {
 				});
 
 				if (mode != 'prod') {
-					const sampleLimit = Math.max(0, parseInt(process.env.GENERATE_ROUTE_SAMPLE_LIMIT || '100', 10) || 100);
+					const parsedSampleLimit = parseInt(process.env.GENERATE_ROUTE_SAMPLE_LIMIT || '100', 10);
+ 					const sampleLimit = Math.max(0, Number.isNaN(parsedSampleLimit) ? 100 : parsedSampleLimit);
  					const _courseRoutes = courseRoutes.slice(0, sampleLimit);
  					const _ruleRoutes = ruleRoutes.slice(0, sampleLimit);
 					return [..._courseRoutes, ..._ruleRoutes];
