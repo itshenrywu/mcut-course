@@ -155,8 +155,9 @@ export default async () => {
 				});
 
 				if (mode != 'prod') {
-					const _courseRoutes = courseRoutes.slice(0, 2000);
-					const _ruleRoutes = ruleRoutes.slice(0, 2000);
+					const sampleLimit = Math.max(0, parseInt(process.env.GENERATE_ROUTE_SAMPLE_LIMIT || '100', 10) || 100);
+ 					const _courseRoutes = courseRoutes.slice(0, sampleLimit);
+ 					const _ruleRoutes = ruleRoutes.slice(0, sampleLimit);
 					return [..._courseRoutes, ..._ruleRoutes];
 				}
 
