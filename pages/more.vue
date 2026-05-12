@@ -25,7 +25,7 @@
 			</div>
 			<div class="ts-menu is-start-icon is-dense">
 				<!-- <NuxtLink to="/road" class="item">
-					<大學之道環境與行動路線查詢
+					大學之道環境與行動路線查詢
 				</NuxtLink> -->
 				<NuxtLink to="/passport" class="item">
 					114 學年英語學習護照點數查詢
