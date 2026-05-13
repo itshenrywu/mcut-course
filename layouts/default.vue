@@ -613,6 +613,29 @@ h1 {
 	}
 }
 
+.ts-modal .ts-close {
+	background: transparent;
+	color: var(--ts-gray-400);
+	font-size: 1.6rem;
+	font-weight: 900;
+}
+
+.ts-modal .ts-close:hover {
+	color: #f27474;
+}
+
+.ts-modal > .content > .ts-content:first-child {
+	padding-top: 1rem;
+}
+
+.ts-modal > .content > .ts-content {
+	padding: .5rem 1rem;
+}
+
+.ts-modal > .content > .ts-content:last-child {
+	padding-bottom: 1rem;
+}
+
 @media print {
 	html {
 		font-size: 12px;
