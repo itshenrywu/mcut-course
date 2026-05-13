@@ -369,7 +369,7 @@ export default {
 							)
 						+ '<br>':'') +
 						`<span class="ts-icon is-clock-icon"></span> ${info.event.extendedProps.d}` +
-						(info.event.extendedProps.l ? `<br><span class="ts-icon is-location-dot-icon"></span> ${info.event.extendedProps.l}` : '') +
+						(info.event.extendedProps.l ? `<br><span class="ts-icon is-map-pin-icon"></span> ${info.event.extendedProps.l}` : '') +
 						(info.event.extendedProps.r ? `<br><br>${info.event.extendedProps.r}` : '') + '</div>',
 					showConfirmButton: false,
 					showCloseButton: true,

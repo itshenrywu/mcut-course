@@ -1,12 +1,15 @@
 @font-face {
     font-family: "Icons";
-    src: url("/fonts/icons.woff2") format("woff2"),
-         url("/fonts/icons.woff") format("woff"),
-         url("/fonts/icons.ttf") format("truetype"),
-         url("/fonts/icons.otf") format("opentype");
+    src: url("/fonts/icons.woff2?v=20260513") format("woff2"),
+         url("/fonts/icons.woff?v=20260513") format("woff"),
+         url("/fonts/icons.ttf?v=20260513") format("truetype"),
+         url("/fonts/icons.otf?v=20260513") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: block;
+}
+.ts-icon.is-map-pin-icon:before {
+    content: "\f112";
 }
 .ts-icon.is-circle-info-icon:before {
     content: "\f2e0";
