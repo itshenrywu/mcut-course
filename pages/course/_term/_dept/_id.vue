@@ -3,7 +3,7 @@
 		<div class="ts-app-center" v-if="notFound">
 			<div>
 				<div class="ts-header is-icon is-center-aligned is-big">
-					<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+					<span class="ts-icon ts-icon is-circle-alert-icon"></span>
 					找不到此課程
 				</div>
 				<div class="ts-text is-center-aligned has-top-padded">
@@ -24,13 +24,13 @@
 					<div class="ts-wrap is-end-aligned">
 						<template v-if="courses && courses.length > 0">
 							<button class="ts-button is-start-icon is-secondary is-negative is-disabled" v-if="isConflicted()">
-								<span class="ts-icon is-triangle-exclamation-icon"></span>衝堂
+								<span class="ts-icon is-circle-alert-icon"></span>衝堂
 							</button>
 							<button class="ts-button is-start-icon" v-else-if="savedCourse.includes(course.id)" @click="saveCourse(0)">
 								<span class="ts-icon is-star-icon"></span>已收藏
 							</button>
 							<button class="ts-button is-start-icon is-secondary" v-else @click="saveCourse(1)">
-								<span class="ts-icon is-regular is-star-icon"></span>收藏
+								<span class="ts-icon is-star-o-icon"></span>收藏
 							</button>
 						</template>
 						<template v-else>
@@ -57,7 +57,7 @@
 									</div>
 								</div>
 								<div class="column is-1-wide" style="text-align: right;">
-									<span class="ts-icon is-angle-right-icon"></span>
+									<span class="ts-icon is-chevron-right-icon"></span>
 								</div>
 							</div>
 						</div>
@@ -86,7 +86,7 @@
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-clipboard-check-icon"></span>
+							<span class="ts-icon is-list-checks-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -100,7 +100,7 @@
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-list-check-icon"></span>
+							<span class="ts-icon is-clipboard-list-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -120,7 +120,7 @@
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-regular is-calendar-days-icon"></span>
+							<span class="ts-icon is-calendar-days-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -134,7 +134,7 @@
 							</div>
 						</div>
 						<div class="symbol">
-							<span class="ts-icon is-person-chalkboard-icon"></span>
+							<span class="ts-icon is-teacher-icon"></span>
 						</div>
 					</div>
 				</div>
@@ -161,7 +161,7 @@
 					<tr v-if="loading">
 						<td colspan="2" class="is-center-aligned">
 							<div class="ts-header is-icon is-center-aligned has-vertically-padded-large">
-								<span class="ts-icon is-spinning is-spinner-icon"></span>
+								<span class="ts-icon is-spinning is-loader-icon"></span>
 								<div class="has-top-padded-small">讀取中...</div>
 							</div>
 						</td>

@@ -73,14 +73,14 @@
 	.navbar .ts-tab .item {
 		flex-direction: column;
 		align-items: center;
-		gap: .3rem;
+		gap: 0;
 		padding: .3rem 0 .1rem;
 		width: 25%;
 		font-size: .9rem;
 	}
 
 	.navbar .ts-tab .item .ts-icon {
-		font-size: 1.25rem;
+		font-size: 1.4rem;
 		line-height: 1.4rem;
 	}
 
@@ -140,7 +140,7 @@ export default {
 				{
 					path: '/my/',
 					label: '我的課表',
-					icon: 'is-circle-user-icon',
+					icon: 'is-circle-user-round-icon',
 				},
 				{
 					path: '/rule/',
@@ -150,7 +150,7 @@ export default {
 				{
 					path: '/more/',
 					label: '更多功能',
-					icon: 'is-bars-staggered-icon',
+					icon: 'is-align-left-icon',
 				},
 			],
 			profileImage: '',

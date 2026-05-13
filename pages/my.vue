@@ -9,7 +9,7 @@
 						<div class="ts-text is-label has-bottom-padded-small">我的課程</div>
 						<div class="ts-wrap is-dense">
 							<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="showImportDialog()">
-								<span class="ts-icon is-file-import-icon"></span>
+								<span class="ts-icon is-import-icon"></span>
 								從學校系統匯入
 							</button>
 							<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="importFromSaved()" v-show="savedCourses.length > 0">
@@ -38,8 +38,8 @@
 						<div class="ts-select is-fluid has-bottom-spaced-small">
 							<div class="content" data-dropdown="background-dropdown">
 								<span class="ts-icon is-circular is-image-icon" v-if="backgrounds.find(b => b.id === myCoursesSetting.background).id == 'image'"></span>
-								<span class="ts-icon is-circular is-square-icon" v-else-if="backgrounds.find(b => b.id === myCoursesSetting.background).id == 'custom'" :style="{ background: myCoursesSetting.backgroundColor }"></span>
-								<span class="ts-icon is-circular is-square-icon" v-else :style="{ background: backgrounds.find(b => b.id === myCoursesSetting.background).color }"></span>
+								<span class="ts-icon is-circular" v-else-if="backgrounds.find(b => b.id === myCoursesSetting.background).id == 'custom'" :style="{ background: myCoursesSetting.backgroundColor }"></span>
+								<span class="ts-icon is-circular" v-else :style="{ background: backgrounds.find(b => b.id === myCoursesSetting.background).color }"></span>
 								{{ backgrounds.find(b => b.id === myCoursesSetting.background).name }}
 							</div>
 							<div class="ts-dropdown is-dense" data-position="bottom-start" id="background-dropdown">
@@ -52,11 +52,11 @@
 										<input type="file" accept="image/png, image/jpeg, image/jpg" @change="handleBackgroundImage">
 									</template>
 									<template v-else-if="background.id == 'custom'">
-										<span class="ts-icon is-circular is-square-icon" :style="{ background: myCoursesSetting.backgroundColor }"></span>
+										<span class="ts-icon is-circular" :style="{ background: myCoursesSetting.backgroundColor }"></span>
 										{{ background.name }}
 									</template>
 									<template v-else>
-										<span class="ts-icon is-circular is-square-icon" :style="{ background: background.color }"></span>
+										<span class="ts-icon is-circular" :style="{ background: background.color }"></span>
 										{{ background.name }}
 									</template>
 								</div>
@@ -130,7 +130,7 @@
 							下載圖片
 						</button>
 						<button class="ts-button is-small is-fluid is-start-icon" @click="showWidget()" v-show="isIos" :class="{'is-disabled': myCourses.length == 0}">
-							<span class="ts-icon is-mobile-screen-icon"></span>
+							<span class="ts-icon is-phone-icon"></span>
 							安裝 iOS 小工具
 						</button>
 						<a class="ts-button is-small is-fluid is-start-icon" @click="saveToCalendar()" :class="{'is-disabled': myCourses.length == 0}">
@@ -167,7 +167,7 @@
 					</div>
 				</div>
 				<button class="ts-button is-fluid is-secondary is-start-icon" @click="showMobileSidebar = !showMobileSidebar">
-					<span class="ts-icon is-table-cells-icon"></span>
+					<span class="ts-icon is-sheet-icon"></span>
 					課表設定
 				</button>
 				<div class="ts-grid is-evenly-divided has-top-spaced">
@@ -179,7 +179,7 @@
 					</div>
 					<div class="column">
 						<button class="ts-button is-fluid is-start-icon" @click="showWidget()" :class="{'is-disabled': myCourses.length == 0}">
-							<span class="ts-icon is-mobile-screen-icon"></span>
+							<span class="ts-icon is-phone-icon"></span>
 							iOS 小工具
 						</button>
 					</div>
@@ -227,23 +227,22 @@
 							<div class="ts-header">{{ editingAction === 'new' ? '新增課程' : '修改課程' }}</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="ts-content" v-if="editingCourse">
 					<NuxtLink
 					target="_blank"
 					:to="`/course/${editingCourse.id.substring(0, 4)}/${editingCourse.id.substring(4, 8)}/${editingCourse.id.substring(8)}/`"
 					class="ts-button is-fluid is-secondary is-start-icon has-bottom-spaced-large"
 					v-if="editingCourse.id && editingCourse.id.length == 12 && !editingCourse.id.includes('ALT')">
-						<span class="ts-icon is-list-check-icon"></span>
+						<span class="ts-icon is-list-checks-icon"></span>
 						查看課程詳細資料
 					</NuxtLink>
 					<div class="ts-box is-start-indicated has-bottom-spaced-large" v-if="message" :class="{'is-negative': message[0] === 'error'}">
 						<div class="ts-content"><div class="ts-header">{{ message[1] }}</div></div>
-						<div class="symbol"><span class="ts-icon is-circle-exclamation-icon"></span></div>
+						<div class="symbol"><span class="ts-icon is-circle-alert-icon"></span></div>
 					</div>
 					<div class="ts-text is-label has-bottom-padded-small is-required">上課時間</div>
 					<div class="ts-grid is-middle-aligned">
@@ -300,11 +299,10 @@
 							<div class="ts-text is-description">可以讓你在桌面或鎖定畫面上看到下一堂是什麼課，點擊還可以查看課程詳細資料！</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="ts-content">
 					<h2 class="ts-header is-large">1. 安裝 Scriptable</h2>
 					<a href="https://apps.apple.com/tw/app/scriptable/id1405459188"><img style="width: 150px" src="https://i.imgur.com/Tq43Fdb.png"></a>
@@ -370,11 +368,10 @@
 							<div class="ts-header">從學校系統匯入</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="ts-content">
 					<div class="ts-wrap is-vertical">
 						<div>
@@ -398,7 +395,7 @@
 						<div>
 							<h2 class="ts-header is-large" style="display:inline;">5. 按下 Enter/送出後，課表就會匯入了！</h2>
 							<div class="ts-text is-description">
-								如果看到 <span class="ts-icon is-magnifying-glass-icon"></span> 和 <span class="ts-icon is-earth-asia-icon"></span> 兩個選項，請選擇 <span class="ts-icon is-earth-asia-icon"></span> 那一個。如果只有 <span class="ts-icon is-magnifying-glass-icon"></span>，請重新檢查是否輸入正確！
+								如果看到 <span class="ts-icon is-search-icon"></span> 和 <span class="ts-icon is-earth-icon"></span> 兩個選項，請選擇 <span class="ts-icon is-earth-icon"></span> 那一個。如果只有 <span class="ts-icon is-search-icon"></span>，請重新檢查是否輸入正確！
 							</div>
 							<img src="https://i.imgur.com/ZKRQvC7.jpeg" style="width:100%;">
 						</div>
@@ -414,11 +411,10 @@
 							<div class="ts-header">存到行事曆</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="ts-content">
 					<div class="ts-wrap is-relaxed is-vertical">
 						<div>
@@ -490,11 +486,10 @@
 							<div class="ts-header">選擇背景顏色</div>
 						</div>
 						<div class="column">
-							<button class="ts-close is-large is-secondary" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
 						</div>
 					</div>
 				</div>
-				<div class="ts-divider"></div>
 				<div class="picker-container" :style="{'background': myCoursesSetting.backgroundColor}">
 					<div id="picker" style="padding: 2rem; background: var(--ts-gray-100); border-radius: var(--ts-border-radius-container);"></div>
 					<br>
@@ -609,6 +604,7 @@
 .is-light #page-my .sidebar .ts-button.is-secondary,
 .is-light #page-my .sidebar .ts-range input {
 	background: var(--ts-gray-400);
+	opacity: .9;
 }
 
 .widget-demo {

@@ -2,7 +2,7 @@
    Variables
    ========================================================================== */
 
-@font-face {
+/* @font-face {
     font-family: "Icons";
     src: url("fonts/icons/fa-solid-900_new.woff2?v=20251021") format("woff2"), url("fonts/icons/fa-solid-900.ttf") format("truetype");
     font-style: normal;
@@ -10,7 +10,7 @@
     font-variant: normal;
     text-decoration: inherit;
     text-transform: none;
-}
+} */
 
 /* @font-face {
     font-family: "IconsBrands";
@@ -22,7 +22,7 @@
     text-transform: none;
 } */
 
-@font-face {
+/* @font-face {
     font-family: "IconsRegular";
     src: url("fonts/icons/fa-regular-400_new.woff2?v=20251021") format("woff2"), url("fonts/icons/fa-regular-400.ttf") format("truetype");
     font-style: normal;
@@ -30,7 +30,7 @@
     font-variant: normal;
     text-decoration: inherit;
     text-transform: none;
-}
+} */
 
 @keyframes ts-icon-spin {
     from {
@@ -75,9 +75,9 @@
  * Regular
  */
 
-.ts-icon.is-regular {
+/* .ts-icon.is-regular {
     font-family: "IconsRegular";
-}
+} */
 
 /**
  * Circular

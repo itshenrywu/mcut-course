@@ -67,7 +67,7 @@
 		<div class="cell is-secondary is-fluid is-scrollable" style="min-height:100%; display: flex; align-items: center;" v-if="notFound">
 			<div class="ts-container" style="display: flex; flex-direction: column; align-items: center;">
 				<div class="ts-header is-icon is-center-aligned is-big">
-					<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+					<span class="ts-icon ts-icon is-circle-alert-icon"></span>
 					找不到此課程總表
 				</div>
 				<div class="ts-text is-center-aligned has-top-padded">
@@ -125,7 +125,7 @@
 					</div>
 				</div>
 				<div class="ts-header is-icon is-center-aligned has-vertically-padded-large" v-if="loading">
-					<span class="ts-icon is-spinning is-spinner-icon"></span>
+					<span class="ts-icon is-spinning is-loader-icon"></span>
 					<div class="has-top-padded-small">讀取中...</div>
 				</div>
 				<template v-if="!loading && currentRule != '-1'">
@@ -147,7 +147,7 @@
 										{{ rule_subtype.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
 									</span>
 								</div>
-								<span class="ts-icon" :class="{ 'is-angle-down-icon': !rule_subtype.show, 'is-angle-up-icon': rule_subtype.show }"></span>
+								<span class="ts-icon" :class="{ 'is-chevron-down-icon': !rule_subtype.show, 'is-chevron-up-icon': rule_subtype.show }"></span>
 							</div>
 							<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
 								<div v-show="rule_subtype.show" class="rule_subtype">
@@ -164,7 +164,7 @@
 												<td class="ts-text is-description">
 													<template v-if="courses && findCourses(rule_item.id).length >= 1">
 														{{ findCourses(rule_item.id).length }} 門相符課程
-														<span class="ts-icon is-angle-right-icon"></span>
+														<span class="ts-icon is-chevron-right-icon"></span>
 													</template>
 												</td>
 												<td class="r-remark">
@@ -218,7 +218,7 @@
 										{{ [...guide_subtype.name.matchAll(/\((.*?)\)/g)].map(m => m[1]).join(', ').replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
 									</span>
 								</div>
-								<span class="ts-icon" :class="{ 'is-angle-down-icon': !guide_subtype.show, 'is-angle-up-icon': guide_subtype.show }"></span>
+								<span class="ts-icon" :class="{ 'is-chevron-down-icon': !guide_subtype.show, 'is-chevron-up-icon': guide_subtype.show }"></span>
 							</div>
 							<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
 								<div v-show="guide_subtype.show" class="rule_subtype">
@@ -235,7 +235,7 @@
 												<td class="ts-text is-description">
 													<template v-if="courses && findCourses(rule_item.id).length >= 1">
 														{{ findCourses(rule_item.id).length }} 門相符課程
-														<span class="ts-icon is-angle-right-icon"></span>
+														<span class="ts-icon is-chevron-right-icon"></span>
 													</template>
 												</td>
 												<td class="r-remark">
@@ -378,6 +378,11 @@
 		display: block;
 	}
 
+	#page-rule tr,
+	#page-rule td {
+		vertical-align: top;
+	}
+
 	#page-rule tr:hover {
 		background-color: transparent;
 	}
@@ -415,7 +420,9 @@
 		display: none;
 	}
 
-	#page-rule td:first-child {
+	#page-rule td:first-child,
+	#page-rule td:nth-child(2),
+	#page-rule td:nth-child(3) {
 		padding-top: .4rem;
 	}
 
@@ -463,8 +470,8 @@
 		white-space: normal;
 	}
 
-	#page-rule .ts-box .ts-icon.is-angle-up-icon,
-	#page-rule .ts-box .ts-icon.is-angle-down-icon {
+	#page-rule .ts-box .ts-icon.is-chevron-up-icon,
+	#page-rule .ts-box .ts-icon.is-chevron-down-icon {
 		display: none;
 	}
 }

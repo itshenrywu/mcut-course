@@ -5,7 +5,7 @@
 				<div class="column is-4-wide">
 					<a class="item is-text" data-dropdown="dropdown-type">
 						<span>{{ currentType }}</span>
-						<span class="ts-icon is-angle-down-icon"></span>
+						<span class="ts-icon is-chevron-down-icon"></span>
 					</a>
 					<div class="ts-dropdown" id="dropdown-type" data-position="bottom-start">
 						<button v-for="type in types" :key="type" class="item" :data-type="type" @click="changeType(type)">{{ type }}</button>
@@ -15,17 +15,14 @@
 					<div class="item is-text">
 						<div class="ts-wrap is-center-aligned">
 							<a @click="switchMonth('today')" v-if="currentView == 'dayGridMonth'" :class="currentMonth == nowMonth ? 'ts-text is-disabled' : ''">
-								<span class="ts-icon is-arrow-rotate-right-icon" v-if="currentMonth <= nowMonth"></span>
-								<span class="ts-icon is-arrow-rotate-left-icon" v-else></span>
+								<span class="ts-icon is-rotate-cw-icon" v-if="currentMonth <= nowMonth"></span>
+								<span class="ts-icon is-rotate-ccw-icon" v-else></span>
 								回本月
 							</a>
 							<a @click="switchMonth('today')" v-else :class="Math.floor(currentMonth/100) == Math.floor(nowMonth/100) ? 'ts-text is-disabled' : ''">
-								<span class="ts-icon is-arrow-rotate-right-icon" v-if="Math.floor(currentMonth/100) <= Math.floor(nowMonth/100)"></span>
-								<span class="ts-icon is-arrow-rotate-left-icon" v-else></span>
+								<span class="ts-icon is-rotate-cw-icon" v-if="Math.floor(currentMonth/100) <= Math.floor(nowMonth/100)"></span>
+								<span class="ts-icon is-rotate-ccw-icon" v-else></span>
 								回今年
-							</a>
-							<a @click="switchMonth('export')" style="display:none;">
-								<span class="ts-icon is-file-export-icon"></span> 匯出
 							</a>
 						</div>
 					</div>
@@ -33,7 +30,7 @@
 				<div class="column is-4-wide" style="text-align: right;">
 					<a class="item is-text" data-dropdown="dropdown-view">
 						<span id="text-view">{{ currentView == 'dayGridMonth' ? '月曆檢視' : '清單檢視' }}</span>
-						<span class="ts-icon is-angle-down-icon"></span>
+						<span class="ts-icon is-chevron-down-icon"></span>
 					</a>
 					<div class="ts-dropdown" id="dropdown-view" data-position="bottom-end">
 						<button class="item" @click="changeView('dayGridMonth')">月曆檢視</button>
@@ -372,7 +369,7 @@ export default {
 							)
 						+ '<br>':'') +
 						`<span class="ts-icon is-clock-icon"></span> ${info.event.extendedProps.d}` +
-						(info.event.extendedProps.l ? `<br><span class="ts-icon is-location-dot-icon"></span> ${info.event.extendedProps.l}` : '') +
+						(info.event.extendedProps.l ? `<br><span class="ts-icon is-map-pin-icon"></span> ${info.event.extendedProps.l}` : '') +
 						(info.event.extendedProps.r ? `<br><br>${info.event.extendedProps.r}` : '') + '</div>',
 					showConfirmButton: false,
 					showCloseButton: true,

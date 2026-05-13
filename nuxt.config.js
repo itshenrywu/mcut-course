@@ -34,7 +34,8 @@ export default async () => {
 				{ rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
 				{ rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
 				{ rel: 'manifest', href: '/site.webmanifest' },
-				{ rel: 'stylesheet', 'href': '/css/tocas.min.css?v=20251028' },
+				{ rel: 'stylesheet', 'href': '/css/tocas.min.css?v=20260510' },
+				{ rel: 'stylesheet', 'href': '/css/icomoon.css?v=20260510' },
 				{ rel: 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.min.css'},
 			],
 			script: [
@@ -61,7 +62,15 @@ export default async () => {
 		],
 		sweetalert: {
 			confirmButtonColor: 'var(--ts-primary-600)',
-			cancelButtonColor: 'var(--ts-static-gray-500)'
+			cancelButtonColor: 'var(--ts-static-gray-500)',
+			animation: false,
+			showClass: {
+			backdrop: 'swal2-noanimation',
+				popup: '',
+			},
+			hideClass: {
+				popup: '',
+			},
 		},
 		axios: {
 			baseURL: '/',
@@ -146,8 +155,10 @@ export default async () => {
 				});
 
 				if (mode != 'prod') {
-					const _courseRoutes = courseRoutes.slice(0, 10);
-					const _ruleRoutes = ruleRoutes.slice(0, 10);
+					const parsedSampleLimit = parseInt(process.env.GENERATE_ROUTE_SAMPLE_LIMIT || '100', 10);
+ 					const sampleLimit = Math.max(0, Number.isNaN(parsedSampleLimit) ? 100 : parsedSampleLimit);
+ 					const _courseRoutes = courseRoutes.slice(0, sampleLimit);
+ 					const _ruleRoutes = ruleRoutes.slice(0, sampleLimit);
 					return [..._courseRoutes, ..._ruleRoutes];
 				}
 

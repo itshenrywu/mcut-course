@@ -211,21 +211,6 @@ h1 {
 	justify-content: center;
 }
 
-.sport-icon {
-	display: inline-block;
-	color: var(--ts-gray-500);
-	width: 1.4rem;
-}
-
-.sport-icon-badminton {
-	width: 1.4rem;
-	padding-left: 0.15rem;
-	padding-right: 0.15rem;
-	height: 1.4rem;
-	margin-bottom: -0.3rem;
-	fill: var(--ts-gray-500);
-}
-
 .swal2-modal .swal2-title {
 	font-size: 1.5rem;
 }
@@ -535,11 +520,10 @@ h1 {
 		padding-top: .5rem;
 	}
 
-	.course-table td.c-name:before,
 	.course-table td.c-time:before,
 	.course-table td.c-class:before,
 	.course-table td.c-class span:before {
-		font-family: icons;
+		font-family: Icons;
 		font-weight: 400;
 		font-style: normal;
 		display: inline-table;
@@ -550,22 +534,18 @@ h1 {
 		backface-visibility: hidden;
 		color: var(--ts-gray-500);
 		overflow: hidden;
-		margin-right: .5rem;
+		margin-right: .25rem;
 		font-size: .8rem;
 		line-height: 1rem;
-		opacity: .75;
-	}
-
-	.course-table td.c-name:before {
-		content: "\f02d";
+		opacity: .9;
 	}
 
 	.course-table td.c-class:before {
-		content: "\f0c0";
+		content: "\f165";
 	}
 
 	.course-table td.c-time::before {
-		content: "\f073";
+		content: "\f177";
 	}
 
 	.course-table td.c-class {
@@ -578,7 +558,7 @@ h1 {
 
 	.course-table td.c-class span:before {
 		margin-left: .5rem;
-		content: "\e53d";
+		content: "\f1fd";
 	}
 
 	.course-table td.c-time {
@@ -591,7 +571,6 @@ h1 {
 
 	.course-table td.c-remark {
 		order: 6;
-		padding-left: 2.7rem;
 		padding-bottom: .5rem;
 	}
 
@@ -632,6 +611,29 @@ h1 {
 		height: auto;
 		white-space: normal;
 	}
+}
+
+.ts-modal .ts-close {
+	background: transparent;
+	color: var(--ts-gray-400);
+	font-size: 1.6rem;
+	font-weight: 900;
+}
+
+.ts-modal .ts-close:hover {
+	color: #f27474;
+}
+
+.ts-modal > .content > .ts-content:first-child {
+	padding-top: 1rem;
+}
+
+.ts-modal > .content > .ts-content {
+	padding: .5rem 1rem;
+}
+
+.ts-modal > .content > .ts-content:last-child {
+	padding-bottom: 1rem;
 }
 
 @media print {

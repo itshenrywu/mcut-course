@@ -1082,7 +1082,7 @@
     content: "\57";
 }
 
-.ts-icon.is-angle-right-icon::before {
+.ts-icon.is-chevron-right-icon::before {
     content: "\f105";
 }
 
@@ -3574,7 +3574,7 @@
     content: "\f198";
 }
 
-.ts-icon.is-angle-down-icon::before {
+.ts-icon.is-chevron-down-icon::before {
     content: "\f107";
 }
 
@@ -7062,7 +7062,7 @@
     content: "\f492";
 }
 
-.ts-icon.is-angle-up-icon::before {
+.ts-icon.is-chevron-up-icon::before {
     content: "\f106";
 }
 

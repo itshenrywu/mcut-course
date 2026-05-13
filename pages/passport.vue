@@ -8,7 +8,7 @@
 			</div>
 			<br>
 			<template v-if="uid.length == 9 && uid.toUpperCase().startsWith('U')">
-				<loading v-if="isLoading" loading-text="載入中..." />
+				<loading v-if="isLoading" loading-text="讀取中..." />
 				<template v-else-if="data.length > 0">
 					<div class="ts-text is-label has-bottom-padded-small">統計</div>
 					<table class="ts-table is-fluid">
@@ -65,7 +65,7 @@
 				<div v-else class="ts-box">
 					<div class="ts-header is-icon is-center-aligned has-vertically-spaced-large">
 						<br><br><br>
-						<span class="ts-icon ts-icon is-circle-exclamation-icon"></span>
+						<span class="ts-icon ts-icon is-circle-alert-icon"></span>
 						目前沒有此學號的紀錄
 						<br><br><br><br>
 					</div>
