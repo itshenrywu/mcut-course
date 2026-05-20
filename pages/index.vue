@@ -355,35 +355,12 @@ export default {
 		},
 		chooseTerm(term) {
 			if (this.currentTerm == term) return;
-			if (this.savedCourse.length == 0) {
-				this.loading = true;
-				this.currentTerm = term;
-				localStorage['term'] = term;
-				this.display = [];
-				this.fetchData();
-				return;
-			}
-			this.$swal({
-				icon: 'question',
-				title: '切換至 ' + term + ' 學期？',
-				html: '先前收藏的課程將會清空！',
-				confirmButtonText: '清空並切換',
-				cancelButtonText: '取消',
-				showCancelButton: true,
-			})
-				.then((res) => {
-					if (res.isConfirmed) {
-						this.$swal.close();
-						this.savedCourse = [];
-						this.setSavedCourse([this.savedCourse]);
-						this.$root.$emit('updateSavedCourse', this.savedCourse);
-						this.loading = true;
-						this.currentTerm = term;
-						localStorage['term'] = term;
-						this.display = [];
-						this.fetchData();
-					}
-				})
+			this.savedCourse = [];
+			this.loading = true;
+			this.currentTerm = term;
+			localStorage['term'] = term;
+			this.display = [];
+			this.fetchData();
 		},
 		searchByQuery() {
 			this.searchResult.course = [];

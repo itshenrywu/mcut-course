@@ -68,7 +68,10 @@
 						</div>
 					</div>
 					<div>
-						<div class="ts-text is-label has-bottom-padded-small">衝堂的課程</div>
+						<div class="ts-text is-label has-bottom-padded-small">
+							衝堂的課程
+							<span data-position="top" data-tooltip="此設定不影響已收藏的課程" class="ts-icon is-circle-info-icon"></span>
+						</div>
 						<div class="ts-selection is-fluid">
 							<label class="item">
 								<input type="radio" name="showConflict" :value="1" v-model="showConflict"
@@ -131,163 +134,53 @@
 					<div class="ts-wrap has-top-padded has-bottom-padded-large is-center-aligned">
 						<div class="ts-selection">
 							<label class="item">
-								<input type="radio" name="displayType" v-model="displayType" value=""
-									@change="changeDisplayType()">
-								<div class="text">課表檢視</div>
-							</label>
-							<label class="item">
 								<input type="radio" name="displayType" v-model="displayType" value="1"
 									@change="changeDisplayType()">
 								<div class="text">列表檢視</div>
 							</label>
+							<label class="item">
+								<input type="radio" name="displayType" v-model="displayType" value=""
+									@change="changeDisplayType()">
+								<div class="text">課表檢視</div>
+							</label>
 						</div>
 					</div>
-					<div v-if="displayType == '1'" class="ts-box has-bottom-spaced">
-						<table class="ts-table course-table">
-							<thead>
-								<tr>
-									<th>開課單位/班級</th>
-									<th>課程名稱</th>
-									<th>上課時間</th>
-									<th>修別/學分</th>
-									<th>授課老師</th>
-									<th>備註</th>
-									<th>&nbsp;</th>
-								</tr>
-							</thead>
-							<tbody>
-								<template v-for="(course, index) in filteredCourses">
-									<tr @click="showCourse(course)">
-										<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
-											<span class="mobile-only" v-if="!(course.id.includes('ALT_') && course.teacher.includes('分班'))">{{  course.teacher + ' 老師' }}</span>
-										</td>
-										<td class="c-name">
-											{{ course.name }}
-										</td>
-										<td class="c-time">
-											<span v-for="time in course.time" class="time">
-												<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-													week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
-												<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>
-											</span>
-										</td>
-										<td class="c-type-credit mobile-only absolute-right">
-											<span class="ts-badge is-small has-dark"
-												:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-												{{
-													course.type +
-													(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
-													' ' + course.credit
-												}} 學分
-											</span>
-										</td>
-										<td class="c-type-credit mobile-hidden">
-											<span class="ts-badge is-small is-dense is-end-spaced has-dark"
-												:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-												{{
-													course.type +
-													(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
-												}}
-											</span>{{ course.credit }}
-										</td>
-										<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
-										<td class="c-remark">{{ course.comment }}</td>
-										<td class="c-action">
-											<span class="mobile-only absolute-right ts-badge is-small is-dense has-dark is-red" v-if="isConflicted(course)">衝堂</span>
-											<span data-position="top" data-tooltip="衝堂" class="mobile-hidden ts-icon absolute-right is-circle-alert-icon is-t-red" v-if="isConflicted(course)" @click.stop=""></span>
-											<span class="ts-icon absolute-right is-star-icon" v-else-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course.id)"></span>
-											<span class="ts-icon absolute-right is-star-o-icon" v-else @click.stop="saveCourse(course.id)"></span>
-										</td>
-									</tr>
-									<tr v-if="(showAd && filteredCourses.length >= itemsPerPage && index%itemsPerPage == itemsPerPage-1 ) || (showAd && filteredCourses.length < itemsPerPage && index == filteredCourses.length - 1)" class="ad">
-										<td colspan="7">
-											<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
-											<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelectorAll('tr.ad td').forEach(td => td.innerHTML='<div class=&quot;ts-text is-description&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>');"></script>
-											<ins class="adsbygoogle"
-												style="display:block"
-												data-ad-format="fluid"
-												data-ad-layout-key="-ft+62+3a-cx+as"
-												data-ad-client="ca-pub-5900703871265800"
-												data-ad-slot="1984429220"></ins>
-											<script>
-												(adsbygoogle = window.adsbygoogle || []).push({});
-											</script>
-										</td>
-									</tr>
-								</template>
-							</tbody>
-						</table>
+					<div class="ts-box has-bottom-spaced" v-if="displayType == '' && ((!currentClass && !currentDept.includes('通識')) || !currentDept)">
+						<div class="ts-content">
+							<span class="ts-text is-negative is-bold">課表檢視無法在此搜尋條件下使用</span><br>
+							請先選擇開課單位及班級以使用課表檢視，或改用列表檢視。
+						</div>
 					</div>
-					<template v-else>
-						<div class="ts-box has-bottom-spaced" v-if="(!currentClass && !currentDept.includes('通識')) || !currentDept">
-							<div class="ts-content">
-								<span class="ts-text is-negative is-bold">課表檢視無法在此搜尋條件下使用</span><br>
-								請先選擇開課單位及班級以使用課表檢視，或改用列表檢視。
-							</div>
+					<div class="ts-box has-bottom-spaced">
+						<CourseList
+							:courses="filteredCourses"
+							:allCourses="courses"
+							:displayType="displayType"
+							:timeSection="time_section"
+							:maxEndSection="maxEndSection"
+							:savedCourse="savedCourse"
+							:isActive="(course) => savedCourse.includes(course.id)"
+							:currentClass="currentClass"
+							:currentDept="currentDept"
+							@course-click="showCourse"
+							@action-click="saveCourse"
+						/>
+					</div>
+					<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="filteredCourses.length > 0 && showAd">
+						<div class="ts-content">
+							<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
+							<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelector('.ad .ts-content').innerHTML='<div class=&quot;ts-text is-description has-bottom-padded-small&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned has-vertically-padded&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>';"></script>
+							<ins class="adsbygoogle"
+								style="display:block; text-align:center;"
+								data-ad-layout="in-article"
+								data-ad-format="fluid"
+								data-ad-client="ca-pub-5900703871265800"
+								data-ad-slot="3164180037"></ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
 						</div>
-						<div class="ts-box has-bottom-spaced">
-							<table class="ts-table is-dense is-celled is-definition timetable" :class="{
-								'showSat': coursesByStartTime[6] && currentClass,
-								'showOnlyMonAndThu': showOnlyMonAndThu
-							}">
-								<thead>
-									<tr>
-										<th class="time-header"></th>
-										<th v-for="w in 6" :key="'header-' + w">{{ week_text(w).replace(/\(|\)/g,'') }}</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="time-column">
-											<div
-												v-for="section in time_section"
-												v-if="section <= maxEndSection"
-												:key="section"
-												class="time-slot">
-												{{ section }}
-											</div>
-										</td>
-										<td v-for="w in 6" :key="'day-' + w" class="day-column">
-											<template v-if="currentClass || currentDept.includes('通識')">
-												<div v-if="processedSchedule[w]?.tooManyOverlaps" class="overlap-warning">
-													該天有過多重疊課程，<br>請改用列表檢視
-												</div>
-												<template v-else>
-													<div
-														v-for="course in processedSchedule[w]?.courses"
-														:class="['course-block', course.className]"
-														:style="course.style"
-														@click="showCourse(course)"
-														>
-														<div>
-															{{ formatCourseName(course) }}
-															<small v-if="!course?.teacher?.includes('分班')"><br />{{ course.teacher }}</small>
-														</div>
-													</div>
-												</template>
-											</template>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<br>
-						<div class="ts-box ad is-hollowed box-mobile-spaced" v-if="filteredCourses.length > 0 && showAd">
-							<div class="ts-content">
-								<div class="ts-text is-description has-bottom-padded-small">贊助商</div>
-								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5900703871265800" crossorigin="anonymous" onerror="document.querySelector('.ad .ts-content').innerHTML='<div class=&quot;ts-text is-description has-bottom-padded-small&quot;>贊助商</div><div class=&quot;ts-text is-secondary is-center-aligned has-vertically-padded&quot;>太無情了吧，擋廣告 😭<br>加入白名單，救救開發者 🙏</div>';"></script>
-								<ins class="adsbygoogle"
-									style="display:block; text-align:center;"
-									data-ad-layout="in-article"
-									data-ad-format="fluid"
-									data-ad-client="ca-pub-5900703871265800"
-									data-ad-slot="3164180037"></ins>
-								<script>
-									(adsbygoogle = window.adsbygoogle || []).push({});
-								</script>
-							</div>
-						</div>
-					</template>
+					</div>
 				</template>
 				<div class="ts-blankslate" v-else-if="courses.length == 0">
 					<span class="ts-icon is-circle-alert-icon"></span>
@@ -332,146 +225,14 @@
 	cursor: default;
 	background: transparent;
 }
-
-.timetable {
-	width: 100%;
-	border-collapse: collapse;
-	table-layout: fixed;
-}
-
-.timetable th,
-.timetable td {
-	border: 1px solid var(--ts-gray-50);
-	text-align: center;
-	vertical-align: top;
-}
-
-.timetable th {
-	padding: 0.8rem 0.5rem;
-	font-weight: bold;
-}
-
-.timetable th,
-.timetable td {
-	text-align: center;
-	vertical-align: middle;
-	width: 20%;
-}
-
-.timetable th:first-child,
-.timetable td:first-child {
-	width: 2rem !important;
-}
-
-.timetable th:nth-child(7),
-.timetable td:nth-child(7) {
-	display: none !important;
-}
-
-.timetable.showSat th,
-.timetable.showSat td {
-	width: 16.666%;
-}
-
-.timetable.showSat th:nth-child(7),
-.timetable.showSat td:nth-child(7) {
-	display: table-cell !important;
-}
-
-.timetable.showOnlyMonAndThu th,
-.timetable.showOnlyMonAndThu td {
-	display: none;
-	width: 50%;
-}
-
-.timetable.showOnlyMonAndThu th:nth-child(1),
-.timetable.showOnlyMonAndThu td:nth-child(1),
-.timetable.showOnlyMonAndThu th:nth-child(2),
-.timetable.showOnlyMonAndThu td:nth-child(2),
-.timetable.showOnlyMonAndThu th:nth-child(5),
-.timetable.showOnlyMonAndThu td:nth-child(5) {
-	display: table-cell !important;
-}
-
-.time-column {
-	padding: 0;
-}
-
-.time-slot {
-	height: 3.9rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 0.9rem;
-	color: #666;
-	border-bottom: 1px solid var(--ts-gray-200);
-}
-
-.time-slot:last-child {
-	border-bottom: none;
-}
-
-.day-column {
-	position: relative;
-	padding: 0 .25rem !important;
-}
-
-.day-column::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: repeating-linear-gradient(
-		to bottom,
-		transparent 0,
-		transparent calc(4rem - 1px),
-		var(--ts-gray-200) calc(4rem - 1px),
-		var(--ts-gray-200) 4rem
-	);
-	pointer-events: none;
-}
-
-.course-block {
-	position: absolute;
-	box-sizing: border-box;
-	padding: 0.1rem;
-	border-radius: 4px;
-	color: white;
-	font-size: 0.8rem;
-	cursor: pointer;
-	overflow: hidden;
-	margin: 0 2px;
-	line-height: 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.course-block small {
-	opacity: 0.8;
-}
-
-@media (max-width: 767.98px) {
-	.timetable th,
-	.time-slot {
-		font-size: .8rem;
-	}
-
-	.course-block {
-		font-size: .75rem;
-	}
-
-	.overlap-warning {
-		font-size: .7rem;
-	}
-}
 </style>
 <script>
-const SLOT_HEIGHT = 4;
 import { mapMutations, mapState } from 'vuex';
+import CourseList from '~/components/CourseList.vue';
 export default {
+	components: {
+		CourseList
+	},
 	head() {
 		return {
 			title: '進階搜尋 | 明志科技大學選課小幫手',
@@ -513,21 +274,29 @@ export default {
 			showMobileSidebar: false,
 
 			displayType: '',
+			
+			// 性能优化缓存
+			coursesMap: new Map(),
+			sectionIndexMapObj: {},
+			cachedCoursedTime: new Set(),
 		}
 	},
 	async mounted() {
-		this.displayType = localStorage['displayType'] || '';
+		const storedDisplayType = localStorage.getItem('displayType');
+		if (storedDisplayType === null) {
+			this.displayType = '1';
+			localStorage.setItem('displayType', '1');
+		} else {
+			this.displayType = storedDisplayType;
+		}
 		if (localStorage['searchQuery']) this.searchQuery = localStorage['searchQuery'];
 		if(['0','1','2'].includes(localStorage['showConflict'])) this.showConflict = localStorage['showConflict'];
 		else this.showConflict = 1;
 		let savedCourse = await this.$store.dispatch('getSavedCourse');
 		if (savedCourse && savedCourse.length > 0) {
 			this.savedCourse = savedCourse;
-			let term_id = this.savedCourse[0].substring(0, 4);
-			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
-			localStorage['term'] = this.currentTerm;
 		}
-		else this.currentTerm = localStorage['term'] || '';
+		this.currentTerm = localStorage['term'] || '';
 		this.fetchData();
 	},
 	computed: {
@@ -593,7 +362,7 @@ export default {
 				});
 			}
 			if (this.showConflict == 0) {
-				filtered = filtered.filter(course => !this.isConflicted(course));
+				filtered = filtered.filter(course => !this.isConflicted(course) || this.savedCourse.includes(course.id));
 			}
 			if (this.currentDept.includes('社會組') || this.currentDept.includes('外文組')) {
 				filtered = filtered.filter(course => !course.id.includes('ALT_'));
@@ -617,27 +386,40 @@ export default {
 				(this.currentType == '必修' || this.currentType == '') &&
 				!['通識中心四技', '國文組-四技(日)', '外文組-四技(日)', '社會組-四技(日)', '體育組-四技(日)', '自然組-四技(日)', '自然組(二)-四技(日)', '工程學院', '環資學院', '管理暨設計學院', 'TAICA'].includes(this.currentDept)
 		},
-		formatCourseName(course) {
-			return (course) => {
-				let name = course?.name || '';
-				if(name.startsWith('體育(') && name.includes(')') && name.split(')')[1].length >= 1) {
-					name = name.split(')')[1];
-				}
-				return name;
-			};
-		},
 		isConflicted(_course) {
 			return (_course) => {
 				if (this.savedCourse.length == 0) return false;
-				if (this.savedCourse.includes(_course.id)) return false;
 				if (!_course.time) return false;
-				return _course.time.some(time => {
-					let week = time[0];
-					let section = time[1].split('~').map(section => this.time_section.indexOf(section));
-					return Array.from({ length: section[1] - section[0] + 1 }, (_, i) => week + '_' + this.time_section[section[0] + i]).some(t => {
-						if (this.hasCoursedTime.includes(t)) return true;
-					});
-				});
+
+				// 重建已用时间集合，排除当前课程本身
+				const coursedTime = new Set();
+				for (const courseId of this.savedCourse) {
+					if (courseId === _course.id) continue; // 排除当前课程
+					const course = this.coursesMap.get(courseId);
+					if (!course?.time) continue;
+					for (const [week, timeRange] of course.time) {
+						const [startStr, endStr] = timeRange.split('~');
+						const startIdx = this.sectionIndexMapObj[startStr];
+						const endIdx = this.sectionIndexMapObj[endStr];
+						if (startIdx === undefined || endIdx === undefined) continue;
+						for (let i = startIdx; i <= endIdx; i++) {
+							coursedTime.add(`${week}_${i}`);
+						}
+					}
+				}
+
+				// 检查当前课程是否与其他已收藏课程衝突
+				for (const [week, timeRange] of _course.time) {
+					const [startStr, endStr] = timeRange.split('~');
+					const startIdx = this.sectionIndexMapObj[startStr];
+					const endIdx = this.sectionIndexMapObj[endStr];
+					if (startIdx === undefined || endIdx === undefined) continue;
+					
+					for (let i = startIdx; i <= endIdx; i++) {
+						if (coursedTime.has(`${week}_${i}`)) return true;
+					}
+				}
+				return false;
 			}
 		},
 		hasCoursedTime() {
@@ -656,133 +438,6 @@ export default {
 				this.classes.filter(c => c.split(' ')[0] == this.currentClass.split(' ')[0]).length >= 2 &&
 				(this.currentClass.includes('甲') || this.currentClass.includes('乙') || (this.currentClass.includes('丙') && this.currentDept == '四技機械系'));
 		},
-		coursesByStartTime() {
-			let result = {};
-			this.filteredCourses.forEach(course => {
-				course.time.forEach(timeSlot => {
-					const [weekday, timeRange] = timeSlot;
-					const startTime = timeRange.split('~')[0];
-					const endTime = timeRange.split('~')[1];
-
-					if (!result[weekday]) {
-						result[weekday] = {};
-					}
-
-					if (!result[weekday][startTime]) {
-						result[weekday][startTime] = [];
-					}
-
-					let part_course = JSON.parse(JSON.stringify(course));
-					part_course.period = this.time_section.indexOf(endTime) - this.time_section.indexOf(startTime) + 1;
-					result[weekday][startTime].push(part_course);
-				});
-			});
-			return result;
-		},
-		sectionIndexMap() {
-			return this.time_section.reduce((map, section, index) => {
-				map[section] = index;
-				return map;
-			}, {});
-		},
-		processedSchedule() {
-			const schedule = {};
-			const days = Object.keys(this.coursesByStartTime);
-
-			for (const day of days) {
-				if (!this.coursesByStartTime[day]) continue;
-
-				const coursesForDay = [];
-				const startSections = Object.keys(this.coursesByStartTime[day]);
-
-				for (const startSection of startSections) {
-					const courses = this.coursesByStartTime[day][startSection];
-					for (const course of courses) {
-						const startIndex = this.sectionIndexMap[startSection];
-						if (startIndex === undefined) continue;
-
-						coursesForDay.push({
-							...course,
-							startSection: startSection,
-							startIndex: startIndex,
-							endIndex: startIndex + course.period,
-						});
-					}
-				}
-				
-				coursesForDay.sort((a, b) => a.startIndex - b.startIndex);
-
-				let processedCourses = [];
-				for (const course of coursesForDay) {
-					let columnIndex = 0;
-					let totalColumns = 1;
-
-					const overlappingCourses = processedCourses.filter(p => 
-						course.startIndex < p.endIndex && course.endIndex > p.startIndex
-					);
-					
-					if (overlappingCourses.length > 0) {
-						const occupiedColumns = new Set(overlappingCourses.map(c => c.columnIndex));
-						while(occupiedColumns.has(columnIndex)) {
-							columnIndex++;
-						}
-						
-						totalColumns = Math.max(...overlappingCourses.map(c => c.totalColumns), columnIndex + 1);
-						overlappingCourses.forEach(p => {
-							p.totalColumns = totalColumns;
-						});
-					}
-					
-					course.columnIndex = columnIndex;
-					course.totalColumns = totalColumns;
-					processedCourses.push(course);
-				}
-
-
-				const maxOverlap = Math.max(0, ...processedCourses.map(c => c.totalColumns));
-				let maxColumnsAllowed = 5;
-				if (window.innerWidth < 414) {
-					maxColumnsAllowed = 2;
-				}
-				else if (window.innerWidth < 768) {
-					maxColumnsAllowed = 3;
-				}
-				if(this.showOnlyMonAndThu) maxColumnsAllowed += 3;
-				console.log(window.innerWidth, maxColumnsAllowed);
-
-				if (maxOverlap > maxColumnsAllowed) {
-					schedule[day] = {
-						courses: [],
-						tooManyOverlaps: true,
-					};
-				}
-				else {
-					schedule[day] = {
-						courses: processedCourses.map(course => {
-							const width = 100 / course.totalColumns;
-							const left = course.columnIndex * width;
-							return {
-								...course,
-								className: {
-									"is-orange": course.type == "必修",
-									"is-green": course.type == "選修",
-									"is-gray": course.type == "重修",
-								},
-								style: {
-									top: `${course.startIndex * SLOT_HEIGHT + 0.2}rem`,
-									height: `${course.period * SLOT_HEIGHT - 0.4}rem`,
-									width: `calc(${width}% - 4px)`,
-									left: `${left}%`,
-								},
-							};
-						}),
-						tooManyOverlaps: false,
-					};
-				}
-			}
-
-			return schedule;
-		},
 		maxEndSection: function() {
 			if(this.currentClass == '' && !this.currentDept.includes('通識')) return 8;
 			let maxSection = 8;
@@ -793,9 +448,6 @@ export default {
 				});
 			});
 			return maxSection;
-		},
-		showOnlyMonAndThu() {
-			return this.currentDept.includes('通識') && !this.coursesByStartTime[2] && !this.coursesByStartTime[3] && !this.coursesByStartTime[5] && !this.coursesByStartTime[6];
 		}
 	},
 	methods: {
@@ -820,6 +472,18 @@ export default {
 				course.sortOrder = index;
 			});
 			this.courses = data.course;
+			
+			// 构建课程 Map（O(1) 查找）
+			this.coursesMap.clear();
+			data.course.forEach(course => {
+				this.coursesMap.set(course.id, course);
+			});
+			
+			// 构建时间索引 Map（O(1) 索引查找）
+			this.sectionIndexMapObj = {};
+			this.time_section.forEach((section, index) => {
+				this.sectionIndexMapObj[section] = index;
+			});
 			var _terms = {};
 			data.term.forEach(term => {
 				let _year = term.split('-')[0];
@@ -861,37 +525,17 @@ export default {
 			let term_id = this.courses[0].id.substring(0, 4);
 			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
 
+			// 初始化已用时间缓存
+			this.updateCachedCoursedTime();
+			
 			this.loading = false;
 		},
 		chooseTerm(term) {
 			if (this.currentTerm == term) return;
-			if (this.savedCourse.length == 0) {
-				this.loading = true;
-				this.currentTerm = term;
-				localStorage['term'] = term;
-				this.fetchData();
-				return;
-			}
-			this.$swal({
-				icon: 'question',
-				title: '切換至 ' + term + ' 學期？',
-				html: '先前收藏的課程將會清空！',
-				confirmButtonText: '清空並切換',
-				cancelButtonText: '取消',
-				showCancelButton: true,
-			})
-				.then((res) => {
-					if (res.isConfirmed) {
-						this.$swal.close();
-						this.savedCourse = [];
-						this.setSavedCourse([this.savedCourse]);
-						this.$root.$emit('updateSavedCourse', this.savedCourse);
-						this.loading = true;
-						this.currentTerm = term;
-						localStorage['term'] = term;
-						this.fetchData();
-					}
-				})
+			this.loading = true;
+			this.currentTerm = term;
+			localStorage['term'] = term;
+			this.fetchData();
 		},
 		saveSearchInput() {
 			if (this.showConflict == 1) {
@@ -899,8 +543,14 @@ export default {
 			}
 			else if (this.showConflict == 2) {
 				this.courses.sort((a, b) => {
-					if (this.isConflicted(a) && !this.isConflicted(b)) return 1;
-					if (!this.isConflicted(a) && this.isConflicted(b)) return -1;
+					const aIsSaved = this.savedCourse.includes(a.id);
+					const bIsSaved = this.savedCourse.includes(b.id);
+					const aIsConflicted = this.isConflicted(a);
+					const bIsConflicted = this.isConflicted(b);
+					
+					// 被收藏的课程不置底
+					if (aIsConflicted && !bIsConflicted && !aIsSaved) return 1;
+					if (!aIsConflicted && bIsConflicted && !bIsSaved) return -1;
 					return a.sortOrder - b.sortOrder;
 				});
 			}
@@ -942,41 +592,24 @@ export default {
 			this.saveSearchInput();
 		},
 		saveRequiredCourse() {
-			if(this.savedCourse.length == 0) {
-				this.$swal({
-					title: '已收藏本班必修課', icon: 'success', toast: true,
-					timer: 3000, timerProgressBar: true,
-					position: 'bottom-start', showConfirmButton: false,
-				});
-				this.savedCourse = this.filteredCourses
-					.filter(course => course.type === '必修')
-					.map(course => course.id);
-				this.setSavedCourse([this.savedCourse]);
-				this.$root.$emit('updateSavedCourse', this.savedCourse);
-				return;
-			}
 			this.$swal({
-				icon: 'question',
-				title: '收藏本班必修課？',
-				html: '先前收藏的課程將會清空！',
-				confirmButtonText: '清空並收藏',
-				cancelButtonText: '取消',
-				showCancelButton: true,
-			})
-				.then((res) => {
-					if (res.isConfirmed) {
-						this.$swal({
-							title: '已收藏本班必修課', icon: 'success', toast: true,
-							timer: 3000, timerProgressBar: true,
-							position: 'bottom-start', showConfirmButton: false,
-						});
-						this.savedCourse = this.filteredCourses
-							.filter(course => course.type === '必修')
-							.map(course => course.id);
-						this.setSavedCourse([this.savedCourse]);
-						this.$root.$emit('updateSavedCourse', this.savedCourse);
-					}
-				});
+				title: '已收藏本班必修課', icon: 'success', toast: true,
+				timer: 3000, timerProgressBar: true,
+				position: 'bottom-start', showConfirmButton: false,
+			});
+			const requiredIds = this.filteredCourses
+				.filter(course => course.type === '必修')
+				.map(course => course.id);
+			for (const id of requiredIds) {
+				if (!this.savedCourse.includes(id)) {
+					this.savedCourse.push(id);
+				}
+			}
+			// 更新已用时间缓存
+			this.updateCachedCoursedTime();
+			if (this.showConflict == 2) this.saveSearchInput();
+			this.setSavedCourse([this.savedCourse]);
+			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		},
 		showCourse(course) {
 			if (course.id.includes('ALT_')) {
@@ -1030,14 +663,32 @@ export default {
 			} else {
 				this.savedCourse.push(course_id);
 			}
+			// 更新已用时间缓存
+			this.updateCachedCoursedTime();
 			if(this.showConflict == 2) {
 				this.saveSearchInput();
 			}
 			this.setSavedCourse([this.savedCourse]);
 			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		},
+		updateCachedCoursedTime() {
+			this.cachedCoursedTime.clear();
+			for (const courseId of this.savedCourse) {
+				const course = this.coursesMap.get(courseId);
+				if (!course?.time) continue;
+				for (const [week, timeRange] of course.time) {
+					const [startStr, endStr] = timeRange.split('~');
+					const startIdx = this.sectionIndexMapObj[startStr];
+					const endIdx = this.sectionIndexMapObj[endStr];
+					if (startIdx === undefined || endIdx === undefined) continue;
+					for (let i = startIdx; i <= endIdx; i++) {
+						this.cachedCoursedTime.add(`${week}_${i}`);
+					}
+				}
+			}
+		},
 		changeDisplayType() {
-			localStorage['displayType'] = this.displayType ? '1' : '';
+			localStorage.setItem('displayType', this.displayType === '1' ? '1' : '');
 		},
 		getSecondTermText(year, term) {
 			if(year == this.terms[0].year && term == this.terms[0].term[0]) {

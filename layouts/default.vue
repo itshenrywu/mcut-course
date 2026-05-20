@@ -277,15 +277,14 @@ h1 {
 	}
 }
 
-.is-red {
-	background-color: hsl(345, 77%, 67%);
-	color: #FFF;
-	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+.is-conflict {
+	color: hsl(345, 77%, 67%);
+	font-size: .75rem;
+	line-height: 1rem;
 }
 
-.is-t-red {
-	color: #EE7996;
-	opacity: .5;
+.is-conflict .ts-icon {
+	line-height: 1rem;
 }
 
 .course-table td.c-action {
