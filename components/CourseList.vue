@@ -65,52 +65,48 @@
 		</table>
 
 		<!-- 時間表視圖（進階課表） -->
-		<div v-else-if="displayType == ''">
-			<table class="ts-table is-dense is-celled is-definition timetable" :class="{
-				'showSat': coursesByStartTime[6] && currentClass,
-				'showOnlyMonAndThu': showOnlyMonAndThu
-			}">
-				<thead>
-					<tr>
-						<th class="time-header"></th>
-						<th v-for="w in 6" :key="'header-' + w">{{ week_text(w).replace(/\(|\)/g,'') }}</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="time-column">
+		<table v-else-if="displayType == ''" class="ts-table is-dense is-celled is-definition timetable" :class="{
+			'showSat': coursesByStartTime[6] && currentClass,
+			'showOnlyMonAndThu': showOnlyMonAndThu
+		}">
+			<thead>
+				<tr>
+					<th class="time-header"></th>
+					<th v-for="w in 6" :key="'header-' + w">{{ week_text(w).replace(/\(|\)/g,'') }}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="time-column">
+						<div
+							v-for="section in time_section"
+							v-if="section <= maxEndSection"
+							:key="section"
+							class="time-slot">
+							{{ section }}
+						</div>
+					</td>
+					<td v-for="w in 6" :key="'day-' + w" class="day-column">
+						<div v-if="processedSchedule[w]?.tooManyOverlaps" class="overlap-warning">
+							該天有過多重疊課程，<br>請改用列表檢視
+						</div>
+						<template v-else>
 							<div
-								v-for="section in time_section"
-								v-if="section <= maxEndSection"
-								:key="section"
-								class="time-slot">
-								{{ section }}
-							</div>
-						</td>
-						<td v-for="w in 6" :key="'day-' + w" class="day-column">
-							<template v-if="currentClass || (currentDept && currentDept.includes('通識'))">
-								<div v-if="processedSchedule[w]?.tooManyOverlaps" class="overlap-warning">
-									該天有過多重疊課程，<br>請改用列表檢視
+								v-for="course in (processedSchedule[w]?.courses || [])"
+								:class="['course-block', course.className]"
+								:style="course.style"
+								@click="$emit('course-click', course)"
+								>
+								<div>
+									{{ formatCourseName(course) }}
+									<small v-if="!course?.teacher?.includes('分班')"><br />{{ course.teacher }}</small>
 								</div>
-								<template v-else>
-									<div
-										v-for="course in processedSchedule[w]?.courses"
-										:class="['course-block', course.className]"
-										:style="course.style"
-										@click="$emit('course-click', course)"
-										>
-										<div>
-											{{ formatCourseName(course) }}
-											<small v-if="!course?.teacher?.includes('分班')"><br />{{ course.teacher }}</small>
-										</div>
-									</div>
-								</template>
-							</template>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+							</div>
+						</template>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </template>
 

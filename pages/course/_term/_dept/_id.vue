@@ -23,10 +23,7 @@
 				<div class="column is-6-wide mobile-fluid">
 					<div class="ts-wrap is-end-aligned">
 						<template v-if="courses && courses.length > 0">
-							<button class="ts-button is-start-icon is-secondary is-negative is-disabled" v-if="isConflicted()">
-								<span class="ts-icon is-circle-alert-icon"></span>衝堂
-							</button>
-							<button class="ts-button is-start-icon" v-else-if="savedCourse.includes(course.id)" @click="saveCourse(0)">
+							<button class="ts-button is-start-icon" v-if="savedCourse.includes(course.id)" @click="saveCourse(0)">
 								<span class="ts-icon is-star-icon"></span>已收藏
 							</button>
 							<button class="ts-button is-start-icon is-secondary" v-else @click="saveCourse(1)">
@@ -108,7 +105,13 @@
 					:class="{ 'is-12-wide': course.time.length >= 3, 'is-8-wide': course.time.length < 3 }">
 					<div class="ts-box">
 						<div class="ts-content">
-							<span class="statistic-title">上課時間</span>
+							<span class="statistic-title">
+								上課時間
+								<span v-if="isConflicted()" class="is-conflict">
+									<span class="ts-icon is-circle-alert-icon"></span>
+									衝堂
+								</span>
+							</span>
 							<div class="ts-statistic">
 								<div class="value" id="course-time">
 									<span v-for="time in course.time" class="time">
@@ -443,7 +446,9 @@ export default {
 			start: Date.now(),
 			similarCourses: [],
 			newestYear: '',
-			notFound: false
+			notFound: false,
+			coursesMap: new Map(),
+			sectionIndexMapObj: {},
 		}
 	},
 	head() {
@@ -517,6 +522,11 @@ export default {
 		...mapState({
 			showAd: state => state.show_ad
 		}),
+		savedCourseForCurrentTerm() {
+			if (!this.course.id) return [];
+			const prefix = this.course.id.substring(0, 4);
+			return this.savedCourse.filter(id => id.substring(0, 4) === prefix);
+		},
 		week_text() {
 			return (day, course) => {
 				let _day = ['(無固定)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(無固定)'][day];
@@ -526,9 +536,11 @@ export default {
 		},
 		hasCoursedTime() {
 			if (this.savedCourse.length == 0) return [];
-			if (this.savedCourse[0].substring(0, 4) !== this.course.id.substring(0, 4)) return [];
 			if (!this.courses) return [];
-			return this.savedCourse.map(course_id => {
+			const prefix = this.course.id.substring(0,4);
+			const sameTerm = this.savedCourse.filter(id => id.substring(0,4) === prefix);
+			if (sameTerm.length == 0) return [];
+			return sameTerm.map(course_id => {
 				let course = this.courses.find(course => course.id === course_id);
 				if (!course) return false;
 				return course.time.map(time => {
@@ -537,23 +549,41 @@ export default {
 					return Array.from({ length: section[1] - section[0] + 1 }, (_, i) => week + '_' + this.time_section[section[0] + i]);
 				}).flat();
 			}).flat();
-		}
+		},
 	},
 	methods: {
 		...mapMutations(['setSavedCourse']),
 		isConflicted() {
 			if (this.savedCourse.length == 0) return false;
-			if (this.savedCourse.includes(this.course.id)) return false;
 			if (!this.course.time) return false;
-			return this.course.time.some(time => {
-				let week = time[0];
-				let section = time[1].split('~').map(section => this.time_section.indexOf(section));
-				return Array.from({ length: section[1] - section[0] + 1 }, (_, i) => week + '_' + this.time_section[section[0] + i]).some(t => {
-					if (this.hasCoursedTime.includes(t)) {
-						return true;
+
+			const coursedTime = new Set();
+			for (const courseId of this.savedCourseForCurrentTerm) {
+				if (courseId === this.course.id) continue;
+				const course = this.coursesMap.get(courseId);
+				if (!course?.time) continue;
+				for (const [week, timeRange] of course.time) {
+					const [startStr, endStr] = timeRange.split('~');
+					const startIdx = this.sectionIndexMapObj[startStr];
+					const endIdx = this.sectionIndexMapObj[endStr];
+					if (startIdx === undefined || endIdx === undefined) continue;
+					for (let i = startIdx; i <= endIdx; i++) {
+						coursedTime.add(`${week}_${i}`);
 					}
-				});
-			});
+				}
+			}
+
+			for (const [week, timeRange] of this.course.time) {
+				const [startStr, endStr] = timeRange.split('~');
+				const startIdx = this.sectionIndexMapObj[startStr];
+				const endIdx = this.sectionIndexMapObj[endStr];
+				if (startIdx === undefined || endIdx === undefined) continue;
+
+				for (let i = startIdx; i <= endIdx; i++) {
+					if (coursedTime.has(`${week}_${i}`)) return true;
+				}
+			}
+			return false;
 		},
 		fetchData() {
 			this.currentTerm = localStorage['term'] ?? '';
@@ -571,6 +601,16 @@ export default {
 					this.courses = res.data.course;
 				});
 			}
+			this.coursesMap.clear();
+			if (this.courses && this.courses.length > 0) {
+				this.courses.forEach(course => {
+					this.coursesMap.set(course.id, course);
+				});
+			}
+			this.sectionIndexMapObj = {};
+			this.time_section.forEach((section, index) => {
+				this.sectionIndexMapObj[section] = index;
+			});
 			this.$axios.get('https://api.mcut-course.com/detail.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '') + '&ver=full').then(response => {
 				this.course = response.data[3] ?? {};
 				this.more = response.data[0] ?? [];
@@ -596,32 +636,6 @@ export default {
 					position: 'bottom-start', showConfirmButton: false,
 				})
 			} else {
-				if (this.savedCourse[0] && this.savedCourse[0].substring(0, 4) !== this.course.id.substring(0, 4)) {
-					this.$swal({
-						title: '無法收藏跨學期的課程',
-						icon: 'warning',
-						html: '是否要清空目前已收藏的課程，並切換至 ' + this.course.id.substring(0, 3) + '-' + this.course.id.substring(3, 4) + ' 學期？',
-						confirmButtonText: '清空並切換',
-						cancelButtonText: '取消',
-						showCancelButton: true,
-					})
-						.then((res) => {
-							if (res.isConfirmed) {
-								this.savedCourse = [this.course.id];
-								localStorage['term'] = this.course.id.substring(0, 3) + '-' + this.course.id.substring(3, 4);
-								this.setSavedCourse([this.savedCourse]);
-								this.$root.$emit('updateSavedCourse', this.savedCourse);
-								this.$swal({
-									title: '「' + this.course.name + '」已收藏', icon: 'success', toast: true,
-									timer: 3000, timerProgressBar: true,
-									position: 'bottom-start', showConfirmButton: false,
-								});
-							} else {
-								return;
-							}
-						});
-					return;
-				}
 				this.savedCourse.push(this.course.id);
 				this.$swal({
 					title: '已收藏「' + this.course.name + '」', icon: 'success', toast: true,

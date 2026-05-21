@@ -158,8 +158,8 @@
 							:displayType="displayType"
 							:timeSection="time_section"
 							:maxEndSection="maxEndSection"
-							:savedCourse="savedCourse"
-							:isActive="(course) => savedCourse.includes(course.id)"
+							:savedCourse="savedCourseForCurrentTerm"
+							:isActive="(course) => savedCourseForCurrentTerm.includes(course.id)"
 							:currentClass="currentClass"
 							:currentDept="currentDept"
 							@course-click="showCourse"
@@ -197,7 +197,7 @@
 		</div>
 		<NuxtLink to="/saved/" class="button-fab" aria-label="查看已儲存的課程">
 			<span class="ts-icon is-star-icon"></span>
-			<span class="ts-badge is-negative" v-if="savedCourse.length > 0">{{ savedCourse.length }}</span>
+			<span class="ts-badge is-negative" v-if="savedCourseForCurrentTerm.length > 0">{{ savedCourseForCurrentTerm.length }}</span>
 		</NuxtLink>
 		<loading loadingText="課表下載中" v-show="loading" />
 	</div>
@@ -303,6 +303,11 @@ export default {
 		...mapState({
 			showAd: state => state.show_ad
 		}),
+		savedCourseForCurrentTerm() {
+			if (!this.currentTerm) return [];
+			const prefix = this.currentTerm.split('-').join('');
+			return this.savedCourse.filter(id => id.startsWith(prefix));
+		},
 		week_text() {
 			return (day, course) => {
 				let _day = ['(其他)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(其他)'][day];
@@ -362,7 +367,7 @@ export default {
 				});
 			}
 			if (this.showConflict == 0) {
-				filtered = filtered.filter(course => !this.isConflicted(course) || this.savedCourse.includes(course.id));
+				filtered = filtered.filter(course => !this.isConflicted(course) || this.savedCourseForCurrentTerm.includes(course.id));
 			}
 			if (this.currentDept.includes('社會組') || this.currentDept.includes('外文組')) {
 				filtered = filtered.filter(course => !course.id.includes('ALT_'));
@@ -391,9 +396,9 @@ export default {
 				if (this.savedCourse.length == 0) return false;
 				if (!_course.time) return false;
 
-				// 重建已用时间集合，排除当前课程本身
+				// 重建已用时间集合（只計算目前學期收藏），排除当前课程本身
 				const coursedTime = new Set();
-				for (const courseId of this.savedCourse) {
+				for (const courseId of this.savedCourseForCurrentTerm) {
 					if (courseId === _course.id) continue; // 排除当前课程
 					const course = this.coursesMap.get(courseId);
 					if (!course?.time) continue;
@@ -423,7 +428,7 @@ export default {
 			}
 		},
 		hasCoursedTime() {
-			return this.savedCourse.map(course_id => {
+			return this.savedCourseForCurrentTerm.map(course_id => {
 				let course = this.courses.find(course => course.id === course_id);
 				if (!course) return false;
 				return course.time.map(time => {
@@ -542,9 +547,9 @@ export default {
 				this.courses.sort((a, b) => a.sortOrder - b.sortOrder);
 			}
 			else if (this.showConflict == 2) {
-				this.courses.sort((a, b) => {
-					const aIsSaved = this.savedCourse.includes(a.id);
-					const bIsSaved = this.savedCourse.includes(b.id);
+					this.courses.sort((a, b) => {
+					const aIsSaved = this.savedCourseForCurrentTerm.includes(a.id);
+					const bIsSaved = this.savedCourseForCurrentTerm.includes(b.id);
 					const aIsConflicted = this.isConflicted(a);
 					const bIsConflicted = this.isConflicted(b);
 					
@@ -673,7 +678,7 @@ export default {
 		},
 		updateCachedCoursedTime() {
 			this.cachedCoursedTime.clear();
-			for (const courseId of this.savedCourse) {
+			for (const courseId of this.savedCourseForCurrentTerm) {
 				const course = this.coursesMap.get(courseId);
 				if (!course?.time) continue;
 				for (const [week, timeRange] of course.time) {

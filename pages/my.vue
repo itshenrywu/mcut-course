@@ -12,10 +12,19 @@
 								<span class="ts-icon is-import-icon"></span>
 								從學校系統匯入
 							</button>
-							<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="importFromSaved()" v-show="savedCourses.length > 0">
+							<button class="ts-button is-secondary is-small is-fluid is-start-icon" data-dropdown="term-dropdown" v-show="savedCourses.length > 0">
 								<span class="ts-icon is-star-icon"></span>
 								從「收藏的課程」匯入
 							</button>
+							<div class="ts-dropdown" data-position="bottom-start" id="term-dropdown" style="height:60vh" v-if="savedCourses.length > 0">
+								<template v-for="year_group of terms">
+									<div class="header">{{ year_group.year }} 學年</div>
+									<div class="item is-indented" v-for="term of year_group.term" @click="chooseTermAndImport(year_group.year+'-'+term)">
+										第 {{ term }} 學期
+										<span class="description">{{ savedCounts[year_group.year + '-' + term] || 0 }}</span>
+									</div>
+								</template>
+							</div>
 							<div class="ts-grid" style="width: 100%;">
 								<div class="column is-8-wide">
 									<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="clickCell(-1, -1)">
@@ -32,6 +41,7 @@
 							</div>
 						</div>
 					</div>
+
 
 					<div>
 						<div class="ts-text is-label has-bottom-spaced-small">背景</div>
@@ -645,8 +655,23 @@
 import { mapState } from 'vuex';
 import iro from '@jaames/iro';
 export default {
-	async asyncData({ $axios, params, payload }) {
-		
+	async asyncData({ $axios }) {
+
+		let _terms = {};
+		const list = await $axios.get('https://api.mcut-course.com/list.php');
+		list.data.term.forEach(term => {
+			let _year = term.split('-')[0];
+			let _term = term.split('-')[1];
+			if (!_terms[_year]) _terms[_year] = [];
+			_terms[_year].push(_term);
+		});
+		let terms = Object.entries(_terms)
+			.sort((a, b) => Number(b[0]) - Number(a[0]))
+			.map(([year, term]) => ({ year: year, term: term }));
+
+		const default_term = list.data.course[0].id.substring(0, 3) + '-' + list.data.course[0].id.substring(3, 4);
+
+		return { terms, default_term };
 	},
 	head() {
 		return {
@@ -712,6 +737,9 @@ export default {
 			widgetColor: '#ffffff',
 
 			backgroundImage: null,
+			terms: [],
+			default_term: null,
+			currentTerm: undefined,
 
 			timeInfo: {
 				'0.5': ["07:00", "07:50"],
@@ -895,6 +923,16 @@ export default {
 			});
 			return used_secion;
 		},
+		savedCounts() {
+			const counts = {};
+			(this.savedCourses || []).forEach(id => {
+				if (!id || id.length < 4) return;
+				const termNoHyphen = id.substring(0, 4); // e.g. '1121'
+				const key = termNoHyphen.substring(0, 3) + '-' + termNoHyphen.substring(3, 4); // '112-1'
+				counts[key] = (counts[key] || 0) + 1;
+			});
+			return counts;
+		},
 		isIos() {
 			if (typeof navigator !== "undefined") {
 				return /iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -1009,8 +1047,8 @@ export default {
 							options: {
 								sliderType: 'hue'
 							}
-						},
-					]
+							},
+						],
 				});
 				pickerElement.colorPicker = colorPicker;
 				colorPicker.on('color:change', (color) => {
@@ -1021,6 +1059,10 @@ export default {
 				colorPicker.on('input:end', (color) => {});
 			}
 			this.updateTimetable(false);
+		},
+		chooseTermAndImport(term) {
+			this.currentTerm = term;
+			this.importFromSaved();
 		},
 
 		updateBackgroundColor() {
@@ -1166,8 +1208,10 @@ export default {
 		async importFromSaved() {
 			this.loading = true;
 			const savedCourse = this.savedCourses;
-			if (savedCourse.length === 0) return;
-			this.currentTerm = savedCourse[0].substring(0, 3) + '-' + savedCourse[0].substring(3, 4);
+			if (savedCourse.length === 0) {
+				this.loading = false;
+				return;
+			}
 			const now = new Date().getTime();
 			const storedData = localStorage['courseData_' + this.currentTerm];
 			const storedTime = localStorage['courseDataTime_' + this.currentTerm];
@@ -1182,6 +1226,16 @@ export default {
 					localStorage['courseDataTime_' + this.currentTerm] = now;
 					data = res.data;
 				} catch (e) {}
+			}
+
+			if (!data.course || data.course.length === 0) {
+				this.loading = false;
+				this.$swal({
+					title: '這個學期沒有課程', icon: 'info', toast: true,
+					timer: 3000, timerProgressBar: true,
+					position: 'bottom-start', showConfirmButton: false,
+				});
+				return;
 			}
 			
 			let success = 0, fail = 0;
@@ -1225,6 +1279,13 @@ export default {
 			if(success > 0) {
 				this.sortCourse();
 				this.updateTimetable();
+			}
+			else if (fail === 0) {
+				this.$swal({
+					title: '這個學期沒有已收藏的課程', icon: 'info', toast: true,
+					timer: 3000, timerProgressBar: true,
+					position: 'bottom-start', showConfirmButton: false,
+				});
 			}
 			this.loading = false;
 		},
@@ -1809,6 +1870,7 @@ export default {
 		});
 		this.editingCourse = Object.freeze(this.defaultCourse);
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
+		// `currentTerm` should be provided by `chooseTermAndImport`; do not set it here.
 		this.$axios.get('/scriptable.min.js?v=5').then(res => {
 			this.scriptableCodeFile = res.data;
 		});

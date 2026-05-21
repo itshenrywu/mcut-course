@@ -3,31 +3,55 @@
 		<div class="ts-container has-top-padded-large is-fitted">
 			<div class="ts-grid is-compact is-middle-aligned mobile-padded">
 				<div class="column is-13-wide">
-					<h1 class="ts-header is-huge has-vertically-padded">收藏的課程
-						<div class="ts-badge is-start-spaced is-outlined" v-if="currentTerm && currentTerm!=''">{{ currentTerm }} 學期</div>
+					<h1 class="ts-header is-huge has-vertically-padded">
+						收藏的課程
+						<div class="ts-select is-basic has-start-spaced" v-if="terms && terms.length">
+							<div class="content" data-dropdown="term-dropdown">{{ currentTerm ? currentTerm.split('-')[0] + '-' + currentTerm.split('-')[1] : '' }}</div>
+							<div class="ts-dropdown" data-position="bottom-start" id="term-dropdown" style="height:60vh">
+								<template v-for="year_group of terms">
+									<div class="header">{{ year_group.year }} 學年</div>
+									<div class="item is-indented" v-for="term of year_group.term" :class="{ 'is-selected': year_group.year+'-'+term == currentTerm }"
+										@click="chooseTerm(year_group.year+'-'+term)">
+										第 {{ term }} 學期
+										<span class="description">{{ savedCounts[year_group.year + '-' + term] || 0 }}</span>
+									</div>
+								</template>
+							</div>
+						</div>
+						<div class="ts-badge is-start-spaced is-outlined" v-else-if="currentTerm && currentTerm!=''">{{ currentTerm }} 學期</div>
 					</h1>
 				</div>
 				<div class="column is-3-wide">
 					<div class="ts-wrap is-end-aligned">
 						<button class="ts-button is-negative is-outlined mobile-hidden"
-							v-if="savedCourse.length > 0"
-							@click="clearSavedCourse()">
+							v-if="savedCourseForCurrentTerm.length > 0"
+							@click="clearSavedCurrentTerm()">
 							<span class="ts-icon is-end-spaced is-trash-icon"></span> 清除
 						</button>
+						<!-- <button class="ts-button is-negative is-outlined mobile-hidden"
+							v-if="savedCourse.length > 0"
+							@click="clearSavedCourse()">
+							<span class="ts-icon is-end-spaced is-trash-icon"></span> 清除全部
+						</button> -->
 						<button class="ts-button is-icon is-negative is-outlined mobile-only"
 							v-if="savedCourse.length > 0"
 							@click="clearSavedCourse()">
 							<span class="ts-icon is-trash-icon"></span>
 						</button>
+						<!-- <button class="ts-button is-icon is-secondary is-outlined mobile-only"
+							v-if="savedCourseForCurrentTerm.length > 0"
+							@click="clearSavedCurrentTerm()">
+							<span class="ts-icon is-trash-icon"></span>
+						</button> -->
 					</div>
 				</div>
 			</div>
-			<div class="ts-box" v-if="savedCourse.length > 0 && filteredCourses.length < savedCourse.length">
+			<div class="ts-box" v-if="savedCourseForCurrentTerm.length > 0 && filteredCourses.length < savedCourseForCurrentTerm.length">
 				<div class="ts-content">
 					<div class="ts-text is-description has-bottom-spaced-small">
-						<span class="ts-badge is-small is-dense is-negative">提醒</span> 收藏的課程中有 {{ savedCourse.length - filteredCourses.length }} 門課程已下架，請重新搜尋並收藏。
+						<span class="ts-badge is-small is-dense is-negative">提醒</span> 本學期收藏的課程中有 {{ savedCourseForCurrentTerm.length - filteredCourses.length }} 門課程已下架，請重新搜尋並收藏。
 					</div>
-					<button class="ts-button is-primary is-outlined" @click="clearSavedRemovedCourse()">清除已下架的課程</button>
+					<button class="ts-button is-primary is-outlined" @click="clearSavedRemovedCourse()">清除本學期已下架的課程</button>
 				</div>
 			</div>
 			<div class="ts-grid has-top-spaced mobile-padded" v-if="filteredCourses.length > 0">
@@ -83,8 +107,8 @@
 					:displayType="displayType"
 					:timeSection="time_section"
 					:maxEndSection="maxEndSection"
-					:savedCourse="savedCourse"
-					:isActive="(course) => savedCourse.includes(course.id)"
+					:savedCourse="savedCourseForCurrentTerm"
+					:isActive="(course) => savedCourseForCurrentTerm.includes(course.id)"
 					:currentClass="currentClass"
 					:currentDept="currentDept"
 					:enableAutoShowOnlyMonAndThu="false"
@@ -94,7 +118,7 @@
 			</div>
 			<div class="ts-blankslate" v-else>
 				<span class="ts-icon is-circle-alert-icon"></span>
-				<div class="header">目前還沒有收藏的課程</div>
+				<div class="header">本學期還沒有收藏的課程</div>
 				<div class="description">快到「全校課表」收藏有興趣的課程吧！</div>
 			</div>
 			<br>
@@ -131,8 +155,23 @@ export default {
 	components: {
 		CourseList
 	},
-	async asyncData({ $axios, params, payload }) {
+	async asyncData({ $axios }) {
 
+		let _terms = {};
+		const list = await $axios.get('https://api.mcut-course.com/list.php');
+		list.data.term.forEach(term => {
+			let _year = term.split('-')[0];
+			let _term = term.split('-')[1];
+			if (!_terms[_year]) _terms[_year] = [];
+			_terms[_year].push(_term);
+		});
+		let terms = Object.entries(_terms)
+		.sort((a, b) => Number(b[0]) - Number(a[0]))
+		.map(([year, term]) => ({ year: year, term: term }));
+
+		const default_term = list.data.course[0].id.substring(0, 3) + '-' + list.data.course[0].id.substring(3, 4);
+
+		return { terms, default_term };
 	},
 	head() {
 		return {
@@ -149,6 +188,8 @@ export default {
 	},
 	data() {
 		return {
+			terms: [],
+			default_term: null,
 			time_section: ['0.5', '1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
 			info: [],
 			loading: true,
@@ -208,24 +249,52 @@ export default {
 			}
 		}
 
-		if (this.savedCourse.length > 0) {
+		// 優先使用 localStorage 裡的學期設定
+		if (localStorage['term']) {
+			this.currentTerm = localStorage['term'];
+		} else if (this.savedCourse.length > 0) {
 			let term_id = this.savedCourse[0].substring(0, 4);
 			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
-			this.fetchData();
+			localStorage['term'] = this.currentTerm;
 		} else {
-			this.loading = false;
+			this.currentTerm = this.default_term || '';
 		}
+		if (this.currentTerm) this.fetchData();
+		else this.loading = false;
 	},
 	computed: {
 		...mapState({
 			showAd: state => state.show_ad
 		}),
+		savedCourseForCurrentTerm() {
+			if (!this.currentTerm) return [];
+			const prefix = (this.currentTerm || '').split('-').join('');
+			return this.savedCourse.filter(id => id.startsWith(prefix));
+		},
 		filteredCourses() {
-			return this.courses.filter(course => this.savedCourse.includes(course.id));
+			return this.courses.filter(course => this.savedCourseForCurrentTerm.includes(course.id));
+		}
+		,
+		savedCounts() {
+			const counts = {};
+			(this.savedCourse || []).forEach(id => {
+				if (!id || id.length < 4) return;
+				const termNoHyphen = id.substring(0, 4); // e.g. '1121'
+				const key = termNoHyphen.substring(0, 3) + '-' + termNoHyphen.substring(3, 4); // '112-1'
+				counts[key] = (counts[key] || 0) + 1;
+			});
+			return counts;
 		}
 	},
 	methods: {
 		...mapMutations(['setSavedCourse']),
+		chooseTerm(term) {
+			if (this.currentTerm == term) return;
+			this.loading = true;
+			this.currentTerm = term;
+			localStorage['term'] = term;
+			this.fetchData();
+		},
 		fetchData() {
 			const storedData = localStorage['courseData_' + this.currentTerm];
 			const storedTime = localStorage['courseDataTime_' + this.currentTerm];
@@ -283,10 +352,34 @@ export default {
 					}
 				});
 		},
-		clearSavedRemovedCourse() {
-			this.savedCourse = this.savedCourse.filter(id => this.courses.some(course => course.id === id));
+		clearSavedCurrentTerm() {
 			this.$swal({
-				title: '已清除已下架的課程', icon: 'success', toast: true,
+				icon: 'question',
+				title: '清除本學期收藏的課程？',
+				confirmButtonText: '清除',
+				cancelButtonText: '取消',
+				showCancelButton: true,
+				confirmButtonColor: 'var(--ts-negative-600)',
+			})
+				.then((res) => {
+					if (res.isConfirmed) {
+						const prefix = (this.currentTerm || '').split('-').join('');
+						this.savedCourse = this.savedCourse.filter(id => !id.startsWith(prefix));
+						this.setSavedCourse([this.savedCourse]);
+						this.$swal({
+							title: '已移除目前學期的收藏', icon: 'success', toast: true,
+							timer: 3000, timerProgressBar: true,
+							position: 'bottom-start', showConfirmButton: false,
+						});
+					}
+				});
+		},
+		clearSavedRemovedCourse() {
+			const prefix = (this.currentTerm || '').split('-').join('');
+			const currentTermCourseIds = new Set(this.filteredCourses.map(course => course.id));
+			this.savedCourse = this.savedCourse.filter(id => !id.startsWith(prefix) || currentTermCourseIds.has(id));
+			this.$swal({
+				title: '已清除本學期已下架的課程', icon: 'success', toast: true,
 				timer: 3000, timerProgressBar: true,
 				position: 'bottom-start', showConfirmButton: false,
 			});
