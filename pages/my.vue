@@ -1870,7 +1870,6 @@ export default {
 		});
 		this.editingCourse = Object.freeze(this.defaultCourse);
 		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
-		// `currentTerm` should be provided by `chooseTermAndImport`; do not set it here.
 		this.$axios.get('/scriptable.min.js?v=5').then(res => {
 			this.scriptableCodeFile = res.data;
 		});

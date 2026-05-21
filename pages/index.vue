@@ -250,7 +250,7 @@ export default {
 		async init() {
 			this.loading = true;
 			this.savedCourse = await this.$store.dispatch('getSavedCourse');
-			// 優先使用 localStorage 裡的學期設定
+
 			if (localStorage['term']) {
 				this.currentTerm = localStorage['term'];
 			} else if (this.savedCourse && this.savedCourse.length > 0) {

@@ -249,7 +249,6 @@ export default {
 			}
 		}
 
-		// 優先使用 localStorage 裡的學期設定
 		if (localStorage['term']) {
 			this.currentTerm = localStorage['term'];
 		} else if (this.savedCourse.length > 0) {
@@ -313,10 +312,8 @@ export default {
 		processData(data) {
 			this.courses = data.course;
 			
-			// 从已保存的课程中提取 currentClass 和 currentDept，用于进阶课表显示
-			if (this.filteredCourses.length > 0) {
-				const firstCourse = this.filteredCourses[0];
-				// 如果所有课程都来自同一班级，则启用进阶课表
+		if (this.filteredCourses.length > 0) {
+			const firstCourse = this.filteredCourses[0];
 				const uniqueClasses = new Set(this.filteredCourses.map(c => c.year + ' ' + c.class));
 				const uniqueDepts = new Set(this.filteredCourses.map(c => c.dept));
 				

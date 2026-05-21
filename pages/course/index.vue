@@ -275,7 +275,6 @@ export default {
 
 			displayType: '',
 			
-			// 性能优化缓存
 			coursesMap: new Map(),
 			sectionIndexMapObj: {},
 			cachedCoursedTime: new Set(),
@@ -396,7 +395,7 @@ export default {
 				if (this.savedCourse.length == 0) return false;
 				if (!_course.time) return false;
 
-				// 重建已用时间集合（只計算目前學期收藏），排除当前课程本身
+
 				const coursedTime = new Set();
 				for (const courseId of this.savedCourseForCurrentTerm) {
 					if (courseId === _course.id) continue; // 排除当前课程
@@ -478,13 +477,11 @@ export default {
 			});
 			this.courses = data.course;
 			
-			// 构建课程 Map（O(1) 查找）
 			this.coursesMap.clear();
 			data.course.forEach(course => {
 				this.coursesMap.set(course.id, course);
 			});
 			
-			// 构建时间索引 Map（O(1) 索引查找）
 			this.sectionIndexMapObj = {};
 			this.time_section.forEach((section, index) => {
 				this.sectionIndexMapObj[section] = index;
@@ -530,7 +527,6 @@ export default {
 			let term_id = this.courses[0].id.substring(0, 4);
 			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
 
-			// 初始化已用时间缓存
 			this.updateCachedCoursedTime();
 			
 			this.loading = false;
@@ -553,7 +549,6 @@ export default {
 					const aIsConflicted = this.isConflicted(a);
 					const bIsConflicted = this.isConflicted(b);
 					
-					// 被收藏的课程不置底
 					if (aIsConflicted && !bIsConflicted && !aIsSaved) return 1;
 					if (!aIsConflicted && bIsConflicted && !bIsSaved) return -1;
 					return a.sortOrder - b.sortOrder;
@@ -610,7 +605,6 @@ export default {
 					this.savedCourse.push(id);
 				}
 			}
-			// 更新已用时间缓存
 			this.updateCachedCoursedTime();
 			if (this.showConflict == 2) this.saveSearchInput();
 			this.setSavedCourse([this.savedCourse]);
@@ -668,7 +662,6 @@ export default {
 			} else {
 				this.savedCourse.push(course_id);
 			}
-			// 更新已用时间缓存
 			this.updateCachedCoursedTime();
 			if(this.showConflict == 2) {
 				this.saveSearchInput();
