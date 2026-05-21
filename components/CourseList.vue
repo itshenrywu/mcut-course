@@ -66,7 +66,7 @@
 
 		<!-- 時間表視圖（進階課表） -->
 		<table v-else-if="displayType == ''" class="ts-table is-dense is-celled is-definition timetable" :class="{
-			'showSat': coursesByStartTime[6] && currentClass,
+			'showSat': coursesByStartTime[6] && (currentClass || !enableAutoShowOnlyMonAndThu),
 			'showOnlyMonAndThu': showOnlyMonAndThu
 		}">
 			<thead>
