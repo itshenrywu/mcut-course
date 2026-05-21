@@ -58,7 +58,7 @@
 								<option value="" selected="selected">不限</option>
 								<option>必修</option>
 								<option>選修</option>
-								<option value="mixed" v-if="canShowClassMixedCourses">班級必修 + 年級選修</option>
+								<option value="mixed" v-if="canShowClassMixedCourses">班級必修 + {{ ['','一','二','三','四'][currentClass.charAt(0)] || '' }}年級選修</option>
 								<option v-if="currentTerm.split('-')[1] >= '3'">重修</option>
 								<template v-if="currentDept && currentDept.includes('通識')">
 									<option v-for="type in generalCourseTypes">{{ type }}</option>
@@ -70,7 +70,7 @@
 					<div>
 						<div class="ts-text is-label has-bottom-padded-small">
 							衝堂的課程
-							<span data-position="top" data-tooltip="此設定不影響已收藏的課程" class="ts-icon is-circle-info-icon"></span>
+							<span data-position="top" data-tooltip="僅生效於列表檢視中未收藏的課程" class="ts-icon is-circle-info-icon"></span>
 						</div>
 						<div class="ts-selection is-fluid">
 							<label class="item">
@@ -145,7 +145,7 @@
 							</label>
 						</div>
 					</div>
-					<div class="ts-box has-bottom-spaced" v-if="displayType == '' && ((!currentClass && !currentDept.includes('通識')) || !currentDept)">
+					<div class="ts-box has-bottom-spaced" v-if="isTimetableUnavailable">
 						<div class="ts-content">
 							<span class="ts-text is-negative is-bold">課表檢視無法在此搜尋條件下使用</span><br>
 							請先選擇開課單位及班級以使用課表檢視，或改用列表檢視。
@@ -153,7 +153,7 @@
 					</div>
 					<div class="ts-box has-bottom-spaced">
 						<CourseList
-							:courses="filteredCourses"
+							:courses="displayCourses"
 							:allCourses="courses"
 							:displayType="displayType"
 							:timeSection="time_section"
@@ -318,12 +318,19 @@ export default {
 			let info = [];
 			if(this.currentTerm) info.push(this.currentTerm.split('-')[0] + '-' + this.currentTerm.split('-')[1] + ' 學期');
 			if(this.currentDept) info.push(this.currentDept + (this.currentClass ? ' ' + this.currentClass : '全年級'));
-			if(this.currentType == 'mixed') info.push('班級必修 + 年級選修');
+			if(this.currentType == 'mixed') info.push('班級必修 + ' + (this.currentClass ? ['','一','二','三','四'][this.currentClass.charAt(0)] || '' : '') + '年級選修');
 			else if(this.currentType) info.push(this.currentType.includes('-') ? this.currentType.split('- ')[1] : this.currentType);
 			if(this.searchQuery) info.push('關鍵字：' + this.searchQuery);
 			if(info.length == 0) return '修改篩選條件';
 			if(info.length <= 1) info.push('全部課程');
 			return info.join(' / ');
+		},
+		isTimetableUnavailable() {
+			return this.displayType == '' && ((!this.currentClass && !this.currentDept.includes('通識')) || !this.currentDept);
+		},
+		displayCourses() {
+			if (this.isTimetableUnavailable) return [];
+			return this.filteredCourses;
 		},
 		filteredCourses() {
 			let filtered = this.courses;

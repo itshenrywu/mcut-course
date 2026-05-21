@@ -28,19 +28,19 @@
 							@click="clearSavedCurrentTerm()">
 							<span class="ts-icon is-end-spaced is-trash-icon"></span> 清除
 						</button>
+						<button class="ts-button is-icon is-negative is-outlined mobile-only"
+							v-if="savedCourseForCurrentTerm.length > 0"
+							@click="clearSavedCurrentTerm()">
+							<span class="ts-icon is-trash-icon"></span>
+						</button>
 						<!-- <button class="ts-button is-negative is-outlined mobile-hidden"
 							v-if="savedCourse.length > 0"
 							@click="clearSavedCourse()">
 							<span class="ts-icon is-end-spaced is-trash-icon"></span> 清除全部
-						</button> -->
+						</button>
 						<button class="ts-button is-icon is-negative is-outlined mobile-only"
 							v-if="savedCourse.length > 0"
 							@click="clearSavedCourse()">
-							<span class="ts-icon is-trash-icon"></span>
-						</button>
-						<!-- <button class="ts-button is-icon is-secondary is-outlined mobile-only"
-							v-if="savedCourseForCurrentTerm.length > 0"
-							@click="clearSavedCurrentTerm()">
 							<span class="ts-icon is-trash-icon"></span>
 						</button> -->
 					</div>
@@ -195,7 +195,6 @@ export default {
 			loading: true,
 			courses: [],
 			displayType: '',
-			maxEndSection: 8,
 			currentTerm: undefined,
 			savedCourse: [],
 			currentClass: '',
@@ -274,6 +273,18 @@ export default {
 			return this.courses.filter(course => this.savedCourseForCurrentTerm.includes(course.id));
 		}
 		,
+		maxEndSection() {
+			let maxSection = 8;
+			(this.filteredCourses || []).forEach(course => {
+				(course.time || []).forEach(time => {
+					const endSection = Number((time[1] || '').split('~')[1]);
+					if (!Number.isNaN(endSection) && endSection > maxSection) {
+						maxSection = endSection;
+					}
+				});
+			});
+			return maxSection;
+		},
 		savedCounts() {
 			const counts = {};
 			(this.savedCourse || []).forEach(id => {

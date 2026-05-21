@@ -795,7 +795,7 @@ export default {
 		async showFindCourse(sid) {
 			if(this.findCourses(sid).length == 0) return;
 			this.$swal({
-				title: '開設於 ' + this.currentRuleTerm.split('-')[0] + ' 學年第 ' + this.currentRuleTerm.split('-')[1] + ' 學期的相符課程 (' + this.findCourses(sid).length + ')',
+				title: '開設於 ' + this.currentRuleTerm.split('-')[0] + '-' + this.currentRuleTerm.split('-')[1] + ' 的相符課程 (' + this.findCourses(sid).length + ')',
 				customClass: {
 					container: 'similar-courses',
 				},
