@@ -1,6 +1,13 @@
-export const state = () => ({
-	show_ad: false
-})
+export const state = () => {
+	let savedCourse = [];
+	if (typeof localStorage !== 'undefined') {
+		try { savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]'); } catch(e) {}
+	}
+	return {
+		show_ad: false,
+		savedCourse,
+	};
+}
 
 export const mutations = {
 	setShowAd(state, value) {
@@ -21,6 +28,55 @@ export const mutations = {
 }
 
 export const actions = {
+	addSavedCourse(context, courseId) {
+		let savedCourse = [];
+		try { savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]'); } catch(e) {}
+		if (!savedCourse.includes(courseId)) savedCourse.push(courseId);
+		context.commit('setSavedCourse', [savedCourse]);
+	},
+	removeSavedCourse(context, courseId) {
+		let savedCourse = [];
+		try { savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]'); } catch(e) {}
+		savedCourse = savedCourse.filter(id => id !== courseId);
+		context.commit('setSavedCourse', [savedCourse]);
+	},
+	toggleSavedCourse(context, courseId) {
+		let savedCourse = [];
+		try { savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]'); } catch(e) {}
+		if (savedCourse.includes(courseId)) {
+			savedCourse = savedCourse.filter(id => id !== courseId);
+		} else {
+			savedCourse.push(courseId);
+		}
+		context.commit('setSavedCourse', [savedCourse]);
+	},
+	addMultipleSavedCourses(context, courseIds) {
+		let savedCourse = [];
+		try { savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]'); } catch(e) {}
+		courseIds.forEach(id => { if (!savedCourse.includes(id)) savedCourse.push(id); });
+		context.commit('setSavedCourse', [savedCourse]);
+	},
+	replaceSavedCourse(context, courses) {
+		context.commit('setSavedCourse', [courses]);
+	},
+	clearSavedCourse(context) {
+		context.commit('setSavedCourse', [[],  false]);
+	},
+	clearSavedCourseByTerm(context, term) {
+		let savedCourse = [];
+		try { savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]'); } catch(e) {}
+		const prefix = term.split('-').join('');
+		savedCourse = savedCourse.filter(id => !id.startsWith(prefix));
+		context.commit('setSavedCourse', [savedCourse]);
+	},
+	clearSavedRemovedCourse(context, { term, availableIds }) {
+		let savedCourse = [];
+		try { savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]'); } catch(e) {}
+		const prefix = term.split('-').join('');
+		const availableSet = new Set(availableIds);
+		savedCourse = savedCourse.filter(id => !id.startsWith(prefix) || availableSet.has(id));
+		context.commit('setSavedCourse', [savedCourse]);
+	},
 	async getSavedCourse(context) {
 		let savedCourse = [];
 		try {
@@ -61,59 +117,59 @@ export const actions = {
 					}
 
 					if(isDifferent) {
-						let sameList = [];
-						local.forEach(courseId => {
-							online.forEach(onlineCourseId => {
-								if(courseId == onlineCourseId) {
-									sameList.push(courseId);
-								}
-							});
-						});
+						const toggleRow = (id, label) =>
+							`<label style="display:flex;align-items:center;gap:8px;margin-bottom:6px;cursor:pointer;font-weight:bold">` +
+							`<input type="checkbox" id="${id}" checked style="width:16px;height:16px;flex-shrink:0">` +
+							`<span>${label}</span></label>`;
 
-						const date = new Date(res.data.updatedAt);
-						let updatedAt = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' ' + date.getHours().toString().padStart(2,'0') + ':' + date.getMinutes().toString().padStart(2,'0');
+						const courseRow = (courseId, cls) => {
+							const termRaw = courseId.substring(0, 4);
+							const term = termRaw.substring(0, 3) + '-' + termRaw.substring(3, 4);
+							return `<label style="display:flex;align-items:center;gap:8px;margin:4px 0;cursor:pointer;padding-left:24px">` +
+								`<input type="checkbox" value="${courseId}" class="${cls}" checked style="width:16px;height:16px;flex-shrink:0">` +
+								`<span>${term} ${res.data.courseData[courseId].name}</span>` +
+								`</label>`;
+						};
 
-						let html = '<div class="ts-grid is-compact is-stretched compare" style="text-align:left">\
-							<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense">\
-								<span class="ts-badge is-small is-dense" style="background:var(--ts-static-gray-500);color:var(--ts-static-gray-50)">當前收藏的課程 ('+local.length+')</span>' +
-								'<br><small>' + local[0].substring(0, 3) + '-' + local[0].substring(3, 4) + ' 學期</small><br>' +
-								local.map(courseId => '<div class="compare-course '+(sameList.includes(courseId)?'':' has-diff')+'">' +
-									res.data.courseData[courseId].name +
-									'</div>'
-								).join('') +
-							'</div></div></div>\
-							<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense">\
-								<span class="ts-badge is-small is-dense" style="background:var(--ts-static-primary-600);color:var(--ts-static-gray-50)">收藏於帳號中的課程 ('+online.length+')</span>' +
-								'<br><small>' + online[0].substring(0, 3) + '-' + online[0].substring(3, 4) + ' 學期 | 儲存於 ' + updatedAt + '</small><br>' +
-								online.map(courseId => '<div class="compare-course '+(sameList.includes(courseId)?'':' has-diff')+'">' +
-									res.data.courseData[courseId].name +
-									'</div>'
-								).join('') +
-							'</div></div></div>\
-						</div><br><div class="ts-text is-description is-start-aligned">\
-							這可能是因為您先前有在別的裝置登入並收藏課程，但跟目前登入前的課程不一致。紅色代表有差異的課程，請選擇一個同步方式。\
-						</div>';
-						
+						let html = '<div style="text-align:left">' +
+							toggleRow('toggle-local', '登入前收藏的課程') +
+							local.map(id => courseRow(id, 'conflict-local')).join('') +
+							'<div style="margin-top:14px"></div>' +
+							toggleRow('toggle-online', '儲存於帳號中的課程') +
+							online.map(id => courseRow(id, 'conflict-online')).join('') +
+							'</div>';
+
+						const syncToggle = (toggleId, cls) => {
+							const toggle = document.getElementById(toggleId);
+							const boxes = [...document.querySelectorAll('.' + cls)];
+							toggle.addEventListener('change', () => boxes.forEach(b => b.checked = toggle.checked));
+							boxes.forEach(b => b.addEventListener('change', () => {
+								const all = boxes.every(x => x.checked);
+								const none = boxes.every(x => !x.checked);
+								toggle.indeterminate = !all && !none;
+								toggle.checked = all;
+							}));
+						};
+
 						const sres = await this.$swal({
 							icon: 'warning',
-							title: '當前收藏的課程與收藏於帳號中的課程不一致',
+							title: '請選擇要保留的課程',
 							html: html,
-							confirmButtonText: '清除當前收藏的課程，使用收藏於帳號中的課程',
-							cancelButtonText: '清除收藏於帳號中的課程，使用當前收藏的課程',
-							showCancelButton: true,
+							confirmButtonText: '儲存',
+							showCancelButton: false,
 							allowOutsideClick: false,
 							allowEscapeKey: false,
-							focusConfirm: false,
-							reverseButtons: true,
-							didOpen() {
-								document.querySelectorAll('.swal2-actions button')[0].blur();
+							didOpen: () => {
+								syncToggle('toggle-local', 'conflict-local');
+								syncToggle('toggle-online', 'conflict-online');
+							},
+							preConfirm: () => {
+								const checked = [...document.querySelectorAll('.conflict-local:checked, .conflict-online:checked')];
+								return [...new Set(checked.map(el => el.value))];
 							}
 						});
 						if (sres.isConfirmed) {
-							savedCourse = online;
-							context.commit('setSavedCourse', [savedCourse, false]);
-						} else {
-							savedCourse = local;
+							savedCourse = sres.value;
 							context.commit('setSavedCourse', [savedCourse]);
 						}
 					} else {

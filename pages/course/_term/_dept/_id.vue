@@ -423,7 +423,7 @@
 }
 </style>
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState } from 'vuex'
 export default {
 	async asyncData({ params, payload }) {
 		if (payload) {
@@ -441,7 +441,6 @@ export default {
 			office_time: [],
 			office_time_new: [],
 			schedule: [],
-			savedCourse: [],
 			loading: true,
 			start: Date.now(),
 			similarCourses: [],
@@ -511,7 +510,7 @@ export default {
 			this.$router.push('/');
 			return;
 		}
-		this.savedCourse = await this.$store.dispatch('getSavedCourse');
+		await this.$store.dispatch('getSavedCourse');
 		if((!this.course || !this.course.name) && location.hostname != 'localhost') {
 			this.notFound = true;
 			return;
@@ -520,7 +519,8 @@ export default {
 	},
 	computed: {
 		...mapState({
-			showAd: state => state.show_ad
+			showAd: state => state.show_ad,
+			savedCourse: state => state.savedCourse,
 		}),
 		savedCourseForCurrentTerm() {
 			if (!this.course.id) return [];
@@ -552,7 +552,6 @@ export default {
 		},
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 		isConflicted() {
 			if (this.savedCourse.length == 0) return false;
 			if (!this.course.time) return false;
@@ -627,24 +626,21 @@ export default {
 			});
 		},
 		async saveCourse(save) {
-			this.savedCourse = await this.$store.dispatch('getSavedCourse');
 			if (!save) {
-				this.savedCourse = this.savedCourse.filter(item => item !== this.course.id);
+				await this.$store.dispatch('removeSavedCourse', this.course.id);
 				this.$swal({
 					title: '已取消收藏「' + this.course.name + '」', icon: 'success', toast: true,
 					timer: 3000, timerProgressBar: true,
 					position: 'bottom-start', showConfirmButton: false,
-				})
+				});
 			} else {
-				this.savedCourse.push(this.course.id);
+				await this.$store.dispatch('addSavedCourse', this.course.id);
 				this.$swal({
 					title: '已收藏「' + this.course.name + '」', icon: 'success', toast: true,
 					timer: 3000, timerProgressBar: true,
 					position: 'bottom-start', showConfirmButton: false,
 				});
 			}
-			this.setSavedCourse([this.savedCourse]);
-			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		},
 		share() {
 			if (navigator.share && window.innerWidth < 768) {

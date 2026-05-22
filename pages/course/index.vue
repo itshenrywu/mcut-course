@@ -227,7 +227,7 @@
 }
 </style>
 <script>
-import { mapMutations, mapState } from 'vuex';
+import { mapState } from 'vuex';
 import CourseList from '~/components/CourseList.vue';
 export default {
 	components: {
@@ -269,8 +269,6 @@ export default {
 			currentType: '',
 			showConflict: undefined,
 
-			savedCourse: [],
-
 			showMobileSidebar: false,
 
 			displayType: '',
@@ -291,16 +289,14 @@ export default {
 		if (localStorage['searchQuery']) this.searchQuery = localStorage['searchQuery'];
 		if(['0','1','2'].includes(localStorage['showConflict'])) this.showConflict = localStorage['showConflict'];
 		else this.showConflict = 1;
-		let savedCourse = await this.$store.dispatch('getSavedCourse');
-		if (savedCourse && savedCourse.length > 0) {
-			this.savedCourse = savedCourse;
-		}
+		await this.$store.dispatch('getSavedCourse');
 		this.currentTerm = localStorage['term'] || '';
 		this.fetchData();
 	},
 	computed: {
 		...mapState({
-			showAd: state => state.show_ad
+			showAd: state => state.show_ad,
+			savedCourse: state => state.savedCourse,
 		}),
 		savedCourseForCurrentTerm() {
 			if (!this.currentTerm) return [];
@@ -462,7 +458,6 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 		fetchData() {
 			const storedData = localStorage['courseData_' + this.currentTerm];
 			const storedTime = localStorage['courseDataTime_' + this.currentTerm];
@@ -598,7 +593,7 @@ export default {
 
 			this.saveSearchInput();
 		},
-		saveRequiredCourse() {
+		async saveRequiredCourse() {
 			this.$swal({
 				title: '已收藏本班必修課', icon: 'success', toast: true,
 				timer: 3000, timerProgressBar: true,
@@ -607,15 +602,9 @@ export default {
 			const requiredIds = this.filteredCourses
 				.filter(course => course.type === '必修')
 				.map(course => course.id);
-			for (const id of requiredIds) {
-				if (!this.savedCourse.includes(id)) {
-					this.savedCourse.push(id);
-				}
-			}
+			await this.$store.dispatch('addMultipleSavedCourses', requiredIds);
 			this.updateCachedCoursedTime();
 			if (this.showConflict == 2) this.saveSearchInput();
-			this.setSavedCourse([this.savedCourse]);
-			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		},
 		showCourse(course) {
 			if (course.id.includes('ALT_')) {
@@ -663,18 +652,12 @@ export default {
 			}
 			this.$router.push('/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/');
 		},
-		saveCourse(course_id) {
-			if (this.savedCourse.includes(course_id)) {
-				this.savedCourse = this.savedCourse.filter(id => id !== course_id);
-			} else {
-				this.savedCourse.push(course_id);
-			}
+		async saveCourse(course_id) {
+			await this.$store.dispatch('toggleSavedCourse', course_id);
 			this.updateCachedCoursedTime();
 			if(this.showConflict == 2) {
 				this.saveSearchInput();
 			}
-			this.setSavedCourse([this.savedCourse]);
-			this.$root.$emit('updateSavedCourse', this.savedCourse);
 		},
 		updateCachedCoursedTime() {
 			this.cachedCoursedTime.clear();

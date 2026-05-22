@@ -196,7 +196,7 @@
 	</div>
 </template>
 <script>
-import { mapMutations } from 'vuex';
+import { mapState } from 'vuex';
 export default {
 	async asyncData({ $axios }) {
 		let _terms = {};
@@ -222,7 +222,6 @@ export default {
 		return {
 			terms: [],
 			currentTerm: '',
-			savedCourse: [],
 			classList: {},
 			display: [],
 			searchQuery: '',
@@ -236,6 +235,9 @@ export default {
 		}
 	},
 	computed: {
+		...mapState({
+			savedCourse: state => state.savedCourse,
+		}),
 		savedCourseByTerm() {
 			if(!this.currentTerm || !this.savedCourse) return [];
 			const termId = this.currentTerm.split('-').join('');
@@ -246,10 +248,9 @@ export default {
 		this.init();
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 		async init() {
 			this.loading = true;
-			this.savedCourse = await this.$store.dispatch('getSavedCourse');
+			await this.$store.dispatch('getSavedCourse');
 
 			if (localStorage['term']) {
 				this.currentTerm = localStorage['term'];

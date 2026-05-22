@@ -477,7 +477,7 @@
 }
 </style>
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
 		let depts = {};
@@ -622,7 +622,6 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 		sortRulesByDept(ruleGroup) {
 			const deptOrder = Object.keys(this.dept_short_name);
 			return Object.entries(ruleGroup).sort(([, a], [, b]) => {

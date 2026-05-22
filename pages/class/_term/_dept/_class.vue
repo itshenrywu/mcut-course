@@ -2,7 +2,6 @@
 	<div class="cell is-scrollable is-fluid is-horizontal"></div>
 </template>
 <script>
-import { mapMutations } from 'vuex';
 export default {
 	async asyncData({ payload }) {
 		if (payload) {
@@ -35,7 +34,6 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 		redirect() {
 			localStorage['term'] = this.term;
 			localStorage['dept'] = this.classData[0];

@@ -4,7 +4,6 @@
 	</div>
 </template>
 <script>
-import { mapMutations } from 'vuex';
 export default {
 	head() {
 		return {
@@ -33,12 +32,11 @@ export default {
 			indexedDB.deleteDatabase('mcut-course');
 			
 			this.$root.$emit('showProfileImage', null);
-			this.setSavedCourse([]);
+			this.$store.dispatch('clearSavedCourse');
 			location.href = last_path || '/';
 		}
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 	}
 }
 </script>

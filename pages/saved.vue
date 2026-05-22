@@ -149,7 +149,7 @@
 }
 </style>
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState } from 'vuex'
 import CourseList from '~/components/CourseList.vue'
 export default {
 	components: {
@@ -196,13 +196,12 @@ export default {
 			courses: [],
 			displayType: '',
 			currentTerm: undefined,
-			savedCourse: [],
 			currentClass: '',
 			currentDept: ''
 		}
 	},
 	async mounted() {
-		this.savedCourse = await this.$store.dispatch('getSavedCourse');
+		await this.$store.dispatch('getSavedCourse');
 		this.displayType = localStorage.displayType || '';
 		if (this.$route.query.ids) {
 			let importCourse = [];
@@ -212,8 +211,7 @@ export default {
 				importCourse.push(importTerm + id);
 			});
 
-			let savedCourse = await this.$store.dispatch('getSavedCourse');
-			if (savedCourse.length >= 1) {
+			if (this.savedCourse.length >= 1) {
 				this.$swal({
 					icon: 'question',
 					title: '匯入 ' + importCourse.length + ' 門課程？',
@@ -222,11 +220,10 @@ export default {
 					cancelButtonText: '取消',
 					showCancelButton: true,
 				})
-					.then((res) => {
+					.then(async (res) => {
 						if (res.isConfirmed) {
 							localStorage['term'] = importTerm;
-							this.savedCourse = importCourse;
-							this.setSavedCourse([this.savedCourse]);
+							await this.$store.dispatch('replaceSavedCourse', importCourse);
 							this.$swal({
 								title: '已匯入課程', icon: 'success', toast: true,
 								timer: 3000, timerProgressBar: true,
@@ -237,8 +234,7 @@ export default {
 					});
 			} else {
 				localStorage['term'] = importTerm;
-				this.savedCourse = importCourse;
-				this.setSavedCourse([this.savedCourse]);
+				await this.$store.dispatch('replaceSavedCourse', importCourse);
 				this.$swal({
 					title: '已匯入課程', icon: 'success', toast: true,
 					timer: 3000, timerProgressBar: true,
@@ -262,7 +258,8 @@ export default {
 	},
 	computed: {
 		...mapState({
-			showAd: state => state.show_ad
+			showAd: state => state.show_ad,
+			savedCourse: state => state.savedCourse,
 		}),
 		savedCourseForCurrentTerm() {
 			if (!this.currentTerm) return [];
@@ -297,7 +294,6 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 		chooseTerm(term) {
 			if (this.currentTerm == term) return;
 			this.loading = true;
@@ -347,15 +343,14 @@ export default {
 				showCancelButton: true,
 				confirmButtonColor: 'var(--ts-negative-600)',
 			})
-				.then((res) => {
+				.then(async (res) => {
 					if (res.isConfirmed) {
 						this.$swal({
 							title: '已清除所有收藏的課程', icon: 'success', toast: true,
 							timer: 3000, timerProgressBar: true,
 							position: 'bottom-start', showConfirmButton: false,
 						});
-						this.savedCourse = [];
-						this.setSavedCourse([this.savedCourse]);
+						await this.$store.dispatch('clearSavedCourse');
 						this.currentTerm = '';
 					}
 				});
@@ -369,11 +364,9 @@ export default {
 				showCancelButton: true,
 				confirmButtonColor: 'var(--ts-negative-600)',
 			})
-				.then((res) => {
+				.then(async (res) => {
 					if (res.isConfirmed) {
-						const prefix = (this.currentTerm || '').split('-').join('');
-						this.savedCourse = this.savedCourse.filter(id => !id.startsWith(prefix));
-						this.setSavedCourse([this.savedCourse]);
+						await this.$store.dispatch('clearSavedCourseByTerm', this.currentTerm);
 						this.$swal({
 							title: '已移除目前學期的收藏', icon: 'success', toast: true,
 							timer: 3000, timerProgressBar: true,
@@ -382,16 +375,14 @@ export default {
 					}
 				});
 		},
-		clearSavedRemovedCourse() {
-			const prefix = (this.currentTerm || '').split('-').join('');
-			const currentTermCourseIds = new Set(this.filteredCourses.map(course => course.id));
-			this.savedCourse = this.savedCourse.filter(id => !id.startsWith(prefix) || currentTermCourseIds.has(id));
+		async clearSavedRemovedCourse() {
+			const availableIds = this.filteredCourses.map(course => course.id);
+			await this.$store.dispatch('clearSavedRemovedCourse', { term: this.currentTerm, availableIds });
 			this.$swal({
 				title: '已清除本學期已下架的課程', icon: 'success', toast: true,
 				timer: 3000, timerProgressBar: true,
 				position: 'bottom-start', showConfirmButton: false,
 			});
-			this.setSavedCourse([this.savedCourse]);
 		},
 		showCourse(course) {
 			if (course.id.includes('ALT_')) {
@@ -451,12 +442,9 @@ export default {
 				showCancelButton: true,
 				confirmButtonColor: 'var(--ts-negative-600)',
 			})
-				.then((res) => {
+				.then(async (res) => {
 					if (res.isConfirmed) {
-						if (this.savedCourse.includes(course_id)) {
-							this.savedCourse = this.savedCourse.filter(id => id !== course_id);
-						}
-						this.setSavedCourse([this.savedCourse]);
+						await this.$store.dispatch('removeSavedCourse', course_id);
 						if(this.savedCourse.length == 0) this.currentTerm = '';
 					}
 				});

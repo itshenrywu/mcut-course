@@ -697,7 +697,6 @@ export default {
 			loading_get: false,
 			
 			maxEndSection: 8,
-			savedCourses: [],
 			myCourses: [],
 			gridCells: [],
 
@@ -889,7 +888,8 @@ export default {
 	},
 	computed: {
 		...mapState({
-			showAd: state => state.show_ad
+			showAd: state => state.show_ad,
+			savedCourses: state => state.savedCourse,
 		}),
 		time_section() {
 			let time_section = ['1', '2', '3', '4', '5', '6', '7', '8'];
@@ -1869,7 +1869,7 @@ export default {
 			this.setCanvasSize();
 		});
 		this.editingCourse = Object.freeze(this.defaultCourse);
-		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
+		this.$store.dispatch('getSavedCourse');
 		this.$axios.get('/scriptable.min.js?v=5').then(res => {
 			this.scriptableCodeFile = res.data;
 		});

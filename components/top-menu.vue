@@ -101,15 +101,12 @@
 
 <script>
 export default {
+	computed: {
+		savedCourse() {
+			return this.$store.state.savedCourse;
+		},
+	},
 	mounted() {
-		try {
-			this.savedCourse = JSON.parse(localStorage.getItem('savedCourse')) || [];
-		} catch(e) {
-			this.savedCourse = [];
-		}
-		this.$root.$on('updateSavedCourse', (savedCourse) => {
-			this.savedCourse = savedCourse;
-		});
 		this.currentPath = this.$router.currentRoute.path;
 		this.$router.afterEach((to) => {
 			this.currentPath = to.path;
@@ -128,7 +125,6 @@ export default {
 	},
 	data() {
 		return {
-			savedCourse: [],
 			currentPath: '',
 			showRedDot: false,
 			menuItems: [
