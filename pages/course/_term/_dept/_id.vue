@@ -534,22 +534,6 @@ export default {
 				return _day;
 			}
 		},
-		hasCoursedTime() {
-			if (this.savedCourse.length == 0) return [];
-			if (!this.courses) return [];
-			const prefix = this.course.id.substring(0,4);
-			const sameTerm = this.savedCourse.filter(id => id.substring(0,4) === prefix);
-			if (sameTerm.length == 0) return [];
-			return sameTerm.map(course_id => {
-				let course = this.courses.find(course => course.id === course_id);
-				if (!course) return false;
-				return course.time.map(time => {
-					let week = time[0];
-					let section = time[1].split('~').map(section => this.time_section.indexOf(section));
-					return Array.from({ length: section[1] - section[0] + 1 }, (_, i) => week + '_' + this.time_section[section[0] + i]);
-				}).flat();
-			}).flat();
-		},
 	},
 	methods: {
 		isConflicted() {

@@ -56,7 +56,7 @@
 						<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
 						<td class="c-remark">{{ course.comment }}</td>
 						<td class="c-action">
-							<span class="ts-icon absolute-right is-star-icon" v-if="isActive(course)" @click.stop="$emit('action-click', course.id)"></span>
+							<span class="ts-icon absolute-right is-star-icon" v-if="savedCourse.includes(course.id)" @click.stop="$emit('action-click', course.id)"></span>
 							<span class="ts-icon absolute-right is-star-o-icon" v-else @click.stop="$emit('action-click', course.id)"></span>
 						</td>
 					</tr>
@@ -133,10 +133,6 @@ export default {
 			type: Array,
 			default: () => ['0.5', '1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12']
 		},
-		isActive: {
-			type: Function,
-			default: () => false
-		},
 		maxEndSection: {
 			type: Number,
 			default: 8
@@ -159,9 +155,6 @@ export default {
 		}
 	},
 	computed: {
-		SLOT_HEIGHT() {
-			return 4;
-		},
 		time_section() {
 			return this.timeSection;
 		},
@@ -309,8 +302,8 @@ export default {
 									"is-gray": course.type == "重修",
 								},
 								style: {
-									top: `${course.startIndex * this.SLOT_HEIGHT + 0.2}rem`,
-									height: `${course.period * this.SLOT_HEIGHT - 0.4}rem`,
+									top: `${course.startIndex * 4 + 0.2}rem`,
+									height: `${course.period * 4 - 0.4}rem`,
 									width: `calc(${width}% - 4px)`,
 									left: `${left}%`,
 								},

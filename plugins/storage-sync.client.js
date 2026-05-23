@@ -1,8 +1,10 @@
 export default ({ store }) => {
 	window.addEventListener('storage', (e) => {
-		if (e.key === 'savedCourse' && e.newValue !== null) {
+		if (e.key === 'savedCourse') {
 			let savedCourse = [];
-			try { savedCourse = JSON.parse(e.newValue); } catch {}
+			if (e.newValue !== null) {
+				try { savedCourse = JSON.parse(e.newValue); } catch {}
+			}
 			store.commit('setSavedCourse', savedCourse);
 		}
 	});

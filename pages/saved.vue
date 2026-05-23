@@ -108,7 +108,6 @@
 					:timeSection="time_section"
 					:maxEndSection="maxEndSection"
 					:savedCourse="savedCourseForCurrentTerm"
-					:isActive="(course) => savedCourseForCurrentTerm.includes(course.id)"
 					:currentClass="currentClass"
 					:currentDept="currentDept"
 					:enableAutoShowOnlyMonAndThu="false"
@@ -318,12 +317,12 @@ export default {
 		},
 		processData(data) {
 			this.courses = data.course;
-			
-		if (this.filteredCourses.length > 0) {
-			const firstCourse = this.filteredCourses[0];
+
+			if (this.filteredCourses.length > 0) {
+				const firstCourse = this.filteredCourses[0];
 				const uniqueClasses = new Set(this.filteredCourses.map(c => c.year + ' ' + c.class));
 				const uniqueDepts = new Set(this.filteredCourses.map(c => c.dept));
-				
+
 				if (uniqueClasses.size === 1) {
 					this.currentClass = firstCourse.year + ' ' + firstCourse.class;
 				}

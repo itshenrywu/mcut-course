@@ -19,9 +19,6 @@
 					<span v-else class="ts-icon" :class="item.icon"></span>
 					<div class="label">
 						{{ item.label }}
-						<span v-if="item.path === '/saved/' && savedCourse.length > 0" class="ts-badge is-small is-dense">
-							{{ savedCourse.length }}
-						</span>
 						<span v-if="item.path === '/more/' && showRedDot" class="hint"></span>
 					</div>
 				</NuxtLink>
@@ -94,11 +91,6 @@
 
 <script>
 export default {
-	computed: {
-		savedCourse() {
-			return this.$store.state.savedCourse;
-		},
-	},
 	mounted() {
 		this.currentPath = this.$router.currentRoute.path;
 		this.$router.afterEach((to) => {

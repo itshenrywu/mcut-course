@@ -1205,7 +1205,7 @@ export default {
 		async importFromSaved() {
 			this.loading = true;
 			const savedCourse = this.savedCourses;
-			if (savedCourse.length === 0) {
+			if (savedCourse.length === 0 || !this.currentTerm) {
 				this.loading = false;
 				return;
 			}
