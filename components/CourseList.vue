@@ -28,8 +28,7 @@
 									week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
 								<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>
 							</span>
-
-							<span v-if="isConflicted(course)" class="is-conflict">
+							<span v-if="isConflicted(course)" class="is-conflict mobile-inline">
 								<span class="ts-icon is-circle-alert-icon"></span>
 								衝堂
 							</span>
@@ -56,6 +55,10 @@
 						<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
 						<td class="c-remark">{{ course.comment }}</td>
 						<td class="c-action">
+							<span v-if="isConflicted(course)" class="is-conflict mobile-hidden">
+								<span class="ts-icon is-circle-alert-icon"></span>
+								衝堂
+							</span>
 							<span class="ts-icon absolute-right is-star-icon" v-if="savedCourse.includes(course.id)" @click.stop="$emit('action-click', course.id)"></span>
 							<span class="ts-icon absolute-right is-star-o-icon" v-else @click.stop="$emit('action-click', course.id)"></span>
 						</td>

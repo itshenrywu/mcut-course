@@ -173,7 +173,7 @@ h1 {
 	width: 260px;
 }
 
-.mobile-only {
+.mobile-only, .mobile-inline {
 	display: none;
 }
 
@@ -279,12 +279,10 @@ h1 {
 
 .is-conflict {
 	color: hsl(345, 77%, 67%);
-	font-size: .75rem;
-	line-height: 1rem;
 }
 
 .is-conflict .ts-icon {
-	line-height: 1rem;
+	/* line-height: 1rem; */
 }
 
 .course-table td.c-action {
@@ -404,6 +402,10 @@ h1 {
 
 	.mobile-only {
 		display: block;
+	}
+
+	.mobile-inline {
+		display: inline-block;
 	}
 
 	.ts-statistic .value {
