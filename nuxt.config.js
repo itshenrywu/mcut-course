@@ -3,12 +3,12 @@ import { execSync } from 'child_process'
 
 export default async () => {
 	let commitSha = '';
-	try { commitSha = execSync('git rev-parse --short HEAD').toString().trim(); } catch {}
+	try { commitSha = execSync('git rev-parse HEAD').toString().trim(); } catch {}
 	const revResponse = await axios.get('https://api.mcut-course.com/info.php');
 	if(revResponse.data.rev.length < 8) {
 		process.exit(1);
 	}
-	
+
 	return {
 		target: 'static',
 		env: {
