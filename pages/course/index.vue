@@ -275,7 +275,6 @@ export default {
 			
 			coursesMap: new Map(),
 			sectionIndexMapObj: {},
-			cachedCoursedTime: new Set(),
 		}
 	},
 	async mounted() {
@@ -393,35 +392,29 @@ export default {
 				(this.currentType == '必修' || this.currentType == '') &&
 				!['通識中心四技', '國文組-四技(日)', '外文組-四技(日)', '社會組-四技(日)', '體育組-四技(日)', '自然組-四技(日)', '自然組(二)-四技(日)', '工程學院', '環資學院', '管理暨設計學院', 'TAICA'].includes(this.currentDept)
 		},
-		isConflicted(_course) {
+		isConflicted() {
+			const coursedTime = new Set();
+			for (const courseId of this.savedCourseForCurrentTerm) {
+				const course = this.coursesMap.get(courseId);
+				if (!course?.time) continue;
+				for (const [week, timeRange] of course.time) {
+					const [startStr, endStr] = timeRange.split('~');
+					const startIdx = this.sectionIndexMapObj[startStr];
+					const endIdx = this.sectionIndexMapObj[endStr];
+					if (startIdx === undefined || endIdx === undefined) continue;
+					for (let i = startIdx; i <= endIdx; i++) {
+						coursedTime.add(`${week}_${i}`);
+					}
+				}
+			}
 			return (_course) => {
 				if (this.savedCourse.length == 0) return false;
 				if (!_course.time) return false;
-
-
-				const coursedTime = new Set();
-				for (const courseId of this.savedCourseForCurrentTerm) {
-					if (courseId === _course.id) continue; // 排除当前课程
-					const course = this.coursesMap.get(courseId);
-					if (!course?.time) continue;
-					for (const [week, timeRange] of course.time) {
-						const [startStr, endStr] = timeRange.split('~');
-						const startIdx = this.sectionIndexMapObj[startStr];
-						const endIdx = this.sectionIndexMapObj[endStr];
-						if (startIdx === undefined || endIdx === undefined) continue;
-						for (let i = startIdx; i <= endIdx; i++) {
-							coursedTime.add(`${week}_${i}`);
-						}
-					}
-				}
-
-				// 检查当前课程是否与其他已收藏课程衝突
 				for (const [week, timeRange] of _course.time) {
 					const [startStr, endStr] = timeRange.split('~');
 					const startIdx = this.sectionIndexMapObj[startStr];
 					const endIdx = this.sectionIndexMapObj[endStr];
 					if (startIdx === undefined || endIdx === undefined) continue;
-					
 					for (let i = startIdx; i <= endIdx; i++) {
 						if (coursedTime.has(`${week}_${i}`)) return true;
 					}
@@ -529,8 +522,6 @@ export default {
 			let term_id = this.courses[0].id.substring(0, 4);
 			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
 
-			this.updateCachedCoursedTime();
-			
 			this.loading = false;
 		},
 		chooseTerm(term) {
@@ -594,16 +585,15 @@ export default {
 			this.saveSearchInput();
 		},
 		async saveRequiredCourse() {
+			const requiredIds = this.filteredCourses
+				.filter(course => course.type === '必修')
+				.map(course => course.id);
+			await this.$store.dispatch('addMultipleSavedCourses', requiredIds);
 			this.$swal({
 				title: '已收藏本班必修課', icon: 'success', toast: true,
 				timer: 3000, timerProgressBar: true,
 				position: 'bottom-start', showConfirmButton: false,
 			});
-			const requiredIds = this.filteredCourses
-				.filter(course => course.type === '必修')
-				.map(course => course.id);
-			await this.$store.dispatch('addMultipleSavedCourses', requiredIds);
-			this.updateCachedCoursedTime();
 			if (this.showConflict == 2) this.saveSearchInput();
 		},
 		showCourse(course) {
@@ -654,25 +644,8 @@ export default {
 		},
 		async saveCourse(course_id) {
 			await this.$store.dispatch('toggleSavedCourse', course_id);
-			this.updateCachedCoursedTime();
 			if(this.showConflict == 2) {
 				this.saveSearchInput();
-			}
-		},
-		updateCachedCoursedTime() {
-			this.cachedCoursedTime.clear();
-			for (const courseId of this.savedCourseForCurrentTerm) {
-				const course = this.coursesMap.get(courseId);
-				if (!course?.time) continue;
-				for (const [week, timeRange] of course.time) {
-					const [startStr, endStr] = timeRange.split('~');
-					const startIdx = this.sectionIndexMapObj[startStr];
-					const endIdx = this.sectionIndexMapObj[endStr];
-					if (startIdx === undefined || endIdx === undefined) continue;
-					for (let i = startIdx; i <= endIdx; i++) {
-						this.cachedCoursedTime.add(`${week}_${i}`);
-					}
-				}
 			}
 		},
 		changeDisplayType() {
