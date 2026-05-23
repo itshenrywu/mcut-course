@@ -23,7 +23,7 @@
 							{{ course.name }}
 						</td>
 						<td class="c-time">
-							<span v-for="time in course.time" class="time">
+							<span v-for="time in course.time" :key="time[0] + '_' + time[1]" class="time">
 								<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
 									week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
 								<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>

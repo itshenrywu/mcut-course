@@ -522,7 +522,7 @@ export default {
 				this.courses.sort((a, b) => a.sortOrder - b.sortOrder);
 			}
 			else if (this.showConflict === 2) {
-					this.courses.sort((a, b) => {
+				this.courses.sort((a, b) => {
 					const aIsSaved = this.savedCourseForCurrentTerm.includes(a.id);
 					const bIsSaved = this.savedCourseForCurrentTerm.includes(b.id);
 					const aIsConflicted = this.isConflicted(a);

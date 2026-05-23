@@ -78,7 +78,7 @@
 			</div>
 			<div class="ts-content has-top-spaced is-vertically-fitted">
 				<div class="ts-text is-secondary is-tiny has-top-spaced-small">
-					{{ buildTime }} <a style="text-decoration:none" :href="`https://github.com/itshenrywu/mcut-course/commit/${commitSha}`" target="_blank" rel="noopener noreferrer">{{ commitSha }}</a>
+					{{ buildTime }}<template v-if="commitSha"> <a style="text-decoration:none" :href="`https://github.com/itshenrywu/mcut-course/commit/${commitSha}`" target="_blank" rel="noopener noreferrer">{{ commitSha }}</a></template>
 				</div>
 			</div>
 		</div>

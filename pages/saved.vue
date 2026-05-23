@@ -287,6 +287,7 @@ export default {
 		chooseTerm(term) {
 			if (this.currentTerm == term) return;
 			this.loading = true;
+			this.courses = [];
 			this.currentTerm = term;
 			localStorage['term'] = term;
 			this.fetchData();
