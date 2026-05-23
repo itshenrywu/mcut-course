@@ -3,7 +3,7 @@ export default ({ store }) => {
 		if (e.key === 'savedCourse' && e.newValue !== null) {
 			let savedCourse = [];
 			try { savedCourse = JSON.parse(e.newValue); } catch {}
-			store.commit('setSavedCourse', [savedCourse, false]);
+			store.commit('setSavedCourse', savedCourse);
 		}
 	});
 };

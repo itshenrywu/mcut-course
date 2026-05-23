@@ -85,3 +85,11 @@ export default {
 	},
 };
 </script>
+<style>
+.profile-image.is-fluid {
+	width: 100%;
+	max-width: 50px;
+	height: auto;
+	aspect-ratio: 1 / 1;
+}
+</style>
