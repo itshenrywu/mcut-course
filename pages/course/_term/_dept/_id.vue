@@ -568,6 +568,12 @@ export default {
 			}
 			return false;
 		},
+		buildLookups() {
+			this.coursesMap.clear();
+			(this.courses || []).forEach(course => this.coursesMap.set(course.id, course));
+			this.sectionIndexMapObj = {};
+			this.time_section.forEach((section, index) => { this.sectionIndexMapObj[section] = index; });
+		},
 		fetchData() {
 			this.currentTerm = localStorage['term'] ?? '';
 			if (this.savedCourse && this.savedCourse.length > 0) {
@@ -577,23 +583,15 @@ export default {
 			const storedTime = localStorage['courseDataTime_' + this.currentTerm];
 			if (storedData && storedTime && process.env.GEN_TIME == storedTime) {
 				this.courses = JSON.parse(storedData).course;
+				this.buildLookups();
 			} else {
 				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
 					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
 					localStorage['courseDataTime_' + this.currentTerm] = process.env.GEN_TIME;
 					this.courses = res.data.course;
+					this.buildLookups();
 				});
 			}
-			this.coursesMap.clear();
-			if (this.courses && this.courses.length > 0) {
-				this.courses.forEach(course => {
-					this.coursesMap.set(course.id, course);
-				});
-			}
-			this.sectionIndexMapObj = {};
-			this.time_section.forEach((section, index) => {
-				this.sectionIndexMapObj[section] = index;
-			});
 			this.$axios.get('https://api.mcut-course.com/detail.php?id=' + this.$router.currentRoute.path.replace(/course/g, '').replace(/\//g, '') + '&ver=full').then(response => {
 				this.course = response.data[3] ?? {};
 				this.more = response.data[0] ?? [];

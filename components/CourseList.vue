@@ -79,7 +79,7 @@
 				<tr>
 					<td class="time-column">
 						<div
-							v-for="section in time_section"
+							v-for="section in timeSection"
 							v-if="section <= maxEndSection"
 							:key="section"
 							class="time-slot">
@@ -155,9 +155,6 @@ export default {
 		}
 	},
 	computed: {
-		time_section() {
-			return this.timeSection;
-		},
 		sectionIndexMapObj() {
 			return this.timeSection.reduce((result, section, index) => {
 				result[section] = index;
@@ -203,9 +200,10 @@ export default {
 						result[weekday][startTime] = [];
 					}
 
-					let part_course = JSON.parse(JSON.stringify(course));
-					part_course.period = this.timeSection.indexOf(endTime) - this.timeSection.indexOf(startTime) + 1;
-					result[weekday][startTime].push(part_course);
+					result[weekday][startTime].push({
+						...course,
+						period: this.timeSection.indexOf(endTime) - this.timeSection.indexOf(startTime) + 1,
+					});
 				});
 			});
 			return result;
@@ -353,7 +351,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .ts-table tr.is-indicated {
 	box-shadow: 2px 0 0 var(--ts-primary-400) inset !important;
 }

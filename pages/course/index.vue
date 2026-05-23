@@ -638,7 +638,7 @@ export default {
 			}
 		},
 		changeDisplayType() {
-			localStorage.setItem('displayType', this.displayType === '1' ? '1' : '');
+			localStorage.setItem('displayType', this.displayType);
 		},
 		getSecondTermText(year, term) {
 			if(year == this.terms[0].year && term == this.terms[0].term[0]) {

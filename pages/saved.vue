@@ -262,7 +262,7 @@ export default {
 		}),
 		savedCourseForCurrentTerm() {
 			if (!this.currentTerm) return [];
-			const prefix = (this.currentTerm || '').split('-').join('');
+			const prefix = this.currentTerm.split('-').join('');
 			return this.savedCourse.filter(id => id.startsWith(prefix));
 		},
 		filteredCourses() {
@@ -317,6 +317,8 @@ export default {
 		},
 		processData(data) {
 			this.courses = data.course;
+			this.currentClass = '';
+			this.currentDept = '';
 
 			if (this.filteredCourses.length > 0) {
 				const firstCourse = this.filteredCourses[0];
@@ -332,27 +334,6 @@ export default {
 			}
 			
 			this.loading = false;
-		},
-		clearSavedCourse() {
-			this.$swal({
-				icon: 'question',
-				title: '清除所有收藏的課程？',
-				confirmButtonText: '清除',
-				cancelButtonText: '取消',
-				showCancelButton: true,
-				confirmButtonColor: 'var(--ts-negative-600)',
-			})
-				.then(async (res) => {
-					if (res.isConfirmed) {
-						this.$swal({
-							title: '已清除所有收藏的課程', icon: 'success', toast: true,
-							timer: 3000, timerProgressBar: true,
-							position: 'bottom-start', showConfirmButton: false,
-						});
-						await this.$store.dispatch('clearSavedCourse');
-						this.currentTerm = '';
-					}
-				});
 		},
 		clearSavedCurrentTerm() {
 			this.$swal({
