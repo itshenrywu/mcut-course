@@ -23,6 +23,7 @@ export default {
 		if(this.$route.query.auth_key) localStorage['auth_key'] = this.$route.query.auth_key;
 		
 		if(localStorage['auth_key'] == undefined || localStorage['auth_key'] == '') {
+			// state 對應伺服器端的 redirect URI：1=production, 2=pages.dev staging, 3=localhost
 			let state = '1';
 			if(location.hostname === 'mcut-course.pages.dev') state = '2';
 			if(location.hostname === 'localhost') state = '3';

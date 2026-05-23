@@ -33,16 +33,6 @@
 							@click="clearSavedCurrentTerm()">
 							<span class="ts-icon is-trash-icon"></span>
 						</button>
-						<!-- <button class="ts-button is-negative is-outlined mobile-hidden"
-							v-if="savedCourse.length > 0"
-							@click="clearSavedCourse()">
-							<span class="ts-icon is-end-spaced is-trash-icon"></span> 清除全部
-						</button>
-						<button class="ts-button is-icon is-negative is-outlined mobile-only"
-							v-if="savedCourse.length > 0"
-							@click="clearSavedCourse()">
-							<span class="ts-icon is-trash-icon"></span>
-						</button> -->
 					</div>
 				</div>
 			</div>
@@ -201,7 +191,13 @@ export default {
 	},
 	async mounted() {
 		await this.$store.dispatch('getSavedCourse');
-		this.displayType = localStorage.displayType || '';
+		const storedDisplayType = localStorage.getItem('displayType');
+		if (storedDisplayType === null) {
+			this.displayType = '1';
+			localStorage.setItem('displayType', '1');
+		} else {
+			this.displayType = storedDisplayType;
+		}
 		if (this.$route.query.ids) {
 			let importCourse = [];
 			let importTerm = this.$route.query.ids.substring(0, 4);
@@ -267,8 +263,7 @@ export default {
 		},
 		filteredCourses() {
 			return this.courses.filter(course => this.savedCourseForCurrentTerm.includes(course.id));
-		}
-		,
+		},
 		maxEndSection() {
 			let maxSection = 8;
 			(this.filteredCourses || []).forEach(course => {
@@ -429,7 +424,7 @@ export default {
 				});
 		},
 		changeDisplayType() {
-			localStorage['displayType'] = this.displayType ? '1' : '';
+			localStorage.setItem('displayType', this.displayType);
 		},
 		showLimitInfo() {
 			this.$swal({

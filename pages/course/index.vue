@@ -460,16 +460,13 @@ export default {
 				course.sortOrder = index;
 			});
 			this.courses = data.course;
-			
-			this.coursesMap.clear();
-			data.course.forEach(course => {
-				this.coursesMap.set(course.id, course);
-			});
-			
-			this.sectionIndexMapObj = {};
-			this.time_section.forEach((section, index) => {
-				this.sectionIndexMapObj[section] = index;
-			});
+
+			this.coursesMap = new Map(data.course.map(c => [c.id, c]));
+
+			this.sectionIndexMapObj = this.time_section.reduce((obj, section, index) => {
+				obj[section] = index;
+				return obj;
+			}, {});
 			var _terms = {};
 			data.term.forEach(term => {
 				let _year = term.split('-')[0];

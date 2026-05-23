@@ -168,21 +168,24 @@ export default {
 			});
 			return result;
 		},
-		week_text() {
-			return (day, course) => {
-				let _day = ['(其他)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(其他)'][day];
-				if(course?.comment?.includes('塊狀')) return '(其他)';
-				return _day;
-			}
-		},
-		formatCourseName() {
-			return (course) => {
-				let name = course?.name || '';
-				if(name.startsWith('體育(') && name.includes(')') && name.split(')')[1].length >= 1) {
-					name = name.split(')')[1];
+		savedCourseTimeOccupancy() {
+			const map = new Map();
+			for (const courseId of this.savedCourse) {
+				const c = this.coursesMap.get(courseId);
+				if (!c?.time) continue;
+				for (const [week, range] of c.time) {
+					const [startStr, endStr] = range.split('~');
+					const si = this.sectionIndexMapObj[startStr];
+					const ei = this.sectionIndexMapObj[endStr];
+					if (si === undefined || ei === undefined) continue;
+					for (let i = si; i <= ei; i++) {
+						const key = `${week}_${i}`;
+						if (!map.has(key)) map.set(key, new Set());
+						map.get(key).add(courseId);
+					}
 				}
-				return name;
-			};
+			}
+			return map;
 		},
 		coursesByStartTime() {
 			let result = {};
@@ -316,33 +319,28 @@ export default {
 		}
 	},
 	methods: {
-		isConflicted(course) {
-			if (!Array.isArray(this.savedCourse) || this.savedCourse.length === 0) return false;
-			if (!course?.time) return false;
-
-			const coursedTime = new Set();
-			for (const courseId of this.savedCourse) {
-				if (courseId === course.id) continue;
-				const savedCourse = this.coursesMap.get(courseId);
-				if (!savedCourse?.time) continue;
-				for (const [week, timeRange] of savedCourse.time) {
-					const [startStr, endStr] = timeRange.split('~');
-					const startIdx = this.sectionIndexMapObj[startStr];
-					const endIdx = this.sectionIndexMapObj[endStr];
-					if (startIdx === undefined || endIdx === undefined) continue;
-					for (let i = startIdx; i <= endIdx; i++) {
-						coursedTime.add(`${week}_${i}`);
-					}
-				}
+		week_text(day, course) {
+			let _day = ['(其他)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(其他)'][day];
+			if(course?.comment?.includes('塊狀')) return '(其他)';
+			return _day;
+		},
+		formatCourseName(course) {
+			let name = course?.name || '';
+			if(name.startsWith('體育(') && name.includes(')') && name.split(')')[1].length >= 1) {
+				name = name.split(')')[1];
 			}
-
-			for (const [week, timeRange] of course.time) {
-				const [startStr, endStr] = timeRange.split('~');
-				const startIdx = this.sectionIndexMapObj[startStr];
-				const endIdx = this.sectionIndexMapObj[endStr];
-				if (startIdx === undefined || endIdx === undefined) continue;
-				for (let i = startIdx; i <= endIdx; i++) {
-					if (coursedTime.has(`${week}_${i}`)) return true;
+			return name;
+		},
+		isConflicted(course) {
+			if (!Array.isArray(this.savedCourse) || !this.savedCourse.length || !course?.time) return false;
+			for (const [week, range] of course.time) {
+				const [startStr, endStr] = range.split('~');
+				const si = this.sectionIndexMapObj[startStr];
+				const ei = this.sectionIndexMapObj[endStr];
+				if (si === undefined || ei === undefined) continue;
+				for (let i = si; i <= ei; i++) {
+					const users = this.savedCourseTimeOccupancy.get(`${week}_${i}`);
+					if (users && (users.size > 1 || !users.has(course.id))) return true;
 				}
 			}
 			return false;

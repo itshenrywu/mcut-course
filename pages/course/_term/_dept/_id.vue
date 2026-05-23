@@ -569,10 +569,11 @@ export default {
 			return false;
 		},
 		buildLookups() {
-			this.coursesMap.clear();
-			(this.courses || []).forEach(course => this.coursesMap.set(course.id, course));
-			this.sectionIndexMapObj = {};
-			this.time_section.forEach((section, index) => { this.sectionIndexMapObj[section] = index; });
+			this.coursesMap = new Map((this.courses || []).map(c => [c.id, c]));
+			this.sectionIndexMapObj = this.time_section.reduce((obj, section, index) => {
+				obj[section] = index;
+				return obj;
+			}, {});
 		},
 		fetchData() {
 			this.currentTerm = localStorage['term'] ?? '';
