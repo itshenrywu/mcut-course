@@ -1,6 +1,8 @@
 import axios from 'axios'
+import { execSync } from 'child_process'
 
 export default async () => {
+	const commitSha = execSync('git rev-parse --short HEAD').toString().trim();
 	const revResponse = await axios.get('https://api.mcut-course.com/info.php');
 	if(revResponse.data.rev.length < 8) {
 		process.exit(1);
@@ -10,7 +12,8 @@ export default async () => {
 		target: 'static',
 		env: {
 			GEN_TIME: new Date().getTime(),
-			REV: revResponse.data.rev
+			REV: revResponse.data.rev,
+			COMMIT_SHA: commitSha
 		},
 		head: {
 			title: '明志科技大學選課小幫手',

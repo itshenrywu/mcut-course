@@ -76,6 +76,9 @@
 					</script>
 				</div>
 			</div>
+			<div class="ts-text is-secondary is-tiny has-top-spaced-small">
+				{{ buildTime }} <a :href="`https://github.com/itshenrywu/mcut-course/commit/${commitSha}`" target="_blank" rel="noopener noreferrer">{{ commitSha }}</a>
+			</div>
 		</div>
 		<loading v-show="loading" />
 	</div>
@@ -148,6 +151,16 @@ export default {
 		...mapState({
 			showAd: state => state.show_ad
 		}),
+		buildTime() {
+			return new Date(parseInt(process.env.GEN_TIME)).toLocaleString('en-ZA', {
+				year: 'numeric', month: '2-digit', day: '2-digit',
+				hour: '2-digit', minute: '2-digit', second: '2-digit',
+				hour12: false
+			}).replace(/\D/g, '');
+		},
+		commitSha() {
+			return process.env.COMMIT_SHA || '';
+		},
 	},
 	mounted() {
 		if(!localStorage['auth_key']) {
