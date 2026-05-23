@@ -12,11 +12,11 @@
 								<span class="ts-icon is-import-icon"></span>
 								從學校系統匯入
 							</button>
-							<button class="ts-button is-secondary is-small is-fluid is-start-icon" data-dropdown="term-dropdown" v-show="savedCourses.length > 0">
+							<button class="ts-button is-secondary is-small is-fluid is-start-icon" data-dropdown="term-dropdown" v-show="savedCourse.length > 0">
 								<span class="ts-icon is-star-icon"></span>
 								從「收藏的課程」匯入
 							</button>
-							<div class="ts-dropdown" data-position="bottom-start" id="term-dropdown" style="height:60vh" v-if="savedCourses.length > 0">
+							<div class="ts-dropdown" data-position="bottom-start" id="term-dropdown" style="height:60vh" v-if="savedCourse.length > 0">
 								<template v-for="year_group of terms">
 									<div class="header">{{ year_group.year }} 學年</div>
 									<div class="item is-indented" v-for="term of year_group.term" @click="chooseTermAndImport(year_group.year+'-'+term)">
@@ -886,7 +886,7 @@ export default {
 	computed: {
 		...mapState({
 			showAd: state => state.show_ad,
-			savedCourses: state => state.savedCourse,
+			savedCourse: state => state.savedCourse,
 		}),
 		time_section() {
 			let time_section = ['1', '2', '3', '4', '5', '6', '7', '8'];
@@ -922,7 +922,7 @@ export default {
 		},
 		savedCounts() {
 			const counts = {};
-			(this.savedCourses || []).forEach(id => {
+			(this.savedCourse || []).forEach(id => {
 				if (!id || id.length < 4) return;
 				const termNoHyphen = id.substring(0, 4); // e.g. '1121'
 				const key = termNoHyphen.substring(0, 3) + '-' + termNoHyphen.substring(3, 4); // '112-1'
@@ -1204,7 +1204,7 @@ export default {
 
 		async importFromSaved() {
 			this.loading = true;
-			const savedCourse = this.savedCourses;
+			const savedCourse = this.savedCourse;
 			if (savedCourse.length === 0 || !this.currentTerm) {
 				this.loading = false;
 				return;

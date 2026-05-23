@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- 列表視圖 -->
-		<table v-if="displayType == '1'" class="ts-table course-table">
+		<table v-if="displayType === '1'" class="ts-table course-table">
 			<thead>
 				<tr>
 					<th>開課單位/班級</th>
@@ -65,7 +65,7 @@
 		</table>
 
 		<!-- 時間表視圖（進階課表） -->
-		<table v-else-if="displayType == ''" class="ts-table is-dense is-celled is-definition timetable" :class="{
+		<table v-else-if="displayType === ''" class="ts-table is-dense is-celled is-definition timetable" :class="{
 			'showSat': coursesByStartTime[6] && (currentClass || !enableAutoShowOnlyMonAndThu),
 			'showOnlyMonAndThu': showOnlyMonAndThu
 		}">
@@ -78,13 +78,14 @@
 			<tbody>
 				<tr>
 					<td class="time-column">
-						<div
-							v-for="section in timeSection"
-							v-if="section <= maxEndSection"
-							:key="section"
-							class="time-slot">
-							{{ section }}
-						</div>
+						<template v-for="section in timeSection">
+							<div
+								v-if="section <= maxEndSection"
+								:key="section"
+								class="time-slot">
+								{{ section }}
+							</div>
+						</template>
 					</td>
 					<td v-for="w in 6" :key="'day-' + w" class="day-column">
 						<div v-if="processedSchedule[w]?.tooManyOverlaps" class="overlap-warning">
@@ -112,6 +113,18 @@
 
 <script>
 export default {
+	data() {
+		return {
+			windowWidth: typeof window !== 'undefined' ? window.innerWidth : 1024,
+		};
+	},
+	mounted() {
+		this._onResize = () => { this.windowWidth = window.innerWidth; };
+		window.addEventListener('resize', this._onResize);
+	},
+	beforeDestroy() {
+		window.removeEventListener('resize', this._onResize);
+	},
 	props: {
 		courses: {
 			type: Array,
@@ -274,15 +287,12 @@ export default {
 
 				const maxOverlap = Math.max(0, ...processedCourses.map(c => c.totalColumns));
 				let maxColumnsAllowed = 5;
-				if (typeof window !== 'undefined') {
-					if (window.innerWidth < 414) {
-						maxColumnsAllowed = 2;
-					}
-					else if (window.innerWidth < 768) {
-						maxColumnsAllowed = 3;
-					}
-					if(this.showOnlyMonAndThu) maxColumnsAllowed += 3;
+				if (this.windowWidth < 414) {
+					maxColumnsAllowed = 2;
+				} else if (this.windowWidth < 768) {
+					maxColumnsAllowed = 3;
 				}
+				if (this.showOnlyMonAndThu) maxColumnsAllowed += 3;
 
 				if (maxOverlap > maxColumnsAllowed) {
 					schedule[day] = {

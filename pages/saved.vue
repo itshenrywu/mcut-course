@@ -98,8 +98,6 @@
 					:timeSection="time_section"
 					:maxEndSection="maxEndSection"
 					:savedCourse="savedCourseForCurrentTerm"
-					:currentClass="currentClass"
-					:currentDept="currentDept"
 					:enableAutoShowOnlyMonAndThu="false"
 					@course-click="showCourse"
 					@action-click="saveCourse"
@@ -185,8 +183,6 @@ export default {
 			courses: [],
 			displayType: '',
 			currentTerm: undefined,
-			currentClass: '',
-			currentDept: ''
 		}
 	},
 	async mounted() {
@@ -312,22 +308,6 @@ export default {
 		},
 		processData(data) {
 			this.courses = data.course;
-			this.currentClass = '';
-			this.currentDept = '';
-
-			if (this.filteredCourses.length > 0) {
-				const firstCourse = this.filteredCourses[0];
-				const uniqueClasses = new Set(this.filteredCourses.map(c => c.year + ' ' + c.class));
-				const uniqueDepts = new Set(this.filteredCourses.map(c => c.dept));
-
-				if (uniqueClasses.size === 1) {
-					this.currentClass = firstCourse.year + ' ' + firstCourse.class;
-				}
-				if (uniqueDepts.size === 1) {
-					this.currentDept = firstCourse.dept;
-				}
-			}
-			
 			this.loading = false;
 		},
 		clearSavedCurrentTerm() {

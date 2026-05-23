@@ -1,16 +1,7 @@
-export const state = () => {
-	let savedCourse = [];
-	if (typeof localStorage !== 'undefined') {
-		try {
-			const parsed = JSON.parse(localStorage['savedCourse'] ?? '[]');
-			if (Array.isArray(parsed)) savedCourse = parsed.filter(id => typeof id === 'string');
-		} catch(e) {}
-	}
-	return {
-		show_ad: false,
-		savedCourse,
-	};
-}
+export const state = () => ({
+	show_ad: false,
+	savedCourse: [],
+})
 
 export const mutations = {
 	setShowAd(state, value) {

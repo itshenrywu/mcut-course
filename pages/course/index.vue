@@ -285,7 +285,7 @@ export default {
 			this.displayType = storedDisplayType;
 		}
 		if (localStorage['searchQuery']) this.searchQuery = localStorage['searchQuery'];
-		if(['0','1','2'].includes(localStorage['showConflict'])) this.showConflict = localStorage['showConflict'];
+		if(['0','1','2'].includes(localStorage['showConflict'])) this.showConflict = parseInt(localStorage['showConflict']);
 		else this.showConflict = 1;
 		await this.$store.dispatch('getSavedCourse');
 		this.currentTerm = localStorage['term'] || '';
@@ -320,7 +320,7 @@ export default {
 			return info.join(' / ');
 		},
 		isTimetableUnavailable() {
-			return this.displayType == '' && ((!this.currentClass && !this.currentDept.includes('通識')) || !this.currentDept);
+			return this.displayType === '' && ((!this.currentClass && !this.currentDept.includes('通識')) || !this.currentDept);
 		},
 		displayCourses() {
 			if (this.isTimetableUnavailable) return [];
@@ -366,7 +366,7 @@ export default {
 					return isRequired || isElective || course.alt_for;
 				});
 			}
-			if (this.showConflict == 0) {
+			if (this.showConflict === 0) {
 				filtered = filtered.filter(course => !this.isConflicted(course) || this.savedCourseForCurrentTerm.includes(course.id));
 			}
 			if (this.currentDept.includes('社會組') || this.currentDept.includes('外文組')) {
@@ -518,10 +518,10 @@ export default {
 			this.fetchData();
 		},
 		saveSearchInput() {
-			if (this.showConflict == 1) {
+			if (this.showConflict === 1) {
 				this.courses.sort((a, b) => a.sortOrder - b.sortOrder);
 			}
-			else if (this.showConflict == 2) {
+			else if (this.showConflict === 2) {
 					this.courses.sort((a, b) => {
 					const aIsSaved = this.savedCourseForCurrentTerm.includes(a.id);
 					const bIsSaved = this.savedCourseForCurrentTerm.includes(b.id);
@@ -580,7 +580,7 @@ export default {
 				timer: 3000, timerProgressBar: true,
 				position: 'bottom-start', showConfirmButton: false,
 			});
-			if (this.showConflict == 2) this.saveSearchInput();
+			if (this.showConflict === 2) this.saveSearchInput();
 		},
 		showCourse(course) {
 			if (course.id.includes('ALT_')) {
@@ -630,7 +630,7 @@ export default {
 		},
 		async saveCourse(course_id) {
 			await this.$store.dispatch('toggleSavedCourse', course_id);
-			if(this.showConflict == 2) {
+			if(this.showConflict === 2) {
 				this.saveSearchInput();
 			}
 		},
