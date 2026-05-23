@@ -76,7 +76,8 @@ export default async () => {
 			baseURL: '/',
 		},
 		plugins: [
-			'~/plugins/axios'
+			'~/plugins/axios',
+			'~/plugins/storage-sync.client'
 		],
 		'google-gtag': {
 			id: 'G-4WZWP0DJMR'

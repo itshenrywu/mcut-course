@@ -83,6 +83,8 @@ export const actions = {
 			savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]');
 		} catch(e) {}
 
+		context.commit('setSavedCourse', [savedCourse, false]);
+
 		if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
 			await this.$axios.get('https://api.mcut-course.com/user/?action=get&saved&get_course=' + savedCourse.join(','), { headers: { authorization: localStorage['auth_key'] } })
 			.then(async res => {
