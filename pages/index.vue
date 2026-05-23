@@ -261,7 +261,6 @@ export default {
 			} else {
 				this.currentTerm = this.default_term || this.terms[0].year + '-' + this.terms[0].term[0];
 			}
-			console.log('default_term', this.default_term);
 			this.fetchData();
 		},
 		fetchData() {

@@ -489,18 +489,6 @@ export default {
 	opacity: 0.8;
 }
 
-.course-block.is-orange {
-	background: var(--ts-orange-500);
-}
-
-.course-block.is-green {
-	background: var(--ts-green-500);
-}
-
-.course-block.is-gray {
-	background: var(--ts-gray-500);
-}
-
 .overlap-warning {
 	font-size: .7rem;
 	padding: 0.5rem;

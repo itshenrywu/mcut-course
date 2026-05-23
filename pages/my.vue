@@ -647,9 +647,6 @@
 #page-my .ts-wrap>.ts-text+.ts-checkbox input {
 	margin-top: 4px;
 }
-
-@media (max-width: 767.98px) {
-}
 </style>
 <script>
 import { mapState } from 'vuex';
@@ -1214,7 +1211,7 @@ export default {
 			}
 			const now = new Date().getTime();
 			const storedData = localStorage['courseData_' + this.currentTerm];
-			const storedTime = localStorage['courseDataTime_' + this.currentTerm];
+			const storedTime = Number(localStorage['courseDataTime_' + this.currentTerm] || 0);
 
 			let data = [];
 			if (storedData && storedTime && (now - storedTime < 30 * 60 * 1000)) {
@@ -1354,15 +1351,15 @@ export default {
 				const tableBorder = this.canvas._tableBorder;
 				for (let text of texts) {
 					if (index == 0) {
-						ctx.font = (32 - tableBorder * 0.05) + 'px Noto Sans TC';
-						ctx.fillStyle = Array.isArray(theme.titleColor) ? theme.titleColor[courseColorIndex] : theme.titleColor;
-						ctx.textAlign = 'left';
-						ctx.textBaseline = 'middle';
+						context.font = (32 - tableBorder * 0.05) + 'px Noto Sans TC';
+						context.fillStyle = Array.isArray(theme.titleColor) ? theme.titleColor[courseColorIndex] : theme.titleColor;
+						context.textAlign = 'left';
+						context.textBaseline = 'middle';
 					} else {
-						ctx.font = (24 - tableBorder * 0.05) + 'px Noto Sans TC';
-						ctx.fillStyle = Array.isArray(theme.textColor) ? theme.textColor[courseColorIndex] : theme.textColor;
-						ctx.textAlign = 'left';
-						ctx.textBaseline = 'middle';
+						context.font = (24 - tableBorder * 0.05) + 'px Noto Sans TC';
+						context.fillStyle = Array.isArray(theme.textColor) ? theme.textColor[courseColorIndex] : theme.textColor;
+						context.textAlign = 'left';
+						context.textBaseline = 'middle';
 					}
 					const words = (text || '').split('');
 					let line = '';
@@ -1954,8 +1951,7 @@ export default {
 				}
 			});
 			if(myCoursesSetting.background === undefined) {
-				console.log(this.backgrounds);
-				if(this.themes.find(t => t.id === myCoursesSetting.theme).type === 'light') {
+				if(this.themes.find(t => t.id === myCoursesSetting.theme)?.type === 'light') {
 					this.myCoursesSetting.background = 'white';
 					this.myCoursesSetting.backgroundColor = '#FFFFFF';
 				} else {

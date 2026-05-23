@@ -62,13 +62,6 @@
 	border-radius: 50%;
 }
 
-.profile-image.is-fluid {
-	width: 100%;
-	max-width: 50px;
-	height: auto;
-	aspect-ratio: 1 / 1;
-}
-
 @media (max-width: 767.98px) {
 	.navbar .ts-tab .item {
 		flex-direction: column;

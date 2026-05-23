@@ -76,8 +76,10 @@
 					</script>
 				</div>
 			</div>
-			<div class="ts-text is-secondary is-tiny has-top-spaced-small">
-				{{ buildTime }} <a :href="`https://github.com/itshenrywu/mcut-course/commit/${commitSha}`" target="_blank" rel="noopener noreferrer">{{ commitSha }}</a>
+			<div class="ts-content has-top-spaced is-vertically-fitted">
+				<div class="ts-text is-secondary is-tiny has-top-spaced-small">
+					{{ buildTime }} <a style="text-decoration:none" :href="`https://github.com/itshenrywu/mcut-course/commit/${commitSha}`" target="_blank" rel="noopener noreferrer">{{ commitSha }}</a>
+				</div>
 			</div>
 		</div>
 		<loading v-show="loading" />
