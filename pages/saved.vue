@@ -3,31 +3,45 @@
 		<div class="ts-container has-top-padded-large is-fitted">
 			<div class="ts-grid is-compact is-middle-aligned mobile-padded">
 				<div class="column is-13-wide">
-					<h1 class="ts-header is-huge has-vertically-padded">收藏的課程
-						<div class="ts-badge is-start-spaced is-outlined" v-if="currentTerm && currentTerm!=''">{{ currentTerm }} 學期</div>
+					<h1 class="ts-header is-huge has-vertically-padded">
+						收藏的課程
+						<div class="ts-select is-basic has-start-spaced" v-if="terms && terms.length">
+							<div class="content" data-dropdown="term-dropdown">{{ currentTerm ? currentTerm.split('-')[0] + '-' + currentTerm.split('-')[1] : '' }}</div>
+							<div class="ts-dropdown" data-position="bottom-start" id="term-dropdown" style="height:60vh">
+								<template v-for="year_group of terms">
+									<div class="header">{{ year_group.year }} 學年</div>
+									<div class="item is-indented" v-for="term of year_group.term" :class="{ 'is-selected': year_group.year+'-'+term == currentTerm }"
+										@click="chooseTerm(year_group.year+'-'+term)">
+										第 {{ term }} 學期
+										<span class="description">{{ savedCounts[year_group.year + '-' + term] || 0 }}</span>
+									</div>
+								</template>
+							</div>
+						</div>
+						<div class="ts-badge is-start-spaced is-outlined" v-else-if="currentTerm && currentTerm!=''">{{ currentTerm }} 學期</div>
 					</h1>
 				</div>
 				<div class="column is-3-wide">
 					<div class="ts-wrap is-end-aligned">
 						<button class="ts-button is-negative is-outlined mobile-hidden"
-							v-if="savedCourse.length > 0"
-							@click="clearSavedCourse()">
+							v-if="savedCourseForCurrentTerm.length > 0"
+							@click="clearSavedCurrentTerm()">
 							<span class="ts-icon is-end-spaced is-trash-icon"></span> 清除
 						</button>
 						<button class="ts-button is-icon is-negative is-outlined mobile-only"
-							v-if="savedCourse.length > 0"
-							@click="clearSavedCourse()">
+							v-if="savedCourseForCurrentTerm.length > 0"
+							@click="clearSavedCurrentTerm()">
 							<span class="ts-icon is-trash-icon"></span>
 						</button>
 					</div>
 				</div>
 			</div>
-			<div class="ts-box" v-if="savedCourse.length > 0 && filteredCourses.length < savedCourse.length">
+			<div class="ts-box" v-if="savedCourseForCurrentTerm.length > 0 && filteredCourses.length < savedCourseForCurrentTerm.length">
 				<div class="ts-content">
 					<div class="ts-text is-description has-bottom-spaced-small">
-						<span class="ts-badge is-small is-dense is-negative">提醒</span> 收藏的課程中有 {{ savedCourse.length - filteredCourses.length }} 門課程已下架，請重新搜尋並收藏。
+						<span class="ts-badge is-small is-dense is-negative">提醒</span> 本學期收藏的課程中有 {{ savedCourseForCurrentTerm.length - filteredCourses.length }} 門課程已下架，請重新搜尋並收藏。
 					</div>
-					<button class="ts-button is-primary is-outlined" @click="clearSavedRemovedCourse()">清除已下架的課程</button>
+					<button class="ts-button is-primary is-outlined" @click="clearSavedRemovedCourse()">清除本學期已下架的課程</button>
 				</div>
 			</div>
 			<div class="ts-grid has-top-spaced mobile-padded" v-if="filteredCourses.length > 0">
@@ -63,107 +77,35 @@
 			<div class="ts-wrap has-top-padded-large is-center-aligned" v-if="filteredCourses.length > 0">
 				<div class="ts-selection">
 					<label class="item">
-						<input type="radio" name="displayType" v-model="displayType" value=""
-							@change="changeDisplayType()">
-						<div class="text">課表檢視</div>
-					</label>
-					<label class="item">
 						<input type="radio" name="displayType" v-model="displayType" value="1"
 							@change="changeDisplayType()">
 						<div class="text">列表檢視</div>
+					</label>
+					<label class="item">
+						<input type="radio" name="displayType" v-model="displayType" value=""
+							@change="changeDisplayType()">
+						<div class="text">課表檢視</div>
 					</label>
 				</div>
 			</div>
 		</div>
 		<div class="ts-container has-bottom-padded is-fitted" v-if="!loading">
 			<div class="ts-box has-top-spaced-large" v-if="filteredCourses.length > 0">
-				<table v-if="displayType == '1'" class="ts-table course-table">
-					<thead>
-						<tr>
-							<th>開課單位/班級</th>
-							<th>課程名稱</th>
-							<th>上課時間</th>
-							<th>修別/學分</th>
-							<th>授課老師</th>
-							<th>備註</th>
-							<th>&nbsp;</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr v-for="course in filteredCourses" :key="course.id" @click="showCourse(course)">
-							<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
-								<span class="mobile-only" v-if="!course.id.includes('ALT_')">{{  course.teacher + ' 老師' }}</span>
-							</td>
-							<td class="c-name">
-								{{ course.name }}
-							</td>
-							<td class="c-time">
-								<span v-for="time in course.time" class="time">
-									<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-										week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
-									<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>
-								</span>
-							</td>
-							<td class="c-type-credit mobile-only absolute-right">
-								<span class="ts-badge is-small has-dark"
-									:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-									{{
-										course.type +
-										(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
-										' ' + course.credit
-									}} 學分
-								</span>
-							</td>
-							<td class="c-type-credit mobile-hidden">
-								<span class="ts-badge is-small is-dense is-end-spaced has-dark"
-									:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-									{{
-										course.type +
-										(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
-									}}
-								</span>{{ course.credit }}
-							</td>
-							<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
-							<td class="c-remark">{{ course.comment }}</td>
-							<td class="c-action">
-								<span class="ts-icon absolute-right is-star-icon" v-if="savedCourse.includes(course.id)" @click.stop="saveCourse(course)"></span>
-								<span class="ts-icon absolute-right is-star-o-icon" v-else @click.stop="saveCourse(course)"></span>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<table v-else class="ts-table is-dense is-celled is-definition course-timetable"
-					:class="{ 'showSat': coursesByStartTime[6] }">
-					<thead>
-						<tr>
-							<th>&nbsp;</th>
-							<th v-for="w in 6">{{ week_text(w).replace(/\(|\)/g,'') }}</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr v-for="section in time_section" v-if="section <= maxEndSection">
-							<td>{{ section }}</td>
-							<td v-for="w in 6">
-								<div v-if="coursesByStartTime[w] && coursesByStartTime[w][section] && coursesByStartTime[w][section].length >= 1"
-									:class="{
-										'is-orange': coursesByStartTime[w][section][0].type == '必修',
-										'is-green': coursesByStartTime[w][section][0].type == '選修',
-										'is-gray': coursesByStartTime[w][section][0].type == '重修',
-									}"
-									@click="showCourse(coursesByStartTime[w][section][0])" :style="{'height': (coursesByStartTime[w][section][0].period * 3.5) - .7 + 'rem'}">
-									<div>
-										{{ coursesByStartTime[w][section][0].name }}
-										<small v-if="!coursesByStartTime[w][section][0]?.teacher?.includes('分班')"><br>{{ coursesByStartTime[w][section][0].teacher }}</small>
-									</div>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				<CourseList
+					:courses="filteredCourses"
+					:allCourses="courses"
+					:displayType="displayType"
+					:timeSection="time_section"
+					:maxEndSection="maxEndSection"
+					:savedCourse="savedCourseForCurrentTerm"
+					:enableAutoShowOnlyMonAndThu="false"
+					@course-click="showCourse"
+					@action-click="saveCourse"
+				/>
 			</div>
 			<div class="ts-blankslate" v-else>
 				<span class="ts-icon is-circle-alert-icon"></span>
-				<div class="header">目前還沒有收藏的課程</div>
+				<div class="header">本學期還沒有收藏的課程</div>
 				<div class="description">快到「全校課表」收藏有興趣的課程吧！</div>
 			</div>
 			<br>
@@ -187,94 +129,36 @@
 	</div>
 </template>
 <style>
-.course-timetable th,
-.course-timetable td {
-	text-align: center;
-	vertical-align: middle;
-	width: 20%;
-}
-
-.course-timetable.showSat th,
-.course-timetable.showSat td {
-	width: 16.666%;
-}
-
-.course-timetable th:nth-child(7),
-.course-timetable td:nth-child(7) {
-	display: none !important;
-}
-
-.course-timetable.showSat th:nth-child(7),
-.course-timetable.showSat td:nth-child(7) {
-	display: table-cell !important;
-}
-
-.course-timetable th:first-child,
-.course-timetable td:first-child {
-	width: 2rem;
-}
-
-.course-timetable td {
-	line-height: 1rem;
-	padding: 0;
-	height: 3.5rem !important;
-	position: relative;
-}
-
-.course-timetable td>div {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 94%;
-	border-radius: 5px;
-	margin: 0.3rem 3%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-}
-
-.course-timetable td>div:hover {
-	cursor: pointer;
-}
-
-.course-timetable td>div>div {
-	max-height: 95%;
-	overflow: hidden;
-}
-
 #limit-info td,
 #limit-info th {
 	text-align: center;
 	vertical-align: middle;
 }
-
-@media (max-width: 767.98px) {
-	.course-timetable td {
-		font-size: 12px !important;
-	}
-
-	#page-saved .ts-grid .column.mobile-fluid .ts-button {
-		width: calc(50% - .5rem);
-	}
-
-	.course-timetable th:first-child,
-	.course-timetable td:first-child {
-		width: 1rem;
-		padding-left: .5rem;
-		padding-right: .5rem;
-	}
-
-	.course-timetable td {
-		font-size: 10px !important;
-	}
-}
 </style>
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState } from 'vuex'
+import CourseList from '~/components/CourseList.vue'
 export default {
-	async asyncData({ $axios, params, payload }) {
+	components: {
+		CourseList
+	},
+	async asyncData({ $axios }) {
 
+		let _terms = {};
+		const list = await $axios.get('https://api.mcut-course.com/list.php');
+		list.data.term.forEach(term => {
+			let _year = term.split('-')[0];
+			let _term = term.split('-')[1];
+			if (!_terms[_year]) _terms[_year] = [];
+			_terms[_year].push(_term);
+		});
+		let terms = Object.entries(_terms)
+		.sort((a, b) => Number(b[0]) - Number(a[0]))
+		.map(([year, term]) => ({ year: year, term: term }));
+
+		const default_term = list.data.course[0].id.substring(0, 3) + '-' + list.data.course[0].id.substring(3, 4);
+
+		return { terms, default_term };
 	},
 	head() {
 		return {
@@ -291,19 +175,25 @@ export default {
 	},
 	data() {
 		return {
+			terms: [],
+			default_term: null,
 			time_section: ['0.5', '1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
 			info: [],
 			loading: true,
 			courses: [],
 			displayType: '',
-			maxEndSection: 8,
 			currentTerm: undefined,
-			savedCourse: []
 		}
 	},
 	async mounted() {
-		this.savedCourse = await this.$store.dispatch('getSavedCourse');
-		this.displayType = localStorage.displayType || '';
+		await this.$store.dispatch('getSavedCourse');
+		const storedDisplayType = localStorage.getItem('displayType');
+		if (storedDisplayType === null) {
+			this.displayType = '1';
+			localStorage.setItem('displayType', '1');
+		} else {
+			this.displayType = storedDisplayType;
+		}
 		if (this.$route.query.ids) {
 			let importCourse = [];
 			let importTerm = this.$route.query.ids.substring(0, 4);
@@ -312,8 +202,7 @@ export default {
 				importCourse.push(importTerm + id);
 			});
 
-			let savedCourse = await this.$store.dispatch('getSavedCourse');
-			if (savedCourse.length >= 1) {
+			if (this.savedCourse.length >= 1) {
 				this.$swal({
 					icon: 'question',
 					title: '匯入 ' + importCourse.length + ' 門課程？',
@@ -322,11 +211,10 @@ export default {
 					cancelButtonText: '取消',
 					showCancelButton: true,
 				})
-					.then((res) => {
+					.then(async (res) => {
 						if (res.isConfirmed) {
 							localStorage['term'] = importTerm;
-							this.savedCourse = importCourse;
-							this.setSavedCourse([this.savedCourse]);
+							await this.$store.dispatch('replaceSavedCourse', importCourse);
 							this.$swal({
 								title: '已匯入課程', icon: 'success', toast: true,
 								timer: 3000, timerProgressBar: true,
@@ -337,8 +225,7 @@ export default {
 					});
 			} else {
 				localStorage['term'] = importTerm;
-				this.savedCourse = importCourse;
-				this.setSavedCourse([this.savedCourse]);
+				await this.$store.dispatch('replaceSavedCourse', importCourse);
 				this.$swal({
 					title: '已匯入課程', icon: 'success', toast: true,
 					timer: 3000, timerProgressBar: true,
@@ -348,58 +235,63 @@ export default {
 			}
 		}
 
-		if (this.savedCourse.length > 0) {
+		if (localStorage['term']) {
+			this.currentTerm = localStorage['term'];
+		} else if (this.savedCourse.length > 0) {
 			let term_id = this.savedCourse[0].substring(0, 4);
 			this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
-			this.fetchData();
+			localStorage['term'] = this.currentTerm;
 		} else {
-			this.loading = false;
+			this.currentTerm = this.default_term || '';
 		}
+		if (this.currentTerm) this.fetchData();
+		else this.loading = false;
 	},
 	computed: {
 		...mapState({
-			showAd: state => state.show_ad
+			showAd: state => state.show_ad,
+			savedCourse: state => state.savedCourse,
 		}),
-		week_text() {
-			return (day, course) => {
-				let _day = ['(其他)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(其他)'][day];
-				if(course?.comment?.includes('塊狀')) return '(其他)';
-				return _day;
-			}
+		savedCourseForCurrentTerm() {
+			if (!this.currentTerm) return [];
+			const prefix = this.currentTerm.split('-').join('');
+			return this.savedCourse.filter(id => id.startsWith(prefix));
 		},
 		filteredCourses() {
-			return this.courses.filter(course => this.savedCourse.includes(course.id));
+			return this.courses.filter(course => this.savedCourseForCurrentTerm.includes(course.id));
 		},
-		coursesByStartTime() {
-			let result = {};
-			this.filteredCourses.forEach(course => {
-				course.time.forEach(timeSlot => {
-					const [weekday, timeRange] = timeSlot;
-					const startTime = timeRange.split('~')[0];
-					const endTime = timeRange.split('~')[1];
-
-					if (this.maxEndSection < parseFloat(endTime)) {
-						this.maxEndSection = parseFloat(endTime);
+		maxEndSection() {
+			let maxSection = 8;
+			(this.filteredCourses || []).forEach(course => {
+				(course.time || []).forEach(time => {
+					const endSection = Number((time[1] || '').split('~')[1]);
+					if (!Number.isNaN(endSection) && endSection > maxSection) {
+						maxSection = endSection;
 					}
-
-					if (!result[weekday]) {
-						result[weekday] = {};
-					}
-
-					if (!result[weekday][startTime]) {
-						result[weekday][startTime] = [];
-					}
-
-					let part_course = JSON.parse(JSON.stringify(course));
-					part_course.period = this.time_section.indexOf(endTime) - this.time_section.indexOf(startTime) + 1;
-					result[weekday][startTime].push(part_course);
 				});
 			});
-			return result;
+			return maxSection;
+		},
+		savedCounts() {
+			const counts = {};
+			(this.savedCourse || []).forEach(id => {
+				if (!id || id.length < 4) return;
+				const termNoHyphen = id.substring(0, 4); // e.g. '1121'
+				const key = termNoHyphen.substring(0, 3) + '-' + termNoHyphen.substring(3, 4); // '112-1'
+				counts[key] = (counts[key] || 0) + 1;
+			});
+			return counts;
 		}
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
+		chooseTerm(term) {
+			if (this.currentTerm == term) return;
+			this.loading = true;
+			this.courses = [];
+			this.currentTerm = term;
+			localStorage['term'] = term;
+			this.fetchData();
+		},
 		fetchData() {
 			const storedData = localStorage['courseData_' + this.currentTerm];
 			const storedTime = localStorage['courseDataTime_' + this.currentTerm];
@@ -419,36 +311,34 @@ export default {
 			this.courses = data.course;
 			this.loading = false;
 		},
-		clearSavedCourse() {
+		clearSavedCurrentTerm() {
 			this.$swal({
 				icon: 'question',
-				title: '清除所有收藏的課程？',
+				title: '清除本學期收藏的課程？',
 				confirmButtonText: '清除',
 				cancelButtonText: '取消',
 				showCancelButton: true,
 				confirmButtonColor: 'var(--ts-negative-600)',
 			})
-				.then((res) => {
+				.then(async (res) => {
 					if (res.isConfirmed) {
+						await this.$store.dispatch('clearSavedCourseByTerm', this.currentTerm);
 						this.$swal({
-							title: '已清除所有收藏的課程', icon: 'success', toast: true,
+							title: '已移除目前學期的收藏', icon: 'success', toast: true,
 							timer: 3000, timerProgressBar: true,
 							position: 'bottom-start', showConfirmButton: false,
 						});
-						this.savedCourse = [];
-						this.setSavedCourse([this.savedCourse]);
-						this.currentTerm = '';
 					}
 				});
 		},
-		clearSavedRemovedCourse() {
-			this.savedCourse = this.savedCourse.filter(id => this.courses.some(course => course.id === id));
+		async clearSavedRemovedCourse() {
+			const availableIds = this.filteredCourses.map(course => course.id);
+			await this.$store.dispatch('clearSavedRemovedCourse', { term: this.currentTerm, availableIds });
 			this.$swal({
-				title: '已清除已下架的課程', icon: 'success', toast: true,
+				title: '已清除本學期已下架的課程', icon: 'success', toast: true,
 				timer: 3000, timerProgressBar: true,
 				position: 'bottom-start', showConfirmButton: false,
 			});
-			this.setSavedCourse([this.savedCourse]);
 		},
 		showCourse(course) {
 			if (course.id.includes('ALT_')) {
@@ -498,27 +388,24 @@ export default {
 			}
 			this.$router.push('/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/');
 		},
-		saveCourse(course) {
+		saveCourse(course_id) {
+			let course = this.filteredCourses.find(c => c.id === course_id);
 			this.$swal({
 				icon: 'question',
-				title: '移除收藏的課程「'+course.name+'」？',
+				title: '移除收藏的課程「'+(course?.name || '')+'」？',
 				confirmButtonText: '移除',
 				cancelButtonText: '取消',
 				showCancelButton: true,
 				confirmButtonColor: 'var(--ts-negative-600)',
 			})
-				.then((res) => {
+				.then(async (res) => {
 					if (res.isConfirmed) {
-						if (this.savedCourse.includes(course.id)) {
-							this.savedCourse = this.savedCourse.filter(id => id !== course.id);
-						}
-						this.setSavedCourse([this.savedCourse]);
-						if(this.savedCourse.length == 0) this.currentTerm = '';
+						await this.$store.dispatch('removeSavedCourse', course_id);
 					}
 				});
 		},
 		changeDisplayType() {
-			localStorage['displayType'] = this.displayType ? '1' : '';
+			localStorage.setItem('displayType', this.displayType);
 		},
 		showLimitInfo() {
 			this.$swal({

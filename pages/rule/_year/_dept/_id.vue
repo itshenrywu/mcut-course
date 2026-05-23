@@ -477,7 +477,7 @@
 }
 </style>
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState } from 'vuex'
 export default {
 	async asyncData({ $axios, params, payload }) {
 		let depts = {};
@@ -622,7 +622,6 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 		sortRulesByDept(ruleGroup) {
 			const deptOrder = Object.keys(this.dept_short_name);
 			return Object.entries(ruleGroup).sort(([, a], [, b]) => {
@@ -795,7 +794,7 @@ export default {
 		async showFindCourse(sid) {
 			if(this.findCourses(sid).length == 0) return;
 			this.$swal({
-				title: '開設於 ' + this.currentRuleTerm.split('-')[0] + ' 學年第 ' + this.currentRuleTerm.split('-')[1] + ' 學期的相符課程 (' + this.findCourses(sid).length + ')',
+				title: '開設於 ' + this.currentRuleTerm.split('-')[0] + '-' + this.currentRuleTerm.split('-')[1] + ' 的相符課程 (' + this.findCourses(sid).length + ')',
 				customClass: {
 					container: 'similar-courses',
 				},

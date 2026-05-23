@@ -1,16 +1,20 @@
 import axios from 'axios'
+import { execSync } from 'child_process'
 
 export default async () => {
+	let commitSha = '';
+	try { commitSha = execSync('git rev-parse HEAD').toString().trim(); } catch {}
 	const revResponse = await axios.get('https://api.mcut-course.com/info.php');
 	if(revResponse.data.rev.length < 8) {
 		process.exit(1);
 	}
-	
+
 	return {
 		target: 'static',
 		env: {
 			GEN_TIME: new Date().getTime(),
-			REV: revResponse.data.rev
+			REV: revResponse.data.rev,
+			COMMIT_SHA: commitSha
 		},
 		head: {
 			title: '明志科技大學選課小幫手',
@@ -76,7 +80,8 @@ export default async () => {
 			baseURL: '/',
 		},
 		plugins: [
-			'~/plugins/axios'
+			'~/plugins/axios',
+			'~/plugins/storage-sync.client'
 		],
 		'google-gtag': {
 			id: 'G-4WZWP0DJMR'

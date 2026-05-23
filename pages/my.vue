@@ -12,10 +12,19 @@
 								<span class="ts-icon is-import-icon"></span>
 								從學校系統匯入
 							</button>
-							<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="importFromSaved()" v-show="savedCourses.length > 0">
+							<button class="ts-button is-secondary is-small is-fluid is-start-icon" data-dropdown="term-dropdown" v-show="savedCourse.length > 0">
 								<span class="ts-icon is-star-icon"></span>
 								從「收藏的課程」匯入
 							</button>
+							<div class="ts-dropdown" data-position="bottom-start" id="term-dropdown" style="height:60vh" v-if="savedCourse.length > 0">
+								<template v-for="year_group of terms">
+									<div class="header">{{ year_group.year }} 學年</div>
+									<div class="item is-indented" v-for="term of year_group.term" @click="chooseTermAndImport(year_group.year+'-'+term)">
+										第 {{ term }} 學期
+										<span class="description">{{ savedCounts[year_group.year + '-' + term] || 0 }}</span>
+									</div>
+								</template>
+							</div>
 							<div class="ts-grid" style="width: 100%;">
 								<div class="column is-8-wide">
 									<button class="ts-button is-secondary is-small is-fluid is-start-icon" @click="clickCell(-1, -1)">
@@ -32,6 +41,7 @@
 							</div>
 						</div>
 					</div>
+
 
 					<div>
 						<div class="ts-text is-label has-bottom-spaced-small">背景</div>
@@ -637,16 +647,28 @@
 #page-my .ts-wrap>.ts-text+.ts-checkbox input {
 	margin-top: 4px;
 }
-
-@media (max-width: 767.98px) {
-}
 </style>
 <script>
 import { mapState } from 'vuex';
 import iro from '@jaames/iro';
 export default {
-	async asyncData({ $axios, params, payload }) {
-		
+	async asyncData({ $axios }) {
+
+		let _terms = {};
+		const list = await $axios.get('https://api.mcut-course.com/list.php');
+		list.data.term.forEach(term => {
+			let _year = term.split('-')[0];
+			let _term = term.split('-')[1];
+			if (!_terms[_year]) _terms[_year] = [];
+			_terms[_year].push(_term);
+		});
+		let terms = Object.entries(_terms)
+			.sort((a, b) => Number(b[0]) - Number(a[0]))
+			.map(([year, term]) => ({ year: year, term: term }));
+
+		const default_term = list.data.course[0].id.substring(0, 3) + '-' + list.data.course[0].id.substring(3, 4);
+
+		return { terms, default_term };
 	},
 	head() {
 		return {
@@ -672,7 +694,6 @@ export default {
 			loading_get: false,
 			
 			maxEndSection: 8,
-			savedCourses: [],
 			myCourses: [],
 			gridCells: [],
 
@@ -712,6 +733,9 @@ export default {
 			widgetColor: '#ffffff',
 
 			backgroundImage: null,
+			terms: [],
+			default_term: null,
+			currentTerm: undefined,
 
 			timeInfo: {
 				'0.5': ["07:00", "07:50"],
@@ -861,7 +885,8 @@ export default {
 	},
 	computed: {
 		...mapState({
-			showAd: state => state.show_ad
+			showAd: state => state.show_ad,
+			savedCourse: state => state.savedCourse,
 		}),
 		time_section() {
 			let time_section = ['1', '2', '3', '4', '5', '6', '7', '8'];
@@ -894,6 +919,16 @@ export default {
 				}
 			});
 			return used_secion;
+		},
+		savedCounts() {
+			const counts = {};
+			(this.savedCourse || []).forEach(id => {
+				if (!id || id.length < 4) return;
+				const termNoHyphen = id.substring(0, 4); // e.g. '1121'
+				const key = termNoHyphen.substring(0, 3) + '-' + termNoHyphen.substring(3, 4); // '112-1'
+				counts[key] = (counts[key] || 0) + 1;
+			});
+			return counts;
 		},
 		isIos() {
 			if (typeof navigator !== "undefined") {
@@ -1009,8 +1044,8 @@ export default {
 							options: {
 								sliderType: 'hue'
 							}
-						},
-					]
+							},
+						],
 				});
 				pickerElement.colorPicker = colorPicker;
 				colorPicker.on('color:change', (color) => {
@@ -1021,6 +1056,10 @@ export default {
 				colorPicker.on('input:end', (color) => {});
 			}
 			this.updateTimetable(false);
+		},
+		chooseTermAndImport(term) {
+			this.currentTerm = term;
+			this.importFromSaved();
 		},
 
 		updateBackgroundColor() {
@@ -1165,12 +1204,14 @@ export default {
 
 		async importFromSaved() {
 			this.loading = true;
-			const savedCourse = this.savedCourses;
-			if (savedCourse.length === 0) return;
-			this.currentTerm = savedCourse[0].substring(0, 3) + '-' + savedCourse[0].substring(3, 4);
+			const savedCourse = this.savedCourse;
+			if (savedCourse.length === 0 || !this.currentTerm) {
+				this.loading = false;
+				return;
+			}
 			const now = new Date().getTime();
 			const storedData = localStorage['courseData_' + this.currentTerm];
-			const storedTime = localStorage['courseDataTime_' + this.currentTerm];
+			const storedTime = Number(localStorage['courseDataTime_' + this.currentTerm] || 0);
 
 			let data = [];
 			if (storedData && storedTime && (now - storedTime < 30 * 60 * 1000)) {
@@ -1182,6 +1223,16 @@ export default {
 					localStorage['courseDataTime_' + this.currentTerm] = now;
 					data = res.data;
 				} catch (e) {}
+			}
+
+			if (!data.course || data.course.length === 0) {
+				this.loading = false;
+				this.$swal({
+					title: '這個學期沒有課程', icon: 'info', toast: true,
+					timer: 3000, timerProgressBar: true,
+					position: 'bottom-start', showConfirmButton: false,
+				});
+				return;
 			}
 			
 			let success = 0, fail = 0;
@@ -1225,6 +1276,13 @@ export default {
 			if(success > 0) {
 				this.sortCourse();
 				this.updateTimetable();
+			}
+			else if (fail === 0) {
+				this.$swal({
+					title: '這個學期沒有已收藏的課程', icon: 'info', toast: true,
+					timer: 3000, timerProgressBar: true,
+					position: 'bottom-start', showConfirmButton: false,
+				});
 			}
 			this.loading = false;
 		},
@@ -1293,15 +1351,15 @@ export default {
 				const tableBorder = this.canvas._tableBorder;
 				for (let text of texts) {
 					if (index == 0) {
-						ctx.font = (32 - tableBorder * 0.05) + 'px Noto Sans TC';
-						ctx.fillStyle = Array.isArray(theme.titleColor) ? theme.titleColor[courseColorIndex] : theme.titleColor;
-						ctx.textAlign = 'left';
-						ctx.textBaseline = 'middle';
+						context.font = (32 - tableBorder * 0.05) + 'px Noto Sans TC';
+						context.fillStyle = Array.isArray(theme.titleColor) ? theme.titleColor[courseColorIndex] : theme.titleColor;
+						context.textAlign = 'left';
+						context.textBaseline = 'middle';
 					} else {
-						ctx.font = (24 - tableBorder * 0.05) + 'px Noto Sans TC';
-						ctx.fillStyle = Array.isArray(theme.textColor) ? theme.textColor[courseColorIndex] : theme.textColor;
-						ctx.textAlign = 'left';
-						ctx.textBaseline = 'middle';
+						context.font = (24 - tableBorder * 0.05) + 'px Noto Sans TC';
+						context.fillStyle = Array.isArray(theme.textColor) ? theme.textColor[courseColorIndex] : theme.textColor;
+						context.textAlign = 'left';
+						context.textBaseline = 'middle';
 					}
 					const words = (text || '').split('');
 					let line = '';
@@ -1808,7 +1866,7 @@ export default {
 			this.setCanvasSize();
 		});
 		this.editingCourse = Object.freeze(this.defaultCourse);
-		this.savedCourses = JSON.parse(localStorage.getItem('savedCourse') || '[]');
+		this.$store.dispatch('getSavedCourse');
 		this.$axios.get('/scriptable.min.js?v=5').then(res => {
 			this.scriptableCodeFile = res.data;
 		});
@@ -1893,8 +1951,7 @@ export default {
 				}
 			});
 			if(myCoursesSetting.background === undefined) {
-				console.log(this.backgrounds);
-				if(this.themes.find(t => t.id === myCoursesSetting.theme).type === 'light') {
+				if(this.themes.find(t => t.id === myCoursesSetting.theme)?.type === 'light') {
 					this.myCoursesSetting.background = 'white';
 					this.myCoursesSetting.backgroundColor = '#FFFFFF';
 				} else {

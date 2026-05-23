@@ -134,7 +134,7 @@
 				<div class="column is-1-by-5-wide tablet-fluid">
 					<div class="ts-box is-raised saved" @click="goDetailSearch('saved')">
 						<div class="ts-content">
-							<div class="ts-header">收藏的課程<span class="ts-badge is-start-spaced is-dense is-small my" v-if="savedCourse.length > 0">{{ savedCourse.length }}</span></div>
+							<div class="ts-header">收藏的課程<span class="ts-badge is-start-spaced is-dense is-small my" v-if="savedCourseByTerm.length > 0">{{ savedCourseByTerm.length }}</span></div>
 						</div>
 						<div class="symbol"><span class="ts-icon is-star-icon"></span></div>
 					</div>
@@ -196,7 +196,7 @@
 	</div>
 </template>
 <script>
-import { mapMutations } from 'vuex';
+import { mapState } from 'vuex';
 export default {
 	async asyncData({ $axios }) {
 		let _terms = {};
@@ -222,7 +222,6 @@ export default {
 		return {
 			terms: [],
 			currentTerm: '',
-			savedCourse: [],
 			classList: {},
 			display: [],
 			searchQuery: '',
@@ -235,21 +234,33 @@ export default {
 			default_term: null
 		}
 	},
+	computed: {
+		...mapState({
+			savedCourse: state => state.savedCourse,
+		}),
+		savedCourseByTerm() {
+			if(!this.currentTerm || !this.savedCourse) return [];
+			const termId = this.currentTerm.split('-').join('');
+			return this.savedCourse.filter(id => id.substring(0,4) === termId);
+		}
+	},
 	mounted() {
 		this.init();
 	},
 	methods: {
-		...mapMutations(['setSavedCourse']),
 		async init() {
 			this.loading = true;
-			this.savedCourse = await this.$store.dispatch('getSavedCourse');
-			if (this.savedCourse && this.savedCourse.length > 0) {
+			await this.$store.dispatch('getSavedCourse');
+
+			if (localStorage['term']) {
+				this.currentTerm = localStorage['term'];
+			} else if (this.savedCourse && this.savedCourse.length > 0) {
 				let term_id = this.savedCourse[0].substring(0, 4);
 				this.currentTerm = term_id.substring(0, 3) + '-' + term_id.substring(3, 4);
 				localStorage['term'] = this.currentTerm;
+			} else {
+				this.currentTerm = this.default_term || this.terms[0].year + '-' + this.terms[0].term[0];
 			}
-			else this.currentTerm = localStorage['term'] || this.default_term || this.terms[0].year + '-' + this.terms[0].term[0];
-			console.log('default_term', this.default_term);
 			this.fetchData();
 		},
 		fetchData() {
@@ -355,35 +366,11 @@ export default {
 		},
 		chooseTerm(term) {
 			if (this.currentTerm == term) return;
-			if (this.savedCourse.length == 0) {
-				this.loading = true;
-				this.currentTerm = term;
-				localStorage['term'] = term;
-				this.display = [];
-				this.fetchData();
-				return;
-			}
-			this.$swal({
-				icon: 'question',
-				title: '切換至 ' + term + ' 學期？',
-				html: '先前收藏的課程將會清空！',
-				confirmButtonText: '清空並切換',
-				cancelButtonText: '取消',
-				showCancelButton: true,
-			})
-				.then((res) => {
-					if (res.isConfirmed) {
-						this.$swal.close();
-						this.savedCourse = [];
-						this.setSavedCourse([this.savedCourse]);
-						this.$root.$emit('updateSavedCourse', this.savedCourse);
-						this.loading = true;
-						this.currentTerm = term;
-						localStorage['term'] = term;
-						this.display = [];
-						this.fetchData();
-					}
-				})
+			this.loading = true;
+			this.currentTerm = term;
+			localStorage['term'] = term;
+			this.display = [];
+			this.fetchData();
 		},
 		searchByQuery() {
 			this.searchResult.course = [];

@@ -1,31 +1,87 @@
 export const state = () => ({
-	show_ad: false
+	show_ad: false,
+	savedCourse: [],
 })
 
 export const mutations = {
 	setShowAd(state, value) {
 		state.show_ad = value;
 	},
-	setSavedCourse(state, value) {
-		let savedCourse = value[0], sync = value[1] !== false;
-		if(sync && localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
-			this.$axios.post('https://api.mcut-course.com/user/?action=update&saved', 'saved=' + JSON.stringify(savedCourse), { headers: { authorization: localStorage['auth_key'] } })
-			.then(res => {
-				localStorage['savedCourseSync'] = res.data.updatedAt;
-			});
-		}
-		savedCourse = Array.from(new Set(savedCourse));
-		localStorage['savedCourse'] = JSON.stringify(savedCourse || []);
+	setSavedCourse(state, savedCourse) {
+		if (!Array.isArray(savedCourse)) savedCourse = [];
+		savedCourse = Array.from(new Set(savedCourse.filter(id => typeof id === 'string')));
+		localStorage['savedCourse'] = JSON.stringify(savedCourse);
 		state.savedCourse = savedCourse;
 	}
 }
 
 export const actions = {
+	addSavedCourse(context, courseId) {
+		const savedCourse = [...context.state.savedCourse];
+		if (!savedCourse.includes(courseId)) savedCourse.push(courseId);
+		context.commit('setSavedCourse', savedCourse);
+		context.dispatch('syncSavedCourseToServer');
+	},
+	removeSavedCourse(context, courseId) {
+		const savedCourse = context.state.savedCourse.filter(id => id !== courseId);
+		context.commit('setSavedCourse', savedCourse);
+		context.dispatch('syncSavedCourseToServer');
+	},
+	toggleSavedCourse(context, courseId) {
+		let savedCourse = [...context.state.savedCourse];
+		if (savedCourse.includes(courseId)) {
+			savedCourse = savedCourse.filter(id => id !== courseId);
+		} else {
+			savedCourse.push(courseId);
+		}
+		context.commit('setSavedCourse', savedCourse);
+		context.dispatch('syncSavedCourseToServer');
+	},
+	addMultipleSavedCourses(context, courseIds) {
+		const savedCourse = [...context.state.savedCourse];
+		courseIds.forEach(id => { if (!savedCourse.includes(id)) savedCourse.push(id); });
+		context.commit('setSavedCourse', savedCourse);
+		context.dispatch('syncSavedCourseToServer');
+	},
+	replaceSavedCourse(context, courses) {
+		context.commit('setSavedCourse', courses);
+		context.dispatch('syncSavedCourseToServer');
+	},
+	clearSavedCourse(context) {
+		context.commit('setSavedCourse', []);
+		context.dispatch('syncSavedCourseToServer');
+	},
+	clearSavedCourseByTerm(context, term) {
+		const prefix = term.split('-').join('');
+		const savedCourse = context.state.savedCourse.filter(id => !id.startsWith(prefix));
+		context.commit('setSavedCourse', savedCourse);
+		context.dispatch('syncSavedCourseToServer');
+	},
+	clearSavedRemovedCourse(context, { term, availableIds }) {
+		const prefix = term.split('-').join('');
+		const availableSet = new Set(availableIds);
+		const savedCourse = context.state.savedCourse.filter(id => !id.startsWith(prefix) || availableSet.has(id));
+		context.commit('setSavedCourse', savedCourse);
+		context.dispatch('syncSavedCourseToServer');
+	},
+	async syncSavedCourseToServer(context) {
+		if (!localStorage['auth_key']) return;
+		try {
+			const res = await this.$axios.post(
+				'https://api.mcut-course.com/user/?action=update&saved',
+				'saved=' + JSON.stringify(context.state.savedCourse),
+				{ headers: { authorization: localStorage['auth_key'] } }
+			);
+			localStorage['savedCourseSync'] = res.data.updatedAt;
+		} catch(e) {}
+	},
 	async getSavedCourse(context) {
 		let savedCourse = [];
 		try {
 			savedCourse = JSON.parse(localStorage['savedCourse'] ?? '[]');
 		} catch(e) {}
+
+		context.commit('setSavedCourse', savedCourse);
 
 		if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
 			await this.$axios.get('https://api.mcut-course.com/user/?action=get&saved&get_course=' + savedCourse.join(','), { headers: { authorization: localStorage['auth_key'] } })
@@ -34,19 +90,20 @@ export const actions = {
 				let local = savedCourse.filter(courseId => res.data.courseData[courseId] != undefined).sort();
 				if(!isNaN(new Date(localStorage['savedCourseSync']).getTime()) && new Date(localStorage['savedCourseSync']).getTime() < new Date(res.data.updatedAt).getTime()) {
 					savedCourse = online;
-					context.commit('setSavedCourse', [savedCourse, false]);
+					context.commit('setSavedCourse', savedCourse);
 				}
 				else if(online.length == 0 && local.length == 0) {
 					savedCourse = [];
-					context.commit('setSavedCourse', [savedCourse, false]);
+					context.commit('setSavedCourse', savedCourse);
 				}
 				else if(online.length == 0 && local.length >= 1) {
 					savedCourse = local;
-					context.commit('setSavedCourse', [savedCourse]);
+					context.commit('setSavedCourse', savedCourse);
+					context.dispatch('syncSavedCourseToServer');
 				}
 				else if(online.length >= 1 && local.length == 0) {
 					savedCourse = online;
-					context.commit('setSavedCourse', [savedCourse, false]);
+					context.commit('setSavedCourse', savedCourse);
 				}
 				else {
 					let isDifferent = false;
@@ -61,63 +118,84 @@ export const actions = {
 					}
 
 					if(isDifferent) {
-						let sameList = [];
-						local.forEach(courseId => {
-							online.forEach(onlineCourseId => {
-								if(courseId == onlineCourseId) {
-									sameList.push(courseId);
-								}
-							});
-						});
+						const onlineSet = new Set(online);
+						const localSet = new Set(local);
+						const localOnly = local.filter(id => !onlineSet.has(id));
+						const onlineOnly = online.filter(id => !localSet.has(id));
+						const common = local.filter(id => onlineSet.has(id));
 
-						const date = new Date(res.data.updatedAt);
-						let updatedAt = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' ' + date.getHours().toString().padStart(2,'0') + ':' + date.getMinutes().toString().padStart(2,'0');
+						const escHtml = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
-						let html = '<div class="ts-grid is-compact is-stretched compare" style="text-align:left">\
-							<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense">\
-								<span class="ts-badge is-small is-dense" style="background:var(--ts-static-gray-500);color:var(--ts-static-gray-50)">當前收藏的課程 ('+local.length+')</span>' +
-								'<br><small>' + local[0].substring(0, 3) + '-' + local[0].substring(3, 4) + ' 學期</small><br>' +
-								local.map(courseId => '<div class="compare-course '+(sameList.includes(courseId)?'':' has-diff')+'">' +
-									res.data.courseData[courseId].name +
-									'</div>'
-								).join('') +
-							'</div></div></div>\
-							<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense">\
-								<span class="ts-badge is-small is-dense" style="background:var(--ts-static-primary-600);color:var(--ts-static-gray-50)">收藏於帳號中的課程 ('+online.length+')</span>' +
-								'<br><small>' + online[0].substring(0, 3) + '-' + online[0].substring(3, 4) + ' 學期 | 儲存於 ' + updatedAt + '</small><br>' +
-								online.map(courseId => '<div class="compare-course '+(sameList.includes(courseId)?'':' has-diff')+'">' +
-									res.data.courseData[courseId].name +
-									'</div>'
-								).join('') +
-							'</div></div></div>\
-						</div><br><div class="ts-text is-description is-start-aligned">\
-							這可能是因為您先前有在別的裝置登入並收藏課程，但跟目前登入前的課程不一致。紅色代表有差異的課程，請選擇一個同步方式。\
-						</div>';
-						
+						const toggleRow = (id, label) =>
+							`<label style="display:flex;align-items:center;gap:8px;margin-bottom:6px;cursor:pointer;font-weight:bold">` +
+							`<input type="checkbox" id="${escHtml(id)}" checked style="width:16px;height:16px;flex-shrink:0">` +
+							`<span>${escHtml(label)}</span></label>`;
+
+						const courseRow = (courseId, cls) => {
+							const termRaw = courseId.substring(0, 4);
+							const term = termRaw.substring(0, 3) + '-' + termRaw.substring(3, 4);
+							return `<label style="display:flex;align-items:center;gap:8px;margin:4px 0;cursor:pointer;padding-left:24px">` +
+								`<input type="checkbox" value="${escHtml(courseId)}" class="${escHtml(cls)}" checked style="width:16px;height:16px;flex-shrink:0">` +
+								`<span>${escHtml(term)} ${escHtml(res.data.courseData[courseId].name)}</span>` +
+								`</label>`;
+						};
+
+						let html = '<div style="text-align:left">';
+						if (localOnly.length > 0) {
+							html += toggleRow('toggle-local', '登入前收藏且不在帳號中的課程') +
+								localOnly.map(id => courseRow(id, 'conflict-local')).join('') +
+								'<div style="margin-top:14px"></div>';
+						}
+						if (onlineOnly.length > 0) {
+							html += toggleRow('toggle-online', '僅收藏於帳號中的課程') +
+								onlineOnly.map(id => courseRow(id, 'conflict-online')).join('') +
+								'<div style="margin-top:14px"></div>';
+						}
+						if (common.length > 0) {
+							html += toggleRow('toggle-common', '兩邊都有的課程') +
+								common.map(id => courseRow(id, 'conflict-common')).join('');
+						}
+						html += '</div>';
+
+						const syncToggle = (toggleId, cls) => {
+							const toggle = document.getElementById(toggleId);
+							if (!toggle) return;
+							const boxes = [...document.querySelectorAll('.' + cls)];
+							toggle.addEventListener('change', () => boxes.forEach(b => b.checked = toggle.checked));
+							boxes.forEach(b => b.addEventListener('change', () => {
+								const all = boxes.every(x => x.checked);
+								const none = boxes.every(x => !x.checked);
+								toggle.indeterminate = !all && !none;
+								toggle.checked = all;
+							}));
+						};
+
 						const sres = await this.$swal({
 							icon: 'warning',
-							title: '當前收藏的課程與收藏於帳號中的課程不一致',
+							title: '請選擇要保留的課程',
 							html: html,
-							confirmButtonText: '清除當前收藏的課程，使用收藏於帳號中的課程',
-							cancelButtonText: '清除收藏於帳號中的課程，使用當前收藏的課程',
-							showCancelButton: true,
+							confirmButtonText: '儲存',
+							showCancelButton: false,
 							allowOutsideClick: false,
 							allowEscapeKey: false,
-							focusConfirm: false,
-							reverseButtons: true,
-							didOpen() {
-								document.querySelectorAll('.swal2-actions button')[0].blur();
+							didOpen: () => {
+								syncToggle('toggle-local', 'conflict-local');
+								syncToggle('toggle-online', 'conflict-online');
+								syncToggle('toggle-common', 'conflict-common');
+							},
+							preConfirm: () => {
+								const checked = [...document.querySelectorAll('.conflict-local:checked, .conflict-online:checked, .conflict-common:checked')];
+								return [...new Set(checked.map(el => el.value))];
 							}
 						});
 						if (sres.isConfirmed) {
-							savedCourse = online;
-							context.commit('setSavedCourse', [savedCourse, false]);
-						} else {
-							savedCourse = local;
-							context.commit('setSavedCourse', [savedCourse]);
+							savedCourse = sres.value;
+							context.commit('setSavedCourse', savedCourse);
+							context.dispatch('syncSavedCourseToServer');
 						}
 					} else {
-						context.commit('setSavedCourse', [savedCourse]);
+						context.commit('setSavedCourse', savedCourse);
+						context.dispatch('syncSavedCourseToServer');
 					}
 				}
 				localStorage['savedCourseSync'] = res.data.updatedAt;

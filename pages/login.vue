@@ -23,7 +23,11 @@ export default {
 		if(this.$route.query.auth_key) localStorage['auth_key'] = this.$route.query.auth_key;
 		
 		if(localStorage['auth_key'] == undefined || localStorage['auth_key'] == '') {
-			window.location.href = 'https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1661015282&redirect_uri=https%3A%2F%2Fapi.mcut-course.com%2Fuser%2F&scope=profile&state=1';
+			// state 對應伺服器端的 redirect URI：1=production, 2=pages.dev staging, 3=localhost
+			let state = '1';
+			if(location.hostname === 'mcut-course.pages.dev') state = '2';
+			if(location.hostname === 'localhost') state = '3';
+			window.location.href = 'https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1661015282&redirect_uri=https%3A%2F%2Fapi.mcut-course.com%2Fuser%2F&scope=profile&state=' + state;
 		} else {
 			localStorage['myCourseSync'] = '';
 			localStorage['savedCourseSync'] = '';

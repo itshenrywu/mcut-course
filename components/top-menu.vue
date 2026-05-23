@@ -19,9 +19,6 @@
 					<span v-else class="ts-icon" :class="item.icon"></span>
 					<div class="label">
 						{{ item.label }}
-						<span v-if="item.path === '/saved/' && savedCourse.length > 0" class="ts-badge is-small is-dense">
-							{{ savedCourse.length }}
-						</span>
 						<span v-if="item.path === '/more/' && showRedDot" class="hint"></span>
 					</div>
 				</NuxtLink>
@@ -62,13 +59,6 @@
 	border-radius: 50%;
 }
 
-.profile-image.is-fluid {
-	width: 100%;
-	max-width: 50px;
-	height: auto;
-	aspect-ratio: 1 / 1;
-}
-
 @media (max-width: 767.98px) {
 	.navbar .ts-tab .item {
 		flex-direction: column;
@@ -102,14 +92,6 @@
 <script>
 export default {
 	mounted() {
-		try {
-			this.savedCourse = JSON.parse(localStorage.getItem('savedCourse')) || [];
-		} catch(e) {
-			this.savedCourse = [];
-		}
-		this.$root.$on('updateSavedCourse', (savedCourse) => {
-			this.savedCourse = savedCourse;
-		});
 		this.currentPath = this.$router.currentRoute.path;
 		this.$router.afterEach((to) => {
 			this.currentPath = to.path;
@@ -128,7 +110,6 @@ export default {
 	},
 	data() {
 		return {
-			savedCourse: [],
 			currentPath: '',
 			showRedDot: false,
 			menuItems: [

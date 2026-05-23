@@ -76,6 +76,12 @@
 					</script>
 				</div>
 			</div>
+			<div class="ts-content has-top-spaced is-vertically-fitted">
+				<div class="ts-text is-secondary is-tiny has-top-spaced-small" style="font-family: 'Courier New', Courier, monospace;">
+					{{ buildTime }}
+					<a v-if="commitSha" style="text-decoration:none" :href="`https://github.com/itshenrywu/mcut-course/commit/${commitSha}`" target="_blank" rel="noopener noreferrer">{{ commitSha.slice(0, 8) }}</a>
+				</div>
+			</div>
 		</div>
 		<loading v-show="loading" />
 	</div>
@@ -148,6 +154,14 @@ export default {
 		...mapState({
 			showAd: state => state.show_ad
 		}),
+		buildTime() {
+			const d = new Date(parseInt(process.env.GEN_TIME));
+			const p = (n) => String(n).padStart(2, '0');
+			return `${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`;
+		},
+		commitSha() {
+			return process.env.COMMIT_SHA || '';
+		},
 	},
 	mounted() {
 		if(!localStorage['auth_key']) {
