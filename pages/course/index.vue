@@ -408,6 +408,7 @@ export default {
 			}
 			return (_course) => {
 				if (this.savedCourseForCurrentTerm.length == 0) return false;
+				if (this.savedCourseForCurrentTerm.includes(_course.id)) return false;
 				if (!_course.time) return false;
 				for (const [week, timeRange] of _course.time) {
 					const [startStr, endStr] = timeRange.split('~');

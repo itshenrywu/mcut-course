@@ -133,17 +133,19 @@ export const actions = {
 						const onlineOnly = online.filter(id => !localSet.has(id));
 						const common = local.filter(id => onlineSet.has(id));
 
+						const escHtml = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
 						const toggleRow = (id, label) =>
 							`<label style="display:flex;align-items:center;gap:8px;margin-bottom:6px;cursor:pointer;font-weight:bold">` +
-							`<input type="checkbox" id="${id}" checked style="width:16px;height:16px;flex-shrink:0">` +
-							`<span>${label}</span></label>`;
+							`<input type="checkbox" id="${escHtml(id)}" checked style="width:16px;height:16px;flex-shrink:0">` +
+							`<span>${escHtml(label)}</span></label>`;
 
 						const courseRow = (courseId, cls) => {
 							const termRaw = courseId.substring(0, 4);
 							const term = termRaw.substring(0, 3) + '-' + termRaw.substring(3, 4);
 							return `<label style="display:flex;align-items:center;gap:8px;margin:4px 0;cursor:pointer;padding-left:24px">` +
-								`<input type="checkbox" value="${courseId}" class="${cls}" checked style="width:16px;height:16px;flex-shrink:0">` +
-								`<span>${term} ${res.data.courseData[courseId].name}</span>` +
+								`<input type="checkbox" value="${escHtml(courseId)}" class="${escHtml(cls)}" checked style="width:16px;height:16px;flex-shrink:0">` +
+								`<span>${escHtml(term)} ${escHtml(res.data.courseData[courseId].name)}</span>` +
 								`</label>`;
 						};
 

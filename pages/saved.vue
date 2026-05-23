@@ -444,7 +444,6 @@ export default {
 				.then(async (res) => {
 					if (res.isConfirmed) {
 						await this.$store.dispatch('removeSavedCourse', course_id);
-						if(this.savedCourse.length == 0) this.currentTerm = '';
 					}
 				});
 		},

@@ -15,7 +15,7 @@
 			</thead>
 			<tbody>
 				<template v-for="(course, index) in courses">
-					<tr @click="$emit('course-click', course)">
+					<tr :key="course.id" @click="$emit('course-click', course)">
 						<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
 							<span class="mobile-only" v-if="!course.id.includes('ALT_')">{{  course.teacher + ' 老師' }}</span>
 						</td>
@@ -25,8 +25,8 @@
 						<td class="c-time">
 							<span v-for="time in course.time" class="time">
 								<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-									week_text(time[0]) + ' ' + time[1].split('~')[0] }}</template>
-								<template v-else>{{ week_text(time[0]) + ' ' + time[1] }}</template>
+									week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
+								<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>
 							</span>
 
 							<span v-if="isConflicted(course)" class="is-conflict">
