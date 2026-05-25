@@ -1314,12 +1314,12 @@ export default {
 				return course;
 			});
 			if(sync && localStorage.auth_key) {
-				this.$axios.post('https://api.mcut-course.com/user/?action=update',
+				this.$axios.patch('https://api-v2.mcut-course.com/api/user/my',
 					'my=' + encodeURIComponent(JSON.stringify(this.myCourses)),
-					{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
+					{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: 'Bearer ' + localStorage['auth_key'] } }
 				)
 				.then(res => {
-					localStorage['myCourseSync'] = res.data.updatedAt;
+					localStorage['myCourseSync'] = res.data.etime_my;
 				})
 				.catch((err) => {
 					localStorage['auth_key'] = '';
@@ -1748,7 +1748,7 @@ export default {
 				'</div></div></div>\
 				<div class="column is-8-wide"><div class="ts-box"><div class="ts-content is-dense">\
 					<span class="ts-badge is-small is-dense" style="background:var(--ts-static-primary-600);color:var(--ts-static-gray-50)">儲存於帳號中的課表 ('+online.length+')</span>' +
-					'<br><small>儲存於 ' + this.formatTime(data.updatedAt) + '</small><br>' +
+					'<br><small>儲存於 ' + this.formatTime(data.etime_my) + '</small><br>' +
 					online.map(course => '<div class="compare-course '+(course.isSame?'':' has-diff')+'">' +
 						course.name.split('(')[0] + ' ' +
 						'<small>(' + this.week_text[course.time[0]-1] + ') ' + (course.time[1].split('~')[0] == course.time[1].split('~')[1] ? course.time[1].split('~')[0] : course.time[1]) +
@@ -1876,12 +1876,12 @@ export default {
 		try { this.myCourses = JSON.parse(localStorage.myCourses); } catch (e) { }
 		if(localStorage.auth_key) {
 			this.loading_get = true;
-			this.$axios.get('https://api.mcut-course.com/user/?action=get&my', { headers: { authorization: localStorage['auth_key'] } })
+			this.$axios.get('https://api-v2.mcut-course.com/api/user/my', { headers: { authorization: 'Bearer ' + localStorage['auth_key'] } })
 			.then(res => {
 				this.loading_get = false;
-				if(!isNaN(new Date(localStorage['myCourseSync']).getTime()) && new Date(localStorage['myCourseSync']).getTime() < new Date(res.data.updatedAt).getTime()) {
+				if(!isNaN(new Date(localStorage['myCourseSync']).getTime()) && new Date(localStorage['myCourseSync']).getTime() < new Date(res.data.etime_my).getTime()) {
 					this.myCourses = res.data.my;
-					localStorage['myCourseSync'] = res.data.updatedAt;
+					localStorage['myCourseSync'] = res.data.etime_my;
 					this.updateTimetable(false);
 				}
 				else if(res.data.my.length === 0) {
@@ -1889,7 +1889,7 @@ export default {
 				}
 				else if(this.myCourses.length === 0) {
 					this.myCourses = res.data.my;
-					localStorage['myCourseSync'] = res.data.updatedAt;
+					localStorage['myCourseSync'] = res.data.etime_my;
 					this.updateTimetable(false);
 				}
 				else {
@@ -1935,7 +1935,7 @@ export default {
 							}
 						});
 					} else {
-						localStorage['myCourseSync'] = res.data.updatedAt;
+						localStorage['myCourseSync'] = res.data.etime_my;
 					}
 				}
 			});

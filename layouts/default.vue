@@ -74,10 +74,10 @@ export default {
 		checkLogin() {
 			if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
 				this.$axios.get(
-					'https://api.mcut-course.com/user/?action=check' + (localStorage['profile_image'] ? '' : '&image=1'),
-					{ headers: { authorization: localStorage['auth_key'] } }
-				).then((res) => {
-					if(!res.data.success) {
+					'https://api-v2.mcut-course.com/api/user/me' + (localStorage['profile_image'] ? '' : '?image=1'),
+					{ headers: { authorization: 'Bearer ' + localStorage['auth_key'] } }
+				).then((res, err) => {
+					if(err) {
 						localStorage['auth_key'] = '';
 						localStorage['profile_image'] = '';
 						localStorage['profile_name'] = '';
@@ -93,7 +93,7 @@ export default {
 						this.$root.$emit('checkRedDot');
 					}
 
-					if(res.data.image) localStorage['profile_image'] = res.data.image;
+					if(res.data.profile_image) localStorage['profile_image'] = res.data.profile_image;
 					if(res.data.name) localStorage['profile_name'] = res.data.name;
 					if(res.data.uid) localStorage['uid'] = res.data.uid;
 					this.$root.$emit('showProfileImage', localStorage['profile_image']);

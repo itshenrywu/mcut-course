@@ -67,12 +67,12 @@ export const actions = {
 	async syncSavedCourseToServer(context) {
 		if (!localStorage['auth_key']) return;
 		try {
-			const res = await this.$axios.post(
-				'https://api.mcut-course.com/user/?action=update&saved',
+			const res = await this.$axios.patch(
+				'https://api-v2.mcut-course.com/api/user/saved',
 				'saved=' + JSON.stringify(context.state.savedCourse),
-				{ headers: { authorization: localStorage['auth_key'] } }
+				{ headers: { authorization: 'Bearer ' + localStorage['auth_key'] } }
 			);
-			localStorage['savedCourseSync'] = res.data.updatedAt;
+			localStorage['savedCourseSync'] = res.data.etime_saved;
 		} catch(e) {}
 	},
 	async getSavedCourse(context) {
@@ -84,11 +84,11 @@ export const actions = {
 		context.commit('setSavedCourse', savedCourse);
 
 		if(localStorage['auth_key'] != undefined && localStorage['auth_key'] != '') {
-			await this.$axios.get('https://api.mcut-course.com/user/?action=get&saved&get_course=' + savedCourse.join(','), { headers: { authorization: localStorage['auth_key'] } })
+			await this.$axios.get('https://api-v2.mcut-course.com/api/user/saved?get_course=' + savedCourse.join(','), { headers: { authorization: 'Bearer ' + localStorage['auth_key'] } })
 			.then(async res => {
-				let online = res.data.saved.filter(courseId => res.data.courseData[courseId] != undefined).sort();
-				let local = savedCourse.filter(courseId => res.data.courseData[courseId] != undefined).sort();
-				if(!isNaN(new Date(localStorage['savedCourseSync']).getTime()) && new Date(localStorage['savedCourseSync']).getTime() < new Date(res.data.updatedAt).getTime()) {
+				let online = res.data.saved.filter(courseId => res.data.course_data[courseId] != undefined).sort();
+				let local = savedCourse.filter(courseId => res.data.course_data[courseId] != undefined).sort();
+				if(!isNaN(new Date(localStorage['savedCourseSync']).getTime()) && new Date(localStorage['savedCourseSync']).getTime() < new Date(res.data.etime_saved).getTime()) {
 					savedCourse = online;
 					context.commit('setSavedCourse', savedCourse);
 				}
@@ -136,7 +136,7 @@ export const actions = {
 							const term = termRaw.substring(0, 3) + '-' + termRaw.substring(3, 4);
 							return `<label style="display:flex;align-items:center;gap:8px;margin:4px 0;cursor:pointer;padding-left:24px">` +
 								`<input type="checkbox" value="${escHtml(courseId)}" class="${escHtml(cls)}" checked style="width:16px;height:16px;flex-shrink:0">` +
-								`<span>${escHtml(term)} ${escHtml(res.data.courseData[courseId].name)}</span>` +
+								`<span>${escHtml(term)} ${escHtml(res.data.course_data[courseId].name)}</span>` +
 								`</label>`;
 						};
 
@@ -198,7 +198,7 @@ export const actions = {
 						context.dispatch('syncSavedCourseToServer');
 					}
 				}
-				localStorage['savedCourseSync'] = res.data.updatedAt;
+				localStorage['savedCourseSync'] = res.data.etime_saved;
 			});
 		}
 		return savedCourse;

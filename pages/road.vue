@@ -149,9 +149,9 @@ export default {
 			const isValid = /^[A-Z0-9]{9}$/.test(uid) && uid.startsWith('U');
 			if (isValid) {
 				if(localStorage.auth_key) {
-					this.$axios.post('https://api.mcut-course.com/user/?action=update',
+					this.$axios.post('https://api-v2.mcut-course.com/api/user/uid',
 						'uid=' + uid,
-						{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: localStorage['auth_key'] } }
+						{ headers: { 'Content-Type': 'application/x-www-form-urlencoded', authorization: 'Bearer ' + localStorage['auth_key'] } }
 					)
 					.then(res => {
 						localStorage['uid'] = uid;

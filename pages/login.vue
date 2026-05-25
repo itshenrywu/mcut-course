@@ -20,14 +20,18 @@ export default {
 		}
 	},
 	mounted() {
-		if(this.$route.query.auth_key) localStorage['auth_key'] = this.$route.query.auth_key;
+		const hash = new URLSearchParams(window.location.hash.slice(1))
+		const token = hash.get('token')
+		if (token) {
+			localStorage['auth_key'] = token
+			history.replaceState(null, '', window.location.pathname)
+		}
 		
 		if(localStorage['auth_key'] == undefined || localStorage['auth_key'] == '') {
-			// state 對應伺服器端的 redirect URI：1=production, 2=pages.dev staging, 3=localhost
-			let state = '1';
-			if(location.hostname === 'mcut-course.pages.dev') state = '2';
-			if(location.hostname === 'localhost') state = '3';
-			window.location.href = 'https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1661015282&redirect_uri=https%3A%2F%2Fapi.mcut-course.com%2Fuser%2F&scope=profile&state=' + state;
+			let uri = 'https://mcut-course.com/login';
+			if(window.location.hostname === 'localhost') uri = 'http://localhost:10000/auth/line/callback';
+
+			window.location.href = 'https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1661015282&redirect_uri=' + encodeURIComponent(uri) + '&scope=profile&state=' + encodeURIComponent(window.location.origin)
 		} else {
 			localStorage['myCourseSync'] = '';
 			localStorage['savedCourseSync'] = '';
