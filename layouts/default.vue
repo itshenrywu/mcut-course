@@ -4,7 +4,12 @@
 		<Nuxt />
 		<div class="cell">
 			<div class="footer">
-				Made by <a href="https://henrywu.tw" target="_blank">Henry Wu</a>
+				<template v-if="isDev">
+					此為測試版本，資料可能有缺漏，或功能可能會有錯誤。若您非測試人員，請改用<a href="https://mcut-course.com">正式版</a>。
+				</template>
+				<template v-else>
+					Made by <a href="https://henrywu.tw" target="_blank">Henry Wu</a>
+				</template>
 			</div>
 		</div>
 	</div>
@@ -68,6 +73,11 @@ export default {
 			});
 		}
 		this.checkLogin();
+	},
+	computed: {
+		isDev() {
+			return process.client && window.location.hostname !== 'mcut-course.com';
+		}
 	},
 	methods: {
 		...mapMutations(['setShowAd']),
