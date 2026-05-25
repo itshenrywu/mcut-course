@@ -28,7 +28,7 @@ export default {
 		}
 		
 		if(localStorage['auth_key'] == undefined || localStorage['auth_key'] == '') {
-			let uri = 'https://mcut-course.com/login';
+			let uri = 'https://api-v2.mcut-course.com/auth/line/callback';
 			if(window.location.hostname === 'localhost') uri = 'http://localhost:10000/auth/line/callback';
 
 			window.location.href = 'https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1661015282&redirect_uri=' + encodeURIComponent(uri) + '&scope=profile&state=' + encodeURIComponent(window.location.origin)
