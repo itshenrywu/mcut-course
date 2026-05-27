@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1070/0K03", (function(a){return {data:[{course:{time:[["3","7~8.5"],["5","8.5~8.5"]],id:"114210700K03",name:"特色專題(二)",type:"選修",dept:"工程學院",year:a,class:"甲",teacher:"劉舜維",credit:"2",hour:a,classroom:"",max:"50",min:"10",comment:"限工程學院學生選課(榮譽學程課程)",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

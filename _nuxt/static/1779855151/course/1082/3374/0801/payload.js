@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/3374/0801", (function(a){return {data:[{course:{time:[["7","4~4"]],id:"108233740801",name:"設計管理",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"劉瑞芬",credit:a,hour:a,max:"40",min:"10",comment:"第2階段面授選課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/0Y01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114122700Y01",name:"應用統計",type:"必修",dept:"四技經管系",year:"4",class:"甲",teacher:"盧建中",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

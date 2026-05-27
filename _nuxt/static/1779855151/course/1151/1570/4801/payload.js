@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1570/4801", (function(a){return {data:[{course:{time:[["4","5~6"],["5","1~4"]],id:"115115704801",name:"系統程式",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"董一志",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"●甲乙合班,上課日期6\u002F29-8\u002F28,資工系統選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1172/0901", {data:[{course:{time:[["4","2~4"]],id:"108211720901",name:"電子學實驗",type:"必修",dept:"四技機械系",year:"2",class:"乙",teacher:"洪國永",credit:"1",hour:"3",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

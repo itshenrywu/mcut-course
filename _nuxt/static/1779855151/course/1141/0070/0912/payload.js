@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0912", (function(a,b,c){return {data:[{course:{time:[[a,b],["2",b]],id:"114100700912",name:"實習前職場素養訓練",type:"必修",dept:"半導體學程",year:"3",class:"甲",teacher:"陳順基",credit:a,hour:a,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/1840/0604", (function(a,b){return {data:[{course:{time:[[a,"8.5~10"],[b,"9~11"]],id:"110418400604",name:"材料科學導論(二)",type:"重修",dept:"四技材工系",year:b,class:"暑",teacher:"黃裕清",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"暑修",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

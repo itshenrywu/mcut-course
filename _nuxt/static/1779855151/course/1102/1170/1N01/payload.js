@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1170/1N01", (function(a,b){return {data:[{course:{time:[["1","7~8"],["4","8~8"]],id:"110211701N01",name:"中等材料力學",type:"選修",dept:"四技機械系",year:"2",class:"甲",teacher:"郭啟全",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

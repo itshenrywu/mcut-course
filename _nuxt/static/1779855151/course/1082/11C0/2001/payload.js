@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/11C0/2001", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"108211C02001",name:"車輛底盤與實務分析",type:"選修",dept:"四技進修部機械系",year:a,class:"甲",teacher:"黃新翔",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

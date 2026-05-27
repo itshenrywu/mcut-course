@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1570/1K01", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"110115701K01",name:"數位邏輯設計實務",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"陳耀添",credit:"2",hour:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

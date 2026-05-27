@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3150/6202", {data:[{course:{time:[["1","5~7"],["5","1~3"]],id:"113131506202",name:"產品設計(一)",type:"必修",dept:"四技工設系",year:"2",class:"乙",teacher:"許定洋",credit:"3",hour:"6",classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]});

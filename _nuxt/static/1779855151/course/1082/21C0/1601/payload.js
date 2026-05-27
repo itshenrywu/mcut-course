@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/21C0/1601", (function(a,b){return {data:[{course:{time:[[a,"12~12"],[a,"8~8.5"]],id:"108221C01601",name:"企業資源規劃",type:"選修",dept:"四技進修部工管系",year:"4",class:"甲",teacher:"陳皇木",credit:b,hour:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1070/0E01", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"112110700E01",name:"科技英文簡報與表達(一)",type:"選修",dept:"工程學院",year:"4",class:"甲",teacher:"簡珮玲",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"限工程學院學生選課(榮譽學程課程)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

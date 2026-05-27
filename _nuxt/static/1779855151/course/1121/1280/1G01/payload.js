@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1280/1G01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"112112801G01",name:"光纖通訊系統",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"蔡文星",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1380/0A01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"109113800A01",name:"分子薄膜成長與探針顯微技術",type:"選修",dept:"化工系碩士班",year:a,class:"甲",teacher:"杜鶴芸",credit:b,hour:b,classroom:c,max:"40",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

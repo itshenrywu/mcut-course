@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/3F01", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"115111703F01",name:"模具設計與製造",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"江信遠",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"●上課日期:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

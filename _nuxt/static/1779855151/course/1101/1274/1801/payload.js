@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1274/1801", {data:[{course:{time:[["5","5~6"]],id:"110112741801",name:"虛擬儀控軟體應用(LABVIEW)",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"吳啟耀",credit:"1",hour:"2",classroom:"",max:"45",min:"10",comment:"限工程學院四年級選修。",otherinfo:null}}],fetch:{},mutations:[]});

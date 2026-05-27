@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/1T04", (function(a){return {data:[{course:{time:[["2","6~8"]],id:"114122701T04",name:"商用談判",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"侯文治",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

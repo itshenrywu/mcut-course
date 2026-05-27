@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0770/0903", (function(a){return {data:[{course:{time:[["5","1~2"]],id:"114107700903",name:"全民國防教育軍事訓練(一)",type:"必修",dept:"四技電子系",year:"1",class:"甲",teacher:"劉銘昶",credit:"0.5",hour:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0070/0903", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"108100700903",name:"實習前職場素養訓練",type:"必修",dept:"四技電機系",year:"3",class:"乙",teacher:"王得貴",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0270/0S12", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"114102700S12",name:"英文實務(三)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"葉明倫",credit:"0",hour:"2",classroom:"",max:"40",min:"10",comment:"工智",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

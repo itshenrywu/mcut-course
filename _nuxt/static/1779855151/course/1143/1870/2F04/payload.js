@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1870/2F04", (function(a,b,c){return {data:[{course:{time:[["2",a],[b,a]],id:"114318702F04",name:"材料機械性質",type:"重修",dept:"四技材工系",year:b,class:"暑",teacher:"賴怡廷",credit:c,hour:c,classroom:"",max:"20",min:"5",comment:"6\u002F29~8\u002F28上課，與大三甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("7~8.5","4","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0270/0107", (function(a,b){return {data:[{course:{time:[["7","11~11"]],id:"112202700107",name:"工讀自學英文",type:"必修",dept:"四技電子系",year:"3",class:"甲",teacher:"林美良",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

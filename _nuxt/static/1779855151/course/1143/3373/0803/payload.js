@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/3373/0803", (function(a,b,c){return {data:[{course:{time:[["2",a],[b,a]],id:"114333730803",name:"影像思考與創作",type:"重修",dept:"四技視傳系",year:b,class:"暑",teacher:"朱賢哲",credit:c,hour:c,classroom:"",max:"10",min:"1",comment:"暑修併傳三甲帶狀課程(6\u002F29~8\u002F28)",otherinfo:null}}],fetch:{},mutations:[]}}("2~4","4","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0070/0C03", (function(a){return {data:[{course:{time:[["7","10~10"]],id:"109200700C03",name:"工讀實務實習(四)",type:"必修",dept:"四技電子系",year:"3",class:"甲",teacher:"曾宗亮",credit:"4",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

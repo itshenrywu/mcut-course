@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/1C01", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"113103701C01",name:"歷史人物析論",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"馮典章",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"上課期間為7\u002F1至8\u002F26",otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2")));

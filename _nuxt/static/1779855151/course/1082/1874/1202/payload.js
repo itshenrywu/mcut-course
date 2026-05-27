@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1874/1202", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"108218741202",name:"再生能源材料",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"江炳煌",credit:a,hour:a,max:"64",min:"10",comment:"材四甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

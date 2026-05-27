@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/12C0/2A01", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"109112C02A01",name:"數位邏輯設計",type:"必修",dept:"四技進修部電機系",year:"2",class:"甲",teacher:"蔡文星",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/1573/0503", (function(a,b){return {data:[{course:{time:[["2",b],[a,b]],id:"112315730503",name:"信號與系統",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"賴文正",credit:a,hour:a,classroom:"",max:"5",min:"1",comment:"併113三上(甲班)課程",otherinfo:null}}],fetch:{},mutations:[]}}("3","1~2")));

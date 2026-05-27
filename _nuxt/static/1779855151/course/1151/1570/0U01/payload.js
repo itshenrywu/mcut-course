@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1570/0U01", (function(a){return {data:[{course:{time:[["1","1~4"],["2","5~6"]],id:"115115700U01",name:"PCB電路佈線實務",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"何文吉",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"●甲乙合班,上課6\u002F29-8\u002F28,資工\u002F微電子選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

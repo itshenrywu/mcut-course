@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0072/0303", (function(a){return {data:[{course:{time:[["4","1~2"]],id:"109100720303",name:"英語聽講(初級)(一)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"柳薇芬",credit:"1",hour:a,classroom:"",max:"40",min:"10",comment:"電機電子初A",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

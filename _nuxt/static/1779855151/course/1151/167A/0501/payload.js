@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/167A/0501", (function(a){return {data:[{course:{time:[["4","2~4"],["5","5~7"]],id:"1151167A0501",name:"廢棄物處理",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"官文惠",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"●上9週:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

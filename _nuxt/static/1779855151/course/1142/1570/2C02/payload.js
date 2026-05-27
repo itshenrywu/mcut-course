@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1570/2C02", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"114215702C02",name:"電子學(三)",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"曾宗亮",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

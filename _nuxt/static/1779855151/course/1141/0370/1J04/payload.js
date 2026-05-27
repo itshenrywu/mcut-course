@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/1J04", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"114103701J04",name:"社會科學導論",type:"必修",dept:"社會組-四技(日)",year:"3",class:"丙",teacher:"盧信吉",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course(經3丙+設3乙)",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

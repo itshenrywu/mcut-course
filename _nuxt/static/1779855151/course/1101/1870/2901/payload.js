@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1870/2901", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"110118702901",name:"薄膜製程",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"李志偉",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

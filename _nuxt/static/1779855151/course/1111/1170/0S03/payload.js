@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1170/0S03", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"111111700S03",name:"電動車機電整合工程實務",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"陳明彥",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"限工程學院四年級選俢",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

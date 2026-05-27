@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/12C0/1402", (function(a){return {data:[{course:{time:[["6","7~9"]],id:"108212C01402",name:"電子學 (二)",type:"選修",dept:"四技進修部電機系",year:a,class:"乙",teacher:"吳長洲",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

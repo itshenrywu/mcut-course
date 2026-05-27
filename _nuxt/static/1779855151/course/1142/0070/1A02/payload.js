@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1A02", (function(a,b){return {data:[{course:{time:[["7","7~7"]],id:"114200701A02",name:"專業研究實習(一)",type:"必修",dept:"四技化工系",year:"3",class:"甲",teacher:"傅俊中",credit:"4",hour:"40",classroom:a,max:b,min:b,comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("","2")));

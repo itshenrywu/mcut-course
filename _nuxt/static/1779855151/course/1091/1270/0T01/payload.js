@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1270/0T01", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["5","7~8"]],id:"109112700T01",name:"電機機械與實習",type:"必修",dept:"四技電機系",year:"2",class:"甲",teacher:"王勝寬",credit:a,hour:"4",classroom:b,max:"68",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

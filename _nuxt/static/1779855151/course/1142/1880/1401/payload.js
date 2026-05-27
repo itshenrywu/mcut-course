@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1880/1401", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"114218801401",name:"科技論文寫作(二)",type:"必修",dept:"材料系碩士班",year:b,class:"甲",teacher:"姚栢文",credit:b,hour:a,classroom:"",max:"70",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

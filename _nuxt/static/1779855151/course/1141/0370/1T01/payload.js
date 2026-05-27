@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/1T01", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"114103701T01",name:"全民國防教育軍事訓練(國際情勢)",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"翁智賢",credit:"1",hour:a,classroom:b,max:"45",min:"10",comment:"限大二以上，軍訓選修三門，僅能擇一修課",otherinfo:b}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1580/4301", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"112215804301",name:"顯示科技",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"畢少強",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

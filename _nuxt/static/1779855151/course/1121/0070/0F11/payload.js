@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0F11", (function(a,b){return {data:[{course:{time:[[a,"8.5~8.5"]],id:"112100700F11",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"陳志霖",credit:b,hour:b,classroom:"",max:"50",min:"15",comment:"主題：環境教育與探索，限大四",otherinfo:null}}],fetch:{},mutations:[]}}("4","1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2280/3E01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"112122803E01",name:"組織理論與管理專題",type:"必修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"楊淑宜",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

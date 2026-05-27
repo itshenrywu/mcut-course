@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/4101", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"114112704101",name:"數位信號處理",type:"選修",dept:"四技電機系",year:"4",class:"丙",teacher:"賴文政",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"限法國專班選課，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

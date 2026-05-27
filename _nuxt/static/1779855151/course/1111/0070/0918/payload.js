@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0070/0918", (function(a,b,c){return {data:[{course:{time:[[a,b],["2",b]],id:"111100700918",name:"實習前職場素養訓練",type:"必修",dept:"四技機械系",year:"3",class:"丙",teacher:"楊岳儒",credit:a,hour:a,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5","")));

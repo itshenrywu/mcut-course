@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1870/2C01", (function(a,b){return {data:[{course:{time:[[b,"5~8"]],id:"112118702C01",name:"材料科學導論(二)",type:"重修",dept:"四技材工系",year:a,class:"重",teacher:"謝建國",credit:a,hour:a,classroom:"",max:"50",min:b,comment:"與大四暑修併班",otherinfo:null}}],fetch:{},mutations:[]}}("3","5")));

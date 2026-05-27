@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1580/0401", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"110115800401",name:"嵌入式系統程式設計",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"黃樹林",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

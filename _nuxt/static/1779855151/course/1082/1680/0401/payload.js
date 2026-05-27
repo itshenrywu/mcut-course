@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1680/0401", (function(a){return {data:[{course:{time:[["3","1~2"]],id:"108216800401",name:"科技論文寫作",type:"必修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"陳慶隆",credit:a,hour:a,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0401/0313", (function(a,b,c){return {data:[{course:{time:[[a,"8~8.5"]],id:"110104010313",name:"大學之道",type:"必修",dept:"四技電機系",year:b,class:"甲",teacher:"吳長洲",credit:b,hour:a,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

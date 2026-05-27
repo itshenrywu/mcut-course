@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1571/0902", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"110215710902",name:"光電工程實務",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"曾宗亮",credit:b,hour:b,classroom:"",max:"25",min:"10",comment:"甲乙合班授課，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

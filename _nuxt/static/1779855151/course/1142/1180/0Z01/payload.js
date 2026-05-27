@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1180/0Z01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"114211800Z01",name:"影像與電腦輔助醫材設計",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"許啟彬",credit:a,hour:a,classroom:"",max:"14",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

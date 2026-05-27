@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2070/2G01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"113220702G01",name:"高分子材料",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"游洋雁",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

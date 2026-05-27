@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1880/2901", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"112118802901",name:"進階表面處理",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"黎有福",credit:a,hour:a,classroom:"",max:"25",min:"5",comment:"授課老師：黎有福",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/11C0/1Q01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"111111C01Q01",name:"車輛設計與檢驗",type:"必修",dept:"四技進修部機械系",year:"4",class:"甲",teacher:"陳鈞琳",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

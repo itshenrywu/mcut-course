@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1170/0C04", (function(a,b){return {data:[{course:{time:[[a,"7~8"],[b,"3~4"]],id:"110311700C04",name:"製造學",type:"重修",dept:"四技機械系",year:b,class:"暑",teacher:"王海",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"併機三甲",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

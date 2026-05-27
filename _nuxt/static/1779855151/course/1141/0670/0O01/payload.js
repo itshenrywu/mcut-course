@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0670/0O01", (function(a){return {data:[{course:{time:[["3","1~2"]],id:"114106700O01",name:"體育(一)",type:"必修",dept:"體育組-四技(日)",year:"1",class:"甲",teacher:"吳宇豐",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"外國學生專班(經一丙與設一乙)",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/33C4/0201", (function(a){return {data:[{course:{time:[["2",a],["5",a]],id:"108133C40201",name:"專題設計(一)",type:"必修",dept:"四技進修部視傳系",year:"4",class:"甲",teacher:"李淑珠",credit:"3",hour:"6",max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("9~11")));

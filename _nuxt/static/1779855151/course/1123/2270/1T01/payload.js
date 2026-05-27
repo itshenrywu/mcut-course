@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/2270/1T01", (function(a,b,c){return {data:[{course:{time:[[a,b],["5",b]],id:"112322701T01",name:"商用談判",type:"重修",dept:"四技經管系",year:a,class:"暑",teacher:"李秉懿",credit:c,hour:c,classroom:"",max:"50",min:"10",comment:"暑修併三甲帶狀7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("4","2~4","3")));

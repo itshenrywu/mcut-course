@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/2F01", (function(a){return {data:[{course:{time:[[a,"6~8.5"],["5","7~8"]],id:"115162702F01",name:"可程式邏輯控制實務",type:"選修",dept:"人工智慧學程",year:a,class:"甲",teacher:"陳延禎",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"●上課日期:6\u002F29-8\u002F28。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

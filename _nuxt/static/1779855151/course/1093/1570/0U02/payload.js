@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1570/0U02", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"109315700U02",name:"PCB電路佈線實務",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"何文吉",credit:b,classroom:"",max:b,min:a,comment:"併110三上課程",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

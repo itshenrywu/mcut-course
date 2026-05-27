@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/4503", (function(a,b){return {data:[{course:{time:[["1","7~8"],["2","5~6"]],id:"114111704503",name:"流體力學",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"章哲寰",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

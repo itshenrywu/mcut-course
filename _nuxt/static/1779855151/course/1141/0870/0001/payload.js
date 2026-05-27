@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0870/0001", (function(a,b,c){return {data:[{course:{time:[[a,"6~8"]],id:"114108700001",name:"普通化學(一)",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"劉昭麟",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

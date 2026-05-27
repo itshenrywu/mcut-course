@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1174/5401", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"112211745401",name:"車輛材料",type:"選修",dept:"四技機械系",year:"2",class:"丙",teacher:"邱俊諺",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

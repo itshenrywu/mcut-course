@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/21D0/2601", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"108221D02601",name:"行動商務應用系統",type:"選修",dept:"四技在職專班工管系",year:"4",class:"甲",teacher:"簡志璁",credit:a,hour:a,max:"30",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

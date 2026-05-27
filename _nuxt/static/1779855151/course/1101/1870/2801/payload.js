@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1870/2801", (function(a,b){return {data:[{course:{time:[["6","5~8"]],id:"110118702801",name:"材料專題(一)",type:"必修",dept:"四技材工系",year:a,class:"甲",teacher:"黃啓賢",credit:"1",hour:a,classroom:b,max:"100",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

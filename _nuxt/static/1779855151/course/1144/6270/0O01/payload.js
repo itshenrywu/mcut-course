@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1144/6270/0O01", (function(a,b){return {data:[{course:{time:[[a,"1~4"],["5","1~2"]],id:"114462700O01",name:"最佳化方法",type:"重修",dept:"人工智慧學程",year:a,class:"暑",teacher:"高黃江",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"上課日期:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

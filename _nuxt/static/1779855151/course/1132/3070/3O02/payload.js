@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3070/3O02", (function(a){return {data:[{course:{time:[[a,"8~8"]],id:"113230703O02",name:"行銷設計趨勢導讀（二）",type:"必修",dept:"行銷設計學程",year:"2",class:"乙",teacher:"吳宇豐",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

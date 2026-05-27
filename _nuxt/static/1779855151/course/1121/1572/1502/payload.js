@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1572/1502", (function(a){return {data:[{course:{time:[["2","5~8"]],id:"112115721502",name:"半導體元件",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"邱國源",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"微電子模組必需完成選修課程",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

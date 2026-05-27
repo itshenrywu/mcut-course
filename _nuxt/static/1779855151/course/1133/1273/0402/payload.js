@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1273/0402", (function(a){return {data:[{course:{time:[["2","1~4"]],id:"113312730402",name:"電力電子學",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"彭金龍",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"暑修併四技三甲上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

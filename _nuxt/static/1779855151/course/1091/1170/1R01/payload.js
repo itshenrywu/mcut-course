@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1170/1R01", (function(a,b){return {data:[{course:{time:[["1","7~8.5"]],id:"109111701R01",name:"新穎積層製造實務",type:"選修",dept:"四技機械系",year:"4",class:"甲",teacher:"游孟潔",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

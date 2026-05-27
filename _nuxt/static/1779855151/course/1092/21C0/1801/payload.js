@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/21C0/1801", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"109221C01801",name:"服務科學",type:"選修",dept:"四技進修部工管系",year:"4",class:"甲",teacher:"陳哲堯",credit:"3",classroom:a,max:"20",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

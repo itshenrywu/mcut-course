@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0270/1H01", (function(a){return {data:[{course:{time:[["4","10~11"]],id:"111202701H01",name:"從美劇出發-情境式英語學習",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"葉明倫",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"第1階段，全民英檢初級複試或 TOEIC 400分",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

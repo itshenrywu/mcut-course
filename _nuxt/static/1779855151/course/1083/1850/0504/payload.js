@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1850/0504", (function(a,b){return {data:[{course:{time:[[a,"7~8"],[b,"1~2"]],id:"108318500504",name:"材料機械性質",type:"重修",dept:"四技材工系",year:b,class:"暑",teacher:"張奇龍",credit:a,hour:a,max:"50",min:"1",comment:"與材三甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

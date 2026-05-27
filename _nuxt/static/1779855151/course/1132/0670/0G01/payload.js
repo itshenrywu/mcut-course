@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0670/0G01", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"113206700G01",name:"體育(四)羽球",type:"必修",dept:"體育組-四技(日)",year:b,class:"甲",teacher:"羅玉枝",credit:a,hour:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

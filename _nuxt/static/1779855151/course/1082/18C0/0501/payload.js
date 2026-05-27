@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/18C0/0501", (function(a){return {data:[{course:{time:[["5","7~8.5"]],id:"108218C00501",name:"模流分析",type:"選修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"蔡習訓",credit:a,hour:a,max:"35",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1880/0H01", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"114118800H01",name:"書報討論(三)",type:"必修",dept:"材料系碩士班",year:a,class:"甲",teacher:"陳志平",credit:"1",hour:a,classroom:"",max:"50",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

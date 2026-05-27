@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1573/0503", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108115730503",name:"信號與系統",type:"重修",dept:"四技電子系",year:"4",class:"重",teacher:"毛建秋",credit:a,hour:a,max:"50",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1572/1501", (function(a,b){return {data:[{course:{time:[["2",b],["4",b]],id:"113115721501",name:"半導體元件",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"王志良",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"微電子模組必需完成選修課程",otherinfo:null}}],fetch:{},mutations:[]}}("3","7~8")));

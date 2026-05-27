@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1673/0601", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"108216730601",name:"下水道工程設計",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"吳容銘",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

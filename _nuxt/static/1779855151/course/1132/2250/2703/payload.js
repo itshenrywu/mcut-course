@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2250/2703", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"113222502703",name:"消費者行為",type:"選修",dept:"四技經管系",year:"2",class:"丙",teacher:"洪崑欽",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

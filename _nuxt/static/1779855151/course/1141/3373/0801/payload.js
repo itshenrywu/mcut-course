@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3373/0801", (function(a,b){return {data:[{course:{time:[["1",b],["4",b]],id:"114133730801",name:"影像思考與創作",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"鄭興宗",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"帶狀課程：6\u002F30~8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

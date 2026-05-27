@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1GP0/1C01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"11411GP01C01",name:"生醫訊號與醫學影像處理",type:"選修",dept:"生醫暨醫材博士學程",year:a,class:"甲",teacher:"陳耀添",credit:b,hour:b,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

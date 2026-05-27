@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/0709/0601", (function(a,b){return {data:[{course:{time:[[a,"9~12"]],id:"109407090601",name:"法律與人生",type:"選修",dept:"通識中心進修部",year:a,class:"甲",teacher:"蔡孟彥",credit:"2",classroom:b,max:"48",min:"20",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

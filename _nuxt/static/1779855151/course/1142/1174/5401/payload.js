@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1174/5401", (function(a,b,c){return {data:[{course:{time:[["1","8~8.5"],[a,"5~5"]],id:"114211745401",name:"車輛材料",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"胡力元",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

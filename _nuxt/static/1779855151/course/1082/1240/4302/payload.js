@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1240/4302", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"108212404302",name:"PLC實習",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"林志銘",credit:a,hour:"3",max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

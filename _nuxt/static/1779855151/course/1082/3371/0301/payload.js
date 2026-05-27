@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/3371/0301", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"108233710301",name:"數位攝影",type:"必修",dept:"四技視傳系",year:a,class:"甲",teacher:"洪淳修",credit:b,hour:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0L01", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"110130700L01",name:"設計方法",type:"選修",dept:"四技行設專班",year:"1",class:"甲",teacher:"楊朝明",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"限商管群學生必選",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

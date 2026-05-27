@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1350/4101", (function(a,b){return {data:[{course:{time:[["2","5~8"]],id:"109113504101",name:"物理化學實驗",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"吳紹榮",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

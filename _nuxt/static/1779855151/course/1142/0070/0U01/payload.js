@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/0U01", (function(a,b){return {data:[{course:{time:[["7","1~1"]],id:"114200700U01",name:"自治幹部領導與實務(二)",type:"選修",dept:"通識中心四技",year:a,class:"丙",teacher:"翁智賢",credit:a,hour:a,classroom:b,max:"無上限",min:"無下限",comment:b,otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("1","")));

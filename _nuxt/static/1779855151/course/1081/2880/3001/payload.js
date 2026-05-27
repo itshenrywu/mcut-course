@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2880/3001", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"108128803001",name:"室內空氣品質淨化技術",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"洪明瑞",credit:b,hour:b,max:"30",min:a,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

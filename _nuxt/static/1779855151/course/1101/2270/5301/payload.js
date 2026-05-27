@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2270/5301", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"110122705301",name:"專案管理",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"林俊雄",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"塊狀課程6\u002F18-6\u002F30甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

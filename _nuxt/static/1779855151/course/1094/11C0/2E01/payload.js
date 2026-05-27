@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/11C0/2E01", (function(a,b){return {data:[{course:{time:[[a,"1~1"],[a,"5~7"]],id:"109411C02E01",name:"可程式控制器",type:"選修",dept:"四技進修部機械系",year:"2",class:"乙",teacher:"蔡宜昌",credit:"3",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("6","")));

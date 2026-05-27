@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/2A01", (function(a){return {data:[{course:{time:[[a,"5~7"],["5","2~4"]],id:"115130702A01",name:"企業倫理",type:"必修",dept:"行銷設計學程",year:a,class:"甲",teacher:"李育菁",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"●帶狀課程6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

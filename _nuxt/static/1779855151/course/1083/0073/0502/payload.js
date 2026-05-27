@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/0073/0502", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108300730502",name:"運動與健康",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"王學中",credit:b,hour:b,max:"3",min:a,comment:"與大三通識課程併班",otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("1","2")));

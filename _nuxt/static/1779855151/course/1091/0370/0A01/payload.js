@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0370/0A01", (function(a,b){return {data:[{course:{time:[["7","3~4"]],id:"109103700A01",name:"社團經營與領導",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳順基",credit:a,hour:"2",classroom:b,max:"無上限",min:"無下限",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

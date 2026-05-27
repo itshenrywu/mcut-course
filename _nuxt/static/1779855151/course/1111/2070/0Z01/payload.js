@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2070/0Z01", (function(a,b){return {data:[{course:{time:[["5","1~3"]],id:"111120700Z01",name:"普通化學實驗",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"鄭有為",credit:a,hour:"3",classroom:b,max:"45",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

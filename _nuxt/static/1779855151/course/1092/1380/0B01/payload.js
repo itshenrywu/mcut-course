@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1380/0B01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"109213800B01",name:"塑膠產業實務",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"蘇家弘",credit:"3",classroom:a,max:"48",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

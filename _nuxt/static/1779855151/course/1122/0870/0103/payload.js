@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0870/0103", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"112208700103",name:"普通化學(二)",type:"選修",dept:"半導體學程",year:"1",class:"甲",teacher:"黃裕清",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2070/0S01", (function(a,b){return {data:[{course:{time:[["1","8~8.5"]],id:"111120700S01",name:"工程數學(二)",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"吳永富",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

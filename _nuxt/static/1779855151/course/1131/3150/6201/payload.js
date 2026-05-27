@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3150/6201", (function(a){return {data:[{course:{time:[["1",a],["5",a]],id:"113131506201",name:"產品設計(一)",type:"必修",dept:"四技工設系",year:"2",class:"甲",teacher:"林恆毅",credit:"3",hour:"6",classroom:"",max:"56",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("1~3")));

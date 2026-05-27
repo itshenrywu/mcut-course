@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/6270/0M01", (function(a,b){return {data:[{course:{time:[["5","3~4"]],id:"111262700M01",name:"資料導向程式設計",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"劉弘一",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

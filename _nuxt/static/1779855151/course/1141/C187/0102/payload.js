@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/C187/0102", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"1141C1870102",name:"品質工程",type:"重修",dept:"四技進修部材工系",year:"4",class:"重",teacher:"張麗君",credit:b,hour:b,classroom:"",max:"100",min:a,comment:"併班上課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

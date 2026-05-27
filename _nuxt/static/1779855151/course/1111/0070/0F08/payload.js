@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0070/0F08", (function(a,b,c){return {data:[{course:{time:[[a,b],["4",b]],id:"111100700F08",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"陳志霖",credit:c,hour:c,classroom:"",max:"40",min:"15",comment:"淡水河流域的美麗與哀愁(管院生勿選)",otherinfo:null}}],fetch:{},mutations:[]}}("3","0.5~0.5","1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1280/0301", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"110112800301",name:"最佳化方法",type:"選修",dept:"電機系碩士班",year:a,class:"甲",teacher:"張嘉德",credit:b,hour:b,classroom:c,max:"30",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/0501", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"112130700501",name:"創意整合實作",type:"必修",dept:"四技視傳系",year:a,class:"甲",teacher:"楊朝明",credit:"1",hour:a,classroom:"",max:"56",min:"10",comment:"塊狀課程：6\u002F5~6\u002F13 合班上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

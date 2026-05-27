@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/3380/0201", (function(a,b){return {data:[{course:{time:[[b,"5~6"],[a,"8~8"]],id:"108233800201",name:"視覺傳達設計(二)",type:"必修",dept:"視傳系碩士班",year:b,class:"甲",teacher:"林金祥",credit:a,hour:a,max:"35",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

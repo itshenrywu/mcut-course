@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1870/0201", (function(a,b){return {data:[{course:{time:[["1","2~3"],[a,"2~2"]],id:"110218700201",name:"物理冶金(二)",type:"必修",dept:"四技材工系",year:"2",class:"甲",teacher:"程志賢",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2150/7402", (function(a,b){return {data:[{course:{time:[["1","5~6"],[a,"2~2"]],id:"109221507402",name:"設施規劃",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"張秉裕",credit:"3",classroom:b,max:"67",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

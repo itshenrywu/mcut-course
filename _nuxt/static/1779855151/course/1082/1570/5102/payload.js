@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1570/5102", {data:[{course:{time:[["5","1~3"]],id:"108215705102",name:"嵌入式系統實習",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"唐明中",credit:"1",hour:"3",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

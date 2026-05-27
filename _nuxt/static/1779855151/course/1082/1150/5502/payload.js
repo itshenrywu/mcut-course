@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1150/5502", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"108211505502",name:"材料力學(二)",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"李德福",credit:b,hour:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

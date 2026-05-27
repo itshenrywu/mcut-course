@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0171/0219", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"108201710219",name:"國文(二)",type:"必修",dept:"四技機械系",year:"1",class:"乙",teacher:"林立仁",credit:a,hour:a,max:"54",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

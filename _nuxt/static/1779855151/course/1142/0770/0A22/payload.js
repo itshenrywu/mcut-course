@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0770/0A22", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"114207700A22",name:"全民國防教育軍事訓練(二)",type:"必修",dept:"電池專班",year:"1",class:"甲",teacher:"黃志偉",credit:"0.5",hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

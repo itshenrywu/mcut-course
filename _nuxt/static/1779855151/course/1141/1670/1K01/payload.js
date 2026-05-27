@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1670/1K01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114116701K01",name:"環境微生物學實驗",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"陳錫金",credit:"1",hour:"2",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

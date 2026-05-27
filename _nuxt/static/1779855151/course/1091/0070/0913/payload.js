@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0070/0913", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"109100700913",name:"實習前職場素養訓練",type:"必修",dept:"四技工設系",year:"3",class:"甲",teacher:"梁又文",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F6-9\u002F4",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

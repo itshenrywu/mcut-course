@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1172/0301", (function(a,b,c){return {data:[{course:{time:[[a,"1~2"],["4","4~4"]],id:"111111720301",name:"工程熱力學(一)",type:"必修",dept:"四技機械系",year:a,class:"甲",teacher:"章哲寰",credit:b,hour:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

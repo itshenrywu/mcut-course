@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2273/1103", {data:[{course:{time:[["3","5~6"]],id:"108222731103",name:"商用英文(三)",type:"重修",dept:"四技經管系",year:"4",class:"重",teacher:"楊子儀",credit:"1",hour:"2",max:"60",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

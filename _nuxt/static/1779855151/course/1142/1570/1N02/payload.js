@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1570/1N02", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"114215701N02",name:"專題製作(一)",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"陳華彬",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2270/1401", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"110122701401",name:"人力資源管理",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"李文玄",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

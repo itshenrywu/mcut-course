@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2270/3G01", (function(a){return {data:[{course:{time:[[a,"5~6"],["5","4~4"]],id:"113122703G01",name:"管理概論",type:"選修",dept:"四技經管系",year:"4",class:"丙",teacher:"杜海勇",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"限法國專班選課，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

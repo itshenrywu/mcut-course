@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0J01", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"110130700J01",name:"管理學",type:"必修",dept:"四技行設專班",year:"1",class:"甲",teacher:"孫儷芳",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

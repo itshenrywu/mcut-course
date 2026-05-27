@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2070/0402", (function(a,b){return {data:[{course:{time:[["5","9~12"]],id:"110120700402",name:"頂石專題(一)",type:"選修",dept:"環實務",year:a,class:"甲",teacher:"吳永富",credit:"1",hour:a,classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

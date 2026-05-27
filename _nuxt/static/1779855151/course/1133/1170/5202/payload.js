@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1170/5202", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"113311705202",name:"精密加工",type:"重修",dept:"四技機械系",year:c,class:"暑",teacher:"郭啟全",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"併機三甲",otherinfo:null}}],fetch:{},mutations:[]}}("3","3~4","4")));

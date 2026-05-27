@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1572/1803", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"109215721803",name:"工程數學(二)",type:"重修",dept:"四技電子系",year:"2",class:"重",teacher:"李健宏",credit:"3",classroom:a,max:"50",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

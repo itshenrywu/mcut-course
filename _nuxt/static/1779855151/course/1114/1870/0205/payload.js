@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1114/1870/0205", (function(a,b){return {data:[{course:{time:[["5",a],["6",a]],id:"111418700205",name:"物理冶金(二)",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"劉定宇",credit:b,hour:b,classroom:"",max:"84",min:"10",comment:"與進修部併班",otherinfo:null}}],fetch:{},mutations:[]}}("2~4","3")));

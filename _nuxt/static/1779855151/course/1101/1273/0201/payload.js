@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1273/0201", (function(a){return {data:[{course:{time:[["2","1~4"]],id:"110112730201",name:"綠色能源概論",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"王勝寬",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

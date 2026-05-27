@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/0M01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"114111700M01",name:"氣壓學與實習",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"蔡宜昌",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

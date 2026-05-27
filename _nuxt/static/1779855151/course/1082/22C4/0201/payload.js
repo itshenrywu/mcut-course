@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/22C4/0201", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108222C40201",name:"專業實務講座",type:"必修",dept:"四技進修部經管系",year:"4",class:"甲",teacher:"廖宜慶",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

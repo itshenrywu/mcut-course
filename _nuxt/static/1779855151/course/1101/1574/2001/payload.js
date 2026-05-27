@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1574/2001", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"110115742001",name:"晶片設計實務",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"陳華彬",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

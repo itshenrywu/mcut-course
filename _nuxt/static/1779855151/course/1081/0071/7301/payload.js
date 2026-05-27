@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/7301", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"108100717301",name:"當代中國概論",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"黃淑芳",credit:a,hour:a,max:"48",min:"10",comment:"管設學院學生不得選修",otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2")));

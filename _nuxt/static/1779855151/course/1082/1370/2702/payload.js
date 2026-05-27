@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1370/2702", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"108213702702",name:"程序設計",type:"必修",dept:"四技化工系",year:"4",class:"乙",teacher:"邱振堯",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

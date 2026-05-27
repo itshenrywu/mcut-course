@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1540/2001", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"110215402001",name:"專題製作(一)",type:"重修",dept:"四技電子系",year:"4",class:"重",teacher:"吳亞芬",credit:a,hour:"3",classroom:b,max:"5",min:"無下限",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

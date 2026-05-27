@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2270/5702", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"108122705702",name:"企業倫理",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"楊淑宜",credit:a,hour:a,max:"48",min:"10",comment:"塊狀課程第二階段6\u002F20-7\u002F5",otherinfo:null}}],fetch:{},mutations:[]}}("3","6~8")));

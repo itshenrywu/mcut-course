@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/3L01", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"112130703L01",name:"程式設計",type:"必修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"邱慧怡",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

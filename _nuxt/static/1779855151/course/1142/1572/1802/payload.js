@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1572/1802", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["5","8~8"]],id:"114215721802",name:"工程數學(二)",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"羅靛",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

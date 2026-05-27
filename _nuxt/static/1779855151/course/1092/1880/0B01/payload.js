@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1880/0B01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109218800B01",name:"薄膜磨潤學",type:"選修",dept:"材料系碩士班",year:a,class:"甲",teacher:"張奇龍",credit:"3",classroom:b,max:"9",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

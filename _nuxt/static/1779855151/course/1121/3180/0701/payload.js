@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3180/0701", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"112131800701",name:"設計專業實習(二)",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"高清漢",credit:a,hour:a,classroom:b,max:"20",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

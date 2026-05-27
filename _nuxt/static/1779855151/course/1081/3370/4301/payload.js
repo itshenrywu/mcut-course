@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3370/4301", {data:[{course:{time:[["2","2~4"]],id:"108133704301",name:"專業實務講座",type:"必修",dept:"四技視傳系",year:"4",class:"甲",teacher:"莊妙仙",credit:"1",hour:"3",max:"53",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

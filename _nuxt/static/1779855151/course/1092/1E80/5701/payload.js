@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1E80/5701", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"10921E805701",name:"振動分析與量測",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"黃世欽",credit:a,classroom:"",max:"12",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

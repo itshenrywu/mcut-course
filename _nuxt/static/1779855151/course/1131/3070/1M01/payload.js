@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/1M01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113130701M01",name:"創新與創業管理",type:"選修",dept:"四技行設專班",year:"4",class:"甲",teacher:"陳樹全",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

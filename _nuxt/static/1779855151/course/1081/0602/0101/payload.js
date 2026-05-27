@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0602/0101", (function(a){return {data:[{course:{time:[[a,"11~12"]],id:"108106020101",name:"應用英文",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"梁傑榮",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

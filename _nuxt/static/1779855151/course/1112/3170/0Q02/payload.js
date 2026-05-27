@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3170/0Q02", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"111231700Q02",name:"福祉設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"陳建志",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

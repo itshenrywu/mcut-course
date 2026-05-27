@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/1W01", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"114203701W01",name:"全民國防教育軍事訓練(防衛動員)",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陶韻然",credit:"1",hour:a,classroom:b,max:"45",min:"10",comment:"限大二以上，軍訓選修兩門，僅能擇一修課",otherinfo:b}}],fetch:{},mutations:[]}}("2","")));

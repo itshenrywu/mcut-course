@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/11C0/1H01", {data:[{course:{time:[["1","9~12"]],id:"108111C01H01",name:"汽車實習(二)",type:"必修",dept:"四技進修部機械系",year:"2",class:"甲",teacher:"林柏瀚",credit:"3",hour:"4",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

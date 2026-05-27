@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0072/1417", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"111200721417",name:"全民國防教育軍事訓練(二)",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"周志明",credit:"0",hour:"2",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

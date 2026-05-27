@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1550/2302", (function(a,b,c){return {data:[{course:{time:[[a,"1~3"]],id:"110215502302",name:"電子學實習(一)",type:"必修",dept:"四技電子系",year:b,class:"乙",teacher:"許宏彬",credit:b,hour:a,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1","")));

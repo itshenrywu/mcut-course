@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/21C0/0501", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"109221C00501",name:"資訊概論",type:"重修",dept:"四技進修部工管系",year:"4",class:"重",teacher:"王文生",credit:a,classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

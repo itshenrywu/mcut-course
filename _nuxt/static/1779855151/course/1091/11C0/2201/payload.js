@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/11C0/2201", (function(a,b){return {data:[{course:{time:[["1","9~11"]],id:"109111C02201",name:"車輛元件設計分析",type:"選修",dept:"四技進修部機械系",year:"4",class:"甲",teacher:"劉晉奇",credit:a,hour:a,classroom:b,max:"54",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

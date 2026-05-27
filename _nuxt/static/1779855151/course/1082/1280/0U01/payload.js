@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1280/0U01", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"108212800U01",name:"綠色能源組書報討論(二)",type:"必修",dept:"電機系碩士班",year:a,class:"甲",teacher:"林郁修",credit:"0",hour:"2",max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/2V01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"112130702V01",name:"行銷管理",type:"必修",dept:"行銷設計學程",year:a,class:"甲",teacher:"孫儷芳",credit:b,hour:b,classroom:c,max:"35",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

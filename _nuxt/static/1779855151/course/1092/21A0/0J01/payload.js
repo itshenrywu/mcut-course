@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/21A0/0J01", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"109221A00J01",name:"最佳化理論",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"俞凱允",credit:"3",classroom:a,max:"25",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

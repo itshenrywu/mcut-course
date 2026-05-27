@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/3150/7702", (function(a,b){return {data:[{course:{time:[["2","5~7"],[a,"6~8"]],id:"112331507702",name:"塑膠成型品設計",type:"重修",dept:"四技工設系",year:a,class:"暑",teacher:"許定洋",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1670/2601", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109116702601",name:"噪音與振動",type:"選修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"洪明瑞",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

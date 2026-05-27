@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1350/5601", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"109113505601",name:"儀器分析實驗",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"陳順基",credit:"1",hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

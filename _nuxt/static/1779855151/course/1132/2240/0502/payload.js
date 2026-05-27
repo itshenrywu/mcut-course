@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2240/0502", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113222400502",name:"經濟學(二)",type:"重修",dept:"四技經管系",year:"4",class:"重",teacher:"林鴻裕",credit:a,hour:a,classroom:b,max:"50",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

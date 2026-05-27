@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2170/1I01", (function(a,b){return {data:[{course:{time:[["2",b],["4",b]],id:"111121701I01",name:"作業研究(一)",type:"重修",dept:"四技工管系",year:a,class:"重",teacher:"俞凱允",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班 帶狀課程：上課時間為7\u002F4-9\u002F2",otherinfo:null}}],fetch:{},mutations:[]}}("3","5~7")));

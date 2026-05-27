@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/3C01", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"115102703C01",name:"國際移動:人工智慧與創新創業實務",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"劉豐瑞",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"○◎上課時間：6\u002F14-6\u002F28",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

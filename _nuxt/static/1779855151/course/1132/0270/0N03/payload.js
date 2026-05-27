@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/0N03", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"113202700N03",name:"越南日常用語",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"阮清華",credit:b,hour:b,classroom:c,max:"45",min:"10",comment:c,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2","")));

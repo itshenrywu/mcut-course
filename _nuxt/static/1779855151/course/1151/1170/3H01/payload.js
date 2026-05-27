@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/3H01", (function(a,b){return {data:[{course:{time:[["1",b],["2",b]],id:"115111703H01",name:"內燃機",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"黃道易",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"●上課日期:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

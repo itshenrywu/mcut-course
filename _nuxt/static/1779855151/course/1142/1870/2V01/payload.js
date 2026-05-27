@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1870/2V01", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"114218702V01",name:"光電薄膜混成製程實驗",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"游洋雁",credit:"2",hour:"3",classroom:"",max:"25",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

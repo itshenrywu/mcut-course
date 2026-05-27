@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0072/0702", (function(a){return {data:[{course:{time:[["5","3~4"]],id:"111200720702",name:"英語聽講(初級)(二)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"林淑芬",credit:"1",hour:a,classroom:"",max:"40",min:"10",comment:"機械工設初B",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

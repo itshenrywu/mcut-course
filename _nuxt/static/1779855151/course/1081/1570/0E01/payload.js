@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1570/0E01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108115700E01",name:"科技英文",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"尤儷蒨",credit:a,hour:a,max:"40",min:"10",comment:"甲乙合班授課。全英語授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

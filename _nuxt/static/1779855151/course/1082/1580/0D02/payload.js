@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1580/0D02", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"108215800D02",name:"程式設計進階",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"張創然",credit:b,hour:b,max:"30",min:a,comment:"全英文授課。",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

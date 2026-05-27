@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1580/0J01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108115800J01",name:"光學薄膜技術",type:"選修",dept:"電子系碩士班",year:a,class:"甲",teacher:"徐進成",credit:b,hour:b,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

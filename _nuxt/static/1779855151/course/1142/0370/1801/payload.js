@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/1801", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"114203701801",name:"現代公民社會",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"詹騏瑋",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2","")));

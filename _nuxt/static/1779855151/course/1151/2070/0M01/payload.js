@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/0M01", (function(a,b,c,d,e){return {data:[{course:{time:[[a,b],[c,b],[d,e],["4",e]],id:"115120700M01",name:"實務專題(一)",type:"必修",dept:"環實務",year:d,class:"甲",teacher:"盧奕廷",credit:a,hour:c,classroom:"",max:"30",min:"10",comment:"●6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("1","4.5~4.5","2","3","0.5~0.5")));

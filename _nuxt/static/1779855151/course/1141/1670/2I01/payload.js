@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1670/2I01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"114116702I01",name:"廢棄物分析實驗",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"嚴莉婷",credit:"1",hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

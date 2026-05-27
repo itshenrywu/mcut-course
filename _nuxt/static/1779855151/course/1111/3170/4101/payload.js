@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3170/4101", (function(a,b){return {data:[{course:{time:[["1",a],["3",a],["5",a]],id:"111131704101",name:"專題設計(一)",type:"必修",dept:"四技工設系",year:"4",class:"甲",teacher:"高清漢",credit:"6",hour:"12",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1~4","")));

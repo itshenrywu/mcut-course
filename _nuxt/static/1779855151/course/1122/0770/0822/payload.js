@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0770/0822", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"112207700822",name:"全民國防教育軍事訓練(二)",type:"必修",dept:"四技工管系",year:"1",class:"乙",teacher:"朱偉國",credit:"0",hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1371/0504", (function(a){return {data:[{course:{time:[["2","4~4"],["4","2~3"]],id:"109213710504",name:"普通化學(二)",type:"必修",dept:"四技材工系",year:"1",class:"乙",teacher:"游洋雁",credit:"3",classroom:a,max:"55",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

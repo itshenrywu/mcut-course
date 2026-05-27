@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1274/1401", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108112741401",name:"電力電子應用",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"白凱仁",credit:a,hour:a,max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

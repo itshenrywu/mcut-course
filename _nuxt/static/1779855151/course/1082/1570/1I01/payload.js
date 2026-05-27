@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1570/1I01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108215701I01",name:"產業專題講座",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"林義楠",credit:b,hour:b,max:"50",min:"10",comment:"甲乙合班，限參與產業學院計畫學生修課。",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

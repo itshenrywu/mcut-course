@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1570/0D02", (function(a){return {data:[{course:{time:[["1","1~4"]],id:"109115700D02",name:"類比積體電路佈局",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"陳華彬",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

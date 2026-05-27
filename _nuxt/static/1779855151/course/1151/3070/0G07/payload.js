@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/0G07", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"115130700G07",name:"最小可行產品",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"江潤華",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"○塊狀課程：6\u002F11~6\u002F26",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

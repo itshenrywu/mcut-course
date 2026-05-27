@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21A1/0501", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"108121A10501",name:"電子化企業管理",type:"選修",dept:"工管系碩專班",year:a,class:"甲",teacher:"葉神丑",credit:b,hour:b,max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0070/0H01", (function(a,b){return {data:[{course:{time:[["7","5~6"]],id:"109100700H01",name:"鼓盪風雅",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"蒲彥光",credit:a,hour:"2",classroom:b,max:"無上限",min:"無下限",comment:b,otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("1","")));

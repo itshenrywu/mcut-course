@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/3A01", (function(a,b){return {data:[{course:{time:[[b,"2~4"],[b,"5~7"]],id:"115122703A01",name:"招募、訓練與任用",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"梁成明",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"●帶狀課程6\u002F29-8\u002F28 甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","5")));

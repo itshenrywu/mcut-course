@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/1570/4702", (function(a,b){return {data:[{course:{time:[["2","5~6"],[a,"3~4"]],id:"112315704702",name:"計算機結構",type:"重修",dept:"四技電子系",year:a,class:"暑",teacher:"黃樹林",credit:b,hour:b,classroom:"",max:"5",min:"1",comment:"併113三上(甲班)課程",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

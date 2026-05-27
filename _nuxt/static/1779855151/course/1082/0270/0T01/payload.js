@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0270/0T01", {data:[{course:{time:[["1","5~6"]],id:"108202700T01",name:"英文實務(四)",type:"必修",dept:"外文組-四技(日)",year:"4",class:"甲",teacher:"林雅淑",credit:"0",hour:"2",max:"88",min:"10",comment:"機械甲班1號至12號及乙班",otherinfo:null}}],fetch:{},mutations:[]});

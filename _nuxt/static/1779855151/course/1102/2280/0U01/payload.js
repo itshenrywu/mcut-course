@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/0U01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"110222800U01",name:"策略管理專題",type:"必修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"林晋寬",credit:b,hour:b,classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/2170/1J03", (function(a,b,c){return {data:[{course:{time:[[b,c],[a,c]],id:"110321701J03",name:"生產管理(含實習)",type:"重修",dept:"四技工管系",year:a,class:"暑",teacher:"陳昆皇",credit:b,hour:a,classroom:"",max:"60",min:"5",comment:"與三甲合班 帶狀課程7\u002F4-9\u002F2",otherinfo:null}}],fetch:{},mutations:[]}}("4","3","1~4")));

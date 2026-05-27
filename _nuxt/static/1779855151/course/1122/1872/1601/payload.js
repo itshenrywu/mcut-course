@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1872/1601", (function(a){return {data:[{course:{time:[[a,"3~4"],["4","4~4"]],id:"112218721601",name:"工程數學(二)",type:"必修",dept:"四技材工系",year:"2",class:"甲",teacher:"張麗君",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

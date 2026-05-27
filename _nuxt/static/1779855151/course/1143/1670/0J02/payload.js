@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1670/0J02", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["5","1~4"]],id:"114316700J02",name:"作業環境監測",type:"重修",dept:"四技環安衛系",year:a,class:"暑",teacher:"許金玉",credit:b,hour:b,classroom:"",max:"15",min:"1",comment:"併環三,上9週:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

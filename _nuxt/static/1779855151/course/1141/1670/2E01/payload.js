@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1670/2E01", (function(a,b){return {data:[{course:{time:[["5","3~4"]],id:"114116702E01",name:"循環經濟導論",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"嚴莉婷",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

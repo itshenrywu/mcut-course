@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1170/1Y01", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"114211701Y01",name:"人工智慧概論",type:"選修",dept:"四技機械系",year:"1",class:"甲",teacher:"游孟潔",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

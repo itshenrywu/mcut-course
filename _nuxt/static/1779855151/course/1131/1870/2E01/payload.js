@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1870/2E01", (function(a){return {data:[{course:{time:[[a,"5~6"],["4","1~1"]],id:"113118702E01",name:"電磁學",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"阮弼群",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

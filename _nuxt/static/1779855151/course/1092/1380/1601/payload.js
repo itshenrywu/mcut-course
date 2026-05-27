@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1380/1601", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109213801601",name:"觸媒原理與應用",type:"選修",dept:"化工系碩士班",year:a,class:"甲",teacher:"杜鶴芸",credit:"3",classroom:b,max:"40",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

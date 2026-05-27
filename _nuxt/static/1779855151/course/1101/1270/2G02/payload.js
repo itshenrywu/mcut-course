@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1270/2G02", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"110112702G02",name:"電機先修課程",type:"必修",dept:"四技電機系",year:"1",class:"乙",teacher:"邱機平",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

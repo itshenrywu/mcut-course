@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3180/0G01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"111231800G01",name:"國際設計競賽實務與研習",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"謝國榮",credit:b,hour:b,classroom:"",max:"20",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

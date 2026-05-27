@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0670/0016", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"113106700016",name:"體育(一)",type:"必修",dept:"行銷設計學程",year:a,class:"乙",teacher:"秦文華",credit:a,hour:"2",classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

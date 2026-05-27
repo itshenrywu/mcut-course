@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1570/2B01", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"114115702B01",name:"電子學(二)",type:"重修",dept:"四技電子系",year:a,class:"重",teacher:"李健宏",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

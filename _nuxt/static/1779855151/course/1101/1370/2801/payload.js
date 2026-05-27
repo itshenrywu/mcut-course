@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1370/2801", (function(a){return {data:[{course:{time:[["1","7~8"],["2","3~4"]],id:"110113702801",name:"公用設施",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"施正元",credit:a,hour:a,classroom:"",max:"90",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

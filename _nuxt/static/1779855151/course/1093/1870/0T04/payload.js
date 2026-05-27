@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1870/0T04", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"109318700T04",name:"電化學方法與應用實務",type:"重修",dept:"四技材工系",year:a,class:"暑",teacher:"彭坤增",credit:"3",classroom:"",max:"50",min:"10",comment:"與大三併班",otherinfo:null}}],fetch:{},mutations:[]}}("4","7~8")));

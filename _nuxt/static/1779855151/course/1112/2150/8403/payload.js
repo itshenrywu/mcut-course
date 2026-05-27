@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/2150/8403", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"111221508403",name:"人機介面",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"王介宙",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"跨領域專班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

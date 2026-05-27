@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1374/0502", (function(a,b){return {data:[{course:{time:[[b,"1~1"],[a,"5~6"]],id:"114213740502",name:"有機化學(二)",type:"選修",dept:"四技化工系",year:b,class:"乙",teacher:"阮宏藝",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"應用化學模組",otherinfo:null}}],fetch:{},mutations:[]}}("3","2")));

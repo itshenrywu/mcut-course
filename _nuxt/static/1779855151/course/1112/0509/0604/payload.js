@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0509/0604", (function(a,b,c){return {data:[{course:{time:[[a,"8.5~10"]],id:"111205090604",name:"歷史",type:"重修",dept:"社會組-四技(日)",year:a,class:"重",teacher:"張淑惠",credit:b,hour:b,classroom:c,max:"48",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

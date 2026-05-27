@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1114/18C1/0202", (function(a){return {data:[{course:{time:[["5","9~11"],["6","2~4"]],id:"111418C10202",name:"材料科學導論(一)",type:"重修",dept:"四技進修部材工系",year:"1",class:"暑",teacher:"謝建國",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"與日間部併班上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

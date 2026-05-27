@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1180/0601", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"113111800601",name:"數位影像處理技術",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"陳耀添",credit:a,hour:a,classroom:"",max:"14",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3380/0101", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"108133800101",name:"視覺傳達設計(一)",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"楊朝明",credit:a,hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0570/0B01", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"109205700B01",name:"健身運動心理學",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳建彰",credit:"2",classroom:b,max:"30",min:"10",comment:b,otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("1","")));

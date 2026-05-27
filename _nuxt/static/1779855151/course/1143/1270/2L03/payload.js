@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1270/2L03", (function(a,b){return {data:[{course:{time:[[b,"7~8.5"],[a,"2~4"]],id:"114312702L03",name:"人機介面應用",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"張德仁",credit:a,hour:a,classroom:"",max:"5",min:b,comment:"上課日期:6\u002F29-8\u002F28，倂電三甲",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

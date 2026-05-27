@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1880/3501", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"113218803501",name:"書報討論(四)",type:"必修",dept:"材料系碩士班",year:a,class:"甲",teacher:"林延儒",credit:"0",hour:a,classroom:"",max:"65",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

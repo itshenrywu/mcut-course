@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/1002", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112130701002",name:"影像剪輯與聲音設計",type:"選修",dept:"四技行設專班",year:"2",class:"乙",teacher:"何孟翰",credit:a,hour:a,classroom:"",max:"27",min:"10",comment:"與行設二甲合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

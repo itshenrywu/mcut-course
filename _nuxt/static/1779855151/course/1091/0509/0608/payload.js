@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0509/0608", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"109105090608",name:"歷史",type:"必修",dept:"四技工管系",year:"2",class:"甲",teacher:"江長青",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

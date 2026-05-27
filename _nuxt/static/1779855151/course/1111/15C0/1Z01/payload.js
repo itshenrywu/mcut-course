@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/15C0/1Z01", (function(a,b){return {data:[{course:{time:[["5","9~11"]],id:"111115C01Z01",name:"可靠度工程概論",type:"必修",dept:"四技進修部電子系",year:"4",class:"甲",teacher:"邱國源",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

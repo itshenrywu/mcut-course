@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0709/1001", (function(a){return {data:[{course:{time:[["6","3~4"]],id:"108207091001",name:"人生哲學",type:"選修",dept:"通識中心進修部",year:"1",class:"甲",teacher:"吳忠進",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

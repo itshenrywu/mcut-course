@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0071/8901", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"108200718901",name:"音樂治療",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"洪郁婷",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1872/0301", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108118720301",name:"材料分析概論",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"劉定宇",credit:a,hour:a,max:"65",min:"10",comment:"材二甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

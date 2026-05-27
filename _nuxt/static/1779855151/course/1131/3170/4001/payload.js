@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3170/4001", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"113131704001",name:"專業實務講座",type:"必修",dept:"四技工設系",year:"4",class:"甲",teacher:"謝國榮",credit:"1",hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

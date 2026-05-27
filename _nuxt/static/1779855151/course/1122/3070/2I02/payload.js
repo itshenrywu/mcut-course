@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3070/2I02", (function(a,b){return {data:[{course:{time:[["2","8~8"],["4","5~6"]],id:"112230702I02",name:"統計學",type:"必修",dept:"行銷設計學程",year:"1",class:"乙",teacher:"盧建中",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2240/0402", (function(a,b){return {data:[{course:{time:[["4","7~8"],["5","5~5"]],id:"113122400402",name:"管理學",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"李文玄",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

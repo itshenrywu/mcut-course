@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3070/3F01", (function(a){return {data:[{course:{time:[["4","8~8"]],id:"111230703F01",name:"體驗設計",type:"選修",dept:"四技行設專班",year:a,class:"乙",teacher:"劉為開",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"與行設一甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

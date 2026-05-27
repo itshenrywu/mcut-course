@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2070/1D01", (function(a,b){return {data:[{course:{time:[["1","3~4"]],id:"114220701D01",name:"熱量與質量輸送",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"吳弦聰",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

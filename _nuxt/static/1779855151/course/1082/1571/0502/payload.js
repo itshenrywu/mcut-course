@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1571/0502", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108215710502",name:"網路概論",type:"重修",dept:"四技電子系",year:"4",class:"重",teacher:"史登宇",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

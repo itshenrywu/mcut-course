@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2070/0Y01", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"111120700Y01",name:"普通化學(一)",type:"必修",dept:"半導體學程",year:"1",class:"甲",teacher:"郭亮吟",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

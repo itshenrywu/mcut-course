@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2280/1U01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109122801U01",name:"行銷管理專題",type:"必修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"顏婉竹",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

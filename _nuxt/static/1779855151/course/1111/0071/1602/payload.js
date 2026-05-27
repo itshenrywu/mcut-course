@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0071/1602", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"111100711602",name:"台灣新電影欣賞",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"葉衽榤",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"上課期間為7\u002F4至8\u002F29",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2")));
