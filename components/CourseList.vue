@@ -14,56 +14,54 @@
 				</tr>
 			</thead>
 			<tbody>
-				<template v-for="(course, index) in courses">
-					<tr :key="course.id" @click="$emit('course-click', course)">
-						<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
-							<span class="mobile-only" v-if="!course.id.includes('ALT_')">{{  course.teacher + ' 老師' }}</span>
-						</td>
-						<td class="c-name">
-							{{ course.name }}
-						</td>
-						<td class="c-time">
-							<span v-for="time in course.time" :key="time[0] + '_' + time[1]" class="time">
-								<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
-									week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
-								<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>
-							</span>
-							<span v-if="isConflicted(course)" class="is-conflict mobile-inline">
-								<span class="ts-icon is-circle-alert-icon"></span>
-								衝堂
-							</span>
-						</td>
-						<td class="c-type-credit mobile-only absolute-right">
-							<span class="ts-badge is-small has-dark"
-								:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-								{{
-									course.type +
-									(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
-									' ' + course.credit
-								}} 學分
-							</span>
-						</td>
-						<td class="c-type-credit mobile-hidden">
-							<span class="ts-badge is-small is-dense is-end-spaced has-dark"
-								:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
-								{{
-									course.type +
-									(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
-								}}
-							</span>{{ course.credit }}
-						</td>
-						<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
-						<td class="c-remark">{{ course.comment }}</td>
-						<td class="c-action">
-							<span v-if="isConflicted(course)" class="is-conflict mobile-hidden">
-								<span class="ts-icon is-circle-alert-icon"></span>
-								衝堂
-							</span>
-							<span class="ts-icon absolute-right is-star-icon" v-if="savedCourse.includes(course.id)" @click.stop="$emit('action-click', course.id)"></span>
-							<span class="ts-icon absolute-right is-star-o-icon" v-else @click.stop="$emit('action-click', course.id)"></span>
-						</td>
-					</tr>
-				</template>
+				<tr v-for="(course, index) in courses" :key="course.id" @click="$emit('course-click', course)">
+					<td class="c-class">{{ course.dept + ' ' + course.year + ' ' + course.class }}
+						<span class="mobile-only" v-if="!course.id.includes('ALT_')">{{  course.teacher + ' 老師' }}</span>
+					</td>
+					<td class="c-name">
+						{{ course.name }}
+					</td>
+					<td class="c-time">
+						<span v-for="time in course.time" :key="time[0] + '_' + time[1]" class="time">
+							<template v-if="time[1].split('~')[0] == time[1].split('~')[1]">{{
+								week_text(time[0], course) + ' ' + time[1].split('~')[0] }}</template>
+							<template v-else>{{ week_text(time[0], course) + ' ' + time[1] }}</template>
+						</span>
+						<span v-if="isConflicted(course)" class="is-conflict mobile-inline">
+							<span class="ts-icon is-circle-alert-icon"></span>
+							衝堂
+						</span>
+					</td>
+					<td class="c-type-credit mobile-only absolute-right">
+						<span class="ts-badge is-small has-dark"
+							:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+							{{
+								course.type +
+								(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '') +
+								' ' + course.credit
+							}} 學分
+						</span>
+					</td>
+					<td class="c-type-credit mobile-hidden">
+						<span class="ts-badge is-small is-dense is-end-spaced has-dark"
+							:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
+							{{
+								course.type +
+								(course.otherinfo ? ' ' + course.otherinfo.substring(0, 2) : '')
+							}}
+						</span>{{ course.credit }}
+					</td>
+					<td class="c-teacher mobile-hidden">{{ course.teacher }}</td>
+					<td class="c-remark">{{ course.comment }}</td>
+					<td class="c-action">
+						<span v-if="isConflicted(course)" class="is-conflict mobile-hidden">
+							<span class="ts-icon is-circle-alert-icon"></span>
+							衝堂
+						</span>
+						<span class="ts-icon absolute-right is-star-icon" v-if="savedCourse.includes(course.id)" @click.stop="$emit('action-click', course.id)"></span>
+						<span class="ts-icon absolute-right is-star-o-icon" v-else @click.stop="$emit('action-click', course.id)"></span>
+					</td>
+				</tr>
 			</tbody>
 		</table>
 

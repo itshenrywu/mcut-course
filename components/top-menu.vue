@@ -1,11 +1,13 @@
 <template>
 	<div class="cell">
 		<div class="print-only">明志科技大學選課小幫手 | mcut-course.com</div>
-		<!-- <div style="background-color: var(--ts-gray-800); padding: .5rem 0">
+		<div v-if="showAnnouncement" style="position: relative; background-color: var(--ts-gray-800); padding: .5rem 0">
+			<button v-if="showCloseBtn && announcementId" class="announcement-close" @click="closeAnnouncement">×</button>
 			<div class="ts-container" style="text-align: center; color: var(--ts-gray-50); font-size: .9rem">
-				<span class="ts-badge is-negative is-small is-dense">服務異常</span> 因本站遭學校限制連線，部分功能（如課程詳細資訊、畢業學分門檻）可能偶爾會無法查詢，我們正在努力解決中，造成不便敬請見諒。
+				<span class="ts-badge is-small is-dense" :class="announcement.type === 'normal' ? 'is-primary' : 'is-negative'">{{ announcement.badge }}</span>
+				<span v-html="announcement.message"></span>
 			</div>
-		</div> -->
+		</div>
 		<div class="ts-container is-fitted navbar">
 			<div class="ts-tab is-center-aligned">
 				<NuxtLink
@@ -53,6 +55,27 @@
 	background: var(--ts-negative-400);
 }
 
+.announcement-close {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: .5rem;
+	background: transparent;
+	border: none;
+	color: var(--ts-gray-50);
+	font-size: 1.1rem;
+	line-height: 1;
+	cursor: pointer;
+	padding: .1rem .4rem;
+	opacity: .9;
+	z-index: 2;
+}
+
+/* ensure announcement text does not flow under the close button */
+.announcement-close + .ts-container {
+	padding-right: 2.2rem;
+}
+
 .profile-image {
 	width: 1.4rem;
 	height: 1.4rem;
@@ -86,12 +109,63 @@
 		top: 5%;
 		right: 25%;
 	}
+
+	/* on small screens move close button to the left and add padding */
+	.announcement-close {
+		right: .5rem;
+		left: auto;
+		transform: translateY(-50%);
+	}
+
+	.announcement-close + .ts-container {
+		padding-right: 2.6rem;
+	}
 }
 </style>
 
 <script>
 export default {
 	mounted() {
+		try {
+			const raw = localStorage.getItem('announcement_data');
+			if (raw) {
+				const obj = JSON.parse(raw);
+				// accept either stored shape {badge,message} or API shape {id,title,content}
+				if (obj) {
+					if (obj.badge && obj.message) {
+						this.announcement = obj;
+						this.showAnnouncement = true;
+					} else if (obj.title && obj.content) {
+						this.announcement = { badge: obj.title, message: obj.content, type: obj.type || '' };
+						this.announcementId = obj.id || null;
+						this.showCloseBtn = obj.no_close ? false : true;
+						if (this.announcementId && localStorage['announcement_closed_' + this.announcementId] === 'true') {
+							this.showAnnouncement = false;
+						} else {
+							this.showAnnouncement = true;
+						}
+					}
+				}
+			}
+		} catch (e) {}
+
+		fetch('https://gh.mcut-course.com/announcement.json', { cache: 'no-store' })
+			.then(async (res) => {
+				if (!res.ok) throw new Error('bad-response');
+				const data = await res.json();
+				if (!data || !data.id || !data.title || !data.content) throw new Error('invalid-data');
+				this.announcement = { badge: data.title, message: data.content, type: data.type || '' };
+				this.announcementId = data.id;
+				this.showCloseBtn = !data.no_close;
+				const closed = localStorage['announcement_closed_' + data.id] === 'true';
+				this.showAnnouncement = !closed;
+				localStorage.setItem('announcement_data', JSON.stringify({ id: data.id, title: data.title, content: data.content, type: data.type, no_close: data.no_close }));
+			})
+			.catch(() => {
+				this.showAnnouncement = false;
+				localStorage.removeItem('announcement_data');
+			});
+
 		this.currentPath = this.$router.currentRoute.path;
 		this.$router.afterEach((to) => {
 			this.currentPath = to.path;
@@ -112,6 +186,15 @@ export default {
 		return {
 			currentPath: '',
 			showRedDot: false,
+			// announcement handling
+			showAnnouncement: false,
+			showCloseBtn: false,
+			announcementId: null,
+			announcement: {
+				badge: '',
+				message: '',
+				type: '',
+			},
 			menuItems: [
 				{
 					path: '/',
@@ -138,6 +221,10 @@ export default {
 		};
 	},
 	methods: {
+		closeAnnouncement() {
+			if (this.announcementId) localStorage['announcement_closed_' + this.announcementId] = 'true';
+			this.showAnnouncement = false;
+		},
 		isActive(path) {
 			if (path === '/') return this.currentPath === '/' || this.currentPath === '/course/';
 			else return this.currentPath.includes(path);

@@ -42,9 +42,6 @@
 					選課時間及說明
 					<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="showInfoRedDot"></div>
 				</NuxtLink>
-				<NuxtLink to="/terms" class="item">
-					四技日間部學期安排說明
-				</NuxtLink>
 				<NuxtLink to="/calendar" class="item">
 					行事曆
 				</NuxtLink>
