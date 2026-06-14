@@ -17,7 +17,8 @@
 										第 {{ term }} 學期
 										<span class="description" v-if="term == '1'">上學期 / 二升三暑期</span>
 										<span class="description" v-else-if="term == '2'">{{ getSecondTermText(year_group.year, term) }}</span>
-										<span class="description" v-else>暑修</span>
+										<span class="description" v-else-if="term == '3'">上學期暑修</span>
+										<span class="description" v-else>下學期暑修</span>
 									</div>
 								</template>
 							</div>
@@ -102,9 +103,8 @@
 					<div class="ts-text is-description">
 						<span class="ts-badge has-bottom-spaced-small is-small is-dense">提示</span>
 						<div class="ts-list is-small is-unordered">
-							<div class="item">可先選擇自己的系所和班級，來儲存自己班級的必修課</div>
-							<div class="item">點選課程名稱可查看詳細資訊</div>
-							<div class="item">點擊星號即可收藏，僅能收藏沒有衝堂的課程</div>
+							<div class="item">可先選擇自己的系所和班級來儲存自己班級的必修課</div>
+							<div class="item">點選課程名稱可查看詳細資訊，點擊星號即可收藏</div>
 						</div>
 					</div>
 				</div>
@@ -471,12 +471,14 @@ export default {
 			data.term.forEach(term => {
 				let _year = term.split('-')[0];
 				let _term = term.split('-')[1];
+				if(Number(_year) <= 100 || Number(_year) > new Date().getFullYear() - 1911 + 1) return;
+				if(!['1', '2', '3', '4'].includes(_term)) return;
 				if (!_terms[_year]) _terms[_year] = [];
 				_terms[_year].push(_term);
 			});
 			this.terms = Object.entries(_terms)
 			.sort((a, b) => Number(b[0]) - Number(a[0]))
-			.map(([year, term]) => ({ year: year, term: term }));
+			.map(([year, term]) => ({ year: year, term: term.sort((a, b) => Number(a) - Number(b)) }));
 
 			this.depts = JSON.parse(JSON.stringify(this.defaultDeptGroup));
 

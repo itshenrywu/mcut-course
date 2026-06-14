@@ -14,7 +14,8 @@
 										第 {{ term }} 學期
 										<span class="description" v-if="term == '1'">上學期 / 二升三暑期</span>
 										<span class="description" v-else-if="term == '2'">{{ getSecondTermText(year_group.year, term) }}</span>
-										<span class="description" v-else>暑修</span>
+										<span class="description" v-else-if="term == '3'">上學期暑修</span>
+										<span class="description" v-else>下學期暑修</span>
 									</div>
 								</template>
 							</div>
@@ -141,7 +142,7 @@
 				</div>
 			</div>
 			<h2 class="ts-header is-huge has-bottom-spaced has-top-spaced-huge">
-				{{ currentTerm.split('-')[1] >= 3 ? '各系暑修' : '各系選修 / 各班必修' }}
+				{{ currentTerm.split('-')[1] >= 3 ? ('各系' + (currentTerm.split('-')[1] == 3 ? '上' : '下') + '學期暑修') : '各系選修 / 各班必修' }}
 			</h2>
 			<template v-if="currentTerm.split('-')[1] >= 3">
 				<div class="ts-grid has-top-spaced dept_class_list">
@@ -204,12 +205,14 @@ export default {
 		list.data.term.forEach(term => {
 			let _year = term.split('-')[0];
 			let _term = term.split('-')[1];
+			if(Number(_year) <= 100 || Number(_year) > new Date().getFullYear() - 1911 + 1) return;
+			if(!['1', '2', '3', '4'].includes(_term)) return;
 			if (!_terms[_year]) _terms[_year] = [];
 			_terms[_year].push(_term);
 		});
 		let terms = Object.entries(_terms)
 		.sort((a, b) => Number(b[0]) - Number(a[0]))
-		.map(([year, term]) => ({ year: year, term: term }));
+		.map(([year, term]) => ({ year: year, term: term.sort((a, b) => Number(a) - Number(b)) }));
 
 		const default_term = list.data.course[0].id.substring(0, 3) + '-' + list.data.course[0].id.substring(3, 4);
 
