@@ -276,7 +276,24 @@
 						<div class="ts-content">
 							<span class="ts-badge has-bottom-spaced-small is-small is-dense">承辦人</span><br>
 							{{ rule.contact[0] + ' ' + rule.contact[1] }}<br>
-							<a :href="'tel:0229089899,' + rule.contact[2]">(02) 2908-9899 #{{ rule.contact[2] }}</a>
+							<div class="ts-wrap is-dense has-top-spaced-small">
+								<div class="ts-buttons" v-if="rule.contact[2] && /^\d{4}$/.test(rule.contact[2])">
+									<a :href="'tel:0229089899,' + rule.contact[2]" class="ts-button is-small is-dense is-short is-secondary is-start-icon">
+										<span class="ts-icon is-tel-icon"></span>(02) 2908-9899 #{{ rule.contact[2] }}
+									</a>
+									<button @click="copyToClipboard('0229089899,' + rule.contact[2])" class="ts-button is-small is-dense is-short is-secondary is-start-icon" title="複製">
+										<span class="ts-icon is-copy-icon"></span> 複製
+									</button>
+								</div>
+								<div class="ts-buttons" v-if="rule.contact[3] && rule.contact[3].includes('@')">
+									<a :href="'mailto:' + rule.contact[3]" class="ts-button is-small is-dense is-short is-secondary is-start-icon">
+										<span class="ts-icon is-mail-icon"></span>{{ rule.contact[3] }}
+									</a>
+									<button @click="copyToClipboard(rule.contact[3])" class="ts-button is-small is-dense is-short is-secondary is-start-icon" title="複製">
+										<span class="ts-icon is-copy-icon"></span> 複製
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</template>
@@ -622,6 +639,10 @@ export default {
 		}
 	},
 	methods: {
+		copyToClipboard(text) {
+			navigator.clipboard.writeText(text);
+			this.$swal({ title: '已複製', icon: 'success', toast: true, timer: 2000, timerProgressBar: true, position: 'bottom-start', showConfirmButton: false });
+		},
 		sortRulesByDept(ruleGroup) {
 			const deptOrder = Object.keys(this.dept_short_name);
 			return Object.entries(ruleGroup).sort(([, a], [, b]) => {
