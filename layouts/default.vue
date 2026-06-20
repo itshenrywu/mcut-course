@@ -54,10 +54,24 @@ export default {
 		) {
 			this.$swal({
 				title: '關於本站 & 免責聲明',
-				html: '<div style="text-align:left">\
-					本網站由明志科技大學 107 級工業工程與管理系畢業校友 <a target="_blank" href="https://henrywu.tw">Henry Wu</a> 開發製作，並非學校官方系統。若您對本網站有任何疑慮，請避免使用。<br><br>\
-					本網站的資料來源於<a rel="nofollow" target="_blank" href="https://pse.is/7qmpj8">明志科技大學年度開課資料查詢系統</a>及<a rel="nofollow" target="_blank" href="https://pse.is/7qmpsp">入學課程總表查詢系統</a>，且會自動同步資料。由於資料可能因網路狀況而有所延遲或缺漏，內容僅供參考，實際資訊請以學校公告為準。如因資料錯誤導致任何損失，本站概不負責。\
-				</div>',
+				html: `<div style="text-align:left">
+					<p>
+						本網站由明志科技大學 107 級工業工程與管理系畢業校友 <a target="_blank" href="https://henrywu.tw">Henry Wu</a> 開發製作，<b>非學校官方系統</b>。若您對本網站有任何疑慮，請避免使用。
+					</p>
+					<p style="margin-bottom: 0">
+					本站資料來源
+					</p>
+					<ul style="margin-top: 0; padding-left: 1.5em;">
+						<li><a rel="nofollow" target="_blank" href="https://info.mcut.edu.tw/web1/std_datasearch/stda_course_search.aspx">年度開課資料查詢系統</a></li>
+						<li><a rel="nofollow" target="_blank" href="http://academic.mcut.edu.tw/AAS/frontshow/LinkCourseMasterList.aspx?View=CML">入學課程總表查詢系統</a></li>
+						<li><a rel="nofollow" target="_blank" href="http://day.course.mcut.edu.tw/">學生網路選課系統</a></li>
+						<li><a rel="nofollow" target="_blank" href="https://aca.mcut.edu.tw/?Lang=zh-tw">教務處</a></li>
+						<li><a rel="nofollow" target="_blank" href="https://ge.mcut.edu.tw/">通識教育中心</a></li>
+						<li><a rel="nofollow" target="_blank" href="https://lc.mcut.edu.tw/">語言中心</a></li>
+					</ul>
+					<p>
+						資料可能會有同步延遲或缺漏，內容僅供參考，實際請以學校公告為準。如因資料錯誤導致任何損失，本站概不負責。
+					</p>`,
 				confirmButtonText: '我同意，繼續使用',
 				allowOutsideClick: false,
 				allowEscapeKey: false

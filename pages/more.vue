@@ -53,6 +53,9 @@
 				<NuxtLink to="/about" class="item">
 					關於本站、資料來源及免責聲明
 				</NuxtLink>
+				<NuxtLink to="/changelog" class="item">
+					更新紀錄
+				</NuxtLink>
 				<a href="https://henrywu.tw/?openExternalBrowser=1" target="_blank" class="item">
 					建議及問題回報
 				</a>

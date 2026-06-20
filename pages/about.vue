@@ -6,12 +6,19 @@
 				明志科技大學選課小幫手由 107 級工業工程與管理系畢業校友 <a target="_blank" href="https://henrywu.tw">Henry Wu</a> 開發製作，幫助您輕鬆查詢全校課表，快速進行課程預排與衝堂檢查，還可以查詢畢業學分門檻及選課時程！
 			</p>
 			<h1 class="ts-header is-huge has-top-padded-large">資料來源及免責聲明</h1>
-			<p>
-				本站資料擷取自<a rel="nofollow" target="_blank" href="https://pse.is/7qmpj8">明志科技大學年度開課資料查詢系統</a>及<a rel="nofollow" target="_blank" href="https://pse.is/7qmpsp">入學課程總表查詢系統</a>。
+			<p style="margin-bottom: 0">
+				本站資料來源
 			</p>
+			<ul style="margin-top: 0; padding-left: 1.5em;">
+				<li><a rel="nofollow" target="_blank" href="https://info.mcut.edu.tw/web1/std_datasearch/stda_course_search.aspx">年度開課資料查詢系統</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://academic.mcut.edu.tw/AAS/frontshow/LinkCourseMasterList.aspx?View=CML">入學課程總表查詢系統</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://day.course.mcut.edu.tw/">學生網路選課系統</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://aca.mcut.edu.tw/?Lang=zh-tw">教務處</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://ge.mcut.edu.tw/">通識教育中心</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://lc.mcut.edu.tw/">語言中心</a></li>
+			</ul>
 			<p>
-				學校每日 00:00 及 12:00 更新開課資料，因此本站課程查詢功能將於每日 00:30 及 12:30 前同步課程資料。<br>
-				資料可能會因網路狀況而有所延遲或缺漏，內容僅供參考，實際請以學校公告為準。如因資料錯誤導致任何損失，本站概不負責。
+				資料可能會有同步延遲或缺漏，內容僅供參考，實際請以學校公告為準。如因資料錯誤導致任何損失，本站概不負責。
 			</p>
 			<div class="ts-box ad is-hollowed has-top-spaced-large" v-if="showAd">
 				<div class="ts-content">
