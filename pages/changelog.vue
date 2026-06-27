@@ -72,7 +72,7 @@ export default {
 	},
 	async mounted() {
 		try {
-			const res = await fetch('/changelog.json?v=' + process.env.GEN_TIME)
+			const res = await fetch('https://gh.mcut-course.com/changelog.json?v=' + process.env.GEN_TIME)
 			const raw = await res.json()
 			this.changelog = raw.map(item => this.parseItem(item))
 		} finally {
