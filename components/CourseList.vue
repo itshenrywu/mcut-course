@@ -33,7 +33,7 @@
 						</span>
 					</td>
 					<td class="c-type-credit mobile-only absolute-right">
-						<span class="ts-badge is-small has-dark"
+						<span class="ts-badge is-small is-dark"
 							:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
 							{{
 								course.type +
@@ -43,7 +43,7 @@
 						</span>
 					</td>
 					<td class="c-type-credit mobile-hidden">
-						<span class="ts-badge is-small is-dense is-end-spaced has-dark"
+						<span class="ts-badge is-small is-dense is-end-spaced is-dark"
 							:class="({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]">
 							{{
 								course.type +
@@ -474,7 +474,6 @@ export default {
 	box-sizing: border-box;
 	padding: 0.1rem;
 	border-radius: 4px;
-	color: white;
 	font-size: 0.8rem;
 	cursor: pointer;
 	overflow: hidden;

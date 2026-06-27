@@ -229,66 +229,49 @@ h1 {
 	font-size: 1.5rem;
 }
 
+.is-system,
+.is-light {
+	--box-bg-orange: hsl(24, 100%, 93%);
+	--box-bg-green: hsl(157, 92%, 93%);
+	--box-bg-gray: hsl(0, 0%, 93%);
+	--box-text-color: var(--ts-gray-700);
+	--box-text-shadow: none;
+}
+
+.is-dark {
+	--box-bg-orange: hsl(24, 100%, 62%);
+	--box-bg-green: hsl(157, 92%, 38%);
+	--box-bg-gray: hsl(0, 0%, 59%);
+	--box-text-color: #FFF;
+	--box-text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+@media (prefers-color-scheme: dark) {
+	.is-system {
+		--box-bg-orange: hsl(24, 100%, 62%);
+		--box-bg-green: hsl(157, 92%, 38%);
+		--box-bg-gray: hsl(0, 0%, 59%);
+		--box-text-color: #FFF;
+		--box-text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	}
+}
+
 .is-orange {
-	background-color: hsl(24, 100%, 62%);
-	color: #FFF;
-	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	background-color: var(--box-bg-orange);
+	color: var(--box-text-color);
+	text-shadow: var(--box-text-shadow);
 }
 
 .is-green {
-	background-color: hsl(157, 92%, 38%);
-	color: #FFF;
-	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	background-color: var(--box-bg-green);
+	color: var(--box-text-color);
+	text-shadow: var(--box-text-shadow);
 }
 
 .is-gray {
-	background-color: hsl(0, 0%, 59%);
-	color: #FFF;
-	text-shadow: 0 0 5px rgba(0, 0, 0, .2);
-}
-
-.is-light .timetable .is-orange,
-.is-light .course-timetable .is-orange {
-	background-color: hsl(24, 100%, 95%);
-	color: var(--ts-gray-700);
-	text-shadow: none;
-}
-
-.is-light .timetable .is-green,
-.is-light .course-timetable .is-green {
-	background-color: hsl(157, 92%, 95%);
-	color: var(--ts-gray-700);
-	text-shadow: none;
-}
-
-.is-light .timetable .is-gray,
-.is-light .course-timetable .is-gray {
-	background-color: hsl(0, 0%, 95%);
-	color: var(--ts-gray-700);
-	text-shadow: none;
-}
-
-@media (prefers-color-scheme: light) {
-	.timetable .is-orange,
-	.course-timetable .is-orange {
-		background-color: hsl(24, 100%, 95%);
-		color: var(--ts-gray-700);
-		text-shadow: none;
-	}
-
-	.timetable .is-green,
-	.course-timetable .is-green {
-		background-color: hsl(157, 92%, 95%);
-		color: var(--ts-gray-700);
-		text-shadow: none;
-	}
-
-	.timetable .is-gray,
-	.course-timetable .is-gray {
-		background-color: hsl(0, 0%, 95%);
-		color: var(--ts-gray-700);
-		text-shadow: none;
-	}
+	background-color: var(--box-bg-gray);
+	color: var(--box-text-color);
+	text-shadow: var(--box-text-shadow);
 }
 
 .is-conflict {
@@ -296,7 +279,7 @@ h1 {
 }
 
 .is-conflict .ts-icon {
-	/* line-height: 1rem; */
+	font-size: 87%;
 }
 
 .course-table td.c-action {

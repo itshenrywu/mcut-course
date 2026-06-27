@@ -761,7 +761,7 @@ export default {
 									html += '<a class="item" href="/course/' + course.id.substring(0, 4) + '/' + course.id.substring(4, 8) + '/' + course.id.substring(8) + '/">\
 										<div class="ts-header">' +
 											course.name + '&nbsp;\
-											<span class="ts-badge is-small is-dense '+({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]+'">'+course.type+'</span>' +
+											<span class="ts-badge is-small is-dense is-dark '+({ '必修': 'is-orange', '選修': 'is-green', '重修': 'is-gray' })[course.type]+'">'+course.type+'</span>' +
 										'</div>\
 										<div class="ts-text is-description is-start-aligned">' +
 											course.dept + '・' +
