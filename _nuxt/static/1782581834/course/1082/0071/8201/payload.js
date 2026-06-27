@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0071/8201", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"108200718201",name:"韓文初級(二)",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"趙叡珍",credit:a,hour:a,max:"48",min:"10",comment:"修過韓文初級(一)或會唸文字運用動詞現代",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

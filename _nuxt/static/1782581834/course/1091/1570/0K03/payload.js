@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1570/0K03", (function(a,b,c){return {data:[{course:{time:[[a,"1~3"]],id:"109115700K03",name:"電腦輔助資料表達於工程之應用",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"劉文琇",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

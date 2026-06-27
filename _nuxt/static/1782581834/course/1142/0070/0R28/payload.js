@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/0R28", (function(a){return {data:[{course:{time:[["7","0.5~0.5"]],id:"114200700R28",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"林立仁",credit:a,hour:a,classroom:"",max:"48",min:"15",comment:"搭配「藝文涵養與社會參與」電池專班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

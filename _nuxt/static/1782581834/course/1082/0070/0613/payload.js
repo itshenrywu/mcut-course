@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0070/0613", (function(a){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"108200700613",name:"勤勞教育(二)",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"白恭瑞",credit:"0",hour:"0.5",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2170/0X01", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"114221700X01",name:"資料結構應用實務",type:"選修",dept:"四技工管系",year:"1",class:"甲",teacher:"邱慧怡",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

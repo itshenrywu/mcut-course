@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2180/0Z01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108121800Z01",name:"模擬應用",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"陳琨太",credit:a,hour:a,max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

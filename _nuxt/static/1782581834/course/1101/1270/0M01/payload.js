@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1270/0M01", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"110112700M01",name:"實習前技術訓練",type:"必修",dept:"四技電機系",year:a,class:"甲",teacher:"蔡文星",credit:"1",hour:"2",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

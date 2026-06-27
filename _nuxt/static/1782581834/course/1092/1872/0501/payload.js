@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1872/0501", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"109218720501",name:"材料製程概論",type:"選修",dept:"四技材工系",year:"1",class:"甲",teacher:"阮弼群",credit:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

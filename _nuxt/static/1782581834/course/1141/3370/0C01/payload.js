@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3370/0C01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"114133700C01",name:"設計英文",type:"選修",dept:"四技視傳系",year:"3",class:"甲",teacher:"廖若寧",credit:"1",hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程：6\u002F30~8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

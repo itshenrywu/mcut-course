@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/1Q01", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["4","2~2"]],id:"113120701Q01",name:"電磁學",type:"選修",dept:"半導體學程",year:"1",class:"甲",teacher:"黃裕銘",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

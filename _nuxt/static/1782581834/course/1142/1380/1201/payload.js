@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1380/1201", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"114213801201",name:"專題研究(二)",type:"必修",dept:"化工系碩士班",year:b,class:"甲",teacher:"黃錦鴻",credit:b,hour:a,classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

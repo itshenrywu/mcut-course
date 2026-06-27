@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/3350/0801", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108233500801",name:"3D電腦繪圖",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"梁又文",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

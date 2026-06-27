@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0770/0501", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"111107700501",name:"全民國防教育軍事訓練(國際情勢)",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"黃志偉",credit:"0",hour:a,classroom:"",max:"45",min:"10",comment:"大二(含)以上得選修該課程",otherinfo:"軍訓課程"}}],fetch:{},mutations:[]}}("2")));

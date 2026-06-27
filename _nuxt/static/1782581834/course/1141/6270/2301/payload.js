@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2301", (function(a,b){return {data:[{course:{time:[["3","3~4"]],id:"114162702301",name:"工業物聯網概論",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"劉城甫",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

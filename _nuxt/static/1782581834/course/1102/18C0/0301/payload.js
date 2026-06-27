@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/18C0/0301", (function(a,b){return {data:[{course:{time:[["6","1~3"]],id:"110218C00301",name:"電腦輔助設計",type:"必修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"吳邦彥",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

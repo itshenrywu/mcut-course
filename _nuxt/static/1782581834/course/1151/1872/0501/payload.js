@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1872/0501", (function(a,b){return {data:[{course:{time:[["1",b],["2",b]],id:"115118720501",name:"材料製程概論",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"謝建國",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"●跨領域專班 9週：6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11")));

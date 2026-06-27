@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1573/1001", (function(a,b){return {data:[{course:{time:[["2",b],["4",b]],id:"115115731001",name:"BIOS韌體設計實務",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"黃樹林",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"●甲乙合班,上課日期6\u002F29-8\u002F28,資工系統選修",otherinfo:null}}],fetch:{},mutations:[]}}("3","7~8.5")));

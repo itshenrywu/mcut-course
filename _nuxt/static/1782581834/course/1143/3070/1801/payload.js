@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/3070/1801", (function(a,b){return {data:[{course:{time:[[a,"2~4"],[a,"5~7"]],id:"114330701801",name:"商業影音創作",type:"重修",dept:"行銷設計學程",year:"4",class:"暑",teacher:"何孟翰",credit:b,hour:b,classroom:"",max:"5",min:"1",comment:"暑修併三甲帶狀課程6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

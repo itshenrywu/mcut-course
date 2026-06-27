@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/3I03", (function(a,b){return {data:[{course:{time:[["1",b],["2",b]],id:"113211703I03",name:"車輛動力學",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"陳明彥",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"113泰國交換生併大三",otherinfo:null}}],fetch:{},mutations:[]}}("3","3~4")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/1A02", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"113130701A02",name:"品牌設計",type:"選修",dept:"四技行設專班",year:a,class:"乙",teacher:"鄭興宗",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"帶狀課程7\u002F1-8\u002F30 甲乙合班 乙班併入甲班",otherinfo:null}}],fetch:{},mutations:[]}}("3","6~8")));

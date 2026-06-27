@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/11C0/2901", (function(a,b){return {data:[{course:{time:[["6","5~7"]],id:"109211C02901",name:"電腦輔助設計(二)",type:"必修",dept:"四技進修部機械系",year:a,class:"乙",teacher:"鄭春德",credit:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

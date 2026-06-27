@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1672/0304", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108116720304",name:"綠色能源概論",type:"選修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"崔砢",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

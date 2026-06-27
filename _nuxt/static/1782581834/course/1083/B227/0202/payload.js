@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/B227/0202", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"1083B2270202",name:"專業證照(一)",type:"重修",dept:"四技經管系",year:"4",class:"暑",teacher:"楊子儀",credit:a,hour:a,max:"50",min:"5",comment:"塊狀課程6\u002F17-7\u002F3甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

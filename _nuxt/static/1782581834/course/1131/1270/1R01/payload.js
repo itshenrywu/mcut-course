@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1270/1R01", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"113112701R01",name:"微處理機與實習",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"吳啟耀",credit:"3",hour:"4",classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

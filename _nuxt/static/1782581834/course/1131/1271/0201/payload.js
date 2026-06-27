@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1271/0201", (function(a,b){return {data:[{course:{time:[["2","6~7"],[a,"1~1"]],id:"113112710201",name:"電路學",type:"必修",dept:"四技電機系",year:"1",class:"甲",teacher:"邱聰輝",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

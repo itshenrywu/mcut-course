@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/2Z03", (function(a,b){return {data:[{course:{time:[["1","1~2"],["5","0.5~0.5"]],id:"114111702Z03",name:"動力學",type:"必修",dept:"四技機械系",year:"2",class:"丙",teacher:"劉晉奇",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

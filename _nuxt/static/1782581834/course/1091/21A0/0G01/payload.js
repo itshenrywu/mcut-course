@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/21A0/0G01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"109121A00G01",name:"人工智慧",type:"選修",dept:"工管系碩專班",year:a,class:"甲",teacher:"邱育智",credit:b,hour:b,classroom:"",max:"25",min:"5",comment:"AI專班",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

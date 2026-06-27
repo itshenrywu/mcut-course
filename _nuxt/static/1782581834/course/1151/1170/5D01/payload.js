@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/5D01", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"115111705D01",name:"海外移地教學",type:"選修",dept:"四技機械系",year:"3",class:"甲",teacher:"許啟彬",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"○◎上課日期:6\u002F1-6\u002F26,時間另公告",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

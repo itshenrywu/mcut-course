@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3150/6302", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"114231506302",name:"傢俱設計",type:"選修",dept:"四技工設系",year:a,class:"乙",teacher:"許定洋",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

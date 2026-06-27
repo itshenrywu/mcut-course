@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2170/1S01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114121701S01",name:"隨機概率",type:"選修",dept:"四技工管系",year:a,class:"丙",teacher:"俞凱允",credit:b,hour:b,classroom:"",max:"25",min:"10",comment:"限法國專班選課，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

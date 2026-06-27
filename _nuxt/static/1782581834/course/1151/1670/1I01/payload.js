@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1670/1I01", (function(a,b,c){return {data:[{course:{time:[[a,"4.5~4.5"],[a,b],[c,b],["4",b]],id:"115116701I01",name:"實務專題研究(三)",type:"必修",dept:"四技環安衛系",year:c,class:"甲",teacher:"許金玉",credit:"1",hour:a,classroom:"",max:"50",min:"10",comment:"●上9週:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("2","8.5~8.5","3")));

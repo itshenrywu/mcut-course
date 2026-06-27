@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/33C4/1001", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"108233C41001",name:"藝術影片解析",type:"選修",dept:"四技進修部視傳系",year:"4",class:"甲",teacher:"洪淳修",credit:a,hour:a,max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

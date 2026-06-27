@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/1K08", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"115100701K08",name:"工讀實務實習前素養訓練",type:"必修",dept:"四技化工系",year:"3",class:"乙",teacher:"陳政佑",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"●6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

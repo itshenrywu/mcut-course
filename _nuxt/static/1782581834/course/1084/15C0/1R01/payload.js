@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/15C0/1R01", (function(a){return {data:[{course:{time:[["5","7~11"]],id:"108415C01R01",name:"模擬軟體應用(MATLAB)",type:"必修",dept:"四技進修部電子系",year:"2",class:"甲",teacher:"黃政光",credit:a,hour:a,max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

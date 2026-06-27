@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0570/1D01", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"114105701D01",name:"普通物理實驗",type:"必修",dept:"電池專班",year:"1",class:"甲",teacher:"李孟錡",credit:"2",hour:"3",classroom:a,max:"20",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

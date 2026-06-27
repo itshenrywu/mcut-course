@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/6270/1S01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112262701S01",name:"Python 程式設計",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"劉弘一",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

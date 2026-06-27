@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0071/2301", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"109100712301",name:"先秦思想與人生智慧",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"李慧琪",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"上課期間為7\u002F6至8\u002F31",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2")));

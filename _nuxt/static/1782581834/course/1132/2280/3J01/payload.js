@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2280/3J01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113222803J01",name:"企業永續發展專題",type:"選修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"陳昭蓉",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

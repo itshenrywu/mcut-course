@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1270/0P02", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"108212700P02",name:"電腦網路概論實習",type:"必修",dept:"四技電機系",year:b,class:"乙",teacher:"王得貴",credit:b,hour:a,max:"52",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

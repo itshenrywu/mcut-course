@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/0L01", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[a,d],["4",b],[c,"0.5~0.5"],[c,b],[c,d]],id:"115120700L01",name:"頂石專題",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"黃啓賢",credit:"1",hour:a,classroom:"",max:"20",min:"10",comment:"●◎上課期間：6\u002F29~8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","4.5~4.5","5","9~9")));

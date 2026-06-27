@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1572/0102", (function(a,b,c){return {data:[{course:{time:[[a,"1~3"]],id:"112115720102",name:"線性代數",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"劉俊緯",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

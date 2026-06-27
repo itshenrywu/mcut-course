@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/15C2/0301", (function(a,b){return {data:[{course:{time:[[a,"1~4"],[a,"5~6"]],id:"108415C20301",name:"FPGA\u002FCPLD設計實務",type:"必修",dept:"四技進修部電子系",year:"2",class:"甲",teacher:"林義楠",credit:b,hour:b,max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

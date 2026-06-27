@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3140/6504", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112231406504",name:"造形設計",type:"選修",dept:"四技工設系",year:a,class:"乙",teacher:"謝國榮",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

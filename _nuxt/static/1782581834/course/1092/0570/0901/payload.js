@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0570/0901", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"109205700901",name:"鑑識科學的奧妙",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"任修平",credit:"2",classroom:b,max:"48",min:"10",comment:b,otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("1","")));

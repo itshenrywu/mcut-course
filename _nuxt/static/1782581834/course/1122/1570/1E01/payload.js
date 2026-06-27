@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1570/1E01", (function(a){return {data:[{course:{time:[[a,"10~12"]],id:"112215701E01",name:"人工智慧技術實務",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"陳延禎",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"第1階段，甲乙合班，外系不可選修。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

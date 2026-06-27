@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/6270/1V01", (function(a,b,c){return {data:[{course:{time:[[b,"5~6"],[a,"5~5"]],id:"113162701V01",name:"數位訊號處理",type:"選修",dept:"人工智慧學程",year:b,class:"甲",teacher:"李建興",credit:a,hour:a,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","2","")));

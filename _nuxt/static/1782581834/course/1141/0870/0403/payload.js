@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0870/0403", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"114108700403",name:"普通化學",type:"必修",dept:"電池專班",year:"1",class:"甲",teacher:"鄭有為",credit:a,hour:a,classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

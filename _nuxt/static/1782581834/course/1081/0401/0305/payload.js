@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0401/0305", (function(a,b){return {data:[{course:{time:[[a,"8~8.5"]],id:"108104010305",name:"大學之道",type:"必修",dept:"四技化工系",year:b,class:"甲",teacher:"簡良榮",credit:b,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","1")));

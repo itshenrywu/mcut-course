@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3170/1E02", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"114131701E02",name:"工業設計概論",type:"必修",dept:"四技工設系",year:a,class:"甲",teacher:"王忠祥",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

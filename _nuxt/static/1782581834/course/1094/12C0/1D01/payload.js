@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/12C0/1D01", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~9"]],id:"109412C01D01",name:"電動機控制",type:"重修",dept:"四技進修部電機系",year:"4",class:"暑",teacher:"蘇益立",credit:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("6","")));

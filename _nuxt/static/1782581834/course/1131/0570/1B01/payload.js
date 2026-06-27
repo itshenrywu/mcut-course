@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/1B01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"113105701B01",name:"生技、醫療與永續發展",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"廖威超",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:"自然科學與環境永續"}}],fetch:{},mutations:[]}}("1","2","")));

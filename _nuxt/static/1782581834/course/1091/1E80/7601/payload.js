@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1E80/7601", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"10911E807601",name:"英文強化課程",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"王琪芸",credit:"0",hour:a,classroom:b,max:"24",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

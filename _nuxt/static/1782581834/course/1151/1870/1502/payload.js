@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/1502", (function(a){return {data:[{course:{time:[["1","1~3"],[a,"4~4"],[a,"5~6"]],id:"115118701502",name:"X光繞射導論",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"黃宗鈺",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"●上課時間9週：6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

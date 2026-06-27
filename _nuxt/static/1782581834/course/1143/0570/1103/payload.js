@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/0570/1103", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"114305701103",name:"運動與健康",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"王學中",credit:a,hour:a,classroom:"",max:"5",min:"無下限",comment:"上課期間：6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

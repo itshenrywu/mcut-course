@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1280/0O02", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"113212800O02",name:"太陽能發電與風力發電系統",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"羅慶權",credit:b,hour:b,classroom:c,max:"20",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","3","")));

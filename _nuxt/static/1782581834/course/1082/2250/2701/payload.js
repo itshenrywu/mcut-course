@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2250/2701", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108222502701",name:"消費者行為",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"李文玄",credit:a,hour:a,max:"40",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0402/B110", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"10910402B110",name:"英文(中級)(一)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"林亞蒨",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"環資中D",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

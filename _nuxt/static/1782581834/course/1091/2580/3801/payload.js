@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2580/3801", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"109125803801",name:"高等工作學",type:"選修",dept:"工管系碩士班",year:a,class:"甲",teacher:"陳一郎",credit:b,hour:b,classroom:c,max:"25",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

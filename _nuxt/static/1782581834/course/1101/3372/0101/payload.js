@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3372/0101", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"110133720101",name:"2D影像設計",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"邱伯儒",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

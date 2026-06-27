@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0409/0511", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109204090511",name:"憲政與發展",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"吳忠進",credit:"3",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

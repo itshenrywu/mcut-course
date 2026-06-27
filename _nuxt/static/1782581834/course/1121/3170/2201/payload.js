@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3170/2201", (function(a){return {data:[{course:{time:[[a,"5~7"],["5","2~4"]],id:"112131702201",name:"企業倫理",type:"必修",dept:"四技工設系",year:a,class:"甲",teacher:"許定洋",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F3-9\u002F1",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

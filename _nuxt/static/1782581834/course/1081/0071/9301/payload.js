@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/9301", (function(a,b){return {data:[{course:{time:[[a,"2~4"],[a,"5~5"]],id:"108100719301",name:"法律與人生",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"蔡孟彥",credit:b,hour:b,max:"48",min:"10",comment:"上課日期為7\u002F8至9\u002F6",otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("1","2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3170/1H02", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"114231701H02",name:"材料與加工",type:"必修",dept:"四技工設系",year:"1",class:"乙",teacher:"謝國榮",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

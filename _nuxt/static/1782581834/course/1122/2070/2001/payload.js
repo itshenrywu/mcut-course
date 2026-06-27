@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/2001", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"112220702001",name:"綠色製程概論",type:"選修",dept:"半導體學程",year:"1",class:"甲",teacher:"吳永富",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

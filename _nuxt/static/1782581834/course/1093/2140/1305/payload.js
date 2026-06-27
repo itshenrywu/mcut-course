@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/2140/1305", (function(a){return {data:[{course:{time:[["1","1~2"],["2","2~3"],[a,"5~8"]],id:"109321401305",name:"作業研究(含實習)(一)",type:"重修",dept:"四技工管系",year:a,class:"暑",teacher:"陳隆暉",credit:"3",classroom:"",max:"50",min:"5",comment:"與三甲合班 帶狀課程7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

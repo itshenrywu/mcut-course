@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0370/0G01", (function(a,b){return {data:[{course:{time:[["7","3~4"]],id:"110103700G01",name:"社團經營",type:"選修",dept:"通識中心四技",year:a,class:"丙",teacher:"簡良榮",credit:a,hour:"2",classroom:b,max:"無上限",min:"無下限",comment:b,otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("1","")));

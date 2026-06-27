@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1871/0301", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"108218710301",name:"普通物理實驗(二)",type:"必修",dept:"四技材工系",year:b,class:"甲",teacher:"張盛義",credit:b,hour:"3",max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4","1")));

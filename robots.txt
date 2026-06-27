@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Sitemap: https://mcut-course.com/sitemap.txt
+Sitemap: https://mcut-course.com/sitemap-rule.txt

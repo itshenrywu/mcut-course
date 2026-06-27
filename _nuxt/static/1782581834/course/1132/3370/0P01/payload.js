@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3370/0P01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"113233700P01",name:"微電影創作",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"隋淑芬",credit:b,hour:b,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

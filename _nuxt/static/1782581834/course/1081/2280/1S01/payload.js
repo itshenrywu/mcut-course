@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2280/1S01", (function(a,b){return {data:[{course:{time:[[a,"1~4"],[a,"5~7"]],id:"108122801S01",name:"企業實務實習(一)",type:"選修",dept:"經管系碩士班",year:"2",class:"甲",teacher:"盧建中",credit:b,hour:b,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("6","9")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1670/2F01", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"113316702F01",name:"碳盤查與碳足跡管理實務",type:"重修",dept:"四技環安衛系",year:"4",class:"暑",teacher:"洪明瑞",credit:a,hour:a,classroom:"",max:"10",min:"1",comment:"併環三",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

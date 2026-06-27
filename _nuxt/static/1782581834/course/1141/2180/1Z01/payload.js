@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2180/1Z01", (function(a,b){return {data:[{course:{time:[["4","6~8"]],id:"114121801Z01",name:"台塑企業管理機能研討",type:"必修",dept:"工管系碩士班",year:a,class:"甲",teacher:"阮業春",credit:a,hour:"3",classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

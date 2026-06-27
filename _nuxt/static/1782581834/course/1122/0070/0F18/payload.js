@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0F18", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"112200700F18",name:"經典教育與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"陳建彰",credit:b,hour:b,classroom:"",max:"40",min:"15",comment:"主題：心理調適提升運動表現，限大四",otherinfo:null}}],fetch:{},mutations:[]}}("4","1")));

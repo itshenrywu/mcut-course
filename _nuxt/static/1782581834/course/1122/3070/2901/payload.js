@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3070/2901", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"112230702901",name:"互動式數位程式設計與應用",type:"選修",dept:"四技行設專班",year:"2",class:"乙",teacher:"陳進隆",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"併入二甲",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

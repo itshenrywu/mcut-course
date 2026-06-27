@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0070/0518", (function(a,b){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"112100700518",name:"勤勞教育(一)",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"張秉裕",credit:"0",hour:"0.5",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

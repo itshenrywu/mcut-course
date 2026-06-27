@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1H02", (function(a){return {data:[{course:{time:[["7","9~9"]],id:"114200701H02",name:"海外交換學習(三)",type:"必修",dept:"四技視傳系",year:"3",class:"甲",teacher:"李昌國",credit:"4",hour:"40",classroom:a,max:"10",min:"1",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

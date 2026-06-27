@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2070/0C01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"108220700C01",name:"工業設計與3D數位成形實務",type:"選修",dept:"環實務",year:"2",class:"甲",teacher:"賴宛吟",credit:a,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

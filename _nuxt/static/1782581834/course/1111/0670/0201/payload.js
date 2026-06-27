@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0670/0201", (function(a){return {data:[{course:{time:[["4","3~4"]],id:"111106700201",name:"體育(二)",type:"重修",dept:"體育組-四技(日)",year:a,class:"重",teacher:"張意德",credit:"0",hour:"2",classroom:"",max:"10",min:a,comment:"與週四第三四節的經一乙課程併班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

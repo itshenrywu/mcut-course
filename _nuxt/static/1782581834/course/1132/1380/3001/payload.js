@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1380/3001", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113213803001",name:"X光繞射原理與應用",type:"選修",dept:"化工系碩士班",year:a,class:"甲",teacher:"李國通",credit:b,hour:b,classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

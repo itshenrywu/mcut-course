@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1870/2J03", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"112218702J03",name:"基礎材料實驗",type:"必修",dept:"四技材工系",year:"2",class:"甲",teacher:"程志賢",credit:a,hour:"3",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

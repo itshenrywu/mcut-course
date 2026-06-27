@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/0S04", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[c,b]],id:"113121700S04",name:"程式設計(含實習)(一)",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"鄭明顯",credit:"3",hour:c,classroom:d,max:"60",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("1","1~2","4","")));

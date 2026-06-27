@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/2070/2803", (function(a,b){return {data:[{course:{time:[[a,"9~11"],["5","10~12"]],id:"114320702803",name:"電池材料與分析實作",type:"重修",dept:"環實務",year:a,class:"暑",teacher:"杜鶴芸",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

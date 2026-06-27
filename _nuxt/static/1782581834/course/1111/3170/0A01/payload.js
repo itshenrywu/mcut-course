@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/3170/0A01", (function(a,b){return {data:[{course:{time:[["2","1~3"]],id:"111131700A01",name:"表現技法",type:"必修",dept:"四技工設系",year:"1",class:"甲",teacher:"秦自強",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

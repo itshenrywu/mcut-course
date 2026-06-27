@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/0T01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"113121700T01",name:"程式設計(二)",type:"選修",dept:"四技工管系",year:"2",class:"甲",teacher:"阮業春",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

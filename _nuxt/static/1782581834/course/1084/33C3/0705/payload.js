@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/33C3/0705", (function(a,b){return {data:[{course:{time:[[b,"2~4"],[b,"5~7"]],id:"108433C30705",name:"廣告企劃與行銷",type:"重修",dept:"四技進修部視傳系",year:a,class:"暑",teacher:"商耀元",credit:a,hour:a,max:"56",min:"10",comment:"併日間部大三創意行銷設計課程",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

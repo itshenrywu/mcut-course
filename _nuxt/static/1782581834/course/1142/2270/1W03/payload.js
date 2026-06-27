@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/1W03", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"114222701W03",name:"企業資源規劃",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"楊桂柔",credit:a,hour:"3",classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

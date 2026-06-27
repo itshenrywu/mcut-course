@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1870/1Q02", {data:[{course:{time:[["6","1~4"]],id:"111118701Q02",name:"材料專題(一)",type:"必修",dept:"四技材工系",year:"3",class:"乙",teacher:"黃啓賢",credit:"1",hour:"2",classroom:"",max:"100",min:"10",comment:"專題",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1272/0501", (function(a){return {data:[{course:{time:[["4","3~4"],["5","4~4"]],id:"114212720501",name:"電子學(二)",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"吳長洲",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

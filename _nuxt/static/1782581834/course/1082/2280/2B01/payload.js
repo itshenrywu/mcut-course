@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2280/2B01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"108222802B01",name:"企業倫理專題",type:"必修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"顏婉竹",credit:b,hour:b,max:"30",min:a,comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

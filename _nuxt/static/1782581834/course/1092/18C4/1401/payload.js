@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/18C4/1401", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"109218C41401",name:"生醫材料",type:"選修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"劉定宇",credit:"3",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

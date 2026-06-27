@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/1101", (function(a){return {data:[{course:{time:[["2","5~7"],[a,"2~4"]],id:"115162701101",name:"作業系統",type:"選修",dept:"人工智慧學程",year:a,class:"甲",teacher:"郭振洋",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"●上課日期:6\u002F29-8\u002F28。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2280/1L01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"110222801L01",name:"進階商用英文(二)",type:"選修",dept:"經管系碩士班",year:a,class:"甲",teacher:"林柏翰",credit:"0",hour:"2",classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

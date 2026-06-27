@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/2070/2801", (function(a,b){return {data:[{course:{time:[["2","7~11"]],id:"112320702801",name:"電池材料與分析實作",type:"重修",dept:"環實務",year:"4",class:"暑",teacher:"簡文鎮",credit:a,hour:a,classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

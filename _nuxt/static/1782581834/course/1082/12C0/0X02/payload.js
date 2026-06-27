@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/12C0/0X02", {data:[{course:{time:[["6","2~3"]],id:"108212C00X02",name:"電子學應用與實習",type:"必修",dept:"四技進修部電機系",year:"3",class:"乙",teacher:"蘇益立",credit:"1",hour:"2",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

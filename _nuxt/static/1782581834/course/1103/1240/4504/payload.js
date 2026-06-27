@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1240/4504", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"110312404504",name:"感測器",type:"重修",dept:"四技電機系",year:a,class:"暑",teacher:"吳長洲",credit:b,hour:b,classroom:"",max:"20",min:"5",comment:"暑修併四技三跨領域外系專班上課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

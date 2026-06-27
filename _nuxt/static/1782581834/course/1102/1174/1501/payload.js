@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1174/1501", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"110211741501",name:"機械工程實驗(二)",type:"必修",dept:"四技機械系",year:"4",class:"甲",teacher:"張國棟",credit:"1",hour:"3",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

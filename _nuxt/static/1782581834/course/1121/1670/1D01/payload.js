@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1670/1D01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"112116701D01",name:"大數據在環境工程上的應用",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"黃浚瑋",credit:b,hour:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

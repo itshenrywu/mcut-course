@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1270/2M02", (function(a,b,c){return {data:[{course:{time:[[a,b],["2",b]],id:"114312702M02",name:"智慧資料庫實務",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"邱機平",credit:c,hour:c,classroom:"",max:"5",min:a,comment:"上課日期:6\u002F29-8\u002F28，倂電三甲",otherinfo:null}}],fetch:{},mutations:[]}}("1","7~8.5","3")));

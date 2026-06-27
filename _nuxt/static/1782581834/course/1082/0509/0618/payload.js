@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0509/0618", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"108205090618",name:"歷史",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"鄭銘德",credit:a,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

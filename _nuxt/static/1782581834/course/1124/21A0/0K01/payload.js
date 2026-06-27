@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1124/21A0/0K01", (function(a,b,c,d){return {data:[{course:{time:[[a,b],["2",b]],id:"112421A00K01",name:"大數據分析",type:"重修",dept:"工管系碩專班",year:a,class:"暑",teacher:"俞凱允",credit:c,hour:c,classroom:d,max:"25",min:"5",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("1","9~11","3","")));

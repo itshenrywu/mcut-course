@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/1202", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"108100711202",name:"觀光日語入門",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"楊淑惠",credit:b,hour:b,max:"48",min:"10",comment:"已修過任一進階日語課程者，不得再選修",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2")));

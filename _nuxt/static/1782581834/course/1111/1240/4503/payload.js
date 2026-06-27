@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1240/4503", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"111112404503",name:"感測器",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"吳長洲",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"跨領域專班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

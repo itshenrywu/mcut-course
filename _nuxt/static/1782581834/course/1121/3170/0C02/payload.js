@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3170/0C02", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"112131700C02",name:"電腦繪圖",type:"必修",dept:"四技工設系",year:a,class:"乙",teacher:"許定洋",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

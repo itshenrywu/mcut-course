@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/2601", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"113120702601",name:"能源工程概論",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"盧奕廷",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"第二專長(本系可修)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

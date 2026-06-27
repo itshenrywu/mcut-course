@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1270/0M01", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"114112700M01",name:"實習前技術訓練",type:"必修",dept:"四技電機系",year:a,class:"甲",teacher:"王柏仁",credit:"1",hour:"2",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1174/3802", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"115111743802",name:"自動控制(一)",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"蔡宜昌",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"●上課日期:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0870/0004", (function(a,b,c){return {data:[{course:{time:[[b,"5~6"],[a,"4~4"]],id:"112108700004",name:"普通化學(一)",type:"必修",dept:"四技材工系",year:b,class:"乙",teacher:"陳志平",credit:a,hour:a,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1","")));

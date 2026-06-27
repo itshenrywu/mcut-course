@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2240/2403", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"114122402403",name:"統計學(一)",type:"必修",dept:"四技經管系",year:"2",class:"丙",teacher:"林淯慈",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

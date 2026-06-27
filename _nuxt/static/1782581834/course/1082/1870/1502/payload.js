@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1870/1502", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108218701502",name:"X光繞射導論",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"黃裕清",credit:b,hour:b,max:"84",min:"10",comment:"材二甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

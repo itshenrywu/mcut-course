@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1374/1201", (function(a){return {data:[{course:{time:[["5","6~8"]],id:"108113741201",name:"奈米觸媒技術與應用",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"施正元",credit:a,hour:a,max:"65",min:"10",comment:"化四甲乙合班上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

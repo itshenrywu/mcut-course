@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1672/1803", (function(a,b){return {data:[{course:{time:[["2",b],[a,b]],id:"115116721803",name:"儀器分析及實驗",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"陳慶隆",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"●上9週:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

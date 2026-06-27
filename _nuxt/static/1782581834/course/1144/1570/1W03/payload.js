@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1144/1570/1W03", (function(a){return {data:[{course:{time:[["3","5~8"]],id:"114415701W03",name:"專題製作(四)",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"陳華彬",credit:"1",hour:"2",classroom:a,max:"20",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

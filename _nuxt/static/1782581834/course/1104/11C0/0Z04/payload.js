@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/11C0/0Z04", (function(a,b){return {data:[{course:{time:[[a,"1~4"],[a,"5~8"]],id:"110411C00Z04",name:"產業實務實習(三)",type:"必修",dept:"四技進修部機械系",year:"3",class:"乙",teacher:"蔡宜昌",credit:"4",hour:"8",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("5","")));

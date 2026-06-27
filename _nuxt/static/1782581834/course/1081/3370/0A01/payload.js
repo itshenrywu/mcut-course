@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3370/0A01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108133700A01",name:"數位藝術",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"陳進隆",credit:a,hour:a,max:"32",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

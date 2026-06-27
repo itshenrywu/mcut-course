@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/12C0/2101", (function(a,b,c){return {data:[{course:{time:[[b,"2~4"],[b,"5~5"]],id:"111212C02101",name:"電動機控制與實習",type:"必修",dept:"四技進修部電機系",year:a,class:"甲",teacher:"吳啟耀",credit:a,hour:a,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","5","")));

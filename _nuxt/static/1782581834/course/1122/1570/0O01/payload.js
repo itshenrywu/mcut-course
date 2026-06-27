@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1570/0O01", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"112215700O01",name:"基本電學實務",type:"選修",dept:"四技電子系",year:"1",class:"甲",teacher:"邱國源",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"第二專長課程，限外系學生修課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

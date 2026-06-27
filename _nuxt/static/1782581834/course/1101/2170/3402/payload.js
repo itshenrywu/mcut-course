@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2170/3402", (function(a,b){return {data:[{course:{time:[[a,b],["4",b]],id:"110121703402",name:"實務專題(一)",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"游淑萍",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"帶狀課程7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("3","0.5~0.5")));

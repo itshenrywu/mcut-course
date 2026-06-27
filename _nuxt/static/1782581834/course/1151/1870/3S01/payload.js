@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/3S01", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"115118703S01",name:"3D列印原理與實務",type:"選修",dept:"四技材工系",year:"3",class:"甲",teacher:"范姜博鈞",credit:a,hour:a,classroom:"",max:"24",min:"10",comment:"○上課時間:6\u002F4、6\u002F5、6\u002F6，甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

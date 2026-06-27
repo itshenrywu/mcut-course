@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0871/0202", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108208710202",name:"普通化學實驗",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"朱良",credit:a,hour:"3",max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

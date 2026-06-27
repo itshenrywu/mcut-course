@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1870/0T02", (function(a){return {data:[{course:{time:[["4","3~4"],["5","5~6"]],id:"108218700T02",name:"電化學方法與應用實務",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"彭坤增",credit:a,hour:a,max:"35",min:"1",comment:"大三至法國交換",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

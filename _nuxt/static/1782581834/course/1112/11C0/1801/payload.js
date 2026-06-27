@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/11C0/1801", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"111211C01801",name:"熱傳學",type:"選修",dept:"四技進修部機械系",year:a,class:"甲",teacher:"鍾永強",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

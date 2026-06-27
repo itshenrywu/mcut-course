@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/22C4/0801", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108122C40801",name:"經營分析",type:"選修",dept:"四技進修部經管系",year:"4",class:"甲",teacher:"黃銘圭",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

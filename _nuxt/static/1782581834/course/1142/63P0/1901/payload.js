@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/63P0/1901", (function(a){return {data:[{course:{time:[["4","2~2"]],id:"114263P01901",name:"博士論文研究(四)",type:"必修",dept:"電漿薄膜博士學程",year:"3",class:"甲",teacher:"黎有福",credit:a,hour:a,classroom:"",max:"25",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

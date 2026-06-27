@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1670/0Q01", (function(a){return {data:[{course:{time:[["3","7~8"]],id:"108216700Q01",name:"有機化學",type:"必修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"崔砢",credit:a,hour:a,max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1870/0C01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"112118700C01",name:"鋼鐵製程與處理",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"簡順億",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

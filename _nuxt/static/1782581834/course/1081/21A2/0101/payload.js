@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21A2/0101", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108121A20101",name:"實驗設計",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"王建智",credit:a,hour:a,max:"25",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

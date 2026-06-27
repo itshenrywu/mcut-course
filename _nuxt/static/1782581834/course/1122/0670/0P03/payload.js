@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0670/0P03", (function(a){return {data:[{course:{time:[[a,"1~2"]],id:"112206700P03",name:"體育(二)",type:"必修",dept:"四技工設系",year:"1",class:"乙",teacher:"吳宇豐",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

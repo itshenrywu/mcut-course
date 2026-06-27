@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/11C0/2701", {data:[{course:{time:[["5","7~8.5"]],id:"108211C02701",name:"數控工具機實習",type:"必修",dept:"四技進修部機械系",year:"1",class:"乙",teacher:"鄭春德",credit:"2",hour:"3",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

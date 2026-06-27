@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0072/0503", (function(a){return {data:[{course:{time:[["4","1~2"]],id:"112100720503",name:"英語聽講(高級)(一)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"羅方諾",credit:"1",hour:a,classroom:"",max:"40",min:"10",comment:"電機電子AI菁英A",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

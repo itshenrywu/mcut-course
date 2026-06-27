@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/2T02", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"115162702T02",name:"海外移地教學",type:"選修",dept:"人工智慧學程",year:"3",class:"甲",teacher:"劉豐瑞",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"○◎上課日期:6\u002F23-6\u002F30,時間另公告。",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

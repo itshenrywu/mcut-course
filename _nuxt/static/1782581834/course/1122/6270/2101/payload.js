@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/6270/2101", (function(a,b,c,d){return {data:[{course:{time:[[b,a],["4",a],["5",a]],id:"112262702101",name:"跨領域頂石專題(一)",type:"必修",dept:"人工智慧學程",year:c,class:"甲",teacher:"黃浚瑋",credit:c,hour:b,classroom:d,max:"56",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","3","1","")));

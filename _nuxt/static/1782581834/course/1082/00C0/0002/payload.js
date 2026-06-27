@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/00C0/0002", (function(a,b){return {data:[{course:{time:[[b,"4~4"],[b,"5~6"]],id:"108200C00002",name:"英文輔導",type:"必修",dept:"四技進修部電機系",year:a,class:"乙",teacher:"廖益輝",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","6")));

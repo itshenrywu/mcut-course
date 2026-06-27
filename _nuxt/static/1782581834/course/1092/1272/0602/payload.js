@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1272/0602", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"109212720602",name:"電子實習",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"邱聰輝",credit:"1",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

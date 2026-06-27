@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/0T01", (function(a,b){return {data:[{course:{time:[["1",b],["5",b]],id:"115118700T01",name:"電化學方法與應用實務",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"彭坤增",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"●上課時間9週：6\u002F29-8\u002F28，甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","7~8.5")));

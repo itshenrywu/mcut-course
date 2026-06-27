@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3170/0Q02", {data:[{course:{time:[["5","1~3"]],id:"109231700Q02",name:"福祉設計",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"陳建志",credit:"3",classroom:"",max:"56",min:"10",comment:"授課教師：陳建志、高國珍",otherinfo:null}}],fetch:{},mutations:[]});

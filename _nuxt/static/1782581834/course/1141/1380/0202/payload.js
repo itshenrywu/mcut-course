@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1380/0202", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"114113800202",name:"科技論文寫作",type:"必修",dept:"化工系碩士班",year:a,class:"甲",teacher:"何嘉琪",credit:a,hour:"2",classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

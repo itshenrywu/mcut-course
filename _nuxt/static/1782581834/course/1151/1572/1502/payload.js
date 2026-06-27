@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1572/1502", (function(a){return {data:[{course:{time:[["1","1~4"],["2","5~6"]],id:"115115721502",name:"半導體元件",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"王志良",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"●甲乙合班,上課日期6\u002F29-8\u002F28,微電子選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

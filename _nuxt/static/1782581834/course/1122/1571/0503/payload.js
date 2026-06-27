@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1571/0503", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"112215710503",name:"網路概論",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"林義楠",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"跨領域專班，限外系學生修課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

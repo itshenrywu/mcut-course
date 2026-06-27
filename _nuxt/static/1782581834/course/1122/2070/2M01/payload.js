@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2070/2M01", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"112220702M01",name:"工程圖學",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"吳邦彥",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

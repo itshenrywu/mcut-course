@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6280/0801", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"113262800801",name:"機器導航與探索",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"劉豐瑞",credit:b,hour:b,classroom:"",max:"15",min:a,comment:"TAICA\t 學生須自備具GPU顯卡之電腦。",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

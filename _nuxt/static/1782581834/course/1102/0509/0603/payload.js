@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0509/0603", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"110205090603",name:"歷史",type:"重修",dept:"社會組-四技(日)",year:a,class:"重",teacher:"鄭銘德",credit:b,hour:b,classroom:c,max:"48",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

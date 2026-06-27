@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2280/1Y01", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"113122801Y01",name:"進階英文寫作",type:"必修",dept:"國際企業管理碩士",year:b,class:"甲",teacher:"林淯慈",credit:a,hour:b,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

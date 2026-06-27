@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2880/1301", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"108228801301",name:"環境生物處理",type:"必修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"陳慶隆",credit:a,hour:a,max:"30",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

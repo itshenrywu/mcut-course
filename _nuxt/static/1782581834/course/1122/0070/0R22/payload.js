@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0R22", (function(a){return {data:[{course:{time:[["7","0.5~0.5"]],id:"112200700R22",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"蒲彥光",credit:a,hour:a,classroom:"",max:"50",min:"15",comment:"搭配「藝文涵養與社會參與」行設一乙",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

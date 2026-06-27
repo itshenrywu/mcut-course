@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1874/1102", (function(a,b){return {data:[{course:{time:[[a,"1~3"]],id:"111118741102",name:"工程倫理與實務講座",type:"必修",dept:"四技材工系",year:"4",class:"乙",teacher:"阮弼群",credit:"1",hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

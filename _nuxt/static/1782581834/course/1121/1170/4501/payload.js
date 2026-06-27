@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1170/4501", (function(a,b,c){return {data:[{course:{time:[["2",b],[a,b]],id:"112111704501",name:"流體力學",type:"必修",dept:"四技機械系",year:a,class:"甲",teacher:"張雅竹",credit:a,hour:a,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","5~6","")));

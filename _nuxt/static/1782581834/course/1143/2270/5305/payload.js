@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/2270/5305", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"114322705305",name:"專案管理",type:"重修",dept:"四技經管系",year:"4",class:"暑",teacher:"林裕勛",credit:a,hour:a,classroom:"",max:"60",min:"1",comment:"暑修併三甲塊狀第二階段6\u002F11-6\u002F26",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

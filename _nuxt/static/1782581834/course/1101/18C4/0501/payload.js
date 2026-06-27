@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/18C4/0501", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"110118C40501",name:"材料專題實務(二)",type:"選修",dept:"四技進修部材工系",year:"4",class:"甲",teacher:"黃啓賢",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"專題課程",otherinfo:null}}],fetch:{},mutations:[]}}("6","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2P01", (function(a,b){return {data:[{course:{time:[[a,"0.5~1"]],id:"114162702P01",name:"跨領域頂石專題(五)",type:"必修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"劉弘一",credit:a,hour:"2",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

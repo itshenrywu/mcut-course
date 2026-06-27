@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0870/0A02", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"114208700A02",name:"普通化學實驗(二)",type:"選修",dept:"四技化工系",year:a,class:"乙",teacher:"程桂祥",credit:"2",hour:"3",classroom:"",max:"50",min:"10",comment:"模組選修課程(應化、製程)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

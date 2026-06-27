@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1370/2504", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],[b,"1~2"]],id:"110313702504",name:"化工熱力學",type:"重修",dept:"四技化工系",year:b,class:"暑",teacher:"吳弦聰",credit:c,hour:c,classroom:"",max:a,min:a,comment:"與三甲併班",otherinfo:null}}],fetch:{},mutations:[]}}("1","4","3")));

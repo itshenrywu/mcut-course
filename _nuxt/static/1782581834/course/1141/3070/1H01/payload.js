@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/1H01", (function(a,b){return {data:[{course:{time:[["3",a],["5",a]],id:"114130701H01",name:"專題製作 (1)",type:"必修",dept:"四技行設專班",year:"4",class:"乙",teacher:"沈明得",credit:"6",hour:"8",classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("5~7","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1280/0H01", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"113212800H01",name:"人工智慧應用",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"賴文政",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/2Z01", (function(a,b){return {data:[{course:{time:[["4","3~4"],["5","8~8"]],id:"114111702Z01",name:"動力學",type:"必修",dept:"四技機械系",year:"2",class:"甲",teacher:"張文慶",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

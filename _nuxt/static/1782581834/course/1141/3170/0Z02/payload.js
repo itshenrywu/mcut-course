@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3170/0Z02", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"114131700Z02",name:"AR\u002FVR 虛擬程式設計",type:"選修",dept:"四技工設系",year:a,class:"乙",teacher:"梁旨見",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

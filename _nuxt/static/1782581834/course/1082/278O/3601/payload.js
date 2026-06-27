@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/278O/3601", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"1082278O3601",name:"生技法律",type:"選修",dept:"化工系生工碩士班",year:a,class:"甲",teacher:"劉昭麟",credit:b,hour:b,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

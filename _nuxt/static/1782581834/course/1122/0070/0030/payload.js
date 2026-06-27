@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0070/0030", (function(a){return {data:[{course:{time:[[a,"10~10"]],id:"112200700030",name:"設計思考",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"薄榮薇",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"113\u002F1\u002F15開始上課，上課時間地點詳閱公告。",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

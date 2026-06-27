@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3170/0H01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"113131700H01",name:"3D數位成形",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"謝政道",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

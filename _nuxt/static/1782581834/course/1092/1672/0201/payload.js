@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1672/0201", (function(a,b,c,d){return {data:[{course:{time:[[b,a],[c,a],["3",a]],id:"109216720201",name:"實務專題研究(一)",type:"必修",dept:"四技環安衛系",year:c,class:"甲",teacher:"鄭慶武",credit:b,classroom:d,max:"55",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("1~1","1","2","")));

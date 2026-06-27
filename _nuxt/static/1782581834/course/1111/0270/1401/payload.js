@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0270/1401", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"111102701401",name:"法國日常生活與文化",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"符雯珊",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2","")));

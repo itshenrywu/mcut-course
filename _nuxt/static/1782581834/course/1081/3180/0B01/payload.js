@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3180/0B01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108131800B01",name:"感性設計",type:"選修",dept:"工設系碩士班",year:"1",class:"甲",teacher:"高清漢",credit:a,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/3170/0G02", (function(a,b){return {data:[{course:{time:[["2","1~3"]],id:"113231700G02",name:"進階表現技法",type:"選修",dept:"四技工設系",year:"1",class:"甲",teacher:"秦自強",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

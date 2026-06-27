@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/0504", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"113130700504",name:"創意整合實作",type:"必修",dept:"行銷設計學程",year:a,class:"甲",teacher:"林恆毅",credit:"1",hour:a,classroom:"",max:"56",min:"10",comment:"塊狀課程6\u002F3~6\u002F13 合班上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

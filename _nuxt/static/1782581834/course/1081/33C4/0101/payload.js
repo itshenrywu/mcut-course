@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/33C4/0101", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108133C40101",name:"企業倫理",type:"必修",dept:"四技進修部視傳系",year:"4",class:"甲",teacher:"李淑珠",credit:a,hour:a,max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/0070/0C08", (function(a,b){return {data:[{course:{time:[["7","10~10"]],id:"109400700C08",name:"工讀實務實習(四)",type:"重修",dept:"四技機械系",year:a,class:"暑",teacher:"蔡習訓",credit:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

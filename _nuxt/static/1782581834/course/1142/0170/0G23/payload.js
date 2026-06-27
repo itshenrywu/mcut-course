@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0170/0G23", (function(a,b){return {data:[{course:{time:[[a,"9~10"]],id:"114201700G23",name:"藝文涵養與社會參與",type:"必修",dept:"國文組-四技(日)",year:a,class:"甲",teacher:"邱梓桓",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"專班",otherinfo:null}}],fetch:{},mutations:[]}}("1","2")));

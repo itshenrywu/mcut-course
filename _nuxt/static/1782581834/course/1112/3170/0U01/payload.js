@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/3170/0U01", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"111231700U01",name:"設計與製造",type:"選修",dept:"四技工設系",year:"1",class:"甲",teacher:"陳建志",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"工設系第二專長課程，工設系不可選",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

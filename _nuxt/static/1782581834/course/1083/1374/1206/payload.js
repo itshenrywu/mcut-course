@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1374/1206", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"108313741206",name:"奈米觸媒技術與應用",type:"重修",dept:"四技化工系",year:a,class:"暑",teacher:"杜鶴芸",credit:b,hour:b,max:"10",min:"2",comment:"與跨領域專班併班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

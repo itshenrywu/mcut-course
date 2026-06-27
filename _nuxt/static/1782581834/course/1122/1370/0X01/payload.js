@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1370/0X01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"112213700X01",name:"單元操作與輸送現象(一)",type:"必修",dept:"四技化工系",year:"2",class:"甲",teacher:"郭亮吟",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

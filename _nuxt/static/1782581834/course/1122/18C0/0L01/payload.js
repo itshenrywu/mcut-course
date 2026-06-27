@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/18C0/0L01", (function(a,b){return {data:[{course:{time:[["6","7~9"]],id:"112218C00L01",name:"計算機應用實務",type:"選修",dept:"四技進修部材工系",year:"1",class:"甲",teacher:"童敬維",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

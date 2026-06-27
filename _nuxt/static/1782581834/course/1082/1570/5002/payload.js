@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1570/5002", (function(a){return {data:[{course:{time:[[a,"1~1"],["5","5~6"]],id:"108215705002",name:"電磁學",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"謝滄岩",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

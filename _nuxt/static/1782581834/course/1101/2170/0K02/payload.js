@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2170/0K02", {data:[{course:{time:[["5","5~8"]],id:"110121700K02",name:"應用英文(三)",type:"必修",dept:"四技工管系",year:"3",class:"乙",teacher:"鄭仰霖",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"帶狀課程7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]});

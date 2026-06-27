@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1880/0701", (function(a,b){return {data:[{course:{time:[["4","9~11"]],id:"110118800701",name:"晶體結構與分析",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"黎佳霖",credit:a,hour:a,classroom:b,max:"50",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

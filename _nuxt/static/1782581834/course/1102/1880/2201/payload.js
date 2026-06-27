@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1880/2201", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"110218802201",name:"進階能源材料",type:"選修",dept:"材料系碩士班",year:a,class:"甲",teacher:"黃裕清",credit:b,hour:b,classroom:"",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));
