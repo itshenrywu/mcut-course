@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1370/1U01", (function(a,b){return {data:[{course:{time:[["6","1~4"]],id:"115113701U01",name:"化工系海外移地教學",type:"選修",dept:"四技化工系",year:"3",class:"甲",teacher:"杜鶴芸",credit:a,hour:a,classroom:"",max:b,min:b,comment:"○◎6\u002F15-6\u002F18上課,甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1","10")));

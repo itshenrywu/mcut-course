@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2070/2Y02", (function(a){return {data:[{course:{time:[["5","5~6"]],id:"114120702Y02",name:"工程倫理與實務講座",type:"必修",dept:"半導體學程",year:"4",class:"甲",teacher:"阮弼群",credit:"1",hour:"2",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

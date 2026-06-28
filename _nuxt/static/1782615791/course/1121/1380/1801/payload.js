@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1380/1801", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"112113801801",name:"穿透式電子顯微鏡實務",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"李國通",credit:a,hour:a,classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

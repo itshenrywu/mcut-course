@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1850/0505", (function(a,b){return {data:[{course:{time:[[a,"5~6"],["2","3~4"]],id:"108318500505",name:"材料機械性質",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"黃宗鈺",credit:b,hour:b,max:"50",min:a,comment:"與材三乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

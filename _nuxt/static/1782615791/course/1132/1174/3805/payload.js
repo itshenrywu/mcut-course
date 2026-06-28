@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1174/3805", (function(a){return {data:[{course:{time:[["4","3~4"],["5","7~8"]],id:"113211743805",name:"自動控制(一)",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"蔡宜昌",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"113泰國交換生併大三",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1270/1C02", {data:[{course:{time:[["1","5~8"]],id:"109312701C02",name:"量測儀器應用實務",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"邱聰輝",credit:"3",classroom:"",max:"30",min:"5",comment:"暑修併四技三甲上課",otherinfo:null}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/2170/1I04", (function(a,b){return {data:[{course:{time:[["2","5~7"],[a,"2~4"]],id:"114321701I04",name:"作業研究(一)",type:"重修",dept:"四技工管系",year:a,class:"暑",teacher:"陳昆皇",credit:b,hour:b,classroom:"",max:"20",min:"5",comment:"暑修併三重帶狀6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

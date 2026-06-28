@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/3170/4301", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"109131704301",name:"設計心理學",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"楊俊明",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"跨領域7\u002F6-9\u002F4，工設系不可選",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

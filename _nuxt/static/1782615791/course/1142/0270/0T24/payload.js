@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0270/0T24", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"114202700T24",name:"英文實務(四)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"尤儷蒨",credit:"0",hour:"2",classroom:"",max:"50",min:"10",comment:"化工+工管+視傳",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

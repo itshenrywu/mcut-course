@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1144/1370/1R03", (function(a,b,c){return {data:[{course:{time:[[a,b],["3",b]],id:"114413701R03",name:"化學工程實習(二)",type:"重修",dept:"四技化工系",year:c,class:"暑",teacher:"蘇家弘",credit:a,hour:c,classroom:"",max:"10",min:"5",comment:"6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("2","5~8","4")));

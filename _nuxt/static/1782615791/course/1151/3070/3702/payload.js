@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/3702", (function(a,b){return {data:[{course:{time:[[b,"2~4"],[b,"5~7"]],id:"115130703702",name:"商業影音創作",type:"必修",dept:"行銷設計學程",year:a,class:"乙",teacher:"楊欣茹",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"●帶狀課程6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","2")));

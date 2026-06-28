@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1170/2Z03", (function(a,b,c){return {data:[{course:{time:[[b,"1~1"],[a,"1~2"]],id:"113111702Z03",name:"動力學",type:"必修",dept:"四技機械系",year:b,class:"丙",teacher:"劉秋霖",credit:a,hour:a,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","2","")));

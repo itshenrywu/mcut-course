@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/0403/0203", (function(a){return {data:[{course:{time:[["2","1~3"]],id:"109204030203",name:"微積分(二)",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"劉小篔",credit:"3",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

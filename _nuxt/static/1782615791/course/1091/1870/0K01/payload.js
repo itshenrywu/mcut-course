@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1870/0K01", (function(a){return {data:[{course:{time:[[a,"7~8.5"]],id:"109118700K01",name:"生醫材料製程實務",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"黃啓賢",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

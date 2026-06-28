@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0871/0204", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"112108710204",name:"普通化學實驗",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"陳順基",credit:a,hour:"3",classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

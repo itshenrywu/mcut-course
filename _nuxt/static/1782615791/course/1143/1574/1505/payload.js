@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1574/1505", (function(a,b,c){return {data:[{course:{time:[["1",a],["2",a]],id:"114315741505",name:"通信原理",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"洪偉文",credit:b,hour:b,classroom:c,max:"30",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("9~11","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/0C02", (function(a){return {data:[{course:{time:[[a,"2~4"],["4","5~7"]],id:"115111700C02",name:"製造學",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"王海",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"●上課日期:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1144/2170/3604", (function(a,b,c,d,e){return {data:[{course:{time:[[b,a],["3",a],[c,a],[d,a]],id:"114421703604",name:"實務專題(三)",type:"重修",dept:"四技工管系",year:c,class:"暑",teacher:"邱慧怡",credit:e,hour:b,classroom:"",max:d,min:e,comment:"●帶狀課程6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","2","4","5","1")));

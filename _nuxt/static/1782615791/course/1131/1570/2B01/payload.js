@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1570/2B01", (function(a){return {data:[{course:{time:[[a,"6~6"],["5","1~2"]],id:"113115702B01",name:"電子學(二)",type:"必修",dept:"四技電子系",year:"2",class:"甲",teacher:"王志良",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

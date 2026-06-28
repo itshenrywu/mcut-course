@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2170/0T01", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"109121700T01",name:"程式設計(二)",type:"選修",dept:"四技工管系",year:"2",class:"甲",teacher:"邱慧怡",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

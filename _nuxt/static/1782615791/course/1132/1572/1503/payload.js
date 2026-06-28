@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1572/1503", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"113215721503",name:"半導體元件",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"黃政光",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

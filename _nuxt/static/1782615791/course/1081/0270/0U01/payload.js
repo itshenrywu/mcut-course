@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0270/0U01", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"108102700U01",name:"職場英文",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳嘉蕙",credit:b,hour:b,max:"48",min:"10",comment:"僅供大四選課，多益成績380-445分間始可選修",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2")));

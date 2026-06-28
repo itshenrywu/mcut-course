@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/2W02", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"114130702W02",name:"資訊圖像設計",type:"必修",dept:"行銷設計學程",year:"2",class:"乙",teacher:"黃鴻錡",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

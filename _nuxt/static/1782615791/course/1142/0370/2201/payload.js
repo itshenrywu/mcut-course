@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/2201", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"114203702201",name:"地緣政治與東亞社會",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"盧信吉",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2","")));

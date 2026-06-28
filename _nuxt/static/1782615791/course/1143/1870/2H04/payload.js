@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1870/2H04", (function(a,b){return {data:[{course:{time:[["2",b],[a,b]],id:"114318702H04",name:"材料熱力學(一)",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"阮弼群",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"6\u002F29~8\u002F28上課，進修部可修",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11")));

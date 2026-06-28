@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/0A01", (function(a,b){return {data:[{course:{time:[["1",a],[b,a],["4",a]],id:"112130700A01",name:"英文閱讀與聽力訓練（五）",type:"選修",dept:"管理暨設計學院",year:b,class:"甲",teacher:"傅雅庫",credit:"0",hour:b,classroom:"",max:"30",min:"10",comment:"帶狀課程：7\u002F24-9\u002F1（全英授課）",otherinfo:null}}],fetch:{},mutations:[]}}("9~11","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1673/0102", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"113316730102",name:"儀器分析",type:"重修",dept:"四技環安衛系",year:a,class:"暑",teacher:"官文惠",credit:b,hour:b,classroom:"",max:"10",min:"1",comment:"併環三",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

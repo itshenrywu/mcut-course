@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1170/0H02", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"109111700H02",name:"車輛技術與整合實驗(二)",type:"重修",dept:"四技機械系",year:"5",class:"重",teacher:"黃新翔",credit:"1",hour:"3",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

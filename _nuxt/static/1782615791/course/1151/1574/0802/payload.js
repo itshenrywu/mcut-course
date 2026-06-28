@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1574/0802", (function(a){return {data:[{course:{time:[["4","5~6"],["5","1~4"]],id:"115115740802",name:"光電應用實務",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"吳亞芬",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"●甲乙合班,上課日期6\u002F29-8\u002F28,微電子選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

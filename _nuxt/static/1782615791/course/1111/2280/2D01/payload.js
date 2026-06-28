@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2280/2D01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"111122802D01",name:"管理會計專題",type:"選修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"陳偉銘",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

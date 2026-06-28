@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1274/1103", (function(a,b,c){return {data:[{course:{time:[[b,c],["5",c]],id:"114312741103",name:"機器人學",type:"重修",dept:"四技電機系",year:b,class:"暑",teacher:"邱聰輝",credit:a,hour:a,classroom:"",max:a,min:"1",comment:"上課日期:6\u002F29-8\u002F28，倂電三甲",otherinfo:null}}],fetch:{},mutations:[]}}("3","4","5~7")));

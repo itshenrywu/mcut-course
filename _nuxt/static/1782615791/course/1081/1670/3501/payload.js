@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1670/3501", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"108116703501",name:"儀器分析實驗",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"張小道",credit:"1",hour:a,max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1174/3304", (function(a,b){return {data:[{course:{time:[["2","3~3"],["5","5~6"]],id:"110111743304",name:"普通物理(一)",type:"必修",dept:"四技機械系",year:"1",class:"乙",teacher:"蘇莉真",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

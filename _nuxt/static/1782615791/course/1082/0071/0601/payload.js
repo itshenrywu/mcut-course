@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0071/0601", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"108200710601",name:"台灣歷史與文化",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"江長青",credit:a,hour:a,max:"48",min:"10",comment:"",otherinfo:"社會科學"}}],fetch:{},mutations:[]}}("2")));

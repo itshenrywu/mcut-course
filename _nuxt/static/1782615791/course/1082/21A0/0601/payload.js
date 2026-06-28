@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/21A0/0601", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108221A00601",name:"供應鏈模式與管理",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"葉神丑",credit:a,hour:a,max:"26",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

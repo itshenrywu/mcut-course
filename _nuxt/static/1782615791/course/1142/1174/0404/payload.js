@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1174/0404", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"114211740404",name:"機構設計",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"許啟彬",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

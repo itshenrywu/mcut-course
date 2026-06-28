@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/18C3/0201", (function(a,b,c){return {data:[{course:{time:[[b,"4~4"],[b,"5~6"]],id:"110118C30201",name:"專題實務講座",type:"必修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"盧榮宏",credit:a,hour:a,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","6","")));

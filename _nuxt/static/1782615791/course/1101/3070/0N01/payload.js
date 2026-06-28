@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3070/0N01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"110130700N01",name:"網頁設計",type:"選修",dept:"四技行設專班",year:"1",class:"甲",teacher:"林金祥",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

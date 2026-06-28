@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/1170/0Q04", {data:[{course:{time:[["5","2~4"]],id:"112311700Q04",name:"實習前技術訓練",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"陳宏毅",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"併機三乙",otherinfo:null}}],fetch:{},mutations:[]});

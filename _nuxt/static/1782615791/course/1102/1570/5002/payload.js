@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1570/5002", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"110215705002",name:"電磁學",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"鄭信民",credit:a,hour:a,classroom:"",max:"70",min:"10",comment:"甲乙合班授課，微電子模組必需完成選修課程",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

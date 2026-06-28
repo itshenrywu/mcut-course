@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1573/0501", (function(a){return {data:[{course:{time:[["2","1~4"],[a,"1~2"]],id:"115115730501",name:"信號與系統",type:"必修",dept:"四技電子系",year:a,class:"甲",teacher:"賴文正",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"●上課日期6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

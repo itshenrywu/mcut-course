@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1880/2701", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"108118802701",name:"科技論文寫作(三)",type:"必修",dept:"材料系碩士班",year:a,class:"甲",teacher:"黃裕清",credit:"1",hour:a,max:"84",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

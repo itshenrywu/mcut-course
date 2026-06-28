@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3140/5401", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"109231405401",name:"人因工程",type:"必修",dept:"四技工設系",year:a,class:"甲",teacher:"許定洋",credit:"3",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

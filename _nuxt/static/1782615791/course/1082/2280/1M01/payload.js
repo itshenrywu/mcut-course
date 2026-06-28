@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2280/1M01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108222801M01",name:"投資管理專題",type:"選修",dept:"經管系碩士班",year:a,class:"甲",teacher:"李家如",credit:b,hour:b,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

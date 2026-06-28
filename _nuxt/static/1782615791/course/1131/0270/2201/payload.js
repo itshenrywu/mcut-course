@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0270/2201", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"113102702201",name:"生活日語",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"徐碧茹",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"6\u002F3-8\u002F19管設學院學生不得選修",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

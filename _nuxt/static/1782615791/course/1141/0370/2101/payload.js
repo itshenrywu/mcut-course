@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0370/2101", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"114103702101",name:"環球視野與國際安全",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"詹騏瑋",credit:b,hour:b,classroom:c,max:"45",min:"10",comment:c,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("1","2","")));

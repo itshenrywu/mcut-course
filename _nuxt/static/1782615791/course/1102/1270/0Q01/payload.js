@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1270/0Q01", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"110212700Q01",name:"物件導向程式設計實務",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"邱機平",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

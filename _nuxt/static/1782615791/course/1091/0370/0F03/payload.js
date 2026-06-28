@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0370/0F03", (function(a,b){return {data:[{course:{time:[["7","3~4"]],id:"109103700F03",name:"社團領導",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳順基",credit:a,hour:"2",classroom:b,max:"無上限",min:"無下限",comment:b,otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("1","")));

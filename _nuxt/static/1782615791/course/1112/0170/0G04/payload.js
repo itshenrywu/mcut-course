@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0170/0G04", (function(a,b){return {data:[{course:{time:[["4","3~4"]],id:"111201700G04",name:"藝文涵養與社會參與",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"張莞苓",credit:a,hour:a,classroom:b,max:"54",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

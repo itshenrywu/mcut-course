@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2250/2703", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114222502703",name:"消費者行為",type:"選修",dept:"四技經管系",year:"2",class:"丙",teacher:"楊南進",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

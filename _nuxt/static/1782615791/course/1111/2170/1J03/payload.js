@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2170/1J03", (function(a,b){return {data:[{course:{time:[["1","2~3"],[a,"1~2"]],id:"111121701J03",name:"生產管理(含實習)",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"郭宜雍",credit:"3",hour:"4",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1670/2K02", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"115116702K02",name:"環安衛系海外移地教學",type:"選修",dept:"四技環安衛系",year:"3",class:"甲",teacher:"許金玉",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"○◎上課日期地點:6\u002F3-6\u002F9韓國濟州島",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

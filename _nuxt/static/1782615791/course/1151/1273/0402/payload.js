@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1273/0402", (function(a,b){return {data:[{course:{time:[["1",b],["2",b]],id:"115112730402",name:"電力電子學",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"彭金龍",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"●甲乙合班,上課日期6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","1~3")));

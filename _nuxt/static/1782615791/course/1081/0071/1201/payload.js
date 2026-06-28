@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/1201", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"108100711201",name:"觀光日語入門",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"徐碧茹",credit:a,hour:a,max:"48",min:"10",comment:"管設學院學生不得選修",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1672/1501", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"109116721501",name:"環境監測實驗",type:"必修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"洪明瑞",credit:"1",hour:"3",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1E80/2201", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"10821E802201",name:"科技論文寫作",type:"必修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"謝文賓",credit:a,hour:a,max:"24",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

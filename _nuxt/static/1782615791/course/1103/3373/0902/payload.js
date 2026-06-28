@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/3373/0902", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"110333730902",name:"視覺介面設計",type:"重修",dept:"四技視傳系",year:"4",class:"暑",teacher:"陳淑玉",credit:a,hour:a,classroom:"",max:"2",min:"無下限",comment:"與大三合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

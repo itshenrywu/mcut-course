@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/21A0/0L01", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"111121A00L01",name:"決策分析",type:"選修",dept:"工管系碩專班",year:a,class:"甲",teacher:"陳昆皇",credit:b,hour:b,classroom:c,max:"25",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

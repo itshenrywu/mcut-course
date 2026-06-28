@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1170/2N03", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"113311702N03",name:"機電整合與實驗",type:"重修",dept:"四技機械系",year:a,class:"暑",teacher:"陳宏毅",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"併機三乙",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

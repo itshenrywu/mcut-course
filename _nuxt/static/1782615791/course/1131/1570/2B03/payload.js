@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1570/2B03", (function(a,b){return {data:[{course:{time:[[a,"3~4"],["5","1~1"]],id:"113115702B03",name:"電子學(二)",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"曾宗亮",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

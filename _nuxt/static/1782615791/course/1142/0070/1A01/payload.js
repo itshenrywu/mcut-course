@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/1A01", (function(a){return {data:[{course:{time:[["7","7~7"]],id:"114200701A01",name:"專業研究實習(一)",type:"必修",dept:"半導體學程",year:"3",class:"甲",teacher:"陳順基",credit:"4",hour:"40",classroom:a,max:"48",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

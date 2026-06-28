@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1670/0X02", (function(a){return {data:[{course:{time:[["3","9~10"]],id:"108116700X02",name:"消防法規",type:"選修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"許文興",credit:a,hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

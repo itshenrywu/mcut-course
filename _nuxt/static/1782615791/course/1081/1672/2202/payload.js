@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1672/2202", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108116722202",name:"工程統計",type:"必修",dept:"環實務",year:"2",class:"甲",teacher:"陳思翰",credit:a,hour:a,max:"20",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

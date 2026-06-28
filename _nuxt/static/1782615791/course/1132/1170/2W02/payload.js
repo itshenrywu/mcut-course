@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/2W02", (function(a){return {data:[{course:{time:[["1","5~6"],["2","1~2"]],id:"113211702W02",name:"電動車輛實務",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"黃道易",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"113泰國交換生併大三",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

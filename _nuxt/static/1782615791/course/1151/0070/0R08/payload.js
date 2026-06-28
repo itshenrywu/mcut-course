@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/0R08", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"115100700R08",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"陳志霖",credit:a,hour:a,classroom:"",max:"45",min:"15",comment:"●環境教育與探索-戶外淨海-6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1GP0/1401", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"11011GP01401",name:"功能材料原理與應用",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"杜繼舜",credit:b,hour:b,classroom:"",max:"20",min:a,comment:"English-taught course，與碩機一合班上課。",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

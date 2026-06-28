@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/B337/0101", (function(a){return {data:[{course:{time:[["7","4~4"]],id:"1082B3370101",name:"視覺溝通",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"莊妙仙",credit:a,hour:a,max:"40",min:"10",comment:"第2階段面授選課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

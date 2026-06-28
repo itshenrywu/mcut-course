@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/2280/2V01", (function(a){return {data:[{course:{time:[[a,"8~8"]],id:"108222802V01",name:"獨立研究",type:"選修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"孫儷芳",credit:a,hour:a,max:"30",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

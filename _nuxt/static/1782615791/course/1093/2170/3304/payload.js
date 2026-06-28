@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/2170/3304", (function(a,b){return {data:[{course:{time:[[a,"6~8"],[b,"2~4"]],id:"109321703304",name:"企業倫理",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"林俊雄",credit:a,classroom:"",max:"50",min:b,comment:"與三甲合班 帶狀課程7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("3","5")));

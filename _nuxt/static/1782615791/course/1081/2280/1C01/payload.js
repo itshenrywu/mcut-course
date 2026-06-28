@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2280/1C01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"108122801C01",name:"服務理論與實務專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"陳昭蓉",credit:a,hour:a,max:"30",min:"5",comment:"併入IMBA，全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21C0/0C01", (function(a){return {data:[{course:{time:[["4","12~12"],["5","9~10"]],id:"108121C00C01",name:"品質管理",type:"必修",dept:"四技進修部工管系",year:a,class:"甲",teacher:"邱育智",credit:a,hour:a,max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

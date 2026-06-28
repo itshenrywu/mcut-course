@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0170/0F22", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"114101700F22",name:"文學鑑賞與情意表達",type:"必修",dept:"行銷設計學程",year:a,class:"乙",teacher:"張淑芬",credit:b,hour:b,classroom:c,max:"35",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

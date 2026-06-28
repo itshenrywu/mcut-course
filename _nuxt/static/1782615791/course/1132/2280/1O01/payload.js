@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2280/1O01", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"113222801O01",name:"產業分析專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"林柏翰",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

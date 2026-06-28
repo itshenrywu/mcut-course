@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2581/0201", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"109125810201",name:"企業流程分析與管理",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"邱育智",credit:a,hour:a,classroom:"",max:"25",min:"5",comment:"與碩專班合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

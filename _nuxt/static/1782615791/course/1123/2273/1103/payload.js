@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/2273/1103", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"112322731103",name:"商用英文(三)",type:"重修",dept:"四技經管系",year:"4",class:"暑",teacher:"夏珮玲",credit:"1",hour:a,classroom:"",max:"60",min:"10",comment:"暑修併三甲帶狀7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

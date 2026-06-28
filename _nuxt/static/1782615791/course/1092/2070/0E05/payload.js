@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2070/0E05", (function(a,b){return {data:[{course:{time:[["4","9~10"]],id:"109220700E05",name:"科技英文(二)",type:"選修",dept:"環資學院",year:a,class:"甲",teacher:"聶波齊",credit:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0944", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"113200700944",name:"實習前職場素養訓練",type:"必修",dept:"四技機械系",year:"3",class:"丙",teacher:"劉小篔",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"113泰國交換生併大三",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

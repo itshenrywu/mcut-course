@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0670/0019", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"113106700019",name:"體育(一)",type:"必修",dept:"四技機械系",year:a,class:"甲",teacher:"邱秀霞",credit:a,hour:"2",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

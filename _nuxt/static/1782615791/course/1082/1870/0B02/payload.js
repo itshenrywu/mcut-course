@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1870/0B02", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"108218700B02",name:"高分子物性與化性",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"鄭有為",credit:a,hour:a,max:"30",min:"10",comment:"材四甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

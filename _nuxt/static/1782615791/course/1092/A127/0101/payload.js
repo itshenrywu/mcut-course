@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/A127/0101", (function(a){return {data:[{course:{time:[["7","1~1"]],id:"1092A1270101",name:"離散數學",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"林君玲",credit:a,classroom:"",max:"50",min:"10",comment:"第1階段，只限電機系選修。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

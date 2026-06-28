@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1380/2301", (function(a,b){return {data:[{course:{time:[["4","9~11"]],id:"112113802301",name:"光電顯示與半導體製程",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"黃裕銘",credit:a,hour:a,classroom:b,max:"40",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

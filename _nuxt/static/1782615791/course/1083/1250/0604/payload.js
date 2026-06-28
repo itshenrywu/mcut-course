@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1250/0604", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"108312500604",name:"微處理機",type:"重修",dept:"四技電機系",year:a,class:"暑",teacher:"王勝寬",credit:b,hour:b,max:"50",min:"5",comment:"暑修併四技三上上課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

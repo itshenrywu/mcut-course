@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1870/2803", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"110318702803",name:"材料專題(一)",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"黃啓賢",credit:a,hour:"3",classroom:"",max:"100",min:a,comment:"大四暑修，與大三併課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

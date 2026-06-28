@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0070/0904", (function(a,b,c){return {data:[{course:{time:[[a,b],["2",b]],id:"110100700904",name:"實習前職場素養訓練",type:"必修",dept:"四技材工系",year:"3",class:"乙",teacher:"阮弼群",credit:a,hour:a,classroom:c,max:"100",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5","")));

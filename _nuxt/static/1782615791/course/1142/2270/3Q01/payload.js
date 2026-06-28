@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/3Q01", {data:[{course:{time:[["3","5~6"]],id:"114222703Q01",name:"商用英文(五)",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"王瑀",credit:"1",hour:"2",classroom:"",max:"80",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]});

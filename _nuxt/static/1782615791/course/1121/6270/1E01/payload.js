@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/6270/1E01", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"112162701E01",name:"微處理器控制與實習",type:"選修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"游孟潔",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

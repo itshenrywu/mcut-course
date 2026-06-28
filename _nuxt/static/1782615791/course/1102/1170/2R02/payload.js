@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1170/2R02", (function(a,b){return {data:[{course:{time:[["3","8~8"]],id:"110211702R02",name:"專題設計(一)",type:"選修",dept:"四技機械系",year:"2",class:"乙",teacher:"陳宏毅",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

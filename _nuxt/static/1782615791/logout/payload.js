@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/logout", {data:[{}],fetch:{},mutations:[]});

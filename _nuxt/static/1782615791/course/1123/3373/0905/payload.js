@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1123/3373/0905", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"112333730905",name:"視覺介面設計",type:"重修",dept:"四技視傳系",year:"4",class:"暑",teacher:"李昌國",credit:a,hour:a,classroom:"",max:"10",min:c,comment:"暑修併傳三甲帶狀課程(7\u002F1-8\u002F30)",otherinfo:null}}],fetch:{},mutations:[]}}("3","6~8","5")));

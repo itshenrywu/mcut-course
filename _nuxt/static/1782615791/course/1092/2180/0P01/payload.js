@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2180/0P01", {data:[{course:{time:[["2","5~7"]],id:"109221800P01",name:"供應鏈模式與管理",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"張秉裕",credit:"3",classroom:"",max:"25",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]});

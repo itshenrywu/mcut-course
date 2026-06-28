@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/2280/3K01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"113222803K01",name:"進階商用英文(二)",type:"選修",dept:"經管系碩士班",year:b,class:"甲",teacher:"杜海勇",credit:b,hour:"2",classroom:c,max:"30",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("5","1","")));

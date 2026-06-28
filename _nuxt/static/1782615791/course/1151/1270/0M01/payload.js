@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1270/0M01", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"115112700M01",name:"實習前技術訓練",type:"必修",dept:"四技電機系",year:a,class:"乙",teacher:"賴文政",credit:"1",hour:"2",classroom:"",max:"56",min:"10",comment:"●上課日期:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

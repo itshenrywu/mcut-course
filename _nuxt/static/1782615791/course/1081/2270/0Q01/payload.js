@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2270/0Q01", (function(a,b){return {data:[{course:{time:[[a,"7~8"],[b,"6~8"]],id:"108122700Q01",name:"資訊概論(含實習)",type:"必修",dept:"四技經管系",year:"1",class:"乙",teacher:"陳世民",credit:a,hour:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","5")));

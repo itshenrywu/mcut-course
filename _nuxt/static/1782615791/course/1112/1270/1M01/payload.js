@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1270/1M01", (function(a){return {data:[{course:{time:[["5","1~4"]],id:"111212701M01",name:"光纖通信",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"蔡文星",credit:"3",hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

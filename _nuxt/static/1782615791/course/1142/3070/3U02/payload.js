@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3070/3U02", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"114230703U02",name:"腳本創作",type:"必修",dept:"行銷設計學程",year:"1",class:"乙",teacher:"楊正翔",credit:a,hour:a,classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

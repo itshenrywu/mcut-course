@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1174/5802", (function(a,b){return {data:[{course:{time:[[a,"0.5~0.5"]],id:"112211745802",name:"機械工程專業能力認證課程",type:"重修",dept:"四技機械系",year:"4",class:"重",teacher:"郭啟全",credit:"0",hour:a,classroom:b,max:"50",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

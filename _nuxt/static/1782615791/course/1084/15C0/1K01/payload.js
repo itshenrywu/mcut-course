@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/15C0/1K01", (function(a,b){return {data:[{course:{time:[[a,"1~4"],[a,"5~6"]],id:"108415C01K01",name:"程式設計實務",type:"必修",dept:"四技進修部電子系",year:"1",class:"甲",teacher:"黃樹林",credit:b,hour:b,max:"40",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

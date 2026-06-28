@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1172/1501", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108211721501",name:"車輛動力實驗",type:"選修",dept:"四技機械系",year:"2",class:"丙",teacher:"林柏瀚",credit:a,hour:"3",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

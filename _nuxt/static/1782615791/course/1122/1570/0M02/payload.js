@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1570/0M02", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"112215700M02",name:"智慧照明技術",type:"選修",dept:"四技電子系",year:"4",class:"乙",teacher:"黃政光",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

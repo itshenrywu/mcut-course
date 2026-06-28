@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2180/0U01", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"109121800U01",name:"決策與風險管理",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"王文生",credit:a,hour:a,classroom:b,max:"25",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

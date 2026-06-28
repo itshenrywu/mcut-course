@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1320/1002", (function(a){return {data:[{course:{time:[["3","1~3"]],id:"109213201002",name:"有機化學實驗",type:"必修",dept:"四技化工系",year:"2",class:"乙",teacher:"鄭有為",credit:"1",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

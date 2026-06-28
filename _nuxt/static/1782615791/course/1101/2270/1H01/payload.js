@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2270/1H01", (function(a,b){return {data:[{course:{time:[["1",b],["5",b]],id:"110122701H01",name:"行動商務與APP實作",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"林裕勛",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"帶狀課程7\u002F5~9\u002F3(跨領域)本系除外",otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11")));

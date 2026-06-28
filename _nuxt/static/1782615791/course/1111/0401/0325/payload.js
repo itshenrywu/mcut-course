@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0401/0325", (function(a,b,c){return {data:[{course:{time:[[a,"8~8.5"]],id:"111104010325",name:"大學之道",type:"必修",dept:"行銷設計學程",year:b,class:"甲",teacher:"劉為開",credit:b,hour:a,classroom:c,max:"48",min:"無下限",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

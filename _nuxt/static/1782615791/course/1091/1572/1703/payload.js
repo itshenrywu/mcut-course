@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1572/1703", (function(a,b){return {data:[{course:{time:[["1","1~1"],[a,"1~2"]],id:"109115721703",name:"工程數學(一)",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"洪偉文",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1270/2T02", (function(a,b,c,d,e){return {data:[{course:{time:[[a,b],[a,c],[d,b],[d,c]],id:"114312702T02",name:"數位訊號處理實務",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"王柏仁",credit:e,hour:e,classroom:"",max:"5",min:a,comment:"上課日期:6\u002F29-8\u002F28，倂電三甲",otherinfo:null}}],fetch:{},mutations:[]}}("1","4~4","5~6","2","3")));

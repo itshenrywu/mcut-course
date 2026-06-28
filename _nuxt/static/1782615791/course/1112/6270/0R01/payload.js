@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/6270/0R01", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"111262700R01",name:"質能平衡",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"傅俊中",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

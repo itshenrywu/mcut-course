@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1574/1702", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"112215741702",name:"車輛通訊與行控",type:"選修",dept:"四技電子系",year:"4",class:"甲",teacher:"林義楠",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

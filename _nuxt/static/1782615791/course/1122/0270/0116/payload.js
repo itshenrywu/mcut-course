@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0270/0116", (function(a,b){return {data:[{course:{time:[["7","11~11"]],id:"112202700116",name:"工讀自學英文",type:"必修",dept:"四技經管系",year:"3",class:"乙",teacher:"郭如蘋",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

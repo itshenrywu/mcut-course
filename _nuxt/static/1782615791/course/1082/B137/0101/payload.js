@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/B137/0101", (function(a){return {data:[{course:{time:[["7","4~4"]],id:"1082B1370101",name:"化工基礎概念解析",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"施正元",credit:a,hour:a,max:"50",min:"10",comment:"第2階段（面試選課）",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

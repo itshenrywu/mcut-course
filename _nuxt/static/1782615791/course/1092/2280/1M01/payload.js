@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2280/1M01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"109222801M01",name:"投資管理專題",type:"選修",dept:"經管系碩士班",year:"1",class:"甲",teacher:"楊子儀",credit:"3",classroom:b,max:"30",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("5","")));

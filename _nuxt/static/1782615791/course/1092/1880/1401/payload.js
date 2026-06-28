@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1880/1401", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"109218801401",name:"科技論文寫作(二)",type:"必修",dept:"材料系碩士班",year:a,class:"甲",teacher:"謝章興",credit:a,classroom:"",max:"55",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

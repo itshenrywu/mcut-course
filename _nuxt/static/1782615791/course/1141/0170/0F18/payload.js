@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0170/0F18", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"114101700F18",name:"文學鑑賞與情意表達",type:"必修",dept:"電池專班",year:"1",class:"甲",teacher:"林立仁",credit:a,hour:a,classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

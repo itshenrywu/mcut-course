@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1144/2170/1K03", (function(a,b){return {data:[{course:{time:[[a,"1~4"],[b,"5~8"]],id:"114421701K03",name:"品質管理(含實習)",type:"重修",dept:"四技工管系",year:a,class:"暑",teacher:"王建智",credit:"3",hour:a,classroom:"",max:"20",min:b,comment:"●帶狀課程6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("4","5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/1802", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"113130701802",name:"商業影音創作",type:"必修",dept:"四技行設專班",year:a,class:"乙",teacher:"朱賢哲",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"帶狀課程 7\u002F1-8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2270/0S02", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"110122700S02",name:"中級會計學",type:"選修",dept:"四技經管系",year:"2",class:"甲",teacher:"王文生",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

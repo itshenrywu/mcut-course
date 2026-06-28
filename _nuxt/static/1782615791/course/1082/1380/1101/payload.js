@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1380/1101", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"108213801101",name:"產業實務與書報討論(二)",type:"必修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"蔡榮進",credit:"0",hour:a,max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3370/0H01", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"112133700H01",name:"設計見學",type:"選修",dept:"四技視傳系",year:b,class:"甲",teacher:"薛惠月",credit:b,hour:a,classroom:"",max:"20",min:"10",comment:"塊狀課程：6\u002F14~6\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("6","3")));

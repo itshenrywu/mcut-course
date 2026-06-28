@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2170/7702", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108121707702",name:"生活應用人因",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"陳安哲",credit:a,hour:a,max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

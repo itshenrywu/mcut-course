@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0370/0I01", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"114203700I01",name:"AI與法律",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"戴凡芹",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:[]}}("2","")));

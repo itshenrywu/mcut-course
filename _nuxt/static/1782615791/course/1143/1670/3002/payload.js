@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1670/3002", (function(a,b,c){return {data:[{course:{time:[[a,"5~8"],[b,"7~8"]],id:"114316703002",name:"工業通風",type:"重修",dept:"四技環安衛系",year:b,class:"暑",teacher:"洪明瑞",credit:c,hour:c,classroom:"",max:"15",min:a,comment:"併環三,上9週:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("1","4","3")));

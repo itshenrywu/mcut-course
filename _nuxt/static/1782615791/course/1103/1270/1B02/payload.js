@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1270/1B02", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"110312701B02",name:"IC設計及製程概論",type:"重修",dept:"四技電機系",year:a,class:"暑",teacher:"陳瓊安",credit:b,hour:b,classroom:"",max:"20",min:"5",comment:"暑修併四技三甲上課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

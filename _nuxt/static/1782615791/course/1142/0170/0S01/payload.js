@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0170/0S01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"114201700S01",name:"詩歌欣賞",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"李慧琪",credit:b,hour:b,classroom:c,max:"40",min:"10",comment:c,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("1","2","")));

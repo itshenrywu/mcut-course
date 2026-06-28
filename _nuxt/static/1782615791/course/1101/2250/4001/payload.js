@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2250/4001", (function(a,b){return {data:[{course:{time:[["1",b],["5",b]],id:"110122504001",name:"行銷管理",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"孫儷芳",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"帶狀課程7\u002F5~9\u002F3(跨領域課程)本系除外",otherinfo:null}}],fetch:{},mutations:[]}}("3","5~7")));

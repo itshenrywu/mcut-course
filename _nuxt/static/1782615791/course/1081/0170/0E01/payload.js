@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0170/0E01", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"108101700E01",name:"魏晉玄學文選導讀",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"楊穎詩",credit:b,hour:b,max:"48",min:"10",comment:"",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("1","2")));

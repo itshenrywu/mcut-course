@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1124/0070/0B28", (function(a,b){return {data:[{course:{time:[["7","9~9"]],id:"112400700B28",name:"工讀實務實習(三)",type:"重修",dept:"四技機械系",year:a,class:"暑",teacher:"郭啟全",credit:a,hour:"29",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

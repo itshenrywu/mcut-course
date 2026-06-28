@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1571/0501", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"110115710501",name:"網路概論",type:"重修",dept:"四技電子系",year:"2",class:"重",teacher:"黃植振",credit:a,hour:a,classroom:b,max:"40",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

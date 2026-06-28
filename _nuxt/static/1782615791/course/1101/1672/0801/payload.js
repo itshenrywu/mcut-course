@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1672/0801", (function(a,b){return {data:[{course:{time:[["5","1~4"]],id:"110116720801",name:"實務專題研究(二)",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"官文惠",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

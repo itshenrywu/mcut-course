@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/2L01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"113211702L01",name:"數控工具機與實務",type:"選修",dept:"四技機械系",year:"1",class:"甲",teacher:"鄭春德",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1273/0703", (function(a){return {data:[{course:{time:[[a,"2~4"],[a,"6~8"]],id:"110312730703",name:"自動控制",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"張德仁",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"由新聘兼任教師(張德仁老師)授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

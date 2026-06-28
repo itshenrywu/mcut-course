@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/2H01", (function(a,b,c){return {data:[{course:{time:[[a,b],["5",b]],id:"114111702H01",name:"汽車感測與控制實務",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"陳柏翰",credit:a,hour:a,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","5~6","")));

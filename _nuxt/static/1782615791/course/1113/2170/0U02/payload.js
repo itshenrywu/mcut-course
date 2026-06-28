@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/2170/0U02", (function(a){return {data:[{course:{time:[["1","2~4"],["2","5~7"]],id:"111321700U02",name:"套裝程式與資料分析",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"王建智",credit:a,hour:a,classroom:"",max:"10",min:"5",comment:"暑修併三甲帶狀7\u002F3-9\u002F1",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

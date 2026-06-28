@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2780/4801", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"108127804801",name:"發酵工程",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"張煜光",credit:a,hour:a,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

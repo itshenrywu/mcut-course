@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/0509/0602", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"109105090602",name:"歷史",type:"必修",dept:"四技材工系",year:"2",class:"乙",teacher:"王惟貞",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

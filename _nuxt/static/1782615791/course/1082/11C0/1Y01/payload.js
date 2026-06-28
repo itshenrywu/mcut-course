@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/11C0/1Y01", (function(a){return {data:[{course:{time:[[a,"9~12"]],id:"108211C01Y01",name:"車輛技術與整合實驗(一)",type:"選修",dept:"四技進修部機械系",year:"2",class:"甲",teacher:"陳柏翰",credit:a,hour:"4",max:"65",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

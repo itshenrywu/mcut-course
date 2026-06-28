@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1144/0070/0206", (function(a,b){return {data:[{course:{time:[["7","10~10"]],id:"114400700206",name:"工讀實務實習(二)",type:"重修",dept:"四技工管系",year:a,class:"暑",teacher:"白恭瑞",credit:a,hour:"29",classroom:b,max:"20",min:"1",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

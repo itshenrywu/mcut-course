@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/11C0/1O01", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"108211C01O01",name:"車輛動力實驗",type:"必修",dept:"四技進修部機械系",year:a,class:"甲",teacher:"林柏瀚",credit:a,hour:"4",max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

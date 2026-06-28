@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/15C0/1V01", (function(a,b){return {data:[{course:{time:[["5","7~8.5"]],id:"110215C01V01",name:"半導體封裝",type:"必修",dept:"四技進修部電子系",year:a,class:"甲",teacher:"王志良",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

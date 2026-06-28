@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1084/0270/0T13", {data:[{course:{time:[["5","5~8"]],id:"108402700T13",name:"英文實務(四)",type:"重修",dept:"外文組-四技(日)",year:"4",class:"暑",teacher:"陳勁宏",credit:"0",hour:"2",max:"48",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

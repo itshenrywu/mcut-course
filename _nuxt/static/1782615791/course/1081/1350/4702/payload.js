@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1350/4702", (function(a){return {data:[{course:{time:[["2","1~4"]],id:"108113504702",name:"化學工程實習(一)",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"簡文鎮",credit:"1",hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("4")));

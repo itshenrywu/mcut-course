@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/2401", (function(a,b){return {data:[{course:{time:[[b,"4~4"],[b,"5~6"],[a,"1~3"]],id:"115118702401",name:"近代物理",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"盧榮宏",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"●上課時間9週：6\u002F29-8\u002F28，甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/2Y01", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"113202702Y01",name:"進階華語(二)",type:"必修",dept:"外文組-四技(日)",year:a,class:"乙",teacher:"林麗寬",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"經管+工設國際專班",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

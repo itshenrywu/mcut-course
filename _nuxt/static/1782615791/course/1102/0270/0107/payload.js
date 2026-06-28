@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0270/0107", (function(a,b){return {data:[{course:{time:[["7","11~11"]],id:"110202700107",name:"工讀自學英文",type:"必修",dept:"四技機械系",year:"3",class:"甲",teacher:"葉明倫",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

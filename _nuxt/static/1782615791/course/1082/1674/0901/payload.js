@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1674/0901", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108216740901",name:"風險評估",type:"選修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"鄭慶武",credit:a,hour:a,max:"55",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

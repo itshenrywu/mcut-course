@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1170/2C01", (function(a,b){return {data:[{course:{time:[[a,"2~3"],["5","5~6"]],id:"113211702C01",name:"車輛底盤與實驗",type:"選修",dept:"四技機械系",year:"2",class:"丙",teacher:"陳柏翰",credit:a,hour:"4",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

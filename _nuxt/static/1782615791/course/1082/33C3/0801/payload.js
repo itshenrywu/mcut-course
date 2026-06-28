@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/33C3/0801", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"108233C30801",name:"視覺創意思考",type:"必修",dept:"四技進修部視傳系",year:a,class:"甲",teacher:"薛惠月",credit:a,hour:a,max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

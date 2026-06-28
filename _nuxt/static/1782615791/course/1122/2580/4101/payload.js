@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/2580/4101", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"112225804101",name:"商業智慧",type:"選修",dept:"工管系碩士班",year:a,class:"甲",teacher:"鄭明顯",credit:b,hour:b,classroom:c,max:"25",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

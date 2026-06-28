@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1240/5301", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"108212405301",name:"線性代數",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"蔡文星",credit:a,hour:a,max:"67",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

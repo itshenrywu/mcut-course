@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1170/1C03", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~6"]],id:"112211701C03",name:"材料科學與工程實驗",type:"必修",dept:"四技機械系",year:"2",class:"乙",teacher:"吳柏賢",credit:a,hour:"4",classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/2201", (function(a){return {data:[{course:{time:[["1","1~4"]],id:"115102702201",name:"生活日語",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"徐碧茹",credit:a,hour:a,classroom:"",max:"45",min:"10",comment:"●上課期間：6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

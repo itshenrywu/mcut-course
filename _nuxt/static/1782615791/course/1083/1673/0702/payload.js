@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/1673/0702", (function(a,b,c){return {data:[{course:{time:[["2",a],[b,a]],id:"108316730702",name:"空氣污染防制",type:"重修",dept:"四技環安衛系",year:b,class:"暑",teacher:"程裕祥",credit:c,hour:c,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2~4","4","3")));

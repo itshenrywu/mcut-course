@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/3170/0N01", (function(a,b){return {data:[{course:{time:[["5","5~5"]],id:"110231700N01",name:"設計應用英文(二)",type:"必修",dept:"四技工設系",year:"2",class:"甲",teacher:"謝國榮",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

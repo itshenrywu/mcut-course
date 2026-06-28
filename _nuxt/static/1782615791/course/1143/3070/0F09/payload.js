@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/3070/0F09", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"114330700F09",name:"白紙創業",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"虞邦祥",credit:a,hour:a,classroom:"",max:"5",min:"1",comment:"暑修併三甲塊狀6\u002F11-6\u002F26",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

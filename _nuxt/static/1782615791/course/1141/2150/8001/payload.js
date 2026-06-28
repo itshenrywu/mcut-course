@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2150/8001", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],[b,"5~6"]],id:"114121508001",name:"人因工程(含實習)",type:"必修",dept:"四技工管系",year:"2",class:"甲",teacher:"張仁履",credit:a,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","4","")));

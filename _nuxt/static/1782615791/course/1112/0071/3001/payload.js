@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0071/3001", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"111200713001",name:"觀光英語",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳嘉蕙",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("1","2","")));

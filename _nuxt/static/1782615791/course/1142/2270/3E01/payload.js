@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/3E01", (function(a){return {data:[{course:{time:[["5","6~8"]],id:"114222703E01",name:"台灣多元文化",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"侯文治",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

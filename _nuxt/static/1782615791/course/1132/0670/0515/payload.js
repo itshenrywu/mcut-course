@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0670/0515", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"113206700515",name:"體育(二)",type:"必修",dept:"環實務",year:b,class:"甲",teacher:"黃志成",credit:b,hour:a,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

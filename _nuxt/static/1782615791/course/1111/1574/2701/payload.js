@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1574/2701", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"111115742701",name:"模擬軟體應用(MATLAB)",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"林銘君",credit:"1",hour:"2",classroom:"",max:"50",min:"10",comment:"限工程學院四年級選修。",otherinfo:null}}],fetch:{},mutations:[]}}("4")));
