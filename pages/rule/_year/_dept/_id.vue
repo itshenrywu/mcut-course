@@ -132,9 +132,9 @@
 					<div class="ts-box has-vertically-spaced-large" v-if="rule.data"
 						v-for="rule_type in rule.data">
 						<div class="ts-content is-tertiary is-dense">
-							{{ rule_type.name.split('（')[0] }}
-							<span class="ts-badge is-small is-dense is-start-spaced">
-								{{ rule_type.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
+							{{ parseName(rule_type.name).main }}
+							<span class="ts-badge is-small is-dense is-start-spaced" v-if="parseName(rule_type.name).hasBadge">
+								{{ parseName(rule_type.name).badge }}
 							</span>
 						</div>
 						<template v-for="rule_subtype in rule_type.data">
@@ -142,9 +142,9 @@
 								@click="rule_subtype.show = !rule_subtype.show">
 								<div>
 									・
-									{{ rule_subtype.name.split('（')[0] }}
-									<span class="ts-badge is-small is-dense is-outlined is-start-spaced">
-										{{ rule_subtype.name.split('（')[1].split('）')[0].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
+									{{ parseName(rule_subtype.name).main }}
+									<span class="ts-badge is-small is-dense is-outlined is-start-spaced" v-if="parseName(rule_subtype.name).hasBadge">
+										{{ parseName(rule_subtype.name).badge }}
 									</span>
 								</div>
 								<span class="ts-icon" :class="{ 'is-chevron-down-icon': !rule_subtype.show, 'is-chevron-up-icon': rule_subtype.show }"></span>
@@ -213,9 +213,9 @@
 								@click="guide_subtype.show = !guide_subtype.show">
 								<div>
 									・
-									{{ guide_subtype.name?.replace(/\(.*?\)/g, "") }}
-									<span class="ts-badge is-small is-dense is-start-spaced is-outlined" v-if="guide_subtype.name?.match(/\((.*?)\)/)">
-										{{ [...guide_subtype.name.matchAll(/\((.*?)\)/g)].map(m => m[1]).join(', ').replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, " $1 ") }}
+									{{ parseName(guide_subtype.name).main }}
+									<span class="ts-badge is-small is-dense is-start-spaced is-outlined" v-if="parseName(guide_subtype.name).hasBadge">
+										{{ parseName(guide_subtype.name).badge }}
 									</span>
 								</div>
 								<span class="ts-icon" :class="{ 'is-chevron-down-icon': !guide_subtype.show, 'is-chevron-up-icon': guide_subtype.show }"></span>
@@ -639,6 +639,18 @@ export default {
 		}
 	},
 	methods: {
+		parseName(name) {
+			const matches = [...(name?.matchAll(/[（(]([^（()）]*)[）)]/g) ?? [])]
+			const last = matches[matches.length - 1]
+			if (!last || !['應修畢', '開設'].some(k => last[1].startsWith(k))) {
+				return { main: name ?? '', badge: '', hasBadge: false }
+			}
+			return {
+				main: name.slice(0, last.index),
+				badge: last[1].replace(/([\x00-\xFF]+)(?=[^\x00-\xff])/g, ' $1 '),
+				hasBadge: true,
+			}
+		},
 		copyToClipboard(text) {
 			navigator.clipboard.writeText(text);
 			this.$swal({ title: '已複製', icon: 'success', toast: true, timer: 2000, timerProgressBar: true, position: 'bottom-start', showConfirmButton: false });
