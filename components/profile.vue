@@ -73,9 +73,26 @@ export default {
 				cancelButtonText: '取消',
 			}).then((result) => {
 				if(result.isConfirmed) {
-					this.$router.replace('/logout/');
+					this.doLogout();
 				}
 			});
+		},
+		doLogout() {
+			if(localStorage['auth_key'] == undefined || localStorage['auth_key'] == '') {
+				location.href = localStorage['last_path'] || '/';
+				return;
+			}
+			let last_path = localStorage['last_path'];
+			Object.keys(localStorage).forEach((key) => {
+				if(!['theme', 'acceptTerms', 'clickInfo_' + process.env.REV].includes(key)) {
+					localStorage.removeItem(key);
+				}
+			});
+			indexedDB.deleteDatabase('mcut-course');
+
+			this.$root.$emit('showProfileImage', null);
+			this.$store.dispatch('clearSavedCourse');
+			location.href = last_path || '/';
 		}
 	},
 	computed: {

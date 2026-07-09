@@ -229,20 +229,6 @@ export default {
 			if (path === '/') return this.currentPath === '/' || this.currentPath === '/course/';
 			else return this.currentPath.includes(path);
 		},
-		logout() {
-			this.$swal.fire({
-				title: '確定要登出嗎？',
-				icon: 'warning',
-				showCancelButton: true,
-				confirmButtonText: '登出',
-				confirmButtonColor: 'var(--ts-negative-600)',
-				cancelButtonText: '取消',
-			}).then((result) => {
-				if(result.isConfirmed) {
-					this.$router.replace('/logout/');
-				}
-			});
-		}
 	},
 };
 </script>
