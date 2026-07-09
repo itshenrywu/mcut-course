@@ -56,7 +56,12 @@
 								<div class="header notice">請輸入關鍵字</div>
 							</template>
 							<template v-else-if="searchResult.course.length == 0 && Object.keys(searchResult.teacher).length == 0">
-								<div class="header notice">查無相關課程或老師，請嘗試其他關鍵字</div>
+								<div class="header notice" style="flex-direction: column; gap: 0.5rem; align-items: center;">
+									查無相關課程或老師，請嘗試其他關鍵字
+									<div v-if="suggestedTerm">
+										或<a @click="switchTermAndSearch(suggestedTerm.termId)" style="pointer-events: auto; color: var(--ts-primary-600); cursor: pointer;">切換到 {{ suggestedTerm.label }}</a>查詢
+									</div>
+								</div>
 							</template>
 						</div>
 					</div>
@@ -245,6 +250,17 @@ export default {
 			if(!this.currentTerm || !this.savedCourse) return [];
 			const termId = this.currentTerm.split('-').join('');
 			return this.savedCourse.filter(id => id.substring(0,4) === termId);
+		},
+		suggestedTerm() {
+			const query = this.searchQuery;
+			if(!/^[A-Za-z0-9]{12}$/.test(query)) return null;
+			const year = query.substring(0, 3);
+			const term = query.substring(3, 4);
+			const termId = year + '-' + term;
+			if(termId === this.currentTerm) return null;
+			const group = this.terms.find(g => String(g.year) === year);
+			if(!group || !group.term.map(String).includes(term)) return null;
+			return { termId, label: year + ' 學年第 ' + term + ' 學期' };
 		}
 	},
 	mounted() {
@@ -274,8 +290,9 @@ export default {
 				const res = JSON.parse(storedData);
 				this.courses = res.course;
 				this.loading = false;
+				return Promise.resolve();
 			} else {
-				this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
+				return this.$axios.get('https://api.mcut-course.com/list.php?term=' + this.currentTerm).then((res) => {
 					localStorage['courseData_' + this.currentTerm] = JSON.stringify(res.data);
 					localStorage['courseDataTime_' + this.currentTerm] = process.env.GEN_TIME;
 					this.courses = res.data.course;
@@ -373,7 +390,12 @@ export default {
 			this.currentTerm = term;
 			localStorage['term'] = term;
 			this.display = [];
-			this.fetchData();
+			return this.fetchData();
+		},
+		switchTermAndSearch(term) {
+			Promise.resolve(this.chooseTerm(term)).then(() => {
+				this.searchByQuery();
+			});
 		},
 		searchByQuery() {
 			this.searchResult.course = [];
