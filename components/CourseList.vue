@@ -369,6 +369,10 @@ export default {
 	box-shadow: 2px 0 0 var(--ts-negative-600) inset !important;
 }
 
+td.c-action .ts-icon.is-star-icon {
+	color: #FFDE21;
+}
+
 .timetable {
 	width: 100%;
 	border-collapse: collapse;

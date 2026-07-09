@@ -319,7 +319,7 @@ h1 {
 	bottom: 1rem;
 	right: 1rem;
 	z-index: 800;
-	background: var(--ts-primary-500);
+	background: #FFDE21;
 	color: var(--ts-static-gray-50);
 	border-radius: 50%;
 	width: 4rem;

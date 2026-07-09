@@ -443,8 +443,8 @@ export default {
 }
 
 #page-home .ts-badge.my {
-	background-color: var(--ts-primary-600);
-	color: var(--ts-static-gray-50);
+	background-color: #FFDE21;
+	color: var(--ts-static-gray-800);
 }
 
 .ts-select.is-huge {

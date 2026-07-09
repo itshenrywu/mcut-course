@@ -154,7 +154,7 @@ export default {
 		});
 		let terms = Object.entries(_terms)
 		.sort((a, b) => Number(b[0]) - Number(a[0]))
-		.map(([year, term]) => ({ year: year, term: term }));
+		.map(([year, term]) => ({ year: year, term: term.sort((a, b) => Number(a) - Number(b)) }));
 
 		const default_term = list.data.course[0].id.substring(0, 3) + '-' + list.data.course[0].id.substring(3, 4);
 
