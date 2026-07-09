@@ -20,11 +20,10 @@ export default {
 		}
 	},
 	mounted() {
-		let auth_key = this.$route.query.auth_key;
-		if(!auth_key && this.$route.hash) {
-			auth_key = new URLSearchParams(this.$route.hash.replace(/^#/, '')).get('auth_key');
+		if(this.$route.hash) {
+			let auth_key = new URLSearchParams(this.$route.hash.replace(/^#/, '')).get('auth_key');
+			if(auth_key) localStorage['auth_key'] = auth_key;
 		}
-		if(auth_key) localStorage['auth_key'] = auth_key;
 		
 		if(localStorage['auth_key'] == undefined || localStorage['auth_key'] == '') {
 			// state 對應伺服器端的 redirect URI：1=production, 2=pages.dev staging, 3=localhost
