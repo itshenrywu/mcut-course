@@ -30,6 +30,9 @@
 				<!-- <NuxtLink to="/passport" class="item">
 					114 學年英語學習護照點數查詢
 				</NuxtLink> -->
+				<NuxtLink to="/guide" class="item">
+					選課指南
+				</NuxtLink>
 				<NuxtLink to="/exam" class="item">
 					{{ examDate ? examDate + ' ' : '' }}英語段考考場查詢
 				</NuxtLink>
@@ -45,6 +48,12 @@
 				<NuxtLink to="/calendar" class="item">
 					行事曆
 				</NuxtLink>
+				<a href="https://line.me/R/ti/p/@161acthp" target="_blank" class="item is-external">
+					學餐菜單 LINE 機器人
+				</a>
+				<a href="https://mcut-run.henrywu.tw/" target="_blank" class="item is-external">
+					歷年校園路跑成績
+				</a>
 			</div>
 			<div class="ts-content has-top-spaced is-vertically-fitted">
 				<div class="ts-text is-description">說明及支援</div>
@@ -93,6 +102,13 @@
 	display: block;
 	padding: 0;
 	margin-left: 0
+}
+
+#page-more .ts-menu .item.is-external::after {
+	font-family: Icons;
+	content: "\f401";
+	transform: rotate(-45deg);
+	color: var(--ts-gray-400);
 }
 </style>
 <script>
