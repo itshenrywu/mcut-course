@@ -20,55 +20,22 @@
 					</button>
 				</div>
 			</div>
-			<div class="ts-content has-top-spaced is-vertically-fitted">
-				<div class="ts-text is-description">課程相關查詢</div>
-			</div>
-			<div class="ts-menu is-start-icon is-dense">
-				<!-- <NuxtLink to="/road" class="item">
-					大學之道環境與行動路線查詢
-				</NuxtLink> -->
-				<!-- <NuxtLink to="/passport" class="item">
-					114 學年英語學習護照點數查詢
-				</NuxtLink> -->
-				<NuxtLink to="/guide" class="item">
-					選課指南
-				</NuxtLink>
-				<NuxtLink to="/exam" class="item">
-					{{ examDate ? examDate + ' ' : '' }}英語段考考場查詢
-				</NuxtLink>
-			</div>
-			<div class="ts-content has-top-spaced is-vertically-fitted">
-				<div class="ts-text is-description">選課相關說明 / 其他查詢</div>
-			</div>
-			<div class="ts-menu is-start-icon is-dense">
-				<NuxtLink to="/info" class="item">
-					選課時間及說明
-					<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="showInfoRedDot"></div>
-				</NuxtLink>
-				<NuxtLink to="/calendar" class="item">
-					行事曆
-				</NuxtLink>
-				<a href="https://line.me/R/ti/p/@161acthp" target="_blank" class="item is-external">
-					學餐菜單 LINE 機器人
-				</a>
-				<a href="https://mcut-run.henrywu.tw/" target="_blank" class="item is-external">
-					歷年校園路跑成績
-				</a>
-			</div>
-			<div class="ts-content has-top-spaced is-vertically-fitted">
-				<div class="ts-text is-description">說明及支援</div>
-			</div>
-			<div class="ts-menu is-start-icon is-dense">
-				<NuxtLink to="/about" class="item">
-					關於本站、資料來源及免責聲明
-				</NuxtLink>
-				<NuxtLink to="/changelog" class="item">
-					更新紀錄
-				</NuxtLink>
-				<a href="https://henrywu.tw/?openExternalBrowser=1" target="_blank" class="item">
-					建議及問題回報
-				</a>
-			</div>
+			<template v-for="section in menuSections">
+				<div class="ts-content has-top-spaced is-vertically-fitted" :key="section.title" v-if="section.items.length">
+					<div class="ts-text is-description">{{ section.title }}</div>
+				</div>
+				<div class="ts-menu is-start-icon is-dense" :key="section.title + '-menu'" v-if="section.items.length">
+					<template v-for="item in section.items">
+						<NuxtLink v-if="item.to" :to="item.to" class="item" :key="item.to">
+							{{ item.text }}
+							<div class="ts-badge has-inverted is-small is-dense is-negative red-dot" v-if="item.redDot"></div>
+						</NuxtLink>
+						<a v-else :href="item.href" target="_blank" class="item" :class="{ 'is-external': item.external }" :key="item.href">
+							{{ item.text }}
+						</a>
+					</template>
+				</div>
+			</template>
 
 			<div class="ts-box ad is-hollowed box-mobile-spaced has-top-spaced-large" v-if="showAd">
 				<div class="ts-content">
@@ -177,6 +144,38 @@ export default {
 		},
 		commitSha() {
 			return process.env.COMMIT_SHA || '';
+		},
+		// 選單清單：改這裡即可，不需另外的 config 檔
+		// 有 to → NuxtLink（站內），有 href → <a>（外部），external: true 顯示外部連結圖示
+		menuSections() {
+			return [
+				{
+					title: '課程相關查詢',
+					items: [
+						// { to: '/road', text: '大學之道環境與行動路線查詢' },
+						// { to: '/passport', text: '114 學年英語學習護照點數查詢' },
+						// { to: '/exam', text: `${this.examDate ? this.examDate + ' ' : ''}英語段考考場查詢` },
+					]
+				},
+				{
+					title: '其他查詢',
+					items: [
+						{ to: '/calendar', text: '行事曆' },
+						{ href: 'https://line.me/R/ti/p/@161acthp', text: '學餐菜單 LINE 機器人', external: true },
+						{ href: 'https://mcut-run.henrywu.tw/', text: '歷年校園路跑成績', external: true },
+					]
+				},
+				{
+					title: '說明及支援',
+					items: [
+						{ to: '/guide', text: '選課指南' },
+						{ to: '/info', text: '選課時間及說明', redDot: this.showInfoRedDot },
+						{ to: '/about', text: '關於本站、資料來源及免責聲明' },
+						{ to: '/changelog', text: '更新紀錄' },
+						{ href: 'https://henrywu.tw/?openExternalBrowser=1', text: '建議及問題回報' },
+					]
+				},
+			];
 		},
 	},
 	mounted() {
