@@ -19,7 +19,7 @@
 						<div class="ts-select is-fluid">
 							<select v-model="currentDept" @change="chooseDept();" aria-label="入學系所/學程/組別">
 								<optgroup v-for="(dept_group, group) of depts[currentYear]" :label="group">
-									<option v-for="(dept, dept_id) of dept_group" :value="dept_id">{{ dept }}</option>
+									<option v-for="[dept_id, dept] of sortDepts(dept_group)" :value="dept_id">{{ dept }}</option>
 								</optgroup>
 							</select>
 						</div>
@@ -115,7 +115,7 @@
 						<div class="ts-list is-ordered">
 							<div class="item">請先選擇<b>入學學年度</b>及<b>入學系所/學程/組別</b>。</div>
 							<div class="item">須修畢你的<b>系所學程總表</b><span
-								v-if="currentDeptName && !(currentDeptName.includes('博士') || currentDeptName.includes('碩士') || currentDeptName.includes('在職專班') || currentDeptName.includes('國際學生專班') || currentDeptName.includes('菁英班') || currentDeptName.includes('學位學程') || currentDeptName.includes('能源電池科技專班'))">，並須<b>任選一個學分學程（跨領域或第二專長）</b></span>才能畢業。
+								v-if="currentDeptName && !['博士', '碩士', '在職專班', '國際學生專班', '菁英班', '學位學程', '能源電池科技專班', '雙聯學士專班', '外國學生專班'].some(k => currentDeptName.includes(k))">，並須<b>任選一個學分學程（跨領域或第二專長）</b></span>才能畢業。
 							</div>
 							<div class="item">點擊各分類即可展開該分類課程。</div>
 							<div class="item">欲選課前切換<b>欲選課學期</b>，即可查看該學期是否有開課。</div>
@@ -654,6 +654,18 @@ export default {
 		copyToClipboard(text) {
 			navigator.clipboard.writeText(text);
 			this.$swal({ title: '已複製', icon: 'success', toast: true, timer: 2000, timerProgressBar: true, position: 'bottom-start', showConfirmButton: false });
+		},
+		sortDepts(deptGroup) {
+			const deptOrder = Object.keys(this.dept_short_name);
+			return Object.entries(deptGroup).sort(([, a], [, b]) => {
+				const aIndex = deptOrder.findIndex(d => a.includes(d));
+				const bIndex = deptOrder.findIndex(d => b.includes(d));
+				if (aIndex === -1 && bIndex === -1) return a.localeCompare(b);
+				if (aIndex === -1) return 1;
+				if (bIndex === -1) return -1;
+				if (aIndex !== bIndex) return aIndex - bIndex;
+				return a.length - b.length || a.localeCompare(b);
+			});
 		},
 		sortRulesByDept(ruleGroup) {
 			const deptOrder = Object.keys(this.dept_short_name);
