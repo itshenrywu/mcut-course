@@ -386,7 +386,7 @@
 					<div class="ts-wrap is-vertical">
 						<div>
 							<h2 class="ts-header is-large" style="display:inline;">1. 請至<a href="https://portal.mcut.edu.tw/" target="_blank" rel="nofollow">校園入口網</a>，前往應用系統 > 學生資訊查詢系統</h2>
-							<div class="ts-text is-description">請在手機或電腦的瀏覽器上執行，不要使用明志 App</div>
+							<div class="ts-text is-description">請在手機或電腦的瀏覽器上操作，不要使用明志 App</div>
 						</div>
 						<div>
 							<h2 class="ts-header is-large" style="display:inline;">2. 選擇課程查詢 > 課表查詢</h2>
@@ -1247,34 +1247,111 @@ export default {
 		},
 
 		importFromUrl() {
-			const json = JSON.parse(decodeURIComponent(this.$route.query.import));
-			// 依課程分組，同一門課的多個時段合併在一起
+			// 共用的欄位驗證/正規化工具
+			const parseDay = (v) => {
+				const s = String(v).trim();
+				return /^[0-7]$/.test(s) ? s : null;
+			};
+			const parseStep = (v) => {
+				const s = String(v).trim();
+				return /^\d+(\.[05])?$/.test(s) ? parseFloat(s) : NaN;
+			};
+			const buildRange = (start, end) => String(start) + '~' + String(end);
+
+			// 匯入格式定義：新增格式時只要在此加一筆設定即可
+			// header/headerEn 用來判斷標題列屬於哪種格式，parseRow 負責把單列轉成標準課程物件（無效則回傳 null）
+			const IMPORT_FORMATS = [
+				{
+					// 學校查詢系統（searchTm1.aspx）匯出，科目代號欄含連結，故資料列會多插入一個 cid 欄
+					name: 'default',
+					header: ['課程名稱', '科目代號', '星期', '起始節次', '結束節次', '教室', '停修', '已抵免學分'],
+					headerEn: ['Course Title', 'Course Code', 'Weekday', 'Start Period', 'End Period', 'Classroom', 'Course Withdrawal', 'Credit Transfer'],
+					rowLength: 9, // 標題 8 欄 + 插入的 cid
+					parseRow: (r) => {
+						const name = String(r[0]).trim();
+						const id = String(r[1]).trim();  // 科目代號
+						const cid = String(r[2]).trim(); // 插入的 cid
+						const day = parseDay(r[3]);
+						const start = parseStep(r[4]);
+						const end = parseStep(r[5]);
+						const classroom = r[6];
+						if(name.length === 0) return null;
+						if(!/^[A-Za-z0-9]{12}$/.test(id)) return null;
+						if(!/^[A-Za-z0-9]{6}$/.test(cid)) return null;
+						if(day === null) return null;
+						if(Number.isNaN(start) || Number.isNaN(end) || end < start) return null;
+						return { key: cid, id: cid, name: name.split('(')[0], classroom, day, range: buildRange(start, end) };
+					},
+				},
+				{
+					// 選課結果匯出，欄位無連結，資料列數與標題相同（15 欄）
+					name: 'enroll',
+					header: ['學號', '姓名', '開課系所', '開課年級', '開課班級', '開課序號', '課程代號', '課程名稱', '必選修', '授課教師', '星期', '節次(起)', '節次(迄)', '上課教室', '學分數'],
+					headerEn: ['Student No.', 'Name', 'Department', 'Year', 'Class', 'Serial No. of the course', 'Course Code', 'Course name', 'Required elective', 'Teacher', 'Week', 'Session (from)', 'Session (till)', 'Classroom', 'Credits'],
+					rowLength: 15,
+					parseRow: (r) => {
+						const serial = String(r[5]).trim(); // 開課序號，作為分組主鍵
+						const code = String(r[6]).trim();   // 課程代號
+						const name = String(r[7]).trim();   // 課程名稱
+						const day = parseDay(r[10]);
+						const start = parseStep(r[11]);
+						const end = parseStep(r[12]);
+						const classroom = r[13];
+						if(name.length === 0) return null;
+						if(serial.length === 0) return null;
+						if(day === null) return null;
+						if(Number.isNaN(start) || Number.isNaN(end) || end < start) return null;
+						return { key: serial, id: serial, name: name.split('(')[0], classroom, day, range: buildRange(start, end) };
+					},
+				},
+			];
+
+			const abort = (msg) => {
+				this.$router.replace({ query: {} });
+				this.$swal({
+					title: '匯入失敗',
+					html: '請<a href="#" id="reportIssueLink">回報問題</a>並提供以下資料：<div class="ts-box" style="margin-top:.5rem"><div class="ts-content"><div class="ts-text is-start-aligned" style="font-family:monospace;font-size: 0.6rem;">' + decodeURIComponent(this.$route.query.import) + '</div></div></div>',
+					icon: 'error',
+					showConfirmButton: false,
+					didOpen: () => {
+						document.getElementById('reportIssueLink').addEventListener('click', (e) => {
+							e.preventDefault();
+							window.open('https://henrywu.tw/?openExternalBrowser=1');
+						});
+					},
+				});
+			};
+			let json;
+			try {
+				json = JSON.parse(decodeURIComponent(this.$route.query.import));
+			} catch (e) {
+				return abort('匯入資料格式錯誤，無法解析。');
+			}
+			if(!Array.isArray(json) || json.length === 0) {
+				return abort('匯入資料格式錯誤。');
+			}
+			const header = json[0];
+			// 比對標題時忽略大小寫與所有空白（含全形空白）
+			const normalize = (h) => String(h).replace(/\s/g, '').toLowerCase();
+			const matchHeader = (expected) => Array.isArray(header) && header.length === expected.length &&
+				expected.every((h, i) => normalize(header[i]) === normalize(h));
+			// 依標題列判斷屬於哪一種格式
+			const format = IMPORT_FORMATS.find(f => matchHeader(f.header) || matchHeader(f.headerEn));
+			if(!format) {
+				return abort('匯入資料的標題列不正確。');
+			}
+			const rows = json.slice(1);
+			if(rows.some(row => !Array.isArray(row) || row.length !== format.rowLength)) {
+				return abort('匯入資料的欄位不正確。');
+			}
 			const map = new Map();
-			json.forEach(course => {
-				let name, classroom, id, day, startRaw, endRaw;
-				if(course[1].trim().length == 6) {
-					if(!course[3].includes('.') || !course[4].includes('.') || Number.isNaN(parseFloat(course[3])) || Number.isNaN(parseFloat(course[4]))) return;
-					name = course[0];
-					classroom = course[5];
-					id = '';
-					day = course[2].trim();
-					startRaw = course[3];
-					endRaw = course[4];
-				} else if (course[1].trim().length == 12) {
-					if(!course[4].includes('.') || !course[5].includes('.') || Number.isNaN(parseFloat(course[4])) || Number.isNaN(parseFloat(course[5])))  return;
-					name = course[0];
-					classroom = course[6];
-					id = course[1];
-					day = course[3].trim();
-					startRaw = course[4];
-					endRaw = course[5];
-				} else return;
-				const range = startRaw.replace('.0', '') + '~' + endRaw.replace('.0', '');
-				const key = id || (name + '|' + classroom);
-				if(!map.has(key)) {
-					map.set(key, { id, name: name.split('(')[0], classroom, time: [] });
+			rows.forEach(course => {
+				const parsed = format.parseRow(course);
+				if(!parsed) return;
+				if(!map.has(parsed.key)) {
+					map.set(parsed.key, { id: parsed.id, name: parsed.name, classroom: parsed.classroom, time: [] });
 				}
-				map.get(key).time.push([day, range]);
+				map.get(parsed.key).time.push([parsed.day, parsed.range]);
 			});
 			this.$router.replace({ query: {} });
 			const candidates = Array.from(map.values());
@@ -2124,7 +2201,7 @@ export default {
 		this.$axios.get('/scriptable.min.js?v=5').then(res => {
 			this.scriptableCodeFile = res.data;
 		});
-		this.$axios.get('/import.js?v=20260720').then(res => {
+		this.$axios.get('/import.js?v=2026072001').then(res => {
 			this.importCodeFile = res.data;
 		});
 		try { this.myCourses = JSON.parse(localStorage.myCourses); } catch (e) { }
