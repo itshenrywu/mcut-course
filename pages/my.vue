@@ -14,7 +14,7 @@
 							</button>
 							<button class="ts-button is-secondary is-small is-fluid is-start-icon" data-dropdown="term-dropdown" v-show="savedCourse.length > 0">
 								<span class="ts-icon is-star-icon"></span>
-								從「收藏的課程」匯入
+								從收藏的課程匯入
 							</button>
 							<div class="ts-dropdown" data-position="bottom-start" id="term-dropdown" style="height:60vh" v-if="savedCourse.length > 0">
 								<template v-for="year_group of terms">
@@ -413,6 +413,70 @@
 				</div>
 			</div>
 		</dialog>
+		<dialog class="ts-modal is-large" id="importPreviewDialog">
+			<div class="content">
+				<div class="ts-content">
+					<div class="ts-grid">
+						<div class="column is-fluid">
+							<div class="ts-header">{{ importPreview.title }}</div>
+						</div>
+						<div class="column">
+							<button class="ts-close" aria-label="關閉此彈出視窗" @click="closeDialog()"></button>
+						</div>
+					</div>
+				</div>
+				<div class="ts-content">
+					<label class="ts-checkbox has-bottom-spaced-small">
+						<input type="checkbox" v-model="importPreview.clearExisting" @change="computeDefaultSelection()">
+						匯入前先清除原本的課表
+					</label>
+					<!-- <div class="ts-wrap is-middle-aligned is-compact has-bottom-spaced-small">
+						<button class="ts-button is-small is-outlined" @click="selectAllImportable(true)">全選可匯入</button>
+						<button class="ts-button is-small is-outlined" @click="selectAllImportable(false)">全部取消</button>
+					</div> -->
+					<div class="import-preview-list">
+						<div class="ts-text is-description is-center-aligned has-vertically-padded" v-if="importPreview.items.length === 0">
+							沒有可匯入的課程
+						</div>
+						<div v-for="(item, index) in importPreview.items" :key="index"
+							class="ts-box is-dense import-preview-item"
+							:class="{ 'is-unimportable': !item.hasValid || itemAlreadyImported(item) || (!item.selected && itemConflict(item)) }">
+							<div class="ts-content is-dense">
+								<div class="ts-grid is-middle-aligned">
+									<div class="column">
+										<label class="ts-checkbox">
+											<input type="checkbox" v-model="item.selected" :disabled="!item.hasValid || itemAlreadyImported(item) || (!item.selected && itemConflict(item))">
+										</label>
+									</div>
+									<div class="column is-fluid">
+										<div class="ts-text is-bold">{{ item.name }}</div>
+										<div class="ts-text is-description is-small preview-slots">
+											<span v-for="(slot, si) in item.slots" :key="si" class="preview-slot" :class="{ 'is-invalid-slot': !slot.valid }">
+												{{ formatSlot(slot) }}
+											</span>
+										</div>
+									</div>
+									<div class="column">
+										<span v-if="itemAlreadyImported(item)" class="ts-badge is-small is-secondary">已在個人課表中</span>
+										<span v-else-if="!item.hasValid" class="is-conflict">
+											<span class="ts-icon is-circle-alert-icon"></span>
+											六日無法匯入
+										</span>
+										<span v-else-if="itemConflict(item)" class="is-conflict">
+											<span class="ts-icon is-circle-alert-icon"></span>
+											衝堂
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="ts-button is-fluid has-top-spaced" :class="{ 'is-disabled': selectedImportCount === 0 }" @click="confirmImport()">
+						{{ importPreview.clearExisting ? '清除並' : '' }}匯入所選的 {{ selectedImportCount }} 門課程
+					</button>
+				</div>
+			</div>
+		</dialog>
 		<dialog class="ts-modal is-large" id="icsDialog">
 			<div class="content">
 				<div class="ts-content">
@@ -640,6 +704,44 @@
 	font-size: 1.05rem;
 }
 
+.import-preview-list {
+	max-height: 50vh;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+	padding: 2px;
+}
+
+.import-preview-item {
+	flex-shrink: 0;
+}
+
+.import-preview-item.is-unimportable {
+	opacity: .55;
+}
+
+.import-preview-item .is-conflict {
+	display: inline-flex;
+	align-items: center;
+	gap: .2rem;
+	white-space: nowrap;
+	font-size: .8rem;
+	font-weight: 500;
+	color: hsl(345, 77%, 67%);
+}
+
+.import-preview-item .preview-slots {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .25rem .75rem;
+	margin-top: .15rem;
+}
+
+.import-preview-item .preview-slot.is-invalid-slot {
+	color: hsl(345, 77%, 67%);
+}
+
 #page-my .ts-wrap>.ts-text+.ts-checkbox {
 	margin-top: 0;
 }
@@ -688,7 +790,7 @@ export default {
 			adWidth: null,
 			profileName: null,
 			profileImage: null,
-			time_section_full: ['1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
+			time_section_full: ['0.5', '1', '2', '3', '4', '4.5', '5', '6', '7', '8', '8.5', '9', '10', '11', '12'],
 			showMobileSidebar: false,
 			loading: true,
 			loading_get: false,
@@ -736,6 +838,12 @@ export default {
 			terms: [],
 			default_term: null,
 			currentTerm: undefined,
+
+			importPreview: {
+				title: '',
+				items: [],
+				clearExisting: false,
+			},
 
 			timeInfo: {
 				'0.5': ["07:00", "07:50"],
@@ -971,6 +1079,9 @@ export default {
 				c.time[1]
 			]))) + '&r=' + this.icsReminders.join(',');
 		},
+		selectedImportCount() {
+			return this.importPreview.items.filter(item => item.selected).length;
+		},
 	},
 	methods: {
 		getColorBar(colors) {
@@ -1137,69 +1248,38 @@ export default {
 
 		importFromUrl() {
 			const json = JSON.parse(decodeURIComponent(this.$route.query.import));
-			let data = [];
+			// 依課程分組，同一門課的多個時段合併在一起
+			const map = new Map();
 			json.forEach(course => {
+				let name, classroom, id, day, startRaw, endRaw;
 				if(course[1].trim().length == 6) {
-					if(course[2].trim().length != 1 || parseInt(course[2]) > 5) return;
 					if(!course[3].includes('.') || !course[4].includes('.') || Number.isNaN(parseFloat(course[3])) || Number.isNaN(parseFloat(course[4]))) return;
-					data.push({
-						name: course[0],
-						classroom: course[5],
-						time: [course[2], course[3].replace('.0', '') + '~' + course[4].replace('.0', '')],
-						id: ''
-					});
+					name = course[0];
+					classroom = course[5];
+					id = '';
+					day = course[2].trim();
+					startRaw = course[3];
+					endRaw = course[4];
 				} else if (course[1].trim().length == 12) {
-					if(course[3].trim().length != 1 || parseInt(course[3]) > 5) return;
 					if(!course[4].includes('.') || !course[5].includes('.') || Number.isNaN(parseFloat(course[4])) || Number.isNaN(parseFloat(course[5])))  return;
-					data.push({
-						name: course[0],
-						originalName: course[0],
-						classroom: course[6],
-						time: [course[3], course[4].replace('.0', '') + '~' + course[5].replace('.0', '')],
-						id: course[1]
-					});
+					name = course[0];
+					classroom = course[6];
+					id = course[1];
+					day = course[3].trim();
+					startRaw = course[4];
+					endRaw = course[5];
+				} else return;
+				const range = startRaw.replace('.0', '') + '~' + endRaw.replace('.0', '');
+				const key = id || (name + '|' + classroom);
+				if(!map.has(key)) {
+					map.set(key, { id, name: name.split('(')[0], classroom, time: [] });
 				}
+				map.get(key).time.push([day, range]);
 			});
-
-			let success = 0, fail = 0;
-			data.forEach(course => {
-				let time = course.time;
-				if(time[1].includes('0.5')) return;
-				let isConflict = false;	
-				for(let s = this.time_section_full.indexOf(time[1].split('~')[0]); s <= this.time_section_full.indexOf(time[1].split('~')[1]); s++) {
-					if(this.used_secion[time[0]] && this.used_secion[time[0]].includes(this.time_section_full[s])) {
-						isConflict = true;
-						break;
-					}
-				}
-				if(!isConflict) {
-					this.myCourses.push({
-						name: course.name.split('(')[0],
-						originalName: course.name.split('(')[0],
-						classroom: course.classroom,
-						id: course.id,
-						time: time,
-					});
-					success++;
-				} else {
-					fail++;
-				}
-			});
-			let alertText = [];
-			if(success > 0) alertText.push(`已匯入 ${success} 門課程`);
-			if(fail > 0) alertText.push(`有 ${fail} 門課程因衝堂無法匯入`);
-			if(alertText.length > 0) {
-				this.$swal({
-					title: alertText.join('，'), icon: fail == 0 ? 'success' : 'warning', toast: true,
-					timer: 3000, timerProgressBar: true,
-					position: 'bottom-start', showConfirmButton: false,
-				});
-			}
-			if(success > 0) {
-				this.sortCourse();
-				this.updateTimetable();
-			}
 			this.$router.replace({ query: {} });
+			const candidates = Array.from(map.values());
+			if(candidates.length === 0) return;
+			this.buildAndShowPreview(candidates, '從學校系統匯入');
 		},
 
 		async importFromSaved() {
@@ -1234,38 +1314,220 @@ export default {
 				});
 				return;
 			}
-			
-			let success = 0, fail = 0;
+
+			const candidates = [];
 			data.course.forEach(course => {
 				if(savedCourse.includes(course.id)) {
-					course.time.forEach(time => {
-						if(time[1].includes('0.5') || parseInt(time[0]) > 5) return;
-						// 檢查是否衝堂
-						let isConflict = false;	
-						for(let s = this.time_section_full.indexOf(time[1].split('~')[0]); s <= this.time_section_full.indexOf(time[1].split('~')[1]); s++) {
-							if(this.used_secion[time[0]] && this.used_secion[time[0]].includes(this.time_section_full[s])) {
-								isConflict = true;
-								break;
-							}
-						}
-						if(!isConflict) {
-							this.myCourses.push({
-								name: course.name.split('(')[0],
-								originalName: course.name.split('(')[0],
-								classroom: '',
-								id: course.id,
-								time: time,
-							});
-							success++;
-						} else {
-							fail++;
-						}
+					candidates.push({
+						id: course.id,
+						name: course.name.split('(')[0],
+						classroom: '',
+						time: course.time,
 					});
 				}
 			});
+			this.loading = false;
+
+			if(candidates.length === 0) {
+				this.$swal({
+					title: '這個學期沒有已收藏的課程', icon: 'info', toast: true,
+					timer: 3000, timerProgressBar: true,
+					position: 'bottom-start', showConfirmButton: false,
+				});
+				return;
+			}
+			this.buildAndShowPreview(candidates, '從「收藏的課程」匯入');
+		},
+
+		// 節次範圍轉成節次陣列，例如 '3~5' -> ['3','4','5']
+		sectionsBetween(range) {
+			const [start, end] = range.split('~');
+			const si = this.time_section_full.indexOf(start);
+			const ei = this.time_section_full.indexOf(end);
+			if(si === -1 || ei === -1) return [];
+			const sections = [];
+			for(let s = si; s <= ei; s++) {
+				sections.push(this.time_section_full[s]);
+			}
+			return sections;
+		},
+
+		// 參考 CourseList 的節次顯示格式，例如 '(一) 3~5'
+		formatSlot(slot) {
+			const week = ['(其他)', '(一)', '(二)', '(三)', '(四)', '(五)', '(六)', '(其他)'][parseInt(slot.day)] || '(其他)';
+			const [start, end] = slot.range.split('~');
+			return week + ' ' + (start === end ? start : slot.range);
+		},
+
+		// 從候選課程建立匯入預覽清單並開啟 dialog
+		buildAndShowPreview(candidates, title) {
+			const items = candidates.map(c => {
+				const slots = (c.time || []).map(t => {
+					const day = String(t[0]);
+					const range = t[1];
+					const dayNum = parseInt(day);
+					let valid = true, reason = '';
+					if(dayNum === 6 || dayNum === 7) {
+						valid = false;
+						reason = '六日無法匯入';
+					} else if(dayNum < 1 || dayNum > 5 || Number.isNaN(dayNum)) {
+						valid = false;
+						reason = '此時段無法匯入';
+					}
+					return { day, range, valid, reason };
+				});
+				return {
+					id: c.id || '',
+					name: c.name,
+					classroom: c.classroom || '',
+					slots,
+					hasValid: slots.some(s => s.valid),
+					selected: false,
+				};
+			});
+			this.importPreview = { title, items, clearExisting: false };
+			this.computeDefaultSelection();
+			document.getElementById('importPreviewDialog').showModal();
+		},
+
+		// 建立佔用時段的基準（勾選「先清除既有課程」時視同課表為空）
+		baseOccupancy() {
+			const occupancy = {};
+			if(this.importPreview.clearExisting) return occupancy;
+			this.myCourses.forEach(course => {
+				const day = parseInt(course.time[0]);
+				if(day < 1 || day > 5) return;
+				occupancy[day] = occupancy[day] || new Set();
+				this.sectionsBetween(course.time[1]).forEach(s => occupancy[day].add(s));
+			});
+			return occupancy;
+		},
+
+		// 判斷某時段是否已存在於「我的課表」
+		slotInMyCourses(item, slot) {
+			return this.myCourses.some(c => {
+				const sameCourse = (item.id && c.id) ? c.id === item.id : c.name === item.name;
+				return sameCourse && String(c.time[0]) === String(slot.day) && c.time[1] === slot.range;
+			});
+		},
+
+		// 判斷某課程的所有可匯入時段是否都已在「我的課表」中（完全相同）
+		itemAlreadyImported(item) {
+			if(this.importPreview.clearExisting) return false;
+			const valid = item.slots.filter(s => s.valid);
+			if(valid.length === 0) return false;
+			return valid.every(s => this.slotInMyCourses(item, s));
+		},
+
+		// 預設勾選不衝堂且可匯入的課程（含收藏清單內互相衝堂的排除）
+		computeDefaultSelection() {
+			const occupancy = this.baseOccupancy();
+			const addSections = (day, sections) => {
+				if(!occupancy[day]) occupancy[day] = new Set();
+				sections.forEach(s => occupancy[day].add(s));
+			};
+			this.importPreview.items.forEach(item => {
+				if(!item.hasValid || this.itemAlreadyImported(item)) {
+					item.selected = false;
+					return;
+				}
+				let conflict = false;
+				item.slots.forEach(slot => {
+					if(!slot.valid) return;
+					const day = parseInt(slot.day);
+					const sections = this.sectionsBetween(slot.range);
+					if(occupancy[day] && sections.some(s => occupancy[day].has(s))) {
+						conflict = true;
+					}
+				});
+				if(conflict) {
+					item.selected = false;
+				} else {
+					item.selected = true;
+					item.slots.forEach(slot => {
+						if(!slot.valid) return;
+						addSections(parseInt(slot.day), this.sectionsBetween(slot.range));
+					});
+				}
+			});
+		},
+
+		// 動態判斷某課程是否與「我的課表」或其他已勾選課程衝堂
+		itemConflict(item) {
+			if(!item.hasValid || this.itemAlreadyImported(item)) return false;
+			const occupancy = this.baseOccupancy();
+			const addSections = (day, sections) => {
+				if(!occupancy[day]) occupancy[day] = new Set();
+				sections.forEach(s => occupancy[day].add(s));
+			};
+			this.importPreview.items.forEach(other => {
+				if(other === item || !other.selected) return;
+				other.slots.forEach(slot => {
+					if(!slot.valid) return;
+					addSections(parseInt(slot.day), this.sectionsBetween(slot.range));
+				});
+			});
+			return item.slots.some(slot => {
+				if(!slot.valid) return false;
+				const day = parseInt(slot.day);
+				return occupancy[day] && this.sectionsBetween(slot.range).some(s => occupancy[day].has(s));
+			});
+		},
+
+		selectAllImportable(select) {
+			// 全選時沿用貪婪的預設勾選邏輯（自動避開互相衝堂的課程）
+			if(select) {
+				this.computeDefaultSelection();
+				return;
+			}
+			this.importPreview.items.forEach(item => { item.selected = false; });
+		},
+
+		confirmImport() {
+			if(this.importPreview.clearExisting) {
+				this.myCourses = [];
+			}
+			const occupancy = {};
+			const addSections = (day, sections) => {
+				if(!occupancy[day]) occupancy[day] = new Set();
+				sections.forEach(s => occupancy[day].add(s));
+			};
+			this.myCourses.forEach(course => {
+				const day = parseInt(course.time[0]);
+				if(day < 1 || day > 5) return;
+				addSections(day, this.sectionsBetween(course.time[1]));
+			});
+
+			let success = 0, fail = 0;
+			this.importPreview.items.forEach(item => {
+				if(!item.selected) return;
+				item.slots.forEach(slot => {
+					if(!slot.valid) return;
+					const day = parseInt(slot.day);
+					const sections = this.sectionsBetween(slot.range);
+					// 已在課表中的時段，略過（不計為衝堂）
+					if(this.slotInMyCourses(item, slot)) return;
+					if(occupancy[day] && sections.some(s => occupancy[day].has(s))) {
+						fail++;
+						return;
+					}
+					this.myCourses.push({
+						name: item.name,
+						originalName: item.name,
+						classroom: item.classroom,
+						id: item.id,
+						time: [slot.day, slot.range],
+					});
+					addSections(day, sections);
+					success++;
+				});
+			});
+
+			document.getElementById('importPreviewDialog').close();
+
 			let alertText = [];
 			if(success > 0) alertText.push(`已匯入 ${success} 門課程`);
-			if(fail > 0) alertText.push(`有 ${fail} 門課程因衝堂無法匯入`);
+			if(fail > 0) alertText.push(`有 ${fail} 門課程因衝堂未匯入`);
 			if(alertText.length > 0) {
 				this.$swal({
 					title: alertText.join('，'), icon: fail == 0 ? 'success' : 'warning', toast: true,
@@ -1277,14 +1539,6 @@ export default {
 				this.sortCourse();
 				this.updateTimetable();
 			}
-			else if (fail === 0) {
-				this.$swal({
-					title: '這個學期沒有已收藏的課程', icon: 'info', toast: true,
-					timer: 3000, timerProgressBar: true,
-					position: 'bottom-start', showConfirmButton: false,
-				});
-			}
-			this.loading = false;
 		},
 
 		setCanvasSize() {
@@ -1588,8 +1842,8 @@ export default {
 					name: '',
 					classroom: '',
 					day: col,
-					start: row+1,
-					end: row+1,
+					start: String(this.time_section[row]),
+					end: String(this.time_section[row]),
 				};
 				this.editingAction = 'new';
 			}
@@ -1635,7 +1889,7 @@ export default {
 			this.message = null;
 			this.editingCourse = Object.freeze(this.defaultCourse);
 			this.editingAction = null;
-			['editCourseDialog', 'widgetDialog', 'importDialog', 'icsDialog', 'colorDialog'].forEach(dialog => {
+			['editCourseDialog', 'widgetDialog', 'importDialog', 'importPreviewDialog', 'icsDialog', 'colorDialog'].forEach(dialog => {
 				document.getElementById(dialog).close();
 			});
 		},
@@ -1870,7 +2124,7 @@ export default {
 		this.$axios.get('/scriptable.min.js?v=5').then(res => {
 			this.scriptableCodeFile = res.data;
 		});
-		this.$axios.get('/import.js').then(res => {
+		this.$axios.get('/import.js?v=20260720').then(res => {
 			this.importCodeFile = res.data;
 		});
 		try { this.myCourses = JSON.parse(localStorage.myCourses); } catch (e) { }
@@ -2001,7 +2255,7 @@ export default {
 		endDate.setDate(thisMonday.getDate() + 4);
 		this.icsEndDate = formatLocalDate(endDate);
 
-		['editCourseDialog', 'widgetDialog', 'importDialog', 'icsDialog'].forEach(dialog => {
+		['editCourseDialog', 'widgetDialog', 'importDialog', 'importPreviewDialog', 'icsDialog'].forEach(dialog => {
 			document.getElementById(dialog).addEventListener('click', (e) => {
 				if (e.target.tagName === 'DIALOG') {
 					document.getElementById(dialog).close();
