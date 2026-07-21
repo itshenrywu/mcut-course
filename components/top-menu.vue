@@ -13,7 +13,7 @@
 				<NuxtLink
 					v-for="item in menuItems"
 					:key="item.path"
-					:to="isActive(item.path) ? '?' : item.path"
+					:to="item.path"
 					:class="{ 'is-active': isActive(item.path) }"
 					class="item"
 				>

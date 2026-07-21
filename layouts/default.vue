@@ -342,22 +342,6 @@ h1 {
 	justify-content: center;
 }
 
-.ts-grid {
-	--gap: 1rem;
-	--4-by-5-wide: calc((100% / (5 / 4)) - var(--gap) + (var(--gap) / (5 / 4)));
-	--1-by-5-wide: calc((100% / (5 / 1)) - var(--gap) + (var(--gap) / (5 / 1)));
-}
-
-.ts-grid .column.is-4-by-5-wide {
-	width: var(--4-by-5-wide);
-	max-width: var(--4-by-5-wide);
-}
-
-.ts-grid .column.is-1-by-5-wide {
-	width: var(--1-by-5-wide);
-	max-width: var(--1-by-5-wide);
-}
-
 .compare .has-diff {
 	color: #EE7996;
 }

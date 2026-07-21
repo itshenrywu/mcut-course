@@ -70,84 +70,72 @@
 		</section>
 		<div class="ts-container has-top-spaced-huge">
 			<div class="ts-grid has-top-spaced-huge is-stretched">
-				<div class="column is-4-by-5-wide tablet-fluid">
-					<div class="ts-grid">
-						<div class="column is-8-wide tablet-fluid">
-							<div class="ts-box is-raised" @click="goDetailSearch('')">
-								<div class="ts-content">
-									<div class="ts-header">進階搜尋<span class="ts-badge is-start-spaced is-dense is-small is-negative">Hot!</span></div>
-									<div class="ts-text is-small is-description">依系所、班級、修別搜尋</div>
-								</div>
-								<div class="symbol"><span class="ts-icon is-grid-icon"></span></div>
-							</div>
+				<div class="column is-8-wide tablet-fluid">
+					<div class="ts-box is-raised" @click="goDetailSearch('')">
+						<div class="ts-content">
+							<div class="ts-header">進階搜尋<span class="ts-badge is-start-spaced is-dense is-small is-negative">Hot!</span></div>
+							<div class="ts-text is-small is-description">依系所、班級、修別搜尋</div>
 						</div>
-						<div class="column is-4-wide tablet-half">
-							<div class="ts-box" @click="goDetailSearch('體育')" :class="{'locked': isLocked('體育')}">
-								<div class="ts-content">
-									<div class="ts-header">體育自選</div>
-									<div class="ts-text is-small is-description">大二至大四自選體育</div>
-								</div>
-								<div class="symbol"><span class="ts-icon is-run-icon"></span></div>
-							</div>
-						</div>
-						<div class="column is-4-wide tablet-half">
-							<div class="ts-box" @click="goDetailSearch('社會實踐')" :class="{'locked': isLocked('社會實踐')}">
-								<div class="ts-content">
-									<div class="ts-header">{{ currentTerm.split('-')[0] <= 112 ? '經典教育與社會實踐':'永續發展與社會實踐' }}</div>
-									<div class="ts-text is-small is-description">通識中心 X+1 課程</div>
-								</div>
-								<div class="symbol"><span class="ts-icon is-repeat-icon"></span></div>
-							</div>
-						</div>
-						<div class="column is-4-wide tablet-half">
-							<div class="ts-box" @click="goDetailSearch('通識', '社會研究與未來趨勢,社會科學')" :class="{'locked': isLocked('通識', '社會研究與未來趨勢,社會科學')}">
-								<div class="ts-content">
-									<div class="ts-header">{{ currentTerm.split('-')[0] >= 112 ? '社會研究與未來趨勢' : '社會科學' }}</div>
-									<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
-								</div>
-								<div class="symbol"><span class="ts-icon is-users-icon"></span></div>
-							</div>
-						</div>
-						<div class="column is-4-wide tablet-half">
-							<div class="ts-box" @click="goDetailSearch('通識', '自然科學與環境永續,自然科學')" :class="{'locked': isLocked('通識', '自然科學與環境永續,自然科學')}">
-								<div class="ts-content">
-									<div class="ts-header">{{ currentTerm.split('-')[0] >= 112 ? '自然科學與環境永續' : '自然科學' }}</div>
-									<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
-								</div>
-								<div class="symbol"><span class="ts-icon is-leaf-icon"></span></div>
-							</div>
-						</div>
-						<div class="column is-4-wide tablet-half">
-							<div class="ts-box" @click="goDetailSearch('通識', '語言與全球化')" :class="{'locked': isLocked('通識', '語言與全球化')}">
-								<div class="ts-content">
-									<div class="ts-header">語言與全球化</div>
-									<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
-								</div>
-								<div class="symbol"><span class="ts-icon is-globe-icon"></span></div>
-							</div>
-						</div>
-						<div class="column is-4-wide tablet-half">
-							<div class="ts-box" @click="goDetailSearch('通識', '人文藝術')" :class="{'locked': isLocked('通識', '人文藝術')}">
-								<div class="ts-content">
-									<div class="ts-header">人文藝術</div>
-									<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
-								</div>
-								<div class="symbol"><span class="ts-icon is-music-icon"></span></div>
-							</div>
-						</div>
+						<div class="symbol"><span class="ts-icon is-grid-icon"></span></div>
 					</div>
 				</div>
-				<div class="column is-1-by-5-wide tablet-fluid">
-					<div class="ts-box is-raised saved" @click="goDetailSearch('saved')">
+				<div class="column is-4-wide tablet-half">
+					<div class="ts-box" @click="goDetailSearch('體育')" :class="{'locked': isLocked('體育')}">
 						<div class="ts-content">
-							<div class="ts-header">收藏的課程<span class="ts-badge is-start-spaced is-dense is-small my" v-if="savedCourseByTerm.length > 0">{{ savedCourseByTerm.length }}</span></div>
+							<div class="ts-header">體育自選</div>
+							<div class="ts-text is-small is-description">大二至大四自選體育</div>
 						</div>
-						<div class="symbol"><span class="ts-icon is-star-icon"></span></div>
+						<div class="symbol"><span class="ts-icon is-run-icon"></span></div>
+					</div>
+				</div>
+				<div class="column is-4-wide tablet-half">
+					<div class="ts-box" @click="goDetailSearch('社會實踐')" :class="{'locked': isLocked('社會實踐')}">
+						<div class="ts-content">
+							<div class="ts-header">{{ currentTerm.split('-')[0] <= 112 ? '經典教育與社會實踐':'永續發展與社會實踐' }}</div>
+							<div class="ts-text is-small is-description">通識中心 X+1 課程</div>
+						</div>
+						<div class="symbol"><span class="ts-icon is-repeat-icon"></span></div>
+					</div>
+				</div>
+				<div class="column is-4-wide tablet-half">
+					<div class="ts-box" @click="goDetailSearch('通識', '社會研究與未來趨勢,社會科學')" :class="{'locked': isLocked('通識', '社會研究與未來趨勢,社會科學')}">
+						<div class="ts-content">
+							<div class="ts-header">{{ currentTerm.split('-')[0] >= 112 ? '社會研究與未來趨勢' : '社會科學' }}</div>
+							<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
+						</div>
+						<div class="symbol"><span class="ts-icon is-users-icon"></span></div>
+					</div>
+				</div>
+				<div class="column is-4-wide tablet-half">
+					<div class="ts-box" @click="goDetailSearch('通識', '自然科學與環境永續,自然科學')" :class="{'locked': isLocked('通識', '自然科學與環境永續,自然科學')}">
+						<div class="ts-content">
+							<div class="ts-header">{{ currentTerm.split('-')[0] >= 112 ? '自然科學與環境永續' : '自然科學' }}</div>
+							<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
+						</div>
+						<div class="symbol"><span class="ts-icon is-leaf-icon"></span></div>
+					</div>
+				</div>
+				<div class="column is-4-wide tablet-half">
+					<div class="ts-box" @click="goDetailSearch('通識', '語言與全球化')" :class="{'locked': isLocked('通識', '語言與全球化')}">
+						<div class="ts-content">
+							<div class="ts-header">語言與全球化</div>
+							<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
+						</div>
+						<div class="symbol"><span class="ts-icon is-globe-icon"></span></div>
+					</div>
+				</div>
+				<div class="column is-4-wide tablet-half">
+					<div class="ts-box" @click="goDetailSearch('通識', '人文藝術')" :class="{'locked': isLocked('通識', '人文藝術')}">
+						<div class="ts-content">
+							<div class="ts-header">人文藝術</div>
+							<div class="ts-text is-small is-description">{{ currentTerm.split('-')[1] >= 3 ? '通識重修課程' : '通識選修課程' }}</div>
+						</div>
+						<div class="symbol"><span class="ts-icon is-music-icon"></span></div>
 					</div>
 				</div>
 			</div>
 			<h2 class="ts-header is-huge has-bottom-spaced has-top-spaced-huge">
-				{{ currentTerm.split('-')[1] >= 3 ? ('各系' + (currentTerm.split('-')[1] == 3 ? '上' : '下') + '學期暑修') : '各系選修 / 各班必修' }}
+				{{ currentTerm.split('-')[1] >= 3 ? ('各系' + (currentTerm.split('-')[1] == 3 ? '上' : '下') + '學期暑修') : '各班必修 / 年級選修' }}
 			</h2>
 			<template v-if="currentTerm.split('-')[1] >= 3">
 				<div class="ts-grid has-top-spaced dept_class_list">
@@ -172,19 +160,11 @@
 				</div>
 				<transition name="slide" @before-enter="beforeSlide" @enter="slideIn" @leave="slideOut">
 				<div class="ts-grid has-top-spaced dept_class_list" v-show="display.includes(dept)">
-					<div class="column is-2-wide mobile-half">
-						<div class="ts-box" @click="goDetailSearch(dept)">
-							<div class="ts-content">
-								<div class="ts-text is-tiny is-description">{{ dept }}</div>
-								<div class="ts-header">全年級選修</div>
-							</div>
-						</div>
-					</div>
 					<div class="column is-2-wide mobile-half" v-for="classInfo in classes">
 						<div class="ts-box" @click="goDetailSearch(dept, classInfo)">
 							<div class="ts-content">
 								<div class="ts-text is-tiny is-description">{{ dept }}</div>
-								<div class="ts-header">{{ classInfo }} 必修</div>
+								<div class="ts-header">{{ classInfo }}</div>
 							</div>
 						</div>
 					</div>
@@ -198,6 +178,10 @@
 				<div class="description">請切換學期或改天再試</div>
 			</div>
 		</div>
+		<NuxtLink to="/saved/" class="button-fab" aria-label="查看已儲存的課程">
+			<span class="ts-icon is-star-icon"></span>
+			<span class="ts-badge is-negative" v-if="savedCourseByTerm.length > 0">{{ savedCourseByTerm.length }}</span>
+		</NuxtLink>
 		<loading loadingText="課表下載中" v-show="loading" />
 	</div>
 </template>
@@ -327,11 +311,13 @@ export default {
 				localStorage['dept'] = '';
 				localStorage['class'] = '';
 				localStorage['type'] = '';
+				localStorage['displayType'] = '1';
 			}
 			else if(type == '體育') {
 				localStorage['dept'] = '體育組-四技(日)';
 				localStorage['class'] = '2 甲';
 				localStorage['type'] = '';
+				localStorage['displayType'] = '1';
 			}
 			else if(type == '通識') {
 				localStorage['dept'] = '通識中心四技';
@@ -351,27 +337,32 @@ export default {
 					});
 					return;
 				}
+				localStorage['displayType'] = '1';
 			}
 			else if (type == '社會實踐') {
 				localStorage['dept'] = '通識中心四技';
 				localStorage['searchQuery'] = '00700F';
 				localStorage['class'] = '';
 				localStorage['type'] = '';
+				localStorage['displayType'] = '1';
 			}
 			else if (type == '暑修') {
 				localStorage['dept'] = subtype;
 				localStorage['class'] = '';
 				localStorage['type'] = '';
+				localStorage['displayType'] = '1';
 			}
 			else if (type != '' && subtype == undefined) {
 				localStorage['dept'] = type;
 				localStorage['class'] = '';
 				localStorage['type'] = '選修';
+				localStorage['displayType'] = '';
 			}
 			else if (type != '') {
 				localStorage['dept'] = type;
 				localStorage['class'] = subtype;
-				localStorage['type'] = '必修';
+				localStorage['type'] = 'mixed';
+				localStorage['displayType'] = '';
 			}
 			this.$router.push('/course/');
 		},
