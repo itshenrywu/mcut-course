@@ -69,7 +69,7 @@
 			</div>
 		</section>
 		<div class="ts-container has-top-spaced-huge">
-			<div class="ts-grid has-top-spaced-huge is-stretched">
+			<div class="ts-grid has-top-spaced-huge">
 				<div class="column is-8-wide tablet-fluid">
 					<div class="ts-box is-raised" @click="goDetailSearch('')">
 						<div class="ts-content">
