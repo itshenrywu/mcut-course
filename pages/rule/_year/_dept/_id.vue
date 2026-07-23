@@ -879,7 +879,7 @@ export default {
 				})
 				.then((res) => {
 					if (res.isConfirmed) {
-						this.showFindCourse('00700F');
+						this.showFindCourse('社會實踐');
 					}
 				});
 			}

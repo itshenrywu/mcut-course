@@ -91,8 +91,8 @@
 				<div class="column is-4-wide tablet-half">
 					<div class="ts-box" @click="goDetailSearch('社會實踐')" :class="{'locked': isLocked('社會實踐')}">
 						<div class="ts-content">
-							<div class="ts-header">{{ currentTerm.split('-')[0] <= 112 ? '經典教育與社會實踐':'永續發展與社會實踐' }}</div>
-							<div class="ts-text is-small is-description">通識中心 X+1 課程</div>
+							<div class="ts-header">永續發展與社會實踐</div>
+							<div class="ts-text is-small is-description"> / 經典教育與社會實踐</div>
 						</div>
 						<div class="symbol"><span class="ts-icon is-repeat-icon"></span></div>
 					</div>
@@ -341,7 +341,7 @@ export default {
 			}
 			else if (type == '社會實踐') {
 				localStorage['dept'] = '通識中心四技';
-				localStorage['searchQuery'] = '00700F';
+				localStorage['searchQuery'] = '社會實踐';
 				localStorage['class'] = '';
 				localStorage['type'] = '';
 				localStorage['displayType'] = '1';
