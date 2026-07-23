@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/2170/0U03", {data:[{course:{time:[["1","1~4"],["2","2~3"]],id:"109321700U03",name:"套裝程式與資料分析",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"王建智",credit:"3",classroom:"",max:"50",min:"5",comment:"與三甲合班 帶狀課程7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]});

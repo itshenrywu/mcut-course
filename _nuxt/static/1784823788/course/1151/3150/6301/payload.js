@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3150/6301", (function(a,b){return {data:[{course:{time:[["1",b],[a,b]],id:"115131506301",name:"傢俱設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"高清漢",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"●帶狀課程：6\u002F29~8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","1~3")));

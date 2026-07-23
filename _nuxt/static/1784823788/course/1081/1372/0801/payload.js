@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1372/0801", (function(a,b){return {data:[{course:{time:[[b,"5~8"]],id:"108113720801",name:"有機化學(一)",type:"重修",dept:"四技化工系",year:a,class:"重",teacher:"謝榮忠",credit:a,hour:a,max:"48",min:b,comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/1L05", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"115100701L05",name:"專業研究實習前素養訓練",type:"必修",dept:"四技化工系",year:"3",class:"甲",teacher:"盧奕廷",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"上課時間9週：6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

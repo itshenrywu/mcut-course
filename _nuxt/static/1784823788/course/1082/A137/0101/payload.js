@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/A137/0101", (function(a){return {data:[{course:{time:[["7","1~1"]],id:"1082A1370101",name:"綠色化學技術叢論",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"陳政佑",credit:a,hour:a,max:"40",min:"10",comment:"第1階段",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

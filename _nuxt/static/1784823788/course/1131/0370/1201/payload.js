@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0370/1201", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113103701201",name:"國際關係",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"盧信吉",credit:b,hour:b,classroom:"",max:"55",min:"10",comment:"數位行銷(甲+乙)、工智",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

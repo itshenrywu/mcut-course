@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3070/1Q01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"114230701Q01",name:"履歷與作品集設計",type:"選修",dept:"四技行設專班",year:"4",class:"乙",teacher:"陳容蔚",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"行設四甲合併上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

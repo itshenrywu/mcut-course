@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/2070/2A02", (function(a,b){return {data:[{course:{time:[["1",a],["2",a]],id:"114320702A02",name:"電池組裝與分析實作",type:"重修",dept:"環實務",year:"4",class:"暑",teacher:"洪太峰",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("9~11","3")));

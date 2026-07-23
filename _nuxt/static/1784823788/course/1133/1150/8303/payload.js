@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1150/8303", (function(a){return {data:[{course:{time:[["2","1~4"]],id:"113311508303",name:"模具設計與製造",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"江信遠",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"併機三甲",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

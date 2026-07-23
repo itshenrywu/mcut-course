@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0670/0A01", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"111106700A01",name:"體育(三)排球",type:"選修",dept:"體育組-四技(日)",year:b,class:"甲",teacher:"林柏化",credit:a,hour:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

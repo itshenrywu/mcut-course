@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1550/0303", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"109115500303",name:"固態電子學",type:"選修",dept:"四技電子系",year:"2",class:"乙",teacher:"曾宗亮",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班，微電子模組必需完成選修課程。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2270/0Y03", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"114222700Y03",name:"應用統計",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"黃銘圭",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

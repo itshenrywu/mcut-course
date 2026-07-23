@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3070/3402", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114230703402",name:"多媒體創作",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"何孟翰",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"甲乙合班上課",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1270/0I02", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"111112700I02",name:"工程倫理與專業實務講座",type:"必修",dept:"四技電機系",year:"4",class:"乙",teacher:"陳瓊安",credit:"1",hour:"3",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

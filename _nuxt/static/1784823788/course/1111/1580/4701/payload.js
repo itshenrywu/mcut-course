@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1580/4701", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"111115804701",name:"嵌入式微處理器系統",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"唐明中",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

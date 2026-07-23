@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/0070/0206", {data:[{course:{time:[["7","8~8"]],id:"108200700206",name:"工讀實務實習(二)",type:"必修",dept:"四技視傳系",year:"3",class:"甲",teacher:"楊朝明",credit:"4",hour:"29",max:"59",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

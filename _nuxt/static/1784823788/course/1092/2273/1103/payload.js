@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/2273/1103", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"109222731103",name:"商用英文(三)",type:"重修",dept:"四技經管系",year:a,class:"重",teacher:"夏珮玲",credit:"1",classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

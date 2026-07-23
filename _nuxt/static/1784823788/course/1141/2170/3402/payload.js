@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2170/3402", (function(a,b){return {data:[{course:{time:[[a,b],["4","0.5~1"],["5",b]],id:"114121703402",name:"實務專題(一)",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"張秉裕",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3","0.5~0.5")));

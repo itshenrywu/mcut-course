@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2270/3901", (function(a,b){return {data:[{course:{time:[["4",b],["5",b]],id:"114122703901",name:"投資學",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"張家瑞",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3","6~8")));

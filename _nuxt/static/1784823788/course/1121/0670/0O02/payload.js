@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0670/0O02", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"112106700O02",name:"體育(一)",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"吳宇豐",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"與工設系合班",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

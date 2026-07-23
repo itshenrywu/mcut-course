@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/0270/0T06", {data:[{course:{time:[["1","5~6"]],id:"110202700T06",name:"英文實務(四)",type:"必修",dept:"外文組-四技(日)",year:"4",class:"甲",teacher:"陳嘉蕙",credit:"0",hour:"2",classroom:"",max:"56",min:"10",comment:"材料+環安+環實務",otherinfo:null}}],fetch:{},mutations:[]});

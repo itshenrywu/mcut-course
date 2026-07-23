@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/0L01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"113105700L01",name:"電與生活",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"賴文正",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"工程學院學生不得選修",otherinfo:"自然科學與環境永續"}}],fetch:{},mutations:[]}}("2")));

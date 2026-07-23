@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2901", (function(a,b){return {data:[{course:{time:[["5","5~8"]],id:"114162702901",name:"資訊安全",type:"選修",dept:"人工智慧學程",year:a,class:"甲",teacher:"羅安良",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/2580/0801", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"110125800801",name:"高等生產管理",type:"選修",dept:"工管系碩士班",year:a,class:"甲",teacher:"張秉裕",credit:b,hour:b,classroom:"",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

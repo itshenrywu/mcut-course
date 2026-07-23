@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1380/0602", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"114113800602",name:"化工程序模擬",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"蔡榮進",credit:a,hour:a,classroom:b,max:"40",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1GP0/0801", (function(a){return {data:[{course:{time:[["4","9~11"]],id:"11311GP00801",name:"國內外重要醫療器材法規概要",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"劉恒良",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

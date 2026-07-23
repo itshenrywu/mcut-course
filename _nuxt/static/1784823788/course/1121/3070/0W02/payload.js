@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3070/0W02", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"112130700W02",name:"行銷管理",type:"必修",dept:"四技行設專班",year:a,class:"乙",teacher:"孫儷芳",credit:b,hour:b,classroom:"",max:"35",min:"10",comment:"與行設一甲合班",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

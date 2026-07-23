@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1574/2101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"110115742101",name:"半導體封裝",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"王志良",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"甲乙合班授課。",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

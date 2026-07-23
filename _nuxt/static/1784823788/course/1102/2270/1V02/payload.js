@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2270/1V02", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"110222701V02",name:"生產與作業管理",type:"必修",dept:"四技經管系",year:a,class:"乙",teacher:"陳世民",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

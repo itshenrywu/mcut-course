@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0670/0516", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"113206700516",name:"體育(二)",type:"必修",dept:"四技工管系",year:b,class:"甲",teacher:"林柏化",credit:b,hour:a,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","1","")));

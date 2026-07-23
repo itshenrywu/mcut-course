@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1870/2G03", (function(a,b,c){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"],[b,"1~3"]],id:"114318702G03",name:"材料物理性質",type:"重修",dept:"四技材工系",year:"4",class:"暑",teacher:"姚栢文",credit:c,hour:c,classroom:"",max:"20",min:b,comment:"6\u002F29~8\u002F28上課，與大三甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("2","5","3")));

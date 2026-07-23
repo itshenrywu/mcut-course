@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1580/3501", (function(a,b){return {data:[{course:{time:[[a,"6~8"]],id:"111215803501",name:"行動通訊",type:"選修",dept:"電子系碩士班",year:a,class:"甲",teacher:"黎玉線",credit:b,hour:b,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

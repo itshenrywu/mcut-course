@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/saved", (function(a,b,c,d){return {data:[{terms:[{year:"115",term:[a,b]},{year:"114",term:[a,b,c,d]},{year:"113",term:[a,b,c,d]},{year:"112",term:[a,b,c,d]},{year:"111",term:[a,b,c,d]},{year:"110",term:[a,b,c,d]},{year:"109",term:[a,b,c,d]},{year:"108",term:[a,b,c,d]}],default_term:"115-1"}],fetch:{},mutations:[]}}("1","2","3","4")));

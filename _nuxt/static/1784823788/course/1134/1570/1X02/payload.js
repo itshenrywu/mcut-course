@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1134/1570/1X02", (function(a){return {data:[{course:{time:[["3","5~8"]],id:"113415701X02",name:"專題初探",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"許宏彬",credit:a,hour:a,classroom:"",max:"80",min:"10",comment:"限電子系一年級選課",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

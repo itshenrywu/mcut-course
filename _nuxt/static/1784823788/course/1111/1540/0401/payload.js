@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1540/0401", (function(a,b,c){return {data:[{course:{time:[[a,"9~11"]],id:"111115400401",name:"電路學",type:"重修",dept:"四技電子系",year:a,class:"重",teacher:"賴文正",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

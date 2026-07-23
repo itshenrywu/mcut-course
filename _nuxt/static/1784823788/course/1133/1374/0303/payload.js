@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/1374/0303", (function(a,b,c){return {data:[{course:{time:[[b,"5~6"],[a,"1~2"]],id:"113313740303",name:"單元操作與輸送現象(二)",type:"重修",dept:"四技化工系",year:"4",class:"暑",teacher:"簡良榮",credit:a,hour:a,classroom:c,max:a,min:b,comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/1L04", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"115100701L04",name:"專業研究實習前素養訓練",type:"必修",dept:"半導體學程",year:"3",class:"甲",teacher:"張峻瑜",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"●上課期間：6\u002F29~8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

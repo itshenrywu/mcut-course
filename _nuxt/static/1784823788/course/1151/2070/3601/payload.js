@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/3601", (function(a,b){return {data:[{course:{time:[["4",b],["5",b]],id:"115120703601",name:"材料物理性質",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"張峻瑜",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"●上課期間：6\u002F29~8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","2~4")));

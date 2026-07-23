@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1070/0801", (function(a){return {data:[{course:{time:[["3","6~8"]],id:"109210700801",name:"跨領域頂石專題(四)",type:"選修",dept:"工程學院",year:"4",class:"甲",teacher:"梁晶煒",credit:"1",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

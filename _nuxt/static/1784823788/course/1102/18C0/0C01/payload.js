@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/18C0/0C01", (function(a){return {data:[{course:{time:[["6","7~9"]],id:"110218C00C01",name:"鋼鐵製程冶煉概論",type:"選修",dept:"四技進修部材工系",year:a,class:"甲",teacher:"簡順億",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"新聘教師-簡順億",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

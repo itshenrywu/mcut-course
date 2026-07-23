@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/6280/0I01", (function(a){return {data:[{course:{time:[[a,"6~8"]],id:"114262800I01",name:"生成式AI應用系統與工程",type:"選修",dept:"TAICA",year:"1",class:"甲",teacher:"劉豐瑞",credit:a,hour:a,classroom:"",max:"無上限",min:"無下限",comment:"TAICA-成大開課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1170/1I01", (function(a,b){return {data:[{course:{time:[[a,"3~4"],[a,"5~5"]],id:"112111701I01",name:"熱流工程實驗",type:"必修",dept:"四技機械系",year:"4",class:"甲",teacher:"張雅竹",credit:"2",hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

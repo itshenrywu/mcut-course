@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1673/0301", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"110116730301",name:"環境規劃管理",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"劉豐瑞",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

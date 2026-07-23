@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3170/1A01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"110131701A01",name:"數位工具應用",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"賴宛吟",credit:b,hour:b,classroom:"",max:"56",min:"10",comment:"限修過工設系「基本產品設計」之學生可選",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

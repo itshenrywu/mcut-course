@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/0404/0101", (function(a){return {data:[{course:{time:[[a,"5~7"],["5","2~4"]],id:"114304040101",name:"普通物理",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"查厚錦",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"上課時間：6\u002F29-8\u002F28，可抵普通物理(一)。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

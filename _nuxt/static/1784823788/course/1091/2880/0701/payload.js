@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2880/0701", (function(a){return {data:[{course:{time:[["2","6~8"]],id:"109128800701",name:"土壤化學",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"崔砢",credit:a,hour:a,classroom:"",max:"16",min:"5",comment:"全英語授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

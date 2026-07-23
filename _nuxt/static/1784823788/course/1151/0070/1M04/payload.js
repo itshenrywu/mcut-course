@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/1M04", (function(a,b){return {data:[{course:{time:[[a,b],["2",b]],id:"115100701M04",name:"海外交換學習前素養訓練",type:"必修",dept:"四技材工系",year:"3",class:"乙",teacher:"彭坤增",credit:a,hour:a,classroom:"",max:"100",min:"無下限",comment:"上課時間9週：6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("1","0.5~0.5")));

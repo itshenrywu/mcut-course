@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3373/0902", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"113133730902",name:"視覺介面設計",type:"選修",dept:"四技視傳系",year:a,class:"甲",teacher:"李昌國",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"管院可修跨領域帶狀課程：上課時間為7\u002F1~8\u002F30",otherinfo:null}}],fetch:{},mutations:[]}}("3","6~8")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2150/8002", (function(a,b){return {data:[{course:{time:[[a,"7~8"],[b,"5~6"]],id:"108121508002",name:"人因工程(含實習)",type:"必修",dept:"四技工管系",year:"2",class:"乙",teacher:"林伯鴻",credit:a,hour:b,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

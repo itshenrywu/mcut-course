@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1113/0404/0112", (function(a,b,c,d){return {data:[{course:{time:[[a,b],["5",b]],id:"111304040112",name:"普通物理",type:"重修",dept:"自然組(二)-四技(日)",year:a,class:"暑",teacher:"蘇莉真",credit:c,hour:c,classroom:d,max:"48",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:[]}}("4","2~4","3","")));

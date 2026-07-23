@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1152/0070/1511", (function(a){return {data:[{course:{time:[["7","7~7"]],id:"115200701511",name:"工讀實務實習(一)",type:"必修",dept:"四技環安衛系",year:"3",class:"甲",teacher:"許金玉",credit:"4",hour:"40",classroom:a,max:"50",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

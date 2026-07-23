@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/3070/4114", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"114330704114",name:"創意整合實作",type:"重修",dept:"四技工管系",year:"4",class:"暑",teacher:"游淑萍",credit:a,hour:"2",classroom:"",max:"56",min:a,comment:"暑修併三甲塊狀6\u002F2-6\u002F10",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1270/1C01", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"113112701C01",name:"量測儀器應用實務",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"邱聰輝",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

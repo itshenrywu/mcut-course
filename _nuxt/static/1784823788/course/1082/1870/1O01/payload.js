@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1870/1O01", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"108218701O01",name:"計算機應用實務",type:"選修",dept:"四技材工系",year:"1",class:"甲",teacher:"蔡易樺",credit:a,hour:a,max:"50",min:"10",comment:"材一甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

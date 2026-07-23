@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2070/0P01", (function(a,b){return {data:[{course:{time:[["6","1~2"]],id:"110220700P01",name:"實務專題導論",type:"選修",dept:"環實務",year:a,class:"甲",teacher:"吳永富",credit:"1",hour:a,classroom:b,max:"24",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

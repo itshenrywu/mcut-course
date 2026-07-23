@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/2S03", (function(a,b){return {data:[{course:{time:[[a,"8~8.5"]],id:"115111702S03",name:"專題設計(二)",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"蔡習訓",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"●上課日期:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

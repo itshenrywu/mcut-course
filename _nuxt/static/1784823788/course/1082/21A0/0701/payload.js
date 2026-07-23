@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/21A0/0701", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108221A00701",name:"人力資源管理專題研討",type:"選修",dept:"工管系碩專班",year:"1",class:"甲",teacher:"游淑萍",credit:a,hour:a,max:"25",min:"無下限",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

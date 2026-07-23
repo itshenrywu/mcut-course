@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1572/1704", {data:[{course:{time:[["5","9~12"]],id:"109315721704",name:"工程數學(一)",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"王逸平",credit:"3",classroom:"",max:"10",min:"1",comment:"併110三上課程。",otherinfo:null}}],fetch:{},mutations:[]});

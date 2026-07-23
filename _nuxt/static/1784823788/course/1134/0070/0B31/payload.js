@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1134/0070/0B31", (function(a,b,c){return {data:[{course:{time:[["7","9~9"]],id:"113400700B31",name:"工讀實務實習(三)",type:"重修",dept:"四技化工系",year:a,class:"暑",teacher:"陳順基",credit:a,hour:"29",classroom:b,max:c,min:c,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","","1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/2070/1H02", (function(a,b){return {data:[{course:{time:[[a,b],["3",b]],id:"114320701H02",name:"電化學工程",type:"重修",dept:"半導體學程",year:"4",class:"暑",teacher:"吳永富",credit:a,hour:a,classroom:"",max:"48",min:"無下限",comment:"上課期間6\u002F29~8\u002F28，併入大三班上課。",otherinfo:null}}],fetch:{},mutations:[]}}("2","1~2")));

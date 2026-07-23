@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/0170/0F07", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"110101700F07",name:"文學鑑賞與情意表達",type:"必修",dept:"四技化工系",year:a,class:"乙",teacher:"楊穎詩",credit:b,hour:b,classroom:c,max:"54",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2070/0F01", (function(a,b){return {data:[{course:{time:[[a,"9~11"]],id:"110220700F01",name:"Python語言與應用",type:"選修",dept:"環資學院",year:a,class:"甲",teacher:"吳鉉忠",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"環資一年級可選",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

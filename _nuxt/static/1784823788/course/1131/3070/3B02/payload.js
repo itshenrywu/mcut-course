@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3070/3B02", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"113130703B02",name:"網站流量數據分析",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"孫儷芳",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"塊狀課程6\u002F14~6\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

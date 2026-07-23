@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1571/0501", (function(a){return {data:[{course:{time:[["5","5~8"]],id:"111115710501",name:"網路概論",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"黃植振",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"跨領域專班(本系可修)",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

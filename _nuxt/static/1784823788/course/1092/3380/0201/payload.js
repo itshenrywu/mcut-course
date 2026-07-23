@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/3380/0201", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"109233800201",name:"視覺傳達設計(二)",type:"必修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"薛惠月",credit:"3",classroom:a,max:"30",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/0G06", (function(a,b,c){return {data:[{course:{time:[[a,"2~2"],["2","3~4"]],id:"113105700G06",name:"普通物理",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"劉岳峰",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

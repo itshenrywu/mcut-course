@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/3370/4101", {data:[{course:{time:[["3","5~8"],["5","1~4"]],id:"108133704101",name:"專題設計(一)",type:"必修",dept:"四技視傳系",year:"4",class:"甲",teacher:"莊妙仙",credit:"6",hour:"8",max:"53",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]});

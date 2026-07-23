@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3150/7701", (function(a,b){return {data:[{course:{time:[["2",b],["4",b]],id:"110131507701",name:"塑膠成型品設計",type:"選修",dept:"四技工設系",year:a,class:"甲",teacher:"陳建志",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"帶狀課程：上課時間為7\u002F5-9\u002F3",otherinfo:null}}],fetch:{},mutations:[]}}("3","5~7")));

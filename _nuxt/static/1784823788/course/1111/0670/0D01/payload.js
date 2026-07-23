@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/0670/0D01", (function(a,b){return {data:[{course:{time:[["5","3~4"]],id:"111106700D01",name:"體育(三)健身雕塑",type:"選修",dept:"體育組-四技(日)",year:a,class:"甲",teacher:"楊福珍",credit:"1",hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

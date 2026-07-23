@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2150/7701", (function(a,b){return {data:[{course:{time:[["2",b],[a,b]],id:"115121507701",name:"物料管理",type:"選修",dept:"四技工管系",year:a,class:"甲",teacher:"陳明發",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"●帶狀課程6\u002F29-8\u002F28 甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","5~7")));

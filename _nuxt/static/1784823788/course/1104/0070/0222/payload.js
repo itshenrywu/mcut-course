@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1104/0070/0222", (function(a,b){return {data:[{course:{time:[["7","8~8"]],id:"110400700222",name:"工讀實務實習(二)",type:"重修",dept:"環實務",year:a,class:"暑",teacher:"謝建國",credit:a,hour:"29",classroom:b,max:"10",min:"1",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1270/4201", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"111112704201",name:"數位控制",type:"選修",dept:"四技電機系",year:a,class:"甲",teacher:"謝飛虎",credit:b,hour:b,classroom:"",max:"30",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

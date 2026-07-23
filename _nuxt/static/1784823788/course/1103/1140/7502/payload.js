@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1140/7502", (function(a,b){return {data:[{course:{time:[["1","7~8"],[a,"1~2"]],id:"110311407502",name:"內燃機",type:"重修",dept:"四技機械系",year:a,class:"暑",teacher:"黃道易",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"併機三丙",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

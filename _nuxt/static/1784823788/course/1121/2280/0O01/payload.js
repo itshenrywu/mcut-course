@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2280/0O01", (function(a,b,c){return {data:[{course:{time:[[a,"6~8"]],id:"112122800O01",name:"基金管理",type:"選修",dept:"經管系碩士班",year:a,class:"甲",teacher:"雷迪宇",credit:b,hour:b,classroom:c,max:"30",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

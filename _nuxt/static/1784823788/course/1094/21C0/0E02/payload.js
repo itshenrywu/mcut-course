@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1094/21C0/0E02", (function(a){return {data:[{course:{time:[["5","9~12"],["6","7~8"]],id:"109421C00E02",name:"工作研究",type:"重修",dept:"四技進修部工管系",year:"1",class:"暑",teacher:"郭佳珍",credit:"3",classroom:a,max:"50",min:"2",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

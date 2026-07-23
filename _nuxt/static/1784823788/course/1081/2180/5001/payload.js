@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2180/5001", (function(a){return {data:[{course:{time:[[a,"6~8"]],id:"108121805001",name:"台塑企業管理機能研討",type:"必修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"王建智",credit:"0",hour:a,max:"25",min:"5",comment:"與經管系碩士班併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

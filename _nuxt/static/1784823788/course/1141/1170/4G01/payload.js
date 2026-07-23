@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/1170/4G01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"114111704G01",name:"專題製作(一)",type:"必修",dept:"四技機械系",year:"4",class:"丁",teacher:"陳明光",credit:"2",hour:a,classroom:"",max:"60",min:"10",comment:"限機械國際專班，English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

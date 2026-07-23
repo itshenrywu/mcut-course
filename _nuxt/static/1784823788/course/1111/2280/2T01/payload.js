@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/2280/2T01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"111122802T01",name:"設計思考與商業模式創新",type:"選修",dept:"國際企業管理碩士",year:"2",class:"甲",teacher:"陳昭蓉",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

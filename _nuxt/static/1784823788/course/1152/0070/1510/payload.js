@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1152/0070/1510", (function(a){return {data:[{course:{time:[["7","7~7"]],id:"115200701510",name:"工讀實務實習(一)",type:"必修",dept:"四技電機系",year:"3",class:"甲",teacher:"邱聰輝",credit:"4",hour:"40",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

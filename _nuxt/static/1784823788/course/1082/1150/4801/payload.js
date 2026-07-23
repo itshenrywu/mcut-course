@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1150/4801", (function(a){return {data:[{course:{time:[[a,"1~1"],["5","5~6"]],id:"108211504801",name:"工程熱力學(二)",type:"選修",dept:"四技機械系",year:"2",class:"甲",teacher:"王添益",credit:a,hour:a,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

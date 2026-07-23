@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/0Q02", {data:[{course:{time:[["5","5~8"]],id:"115111700Q02",name:"實習前技術訓練",type:"必修",dept:"四技機械系",year:"3",class:"乙",teacher:"陳源林",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"●上課日期:6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]});

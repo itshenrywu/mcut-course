@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/1860/0801", (function(a,b,c){return {data:[{course:{time:[["2",b],[a,b]],id:"110118600801",name:"物理冶金(一)",type:"重修",dept:"四技材工系",year:a,class:"重",teacher:"黃宗鈺",credit:a,hour:a,classroom:c,max:"34",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","5~6","")));

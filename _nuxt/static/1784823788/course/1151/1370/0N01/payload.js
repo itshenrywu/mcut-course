@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1370/0N01", (function(a){return {data:[{course:{time:[["4","7~8.5"],["5","1~3"]],id:"115113700N01",name:"程序控制與實驗",type:"選修",dept:"四技化工系",year:a,class:"甲",teacher:"傅俊中",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"●甲乙合班,6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1270/3V02", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"115112703V02",name:"海外移地教學",type:"選修",dept:"四技電機系",year:"3",class:"甲",teacher:"祁存廣",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"○◎甲乙合班,上課日期:6\u002F1-6\u002F26,時間另公告。",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

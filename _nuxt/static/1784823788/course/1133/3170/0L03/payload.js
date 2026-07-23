@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1133/3170/0L03", (function(a,b){return {data:[{course:{time:[[a,"1~3"],[b,"5~7"]],id:"113331700L03",name:"互動設計",type:"重修",dept:"四技工設系",year:b,class:"暑",teacher:"賴宛吟",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"暑修併三甲帶狀6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2172/0304", (function(a,b,c){return {data:[{course:{time:[[a,b],[c,b]],id:"108121720304",name:"統計學(含實習)(二)",type:"必修",dept:"四技工管系",year:a,class:"乙",teacher:"俞凱允",credit:c,hour:"4",max:"68",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","5~6","3")));

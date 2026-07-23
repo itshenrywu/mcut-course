@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/0070/0B03", (function(a){return {data:[{course:{time:[["7","9~9"]],id:"111200700B03",name:"工讀實務實習(三)",type:"必修",dept:"四技化工系",year:"3",class:"甲",teacher:"李英正",credit:"4",hour:"29",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

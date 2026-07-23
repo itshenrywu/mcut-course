@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/61P0/0701", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"108161P00701",name:"奈米科技與電池材料合成技術",type:"選修",dept:"能源電池博士班",year:a,class:"甲",teacher:"楊純誠",credit:b,hour:b,max:"20",min:a,comment:"全英文授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

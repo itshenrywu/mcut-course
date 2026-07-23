@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/2K02", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"114130702K02",name:"專業實務講座",type:"必修",dept:"行銷設計學程",year:"4",class:"甲",teacher:"孫儷芳",credit:"1",hour:"3",classroom:a,max:"35",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

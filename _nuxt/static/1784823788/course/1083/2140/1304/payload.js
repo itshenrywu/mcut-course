@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/2140/1304", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"108321401304",name:"作業研究(含實習)(一)",type:"重修",dept:"四技工管系",year:a,class:"暑",teacher:"俞凱允",credit:"3",hour:a,max:"60",min:"10",comment:"帶狀7\u002F6-9\u002F4 甲乙合班 與大三重併班",otherinfo:null}}],fetch:{},mutations:[]}}("4","5~8")));

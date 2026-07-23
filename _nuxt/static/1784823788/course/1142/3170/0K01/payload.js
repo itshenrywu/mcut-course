@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/3170/0K01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"114231700K01",name:"進階交通工具設計",type:"選修",dept:"四技工設系",year:"2",class:"甲",teacher:"陳鵬仁",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"授課教師：陳鵬仁老師",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

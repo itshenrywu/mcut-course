@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/0R11", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"115100700R11",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"蒲彥光",credit:a,hour:a,classroom:"",max:"50",min:"15",comment:"●在地文化創意行動-7\u002F6-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

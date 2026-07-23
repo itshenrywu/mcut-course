@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1270/0T03", (function(a,b,c){return {data:[{course:{time:[[a,b],["5",b]],id:"111112700T03",name:"電機機械與實習",type:"重修",dept:"四技電機系",year:a,class:"重",teacher:"蘇益立",credit:a,hour:"4",classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("3","9~11","")));

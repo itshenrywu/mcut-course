@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1572/0501", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"110215720501",name:"網路實務進階",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"羅安良",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

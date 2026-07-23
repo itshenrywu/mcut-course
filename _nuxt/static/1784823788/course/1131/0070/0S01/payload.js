@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0070/0S01", (function(a,b){return {data:[{course:{time:[["7","2~2"]],id:"113100700S01",name:"宿舍幹部領導與實務(一)",type:"選修",dept:"通識中心四技",year:a,class:"丙",teacher:"黃志偉",credit:a,hour:a,classroom:b,max:"50",min:"無下限",comment:b,otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("1","")));

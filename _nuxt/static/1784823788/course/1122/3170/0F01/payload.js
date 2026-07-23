@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/3170/0F01", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"112231700F01",name:"進階電腦繪圖",type:"選修",dept:"四技工設系",year:"1",class:"甲",teacher:"莊明憲",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"授課老師：莊明憲老師",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0170/0G18", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"112201700G18",name:"藝文涵養與社會參與",type:"必修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"張淑芬",credit:a,hour:a,classroom:b,max:"35",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

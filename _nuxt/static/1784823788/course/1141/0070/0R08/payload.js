@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0070/0R08", (function(a){return {data:[{course:{time:[[a,"5~6"]],id:"114100700R08",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"林美良",credit:a,hour:a,classroom:"",max:"40",min:"15",comment:"主題：眾神的遊戲",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2780/6401", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"109127806401",name:"高等細胞生物學",type:"選修",dept:"化工系生工碩士班",year:a,class:"甲",teacher:"劉昭麟",credit:b,hour:b,classroom:c,max:"30",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1680/0L01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"114216800L01",name:"空氣污染物控制技術",type:"選修",dept:"環安衛系碩士班",year:a,class:"甲",teacher:"許金玉",credit:b,hour:b,classroom:"",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

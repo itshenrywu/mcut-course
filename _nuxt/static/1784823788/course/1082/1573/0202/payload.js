@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1573/0202", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108215730202",name:"計算機輔助電路設計",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"陳華彬",credit:b,hour:b,max:"25",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

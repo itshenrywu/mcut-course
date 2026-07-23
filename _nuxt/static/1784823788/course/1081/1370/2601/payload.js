@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1370/2601", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"108113702601",name:"數值分析",type:"選修",dept:"四技化工系",year:"4",class:"甲",teacher:"蔡榮進",credit:b,hour:b,max:"42",min:"10",comment:"化四甲乙合班上課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

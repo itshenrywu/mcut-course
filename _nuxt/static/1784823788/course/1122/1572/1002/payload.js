@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1572/1002", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112215721002",name:"光電子學",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"田青禾",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班，微電子模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

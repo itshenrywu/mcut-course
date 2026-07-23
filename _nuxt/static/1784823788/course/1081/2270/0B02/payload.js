@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2270/0B02", {data:[{course:{time:[["5","6~8"]],id:"108122700B02",name:"商用英文(五)",type:"必修",dept:"四技經管系",year:"4",class:"乙",teacher:"林柏翰",credit:"0",hour:"3",max:"60",min:"10",comment:"甲乙併班上課",otherinfo:null}}],fetch:{},mutations:[]});

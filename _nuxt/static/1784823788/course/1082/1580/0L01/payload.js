@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1580/0L01", (function(a){return {data:[{course:{time:[["4","6~8"]],id:"108215800L01",name:"微波工程",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"謝滄岩",credit:a,hour:a,max:"30",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

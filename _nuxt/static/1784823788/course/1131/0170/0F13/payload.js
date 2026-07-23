@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/0F13", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"113101700F13",name:"文學鑑賞與情意表達",type:"必修",dept:"四技視傳系",year:a,class:"甲",teacher:"施依吾",credit:b,hour:b,classroom:c,max:"54",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","2","")));

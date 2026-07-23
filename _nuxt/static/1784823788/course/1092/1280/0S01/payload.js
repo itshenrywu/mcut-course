@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1280/0S01", (function(a){return {data:[{course:{time:[["4","5~6"]],id:"109212800S01",name:"智慧通訊組書報討論(四)",type:"必修",dept:"電機系碩士班",year:"2",class:"甲",teacher:"蔡文星",credit:"0",classroom:a,max:"20",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

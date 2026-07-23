@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0070/0207", (function(a){return {data:[{course:{time:[["7","8~8"]],id:"113200700207",name:"工讀實務實習(二)",type:"必修",dept:"四技材工系",year:"3",class:"乙",teacher:"姚栢文",credit:"4",hour:"29",classroom:a,max:"40",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

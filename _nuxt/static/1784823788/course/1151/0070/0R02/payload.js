@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/0R02", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"115100700R02",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"柳薇芬",credit:a,hour:a,classroom:"",max:"40",min:"15",comment:"●從永續認識企業社會責任及ESG(6\u002F29-8\u002F28)",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

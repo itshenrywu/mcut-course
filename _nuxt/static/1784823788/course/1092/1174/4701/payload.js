@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1174/4701", (function(a,b){return {data:[{course:{time:[[a,"5~5"],["5","8~8.5"]],id:"109211744701",name:"行銷管理",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"張文慶",credit:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

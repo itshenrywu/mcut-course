@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1GP0/1H01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"11311GP01H01",name:"電化學應用於生物醫學",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"曼尼",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

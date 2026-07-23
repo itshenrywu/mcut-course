@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1270/2Z01", (function(a){return {data:[{course:{time:[["2","4~4"],["5","3~4"]],id:"113112702Z01",name:"感測器",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"吳長洲",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

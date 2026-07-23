@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/1170/0S03", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108111700S03",name:"電動車機電整合工程實務",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"黃道易",credit:a,hour:a,max:"50",min:"10",comment:"工程學院四年級各系合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

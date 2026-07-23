@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/0072/1020", (function(a){return {data:[{course:{time:[["4","1~2"]],id:"112200721020",name:"英文實務(二)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"高興雲",credit:"0",hour:a,classroom:"",max:"65",min:"10",comment:"工管+經管+行設",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

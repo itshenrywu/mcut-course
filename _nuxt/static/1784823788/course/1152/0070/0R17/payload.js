@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1152/0070/0R17", (function(a){return {data:[{course:{time:[[a,"9~10"]],id:"115200700R17",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"甲",teacher:"沈明得",credit:a,hour:a,classroom:"",max:"30",min:"15",comment:"第2階段",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

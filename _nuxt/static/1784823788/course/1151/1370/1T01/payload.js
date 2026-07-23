@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1370/1T01", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"115113701T01",name:"塑膠基本原理與應用",type:"選修",dept:"四技化工系",year:"3",class:"甲",teacher:"吳紹榮",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"○甲乙合班，6\u002F15-6\u002F18上課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

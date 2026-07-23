@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1170/2E01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112111702E01",name:"車輛性能與測試檢驗",type:"必修",dept:"四技機械系",year:"4",class:"丙",teacher:"黃道易",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

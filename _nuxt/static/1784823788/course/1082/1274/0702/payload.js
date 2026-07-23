@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1274/0702", (function(a){return {data:[{course:{time:[[a,"8~8.5"],["5","8~8"]],id:"108212740702",name:"專題製作(四)",type:"必修",dept:"四技電機系",year:"4",class:"乙",teacher:"王柏仁",credit:"1",hour:a,max:"56",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

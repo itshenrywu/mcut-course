@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/3380/0901", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"112133800901",name:"品牌形象研究",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"劉瑞芬",credit:a,hour:a,classroom:b,max:"20",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

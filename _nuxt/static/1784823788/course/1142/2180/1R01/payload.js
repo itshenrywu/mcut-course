@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/2180/1R01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"114221801R01",name:"認知人因工程",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"張仁履",credit:a,hour:a,classroom:"",max:"10",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

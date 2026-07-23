@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/3R01", (function(a){return {data:[{course:{time:[["6","1~4"]],id:"115118703R01",name:"移地專業學習",type:"選修",dept:"四技材工系",year:"3",class:"甲",teacher:"劉定宇",credit:a,hour:a,classroom:"",max:"26",min:"10",comment:"○◎1週:6\u002F7-6\u002F14,甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

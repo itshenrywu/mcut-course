@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1272/1201", (function(a,b){return {data:[{course:{time:[[a,"7~8"],["5","4~4"]],id:"109112721201",name:"電子學(一)",type:"必修",dept:"四技電機系",year:"2",class:"甲",teacher:"林郁修",credit:a,hour:a,classroom:b,max:"68",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

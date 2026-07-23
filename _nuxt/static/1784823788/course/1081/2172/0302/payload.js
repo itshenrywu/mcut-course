@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2172/0302", (function(a,b){return {data:[{course:{time:[["2","9~12"],[a,"6~8"],[a,"9~9"]],id:"108121720302",name:"統計學(含實習)(二)",type:"重修",dept:"四技工管系",year:b,class:"重",teacher:"俞凱允",credit:b,hour:a,max:"60",min:"5",comment:"帶狀課程7\u002F8-9\u002F6，甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

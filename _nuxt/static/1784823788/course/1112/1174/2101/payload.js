@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1112/1174/2101", (function(a){return {data:[{course:{time:[["6","2~4"]],id:"111211742101",name:"生醫光電概論",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"鍾永強",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"第1階段。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

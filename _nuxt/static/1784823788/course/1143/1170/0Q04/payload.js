@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1170/0Q04", {data:[{course:{time:[["5","5~8"]],id:"114311700Q04",name:"實習前技術訓練",type:"重修",dept:"四技機械系",year:"4",class:"暑",teacher:"邱昱仁",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"上課日期:6\u002F29-8\u002F28，併機三甲。",otherinfo:null}}],fetch:{},mutations:[]});

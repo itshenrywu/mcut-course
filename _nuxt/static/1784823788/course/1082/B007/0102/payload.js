@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/B007/0102", (function(a){return {data:[{course:{time:[["7","6~6"]],id:"1082B0070102",name:"創新發明與生活應用",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"賴文正",credit:a,hour:a,max:"40",min:"10",comment:"第2階段",otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("2")));

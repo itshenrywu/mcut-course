@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1580/5001", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"109115805001",name:"數位影像處理技術",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"張創然",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"全英語授課。",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

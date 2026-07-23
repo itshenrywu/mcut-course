@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0670/0521", (function(a,b){return {data:[{course:{time:[["3","5~6"]],id:"114206700521",name:"體育(二)",type:"必修",dept:"四技機械系",year:a,class:"丙",teacher:"張意德",credit:a,hour:"2",classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

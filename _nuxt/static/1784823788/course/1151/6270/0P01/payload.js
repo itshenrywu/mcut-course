@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/0P01", (function(a,b){return {data:[{course:{time:[["4","7~8"],[b,"3~4"],[b,"5~6"]],id:"115162700P01",name:"深度學習",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"李建興",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"●上課日期:6\u002F29-8\u002F28。",otherinfo:null}}],fetch:{},mutations:[]}}("3","5")));

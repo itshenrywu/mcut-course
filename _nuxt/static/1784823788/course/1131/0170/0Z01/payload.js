@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0170/0Z01", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"113101700Z01",name:"貨幣與中國古代社會",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"張淑惠",credit:b,hour:b,classroom:c,max:"45",min:"10",comment:c,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("1","2","")));

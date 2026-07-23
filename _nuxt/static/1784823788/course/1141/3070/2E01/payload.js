@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/2E01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114130702E01",name:"會計學",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"林俊雄",credit:b,hour:b,classroom:"",max:"48",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

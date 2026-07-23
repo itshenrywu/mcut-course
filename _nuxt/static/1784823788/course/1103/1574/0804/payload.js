@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/1574/0804", (function(a,b){return {data:[{course:{time:[["5","5~8"]],id:"110315740804",name:"光電應用實務",type:"重修",dept:"四技電子系",year:"4",class:"暑",teacher:"許宏彬",credit:a,hour:a,classroom:"",max:b,min:b,comment:"併111三上(乙班)課程",otherinfo:null}}],fetch:{},mutations:[]}}("3","1")));

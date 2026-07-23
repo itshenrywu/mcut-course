@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1152/0070/1607", (function(a,b){return {data:[{course:{time:[["7","8~8"]],id:"115200701607",name:"工讀實務實習(二)",type:"必修",dept:"四技材工系",year:"3",class:"乙",teacher:"彭坤增",credit:"4",hour:a,classroom:b,max:a,min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("40","")));

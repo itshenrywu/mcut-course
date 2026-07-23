@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/B007/0301", {data:[{course:{time:[["7","6~6"]],id:"1092B0070301",name:"從生活中學英語",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"葉明倫",credit:"2",classroom:"",max:"25",min:"10",comment:"第2階段，全民英檢初級複試或 TOEIC 400分",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/1570/4802", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"],[b,"1~4"]],id:"114315704802",name:"系統程式",type:"重修",dept:"四技電子系",year:a,class:"暑",teacher:"董一志",credit:c,hour:c,classroom:"",max:b,min:"1",comment:"併115三上(甲班)課程",otherinfo:null}}],fetch:{},mutations:[]}}("4","5","3")));

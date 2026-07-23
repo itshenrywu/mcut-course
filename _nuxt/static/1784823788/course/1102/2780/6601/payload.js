@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/2780/6601", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"110227806601",name:"細胞組織培養",type:"選修",dept:"化工系生工碩士班",year:"1",class:"甲",teacher:"余佳純",credit:a,hour:a,classroom:"",max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/3C01", (function(a,b){return {data:[{course:{time:[[b,"2~4"],[b,"5~7"]],id:"115130703C01",name:"延展實境數位行銷展示",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"邱伯儒",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"●帶狀課程6\u002F29-8\u002F28 甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3","4")));

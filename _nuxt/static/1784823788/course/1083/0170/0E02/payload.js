@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1083/0170/0E02", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108301700E02",name:"魏晉玄學文選導讀",type:"重修",dept:"通識中心四技",year:"4",class:"暑",teacher:"楊穎詩",credit:b,hour:b,max:"6",min:a,comment:"與大三通識課程併班",otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("1","2")));

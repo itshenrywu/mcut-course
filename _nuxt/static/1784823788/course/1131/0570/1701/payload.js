@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/0570/1701", (function(a,b,c){return {data:[{course:{time:[[a,"5~6"]],id:"113105701701",name:"科學思維與應用",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"陳隆暉",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:"自然科學與環境永續"}}],fetch:{},mutations:[]}}("1","2","")));

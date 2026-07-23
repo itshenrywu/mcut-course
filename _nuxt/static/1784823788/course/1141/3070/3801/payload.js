@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/3801", (function(a){return {data:[{course:{time:[["1","5~7"],[a,"2~4"]],id:"114130703801",name:"品牌設計",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"楊正翔",credit:a,hour:a,classroom:"",max:"42",min:"10",comment:"甲乙合班 帶狀課程6\u002F30-8\u002F29",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

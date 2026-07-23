@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2170/1F02", (function(a,b){return {data:[{course:{time:[["2","5~6"],[a,"3~4"]],id:"113121701F02",name:"資訊概論(含實習)",type:"必修",dept:"四技工管系",year:"1",class:"乙",teacher:"邱慧怡",credit:"3",hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("4","")));

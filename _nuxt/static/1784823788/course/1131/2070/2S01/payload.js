@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/2070/2S01", (function(a,b){return {data:[{course:{time:[["3","3~4"]],id:"113120702S01",name:"半導體設備概論",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"吳永富",credit:a,hour:a,classroom:b,max:"48",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

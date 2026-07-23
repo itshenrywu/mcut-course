@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1170/4601", (function(a,b,c){return {data:[{course:{time:[["2","3~4"],[a,"2~2"]],id:"112111704601",name:"熱傳學",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"張雅竹",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

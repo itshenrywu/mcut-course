@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1670/2G01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"114216702G01",name:"淨零技術與能源管理",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"吳容銘",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

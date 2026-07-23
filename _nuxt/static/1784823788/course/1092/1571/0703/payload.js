@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1571/0703", {data:[{course:{time:[["5","2~4"]],id:"109215710703",name:"FPGA\u002FCPLD實務",type:"選修",dept:"四技電子系",year:"1",class:"乙",teacher:"黃樹林",credit:"3",classroom:"",max:"50",min:"10",comment:"甲乙合班授課，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]});

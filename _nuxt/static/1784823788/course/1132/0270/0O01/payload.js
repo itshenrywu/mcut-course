@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/0270/0O01", (function(a){return {data:[{course:{time:[[a,"9~10"]],id:"113202700O01",name:"英文故事選讀",type:"選修",dept:"通識中心四技",year:"3",class:"甲",teacher:"林美良",credit:a,hour:a,classroom:"",max:"25",min:"10",comment:"第1階段",otherinfo:"語言與全球化"}}],fetch:{},mutations:[]}}("2")));

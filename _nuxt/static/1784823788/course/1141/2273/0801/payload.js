@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/2273/0801", (function(a){return {data:[{course:{time:[["6","5~8"]],id:"114122730801",name:"國際禮儀",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"杜海勇",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班塊狀課程6\u002F13-6\u002F19",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

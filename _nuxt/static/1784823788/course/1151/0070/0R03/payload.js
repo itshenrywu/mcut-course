@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/0R03", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"115100700R03",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:"3",class:"乙",teacher:"李潔嵐",credit:a,hour:a,classroom:"",max:"40",min:"15",comment:"●西方童話與SDGs實踐-6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

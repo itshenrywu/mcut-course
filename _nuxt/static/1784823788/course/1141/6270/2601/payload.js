@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/6270/2601", (function(a,b){return {data:[{course:{time:[["4","3~4"]],id:"114162702601",name:"智慧機械概論",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"劉城甫",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("2","")));

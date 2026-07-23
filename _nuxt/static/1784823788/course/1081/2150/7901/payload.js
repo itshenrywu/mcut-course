@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2150/7901", (function(a,b,c){return {data:[{course:{time:[[a,b],["4",b],[c,"6~6"]],id:"108121507901",name:"生產管理(含實習)",type:"必修",dept:"四技工管系",year:a,class:"甲",teacher:"陳琨太",credit:"3",hour:c,max:"60",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("2","1~2","5")));

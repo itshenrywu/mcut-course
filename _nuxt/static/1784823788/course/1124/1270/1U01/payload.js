@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1124/1270/1U01", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"112412701U01",name:"專題製作(一)",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"王勝寬",credit:a,hour:a,classroom:b,max:"5",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

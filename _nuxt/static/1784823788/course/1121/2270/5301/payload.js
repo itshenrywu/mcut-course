@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/2270/5301", (function(a){return {data:[{course:{time:[[a,"2~4"],["4","5~7"]],id:"112122705301",name:"專案管理",type:"選修",dept:"四技經管系",year:a,class:"甲",teacher:"林俊雄",credit:a,hour:a,classroom:"",max:"20",min:"10",comment:"帶狀課程7\u002F3-9\u002F1甲乙合班併入管三甲",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

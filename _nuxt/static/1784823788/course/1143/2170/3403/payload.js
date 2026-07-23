@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/2170/3403", (function(a,b,c){return {data:[{course:{time:[["3",a],[b,"0.5~1"],["5",a]],id:"114321703403",name:"實務專題(一)",type:"重修",dept:"四技工管系",year:b,class:"暑",teacher:"陳琨太",credit:c,hour:"2",classroom:"",max:"60",min:c,comment:"暑修併三甲帶狀6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:[]}}("0.5~0.5","4","1")));

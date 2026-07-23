@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1380/1401", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"108213801401",name:"高等反應工程",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"楊純誠",credit:a,hour:a,max:"40",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

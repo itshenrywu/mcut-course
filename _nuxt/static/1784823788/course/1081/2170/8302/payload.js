@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2170/8302", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"108121708302",name:"企業資源規劃(二)",type:"選修",dept:"四技工管系",year:"4",class:"甲",teacher:"白恭瑞",credit:a,hour:a,max:"50",min:"10",comment:"甲乙併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

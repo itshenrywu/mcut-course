@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1270/2F01", (function(a){return {data:[{course:{time:[["3","7~7"]],id:"112112702F01",name:"專題實務",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"王勝寬",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

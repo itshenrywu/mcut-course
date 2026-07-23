@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/0070/0927", (function(a,b){return {data:[{course:{time:[["7","3~3"]],id:"114200700927",name:"實習前職場素養訓練",type:"重修",dept:"通識中心四技",year:"4",class:"重",teacher:"陳勝吉",credit:a,hour:a,classroom:b,max:"50",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

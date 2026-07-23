@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0170/0D01", (function(a){return {data:[{course:{time:[["7","3~4"]],id:"108101700D01",name:"鼓舞青春",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"蒲彥光",credit:a,hour:"2",max:"50",min:"10",comment:"",otherinfo:"自主學習"}}],fetch:{},mutations:[]}}("1")));

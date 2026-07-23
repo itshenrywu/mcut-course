@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1152/0070/1620", (function(a){return {data:[{course:{time:[["7","8~8"]],id:"115200701620",name:"工讀實務實習(二)",type:"必修",dept:"四技化工系",year:"3",class:"甲",teacher:"盧奕廷",credit:"4",hour:"40",classroom:a,max:"60",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:[]}}("")));

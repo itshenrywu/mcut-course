@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/0871/0203", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"112108710203",name:"普通化學實驗",type:"必修",dept:"環實務",year:a,class:"甲",teacher:"鄭有為",credit:a,hour:"3",classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("1","")));

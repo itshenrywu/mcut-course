@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1122/1880/1101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"112218801101",name:"奈米科技與應用",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"林孟芳",credit:b,hour:b,classroom:"",max:"30",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("5","3")));

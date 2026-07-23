@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1093/1240/5102", {data:[{course:{time:[["1","9~12"]],id:"109312405102",name:"程式設計",type:"重修",dept:"四技電機系",year:"4",class:"暑",teacher:"盧公瑜",credit:"3",classroom:"",max:"50",min:"5",comment:"暑修併四技三重上課",otherinfo:null}}],fetch:{},mutations:[]});

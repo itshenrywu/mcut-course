@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1860/1602", (function(a){return {data:[{course:{time:[[a,"6~8"]],id:"108218601602",name:"金屬材料",type:"選修",dept:"四技材工系",year:"2",class:"甲",teacher:"張奇龍",credit:a,hour:a,max:"84",min:"10",comment:"材二甲、乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

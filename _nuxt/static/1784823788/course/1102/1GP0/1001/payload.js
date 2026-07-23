@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1102/1GP0/1001", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"11021GP01001",name:"組織工程",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"王琪芸",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

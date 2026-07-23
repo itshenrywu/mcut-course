@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1F8U/1301", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"10921F8U1301",name:"天線導論",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"古家豪",credit:a,classroom:b,max:"20",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

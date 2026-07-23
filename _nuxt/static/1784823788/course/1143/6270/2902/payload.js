@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1143/6270/2902", (function(a,b){return {data:[{course:{time:[["2","1~4"],[a,"5~6"]],id:"114362702902",name:"資訊安全",type:"重修",dept:"人工智慧學程",year:a,class:"暑",teacher:"王得貴",credit:b,hour:b,classroom:"",max:"10",min:"1",comment:"上課日期:6\u002F29-8\u002F28，併工智三甲。",otherinfo:null}}],fetch:{},mutations:[]}}("4","3")));

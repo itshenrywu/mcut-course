@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1273/0201", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"114212730201",name:"綠色能源概論",type:"選修",dept:"四技電機系",year:"1",class:"甲",teacher:"莊世鏵",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

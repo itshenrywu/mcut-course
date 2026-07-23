@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1142/1570/4702", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"114215704702",name:"計算機結構",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"黃樹林",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"甲乙合班，資工系統模組選修",otherinfo:null}}],fetch:{},mutations:[]}}("2","3")));

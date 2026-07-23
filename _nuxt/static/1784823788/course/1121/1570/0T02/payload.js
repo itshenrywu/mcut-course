@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1570/0T02", (function(a){return {data:[{course:{time:[[a,"1~4"]],id:"112115700T02",name:"實習前技術訓練",type:"必修",dept:"四技電子系",year:a,class:"乙",teacher:"陳耀添",credit:"1",hour:"2",classroom:"",max:"55",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

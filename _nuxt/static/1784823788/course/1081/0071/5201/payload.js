@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/0071/5201", (function(a,b){return {data:[{course:{time:[[a,"5~6"]],id:"108100715201",name:"中國科學技術與生活",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"張淑惠",credit:b,hour:b,max:"48",min:"10",comment:"",otherinfo:"自然科學"}}],fetch:{},mutations:[]}}("1","2")));

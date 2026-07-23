@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1103/3170/0Q04", (function(a){return {data:[{course:{time:[["1","5~7"],[a,"1~3"]],id:"110331700Q04",name:"福祉設計",type:"重修",dept:"四技工設系",year:"4",class:"暑",teacher:"陳建志",credit:a,hour:a,classroom:"",max:"60",min:"5",comment:"與設三合班 帶狀課程7\u002F4-9\u002F2",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

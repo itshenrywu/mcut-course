@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/0L06", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[a,d],["4",b],[c,"0.5~0.5"],[c,b],[c,d]],id:"115120700L06",name:"頂石專題",type:"選修",dept:"環實務",year:a,class:"甲",teacher:"黃啓賢",credit:"1",hour:a,classroom:"",max:"30",min:"10",comment:"●◎6\u002F29-8\u002F28上課",otherinfo:null}}],fetch:{},mutations:[]}}("3","4.5~4.5","5","9~9")));

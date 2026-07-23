@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1121/1GP0/0001", (function(a){return {data:[{course:{time:[["3","8~8.5"]],id:"11211GP00001",name:"書報討論(一)",type:"必修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"王琪芸",credit:"0",hour:a,classroom:"",max:"20",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:[]}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/1870/2001", (function(a){return {data:[{course:{time:[["4","6~8.5"]],id:"109118702001",name:"半導體製程",type:"選修",dept:"四技材工系",year:a,class:"甲",teacher:"阮弼群",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

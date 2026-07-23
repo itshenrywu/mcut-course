@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/3350/2401", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"113133502401",name:"包裝設計",type:"必修",dept:"四技視傳系",year:"2",class:"甲",teacher:"馮煒棠",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

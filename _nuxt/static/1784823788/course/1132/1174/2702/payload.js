@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1174/2702", (function(a){return {data:[{course:{time:[[a,"5~6"],["4","1~2"]],id:"113211742702",name:"電力電子學",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"楊岳儒",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"113泰國交換生併大三",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

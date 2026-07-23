@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/21C0/0K01", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108121C00K01",name:"企業倫理",type:"必修",dept:"四技進修部工管系",year:"4",class:"甲",teacher:"廖宜慶",credit:a,hour:a,max:"60",min:"10",comment:"與四職經四併班",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

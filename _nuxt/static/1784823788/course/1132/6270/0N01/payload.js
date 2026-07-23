@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6270/0N01", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],[a,"5~5"]],id:"113262700N01",name:"機器學習",type:"必修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"李建興",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("4","3","")));

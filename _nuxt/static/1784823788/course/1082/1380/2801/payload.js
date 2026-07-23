@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1380/2801", (function(a){return {data:[{course:{time:[[a,"9~11"]],id:"108213802801",name:"奈米粒子與奈米結構",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"陳富亮",credit:a,hour:a,max:"20",min:"5",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1092/1170/0J01", (function(a,b,c){return {data:[{course:{time:[[a,"5~5"],[b,"5~6"]],id:"109211700J01",name:"軌道車輛概論",type:"選修",dept:"四技機械系",year:a,class:"丙",teacher:"楊岳儒",credit:b,classroom:c,max:"65",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("1","3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1082/1371/0304", (function(a){return {data:[{course:{time:[["5","1~3"]],id:"108213710304",name:"普通化學實驗(二)",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"李國通",credit:a,hour:"3",max:"50",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("1")));

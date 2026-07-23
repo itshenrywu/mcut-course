@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/33C4/0601", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"108133C40601",name:"影像思考與創作",type:"選修",dept:"四技進修部視傳系",year:"4",class:"甲",teacher:"朱賢哲",credit:a,hour:a,max:"25",min:"10",comment:"",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

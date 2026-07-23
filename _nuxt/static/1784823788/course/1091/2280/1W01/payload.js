@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1091/2280/1W01", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"109122801W01",name:"人力資源管理專題",type:"必修",dept:"國際企業管理碩士",year:"1",class:"甲",teacher:"盧建中",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("3")));

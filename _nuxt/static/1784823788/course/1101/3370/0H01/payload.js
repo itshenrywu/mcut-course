@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1101/3370/0H01", (function(a,b){return {data:[{course:{time:[[a,"5~8"]],id:"110133700H01",name:"設計見學",type:"選修",dept:"四技視傳系",year:b,class:"甲",teacher:"林金祥",credit:b,hour:a,classroom:"",max:"20",min:"10",comment:"塊狀課程：上課時間為6\u002F17-7\u002F2",otherinfo:null}}],fetch:{},mutations:[]}}("6","3")));

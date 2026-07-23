@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/1670/0I01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"113216700I01",name:"職業安全衛生技術特論",type:"選修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"鄭慶武",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));

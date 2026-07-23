@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/3070/2U01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"114130702U01",name:"平面與編輯設計",type:"必修",dept:"行銷設計學程",year:a,class:"甲",teacher:"林金祥",credit:b,hour:b,classroom:c,max:"35",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:[]}}("2","3","")));

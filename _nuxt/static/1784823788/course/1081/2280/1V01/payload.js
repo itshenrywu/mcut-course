@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1081/2280/1V01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"108122801V01",name:"公司財務管理",type:"必修",dept:"國際企業管理碩士",year:a,class:"甲",teacher:"楊子儀",credit:b,hour:b,max:"30",min:"5",comment:"全英授課",otherinfo:null}}],fetch:{},mutations:[]}}("1","3")));

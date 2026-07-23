@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1132/6280/0901", (function(a,b,c){return {data:[{course:{time:[[a,"7~8.5"]],id:"113262800901",name:"人工智慧倫理",type:"選修",dept:b,year:c,class:"甲",teacher:"劉豐瑞",credit:a,hour:a,classroom:"",max:"40",min:c,comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","TAICA","1")));

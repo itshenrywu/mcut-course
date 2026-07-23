@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1131/1070/0D03", (function(a,b){return {data:[{course:{time:[[a,b],["4",b]],id:"113110700D03",name:"科技英文閱讀與聽力訓練(五)",type:"選修",dept:"工程學院",year:"3",class:"甲",teacher:"簡珮玲",credit:"0",hour:a,classroom:"",max:"55",min:"10",comment:"限工程學院選課(榮譽學程課程)",otherinfo:null}}],fetch:{},mutations:[]}}("1","8.5~8.5")));

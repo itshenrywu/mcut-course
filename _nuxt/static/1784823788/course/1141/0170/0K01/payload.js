@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1141/0170/0K01", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"114101700K01",name:"小說中的人生百態",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"謝佳瀅",credit:a,hour:a,classroom:b,max:"45",min:"10",comment:b,otherinfo:"人文藝術"}}],fetch:{},mutations:[]}}("2","")));

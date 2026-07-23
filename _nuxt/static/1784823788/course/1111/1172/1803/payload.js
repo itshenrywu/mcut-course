@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1111/1172/1803", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"111111721803",name:"工程數學(一)",type:"必修",dept:"四技機械系",year:"2",class:"丙",teacher:"林詩瑀",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:[]}}("3","")));
