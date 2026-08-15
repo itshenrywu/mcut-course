@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      BASE_URL: "mcut-course.com"
+      BASE_URL: "v1.mcut-course.com"
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
