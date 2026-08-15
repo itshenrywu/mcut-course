@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3380/0J01", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"115133800J01",name:"質性研究方法",type:"選修",dept:"視傳系碩士班",year:"1",class:"甲",teacher:"楊欣茹",credit:b,hour:b,classroom:c,max:"20",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("5","3","")));

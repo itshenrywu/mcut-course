@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Icons";
+    src: url("/fonts/icons.woff2?v=20260620") format("woff2"),
+         url("/fonts/icons.woff?v=20260620") format("woff"),
+         url("/fonts/icons.ttf?v=20260620") format("truetype"),
+         url("/fonts/icons.otf?v=20260620") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.ts-icon.is-copy-icon:before {
+    content: "\f2b8";
+}
+.ts-icon.is-mail-icon:before {
+    content: "\f3bb";
+}
+.ts-icon.is-tel-icon:before {
+    content: "\f16f";
+}
+.ts-icon.is-map-pin-icon:before {
+    content: "\f112";
+}
+.ts-icon.is-circle-info-icon:before {
+    content: "\f2e0";
+}
+.ts-icon.is-settings-icon:before {
+	content: "\f3dc";
+}
+.ts-icon.is-run-icon:before {
+	content: "\fc5d";
+}
+.ts-icon.is-teacher-icon:before {
+	content: "\f1fd";
+}
+.ts-icon.is-earth-icon:before {
+	content: "\f88f";
+}
+.ts-icon.is-import-icon:before {
+	content: "\f3ac";
+}
+.ts-icon.is-repeat-icon:before {
+	content: "\f429";
+}
+.ts-icon.is-star-o-icon:before {
+	content: "\f1e5";
+}
+.ts-icon.is-star-icon:before {
+	content: "\f1e4";
+}
+.ts-icon.is-dot-icon:before {
+	content: "\f111";
+}
+.ts-icon.is-check-icon:before {
+	content: "\f00c";
+}
+.ts-icon.is-users-icon:before {
+	content: "\f165";
+}
+.ts-icon.is-share-icon:before {
+	content: "\f319";
+}
+.ts-icon.is-phone-icon:before {
+	content: "\f509";
+}
+.ts-icon.is-image-icon:before {
+	content: "\f291";
+}
+.ts-icon.is-leaf-icon:before {
+	content: "\f1f9";
+}
+.ts-icon.is-music-icon:before {
+	content: "\f50c";
+}
+.ts-icon.is-globe-icon:before {
+	content: "\f0fd";
+}
+.ts-icon.is-list-checks-icon:before {
+	content: "\f13f";
+}
+.ts-icon.is-calendar-days-icon:before {
+	content: "\f009";
+}
+.ts-icon.is-clipboard-list-icon:before {
+	content: "\f327";
+}
+.ts-icon.is-school-icon:before {
+	content: "\f3ba";
+}
+.ts-icon.is-circle-user-round-icon:before {
+	content: "\f55b";
+}
+.ts-icon.is-graduation-cap-icon:before {
+	content: "\f1e9";
+}
+.ts-icon.is-log-out-icon:before {
+	content: "\f3f6";
+}
+.ts-icon.is-log-in-icon:before {
+	content: "\f43c";
+}
+.ts-icon.is-align-left-icon:before {
+	content: "\f008";
+}
+.ts-icon.is-moon-icon:before {
+	content: "\f023";
+}
+.ts-icon.is-sun-icon:before {
+	content: "\f1dc";
+}
+.ts-icon.is-x-icon:before {
+	content: "\f00d";
+}
+.ts-icon.is-trash-icon:before {
+	content: "\f182";
+}
+.ts-icon.is-sheet-icon:before {
+	content: "\f543";
+}
+.ts-icon.is-grid-icon:before {
+	content: "\f19a";
+}
+.ts-icon.is-loader-icon:before {
+	content: "\f110";
+}
+.ts-icon.is-plus-icon:before {
+	content: "\f317";
+}
+.ts-icon.is-search-icon:before {
+	content: "\f5ae";
+}
+.ts-icon.is-download-icon:before {
+	content: "\f3b7";
+}
+.ts-icon.is-clock-icon:before {
+	content: "\f177";
+}
+.ts-icon.is-rotate-cw-icon:before {
+	content: "\f4c0";
+}
+.ts-icon.is-rotate-ccw-icon:before {
+	content: "\f30c";
+}
+.ts-icon.is-circle-help-icon:before {
+	content: "\f46a";
+}
+.ts-icon.is-circle-plus-icon:before {
+	content: "\f1ea";
+}
+.ts-icon.is-circle-alert-icon:before {
+	content: "\f4aa";
+}
+.ts-icon.is-arrow-right-icon:before {
+	content: "\f401";
+}
+.ts-icon.is-chevron-up-icon:before {
+	content: "\f46b";
+}
+.ts-icon.is-chevron-right-icon:before {
+	content: "\f41e";
+}
+.ts-icon.is-chevron-left-icon:before {
+	content: "\f026";
+}
+.ts-icon.is-chevron-down-icon:before {
+	content: "\f078";
+}

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/3P02", {data:[{course:{time:[["3","2~3"]],id:"115122703P02",name:"商用英文(四)",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"馬耀祖",credit:"1",hour:"2",classroom:"",max:"60",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0});

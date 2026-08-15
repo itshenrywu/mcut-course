@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1670/2B01", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"115116702B01",name:"工業與環境毒物學",type:"選修",dept:"四技環安衛系",year:a,class:"甲",teacher:"程海軒",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

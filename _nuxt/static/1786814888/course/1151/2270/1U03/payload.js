@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/1U03", (function(a){return {data:[{course:{time:[[a,"5~8"]],id:"115122701U03",name:"會計學(含實習)",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"張明輝",credit:"3",hour:"4",classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

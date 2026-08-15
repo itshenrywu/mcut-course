@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/3H01", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"115118703H01",name:"生醫材料製程實務",type:"選修",dept:"四技材工系",year:b,class:"甲",teacher:"劉定宇",credit:b,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("3","2")));

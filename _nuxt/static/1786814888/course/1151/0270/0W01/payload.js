@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/0W01", (function(a){return {data:[{course:{time:[["4","7~8"]],id:"115102700W01",name:"文化多元溝通",type:"必修",dept:"四技材工系",year:"3",class:"丙",teacher:"吳柏德",credit:a,hour:a,classroom:"",max:"20",min:"1",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

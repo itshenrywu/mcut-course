@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1380/1L01", (function(a){return {data:[{course:{time:[[a,"1~3"]],id:"115113801L01",name:"高等生物化學與分子生物學",type:"選修",dept:"化工系碩士班",year:"1",class:"甲",teacher:"劉昭麟",credit:a,hour:a,classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

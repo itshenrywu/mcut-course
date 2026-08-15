@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/1403", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"115122701403",name:"人力資源管理",type:"必修",dept:"四技經管系",year:"2",class:"丙",teacher:"梅頂謙",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0770/0902", (function(a,b){return {data:[{course:{time:[[a,"1~2"]],id:"115107700902",name:"全民國防教育軍事訓練(一)",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"朱偉國",credit:"0.5",hour:"2",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("1","")));

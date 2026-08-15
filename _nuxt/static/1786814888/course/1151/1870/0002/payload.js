@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/0002", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"115118700002",name:"材料選擇與設計",type:"選修",dept:"四技材工系",year:a,class:"丙",teacher:"姚栢文",credit:a,hour:a,classroom:"",max:"20",min:"1",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

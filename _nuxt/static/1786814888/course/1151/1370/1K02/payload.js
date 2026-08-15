@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1370/1K02", (function(a,b){return {data:[{course:{time:[["1","5~8"]],id:"115113701K02",name:"化學技術實習",type:"選修",dept:"四技化工系",year:a,class:"乙",teacher:"陳順基",credit:a,hour:"4",classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

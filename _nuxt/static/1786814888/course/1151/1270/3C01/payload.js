@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1270/3C01", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"115112703C01",name:"資料結構",type:"選修",dept:"四技電機系",year:"2",class:"甲",teacher:"邱機平",credit:a,hour:a,classroom:"",max:"55",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

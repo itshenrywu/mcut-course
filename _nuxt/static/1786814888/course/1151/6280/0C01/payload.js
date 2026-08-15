@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6280/0C01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115162800C01",name:"基礎程式設計(C++)",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"陳思翰",credit:b,hour:b,classroom:"",max:"40",min:a,comment:"TAICA-交大開課",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

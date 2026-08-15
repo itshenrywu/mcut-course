@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1670/0V01", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"115116700V01",name:"溫室氣體減量與管理",type:"選修",dept:"四技環安衛系",year:"2",class:"甲",teacher:"孫念祖",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

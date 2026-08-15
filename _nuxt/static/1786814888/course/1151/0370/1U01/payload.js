@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0370/1U01", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"115103701U01",name:"全民國防教育軍事訓練(國防政策)",type:"選修",dept:"通識中心四技",year:b,class:"甲",teacher:"朱偉國",credit:a,hour:b,classroom:"",max:"45",min:"10",comment:"限大二以上，軍訓選修三門，僅能擇一修課",otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:void 0}}("1","2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1570/0K01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115115700K01",name:"電腦輔助資料表達於工程之應用",type:"選修",dept:"四技電子系",year:a,class:"甲",teacher:"蔡易樺",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

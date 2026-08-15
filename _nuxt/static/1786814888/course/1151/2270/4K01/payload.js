@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/4K01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115122704K01",name:"供應鏈管理",type:"必修",dept:"四技經管系",year:a,class:"丙",teacher:"阮何日卡",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("2","3")));

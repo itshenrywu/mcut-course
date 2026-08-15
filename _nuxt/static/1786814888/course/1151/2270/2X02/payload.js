@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/2X02", (function(a){return {data:[{course:{time:[["5","2~4"]],id:"115122702X02",name:"商業智慧與大數據分析",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"林裕勛",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

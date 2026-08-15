@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/2B04", (function(a){return {data:[{course:{time:[["2","9~11"]],id:"115120702B04",name:"電池檢測與分析技術",type:"必修",dept:"環實務",year:"4",class:"甲",teacher:"洪太峰",credit:a,hour:a,classroom:"",max:"80",min:"10",comment:"第二專長(本系可修)",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

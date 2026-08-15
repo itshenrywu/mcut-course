@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/5302", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"115122705302",name:"專案管理",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"李淑華",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

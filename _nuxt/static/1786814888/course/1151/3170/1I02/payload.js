@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3170/1I02", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"115131701I02",name:"設計方法",type:"必修",dept:"四技工設系",year:"2",class:"乙",teacher:"楊俊明",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

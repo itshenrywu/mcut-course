@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1680/0P01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"115116800P01",name:"資料分析與應用",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"許金玉",credit:a,hour:a,classroom:"",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

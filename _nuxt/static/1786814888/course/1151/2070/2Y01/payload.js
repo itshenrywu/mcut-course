@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/2Y01", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"115120702Y01",name:"工程倫理與實務講座",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"陳順基",credit:"1",hour:"2",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("4","")));

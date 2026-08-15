@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1180/0I01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"115111800I01",name:"系統化機構設計",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"許啟彬",credit:b,hour:b,classroom:c,max:"14",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("5","3","")));

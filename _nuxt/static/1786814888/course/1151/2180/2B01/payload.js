@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2180/2B01", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"115121802B01",name:"人工智慧實務案例分析與實作",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"張秉裕",credit:a,hour:a,classroom:"",max:"10",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

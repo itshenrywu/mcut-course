@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1174/0401", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"115111740401",name:"機構設計",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"江信遠",credit:b,hour:b,classroom:c,max:"54",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("4","3","")));

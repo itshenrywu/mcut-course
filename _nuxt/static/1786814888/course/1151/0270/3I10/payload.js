@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/3I10", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"115102703I10",name:"整合式大學英語(高級)(一)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"李潔嵐",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"管設高A",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

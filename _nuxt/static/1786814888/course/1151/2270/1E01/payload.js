@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/1E01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115122701E01",name:"創新與創業管理",type:"選修",dept:"四技經管系",year:a,class:"丙",teacher:"杜海勇",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("4","3")));

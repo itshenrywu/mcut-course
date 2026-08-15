@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1572/0103", (function(a,b){return {data:[{course:{time:[[a,"1~2"],["5","1~1"]],id:"115115720103",name:"線性代數",type:"必修",dept:"四技電子系",year:"1",class:"乙",teacher:"許宏彬",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

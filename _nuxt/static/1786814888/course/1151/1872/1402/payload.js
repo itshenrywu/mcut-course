@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1872/1402", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"115118721402",name:"高分子材料",type:"選修",dept:"四技材工系",year:a,class:"丙",teacher:"阮德勇",credit:a,hour:a,classroom:"",max:"20",min:"1",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

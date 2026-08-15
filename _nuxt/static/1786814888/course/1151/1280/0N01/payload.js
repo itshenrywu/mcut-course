@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1280/0N01", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"115112800N01",name:"人工智慧與智慧電網",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"李浩賢",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

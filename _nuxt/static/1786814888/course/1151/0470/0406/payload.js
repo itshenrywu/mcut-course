@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0470/0406", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],[a,"6~6"]],id:"115104700406",name:"微積分(一)",type:"必修",dept:"四技電機系",year:"1",class:"乙",teacher:"徐宏仁",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("5","3","")));

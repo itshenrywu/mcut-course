@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1570/2B02", (function(a){return {data:[{course:{time:[["1","1~1"],[a,"5~6"]],id:"115115702B02",name:"電子學(二)",type:"必修",dept:"四技電子系",year:"2",class:"乙",teacher:"吳亞芬",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

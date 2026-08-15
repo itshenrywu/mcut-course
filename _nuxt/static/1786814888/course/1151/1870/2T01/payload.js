@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/2T01", (function(a){return {data:[{course:{time:[["5","3~4"]],id:"115118702T01",name:"基礎材料實驗",type:"必修",dept:"四技材工系",year:"3",class:"丙",teacher:"阮德勇",credit:a,hour:"2",classroom:"",max:"20",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

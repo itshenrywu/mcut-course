@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/3N04", (function(a){return {data:[{course:{time:[[a,"8~8"]],id:"115130703N04",name:"行銷設計趨勢導讀（一）",type:"必修",dept:"行銷設計學程",year:"2",class:"乙",teacher:"朱秀瑜",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

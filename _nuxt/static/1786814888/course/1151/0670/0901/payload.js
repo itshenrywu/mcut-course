@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0670/0901", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"]],id:"115106700901",name:"體育(三)籃球",type:"必修",dept:"體育組-四技(日)",year:b,class:"甲",teacher:"王學中",credit:a,hour:b,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("1","2","")));

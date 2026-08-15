@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0370/1Y05", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"115103701Y05",name:"歷史思辨",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"江長青",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"工設、視傳",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

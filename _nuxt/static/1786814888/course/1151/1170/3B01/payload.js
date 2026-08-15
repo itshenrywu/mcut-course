@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/3B01", (function(a,b){return {data:[{course:{time:[[a,"4~4"],["5","6~7"]],id:"115111703B01",name:"機械元件設計(一)",type:"必修",dept:"四技機械系",year:"4",class:"甲",teacher:"張文慶",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

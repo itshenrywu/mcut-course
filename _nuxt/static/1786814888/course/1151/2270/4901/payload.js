@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/4901", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"115122704901",name:"人力訓練與發展",type:"選修",dept:"四技經管系",year:"4",class:"丙",teacher:"阮氏好",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

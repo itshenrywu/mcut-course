@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1880/0M01", (function(a,b,c){return {data:[{course:{time:[[a,"8.5~8.5"],["2","8~8.5"]],id:"115118800M01",name:"電子顯微鏡實務",type:"選修",dept:"材料系碩士班",year:a,class:"甲",teacher:"林延儒",credit:b,hour:b,classroom:c,max:"30",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("1","3","")));

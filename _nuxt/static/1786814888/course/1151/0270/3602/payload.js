@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/3602", (function(a){return {data:[{course:{time:[["1","9~10"]],id:"115102703602",name:"生活英語演講與簡報(一)",type:"選修",dept:"外文組-四技(日)",year:a,class:"丙",teacher:"王瑀",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"大二榮譽學程(管設學院)",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

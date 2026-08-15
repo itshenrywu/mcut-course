@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/3U05", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"115122703U05",name:"企業概論",type:"選修",dept:"四技經管系",year:"1",class:"丙",teacher:"阮仲成",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

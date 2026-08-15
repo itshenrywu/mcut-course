@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2080/0401", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"115120800401",name:"高等材料分析",type:"選修",dept:"半導體碩士學程",year:"1",class:"甲",teacher:"江炳煌",credit:a,hour:a,classroom:b,max:"10",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

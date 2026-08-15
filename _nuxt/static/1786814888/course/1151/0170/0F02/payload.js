@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0170/0F02", (function(a,b){return {data:[{course:{time:[["4","1~2"]],id:"115101700F02",name:"文學鑑賞與情意表達",type:"必修",dept:"人工智慧學程",year:"1",class:"甲",teacher:"李桂芳",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

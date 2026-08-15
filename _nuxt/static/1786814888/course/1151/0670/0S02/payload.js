@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0670/0S02", (function(a,b){return {data:[{course:{time:[["4","3~4"]],id:"115106700S02",name:"體育(三)匹克球",type:"必修",dept:"體育組-四技(日)",year:a,class:"甲",teacher:"陳履賢",credit:"1",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

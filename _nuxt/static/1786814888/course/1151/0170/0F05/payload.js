@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0170/0F05", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"115101700F05",name:"文學鑑賞與情意表達",type:"必修",dept:"四技材工系",year:a,class:"乙",teacher:"邱梓桓",credit:b,hour:b,classroom:c,max:"54",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("1","2","")));

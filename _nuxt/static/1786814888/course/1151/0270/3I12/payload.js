@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/3I12", (function(a){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"115102703I12",name:"整合式大學英語(高級)(一)",type:"必修",dept:"外文組-四技(日)",year:"1",class:"甲",teacher:"張雅淳",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"管設高C",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

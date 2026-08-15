@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6280/0701", (function(a,b){return {data:[{course:{time:[["2","8~9"]],id:"115162800701",name:"生成式AI:文字與圖像生成的原理與實務",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"陳思翰",credit:b,hour:b,classroom:"",max:"40",min:a,comment:"TAICA-政大開課",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0370/2301", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"115103702301",name:"回教與儒家文明的和平對話",type:"必修",dept:"四技材工系",year:"3",class:"丙",teacher:"詹騏瑋",credit:b,hour:b,classroom:"",max:"15",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1","2")));

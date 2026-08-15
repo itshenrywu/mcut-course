@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3370/1201", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"115133701201",name:"編輯設計",type:"必修",dept:"四技視傳系",year:"2",class:"甲",teacher:"劉瑞芬",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

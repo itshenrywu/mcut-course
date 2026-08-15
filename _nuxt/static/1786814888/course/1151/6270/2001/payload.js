@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/2001", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"115162702001",name:"C程式語言",type:"必修",dept:"人工智慧學程",year:a,class:"甲",teacher:"謝筱齡",credit:b,hour:b,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

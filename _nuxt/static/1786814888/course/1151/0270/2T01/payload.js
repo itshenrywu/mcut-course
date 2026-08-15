@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/2T01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115102702T01",name:"基礎華語(一)",type:"必修",dept:"外文組-四技(日)",year:a,class:"乙",teacher:"林麗寬",credit:b,hour:b,classroom:"",max:"48",min:"10",comment:"工設系國際專班+材料系雙聯專班",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

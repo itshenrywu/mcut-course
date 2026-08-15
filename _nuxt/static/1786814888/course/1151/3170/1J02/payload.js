@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3170/1J02", (function(a,b){return {data:[{course:{time:[[a,b],["5",b]],id:"115131701J02",name:"產品設計(一)",type:"必修",dept:"四技工設系",year:a,class:"乙",teacher:"梁旨見",credit:"3",hour:"6",classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("2","2~4")));

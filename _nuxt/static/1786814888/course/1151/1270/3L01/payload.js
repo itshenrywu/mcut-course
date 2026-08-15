@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1270/3L01", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"115112703L01",name:"工程倫理與專業實務講座",type:"必修",dept:"四技電機系",year:"4",class:"甲",teacher:"王柏仁",credit:"1",hour:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:void 0}}("")));

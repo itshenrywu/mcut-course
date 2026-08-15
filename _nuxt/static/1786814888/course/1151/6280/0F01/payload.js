@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6280/0F01", (function(a,b){return {data:[{course:{time:[["4","5~7"]],id:"115162800F01",name:"智慧人機互動",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"陳思翰",credit:b,hour:b,classroom:"",max:"40",min:a,comment:"TAICA-北科大開課,限大四碩士",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

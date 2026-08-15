@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1880/1201", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"115118801201",name:"電漿製程與應用",type:"選修",dept:"材料系碩士班",year:"1",class:"甲",teacher:"張奇龍",credit:a,hour:a,classroom:b,max:"50",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

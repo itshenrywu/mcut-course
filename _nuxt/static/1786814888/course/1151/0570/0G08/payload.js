@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0570/0G08", (function(a,b){return {data:[{course:{time:[["4","2~4"]],id:"115105700G08",name:"普通物理",type:"必修",dept:"四技化工系",year:"1",class:"乙",teacher:"陳楷仁",credit:a,hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

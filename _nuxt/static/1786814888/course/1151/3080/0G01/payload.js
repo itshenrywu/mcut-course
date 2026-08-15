@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3080/0G01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115130800G01",name:"使用者經驗設計",type:"選修",dept:"行銷設計碩士學程",year:"1",class:"甲",teacher:"林金祥",credit:a,hour:a,classroom:b,max:"10",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

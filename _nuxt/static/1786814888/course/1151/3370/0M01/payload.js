@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3370/0M01", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"115133700M01",name:"資訊圖像設計",type:"選修",dept:"四技視傳系",year:"2",class:"甲",teacher:"朱詩婷",credit:a,hour:a,classroom:"",max:"30",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

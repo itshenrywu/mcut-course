@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1272/0902", (function(a){return {data:[{course:{time:[["4","4~4"],["5","3~4"]],id:"115112720902",name:"工程數學(一)",type:"必修",dept:"四技電機系",year:"2",class:"乙",teacher:"李浩賢",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

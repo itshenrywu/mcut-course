@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/2N03", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"115130702N03",name:"品牌管理",type:"選修",dept:"行銷設計學程",year:"4",class:"甲",teacher:"張瀞",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

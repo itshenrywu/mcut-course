@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/1I01", (function(a,b){return {data:[{course:{time:[["5","5~6"]],id:"115120701I01",name:"反應工程",type:"必修",dept:"半導體學程",year:"4",class:"甲",teacher:"陳俊愷",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

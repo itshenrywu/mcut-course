@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1174/0403", (function(a,b){return {data:[{course:{time:[["1","2~4"]],id:"115111740403",name:"機構設計",type:"選修",dept:"四技機械系",year:"4",class:"丙",teacher:"許啟彬",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

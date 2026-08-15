@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/2L02", (function(a,b){return {data:[{course:{time:[["3",a],["5",a]],id:"115130702L02",name:"專題製作(一)",type:"必修",dept:"行銷設計學程",year:"4",class:"乙",teacher:"薛惠月",credit:"6",hour:"8",classroom:b,max:"30",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("5~7","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/1101", (function(a,b){return {data:[{course:{time:[["3","5~6"]],id:"115120701101",name:"質能均衡",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"孫念祖",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

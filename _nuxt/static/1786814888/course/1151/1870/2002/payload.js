@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/2002", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"115118702002",name:"半導體製程",type:"選修",dept:"四技材工系",year:a,class:"丙",teacher:"阮德勇",credit:a,hour:a,classroom:"",max:"20",min:"1",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

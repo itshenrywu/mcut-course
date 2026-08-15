@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1270/1N02", (function(a,b){return {data:[{course:{time:[[a,"1~4"]],id:"115112701N02",name:"程式設計與實習",type:"必修",dept:"四技電機系",year:"1",class:"甲",teacher:"邱機平",credit:"3",hour:a,classroom:b,max:"55",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("4","")));

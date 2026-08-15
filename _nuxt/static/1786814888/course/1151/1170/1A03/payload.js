@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/1A03", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115111701A03",name:"電腦輔助機械製圖",type:"必修",dept:"四技機械系",year:"1",class:"丙",teacher:"宋旻峰",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

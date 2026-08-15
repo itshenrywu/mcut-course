@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2180/0001", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"115121800001",name:"電子化企業管理",type:"選修",dept:"工管系碩士班",year:"1",class:"甲",teacher:"鄭明顯",credit:b,hour:b,classroom:c,max:"25",min:a,comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("5","3","")));

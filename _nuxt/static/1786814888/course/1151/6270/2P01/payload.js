@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/2P01", (function(a){return {data:[{course:{time:[["3","0.5~1"]],id:"115162702P01",name:"跨領域頂石專題(五)",type:"必修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"李孟錡",credit:"1",hour:"2",classroom:a,max:"56",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:void 0}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1880/0J01", (function(a){return {data:[{course:{time:[["3","5~6"]],id:"115118800J01",name:"書報討論(一)",type:"必修",dept:"材料系碩士班",year:a,class:"甲",teacher:"謝建國",credit:a,hour:"2",classroom:"",max:"50",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

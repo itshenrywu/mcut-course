@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/1T01", (function(a){return {data:[{course:{time:[["4","7~8.5"]],id:"115162701T01",name:"視窗程式設計",type:"選修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"高黃江",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/2801", (function(a,b){return {data:[{course:{time:[["4","1~3"]],id:"115162702801",name:"網路實務",type:"選修",dept:"人工智慧學程",year:"2",class:"甲",teacher:"王得貴",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

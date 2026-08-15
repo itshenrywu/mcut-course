@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/0R24", (function(a,b){return {data:[{course:{time:[[a,"7~8"]],id:"115100700R24",name:"永續發展與社會實踐",type:"必修",dept:"通識中心四技",year:a,class:"乙",teacher:"張淑芬",credit:b,hour:b,classroom:"",max:"35",min:"15",comment:"主題：從繪本談SDGs，限大四",otherinfo:null}}],fetch:{},mutations:void 0}}("4","1")));

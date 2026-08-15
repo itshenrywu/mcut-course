@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1180/0K01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115111800K01",name:"熱流量測與分析",type:"選修",dept:"機械系碩士班",year:"1",class:"甲",teacher:"陳明光",credit:b,hour:b,classroom:"",max:"14",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("5","3")));

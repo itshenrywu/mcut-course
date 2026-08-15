@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1380/0201", (function(a){return {data:[{course:{time:[[a,"3~4"]],id:"115113800201",name:"科技論文寫作",type:"必修",dept:"化工系碩士班",year:a,class:"甲",teacher:"簡良榮",credit:a,hour:"2",classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

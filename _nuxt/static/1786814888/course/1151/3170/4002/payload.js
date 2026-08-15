@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3170/4002", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"115131704002",name:"專業實務講座",type:"必修",dept:"四技工設系",year:"4",class:"乙",teacher:"許定洋",credit:"1",hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

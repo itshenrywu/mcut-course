@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6280/0201", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115162800201",name:"金融科技導論",type:"選修",dept:"TAICA",year:b,class:"甲",teacher:"陳思翰",credit:a,hour:a,classroom:"",max:"40",min:b,comment:"TAICA-台大開課,限碩士選修",otherinfo:null}}],fetch:{},mutations:void 0}}("3","1")));

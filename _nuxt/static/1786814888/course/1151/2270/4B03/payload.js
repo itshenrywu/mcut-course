@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/4B03", (function(a){return {data:[{course:{time:[["5","1~1"]],id:"115122704B03",name:"實務專題製作(一)",type:"必修",dept:"四技經管系",year:"3",class:"丙",teacher:"杜海勇",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

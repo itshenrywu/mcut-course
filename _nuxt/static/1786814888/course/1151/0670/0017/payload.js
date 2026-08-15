@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0670/0017", (function(a,b){return {data:[{course:{time:[["4","5~6"]],id:"115106700017",name:"體育(一)",type:"必修",dept:"四技環安衛系",year:a,class:"甲",teacher:"游能揚",credit:a,hour:"2",classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("1","")));

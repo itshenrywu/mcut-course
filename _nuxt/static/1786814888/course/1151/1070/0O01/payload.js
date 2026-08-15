@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1070/0O01", (function(a,b){return {data:[{course:{time:[["2",a],["5",a]],id:"115110700O01",name:"電動車機電整合工程師實務",type:"選修",dept:"工程學院",year:"4",class:"甲",teacher:"謝飛虎",credit:b,hour:b,classroom:"",max:"60",min:"10",comment:"限工程學院學生選課",otherinfo:null}}],fetch:{},mutations:void 0}}("9~11","3")));

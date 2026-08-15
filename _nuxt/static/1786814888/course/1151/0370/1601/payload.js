@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0370/1601", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"115103701601",name:"資訊媒體素養",type:"選修",dept:"通識中心四技",year:"1",class:"甲",teacher:"沈明得",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:void 0}}("2","")));

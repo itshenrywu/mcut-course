@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2080/0G01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115120800G01",name:"功能性高分子材料設計",type:"選修",dept:"半導體碩士學程",year:"1",class:"甲",teacher:"張峻瑜",credit:b,hour:b,classroom:"",max:"10",min:a,comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("5","3")));

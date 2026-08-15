@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/2R01", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"115162702R01",name:"工程倫理與工業人工智慧講座(一)",type:"必修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"李孟錡",credit:a,hour:"2",classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("1","")));

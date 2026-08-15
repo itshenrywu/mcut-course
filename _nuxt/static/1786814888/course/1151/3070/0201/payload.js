@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/0201", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"115130700201",name:"創意整合(三)",type:"選修",dept:"行銷設計學程",year:"4",class:"甲",teacher:"陳進隆",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"甲乙合班；管設學院合併上課",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

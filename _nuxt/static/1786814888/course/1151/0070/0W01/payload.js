@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/0W01", (function(a,b){return {data:[{course:{time:[["7","4~4"]],id:"115100700W01",name:"全球素養與跨文化認知(一)",type:"必修",dept:"四技材工系",year:"3",class:"丙",teacher:"李潔嵐",credit:a,hour:a,classroom:b,max:"55",min:a,comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("1","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6280/0101", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115162800101",name:"機器學習",type:"選修",dept:"TAICA",year:b,class:"甲",teacher:"陳思翰",credit:a,hour:a,classroom:"",max:"10",min:b,comment:"TAICA-台大開課,限大四碩士",otherinfo:null}}],fetch:{},mutations:void 0}}("3","1")));

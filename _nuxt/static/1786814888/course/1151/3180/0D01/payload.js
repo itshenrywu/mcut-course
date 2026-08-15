@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3180/0D01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115131800D01",name:"工業設計",type:"必修",dept:"工設系碩士班",year:a,class:"甲",teacher:"謝政道",credit:b,hour:b,classroom:"",max:"20",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

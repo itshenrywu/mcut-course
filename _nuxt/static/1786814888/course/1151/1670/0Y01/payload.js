@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1670/0Y01", (function(a,b){return {data:[{course:{time:[["3","9~10"]],id:"115116700Y01",name:"避難系統",type:"選修",dept:"四技環安衛系",year:"4",class:"甲",teacher:"林依蘋",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

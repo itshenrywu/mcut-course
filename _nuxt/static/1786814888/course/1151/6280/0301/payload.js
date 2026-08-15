@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6280/0301", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115162800301",name:"資料探勘與應用",type:"選修",dept:"TAICA",year:a,class:"甲",teacher:"陳思翰",credit:b,hour:b,classroom:"",max:"40",min:a,comment:"TAICA-清大開課(全英),限大四碩士",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

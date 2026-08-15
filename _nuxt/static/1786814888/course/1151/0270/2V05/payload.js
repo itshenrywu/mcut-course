@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/2V05", (function(a,b){return {data:[{course:{time:[["3","7~8"]],id:"115102702V05",name:"生活情境英文(一)",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"張雅淳",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

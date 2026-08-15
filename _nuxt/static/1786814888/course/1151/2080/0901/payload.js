@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2080/0901", (function(a){return {data:[{course:{time:[["4","5~7"]],id:"115120800901",name:"平面顯示器技術",type:"選修",dept:"半導體碩士學程",year:"1",class:"甲",teacher:"黃文澤",credit:a,hour:a,classroom:"",max:"10",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

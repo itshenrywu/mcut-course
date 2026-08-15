@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3170/0Q01", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"115131700Q01",name:"福祉設計",type:"選修",dept:"四技工設系",year:a,class:"乙",teacher:"陳韻萱",credit:a,hour:a,classroom:"",max:"56",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

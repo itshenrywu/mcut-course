@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/1M01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"115111701M01",name:"3D列印實務與應用",type:"選修",dept:"四技機械系",year:a,class:"甲",teacher:"游孟潔",credit:b,hour:b,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("2","3","")));

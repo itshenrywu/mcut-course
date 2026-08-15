@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/1L09", (function(a,b,c){return {data:[{course:{time:[[a,c],[b,c]],id:"115100701L09",name:"專業研究實習前素養訓練",type:"必修",dept:"四技電子系",year:"3",class:"乙",teacher:"唐明中",credit:a,hour:a,classroom:"",max:b,min:b,comment:"●上課日期6\u002F29-8\u002F28",otherinfo:null}}],fetch:{},mutations:void 0}}("1","2","0.5~0.5")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/2K01", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"115120702K01",name:"真空技術與實務",type:"選修",dept:"半導體學程",year:a,class:"甲",teacher:"江炳煌",credit:b,hour:b,classroom:c,max:"48",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("2","3","")));

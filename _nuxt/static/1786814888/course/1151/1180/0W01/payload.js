@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1180/0W01", (function(a){return {data:[{course:{time:[["3","3~4"]],id:"115111800W01",name:"書報討論(一)",type:"必修",dept:"機械系碩士班",year:a,class:"甲",teacher:"陳明光",credit:a,hour:"2",classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1")));

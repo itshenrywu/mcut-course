@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/2Y02", (function(a){return {data:[{course:{time:[["3","8~8.5"]],id:"115120702Y02",name:"工程倫理與實務講座",type:"必修",dept:"環實務",year:"4",class:"甲",teacher:"江炳煌",credit:"1",hour:"2",classroom:a,max:"20",min:"10",comment:a,otherinfo:null}}],fetch:{},mutations:void 0}}("")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1572/1703", (function(a,b){return {data:[{course:{time:[["2","9~11"]],id:"115115721703",name:"工程數學(一)",type:"重修",dept:"四技電子系",year:"4",class:"重",teacher:"曾宗亮",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

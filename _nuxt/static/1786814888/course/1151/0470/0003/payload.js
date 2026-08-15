@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0470/0003", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"115104700003",name:"微積分",type:"必修",dept:"半導體學程",year:a,class:"甲",teacher:"吳永富",credit:b,hour:b,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("1","3","")));

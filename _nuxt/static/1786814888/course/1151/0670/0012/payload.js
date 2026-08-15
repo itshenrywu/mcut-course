@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0670/0012", (function(a,b,c){return {data:[{course:{time:[[a,"1~2"]],id:"115106700012",name:"體育(一)",type:"必修",dept:"四技化工系",year:b,class:"乙",teacher:"陳履賢",credit:b,hour:a,classroom:c,max:"55",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("2","1","")));

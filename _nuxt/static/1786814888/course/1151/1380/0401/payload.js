@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1380/0401", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115113800401",name:"高等工程數學",type:"選修",dept:"化工系碩士班",year:a,class:"甲",teacher:"傅俊中",credit:b,hour:b,classroom:"",max:"40",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

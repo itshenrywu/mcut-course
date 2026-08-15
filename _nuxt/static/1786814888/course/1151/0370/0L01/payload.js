@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0370/0L01", (function(a,b,c){return {data:[{course:{time:[[a,"7~8"]],id:"115103700L01",name:"美國文化與社會發展",type:"選修",dept:"通識中心四技",year:a,class:"甲",teacher:"盧信吉",credit:b,hour:b,classroom:c,max:"40",min:"10",comment:c,otherinfo:"社會研究與未來趨勢"}}],fetch:{},mutations:void 0}}("1","2","")));

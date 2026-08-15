@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/3I01", (function(a,b){return {data:[{course:{time:[[a,"7~8.5"]],id:"115118703I01",name:"光電材料製程實務",type:"選修",dept:"四技材工系",year:b,class:"甲",teacher:"阮弼群",credit:b,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("3","2")));

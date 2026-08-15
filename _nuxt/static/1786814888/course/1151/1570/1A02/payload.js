@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1570/1A02", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115115701A02",name:"半導體材料檢測",type:"選修",dept:"四技電子系",year:a,class:"乙",teacher:"羅靛",credit:b,hour:b,classroom:"",max:"40",min:"10",comment:"甲乙合班,微電子組選修Partially taught in English",otherinfo:null}}],fetch:{},mutations:void 0}}("2","3")));

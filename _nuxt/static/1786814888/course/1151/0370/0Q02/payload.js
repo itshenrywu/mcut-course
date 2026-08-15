@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0370/0Q02", (function(a){return {data:[{course:{time:[["1","9~11"]],id:"115103700Q02",name:"歷史思辨",type:"重修",dept:"社會組-四技(日)",year:"4",class:"重",teacher:"鄭銘德",credit:a,hour:a,classroom:"",max:"48",min:"10",comment:"社會哲學領域課程",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

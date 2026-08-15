@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1270/1N05", (function(a){return {data:[{course:{time:[["1","5~8"]],id:"115112701N05",name:"程式設計與實習",type:"重修",dept:"四技電機系",year:"2",class:"重",teacher:"阮文康",credit:"3",hour:"4",classroom:a,max:"50",min:"5",comment:a,otherinfo:null}}],fetch:{},mutations:void 0}}("")));

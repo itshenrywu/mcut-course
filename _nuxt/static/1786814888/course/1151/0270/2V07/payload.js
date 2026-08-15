@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/2V07", (function(a,b){return {data:[{course:{time:[["5","5~6"]],id:"115102702V07",name:"生活情境英文(一)",type:"必修",dept:"四技工設系",year:"1",class:"乙",teacher:"江悅慈",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/2A01", (function(a,b,c){return {data:[{course:{time:[[a,"3~4"],[a,"5~5"]],id:"115162702A01",name:"雲端技術實務",type:"選修",dept:"人工智慧學程",year:a,class:"甲",teacher:"陳延禎",credit:b,hour:b,classroom:c,max:"56",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("4","3","")));

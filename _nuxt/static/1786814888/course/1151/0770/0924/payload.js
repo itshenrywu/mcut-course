@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0770/0924", {data:[{course:{time:[["3","7~8"]],id:"115107700924",name:"全民國防教育軍事訓練(一)",type:"必修",dept:"行銷設計學程",year:"1",class:"乙",teacher:"陶韻然",credit:"0.5",hour:"2",classroom:"",max:"30",min:"10",comment:"併行設一甲上課",otherinfo:null}}],fetch:{},mutations:void 0});

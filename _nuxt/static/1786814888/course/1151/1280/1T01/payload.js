@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1280/1T01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115112801T01",name:"6G整合感知與通訊系統實務",type:"選修",dept:"電機系碩士班",year:"1",class:"甲",teacher:"劉恩成",credit:a,hour:a,classroom:b,max:"30",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

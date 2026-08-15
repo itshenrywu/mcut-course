@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1174/5301", (function(a,b,c){return {data:[{course:{time:[["2","2~2"],[a,"7~8"]],id:"115111745301",name:"新能源工程導論",type:"選修",dept:"四技機械系",year:a,class:"乙",teacher:"周宜平",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("4","3","")));

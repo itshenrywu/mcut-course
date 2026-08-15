@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/0K22", (function(a,b,c){return {data:[{course:{time:[["4",a],["5",a]],id:"115100700K22",name:"大學之道",type:"必修",dept:"行銷設計學程",year:b,class:"乙",teacher:"沈明得",credit:b,hour:"2",classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("0.5~0.5","1","")));

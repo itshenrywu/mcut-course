@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/2I02", (function(a,b,c){return {data:[{course:{time:[[b,"2~2"],[a,"1~2"]],id:"115118702I02",name:"物理冶金(一)",type:"必修",dept:"四技材工系",year:b,class:"乙",teacher:"林延儒",credit:a,hour:a,classroom:c,max:"50",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("3","2","")));

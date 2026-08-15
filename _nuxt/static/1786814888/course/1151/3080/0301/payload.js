@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3080/0301", (function(a,b,c){return {data:[{course:{time:[[a,"2~4"]],id:"115130800301",name:"行銷設計書報討論(一)",type:"必修",dept:"行銷設計碩士學程",year:a,class:"甲",teacher:"孫儷芳",credit:b,hour:b,classroom:c,max:"10",min:"5",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("1","3","")));

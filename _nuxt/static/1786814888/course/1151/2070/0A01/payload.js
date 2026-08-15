@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/0A01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115120700A01",name:"有機化學",type:"選修",dept:"半導體學程",year:"2",class:"甲",teacher:"張峻瑜",credit:a,hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

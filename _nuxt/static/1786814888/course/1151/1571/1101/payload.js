@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1571/1101", (function(a){return {data:[{course:{time:[[a,"2~4"]],id:"115115711101",name:"物件導向程式設計實務",type:"選修",dept:"四技電子系",year:"2",class:"甲",teacher:"董一志",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班授課，資工系統模組選修。",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

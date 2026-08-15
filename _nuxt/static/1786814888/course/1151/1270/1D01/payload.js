@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1270/1D01", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"115112701D01",name:"量測電路設計",type:"選修",dept:"四技電機系",year:"4",class:"甲",teacher:"何文吉",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班授課",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

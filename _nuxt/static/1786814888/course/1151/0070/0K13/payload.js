@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0070/0K13", (function(a,b,c){return {data:[{course:{time:[["4",a],["5",a]],id:"115100700K13",name:"大學之道",type:"必修",dept:"電池專班",year:b,class:"甲",teacher:"阮弼群",credit:b,hour:"2",classroom:c,max:"20",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("0.5~0.5","1","")));

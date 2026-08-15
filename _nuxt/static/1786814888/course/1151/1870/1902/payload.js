@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/1902", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"115118701902",name:"奈米檢測分析",type:"選修",dept:"四技材工系",year:"4",class:"甲",teacher:"盧榮宏",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/2C01", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"115130702C01",name:"管理學",type:"必修",dept:"行銷設計學程",year:"1",class:"甲",teacher:"張瀞",credit:a,hour:a,classroom:b,max:"40",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

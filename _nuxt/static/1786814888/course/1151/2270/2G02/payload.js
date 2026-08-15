@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/2G02", (function(a){return {data:[{course:{time:[["1","5~7"]],id:"115122702G02",name:"市場調查與數據分析",type:"選修",dept:"四技經管系",year:"4",class:"甲",teacher:"李文玄",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

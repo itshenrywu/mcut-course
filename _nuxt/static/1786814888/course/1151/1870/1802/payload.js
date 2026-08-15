@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/1802", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"115118701802",name:"材料表面工程",type:"選修",dept:"四技材工系",year:a,class:"丙",teacher:"張麗君",credit:a,hour:a,classroom:"",max:"20",min:"1",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

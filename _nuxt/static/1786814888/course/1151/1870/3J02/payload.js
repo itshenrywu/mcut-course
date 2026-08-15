@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1870/3J02", (function(a,b){return {data:[{course:{time:[[a,"4~4"],[a,"5~6"]],id:"115118703J02",name:"數理基礎先修課程",type:"選修",dept:"四技材工系",year:"1",class:"乙",teacher:"劉定宇",credit:"2",hour:a,classroom:b,max:"50",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

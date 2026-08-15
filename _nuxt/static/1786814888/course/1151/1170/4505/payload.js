@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/4505", (function(a,b){return {data:[{course:{time:[["2","5~7"]],id:"115111704505",name:"流體力學",type:"重修",dept:"四技機械系",year:"4",class:"重",teacher:"張國棟",credit:a,hour:a,classroom:b,max:"60",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1670/1R01", (function(a,b){return {data:[{course:{time:[["4","3~4"]],id:"115116701R01",name:"工業安全",type:"必修",dept:"四技環安衛系",year:"1",class:"甲",teacher:"鄭慶武",credit:a,hour:a,classroom:b,max:"65",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

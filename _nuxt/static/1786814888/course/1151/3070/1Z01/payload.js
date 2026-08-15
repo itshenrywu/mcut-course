@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/1Z01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115130701Z01",name:"網頁程式設計",type:"選修",dept:"行銷設計學程",year:a,class:"甲",teacher:"林金祥",credit:b,hour:b,classroom:"",max:"55",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

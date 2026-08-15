@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1370/1G01", (function(a){return {data:[{course:{time:[["1","2~4"]],id:"115113701G01",name:"生物化學",type:"選修",dept:"四技化工系",year:"2",class:"甲",teacher:"劉昭麟",credit:a,hour:a,classroom:"",max:"40",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

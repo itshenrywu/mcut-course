@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3080/0A01", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115130800A01",name:"消費者行為專題",type:"選修",dept:"行銷設計碩士學程",year:a,class:"甲",teacher:"吳宇豐",credit:b,hour:b,classroom:"",max:"10",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

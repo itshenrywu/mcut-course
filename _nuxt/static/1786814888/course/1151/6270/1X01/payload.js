@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/1X01", (function(a,b){return {data:[{course:{time:[["5","2~4"]],id:"115162701X01",name:"自然語言處理",type:"選修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"林淯慈",credit:a,hour:a,classroom:b,max:"25",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

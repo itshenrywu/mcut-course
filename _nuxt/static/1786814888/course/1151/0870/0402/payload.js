@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0870/0402", (function(a,b){return {data:[{course:{time:[[a,"3~4"]],id:"115108700402",name:"普通化學",type:"選修",dept:"四技機械系",year:"1",class:"乙",teacher:"阮宏藝",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

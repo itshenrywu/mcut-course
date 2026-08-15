@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1680/0R01", (function(a,b){return {data:[{course:{time:[[a,"2~4"]],id:"115116800R01",name:"水資源工程",type:"選修",dept:"環安衛系碩士班",year:a,class:"甲",teacher:"卡亦",credit:b,hour:b,classroom:"",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("1","3")));

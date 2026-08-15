@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1070/0J01", (function(a){return {data:[{course:{time:[["3","7~8.5"],["5","8.5~8.5"]],id:"115110700J01",name:"特色專題(一)",type:"選修",dept:"工程學院",year:a,class:"甲",teacher:"洪國永",credit:"2",hour:a,classroom:"",max:"50",min:"10",comment:"限工程學院學生選課(榮譽學程課程)",otherinfo:null}}],fetch:{},mutations:void 0}}("4")));

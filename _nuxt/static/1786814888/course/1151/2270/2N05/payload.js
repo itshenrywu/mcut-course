@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/2N05", (function(a){return {data:[{course:{time:[["4","2~4"],[a,"1~2"]],id:"115122702N05",name:"人工智慧與資訊管理 (含實習)",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"高黃江",credit:"3",hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("5")));

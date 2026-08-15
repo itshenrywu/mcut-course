@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0570/0J02", (function(a,b,c){return {data:[{course:{time:[[a,"2~2"],["2","1~2"]],id:"115105700J02",name:"普通物理(一)",type:"必修",dept:"四技機械系",year:a,class:"乙",teacher:"李孟錡",credit:b,hour:b,classroom:c,max:"60",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("1","3","")));

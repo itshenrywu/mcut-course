@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0270/3214", (function(a){return {data:[{course:{time:[[a,"7~8"]],id:"115102703214",name:"英文實務(一)",type:"必修",dept:"外文組-四技(日)",year:a,class:"甲",teacher:"陳嘉蕙",credit:"1",hour:"2",classroom:"",max:"56",min:"10",comment:"工智",otherinfo:null}}],fetch:{},mutations:void 0}}("4")));

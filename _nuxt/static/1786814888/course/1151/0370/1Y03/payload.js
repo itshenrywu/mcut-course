@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/0370/1Y03", (function(a){return {data:[{course:{time:[["1","5~6"]],id:"115103701Y03",name:"歷史思辨",type:"必修",dept:"社會組-四技(日)",year:a,class:"甲",teacher:"馮典章",credit:a,hour:a,classroom:"",max:"35",min:"10",comment:"電子(甲+乙)",otherinfo:null}}],fetch:{},mutations:void 0}}("2")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/0003", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"115122700003",name:"品牌管理",type:"選修",dept:"四技經管系",year:"4",class:"丙",teacher:"阮何日卡",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

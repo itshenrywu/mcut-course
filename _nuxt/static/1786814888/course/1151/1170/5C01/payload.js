@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1170/5C01", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"115111705C01",name:"工程光學與實驗",type:"選修",dept:"四技機械系",year:"4",class:"乙",teacher:"朱承軒",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

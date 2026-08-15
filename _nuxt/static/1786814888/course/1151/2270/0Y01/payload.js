@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/0Y01", (function(a,b){return {data:[{course:{time:[["5","5~7"]],id:"115122700Y01",name:"應用統計",type:"必修",dept:"四技經管系",year:"4",class:"乙",teacher:"李淑華",credit:a,hour:a,classroom:b,max:"60",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

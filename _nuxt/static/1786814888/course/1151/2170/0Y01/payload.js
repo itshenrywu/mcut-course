@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2170/0Y01", (function(a){return {data:[{course:{time:[[a,"5~6"],["5","1~1"]],id:"115121700Y01",name:"數據計算程式設計",type:"選修",dept:"四技工管系",year:"2",class:"甲",teacher:"鄭明顯",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"甲乙合班",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

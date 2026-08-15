@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1172/1801", (function(a,b){return {data:[{course:{time:[[b,"2~2"],[a,"2~3"]],id:"115111721801",name:"工程數學(一)",type:"必修",dept:"四技機械系",year:b,class:"甲",teacher:"鍾永強",credit:a,hour:a,classroom:"",max:"65",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:void 0}}("3","2")));

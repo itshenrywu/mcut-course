@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1GP0/1401", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"11511GP01401",name:"功能材料原理與應用",type:"選修",dept:"生醫暨醫材博士學程",year:"1",class:"甲",teacher:"陳炳宜",credit:a,hour:a,classroom:"",max:"20",min:"2",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

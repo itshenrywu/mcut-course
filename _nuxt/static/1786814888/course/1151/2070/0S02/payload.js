@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/0S02", (function(a,b){return {data:[{course:{time:[["4","7~8"]],id:"115120700S02",name:"工程數學(二)",type:"必修",dept:"電池專班",year:a,class:"甲",teacher:"陳隆暉",credit:a,hour:a,classroom:b,max:"20",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("2","")));

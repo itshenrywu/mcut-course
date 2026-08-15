@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/6270/2X01", (function(a,b){return {data:[{course:{time:[["2","2~4"]],id:"115162702X01",name:"AI智慧決策與營運分析",type:"選修",dept:"人工智慧學程",year:"4",class:"甲",teacher:"劉弘一",credit:a,hour:a,classroom:b,max:"56",min:"10",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("3","")));

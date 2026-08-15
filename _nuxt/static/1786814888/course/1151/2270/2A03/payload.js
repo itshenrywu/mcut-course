@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/2A03", (function(a){return {data:[{course:{time:[["4","2~4"]],id:"115122702A03",name:"Python AI應用",type:"選修",dept:"四技經管系",year:"2",class:"丙",teacher:"黃可羣",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

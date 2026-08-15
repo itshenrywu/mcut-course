@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/3070/2U04", (function(a,b,c){return {data:[{course:{time:[[a,"5~7"]],id:"115130702U04",name:"平面與編輯設計",type:"必修",dept:"行銷設計學程",year:a,class:"乙",teacher:"李育菁",credit:b,hour:b,classroom:c,max:"30",min:"10",comment:c,otherinfo:null}}],fetch:{},mutations:void 0}}("2","3","")));

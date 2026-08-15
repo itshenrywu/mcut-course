@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1372/0801", (function(a,b){return {data:[{course:{time:[[a,"5~7"]],id:"115113720801",name:"有機化學(一)",type:"必修",dept:"四技化工系",year:a,class:"甲",teacher:"阮宏藝",credit:b,hour:b,classroom:"",max:"55",min:"10",comment:"Partially taught in English",otherinfo:null}}],fetch:{},mutations:void 0}}("2","3")));

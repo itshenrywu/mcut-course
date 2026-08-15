@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2070/1L01", (function(a,b,c,d){return {data:[{course:{time:[[a,b],[c,b]],id:"115120701L01",name:"實務專題(一)",type:"必修",dept:"半導體學程",year:"4",class:"甲",teacher:"吳永富",credit:a,hour:c,classroom:d,max:"50",min:"10",comment:d,otherinfo:null}}],fetch:{},mutations:void 0}}("1","0.5~0.5","2","")));

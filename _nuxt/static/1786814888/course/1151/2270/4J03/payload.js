@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/4J03", (function(a){return {data:[{course:{time:[["2","5~7"]],id:"115122704J03",name:"領導與溝通",type:"必修",dept:"四技經管系",year:"1",class:"丙",teacher:"杜海勇",credit:a,hour:a,classroom:"",max:"60",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

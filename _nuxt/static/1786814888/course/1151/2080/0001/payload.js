@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2080/0001", (function(a,b){return {data:[{course:{time:[["3","5~6"]],id:"115120800001",name:"專題研究與書報討論(一)",type:"必修",dept:"半導體碩士學程",year:a,class:"甲",teacher:"江炳煌",credit:a,hour:"2",classroom:b,max:"10",min:"5",comment:b,otherinfo:null}}],fetch:{},mutations:void 0}}("1","")));

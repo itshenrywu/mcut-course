@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1680/0001", (function(a){return {data:[{course:{time:[[a,"5~7"]],id:"115116800001",name:"高等廢棄物處理技術",type:"選修",dept:"環安衛系碩士班",year:"1",class:"甲",teacher:"卡亦",credit:a,hour:a,classroom:"",max:"25",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

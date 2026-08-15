@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/1580/5001", (function(a){return {data:[{course:{time:[["2","2~4"]],id:"115115805001",name:"數位影像處理技術",type:"選修",dept:"電子系碩士班",year:"1",class:"甲",teacher:"黎玉線",credit:a,hour:a,classroom:"",max:"30",min:"5",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/course/1151/2270/1F03", (function(a){return {data:[{course:{time:[["5","5~7"]],id:"115122701F03",name:"財務報表分析",type:"選修",dept:"四技經管系",year:"2",class:"丙",teacher:"葛同",credit:a,hour:a,classroom:"",max:"50",min:"10",comment:"English-taught course",otherinfo:null}}],fetch:{},mutations:void 0}}("3")));
